@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto y FAQ – Clas Tours by Davila Quiroz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --petrol-dk:  #0F3D52;
+    --petrol:     #1B5F7A;
+    --petrol-md:  #2A7A9B;
+    --petrol-lt:  #4A9AB8;
+    --copper:     #9B6B4A;
+    --copper-lt:  #C48A62;
+    --snow:       #F8F7F5;
+    --mist:       #EEF2F4;
+    --stone:      #D8DFE3;
+    --ink:        #1A1F22;
+    --slate:      #3D4E56;
+    --dust:       #7A8D96;
+    --white:      #FFFFFF;
+  }
+
+  body { font-family: 'DM Sans', sans-serif; background: var(--snow); color: var(--ink); line-height: 1.6; overflow-x: hidden; }
+
+  /* NAV */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(15,61,82,0.95); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    transition: padding 0.3s;
+  }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); text-decoration: none; line-height: 1.2; }
+  .nav-logo span { display: block; font-size: 0.65rem; font-weight: 300; color: var(--copper-lt); letter-spacing: 0.15em; text-transform: uppercase; font-family: 'DM Sans', sans-serif; }
+  .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,0.65); font-size: 0.875rem; text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--copper-lt); }
+  .nav-links a.active { color: var(--copper-lt); }
+  .nav-cta { background: var(--copper); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 3px; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--copper-lt); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 24px; height: 1.5px; background: var(--white); }
+
+  /* HERO */
+  .hero {
+    background: var(--petrol-dk); padding: 7rem 2rem 4rem;
+    position: relative; overflow: hidden;
+  }
+  .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 75% 50%, rgba(27,95,122,0.5) 0%, transparent 65%); }
+  .hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+  .eyebrow { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--copper-lt); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 8px; }
+  .eyebrow::before { content:''; display:block; width:20px; height:1px; background:var(--copper-lt); }
+  .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.25rem, 5vw, 4rem); font-weight: 700; color: var(--white); line-height: 1.08; margin-bottom: 1rem; }
+  .hero h1 em { font-style: italic; color: var(--copper-lt); }
+  .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.52); max-width: 480px; line-height: 1.75; }
+
+  /* LAYOUT */
+  .section { padding: 4.5rem 2rem; }
+  .inner { max-width: 1100px; margin: 0 auto; }
+  .bg-white { background: var(--white); }
+  .bg-mist { background: var(--mist); }
+  .bg-dark { background: var(--petrol-dk); }
+
+  .label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--petrol-lt); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px; }
+  .label::before { content:''; display:block; width:20px; height:1px; background:currentColor; }
+  .label-lt { color: var(--copper-lt); }
+  .label-lt::before { background: var(--copper-lt); }
+
+  .title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.875rem, 4vw, 2.75rem); font-weight: 700; color: var(--petrol-dk); line-height: 1.1; margin-bottom: 1rem; }
+  .title em { font-style: italic; color: var(--copper); }
+  .title-lt { color: var(--white); }
+  .title-lt em { color: var(--copper-lt); }
+
+  /* CONTACTO GRID */
+  .contacto-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;
+  }
+
+  /* CANALES DE CONTACTO */
+  .canal-card {
+    background: var(--white); border: 1px solid var(--stone); border-radius: 6px;
+    padding: 1.5rem; display: flex; gap: 1.25rem; align-items: flex-start;
+    transition: border-color 0.3s, transform 0.3s; text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  .canal-card:hover { border-color: var(--petrol-lt); transform: translateX(4px); }
+  .canal-card.principal { border-color: var(--copper); background: rgba(155,107,74,0.02); }
+  .canal-icon {
+    width: 44px; height: 44px; border-radius: 8px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .canal-icon.wa { background: rgba(37,211,102,0.1); }
+  .canal-icon.email { background: rgba(27,95,122,0.08); }
+  .canal-icon.ig { background: rgba(200,100,50,0.08); }
+  .canal-icon.tel { background: rgba(155,107,74,0.1); }
+  .canal-icon svg { width: 22px; height: 22px; }
+  .canal-icon.wa svg { color: #25D366; }
+  .canal-icon.email svg { color: var(--petrol); }
+  .canal-icon.ig svg { color: #C86432; }
+  .canal-icon.tel svg { color: var(--copper); }
+  .canal-content { flex: 1; }
+  .canal-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dust); margin-bottom: 0.2rem; }
+  .canal-value { font-size: 1rem; font-weight: 500; color: var(--ink); margin-bottom: 0.2rem; }
+  .canal-desc { font-size: 0.8125rem; color: var(--dust); line-height: 1.5; }
+  .canal-badge { display: inline-block; font-size: 0.6rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; background: rgba(155,107,74,0.1); color: var(--copper); padding: 0.18rem 0.55rem; border-radius: 2px; margin-top: 0.35rem; }
+
+  /* FORMULARIO */
+  .form-card {
+    background: var(--mist); border: 1px solid var(--stone); border-radius: 6px; padding: 2rem;
+  }
+  .form-title { font-family: 'Cormorant Garamond', serif; font-size: 1.375rem; font-weight: 700; color: var(--petrol-dk); margin-bottom: 0.3rem; }
+  .form-sub { font-size: 0.845rem; color: var(--dust); margin-bottom: 1.5rem; }
+  .field { margin-bottom: 0.875rem; }
+  .field label { display: block; font-size: 0.75rem; font-weight: 500; color: var(--slate); margin-bottom: 0.35rem; letter-spacing: 0.03em; }
+  .field input, .field select, .field textarea {
+    width: 100%; padding: 0.72rem 0.875rem;
+    background: var(--white); border: 1px solid var(--stone);
+    border-radius: 3px; color: var(--ink);
+    font-size: 0.875rem; font-family: 'DM Sans', sans-serif;
+    transition: border-color 0.2s; outline: none;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--petrol-lt); }
+  .field textarea { resize: vertical; min-height: 100px; }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .btn-enviar {
+    width: 100%; background: var(--copper); color: var(--white);
+    padding: 0.875rem; border-radius: 3px; border: none;
+    font-size: 0.9375rem; font-weight: 500; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; transition: background 0.2s; margin-top: 0.25rem;
+  }
+  .btn-enviar:hover { background: var(--copper-lt); }
+  .form-note { font-size: 0.72rem; color: var(--dust); text-align: center; margin-top: 0.6rem; }
+
+  /* TIEMPO RESPUESTA */
+  .respuesta-strip {
+    background: rgba(27,95,122,0.05);
+    border: 1px solid rgba(27,95,122,0.12);
+    border-radius: 4px; padding: 0.875rem 1.125rem;
+    display: flex; align-items: center; gap: 10px;
+    margin-top: 1.25rem; font-size: 0.845rem; color: var(--slate);
+  }
+  .respuesta-strip svg { width: 16px; height: 16px; color: var(--petrol-lt); flex-shrink: 0; }
+
+  /* FAQ */
+  .faq-intro { max-width: 540px; margin-bottom: 3rem; }
+  .faq-intro p { font-size: 0.9375rem; color: var(--slate); line-height: 1.75; }
+
+  .faq-categorias {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0 3rem;
+  }
+  .faq-cat { margin-bottom: 2.5rem; }
+  .faq-cat-title {
+    font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--petrol-lt);
+    margin-bottom: 1rem; padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--stone);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .faq-cat-title svg { width: 14px; height: 14px; }
+
+  .faq-item { border-bottom: 1px solid var(--stone); }
+  .faq-q {
+    width: 100%; padding: 1rem 0;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    background: transparent; border: none; cursor: pointer;
+    text-align: left; font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem; font-weight: 500; color: var(--ink);
+    transition: color 0.2s;
+  }
+  .faq-q:hover { color: var(--petrol); }
+  .faq-q.open { color: var(--petrol); }
+  .faq-chevron {
+    width: 18px; height: 18px; flex-shrink: 0; color: var(--dust);
+    transition: transform 0.3s;
+  }
+  .faq-q.open .faq-chevron { transform: rotate(180deg); color: var(--petrol-lt); }
+  .faq-a {
+    font-size: 0.875rem; color: var(--slate); line-height: 1.75;
+    max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s;
+    padding: 0;
+  }
+  .faq-a.open { max-height: 400px; padding: 0 0 1rem; }
+  .faq-a strong { color: var(--ink); font-weight: 500; }
+  .faq-a a { color: var(--petrol); text-decoration: none; }
+  .faq-a a:hover { color: var(--copper); }
+
+  /* MAPA / UBICACIÓN */
+  .ubicacion-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+  }
+  .ubicacion-text p { font-size: 0.9375rem; color: rgba(255,255,255,0.55); line-height: 1.75; margin-bottom: 1rem; }
+  .ubicacion-data {
+    display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;
+  }
+  .ubic-item { display: flex; align-items: flex-start; gap: 10px; }
+  .ubic-item svg { width: 16px; height: 16px; color: var(--copper-lt); flex-shrink: 0; margin-top: 2px; }
+  .ubic-item span { font-size: 0.875rem; color: rgba(255,255,255,0.55); line-height: 1.5; }
+  .ubic-item strong { color: rgba(255,255,255,0.85); font-weight: 500; }
+
+  .mapa-placeholder {
+    background: rgba(255,255,255,0.04); border: 1px dashed rgba(255,255,255,0.12);
+    border-radius: 6px; height: 320px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0.75rem; color: rgba(255,255,255,0.25);
+  }
+  .mapa-placeholder svg { width: 32px; height: 32px; opacity: 0.4; }
+  .mapa-placeholder-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.5; }
+  .mapa-placeholder-hint { font-size: 0.8rem; opacity: 0.35; text-align: center; max-width: 240px; line-height: 1.5; }
+
+  /* WA FLOAT */
+  .wa-float { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 200; width: 54px; height: 54px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(37,211,102,0.35); text-decoration: none; transition: transform 0.2s; }
+  .wa-float:hover { transform: scale(1.1); }
+  .wa-float svg { width: 26px; height: 26px; color: white; }
+
+  /* FOOTER */
+  .footer { background: #0A2535; padding: 2rem; text-align: center; }
+  .footer p { font-size: 0.775rem; color: rgba(255,255,255,0.25); margin-bottom: 0.3rem; }
+  .footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
+  .footer a:hover { color: var(--copper-lt); }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .contacto-grid { grid-template-columns: 1fr; }
+    .faq-categorias { grid-template-columns: 1fr; }
+    .ubicacion-grid { grid-template-columns: 1fr; }
+    .field-row { grid-template-columns: 1fr; }
+    .section { padding: 3rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <a href="index.html" class="nav-logo">
+    Clas Tours by Davila Quiroz
+    <span>Camina los Alpes Suizos</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="clastours-caminatas-v2.html">Mis caminatas</a></li>
+    <li><a href="clastours-nosotros.html">Quién soy</a></li>
+    <li><a href="contacto.html" class="active">Contacto</a></li>
+  </ul>
+  <a href="index.html#reservar" class="nav-cta">Reservar →</a>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Hablemos</div>
+    <h1>¿Tienes alguna<br><em>pregunta</em>?</h1>
+    <p class="hero-sub">Prefiero responder una duda antes de la caminata que no haberla respondido. Escríbeme sin compromiso — en menos de 24 horas te contesto.</p>
+  </div>
+</div>
+
+<!-- CONTACTO + FORMULARIO -->
+<section class="section bg-white">
+  <div class="inner">
+    <div class="contacto-grid">
+
+      <!-- CANALES -->
+      <div>
+        <div class="label">Cómo llegar a mí</div>
+        <h2 class="title">Elige tu<br><em>canal</em></h2>
+        <p style="font-size:0.9375rem;color:var(--slate);line-height:1.75;margin-bottom:2rem">Sin burocracia. Sin formularios eternos. Escríbeme por donde te sea más cómodo.</p>
+
+        <a href="https://wa.me/41774603641?text=Hola%20Santiago%2C%20me%20interesan%20las%20caminatas%20de%20Clas%20Tours" class="canal-card principal" target="_blank">
+          <div class="canal-icon wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div class="canal-content">
+            <div class="canal-label">Canal preferido</div>
+            <div class="canal-value">(+41) 077 460 36 41</div>
+            <div class="canal-desc">La forma más rápida. Respondo en pocas horas, incluso los fines de semana.</div>
+            <span class="canal-badge">Respuesta más rápida</span>
+          </div>
+        </a>
+
+        <a href="mailto:info@clastours.ch" class="canal-card">
+          <div class="canal-icon email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="canal-content">
+            <div class="canal-label">Email</div>
+            <div class="canal-value">info@clastours.ch</div>
+            <div class="canal-desc">Para consultas más detalladas o con documentos adjuntos. Respondo en menos de 24h.</div>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/clastours.ch" class="canal-card" target="_blank">
+          <div class="canal-icon ig">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </div>
+          <div class="canal-content">
+            <div class="canal-label">Instagram</div>
+            <div class="canal-value">@clastours.ch</div>
+            <div class="canal-desc">Síguenos para ver rutas, paisajes y novedades. También puedes escribirnos por DM.</div>
+          </div>
+        </a>
+
+        <a href="https://www.clastours.ch" class="canal-card">
+          <div class="canal-icon tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+          </div>
+          <div class="canal-content">
+            <div class="canal-label">Web</div>
+            <div class="canal-value">www.clastours.ch</div>
+            <div class="canal-desc">Ipsach, Cantón de Berna, Suiza. Base de operaciones para todas las salidas.</div>
+          </div>
+        </a>
+
+        <div class="respuesta-strip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Tiempo de respuesta habitual: menos de 24 horas en días laborables, pocas horas por WhatsApp.
+        </div>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div>
+        <div class="form-card">
+          <div class="form-title">Escríbenos directamente</div>
+          <div class="form-sub">Rellena el formulario y te contactamos por el canal que prefieras.</div>
+
+          <div class="field field-row">
+            <div>
+              <label>Nombre *</label>
+              <input type="text" placeholder="Tu nombre" name="nombre">
+            </div>
+            <div>
+              <label>WhatsApp</label>
+              <input type="tel" placeholder="+41 / +57 / +34..." name="wa">
+            </div>
+          </div>
+          <div class="field">
+            <label>Email *</label>
+            <input type="email" placeholder="tu@correo.com" name="email">
+          </div>
+          <div class="field">
+            <label>¿Qué ruta te interesa?</label>
+            <select name="ruta">
+              <option value="">Selecciona una opción</option>
+              <option>Kandersteg 2 días (Griesalp → Oeschinensee)</option>
+              <option>Creux du Van — 1 día</option>
+              <option>Augstmatthorn → Harderkulm — 1 día</option>
+              <option>No sé todavía, quiero asesoría</option>
+              <option>Otro / pregunta general</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>¿Cuántas personas van?</label>
+            <select name="personas">
+              <option value="">Selecciona</option>
+              <option>Solo/a (1 persona)</option>
+              <option>2 personas</option>
+              <option>3–6 personas</option>
+              <option>7 o más (precio especial: CHF 95/persona)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Tu mensaje *</label>
+            <textarea placeholder="Cuéntame lo que necesitas — fechas aproximadas, nivel de experiencia, dudas específicas..." name="mensaje"></textarea>
+          </div>
+          <button class="btn-enviar" onclick="enviarForm()">Enviar por WhatsApp →</button>
+          <div class="form-note">Sin compromiso · Respuesta en menos de 24h · Tu info no se comparte</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-mist">
+  <div class="inner">
+    <div class="label">Preguntas frecuentes</div>
+    <h2 class="title">Lo que más me <em>preguntan</em></h2>
+
+    <div class="faq-intro">
+      <p>Si tu duda no está aquí, escríbeme directamente. Prefiero responder de más que dejarte con una duda sin resolver antes de salir a la montaña.</p>
+    </div>
+
+    <div class="faq-categorias">
+      <!-- COLUMNA 1 -->
+      <div>
+        <div class="faq-cat">
+          <div class="faq-cat-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Sobre el guía y el servicio
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Eres guía certificado?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Estoy en formación oficial como <strong>Wanderleiter</strong> — guía de senderismo certificado según los estándares suizos. Ya puedo operar legalmente como guía en rutas hasta T3 en verano y WT2 en invierno. Lo digo con transparencia porque creo que la honestidad es la base de la confianza.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Qué pasa si hay mal tiempo el día de la caminata?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">La seguridad manda siempre. Si las condiciones meteorológicas representan un riesgo real, cancelo la actividad sin dudarlo. En ese caso puedes elegir entre <strong>reprogramar sin coste</strong> adicional o recibir el <strong>reembolso completo</strong>. Si el tiempo está gris pero seguro, salimos — la montaña también es bonita con nubes.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Cuántas personas van en cada salida?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Máximo 10 personas por salida. No soy un tour masivo — prefiero grupos donde pueda conocer a cada persona y adaptar el ritmo al grupo real, no a una media estadística.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Puedo reservar una salida privada solo para mi grupo?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Sí, totalmente. Si sois un grupo de amigos, familia o compañeros de trabajo, podéis reservar la salida en exclusiva para vosotros. Escríbeme y organizamos los detalles.</div>
+          </div>
+        </div>
+
+        <div class="faq-cat">
+          <div class="faq-cat-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Seguridad y seguros
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Necesito un seguro especial para participar?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Recomiendo <strong>encarecidamente</strong> tener un seguro de accidente personal y, si es posible, una tarjeta Rega (Guardia Aérea de Rescate suiza). Un rescate en la montaña puede costar entre CHF 1.000 y CHF 10.000. No es obligatorio para participar, pero sería irresponsable de mi parte no avisarte. Si vienes del extranjero, un seguro de viaje con cobertura de evacuación médica es esencial.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Qué pasa si alguien del grupo se lesiona en ruta?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Tengo formación en primeros auxilios de montaña y siempre salgo con botiquín completo. En caso de lesión, aplicamos los primeros auxilios, evaluamos la gravedad y contactamos con los servicios de emergencia si es necesario. Nunca se deja a nadie solo en la montaña.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMNA 2 -->
+      <div>
+        <div class="faq-cat">
+          <div class="faq-cat-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Sobre las rutas y el nivel
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              No tengo experiencia en senderismo. ¿Puedo participar?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Depende de la ruta. El <strong>Creux du Van (T2)</strong> es perfecta para principiantes con buena condición física básica. Las otras dos rutas (T3) requieren algo más de experiencia y forma física. Cuéntame tu situación y te digo honestamente qué ruta es para ti — o si mejor empezamos por algo más suave.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Qué significa T2 y T3?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Son los niveles de dificultad del <strong>Club Alpino Suizo (SAC)</strong>. T1 es paseo por camino llano. T2 es senderismo con desnivel y terreno irregular pero bien marcado. T3 añade terreno expuesto, senderos no siempre visibles y algunos pasos que requieren apoyo de manos. WT2 es el equivalente invernal con nieve.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Se puede hacer el Creux du Van en invierno?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Sí, con las condiciones adecuadas. En invierno el paisaje es completamente diferente — y espectacular. Con mucha nieve puede ser necesario llevar crampones de senderismo. Consulta disponibilidad y condiciones antes de reservar.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Pueden participar niños?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Depende de la edad, condición física y la ruta. Los menores de 18 años deben ir siempre acompañados de un adulto responsable. Para rutas T3 no recomiendo niños menores de 12–14 años. Cuéntame el caso concreto y evaluamos juntos.</div>
+          </div>
+        </div>
+
+        <div class="faq-cat">
+          <div class="faq-cat-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            Reservas, precios y logística
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Qué incluye exactamente el precio?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">El precio (CHF 120/persona, o CHF 95 en grupos de 7 o más) incluye la guía completa en español durante toda la actividad, la planificación de la ruta y la orientación previa. <strong>No incluye</strong>: transporte al punto de partida, alojamiento en refugio (ruta Kandersteg), comidas, ni seguro personal.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Cómo llego al punto de partida?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Todas las rutas son accesibles en transporte público suizo (SBB/CFF). Al confirmar la reserva te envío las instrucciones detalladas de cómo llegar — tren, bus postal, hora de encuentro y punto exacto. Suiza tiene una de las mejores redes de transporte del mundo, y la usamos.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              ¿Puedo cancelar si cambio de planes?
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">Sí. Con más de 14 días de antelación, reembolso completo. Entre 7 y 14 días, 75%. Entre 3 y 6 días, 50%. Con menos de 48 horas, sin reembolso. Consulta la <a href="clastours-legal.html">política completa de cancelación</a> en los Términos y Condiciones.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section class="section bg-dark">
+  <div class="inner">
+    <div class="ubicacion-grid">
+      <div>
+        <div class="label label-lt">Dónde estamos</div>
+        <h2 class="title title-lt">Base en <em>Berna</em></h2>
+        <p class="ubicacion-text">
+          <p>Clas Tours opera desde Ipsach, en el Cantón de Berna — en el corazón de Suiza, a pocos minutos del lago de Biel y con acceso directo a las principales rutas del Oberland bernés y el Jura.</p>
+          <p>Las salidas se organizan desde los puntos de partida de cada ruta, accesibles en transporte público desde cualquier parte de Suiza.</p>
+        </p>
+        <div class="ubicacion-data">
+          <div class="ubic-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><strong>Base:</strong> Ipsach, Cantón de Berna, Suiza</span>
+          </div>
+          <div class="ubic-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            <span><strong>Zona de operación:</strong> Alpes suizos, Oberland bernés, Jura</span>
+          </div>
+          <div class="ubic-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span><strong>Temporada activa:</strong> Todo el año — verano (T3) e invierno (WT2)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mapa-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="mapa-placeholder-label">Mapa opcional</div>
+        <div class="mapa-placeholder-hint">Puedes incrustar aquí un Google Maps embed apuntando a Ipsach, Berna</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2025 Clas Tours by Davila Quiroz · Ipsach, Berna, Suiza</p>
+  <p><a href="mailto:info@clastours.ch">info@clastours.ch</a> · <a href="https://wa.me/41774603641" target="_blank">(+41) 077 460 36 41</a> · <a href="clastours-legal.html">Términos y Condiciones</a></p>
+</div>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/41774603641?text=Hola%20Santiago%2C%20me%20interesan%20las%20caminatas%20de%20Clas%20Tours" class="wa-float" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').style.padding = window.scrollY > 50 ? '0.6rem 2rem' : '1rem 2rem';
+});
+
+function toggleMenu() {
+  const links = document.querySelector('.nav-links');
+  const open = links.style.display === 'flex';
+  links.style.cssText = open ? '' : 'display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:rgba(15,61,82,0.97);padding:1.25rem 2rem;gap:1rem;';
+}
+
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const answer = item.querySelector('.faq-a');
+  const isOpen = answer.classList.contains('open');
+  document.querySelectorAll('.faq-a.open').forEach(a => a.classList.remove('open'));
+  document.querySelectorAll('.faq-q.open').forEach(q => q.classList.remove('open'));
+  if (!isOpen) {
+    answer.classList.add('open');
+    btn.classList.add('open');
+  }
+}
+
+function enviarForm() {
+  const nombre = document.querySelector('[name="nombre"]').value.trim();
+  const email  = document.querySelector('[name="email"]').value.trim();
+  const wa     = document.querySelector('[name="wa"]').value.trim();
+  const ruta   = document.querySelector('[name="ruta"]').value;
+  const personas = document.querySelector('[name="personas"]').value;
+  const mensaje  = document.querySelector('[name="mensaje"]').value.trim();
+  if (!nombre || !email) {
+    alert('Por favor ingresa tu nombre y email como mínimo.');
+    return;
+  }
+  const texto = `Hola Santiago! Soy ${nombre}. ${ruta ? 'Me interesa: ' + ruta + '.' : ''} ${personas ? 'Somos: ' + personas + '.' : ''} ${mensaje ? 'Mensaje: ' + mensaje : ''} Contacto: ${email}${wa ? ' / ' + wa : ''}`;
+  window.open(`https://wa.me/41774603641?text=${encodeURIComponent(texto)}`, '_blank');
+}
+</script>
+</body>
+</html>

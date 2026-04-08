@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quién Soy – Clas Tours by Davila Quiroz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --petrol-dk:  #0F3D52;
+    --petrol:     #1B5F7A;
+    --petrol-md:  #2A7A9B;
+    --petrol-lt:  #4A9AB8;
+    --copper:     #9B6B4A;
+    --copper-lt:  #C48A62;
+    --snow:       #F8F7F5;
+    --mist:       #EEF2F4;
+    --stone:      #D8DFE3;
+    --ink:        #1A1F22;
+    --slate:      #3D4E56;
+    --dust:       #7A8D96;
+    --white:      #FFFFFF;
+  }
+
+  body { font-family: 'DM Sans', sans-serif; background: var(--snow); color: var(--ink); line-height: 1.6; overflow-x: hidden; }
+
+  /* NAV */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(15,61,82,0.95); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    transition: padding 0.3s;
+  }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); text-decoration: none; line-height: 1.2; }
+  .nav-logo span { display: block; font-size: 0.65rem; font-weight: 300; color: var(--copper-lt); letter-spacing: 0.15em; text-transform: uppercase; font-family: 'DM Sans', sans-serif; }
+  .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,0.65); font-size: 0.875rem; text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--copper-lt); }
+  .nav-links a.active { color: var(--copper-lt); }
+  .nav-cta { background: var(--copper); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 3px; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--copper-lt); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 24px; height: 1.5px; background: var(--white); }
+
+  /* HERO */
+  .hero {
+    background: var(--petrol-dk);
+    padding: 7rem 2rem 0;
+    position: relative; overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 80% 40%, rgba(27,95,122,0.5) 0%, transparent 70%);
+  }
+  .hero-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 3rem; align-items: end;
+    position: relative; z-index: 1;
+  }
+  .hero-text { padding-bottom: 3rem; }
+  .eyebrow {
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--copper-lt);
+    margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .eyebrow::before { content:''; display:block; width:20px; height:1px; background:var(--copper-lt); }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700; color: var(--white); line-height: 1.05;
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 em { font-style: italic; color: var(--copper-lt); }
+  .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.55); max-width: 480px; line-height: 1.75; }
+
+  /* FOTO HERO */
+  .hero-foto {
+    width: 260px; height: 340px; flex-shrink: 0;
+    background: rgba(27,95,122,0.2);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-left: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px 4px 0 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0.75rem; color: rgba(255,255,255,0.25);
+    position: relative; overflow: hidden;
+    align-self: flex-end;
+  }
+  .hero-foto svg { width: 32px; height: 32px; }
+  .hero-foto-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+  .hero-foto-hint { font-size: 0.75rem; opacity: 0.6; text-align: center; max-width: 180px; line-height: 1.5; }
+  .hero-foto-tag {
+    position: absolute; top: 0.75rem; left: 0.75rem;
+    font-size: 0.6rem; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--copper-lt);
+    background: rgba(155,107,74,0.15);
+    border: 1px dashed rgba(196,138,98,0.4);
+    padding: 0.2rem 0.5rem; border-radius: 2px;
+  }
+
+  /* SECCIONES */
+  .section { padding: 4.5rem 2rem; }
+  .inner { max-width: 1100px; margin: 0 auto; }
+  .bg-white { background: var(--white); }
+  .bg-mist  { background: var(--mist); }
+  .bg-dark  { background: var(--petrol-dk); }
+
+  .label {
+    font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--petrol-lt);
+    margin-bottom: 0.5rem;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .label::before { content:''; display:block; width:20px; height:1px; background:currentColor; }
+  .label-lt { color: var(--copper-lt); }
+  .label-lt::before { background: var(--copper-lt); }
+
+  .title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.875rem, 4vw, 2.75rem);
+    font-weight: 700; color: var(--petrol-dk); line-height: 1.1; margin-bottom: 1rem;
+  }
+  .title em { font-style: italic; color: var(--copper); }
+  .title-lt { color: var(--white); }
+  .title-lt em { color: var(--copper-lt); }
+
+  /* HISTORIA */
+  .historia-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
+  }
+  .historia-text p {
+    font-size: 0.9375rem; color: var(--slate); line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+  .historia-text p:last-child { margin-bottom: 0; }
+  .historia-text p strong { color: var(--ink); font-weight: 500; }
+
+  /* FOTO HISTORIA */
+  .foto-historia {
+    background: var(--mist); border: 1px dashed var(--stone);
+    border-radius: 6px; height: 420px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0.75rem; color: var(--dust);
+    position: relative;
+  }
+  .foto-historia svg { width: 32px; height: 32px; opacity: 0.4; }
+  .foto-historia-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.6; }
+  .foto-historia-hint { font-size: 0.8rem; opacity: 0.45; text-align: center; max-width: 220px; line-height: 1.5; }
+  .foto-tag {
+    position: absolute; top: 0.75rem; left: 0.75rem;
+    font-size: 0.6rem; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--petrol-lt);
+    background: rgba(27,95,122,0.07);
+    border: 1px dashed rgba(74,154,184,0.4);
+    padding: 0.2rem 0.5rem; border-radius: 2px;
+  }
+
+  /* VALORES */
+  .valores-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .valor-card {
+    background: var(--white); border: 1px solid var(--stone); border-radius: 6px;
+    padding: 1.75rem; transition: border-color 0.3s, transform 0.3s;
+  }
+  .valor-card:hover { border-color: var(--petrol-lt); transform: translateY(-2px); }
+  .valor-icon {
+    width: 40px; height: 40px; border-radius: 6px;
+    background: rgba(27,95,122,0.07);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .valor-icon svg { width: 20px; height: 20px; color: var(--petrol); }
+  .valor-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem; font-weight: 700;
+    color: var(--petrol-dk); margin-bottom: 0.4rem;
+  }
+  .valor-text { font-size: 0.875rem; color: var(--slate); line-height: 1.7; }
+
+  /* FORMACIÓN */
+  .formacion-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  }
+  .form-card {
+    background: var(--white); border: 1px solid var(--stone); border-radius: 6px;
+    padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start;
+    transition: border-color 0.3s;
+  }
+  .form-card:hover { border-color: var(--petrol-lt); }
+  .form-card.highlight { border-color: var(--copper); background: rgba(155,107,74,0.02); }
+  .form-icon {
+    width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem; font-weight: 600; font-family: 'DM Sans', sans-serif;
+  }
+  .form-icon.active { background: rgba(27,95,122,0.1); color: var(--petrol); }
+  .form-icon.progress { background: rgba(155,107,74,0.1); color: var(--copper); }
+  .form-content { flex: 1; }
+  .form-title { font-size: 0.9375rem; font-weight: 500; color: var(--ink); margin-bottom: 0.2rem; }
+  .form-sub { font-size: 0.8125rem; color: var(--dust); line-height: 1.5; margin-bottom: 0.4rem; }
+  .form-status {
+    display: inline-block; font-size: 0.65rem; font-weight: 500;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 0.2rem 0.6rem; border-radius: 2px;
+  }
+  .status-active { background: rgba(42,107,32,0.08); color: #2A6B20; }
+  .status-progress { background: rgba(155,107,74,0.1); color: var(--copper); }
+
+  /* FILOSOFÍA */
+  .filosofia-wrap { max-width: 720px; margin: 0 auto; text-align: center; }
+  .cita {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.375rem, 3vw, 2rem);
+    font-style: italic; font-weight: 400;
+    color: var(--white); line-height: 1.5;
+    margin-bottom: 1.5rem;
+    position: relative; padding: 0 2rem;
+  }
+  .cita::before, .cita::after {
+    content: '"';
+    font-size: 4rem; line-height: 0;
+    color: rgba(155,107,74,0.3);
+    position: absolute; font-style: normal;
+  }
+  .cita::before { top: 1rem; left: 0; }
+  .cita::after { content: '"'; bottom: -0.5rem; right: 0; }
+  .cita-author { font-size: 0.875rem; color: rgba(255,255,255,0.35); }
+  .cita-dash { color: var(--copper-lt); margin: 0 0.5rem; }
+
+  /* FOTOS GALERÍA PLACEHOLDER */
+  .galeria-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .galeria-item {
+    background: var(--mist); border: 1px dashed var(--stone);
+    border-radius: 4px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0.5rem; color: var(--dust); position: relative;
+  }
+  .galeria-item:first-child { grid-row: span 2; min-height: 380px; }
+  .galeria-item:not(:first-child) { min-height: 180px; }
+  .galeria-item svg { width: 24px; height: 24px; opacity: 0.35; }
+  .galeria-item-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.45; }
+  .galeria-tag {
+    position: absolute; top: 0.6rem; left: 0.6rem;
+    font-size: 0.6rem; font-weight: 500; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--petrol-lt);
+    background: rgba(27,95,122,0.07);
+    border: 1px dashed rgba(74,154,184,0.35);
+    padding: 0.18rem 0.45rem; border-radius: 2px;
+  }
+
+  /* CTA */
+  .cta-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .cta-card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 6px; padding: 1.75rem; text-align: center;
+  }
+  .cta-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.375rem; font-weight: 700; color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  .cta-card p { font-size: 0.875rem; color: rgba(255,255,255,0.45); margin-bottom: 1.25rem; line-height: 1.6; }
+  .btn-main {
+    display: inline-block; background: var(--copper); color: var(--white);
+    padding: 0.75rem 1.75rem; border-radius: 3px; font-size: 0.875rem;
+    font-weight: 500; text-decoration: none; transition: background 0.2s;
+  }
+  .btn-main:hover { background: var(--copper-lt); }
+  .btn-outline {
+    display: inline-block; background: transparent; color: rgba(255,255,255,0.7);
+    padding: 0.75rem 1.75rem; border-radius: 3px; font-size: 0.875rem;
+    text-decoration: none; border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.2s;
+  }
+  .btn-outline:hover { border-color: var(--copper-lt); color: var(--copper-lt); }
+
+  /* WA FLOAT */
+  .wa-float { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 200; width: 54px; height: 54px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(37,211,102,0.35); text-decoration: none; transition: transform 0.2s; }
+  .wa-float:hover { transform: scale(1.1); }
+  .wa-float svg { width: 26px; height: 26px; color: white; }
+
+  /* FOOTER */
+  .footer { background: #0A2535; padding: 2rem; text-align: center; }
+  .footer p { font-size: 0.775rem; color: rgba(255,255,255,0.25); margin-bottom: 0.3rem; }
+  .footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
+  .footer a:hover { color: var(--copper-lt); }
+
+  /* MOBILE */
+  @media (max-width: 900px) {
+    .valores-grid { grid-template-columns: 1fr 1fr; }
+    .galeria-grid { grid-template-columns: 1fr 1fr; }
+    .galeria-item:first-child { grid-row: span 1; }
+  }
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-foto { display: none; }
+    .historia-grid { grid-template-columns: 1fr; }
+    .formacion-grid { grid-template-columns: 1fr; }
+    .cta-grid { grid-template-columns: 1fr; }
+    .section { padding: 3rem 1.25rem; }
+  }
+  @media (max-width: 480px) {
+    .valores-grid { grid-template-columns: 1fr; }
+    .galeria-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <a href="index.html" class="nav-logo">
+    Clas Tours by Davila Quiroz
+    <span>Camina los Alpes Suizos</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="clastours-caminatas-v2.html">Mis caminatas</a></li>
+    <li><a href="nosotros.html" class="active">Quién soy</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  <a href="index.html#reservar" class="nav-cta">Reservar →</a>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="eyebrow">Tu guía</div>
+      <h1>Hola, soy<br><em>Santiago</em></h1>
+      <p class="hero-sub">Colombiano viviendo en los Alpes suizos. Guía de senderismo en formación. Y la persona que va a acompañarte en tu próxima aventura en la montaña — en español, a tu ritmo, con seguridad primero.</p>
+    </div>
+    <div class="hero-foto">
+      <div class="hero-foto-tag">Tu foto aquí</div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      <div class="hero-foto-label">Espacio para foto</div>
+      <div class="hero-foto-hint">Foto tuya en la montaña<br>Vertical · retrato</div>
+    </div>
+  </div>
+</div>
+
+<!-- MI HISTORIA -->
+<section class="section bg-white">
+  <div class="inner">
+    <div class="historia-grid">
+      <div class="historia-text">
+        <div class="label">Mi historia</div>
+        <h2 class="title">De Colombia<br>a los <em>Alpes suizos</em></h2>
+        <p>Llegué a Suiza hace años con una mochila y muchas ganas de entender este país. Pronto descubrí que los Alpes no son solo un paisaje bonito que se ve desde el tren — son algo que se siente cuando los pisas, cuando respiras ese aire, cuando llegas a una cresta y el mundo entero se abre ante ti.</p>
+        <p>Pero también descubrí algo que me incomodó: para la comunidad hispanohablante, esa experiencia era casi inaccesible. No por falta de ganas, sino por barreras — el idioma, no saber por dónde empezar, no tener a alguien de confianza que te explique cómo funciona la montaña aquí.</p>
+        <p><strong>Clas Tours nació para cambiar eso.</strong> Para que cualquier persona de habla hispana — viva en Suiza o venga de visita — pueda vivir la montaña suiza con confianza total, entendiendo cada instrucción, cada riesgo, cada maravilla del camino.</p>
+        <p>Actualmente estoy en formación como <strong>Wanderleiter</strong> — guía de senderismo certificado según los estándares suizos — porque creo que si vas a guiar a personas en la montaña, tienes que hacerlo bien o no hacerlo.</p>
+      </div>
+      <div class="foto-historia">
+        <div class="foto-tag">Foto — En ruta</div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <div class="foto-historia-label">Espacio para foto</div>
+        <div class="foto-historia-hint">Foto en ruta, en la montaña<br>Formato vertical recomendado</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MIS VALORES -->
+<section class="section bg-mist">
+  <div class="inner">
+    <div class="label">Cómo trabajo</div>
+    <h2 class="title">Lo que me <em>importa</em></h2>
+    <div class="valores-grid">
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="valor-title">Seguridad antes que nada</div>
+        <div class="valor-text">En la montaña no hay segundas oportunidades. Prefiero acortar una ruta o darse vuelta antes que poner a alguien en riesgo. La seguridad del grupo siempre va primero, sin excepción.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="valor-title">Honestidad directa</div>
+        <div class="valor-text">Si una ruta no es para ti, te lo digo. Si las condiciones no están, lo cancelo. No vendo experiencias que no puedo garantizar. Prefiero un cliente decepcionado hoy que uno lesionado mañana.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="valor-title">Grupos pequeños, trato real</div>
+        <div class="valor-text">No soy un guía de tour masivo. Máximo 10 personas. Conozco el nombre de cada participante, adapto el ritmo, respondo dudas. No eres un número en una lista — eres la razón de la salida.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <div class="valor-title">Pasión genuina</div>
+        <div class="valor-text">No hago esto por cumplir. Los Alpes me emocionan todavía después de haberlos recorrido muchas veces. Esa energía se contagia — y es lo que hace que una caminata se convierta en un recuerdo para toda la vida.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="valor-title">Respeto al entorno</div>
+        <div class="valor-text">La montaña no es un parque de atracciones. Salimos sin dejar rastro, respetamos la fauna y la flora, seguimos los códigos del senderismo suizo. Si no cuidamos la montaña, no habrá montaña que guiar.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+        </div>
+        <div class="valor-title">En tu idioma, de verdad</div>
+        <div class="valor-text">No es solo que hablo español — es que pienso en español, entiendo los miedos en español, celebro las cimas en español. Hay una diferencia enorme entre un guía que traduce y uno que realmente te habla.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MI FORMACIÓN -->
+<section class="section bg-white">
+  <div class="inner">
+    <div class="label">Formación y certificaciones</div>
+    <h2 class="title">Preparado para <em>guiarte</em></h2>
+    <p style="font-size:0.9375rem;color:var(--slate);max-width:580px;line-height:1.75;margin-bottom:2rem">La montaña exige preparación real. Esto no es un hobby que convertí en negocio — es una vocación que estoy construyendo con formación oficial, rutas reales y mucho respeto por la montaña.</p>
+
+    <div class="formacion-grid">
+      <div class="form-card highlight">
+        <div class="form-icon progress">W</div>
+        <div class="form-content">
+          <div class="form-title">Wanderleiter — Guía de senderismo</div>
+          <div class="form-sub">Formación oficial suiza para guías de senderismo. Cubre navegación, meteorología, primeros auxilios en montaña, técnica de grupo y gestión de riesgos.</div>
+          <span class="form-status status-progress">En formación · Activo</span>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-icon active">T3</div>
+        <div class="form-content">
+          <div class="form-title">Habilitado rutas T3 — Verano</div>
+          <div class="form-sub">Senderismo de montaña hasta clasificación T3 según escala SAC (Club Alpino Suizo). Terreno expuesto, senderos no siempre marcados.</div>
+          <span class="form-status status-active">Operativo</span>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-icon active">WT</div>
+        <div class="form-content">
+          <div class="form-title">Habilitado rutas WT2 — Invierno</div>
+          <div class="form-sub">Senderismo de invierno hasta clasificación WT2 según escala SAC. Rutas con nieve en terreno de baja dificultad técnica.</div>
+          <span class="form-status status-active">Operativo</span>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-icon active">🏥</div>
+        <div class="form-content">
+          <div class="form-title">Primeros auxilios en montaña</div>
+          <div class="form-sub">Formación en primeros auxilios aplicada a entornos de montaña: gestión de emergencias, comunicación con servicios de rescate, estabilización de heridos en ruta.</div>
+          <span class="form-status status-active">Certificado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA FOTOS -->
+<section class="section bg-mist">
+  <div class="inner">
+    <div class="label">En la montaña</div>
+    <h2 class="title">Mis <em>rutas</em></h2>
+    <p style="font-size:0.9375rem;color:var(--slate);max-width:500px;line-height:1.75;margin-bottom:2rem">Aquí irán fotos reales de las salidas — los paisajes, los grupos, los momentos que hacen que todo valga la pena.</p>
+    <div class="galeria-grid">
+      <div class="galeria-item">
+        <div class="galeria-tag">Foto principal</div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <div class="galeria-item-label">Foto grande</div>
+      </div>
+      <div class="galeria-item">
+        <div class="galeria-tag">Foto 2</div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <div class="galeria-item-label">Foto</div>
+      </div>
+      <div class="galeria-item">
+        <div class="galeria-tag">Foto 3</div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <div class="galeria-item-label">Foto</div>
+      </div>
+      <div class="galeria-item">
+        <div class="galeria-tag">Foto 4</div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <div class="galeria-item-label">Foto</div>
+      </div>
+      <div class="galeria-item">
+        <div class="galeria-tag">Foto 5</div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <div class="galeria-item-label">Foto</div>
+      </div>
+    </div>
+    <p style="font-size:0.75rem;color:var(--dust);margin-top:0.75rem;text-align:center">Para reemplazar cada foto: sustituye el bloque &lt;div class="galeria-item"&gt; por &lt;img src="tu-foto.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:4px"&gt;</p>
+  </div>
+</section>
+
+<!-- FILOSOFÍA / CITA -->
+<section class="section bg-dark">
+  <div class="inner">
+    <div class="filosofia-wrap">
+      <div class="label label-lt" style="justify-content:center;margin-bottom:2rem">Mi filosofía</div>
+      <div class="cita">La montaña no te debe nada. Tú te debes a ti mismo ir preparado, con respeto y con alguien que sepa lo que hace.</div>
+      <div class="cita-author"><span class="cita-dash">—</span> Santiago Davila Quiroz</div>
+    </div>
+
+    <div class="cta-grid">
+      <div class="cta-card">
+        <h3>¿Nos acompañas?</h3>
+        <p>Mira las rutas disponibles y elige la que va contigo. Si no sabes cuál, te ayudo a decidir.</p>
+        <a href="clastours-caminatas-v2.html" class="btn-main">Ver mis caminatas →</a>
+      </div>
+      <div class="cta-card">
+        <h3>¿Tienes dudas?</h3>
+        <p>Escríbeme directamente. Sin formularios, sin burocracia. Respondo en menos de 24 horas.</p>
+        <a href="https://wa.me/41774603641?text=Hola%20Santiago%2C%20vi%20tu%20p%C3%A1gina%20y%20tengo%20una%20pregunta" class="btn-outline" target="_blank">Escribir por WhatsApp →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2025 Clas Tours by Davila Quiroz · Ipsach, Berna, Suiza</p>
+  <p><a href="mailto:info@clastours.ch">info@clastours.ch</a> · <a href="https://wa.me/41774603641" target="_blank">(+41) 077 460 36 41</a> · <a href="clastours-legal.html">Términos y Condiciones</a></p>
+</div>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/41774603641?text=Hola%20Santiago%2C%20me%20interesan%20las%20caminatas%20de%20Clas%20Tours" class="wa-float" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').style.padding = window.scrollY > 50 ? '0.6rem 2rem' : '1rem 2rem';
+});
+function toggleMenu() {
+  const links = document.querySelector('.nav-links');
+  const open = links.style.display === 'flex';
+  links.style.cssText = open ? '' : 'display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:rgba(15,61,82,0.97);padding:1.25rem 2rem;gap:1rem;';
+}
+</script>
+</body>
+</html>
