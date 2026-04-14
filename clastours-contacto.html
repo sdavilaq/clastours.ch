@@ -370,7 +370,11 @@
             <label>Tu mensaje *</label>
             <textarea placeholder="Cuéntame lo que necesitas — fechas aproximadas, nivel de experiencia, dudas específicas..." name="mensaje"></textarea>
           </div>
-          <button class="btn-enviar" onclick="enviarForm()">Enviar por WhatsApp →</button>
+          <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:0.75rem;padding:0.75rem;background:rgba(27,95,122,0.05);border-radius:3px;border:1px solid rgba(27,95,122,0.1)">
+          <input type="checkbox" id="foto-auth" name="foto" style="margin-top:3px;cursor:pointer;flex-shrink:0">
+          <label for="foto-auth" style="font-size:0.8125rem;color:var(--slate);cursor:pointer;line-height:1.5">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html#s10" style="color:var(--petrol);text-decoration:none">Ver política completa →</a></label>
+        </div>
+        <button class="btn-enviar" onclick="enviarForm()">Enviar por WhatsApp →</button>
           <div class="form-note">Sin compromiso · Respuesta en menos de 24h · Tu info no se comparte</div>
         </div>
       </div>
