@@ -605,11 +605,10 @@ function toggleMenu() {
 }
 
 function toggleFaq(btn) {
-  const item = btn.parentElement;
-  const answer = item.querySelector('.faq-a');
-  const isOpen = answer.classList.contains('open');
-  document.querySelectorAll('.faq-a.open').forEach(a => a.classList.remove('open'));
-  document.querySelectorAll('.faq-q.open').forEach(q => q.classList.remove('open'));
+  var answer = btn.nextElementSibling;
+  var isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.faq-a').forEach(function(a){ a.classList.remove('open'); });
+  document.querySelectorAll('.faq-q').forEach(function(q){ q.classList.remove('open'); });
   if (!isOpen) {
     answer.classList.add('open');
     btn.classList.add('open');
@@ -625,3 +624,10 @@ function enviarForm() {
   const mensaje  = document.querySelector('[name="mensaje"]').value.trim();
   if (!nombre || !email) {
     alert('Por favor ingresa tu nombre y email 
+  if (!nombre || !email) { alert('Por favor ingresa tu nombre y email.'); return; }
+  var msg = 'Hola Santiago,%0A%0ANombre: ' + encodeURIComponent(nombre) + '%0AEmail: ' + encodeURIComponent(email) + (wa ? '%0AWhatsApp: ' + encodeURIComponent(wa) : '') + (ruta ? '%0ARuta: ' + encodeURIComponent(ruta) : '') + (personas ? '%0APersonas: ' + encodeURIComponent(personas) : '') + (mensaje ? '%0AMensaje: ' + encodeURIComponent(mensaje) : '');
+  window.open('https://wa.me/41774603641?text=' + msg, '_blank');
+}
+</script>
+</body>
+</html>
