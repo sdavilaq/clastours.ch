@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Clas Tours — 4 volantes en A4</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background:#3D4E56;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  padding:20px;
+  font-family:system-ui,sans-serif;
+}
+
+.hint {
+  color:#fff;
+  font-size:13px;
+  background:rgba(0,0,0,0.35);
+  padding:10px 20px;
+  border-radius:8px;
+  text-align:center;
+  line-height:1.8;
+  max-width:600px;
+}
+
+@media print {
+  body { background:none; padding:0; gap:0; }
+  .hint { display:none; }
+}
+
+/* A4 portrait sheet */
+.page {
+  width:210mm;
+  height:297mm;
+  background:#fff;
+  position:relative;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  gap:0;
+  padding:4.5mm;
+}
+
+/* Dashed cut lines */
+.page::before {
+  content:'';
+  position:absolute;
+  left:50%;
+  top:4mm;
+  bottom:4mm;
+  border-left:0.4px dashed #bbb;
+  pointer-events:none;
+  z-index:10;
+}
+.page::after {
+  content:'';
+  position:absolute;
+  top:50%;
+  left:4mm;
+  right:4mm;
+  border-top:0.4px dashed #bbb;
+  pointer-events:none;
+  z-index:10;
+}
+
+@media print {
+  .page { background:none; }
+  .page::before, .page::after { border-color:#ccc; }
+}
+
+/* Each flyer cell */
+.cell {
+  padding:2mm;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* The actual flyer */
+.flyer {
+  width:100%;
+  height:100%;
+  background:#F8F7F5;
+  border-radius:5px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+/* TOP snow */
+.top {
+  background:#F8F7F5;
+  padding:5.5mm 5.5mm 0;
+  flex-shrink:0;
+}
+
+.brand {
+  font-size:4.5pt;
+  letter-spacing:2px;
+  color:#9B6B4A;
+  text-transform:uppercase;
+  font-weight:700;
+  margin-bottom:3.5mm;
+}
+
+.hl {
+  font-family:'Playfair Display',Georgia,serif;
+  font-weight:700;
+  line-height:1.06;
+  letter-spacing:-0.3px;
+}
+.hl-dark { font-size:18pt; color:#0F3D52; display:block; }
+.hl-cop  { font-size:20pt; color:#C48A62; font-style:italic; display:block; }
+
+.sub {
+  font-size:5pt;
+  color:#7A8D96;
+  line-height:1.6;
+  margin-top:2.5mm;
+  margin-bottom:3.5mm;
+}
+
+/* Mountain */
+.mtn { display:block; flex-shrink:0; line-height:0; margin-bottom:-1px; }
+
+/* BOTTOM petrol */
+.bot {
+  background:#0A2E40;
+  padding:3.5mm 5.5mm 4.5mm;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.sec-lbl {
+  font-size:4pt;
+  letter-spacing:1.8px;
+  color:#C48A62;
+  text-transform:uppercase;
+  font-weight:700;
+  margin-bottom:2.5mm;
+}
+
+.route { margin-bottom:2mm; }
+.r-top { display:flex; justify-content:space-between; align-items:baseline; gap:1.5mm; }
+.r-name  { font-size:6.5pt; color:#EEF2F4; font-weight:500; flex:1; min-width:0; }
+.r-price { font-size:5.5pt; color:#4A9AB8; white-space:nowrap; flex-shrink:0; }
+.r-dates { font-size:5.5pt; color:#C48A62; margin-top:0.8mm; }
+.r-meta  { font-size:4.5pt; color:#2A7A9B; margin-top:0.3mm; }
+
+.div { height:0.3pt; background:#1B5F7A; margin:2mm 0 1.5mm; }
+
+.footer { display:flex; align-items:center; justify-content:space-between; gap:2mm; }
+.contact { font-size:5pt; line-height:2; color:#4A9AB8; }
+.cl { color:#C48A62; font-size:4pt; letter-spacing:0.8px; text-transform:uppercase; margin-right:1mm; font-weight:700; }
+
+.qr-wrap { display:flex; flex-direction:column; align-items:center; gap:1mm; flex-shrink:0; }
+.qr-box {
+  background:#F8F7F5;
+  border-radius:2px;
+  padding:2px;
+  width:11mm;
+  height:11mm;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.qr-box canvas, .qr-box img { width:100% !important; height:100% !important; }
+.qr-lbl { font-size:3.5pt; letter-spacing:0.8px; color:#2A7A9B; text-transform:uppercase; }
+
+@page { size:A4 portrait; margin:0; }
+</style>
+</head>
+<body>
+
+<p class="hint">
+  Chrome → Ctrl+P → <strong>A4 · Vertical · Márgenes: Ninguno · Escala: 100% · ✅ Gráficos de fondo</strong><br>
+  Guardar como PDF → llevar a copistería en papel 160g · Recortar por las líneas punteadas
+</p>
+
+<div class="page">
+
+  <!-- FLYER 1 -->
+  <div class="cell">
+    <div class="flyer">
+      <div class="top">
+        <div class="brand">Clas Tours · by Davila Quiroz</div>
+        <div class="hl">
+          <span class="hl-dark">Camina los</span>
+          <span class="hl-cop">Alpes suizos</span>
+        </div>
+        <div class="sub">Caminatas guiadas en español<br>para hispanohablantes en Suiza · Ipsach, Berna</div>
+      </div>
+      <svg class="mtn" viewBox="0 0 300 72" xmlns="http://www.w3.org/2000/svg">
+        <rect width="300" height="36" fill="#F8F7F5"/>
+        <rect y="36" width="300" height="36" fill="#0A2E40"/>
+        <path d="M0,72 L0,38 L20,20 L40,32 L65,8 L90,22 L118,2 L145,18 L172,6 L199,22 L225,4 L250,18 L275,8 L300,16 L300,72 Z" fill="#0D3347"/>
+        <path d="M0,72 L0,52 L18,40 L40,50 L65,32 L90,44 L118,24 L145,38 L172,26 L199,40 L225,28 L250,40 L275,30 L300,38 L300,72 Z" fill="#0F3D52"/>
+        <path d="M0,72 L0,62 L22,52 L46,60 L72,46 L98,56 L124,42 L150,54 L176,44 L202,56 L228,46 L254,58 L278,48 L300,54 L300,72 Z" fill="#1B5F7A"/>
+        <polygon points="115,0 118,-6 124,1" fill="#C48A62" opacity="0.78"/>
+        <polygon points="63,6 65,0 71,7" fill="#9B6B4A" opacity="0.65"/>
+        <polygon points="170,4 172,-2 178,5" fill="#C48A62" opacity="0.70"/>
+        <polygon points="223,2 225,-4 231,3" fill="#9B6B4A" opacity="0.60"/>
+      </svg>
+      <div class="bot">
+        <div>
+          <div class="sec-lbl">Próximas salidas 2026</div>
+          <div class="route"><div class="r-top"><span class="r-name">Creux du Van</span><span class="r-price">T2 · CHF 120</span></div><div class="r-dates">30 may · 6 jun · 5 sep</div><div class="r-meta">Apto principiantes · máx. 10 plazas</div></div>
+          <div class="route"><div class="r-top"><span class="r-name">Kandersteg noche en refugio</span><span class="r-price">T3 · CHF 280</span></div><div class="r-dates">26–27 jun · Todo incluido</div><div class="r-meta">Nivel intermedio · solo 5 plazas</div></div>
+          <div class="route"><div class="r-top"><span class="r-name">Augstmatthorn → Harderkulm</span><span class="r-price">T3 · CHF 120</span></div><div class="r-dates">8 ago</div><div class="r-meta">Nivel exigente · máx. 6 plazas</div></div>
+        </div>
+        <div>
+          <div class="div"></div>
+          <div class="footer">
+            <div class="contact">
+              <div><span class="cl">Reservas</span>clastours.ch/calendario</div>
+              <div><span class="cl">IG</span>@clastours.ch</div>
+              <div><span class="cl">WA</span>+41 77 460 36 41</div>
+            </div>
+            <div class="qr-wrap"><div class="qr-box" id="q1"></div><div class="qr-lbl">Reservar</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLYER 2 -->
+  <div class="cell">
+    <div class="flyer">
+      <div class="top">
+        <div class="brand">Clas Tours · by Davila Quiroz</div>
+        <div class="hl">
+          <span class="hl-dark">Camina los</span>
+          <span class="hl-cop">Alpes suizos</span>
+        </div>
+        <div class="sub">Caminatas guiadas en español<br>para hispanohablantes en Suiza · Ipsach, Berna</div>
+      </div>
+      <svg class="mtn" viewBox="0 0 300 72" xmlns="http://www.w3.org/2000/svg">
+        <rect width="300" height="36" fill="#F8F7F5"/>
+        <rect y="36" width="300" height="36" fill="#0A2E40"/>
+        <path d="M0,72 L0,38 L20,20 L40,32 L65,8 L90,22 L118,2 L145,18 L172,6 L199,22 L225,4 L250,18 L275,8 L300,16 L300,72 Z" fill="#0D3347"/>
+        <path d="M0,72 L0,52 L18,40 L40,50 L65,32 L90,44 L118,24 L145,38 L172,26 L199,40 L225,28 L250,40 L275,30 L300,38 L300,72 Z" fill="#0F3D52"/>
+        <path d="M0,72 L0,62 L22,52 L46,60 L72,46 L98,56 L124,42 L150,54 L176,44 L202,56 L228,46 L254,58 L278,48 L300,54 L300,72 Z" fill="#1B5F7A"/>
+        <polygon points="115,0 118,-6 124,1" fill="#C48A62" opacity="0.78"/>
+        <polygon points="63,6 65,0 71,7" fill="#9B6B4A" opacity="0.65"/>
+        <polygon points="170,4 172,-2 178,5" fill="#C48A62" opacity="0.70"/>
+        <polygon points="223,2 225,-4 231,3" fill="#9B6B4A" opacity="0.60"/>
+      </svg>
+      <div class="bot">
+        <div>
+          <div class="sec-lbl">Próximas salidas 2026</div>
+          <div class="route"><div class="r-top"><span class="r-name">Creux du Van</span><span class="r-price">T2 · CHF 120</span></div><div class="r-dates">30 may · 6 jun · 5 sep</div><div class="r-meta">Apto principiantes · máx. 10 plazas</div></div>
+          <div class="route"><div class="r-top"><span class="r-name">Kandersteg noche en refugio</span><span class="r-price">T3 · CHF 280</span></div><div class="r-dates">26–27 jun · Todo incluido</div><div class="r-meta">Nivel intermedio · solo 5 plazas</div></div>
+          <div class="route"><div class="r-top"><span class="r-name">Augstmatthorn → Harderkulm</span><span class="r-price">T3 · CHF 120</span></div><div class="r-dates">8 ago</div><div class="r-meta">Nivel exigente · máx. 6 plazas</div></div>
+        </div>
+        <div>
+          <div class="div"></div>
+          <div class="footer">
+            <div class="contact">
+              <div><span class="cl">Reservas</span>clastours.ch/calendario</div>
+              <div><span class="cl">IG</span>@clastours.ch</div>
+              <div><span class="cl">WA</span>+41 77 460 36 41</div>
+            </div>
+            <div class="qr-wrap"><div class="qr-box" id="q2"></div><div class="qr-lbl">Reservar</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLYER 3 -->
+  <div class="cell">
+    <div class="flyer">
+      <div class="top">
+        <div class="brand">Clas Tours · by Davila Quiroz</div>
+        <div class="hl">
+          <span class="hl-dark">Camina los</span>
+          <span class="hl-cop">Alpes suizos</span>
+        </div>
+        <div class="sub">Caminatas guiadas en español<br>para hispanohablantes en Suiza · Ipsach, Berna</div>
+      </div>
+      <svg class="mtn" viewBox="0 0 300 72" xmlns="http://www.w3.org/2000/svg">
+        <rect width="300" height="36" fill="#F8F7F5"/>
+        <rect y="36" width="300" height="36" fill="#0A2E40"/>
+        <path d="M0,72 L0,38 L20,20 L40,32 L65,8 L90,22 L118,2 L145,18 L172,6 L199,22 L225,4 L250,18 L275,8 L300,16 L300,72 Z" fill="#0D3347"/>
+        <path d="M0,72 L0,52 L18,40 L40,50 L65,32 L90,44 L118,24 L145,38 L172,26 L199,40 L225,28 L250,40 L275,30 L300,38 L300,72 Z" fill="#0F3D52"/>
+        <path d="M0,72 L0,62 L22,52 L46,60 L72,46 L98,56 L124,42 L150,54 L176,44 L202,56 L228,46 L254,58 L278,48 L300,54 L300,72 Z" fill="#1B5F7A"/>
+        <polygon points="115,0 118,-6 124,1" fill="#C48A62" opacity="0.78"/>
+        <polygon points="63,6 65,0 71,7" fill="#9B6B4A" opacity="0.65"/>
+        <polygon points="170,4 172,-2 178,5" fill="#C48A62" opacity="0.70"/>
+        <polygon points="223,2 225,-4 231,3" fill="#9B6B4A" opacity="0.60"/>
+      </svg>
+      <div class="bot">
+        <div>
+          <div class="sec-lbl">Próximas salidas 2026</div>
+          <div class="route"><div class="r-top"><span class="r-name">Creux du Van</span><span class="r-price">T2 · CHF 120</span></div><div class="r-dates">30 may · 6 jun · 5 sep</div><div class="r-meta">Apto principiantes · máx. 10 plazas</div></div>
+          <div class="route"><div class="r-top"><span class="r-name">Kandersteg noche en refugio</span><span class="r-price">T3 · CHF 280</span></div><div class="r-dates">26–27 jun · Todo incluido</div><div class="r-meta">Nivel intermedio · solo 5 plazas</div></div>
+          <div class="route"><div class="r-top"><span class="r-name">Augstmatthorn → Harderkulm</span><span class="r-price">T3 · CHF 120</span></div><div class="r-dates">8 ago</div><div class="r-meta">Nivel exigente · máx. 6 plazas</div></div>
+        </div>
+        <div>
+          <div class="div"></div>
+          <div class="footer">
+            <div class="contact">
+              <div><span class="cl">Reservas</span>clastours.ch/calendario</div>
+              <div><span class="cl">IG</span>@clastours.ch</div>
+              <div><span class="cl">WA</span>+41 77 460 36 41</div>
+            </div>
+            <div class="qr-wrap"><div class="qr-box" id="q3"></div><div class="qr-lbl">Reservar</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLYER 4 -->
+  <div class="cell">
+    <div class="flyer">
+      <div class="top">
+        <div class="brand">Clas Tours · by Davila Quiroz</div>
+        <div class="hl">
+          <span class="hl-dark">Camina los</span>
+          <span class="hl-cop">Alpes suizos</span>
+        </div>
+        <div class="sub">Caminatas guiadas en español<br>para hispanohablantes en Suiza · Ipsach, Berna</div>
+      </div>
+      <svg class="mtn" viewBox="0 0 300 72" xmlns="http://www.w3.org/2000/svg">
+        <rect width="300" height="36" fill="#F8F7F5"/>
+        <rect y="36" width="300" height="36" fill="#0A2E40"/>
+        <path d="M0,72 L0,38 L20,20 L40,32 L65,8 L90,22 L118,2 L145,18 L172,6 L199,22 L225,4 L250,18 L275,8 L300,16 L300,72 Z" fill="#0D3347"/>
+        <path d="M0,72 L0,52 L18,40 L40,50 L65,32 L90,44 L118,24 L145,38 L172,26 L199,40 L225,28 L250,40 L275,30 L300,38 L300,72 Z" fill="#0F3D52"/>
+        <path d="M0,72 L0,62 L22,52 L46,60 L72,46 L98,56 L124,42 L150,54 L176,44 L202,56 L228,46 L254,58 L278,48 L300,54 L300,72 Z" fill="#1B5F7A"/>
+        <polygon points="115,0 118,-6 124,1" fill="#C48A62" opacity="0.78"/>
+        <polygon points="63,6 65,0 71,7" fill="#9B6B4A" opacity="0.65"/>
+        <polygon points="170,4 172,-2 178,5" fill="#C48A62" opacity="0.70"/>
+        <polygon points="223,2 225,-4 231,3" fill="#9B6B4A" opacity="0.60"/>
+      </svg>
+      <div class="bot">
+        <div>
+          <div class="sec-lbl">Próximas salidas 2026</div>
+          <div class="route"><div class="r-top"><span class="r-name">Creux du Van</span><span class="r-price">T2 · CHF 120</span></div><div class="r-dates">30 may · 6 jun · 5 sep</div><div class="r-meta">Apto principiantes · máx. 10 plazas</div></div>
+          <div class="route"><div class="r-top"><span class="r-name">Kandersteg noche en refugio</span><span class="r-price">T3 · CHF 280</span></div><div class="r-dates">26–27 jun · Todo incluido</div><div class="r-meta">Nivel intermedio · solo 5 plazas</div></div>
+          <div class="route"><div class="r-top"><span class="r-name">Augstmatthorn → Harderkulm</span><span class="r-price">T3 · CHF 120</span></div><div class="r-dates">8 ago</div><div class="r-meta">Nivel exigente · máx. 6 plazas</div></div>
+        </div>
+        <div>
+          <div class="div"></div>
+          <div class="footer">
+            <div class="contact">
+              <div><span class="cl">Reservas</span>clastours.ch/calendario</div>
+              <div><span class="cl">IG</span>@clastours.ch</div>
+              <div><span class="cl">WA</span>+41 77 460 36 41</div>
+            </div>
+            <div class="qr-wrap"><div class="qr-box" id="q4"></div><div class="qr-lbl">Reservar</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const o = { text:"https://clastours.ch/clastours-calendario.html", width:40, height:40, colorDark:"#0F3D52", colorLight:"#F8F7F5", correctLevel:QRCode.CorrectLevel.M };
+["q1","q2","q3","q4"].forEach(id => new QRCode(document.getElementById(id), o));
+</script>
+</body>
+</html>
