@@ -225,8 +225,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                   <input type="checkbox" id="s1-foto">
                   <label for="s1-foto">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html">Ver política →</a></label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s1','Creux du Van · 30 mayo 2026')">Reservar mi plaza →</button>
-                <p class="form-nota">Recibirás confirmación por email · Sin compromiso hasta confirmar pago</p>
+                <button class="btn-inscribir" onclick="inscribir('s1','Creux du Van · 30 mayo 2026')">Reservar por WhatsApp →</button>
+                <p class="form-nota">Te contactamos en menos de 24h · Sin compromiso hasta confirmar pago</p>
               </div>
             </div>
           </div>
@@ -303,8 +303,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                   <input type="checkbox" id="s2-foto">
                   <label for="s2-foto">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html">Ver política →</a></label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s2','Creux du Van · 6 junio 2026')">Reservar mi plaza →</button>
-                <p class="form-nota">Recibirás confirmación por email · Sin compromiso hasta confirmar pago</p>
+                <button class="btn-inscribir" onclick="inscribir('s2','Creux du Van · 6 junio 2026')">Reservar por WhatsApp →</button>
+                <p class="form-nota">Te contactamos en menos de 24h · Sin compromiso hasta confirmar pago</p>
               </div>
             </div>
           </div>
@@ -397,8 +397,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                   <input type="checkbox" id="s3-foto">
                   <label for="s3-foto">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html">Ver política →</a></label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s3','Kandersteg 2 días · 26–27 junio 2026')">Reservar mi plaza →</button>
-                <p class="form-nota">Solo 5 plazas disponibles · Confirmación por email</p>
+                <button class="btn-inscribir" onclick="inscribir('s3','Kandersteg 2 días · 26–27 junio 2026')">Reservar por WhatsApp →</button>
+                <p class="form-nota">Solo 5 plazas disponibles · Te contactamos en menos de 24h</p>
               </div>
             </div>
           </div>
@@ -482,8 +482,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                   <input type="checkbox" id="s4-foto">
                   <label for="s4-foto">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html">Ver política →</a></label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s4','Augstmatthorn · 8 agosto 2026')">Reservar mi plaza →</button>
-                <p class="form-nota">Recibirás confirmación por email · Sin compromiso hasta confirmar pago</p>
+                <button class="btn-inscribir" onclick="inscribir('s4','Augstmatthorn · 8 agosto 2026')">Reservar por WhatsApp →</button>
+                <p class="form-nota">Te contactamos en menos de 24h · Sin compromiso hasta confirmar pago</p>
               </div>
             </div>
           </div>
@@ -560,8 +560,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                   <input type="checkbox" id="s5-foto">
                   <label for="s5-foto">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html">Ver política →</a></label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s5','Creux du Van · 5 septiembre 2026')">Reservar mi plaza →</button>
-                <p class="form-nota">Recibirás confirmación por email · Sin compromiso hasta confirmar pago</p>
+                <button class="btn-inscribir" onclick="inscribir('s5','Creux du Van · 5 septiembre 2026')">Reservar por WhatsApp →</button>
+                <p class="form-nota">Te contactamos en menos de 24h · Sin compromiso hasta confirmar pago</p>
               </div>
             </div>
           </div>
@@ -632,10 +632,16 @@ function inscribir(id, salida) {
   if (msg) body += '%0AMensaje: ' + encodeURIComponent(msg);
   body += '%0AAutorización fotos: ' + (foto ? 'Sí' : 'No');
 
-  var mailtoLink = 'mailto:info@clastours.ch?subject=' + encodeURIComponent('Inscripción – ' + salida) + '&body=' + body;
-  window.location.href = mailtoLink;
-
-  document.getElementById('modal-texto').textContent = 'Tu solicitud para ' + salida + ' ha sido enviada a info@clastours.ch. Santiago te contactará en menos de 24 horas para confirmar tu plaza y coordinar el pago.';
+  var waMsg = 'Hola Santiago, quiero inscribirme en:%0A%0A' + encodeURIComponent(salida) + '%0A%0ANombre: ' + encodeURIComponent(nombre) + '%0AEmail: ' + encodeURIComponent(email);
+  if (wa) waMsg += '%0AWhatsApp: ' + encodeURIComponent(wa);
+  waMsg += '%0APersonas: ' + encodeURIComponent(personas);
+  if (nivel) waMsg += '%0ANivel: ' + encodeURIComponent(nivel);
+  if (veg && veg !== 'no') waMsg += '%0AVegetariano: Sí';
+  if (alerg && alerg !== 'no') waMsg += '%0AIntolerancia gluten/lactosa: Sí';
+  if (msg) waMsg += '%0AMensaje: ' + encodeURIComponent(msg);
+  waMsg += '%0AAutorización fotos: ' + (foto ? 'Sí' : 'No');
+  window.open('https://wa.me/41774603641?text=' + waMsg, '_blank');
+  document.getElementById('modal-texto').textContent = 'Tu solicitud para ' + salida + ' ha sido enviada. Santiago te contactará en menos de 24 horas para confirmar tu plaza y coordinar el pago.';
   document.getElementById('modal-confirm').classList.add('open');
 }
 </script>
