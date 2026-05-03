@@ -179,6 +179,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 .cw-day-detail{font-size:0.625rem;color:var(--pt);line-height:1.5}
 .cw-day-detail-row{display:flex;align-items:center;justify-content:center;gap:3px}
 .cw-footer{margin-top:0.85rem;font-size:0.6rem;color:var(--du);text-align:right;font-style:italic}
+.cw-footer a{color:var(--pt);text-decoration:none;border-bottom:1px solid rgba(27,95,122,0.3);transition:color 0.2s,border-color 0.2s}
+.cw-footer a:hover{color:var(--cu);border-bottom-color:var(--cu)}
 .cw-loading,.cw-error{grid-column:span 7;text-align:center;padding:1.5rem;font-size:0.8rem}
 .cw-loading{color:var(--pt)}
 .cw-error{color:var(--cu)}
@@ -697,7 +699,7 @@ function filtrar(tag,btn){
       '</div>' +
       '<div class="cw-divider"></div>' +
       '<div class="cw-grid"><div class="cw-loading">Cargando datos meteorológicos…</div></div>' +
-      '<div class="cw-footer">Datos: Modelo ICON-CH1 (MeteoSwiss) vía Open-Meteo</div>' +
+      '<div class="cw-footer">Datos: <a href="https://www.meteoswiss.admin.ch/weather/measurement-systems/atmosphere/icon-ch1-icon-ch2.html" target="_blank" rel="noopener">Modelo ICON-CH1 (MeteoSwiss)</a> vía <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a></div>' +
     '</div>';
     var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lat +
               '&longitude=' + lon +
