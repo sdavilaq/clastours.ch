@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- ========== FAVICON ========== -->
+   <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0F3D52">
-<!-- ============================= -->
+   
 <title>Mis Caminatas – Clas Tours by Davila Quiroz</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -360,7 +360,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 
       <!-- WIDGET CLIMA · KANDERSTEG -->
       <div class="blbl">Pronóstico del tiempo</div>
-      <div class="cw-widget" data-lat="46.49" data-lon="7.72" data-route="Kandersteg · Oeschinensee"></div>
+      <div class="cw-widget" data-lat="46.49" data-lon="7.72" data-route="Kandersteg · Oeschinensee" data-meteoswiss-url="https://www.meteoschweiz.admin.ch/lokalprognose/bluemlisalphuette-sac.html#forecast-tab=detail-view"></div>
     </div>
     <div class="rside">
       <div class="pcard">
@@ -453,7 +453,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 
       <!-- WIDGET CLIMA · CREUX DU VAN -->
       <div class="blbl">Pronóstico del tiempo</div>
-      <div class="cw-widget" data-lat="46.93" data-lon="6.73" data-route="Creux du Van"></div>
+      <div class="cw-widget" data-lat="46.93" data-lon="6.73" data-route="Creux du Van" data-meteoswiss-url="https://www.meteoschweiz.admin.ch/lokalprognose/creux-du-van.html#forecast-tab=detail-view"></div>
     </div>
     <div class="rside">
       <div class="pcard">
@@ -546,7 +546,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 
       <!-- WIDGET CLIMA · AUGSTMATTHORN -->
       <div class="blbl">Pronóstico del tiempo</div>
-      <div class="cw-widget" data-lat="46.72" data-lon="7.92" data-route="Augstmatthorn · Harderkulm"></div>
+      <div class="cw-widget" data-lat="46.72" data-lon="7.92" data-route="Augstmatthorn · Harderkulm" data-meteoswiss-url="https://www.meteoschweiz.admin.ch/lokalprognose/interlaken/3800.html#forecast-tab=detail-view"></div>
     </div>
     <div class="rside">
       <div class="pcard">
@@ -694,6 +694,7 @@ function filtrar(tag,btn){
     var lat = widget.dataset.lat;
     var lon = widget.dataset.lon;
     var route = widget.dataset.route || 'Tu ruta';
+    var meteoswissUrl = widget.dataset.meteoswissUrl || 'https://www.meteoschweiz.admin.ch/';
     widget.innerHTML = '<div class="cw-card">' +
       '<div class="cw-header">' +
         '<div>' +
@@ -707,7 +708,7 @@ function filtrar(tag,btn){
       '</div>' +
       '<div class="cw-divider"></div>' +
       '<div class="cw-grid"><div class="cw-loading">Cargando datos meteorológicos…</div></div>' +
-      '<div class="cw-footer">Datos: <a href="https://www.meteoswiss.admin.ch/weather/measurement-systems/atmosphere/icon-ch1-icon-ch2.html" target="_blank" rel="noopener">Modelo ICON-CH1 (MeteoSwiss)</a> vía <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a></div>' +
+      '<div class="cw-footer">Datos: <a href="' + meteoswissUrl + '" target="_blank" rel="noopener">Modelo ICON-CH1 (MeteoSwiss)</a> vía <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a></div>' +
     '</div>';
     var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lat +
               '&longitude=' + lon +
