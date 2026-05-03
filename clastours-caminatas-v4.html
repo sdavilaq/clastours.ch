@@ -151,6 +151,38 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 .nota{background:rgba(27,95,122,0.04);border:1px solid rgba(27,95,122,0.12);border-left:3px solid var(--pl);border-radius:0 4px 4px 0;padding:0.75rem 1rem;font-size:0.845rem;color:var(--sl);display:flex;gap:8px;align-items:flex-start;margin-top:0.75rem}
 .nota svg{width:14px;height:14px;color:var(--pl);flex-shrink:0;margin-top:2px}
 
+/* ============================================
+   WIDGET CLIMA - ICON-CH1 / MeteoSwiss
+   ============================================ */
+.cw-widget{margin-top:0.5rem;font-family:'DM Sans',sans-serif}
+.cw-card{background:#fff;border:1px solid var(--st);border-radius:6px;padding:1.25rem 1.5rem}
+.cw-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;flex-wrap:wrap;gap:8px}
+.cw-eyebrow-row{display:flex;align-items:center;gap:8px;font-size:0.65rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--pl);margin-bottom:0.3rem}
+.cw-eyebrow-row::before{content:'';display:block;width:20px;height:1px;background:currentColor}
+.cw-title-cw{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--dk);font-weight:700;line-height:1.2}
+.cw-meta-right{text-align:right;flex-shrink:0}
+.cw-update{font-size:0.7rem;color:var(--du)}
+.cw-source{font-size:0.6rem;letter-spacing:0.12em;color:var(--cu);text-transform:uppercase;margin-top:2px;font-weight:500}
+.cw-divider{height:1px;background:linear-gradient(90deg,transparent,var(--cl),transparent);margin:0.85rem 0 1rem}
+.cw-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.cw-day{background:var(--sn);border:1px solid var(--st);border-radius:4px;padding:10px 4px;text-align:center;transition:transform 0.2s ease}
+.cw-day-today{background:#fff;border-color:var(--cu);box-shadow:0 1px 4px rgba(196,138,98,0.15)}
+.cw-day:hover{transform:translateY(-1px)}
+.cw-day-name{font-size:0.625rem;letter-spacing:0.1em;color:var(--pt);font-weight:500}
+.cw-day-name.today{color:var(--cu);font-weight:700}
+.cw-day-num{font-size:0.85rem;color:var(--dk);font-weight:300;margin-top:1px;font-family:'Cormorant Garamond',serif}
+.cw-day-icon{margin:5px 0 3px;line-height:1;display:flex;align-items:center;justify-content:center;height:26px}
+.cw-day-icon svg{width:24px;height:24px}
+.cw-day-temp{font-size:0.85rem;color:var(--dk);font-weight:500}
+.cw-day-temp-min{color:var(--cu);font-weight:300;font-size:0.7rem}
+.cw-day-line{height:1px;background:var(--st);margin:5px 4px}
+.cw-day-detail{font-size:0.625rem;color:var(--pt);line-height:1.5}
+.cw-day-detail-row{display:flex;align-items:center;justify-content:center;gap:3px}
+.cw-footer{margin-top:0.85rem;font-size:0.6rem;color:var(--du);text-align:right;font-style:italic}
+.cw-loading,.cw-error{grid-column:span 7;text-align:center;padding:1.5rem;font-size:0.8rem}
+.cw-loading{color:var(--pt)}
+.cw-error{color:var(--cu)}
+
 .cta-f{background:var(--dk);padding:4rem 2rem;text-align:center}
 .cta-f h2{font-family:'Cormorant Garamond',serif;font-size:2.25rem;font-weight:700;color:#fff;margin-bottom:0.75rem}
 .cta-f h2 em{font-style:italic;color:var(--cl)}
@@ -171,7 +203,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 .wa svg{width:26px;height:26px;color:#fff}
 
 @media(max-width:900px){.rbody{grid-template-columns:1fr}.rmain{border-right:none;border-bottom:1px solid var(--st)}.stats{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:768px){.nav-links,.nav-cta{display:none}.burger{display:flex}.sec{padding:3rem 1.25rem}.ruta-hdr{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.igrid{grid-template-columns:1fr}.carousel{height:auto!important;max-height:none!important;min-height:0!important}.slide{height:auto!important;min-height:0!important}.slide img{height:auto!important;max-height:70vw;object-fit:contain!important;background:var(--dk)}}
+@media(max-width:768px){.nav-links,.nav-cta{display:none}.burger{display:flex}.sec{padding:3rem 1.25rem}.ruta-hdr{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.igrid{grid-template-columns:1fr}.carousel{height:auto!important;max-height:none!important;min-height:0!important}.slide{height:auto!important;min-height:0!important}.slide img{height:auto!important;max-height:70vw;object-fit:contain!important;background:var(--dk)}.cw-card{padding:1rem 0.85rem}.cw-grid{gap:3px}.cw-day{padding:8px 2px}.cw-day-name{font-size:0.55rem}.cw-day-icon svg{width:20px;height:20px}.cw-day-temp{font-size:0.75rem}.cw-day-temp-min{font-size:0.65rem}.cw-day-detail{font-size:0.55rem}}
 @media(max-width:480px){.stats{grid-template-columns:1fr}}
 </style>
 </head>
@@ -315,6 +347,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
         <div class="eitem"><div class="edot"></div>Mochila 30–40L con ropa para la noche</div>
         <div class="eitem"><div class="edot"></div>Protector solar y gafas</div>
       </div>
+
+      <!-- WIDGET CLIMA · KANDERSTEG -->
+      <div class="blbl">Pronóstico del tiempo</div>
+      <div class="cw-widget" data-lat="46.49" data-lon="7.72" data-route="Kandersteg · Oeschinensee"></div>
     </div>
     <div class="rside">
       <div class="pcard">
@@ -404,6 +440,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
         <div class="eitem"><div class="edot"></div>Bastones (recomendado en invierno)</div>
         <div class="eitem"><div class="edot"></div>Crampones de senderismo (invierno con nieve)</div>
       </div>
+
+      <!-- WIDGET CLIMA · CREUX DU VAN -->
+      <div class="blbl">Pronóstico del tiempo</div>
+      <div class="cw-widget" data-lat="46.93" data-lon="6.73" data-route="Creux du Van"></div>
     </div>
     <div class="rside">
       <div class="pcard">
@@ -493,6 +533,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
         <div class="eitem"><div class="edot"></div>Bastones (muy recomendado)</div>
         <div class="eitem"><div class="edot"></div>Protector solar alta protección</div>
       </div>
+
+      <!-- WIDGET CLIMA · AUGSTMATTHORN -->
+      <div class="blbl">Pronóstico del tiempo</div>
+      <div class="cw-widget" data-lat="46.72" data-lon="7.92" data-route="Augstmatthorn · Harderkulm"></div>
     </div>
     <div class="rside">
       <div class="pcard">
@@ -535,7 +579,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
 var C={};
 function move(id,dir){
   if(!C[id])C[id]={i:0};
@@ -585,6 +630,126 @@ function filtrar(tag,btn){
     r.style.display=(tag==='all'||r.dataset.tags.includes(tag))?'':'none';
   });
 }
+</script>
+
+<!-- ============================================
+     WIDGET CLIMA - ICON-CH1 / MeteoSwiss
+     Datos via Open-Meteo (modelo oficial suizo)
+     ============================================ -->
+<script>
+(function() {
+  'use strict';
+  var ICONS = {
+    sun: '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#C48A62" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>',
+    cloudSun: '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#9B6B4A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M5.22 5.22l1.42 1.42M2 12h2M20 12h2M15.95 6.05A4 4 0 0 0 8 7.5"/><path d="M16 16a3.5 3.5 0 0 0 0-7H7a4 4 0 0 0-4 4c0 1.65 1 3 2.5 3h10.5z" stroke="#1B5F7A"/></svg>',
+    cloud: '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1B5F7A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8A7 7 0 1 0 4 15.7"/></svg>',
+    fog: '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1B5F7A" stroke-width="1.8" stroke-linecap="round"><path d="M5 5h11M3 10h17M3 15h17M5 20h11"/></svg>',
+    drizzle: '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1B5F7A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 13v6M8 13v6M12 15v6M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"/></svg>',
+    rain: '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#0F3D52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 14v6M8 14v6M12 16v6M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"/></svg>',
+    snow: '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#4A9AB8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/><path d="M8 16h.01M8 20h.01M12 18h.01M12 22h.01M16 16h.01M16 20h.01"/></svg>',
+    storm: '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#0F3D52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"/><polyline points="13 11 9 17 15 17 11 23"/></svg>'
+  };
+  var SMALL = {
+    drop: '<svg width="9" height="9" viewBox="0 0 24 24" fill="#4A9AB8" style="vertical-align:-1px;margin-right:2px"><path d="M12 2.5c-2 4-7 9.5-7 13.5a7 7 0 0 0 14 0c0-4-5-9.5-7-13.5z"/></svg>',
+    wind: '<svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#9B6B4A" stroke-width="2.4" stroke-linecap="round" style="vertical-align:-1px;margin-right:2px"><path d="M3 8h13a3 3 0 1 0-3-3"/><path d="M3 12h17a3 3 0 1 1-3 3"/><path d="M3 16h11"/></svg>'
+  };
+  function getIcon(code) {
+    if (code === 0) return ICONS.sun;
+    if (code <= 2) return ICONS.cloudSun;
+    if (code === 3) return ICONS.cloud;
+    if (code <= 48) return ICONS.fog;
+    if (code <= 57) return ICONS.drizzle;
+    if (code <= 67) return ICONS.rain;
+    if (code <= 77) return ICONS.snow;
+    if (code <= 82) return ICONS.rain;
+    if (code <= 86) return ICONS.snow;
+    if (code >= 95) return ICONS.storm;
+    return ICONS.cloud;
+  }
+  function dayName(dateStr, isToday) {
+    if (isToday) return 'HOY';
+    var d = new Date(dateStr);
+    var names = ['DOM', 'LUN', 'MAR', 'MIÉ', 'JUE', 'VIE', 'SÁB'];
+    return names[d.getDay()];
+  }
+  function dayNumber(dateStr) {
+    return new Date(dateStr).getDate();
+  }
+  function formatUpdate() {
+    var n = new Date();
+    var pad = function(x) { return String(x).padStart(2, '0'); };
+    return 'Actualizado: ' + pad(n.getDate()) + '/' + pad(n.getMonth() + 1) + ' · ' + pad(n.getHours()) + ':' + pad(n.getMinutes());
+  }
+  function renderWidget(widget) {
+    var lat = widget.dataset.lat;
+    var lon = widget.dataset.lon;
+    var route = widget.dataset.route || 'Tu ruta';
+    widget.innerHTML = '<div class="cw-card">' +
+      '<div class="cw-header">' +
+        '<div>' +
+          '<div class="cw-eyebrow-row">Pronóstico 7 días</div>' +
+          '<div class="cw-title-cw">' + route + '</div>' +
+        '</div>' +
+        '<div class="cw-meta-right">' +
+          '<div class="cw-update"></div>' +
+          '<div class="cw-source">ICON-CH1 · MeteoSwiss</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="cw-divider"></div>' +
+      '<div class="cw-grid"><div class="cw-loading">Cargando datos meteorológicos…</div></div>' +
+      '<div class="cw-footer">Datos: Modelo ICON-CH1 (MeteoSwiss) vía Open-Meteo</div>' +
+    '</div>';
+    var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lat +
+              '&longitude=' + lon +
+              '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max' +
+              '&timezone=Europe%2FZurich&forecast_days=7&models=icon_seamless';
+    fetch(url)
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function(data) {
+        var grid = widget.querySelector('.cw-grid');
+        grid.innerHTML = '';
+        for (var i = 0; i < 7; i++) {
+          var date = data.daily.time[i];
+          var code = data.daily.weather_code[i];
+          var tmax = Math.round(data.daily.temperature_2m_max[i]);
+          var tmin = Math.round(data.daily.temperature_2m_min[i]);
+          var pp = data.daily.precipitation_probability_max[i] || 0;
+          var w = Math.round(data.daily.wind_speed_10m_max[i]);
+          var isToday = i === 0;
+          var dayCard = document.createElement('div');
+          dayCard.className = 'cw-day' + (isToday ? ' cw-day-today' : '');
+          dayCard.innerHTML =
+            '<div class="cw-day-name' + (isToday ? ' today' : '') + '">' + dayName(date, isToday) + '</div>' +
+            '<div class="cw-day-num">' + dayNumber(date) + '</div>' +
+            '<div class="cw-day-icon">' + getIcon(code) + '</div>' +
+            '<div class="cw-day-temp">' + tmax + '°<span class="cw-day-temp-min"> / ' + tmin + '°</span></div>' +
+            '<div class="cw-day-line"></div>' +
+            '<div class="cw-day-detail">' +
+              '<div class="cw-day-detail-row">' + SMALL.drop + pp + '%</div>' +
+              '<div class="cw-day-detail-row">' + SMALL.wind + w + ' km/h</div>' +
+            '</div>';
+          grid.appendChild(dayCard);
+        }
+        widget.querySelector('.cw-update').textContent = formatUpdate();
+      })
+      .catch(function(err) {
+        var grid = widget.querySelector('.cw-grid');
+        grid.innerHTML = '<div class="cw-error">No se pudieron cargar los datos meteorológicos. Por favor, recarga la página o inténtalo más tarde.</div>';
+      });
+  }
+  function init() {
+    var widgets = document.querySelectorAll('.cw-widget');
+    widgets.forEach(renderWidget);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
 </script>
 </body>
 </html>
