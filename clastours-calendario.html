@@ -133,6 +133,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 <!-- SEO -->
 <meta name="description" content="Salidas a demanda de Clas Tours: elige tu ruta, propón tu fecha (mínimo 2 personas) y armamos la caminata guiada en español por los Alpes suizos.">
 <link rel="canonical" href="https://clastours.ch/clastours-calendario.html">
+<link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-calendario.html">
+<link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-calendario.html">
+<link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-calendario.html">
+<link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-calendario.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Clas Tours">
 <meta property="og:locale" content="es_LA">
@@ -143,6 +147,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .6rem 0 auto}}</style>
+<script>window.I18N={"js.alert.date": "Por favor indica tu fecha preferida.", "js.alert.name_email": "Por favor ingresa tu nombre y email.", "js.alert.people": "Por favor selecciona el número de personas.", "js.modal.sent": "Tu solicitud para {salida} ha sido enviada. Santiago te contactará en menos de 24 horas para confirmar la fecha y coordinar el pago.", "js.yes": "Sí", "js.no": "No", "js.wa.enroll_intro": "Hola Santiago, quiero inscribirme en:", "js.wa.name": "Nombre", "js.wa.email": "Email", "js.wa.whatsapp": "WhatsApp", "js.wa.date": "Fecha preferida", "js.wa.people": "Personas", "js.wa.level": "Nivel", "js.wa.veg": "Vegetariano", "js.wa.allergy": "Intolerancia gluten/lactosa", "js.wa.message": "Mensaje", "js.wa.photos": "Autorización fotos", "js.wa.route": "Ruta", "js.wa.hello": "Hola Santiago,", "js.wa.interest": "Hola Santiago! Me interesa reservar una caminata.", "js.alert.name_contact": "Por favor ingresa tu nombre y al menos un método de contacto.", "js.today": "HOY", "js.days": "DOM|LUN|MAR|MIÉ|JUE|VIE|SÁB", "js.wx.route_default": "Tu ruta", "js.wx.title": "Pronóstico 7 días", "js.wx.source": "Modelo ICON · Open-Meteo", "js.wx.loading": "Cargando datos meteorológicos…", "js.wx.footer1": "Datos: Modelo ICON (DWD) vía", "js.wx.footer2": ". Orientativo: antes de salir, mira el", "js.wx.footer3": "pronóstico oficial de MeteoSwiss", "js.wx.reliable": "Más fiable en los primeros 3 días", "js.wx.error": "No se pudieron cargar los datos meteorológicos. Por favor, recarga la página o inténtalo más tarde."};</script>
 </head>
 <body>
 
@@ -156,6 +162,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
     <li><a href="clastours-contacto.html">Contacto</a></li>
     <li><a href="clastours-contacto.html#faq">Preguntas frecuentes</a></li>
   </ul>
+  <div class="lang-switch" role="navigation" aria-label="Idioma / Sprache / Language"><a href="/clastours-calendario.html" hreflang="es" lang="es" class="active" aria-current="true">ES</a><a href="/de/clastours-calendario.html" hreflang="de" lang="de">DE</a><a href="/en/clastours-calendario.html" hreflang="en" lang="en">EN</a></div>
   <a href="#salidas" class="nav-cta">Reservar →</a>
   <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
@@ -543,6 +550,7 @@ function toggleMenu(){
   l.style.cssText=open?'':'display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:rgba(15,61,82,0.97);padding:1.25rem 2rem;gap:1rem;';
 }
 
+function L(k){return (window.I18N&&window.I18N[k])||k;}
 function inscribir(id, salida) {
   var nombre = document.getElementById(id+'-nombre').value.trim();
   var email = document.getElementById(id+'-email').value.trim();
@@ -553,15 +561,15 @@ function inscribir(id, salida) {
   var fecha = document.getElementById(id+'-fecha') ? document.getElementById(id+'-fecha').value.trim() : '';
 
   if (!fecha) {
-    alert('Por favor indica tu fecha preferida.');
+    alert(L('js.alert.date'));
     return;
   }
   if (!nombre || !email) {
-    alert('Por favor ingresa tu nombre y email.');
+    alert(L('js.alert.name_email'));
     return;
   }
   if (!personas) {
-    alert('Por favor selecciona el número de personas.');
+    alert(L('js.alert.people'));
     return;
   }
 
@@ -569,27 +577,19 @@ function inscribir(id, salida) {
   var veg = document.getElementById(id+'-veg') ? document.getElementById(id+'-veg').value : '';
   var alerg = document.getElementById(id+'-alerg') ? document.getElementById(id+'-alerg').value : '';
 
-  var body = 'Hola Santiago,%0A%0AMe gustaría inscribirme en la siguiente salida:%0A%0ASalida: ' + encodeURIComponent(salida) + '%0ANombre: ' + encodeURIComponent(nombre) + '%0AEmail: ' + encodeURIComponent(email);
-  if (wa) body += '%0AWhatsApp: ' + encodeURIComponent(wa);
-  if (fecha) body += '%0AFecha preferida: ' + encodeURIComponent(fecha);
-  body += '%0APersonas: ' + encodeURIComponent(personas);
-  if (nivel) body += '%0ANivel: ' + encodeURIComponent(nivel);
-  if (veg && veg !== 'no') body += '%0AVegetariano: Sí';
-  if (alerg && alerg !== 'no') body += '%0AIntolerancia gluten/lactosa: Sí';
-  if (msg) body += '%0AMensaje: ' + encodeURIComponent(msg);
-  body += '%0AAutorización fotos: ' + (foto ? 'Sí' : 'No');
-
-  var waMsg = 'Hola Santiago, quiero inscribirme en:%0A%0A' + encodeURIComponent(salida) + '%0A%0ANombre: ' + encodeURIComponent(nombre) + '%0AEmail: ' + encodeURIComponent(email);
-  if (wa) waMsg += '%0AWhatsApp: ' + encodeURIComponent(wa);
-  if (fecha) waMsg += '%0AFecha preferida: ' + encodeURIComponent(fecha);
-  waMsg += '%0APersonas: ' + encodeURIComponent(personas);
-  if (nivel) waMsg += '%0ANivel: ' + encodeURIComponent(nivel);
-  if (veg && veg !== 'no') waMsg += '%0AVegetariano: Sí';
-  if (alerg && alerg !== 'no') waMsg += '%0AIntolerancia gluten/lactosa: Sí';
-  if (msg) waMsg += '%0AMensaje: ' + encodeURIComponent(msg);
-  waMsg += '%0AAutorización fotos: ' + (foto ? 'Sí' : 'No');
+  var enc = encodeURIComponent;
+  var yes = L('js.yes'), no = L('js.no');
+  var waMsg = L('js.wa.enroll_intro') + '%0A%0A' + enc(salida) + '%0A%0A' + L('js.wa.name') + ': ' + enc(nombre) + '%0A' + L('js.wa.email') + ': ' + enc(email);
+  if (wa) waMsg += '%0A' + L('js.wa.whatsapp') + ': ' + enc(wa);
+  if (fecha) waMsg += '%0A' + L('js.wa.date') + ': ' + enc(fecha);
+  waMsg += '%0A' + L('js.wa.people') + ': ' + enc(personas);
+  if (nivel) waMsg += '%0A' + L('js.wa.level') + ': ' + enc(nivel);
+  if (veg && veg !== 'no') waMsg += '%0A' + L('js.wa.veg') + ': ' + yes;
+  if (alerg && alerg !== 'no') waMsg += '%0A' + L('js.wa.allergy') + ': ' + yes;
+  if (msg) waMsg += '%0A' + L('js.wa.message') + ': ' + enc(msg);
+  waMsg += '%0A' + L('js.wa.photos') + ': ' + (foto ? yes : no);
   window.open('https://wa.me/41774603641?text=' + waMsg, '_blank');
-  document.getElementById('modal-texto').textContent = 'Tu solicitud para ' + salida + ' ha sido enviada. Santiago te contactará en menos de 24 horas para confirmar la fecha y coordinar el pago.';
+  document.getElementById('modal-texto').textContent = L('js.modal.sent').replace('{salida}', salida);
   document.getElementById('modal-confirm').classList.add('open');
 }
 </script>

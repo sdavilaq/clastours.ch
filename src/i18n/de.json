@@ -1,0 +1,3850 @@
+{
+ "common.clas-tours-by-davila-quiroz": {
+  "t": "Clas Tours by Davila Quiroz – Wandern in den Schweizer Alpen",
+  "s": "3b0ede5d"
+ },
+ "common.caminatas-guiadas-en-espanol-por": {
+  "t": "Geführte Wanderungen auf Spanisch in den Schweizer Alpen: Touren von 1 und 2 Tagen für alle Niveaus, kleine Gruppen, Sicherheit zuerst.",
+  "s": "e28c861b"
+ },
+ "common.clas-tours": {
+  "t": "Clas Tours",
+  "s": "c76028eb"
+ },
+ "common.mis-caminatas": {
+  "t": "Meine Wanderungen",
+  "s": "a5876d09"
+ },
+ "common.calendario": {
+  "t": "Kalender",
+  "s": "df824e6b"
+ },
+ "common.quien-soy": {
+  "t": "Wer ich bin",
+  "s": "70d38e5a"
+ },
+ "common.contacto": {
+  "t": "Kontakt",
+  "s": "d8a53e1f"
+ },
+ "common.preguntas-frecuentes": {
+  "t": "Häufige Fragen",
+  "s": "a4d114c5"
+ },
+ "common.reservar": {
+  "t": "Buchen →",
+  "s": "4357f72e"
+ },
+ "common.whatsapp": {
+  "t": "WhatsApp",
+  "s": "b336fc55"
+ },
+ "common.wanderleiter-en-formacion": {
+  "t": "Wanderleiter (in Ausbildung)",
+  "s": "3bbca568"
+ },
+ "common.grupos-pequenos": {
+  "t": "Kleine Gruppen",
+  "s": "315b8ddd"
+ },
+ "common.todo-en-espanol": {
+  "t": "Alles auf Spanisch",
+  "s": "d864938c"
+ },
+ "common.experiencia-completa": {
+  "t": "⭐ Das volle Erlebnis",
+  "s": "6cfc3aae"
+ },
+ "common.kandersteg-con-noche-en-refugio": {
+  "t": "Kandersteg mit Übernachtung in der Hütte",
+  "s": "c2ee356d"
+ },
+ "common.griesalp-bluemisalphutte-oeschinensee-kandersteg": {
+  "t": "Griesalp → Bluemisalphütte → Oeschinensee → Kandersteg",
+  "s": "eb42b3c8"
+ },
+ "common.2-dias": {
+  "t": "2 Tage",
+  "s": "1b47f484"
+ },
+ "common.t3-verano": {
+  "t": "T3 · Sommer",
+  "s": "15a56c4b"
+ },
+ "common.por-persona-guia-incluido": {
+  "t": "pro Person · inkl. Wanderleiter",
+  "s": "8c924cb1"
+ },
+ "common.descubrir-mas": {
+  "t": "Mehr entdecken →",
+  "s": "6c701828"
+ },
+ "common.1d": {
+  "t": "1T",
+  "s": "dba20f12"
+ },
+ "common.creux-du-van": {
+  "t": "Creux du Van",
+  "s": "4b0ddc98"
+ },
+ "common.todos-los-niveles": {
+  "t": "Alle Niveaus",
+  "s": "c8cd608b"
+ },
+ "common.cresta-vistas-360": {
+  "t": "Grat · 360°-Aussicht",
+  "s": "16122379"
+ },
+ "common.augstmatthorn-harderkulm": {
+  "t": "Augstmatthorn → Harderkulm",
+  "s": "7d9c2574"
+ },
+ "common.jagerstubli-lombachalp-1-559m-augstmatthorn": {
+  "t": "Jägerstübli Lombachalp (1.559 m) → Augstmatthorn → Grat → Harderkulm → Interlaken",
+  "s": "47b7d085"
+ },
+ "common.intermedio": {
+  "t": "Mittel",
+  "s": "66ca7ed4"
+ },
+ "common.relojes-chocolate-en-el-jura": {
+  "t": "Uhren &amp; Schokolade im Jura",
+  "s": "3babd1b4"
+ },
+ "common.tu-guia": {
+  "t": "Dein Wanderleiter",
+  "s": "5e5419b5"
+ },
+ "common.tu-nombre": {
+  "t": "Dein Name",
+  "s": "f07e1b89"
+ },
+ "common.email": {
+  "t": "E-Mail",
+  "s": "84add5b2"
+ },
+ "common.que-ruta-te-interesa": {
+  "t": "Welche Tour interessiert dich?",
+  "s": "ae5349d9"
+ },
+ "common.kandersteg-2-dias-griesalp-oeschinensee": {
+  "t": "Kandersteg 2 Tage (Griesalp → Oeschinensee)",
+  "s": "3a1ed59c"
+ },
+ "common.creux-du-van-1-dia": {
+  "t": "Creux du Van — 1 Tag",
+  "s": "636ac866"
+ },
+ "common.augstmatthorn-harderkulm-1-dia": {
+  "t": "Augstmatthorn → Harderkulm — 1 Tag",
+  "s": "17c24f19"
+ },
+ "common.relojes-chocolate-en-el-jura-2": {
+  "t": "Uhren &amp; Schokolade im Jura — 1 Tag",
+  "s": "fc37760d"
+ },
+ "common.no-se-todavia-quiero-asesoria": {
+  "t": "Ich weiss es noch nicht, ich möchte eine Beratung",
+  "s": "89d52eb2"
+ },
+ "common.cuantas-personas-van": {
+  "t": "Wie viele Personen kommen mit?",
+  "s": "3c26b78a"
+ },
+ "common.36-personas": {
+  "t": "3–6 Personen",
+  "s": "b4da2df7"
+ },
+ "common.7-o-mas-precio-especial": {
+  "t": "7 oder mehr (Gruppenpreis)",
+  "s": "3e824902"
+ },
+ "common.guia-del-creux-du-van": {
+  "t": "Führer zum Creux du Van",
+  "s": "67f560fd"
+ },
+ "common.guia-de-kandersteg-2-dias": {
+  "t": "Führer zu Kandersteg (2 Tage)",
+  "s": "40db3728"
+ },
+ "common.info-clastours-ch": {
+  "t": "info@clastours.ch",
+  "s": "ea6ecbdf"
+ },
+ "common.www-clastours-ch": {
+  "t": "www.clastours.ch",
+  "s": "5cfdcff5"
+ },
+ "common.clastours-ch": {
+  "t": "@clastours.ch",
+  "s": "d73aee1f"
+ },
+ "wa.common.hola-santiago-me-interesan-las": {
+  "t": "Hallo Santiago, ich interessiere mich für die Wanderungen von Clas Tours",
+  "s": "ad6fac78"
+ },
+ "common.mis-caminatas-clas-tours-by": {
+  "t": "Meine Wanderungen – Clas Tours by Davila Quiroz",
+  "s": "de93ffa8"
+ },
+ "common.rutas-guiadas-en-espanol-en": {
+  "t": "Geführte Touren auf Spanisch in der Schweiz: Kandersteg, Creux du Van, Augstmatthorn und eine Kulturroute im Jura. Routen, Niveaus und Preise.",
+  "s": "ef61413d"
+ },
+ "common.clas-tours-by-davila-quiroz-2": {
+  "t": "Clas Tours by Davila Quiroz<span>Schweizer Alpen erwandern</span>",
+  "s": "6909c769"
+ },
+ "common.inicio": {
+  "t": "Startseite",
+  "s": "4f70d8c3"
+ },
+ "common.1-dia": {
+  "t": "1 Tag",
+  "s": "35cec753"
+ },
+ "common.verano": {
+  "t": "Sommer",
+  "s": "6e7ca18e"
+ },
+ "common.todo-el-ano": {
+  "t": "Ganzjährig",
+  "s": "1454a49d"
+ },
+ "common.t3": {
+  "t": "T3",
+  "s": "101beb6f"
+ },
+ "common.mayo-octubre": {
+  "t": "Mai – Oktober",
+  "s": "f784aa64"
+ },
+ "common.atardecer-en-la-bluemisalphutte": {
+  "t": "Abendstimmung bei der Blüemlisalphütte",
+  "s": "5e5c9dee"
+ },
+ "common.amanecer-desde-el-refugio": {
+  "t": "Sonnenaufgang von der Hütte aus",
+  "s": "e341bd59"
+ },
+ "common.lago-oeschinensee-dia-soleado": {
+  "t": "Oeschinensee · sonniger Tag",
+  "s": "8f82b9e2"
+ },
+ "common.lago-oeschinensee-con-nieve": {
+  "t": "Oeschinensee · mit Schnee",
+  "s": "d3f0a5ab"
+ },
+ "common.valle-hacia-kandersteg": {
+  "t": "Tal Richtung Kandersteg",
+  "s": "8bf8482d"
+ },
+ "common.en-ruta-hacia-la-cumbre": {
+  "t": "Unterwegs zum Gipfel",
+  "s": "4fef2b72"
+ },
+ "common.duracion": {
+  "t": "Dauer",
+  "s": "63ce53f4"
+ },
+ "common.dificultad": {
+  "t": "Schwierigkeit",
+  "s": "d1b6202f"
+ },
+ "common.temporada": {
+  "t": "Saison",
+  "s": "b11349f6"
+ },
+ "common.grupo": {
+  "t": "Gruppe",
+  "s": "dd18fd86"
+ },
+ "common.10-pers": {
+  "t": "≤10 <span class=\"st-u\">Pers.</span>",
+  "s": "55ea4f64"
+ },
+ "common.precio": {
+  "t": "Preis",
+  "s": "18e0707e"
+ },
+ "common.sobre-esta-ruta": {
+  "t": "Über diese Tour",
+  "s": "dbc4be27"
+ },
+ "common.que-incluye": {
+  "t": "Was ist inbegriffen?",
+  "s": "2ab4f7c9"
+ },
+ "common.noche-en-bluemisalphutte": {
+  "t": "Übernachtung in der Blüemlisalphütte",
+  "s": "472795e9"
+ },
+ "common.transporte-aparte": {
+  "t": "Transport (separat)",
+  "s": "068f6fc4"
+ },
+ "common.equipo-necesario": {
+  "t": "Benötigte Ausrüstung",
+  "s": "ecd2aaae"
+ },
+ "common.pronostico-del-tiempo": {
+  "t": "Wettervorhersage",
+  "s": "02916791"
+ },
+ "common.reservar-esta-ruta": {
+  "t": "Diese Tour buchen →",
+  "s": "2ce5dc14"
+ },
+ "wa.caminatas.hola-santiago-tengo-una-pregunta": {
+  "t": "Hallo Santiago, ich habe eine Frage zu Kandersteg",
+  "s": "b37ac7e3"
+ },
+ "common.preguntar-por-whatsapp": {
+  "t": "Per WhatsApp fragen",
+  "s": "8abb09ad"
+ },
+ "common.punto-de-encuentro": {
+  "t": "Treffpunkt",
+  "s": "8743480d"
+ },
+ "common.como-llegar": {
+  "t": "Anreise",
+  "s": "2ca5a6f9"
+ },
+ "common.t2": {
+  "t": "T2",
+  "s": "f8cf5510"
+ },
+ "common.el-circo-rocoso-del-creux": {
+  "t": "Der Felszirkus des Creux du Van",
+  "s": "4f8c0b2c"
+ },
+ "common.borde-del-anfiteatro-vistas-panoramicas": {
+  "t": "Rand des Amphitheaters · Panoramablick",
+  "s": "4c1c21e7"
+ },
+ "common.sendero-hacia-el-creux-du": {
+  "t": "Weg zum Creux du Van",
+  "s": "4ae122ca"
+ },
+ "common.el-grand-canyon-suizo": {
+  "t": "Der „Grand Canyon der Schweiz“",
+  "s": "e386f50d"
+ },
+ "common.fauna-y-paisaje-del-jura": {
+  "t": "Tierwelt und Landschaft des Juras",
+  "s": "7d97448a"
+ },
+ "common.itinerario-del-dia": {
+  "t": "Tagesablauf",
+  "s": "fc54fbb9"
+ },
+ "wa.caminatas.hola-santiago-tengo-una-pregunta-2": {
+  "t": "Hallo Santiago, ich habe eine Frage zum Creux du Van",
+  "s": "43767b87"
+ },
+ "common.santiago-en-la-cresta-del": {
+  "t": "Santiago auf dem Grat des Augstmatthorns · Brienzersee im Hintergrund",
+  "s": "4fb69eb5"
+ },
+ "common.vistas-desde-la-cresta-lago": {
+  "t": "Aussicht vom Grat · Brienzersee",
+  "s": "85e695ff"
+ },
+ "common.brienzersee-turquesa-desde-el-sendero": {
+  "t": "Türkisfarbener Brienzersee vom Weg aus",
+  "s": "323ab78d"
+ },
+ "common.el-augstmatthorn-desde-la-ruta": {
+  "t": "Das Augstmatthorn von der Route aus",
+  "s": "64610101"
+ },
+ "common.senderistas-en-la-cresta-al": {
+  "t": "Wandernde auf dem Grat bei Sonnenaufgang",
+  "s": "97bfb0d1"
+ },
+ "common.lombachalp-augstmatthorn-cresta-harderkulm-interlaken": {
+  "t": "Lombachalp → Augstmatthorn → Grat → Harderkulm → Interlaken",
+  "s": "158ab7fb"
+ },
+ "wa.caminatas.hola-santiago-tengo-una-pregunta-3": {
+  "t": "Hallo Santiago, ich habe eine Frage zum Augstmatthorn",
+  "s": "33df371c"
+ },
+ "common.punto-de-encuentro-interlaken-west": {
+  "t": "Treffpunkt · Interlaken West",
+  "s": "80a108bd"
+ },
+ "common.t1": {
+  "t": "T1",
+  "s": "e2398779"
+ },
+ "common.guia-en-espanol-todo-el": {
+  "t": "Wanderleiter auf Spanisch den ganzen Tag",
+  "s": "fa269a18"
+ },
+ "wa.caminatas.hola-santiago-me-interesa-la": {
+  "t": "Hallo Santiago, ich interessiere mich für die Tour Longines und Camille Bloch",
+  "s": "a57d2c05"
+ },
+ "wa.caminatas.hola-santiago-tengo-una-pregunta-4": {
+  "t": "Hallo Santiago, ich habe eine Frage zur Kulturroute im Jura",
+  "s": "27fd1ab0"
+ },
+ "common.2025-clas-tours-by-davila": {
+  "t": "© 2025 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz",
+  "s": "42931a12"
+ },
+ "common.info-clastours-ch-41-077": {
+  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\">(+41) 077 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
+  "s": "cfc91345"
+ },
+ "common.salidas-a-demanda-clas-tours": {
+  "t": "Touren auf Anfrage – Clas Tours by Davila Quiroz",
+  "s": "29c8f3b4"
+ },
+ "common.salidas-a-demanda-de-clas": {
+  "t": "Touren auf Anfrage von Clas Tours: Wähle deine Route, schlage dein Datum vor (mindestens 2 Personen) und wir organisieren die geführte Wanderung auf Spanisch in den Schweizer Alpen.",
+  "s": "f6b39157"
+ },
+ "common.fecha": {
+  "t": "Datum",
+  "s": "bcc47609"
+ },
+ "common.a-demanda": {
+  "t": "Auf Anfrage",
+  "s": "3e989011"
+ },
+ "common.personas-min": {
+  "t": "Pers. mind.",
+  "s": "4e0bc9d4"
+ },
+ "common.bajo-pedido": {
+  "t": "Auf Anfrage",
+  "s": "9aa8dad3"
+ },
+ "common.planificacion-y-orientacion-previa": {
+  "t": "Planung und Einführung vorab",
+  "s": "8c6377bb"
+ },
+ "common.instrucciones-de-llegada": {
+  "t": "Anreiseinformationen",
+  "s": "852055de"
+ },
+ "common.comidas-aparte": {
+  "t": "Verpflegung (separat)",
+  "s": "639aa665"
+ },
+ "common.inscribirse": {
+  "t": "Anmelden",
+  "s": "76c6ae61"
+ },
+ "common.fecha-preferida": {
+  "t": "Wunschdatum *",
+  "s": "bfe971be"
+ },
+ "common.ej-un-sabado-de-junio": {
+  "t": "z. B. ein Samstag im Juni, 13. Juni ...",
+  "s": "db3a4b46"
+ },
+ "common.nombre-completo": {
+  "t": "Vollständiger Name *",
+  "s": "171ef991"
+ },
+ "common.email-2": {
+  "t": "E-Mail *",
+  "s": "604e4bff"
+ },
+ "common.tu-correo-com": {
+  "t": "deine@mail.ch",
+  "s": "771f5db9"
+ },
+ "common.numero-de-personas": {
+  "t": "Anzahl Personen *",
+  "s": "8d3d335e"
+ },
+ "common.selecciona": {
+  "t": "Bitte wählen",
+  "s": "5a252a38"
+ },
+ "common.7-o-mas-precio-especial-2": {
+  "t": "7 oder mehr — Gruppenpreis",
+  "s": "62607992"
+ },
+ "common.mensaje-opcional": {
+  "t": "Nachricht (optional)",
+  "s": "fda3c792"
+ },
+ "common.autorizo-el-uso-de-mis": {
+  "t": "Ich erlaube die Verwendung meiner Fotos aus der Aktivität für Werbezwecke. <a href=\"clastours-legal.html\">Richtlinie ansehen →</a>",
+  "s": "9174f555"
+ },
+ "common.reservar-por-whatsapp": {
+  "t": "Per WhatsApp buchen →",
+  "s": "e4ab19ef"
+ },
+ "common.te-contactamos-en-menos-de": {
+  "t": "Wir melden uns innerhalb von 24 Std. · Unverbindlich bis zur Zahlungsbestätigung",
+  "s": "b919441e"
+ },
+ "common.no": {
+  "t": "Nein",
+  "s": "816c52fd"
+ },
+ "common.contacto-y-faq-clas-tours": {
+  "t": "Kontakt und FAQ – Clas Tours by Davila Quiroz",
+  "s": "df0553fd"
+ },
+ "common.escribenos-por-whatsapp-correo-o": {
+  "t": "Schreib uns per WhatsApp, E-Mail oder Instagram und klär deine Fragen zu den geführten Wanderungen auf Spanisch in der Schweiz. Mit häufigen Fragen.",
+  "s": "f36e9aa8"
+ },
+ "common.quien-soy-clas-tours-by": {
+  "t": "Wer ich bin – Clas Tours by Davila Quiroz",
+  "s": "a2be39b2"
+ },
+ "common.conoce-a-santiago-guia-de": {
+  "t": "Lerne Santiago kennen, spanischsprachiger Wanderleiter in der Schweiz, und erfahre, warum Clas Tours seine Touren auf Spanisch und mit Sicherheit an erster Stelle durchführt.",
+  "s": "c384b13e"
+ },
+ "common.clas-tours-by-davila-quiroz-3": {
+  "t": "Clas Tours by Davila Quiroz\n    <span>Schweizer Alpen erwandern</span>",
+  "s": "3ad180dd"
+ },
+ "common.operativo": {
+  "t": "Aktiv",
+  "s": "c80b3c5f"
+ },
+ "common.tienes-dudas": {
+  "t": "Hast du Fragen?",
+  "s": "8ee2a6ec"
+ },
+ "wa.nosotros.hola-santiago-vi-tu-pagina": {
+  "t": "Hallo Santiago, ich habe deine Seite gesehen und habe eine Frage",
+  "s": "bcd2f9c7"
+ },
+ "common.escribir-por-whatsapp": {
+  "t": "Per WhatsApp schreiben →",
+  "s": "b73ae11d"
+ },
+ "common.terminos-y-condiciones-clas-tours": {
+  "t": "Allgemeine Geschäftsbedingungen – Clas Tours by Davila Quiroz",
+  "s": "a574306d"
+ },
+ "common.terminos-y-condiciones-de-clas": {
+  "t": "Allgemeine Geschäftsbedingungen von Clas Tours by Davila Quiroz: Reservierungen, Zahlungen, Stornierungen und Teilnahmebedingungen für die Wanderungen.",
+  "s": "face2c91"
+ },
+ "common.100-del-importe": {
+  "t": "100 % des Betrags",
+  "s": "d706b809"
+ },
+ "common.sin-reembolso": {
+  "t": "Keine Rückerstattung",
+  "s": "138df3ea"
+ },
+ "common.creux-du-van-como-llegar": {
+  "t": "Creux du Van: Anreise, Route und Tipps – Clas Tours",
+  "s": "165ac2f9"
+ },
+ "common.guia-del-creux-du-van-2": {
+  "t": "Führer zum Creux du Van auf Spanisch: Anreise mit Zug oder Auto, Rundwanderung ab Noiraigue, wo man Steinböcke sieht, beste Reisezeit, Sicherheit und Ausrüstung.",
+  "s": "7fba67ba"
+ },
+ "common.por-santiago-de-clas-tours": {
+  "t": "Von Santiago, Clas Tours · Aktualisiert im Oktober 2026",
+  "s": "22c6101b"
+ },
+ "common.datos-rapidos": {
+  "t": "Wichtigste Daten",
+  "s": "b56ad2df"
+ },
+ "common.punto-mas-alto": {
+  "t": "Höchster Punkt",
+  "s": "200765a3"
+ },
+ "common.en-carro": {
+  "t": "Mit dem Auto",
+  "s": "ec326797"
+ },
+ "common.mejor-epoca-para-ir": {
+  "t": "Beste Reisezeit",
+  "s": "b37cfdb1"
+ },
+ "common.que-llevar": {
+  "t": "Was mitnehmen",
+  "s": "c502a55d"
+ },
+ "common.prefieres-hacerlo-acompanado-en-espanol": {
+  "t": "Lieber begleitet, auf Spanisch?",
+  "s": "65120753"
+ },
+ "common.organizo-esta-ruta-con-grupos": {
+  "t": "Ich organisiere diese Tour mit kleinen Gruppen: Planung, Einführung und alle Informationen in deiner Sprache, damit du einfach nur geniessen kannst.",
+  "s": "349420fd"
+ },
+ "common.ver-la-ruta-completa": {
+  "t": "Ganze Tour ansehen →",
+  "s": "8daa4b91"
+ },
+ "common.ver-salidas": {
+  "t": "Termine ansehen",
+  "s": "7341a669"
+ },
+ "common.escribeme-directamente-y-te-respondo": {
+  "t": "Schreib mir direkt, ich antworte dir ohne Formulare. Ich kann auch ein Datum für deine Gruppe organisieren.",
+  "s": "b418974d"
+ },
+ "wa.guia.creux-du-van.hola-santiago-vi-la-guia": {
+  "t": "Hallo Santiago, ich habe den Führer zum Creux du Van gesehen und habe eine Frage",
+  "s": "f2fd0e62"
+ },
+ "common.otras-rutas": {
+  "t": "Weitere Touren",
+  "s": "dcd7a953"
+ },
+ "common.info-clastours-ch-41-077-2": {
+  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\" rel=\"noopener\">(+41) 077 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
+  "s": "f7520b7c"
+ },
+ "wa.guia.creux-du-van.hola-santiago-vi-la-guia-2": {
+  "t": "Hallo Santiago, ich habe den Führer zum Creux du Van gesehen",
+  "s": "0677f16f"
+ },
+ "common.escribir-por-whatsapp-2": {
+  "t": "Per WhatsApp schreiben",
+  "s": "be27d05d"
+ },
+ "common.kandersteg-griesalp-bluemlisalphutte-y-oeschinensee": {
+  "t": "Kandersteg: Griesalp, Blüemlisalphütte und Oeschinensee in 2 Tagen – Clas Tours",
+  "s": "70d5266b"
+ },
+ "common.guia-en-espanol-de-la": {
+  "t": "Führer auf Spanisch zur 2-Tages-Tour Griesalp – Blüemlisalphütte – Oeschinensee – Kandersteg: Anreise, Route, Übernachtung in der Hütte, Baden im See, Sicherheit und Ausrüstung.",
+  "s": "c8b2030e"
+ },
+ "wa.guia.kandersteg-bluemlisalphutte.hola-santiago-vi-la-guia": {
+  "t": "Hallo Santiago, ich habe den Führer zu Kandersteg gesehen und habe eine Frage",
+  "s": "f6ba04b0"
+ },
+ "wa.guia.kandersteg-bluemlisalphutte.hola-santiago-vi-la-guia-2": {
+  "t": "Hallo Santiago, ich habe den Führer zu Kandersteg gesehen",
+  "s": "d341d7e1"
+ },
+ "js.alert.date": {
+  "t": "Bitte gib dein Wunschdatum an.",
+  "s": "73b897c6"
+ },
+ "js.alert.name_email": {
+  "t": "Bitte gib deinen Namen und deine E-Mail an.",
+  "s": "12cfe600"
+ },
+ "js.alert.people": {
+  "t": "Bitte wähle die Anzahl Personen aus.",
+  "s": "07589730"
+ },
+ "js.modal.sent": {
+  "t": "Deine Anfrage für {salida} wurde gesendet. Santiago meldet sich innerhalb von 24 Stunden, um das Datum zu bestätigen und die Zahlung zu koordinieren.",
+  "s": "ccf79c56"
+ },
+ "cal.salida-creux": {
+  "t": "Creux du Van · auf Anfrage",
+  "s": "0aefa1a6"
+ },
+ "cal.salida-kandersteg": {
+  "t": "Kandersteg 2 Tage · auf Anfrage",
+  "s": "2f1ae25c"
+ },
+ "cal.salida-augst": {
+  "t": "Augstmatthorn · auf Anfrage",
+  "s": "f69b800b"
+ },
+ "cal.salida-relojes": {
+  "t": "Uhren & Schokolade · auf Anfrage",
+  "s": "c8a93c02"
+ },
+ "js.yes": {
+  "t": "Ja",
+  "s": "873caab4"
+ },
+ "js.no": {
+  "t": "Nein",
+  "s": "816c52fd"
+ },
+ "js.wa.enroll_intro": {
+  "t": "Hallo Santiago, ich möchte mich anmelden für:",
+  "s": "45e936f5"
+ },
+ "js.wa.name": {
+  "t": "Name",
+  "s": "e68491e9"
+ },
+ "js.wa.email": {
+  "t": "E-Mail",
+  "s": "84add5b2"
+ },
+ "js.wa.whatsapp": {
+  "t": "WhatsApp",
+  "s": "b336fc55"
+ },
+ "js.wa.date": {
+  "t": "Wunschdatum",
+  "s": "b856eb27"
+ },
+ "js.wa.people": {
+  "t": "Personen",
+  "s": "9ebfc231"
+ },
+ "js.wa.level": {
+  "t": "Niveau",
+  "s": "ada9db57"
+ },
+ "js.wa.veg": {
+  "t": "Vegetarisch",
+  "s": "37772d7a"
+ },
+ "js.wa.allergy": {
+  "t": "Gluten-/Laktoseintoleranz",
+  "s": "d7513dce"
+ },
+ "js.wa.message": {
+  "t": "Nachricht",
+  "s": "eb9e23ef"
+ },
+ "js.wa.photos": {
+  "t": "Foto-Einverständnis",
+  "s": "afa55f16"
+ },
+ "js.wa.route": {
+  "t": "Tour",
+  "s": "4373399b"
+ },
+ "js.wa.hello": {
+  "t": "Hallo Santiago,",
+  "s": "621d18e9"
+ },
+ "js.wa.interest": {
+  "t": "Hallo Santiago! Ich möchte eine Wanderung buchen.",
+  "s": "b8d7f028"
+ },
+ "js.alert.name_contact": {
+  "t": "Bitte gib deinen Namen und mindestens eine Kontaktmöglichkeit an.",
+  "s": "c3335f48"
+ },
+ "js.today": {
+  "t": "HEUTE",
+  "s": "e72f3b81"
+ },
+ "js.days": {
+  "t": "SO|MO|DI|MI|DO|FR|SA",
+  "s": "bf44df71"
+ },
+ "js.wx.route_default": {
+  "t": "Deine Tour",
+  "s": "431fe1d7"
+ },
+ "js.wx.title": {
+  "t": "7-Tage-Vorhersage",
+  "s": "fabb1985"
+ },
+ "js.wx.source": {
+  "t": "ICON-Modell · Open-Meteo",
+  "s": "00321a85"
+ },
+ "js.wx.loading": {
+  "t": "Wetterdaten werden geladen …",
+  "s": "8e8e3fe1"
+ },
+ "js.wx.footer1": {
+  "t": "Daten: ICON-Modell (DWD) via",
+  "s": "40bdadf5"
+ },
+ "js.wx.footer2": {
+  "t": ". Nur eine Orientierung. Offiziell:",
+  "s": "eadd9dd7"
+ },
+ "js.wx.footer3": {
+  "t": "MeteoSchweiz-Prognose",
+  "s": "281aebba"
+ },
+ "js.wx.reliable": {
+  "t": "In den ersten 3 Tagen am zuverlässigsten",
+  "s": "6bf59801"
+ },
+ "js.wx.error": {
+  "t": "Die Wetterdaten konnten nicht geladen werden. Bitte lade die Seite neu oder versuche es später noch einmal.",
+  "s": "ad3ccd30"
+ },
+ "wx.route-hut": {
+  "t": "Blüemlisalphütte · 2’840 m",
+  "s": "e621c632"
+ },
+ "wx.route-creux": {
+  "t": "Creux du Van",
+  "s": "4b0ddc98"
+ },
+ "wx.route-augst": {
+  "t": "Augstmatthorn · Harderkulm",
+  "s": "5881de9a"
+ },
+ "wx.route-relojes": {
+  "t": "Saint-Imier · Courtelary",
+  "s": "e60a5672"
+ },
+ "ld.common.clas-tours-by-davila-quiroz": {
+  "t": "Clas Tours by Davila Quiroz",
+  "s": "35483a45"
+ },
+ "ld.index.caminatas-guiadas-en-espanol-por": {
+  "t": "Geführte Wanderungen auf Spanisch in den Schweizer Alpen, für alle Niveaus und in kleinen Gruppen.",
+  "s": "bfe4137a"
+ },
+ "ld.common.suiza": {
+  "t": "Schweiz",
+  "s": "0216985b"
+ },
+ "ld.caminatas.caminatas-guiadas-en-espanol-por": {
+  "t": "Geführte Wanderungen auf Spanisch in den Schweizer Alpen, für alle Niveaus und in kleinen Gruppen.",
+  "s": "bfe4137a"
+ },
+ "ld.caminatas.rutas-de-clas-tours": {
+  "t": "Touren von Clas Tours",
+  "s": "e53eed4c"
+ },
+ "ld.caminatas.dos-dias-por-el-valle": {
+  "t": "Zwei Tage durch das Griesalptal zur Blüemlisalphütte, mit Übernachtung in den Bergen und Abstieg am Oeschinensee entlang nach Kandersteg.",
+  "s": "be3e65de"
+ },
+ "ld.caminatas.senderismo-guiado-en-espanol": {
+  "t": "Geführtes Wandern auf Spanisch",
+  "s": "e4f6b078"
+ },
+ "ld.caminatas.recorrido-circular-por-el-gran": {
+  "t": "Rundwanderung durch den grossen Felszirkus des Neuenburger Juras.",
+  "s": "70ae24a2"
+ },
+ "ld.caminatas.ruta-de-un-dia-por": {
+  "t": "Eintageswanderung über den Grat des Augstmatthorns bis Harderkulm, mit Blick auf den Thunersee und den Brienzersee.",
+  "s": "3c9d9e44"
+ },
+ "ld.caminatas.relojes-chocolate-en-el-jura": {
+  "t": "Uhren & Schokolade im Jura",
+  "s": "04693523"
+ },
+ "ld.caminatas.jornada-cultural-entre-saint-imier": {
+  "t": "Kulturtag zwischen Saint-Imier und Courtelary: Musée Longines, Wanderung durch das Suze-Tal und die Fabrik Camille Bloch.",
+  "s": "d1d3c610"
+ },
+ "ld.guia.creux-du-van.creux-du-van-como-llegar": {
+  "t": "Creux du Van: Anreise, die Route und was man wissen sollte",
+  "s": "6becdb75"
+ },
+ "ld.guia.kandersteg-bluemlisalphutte.kandersteg-de-griesalp-a-la": {
+  "t": "Kandersteg: von Griesalp zur Blüemlisalphütte und zum Oeschinensee, in 2 Tagen",
+  "s": "f6d940ad"
+ },
+ "ld.guia.kandersteg-bluemlisalphutte.guia-de-kandersteg": {
+  "t": "Führer zu Kandersteg",
+  "s": "f99955e7"
+ },
+ "index.clas-tours-by-davila-quiroz": {
+  "t": "Clas Tours by Davila Quiroz\n    <span class=\"ct-logo-sub\">Schweizer Alpen erwandern</span>",
+  "s": "51d3d0f7"
+ },
+ "index.guia-en-espanol-wanderleiter-alpes": {
+  "t": "Wanderleiter auf Spanisch · Schweizer Alpen",
+  "s": "fd6588c7"
+ },
+ "index.los-alpes-suizos-en-tu": {
+  "t": "Die Schweizer Alpen,<br>in <em>deiner Sprache</em>,<br>in deinem Tempo",
+  "s": "f8550bbe"
+ },
+ "index.caminatas-guiadas-en-los-alpes": {
+  "t": "Geführte Wanderungen in den Schweizer Alpen für Spanischsprachige. Ob du in der Schweiz lebst oder zu Besuch bist – hier geniesst du die Berge ohne Sprachbarriere.",
+  "s": "d4bf7a89"
+ },
+ "index.ver-rutas": {
+  "t": "Touren ansehen",
+  "s": "fe3b1474"
+ },
+ "index.t3-verano-wt2-invierno": {
+  "t": "T3 Sommer · WT2 Winter",
+  "s": "1f8717f1"
+ },
+ "index.descubre": {
+  "t": "Entdecken",
+  "s": "8057acef"
+ },
+ "index.para-quien-es-esto": {
+  "t": "Für wen ist das?",
+  "s": "47659f60"
+ },
+ "index.hecho-para-ti": {
+  "t": "Gemacht für <em>dich</em>",
+  "s": "84a4c83c"
+ },
+ "index.da-igual-si-llevas-anos": {
+  "t": "Egal, ob du seit Jahren in der Schweiz lebst oder gerade erst angekommen bist. Die Berge warten auf dich.",
+  "s": "8b8e394e"
+ },
+ "index.vives-en-suiza": {
+  "t": "Du lebst in der Schweiz",
+  "s": "1a001b59"
+ },
+ "index.llevas-meses-o-anos-aqui": {
+  "t": "Du bist seit Monaten oder Jahren hier, und die Alpen sind noch immer die Landschaft, die du aus dem Zug siehst, aber nie wirklich betreten hast. Zeit, das zu ändern – mit jemandem, der dir jeden Schritt in deiner Sprache erklärt.",
+  "s": "c6d9d92a"
+ },
+ "index.sin-necesidad-de-experiencia-previa": {
+  "t": "Keine Vorerfahrung nötig.",
+  "s": "8d4f9fca"
+ },
+ "index.vienes-de-visita": {
+  "t": "Du kommst zu Besuch",
+  "s": "66e9fd01"
+ },
+ "index.quieres-vivir-los-alpes-de": {
+  "t": "Du willst die Alpen wirklich erleben, nicht nur von einer Hotelterrasse aus. Wir beraten dich bei allem – auch dazu, welche Ausrüstung du mitbringen oder wo du sie vor der Wanderung mieten kannst.",
+  "s": "e4a061c8"
+ },
+ "index.te-asesoramos-sobre-equipo-y": {
+  "t": "Wir beraten dich zu Ausrüstung und Logistik.",
+  "s": "3dc3ae5c"
+ },
+ "index.nuestras-rutas": {
+  "t": "Unsere Touren",
+  "s": "719ae607"
+ },
+ "index.tres-experiencias-un-solo-idioma": {
+  "t": "Drei Erlebnisse,<br>eine <em>Sprache</em>",
+  "s": "32b9de17"
+ },
+ "index.rutas-curadas-para-diferentes-niveles": {
+  "t": "Sorgfältig ausgewählte Touren für verschiedene Niveaus. Alle geführt von Santiago, auf Spanisch, in kleinen Gruppen.",
+  "s": "d0c31648"
+ },
+ "index.2d": {
+  "t": "2T",
+  "s": "3698fe04"
+ },
+ "index.dos-dias-que-no-vas": {
+  "t": "Zwei Tage, die du nicht vergessen wirst. Aufstieg durch das Griesalptal zur Blüemlisalphütte, eine Nacht in den Bergen und ein spektakulärer Abstieg am Oeschinensee entlang nach Kandersteg. Eine der schönsten Touren des Berner Oberlands.",
+  "s": "87c96d50"
+ },
+ "index.noche-en-refugio": {
+  "t": "Übernachtung in der Hütte",
+  "s": "ea39bd45"
+ },
+ "price.chf-kand": {
+  "t": "CHF {{p.kand}}",
+  "s": "01b7b7fb"
+ },
+ "index.group-kand": {
+  "t": "Ab 7 Personen: CHF {{g.kand}}/Person",
+  "s": "fdfc4ee4"
+ },
+ "index.dia-completo": {
+  "t": "Ganzer Tag",
+  "s": "1b2f36b7"
+ },
+ "index.circular-por-el-gran-circo": {
+  "t": "Rundwanderung durch den grossen Felszirkus des Neuenburger Juras",
+  "s": "9d064a0a"
+ },
+ "index.el-grand-canyon-suizo-un": {
+  "t": "Der „Grand Canyon der Schweiz“. Ein 160 Meter hohes Felsamphitheater, umgeben von Wäldern, mit einer Steinbockkolonie, die sich auf den Felsbändern zeigt. In jeder Jahreszeit spektakulär. Perfekt für deine erste grosse Wanderung in der Schweiz. <a href=\"guia-creux-du-van.html\" style=\"color:var(--copper);text-decoration:none;white-space:nowrap\">Zum Führer →</a>",
+  "s": "eba0149c"
+ },
+ "index.46h": {
+  "t": "4–6 Std.",
+  "s": "2c82d314"
+ },
+ "index.t2-todo-el-ano": {
+  "t": "T2 · Ganzjährig",
+  "s": "0985ca66"
+ },
+ "price.chf-creux": {
+  "t": "CHF {{p.creux}}",
+  "s": "b5a1e3e8"
+ },
+ "index.group-creux": {
+  "t": "Ab 7 Personen: CHF {{g.creux}}/Person",
+  "s": "027220cf"
+ },
+ "index.una-cresta-que-te-deja": {
+  "t": "Ein Grat, der dich sprachlos macht. Thunersee, Brienzersee und die Riesen des Oberlands im Hintergrund. Anspruchsvoll und absolut episch. Du endest direkt in Interlaken.",
+  "s": "15b28c1f"
+ },
+ "index.68h": {
+  "t": "6–8 Std.",
+  "s": "e6ecdba1"
+ },
+ "price.chf-augst": {
+  "t": "CHF {{p.augst}}",
+  "s": "90b8cac3"
+ },
+ "index.group-augst": {
+  "t": "Ab 7 Personen: CHF {{g.augst}}/Person",
+  "s": "089ee511"
+ },
+ "index.cultura-lunes-a-viernes": {
+  "t": "Kultur · Montag bis Freitag",
+  "s": "5d2c38b2"
+ },
+ "index.saint-imier-musee-longines-valle": {
+  "t": "Saint-Imier (Musée Longines) → Suze-Tal → Courtelary (Camille Bloch)",
+  "s": "f2678798"
+ },
+ "index.relojeria-de-precision-una-caminata": {
+  "t": "Präzisionsuhrmacherei, eine ruhige Wanderung durch den Berner Jura und handwerkliche Schokolade. Ein Kulturtag ohne technische Schwierigkeit, ideal mit Familie oder Freunden.",
+  "s": "4e65f75a"
+ },
+ "index.3h": {
+  "t": "~3 Std.",
+  "s": "5591995d"
+ },
+ "index.t1-todo-el-ano": {
+  "t": "T1 · Ganzjährig",
+  "s": "5d032df2"
+ },
+ "price.chf-relojes": {
+  "t": "CHF {{p.relojes}}",
+  "s": "5e3d6f27"
+ },
+ "index.group-relojes": {
+  "t": "Ab 7 Personen: CHF {{g.relojes}}/Person",
+  "s": "110a52ad"
+ },
+ "index.el-precio-incluye-el-guia": {
+  "t": "Der Preis beinhaltet den Wanderleiter auf Spanisch, die Übernachtung in der Hütte, Abendessen und Frühstück. Transport und Snacks gehen separat – wir beraten dich vor der Abreise zu allem.",
+  "s": "e146c8a0"
+ },
+ "index.instrucciones-seguridad-historias-del-camino": {
+  "t": "Anweisungen, Sicherheit, Geschichten vom Weg. Nichts geht wegen der Sprache verloren.",
+  "s": "123d54db"
+ },
+ "index.maximo-10-personas-ritmo-adaptado": {
+  "t": "Maximal 10 Personen. Das Tempo richtet sich nach der Gruppe, nicht nach dem Fahrplan einer Massentour.",
+  "s": "0a093875"
+ },
+ "index.rutas-seguras": {
+  "t": "Sichere Touren",
+  "s": "2947065d"
+ },
+ "index.wanderleiter-en-formacion-t3-en": {
+  "t": "Wanderleiter in Ausbildung. T3 im Sommer, WT2 im Winter. Sicherheit steht immer an erster Stelle.",
+  "s": "71356e6e"
+ },
+ "index.experiencia-real": {
+  "t": "Echtes Erlebnis",
+  "s": "bf126f40"
+ },
+ "index.no-es-un-tour-turistico": {
+  "t": "Das ist keine Touristentour. Es heisst, mit jemandem in die Berge zu gehen, der sie kennt, liebt und deine Sprache spricht.",
+  "s": "1e5c1924"
+ },
+ "index.santiago-guia-de-clas-tours": {
+  "t": "Santiago, Wanderleiter von Clas Tours, mit Sportbrille vor schneebedeckten Bergen im Abendlicht",
+  "s": "6faf2d5e"
+ },
+ "index.santiago-davila-quiroz": {
+  "t": "Santiago Davila Quiroz",
+  "s": "be213a5b"
+ },
+ "index.guia-fundador-de-clas-tours": {
+  "t": "Wanderleiter · Gründer von Clas Tours · Kolumbianer in den Alpen",
+  "s": "257ddb74"
+ },
+ "index.llevo-anos-viviendo-en-suiza": {
+  "t": "Ich lebe seit Jahren in der Schweiz und habe etwas entdeckt: Die Alpen sind aussergewöhnlich, aber für Spanischsprachige macht die Sprachbarriere die Berge zu etwas Fernem. Clas Tours entstand, um das zu ändern. Ich bin derzeit in Ausbildung zum Wanderleiter – staatlich anerkannter Wanderführer –, um dir im Sommer Touren bis T3 und im Winter bis WT2 anzubieten, immer auf Spanisch und immer mit Sicherheit an erster Stelle.",
+  "s": "18c8afe1"
+ },
+ "index.rutas-t3-verano": {
+  "t": "Sommertouren T3",
+  "s": "73bd97e6"
+ },
+ "index.rutas-wt2-invierno": {
+  "t": "Wintertouren WT2",
+  "s": "ebee2fa4"
+ },
+ "index.ipsach-berna": {
+  "t": "Ipsach, Bern",
+  "s": "e577969f"
+ },
+ "index.llevaba-dos-anos-en-suiza": {
+  "t": "„Ich war seit zwei Jahren in der Schweiz und hatte mich nie ans Wandern getraut. Mit Santiago war alles anders – er hat uns jedes Detail auf Spanisch erklärt, das Tempo war perfekt, und die Aussicht vom Grat werde ich nicht vergessen.“",
+  "s": "1e49f06d"
+ },
+ "index.mr": {
+  "t": "MR",
+  "s": "208a4020"
+ },
+ "index.maria-r": {
+  "t": "María R.",
+  "s": "fe75ede8"
+ },
+ "index.venezolana-vive-en-berna": {
+  "t": "Venezolanerin · lebt in Bern",
+  "s": "d3908337"
+ },
+ "index.listo-para-salir": {
+  "t": "Bereit loszugehen?",
+  "s": "dd356eba"
+ },
+ "index.cuentanos-tu-aventura": {
+  "t": "Erzähl uns<br>von deinem <em>Abenteuer</em>",
+  "s": "a4c63fb6"
+ },
+ "index.dinos-que-ruta-te-llama": {
+  "t": "Sag uns, welche Tour dich anspricht, wann du Zeit hast und wie viele ihr seid. Wir antworten innerhalb von 24 Stunden.",
+  "s": "c8e84ce8"
+ },
+ "index.whatsapp-codigo-pais": {
+  "t": "WhatsApp (+ Landesvorwahl)",
+  "s": "4f2f9ab1"
+ },
+ "index.12-personas": {
+  "t": "1–2 Personen",
+  "s": "bc373d45"
+ },
+ "index.quiero-reservar-mi-caminata": {
+  "t": "Ich möchte meine Wanderung buchen →",
+  "s": "2fab68ec"
+ },
+ "index.sin-compromiso-respuesta-en-menos": {
+  "t": "Unverbindlich · Antwort innerhalb von 24 Std.",
+  "s": "6929cc44"
+ },
+ "index.clas-tours-by-davila-quiroz-2": {
+  "t": "Clas Tours by Davila Quiroz\n        <span class=\"ct-logo-sub\" style=\"margin-top:3px\">Schweizer Alpen erwandern</span>",
+  "s": "e8595074"
+ },
+ "index.caminatas-guiadas-en-los-alpes-2": {
+  "t": "Geführte Wanderungen in den Schweizer Alpen für die spanischsprachige Gemeinschaft. Ob du in der Schweiz lebst oder zu Besuch bist – die Alpen warten auf dich.",
+  "s": "7f51efbd"
+ },
+ "index.rutas": {
+  "t": "Touren",
+  "s": "aa9a7019"
+ },
+ "index.kandersteg-2-dias": {
+  "t": "Kandersteg 2 Tage",
+  "s": "c0db7770"
+ },
+ "index.2025-clas-tours-by-davila": {
+  "t": "© 2025 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz · <a href=\"clastours-legal.html\" style=\"color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s\" onmouseover=\"this.style.color=\"#C48A62\"\" onmouseout=\"this.style.color=\"rgba(255,255,255,0.35)\"\">Allgemeine Geschäftsbedingungen</a>",
+  "s": "88cefd16"
+ },
+ "index.hecho-con-pasion-por-los": {
+  "t": "Mit Leidenschaft für die Alpen gemacht",
+  "s": "396fc1a1"
+ },
+ "contacto.hablemos": {
+  "t": "Lass uns reden",
+  "s": "0cf77054"
+ },
+ "contacto.tienes-alguna-pregunta": {
+  "t": "Hast du eine<br><em>Frage</em>?",
+  "s": "968a1674"
+ },
+ "contacto.prefiero-responder-una-duda-antes": {
+  "t": "Ich beantworte lieber vor der Wanderung eine Frage, als sie unbeantwortet zu lassen. Schreib mir unverbindlich – ich antworte innerhalb von 24 Stunden.",
+  "s": "3ba32590"
+ },
+ "contacto.como-llegar-a-mi": {
+  "t": "So erreichst du mich",
+  "s": "0173ff3b"
+ },
+ "contacto.elige-tu-canal": {
+  "t": "Wähle deinen<br><em>Kanal</em>",
+  "s": "cee43dd4"
+ },
+ "contacto.sin-burocracia-sin-formularios-eternos": {
+  "t": "Ohne Bürokratie. Ohne endlose Formulare. Schreib mir, wo es dir am bequemsten ist.",
+  "s": "b2f1e669"
+ },
+ "contacto.canal-preferido": {
+  "t": "Bevorzugter Kanal",
+  "s": "fb9e1576"
+ },
+ "contacto.la-forma-mas-rapida-respondo": {
+  "t": "Der schnellste Weg. Ich antworte innerhalb weniger Stunden, auch am Wochenende.",
+  "s": "81f350a6"
+ },
+ "contacto.respuesta-mas-rapida": {
+  "t": "Schnellste Antwort",
+  "s": "59de7ca1"
+ },
+ "contacto.para-consultas-mas-detalladas-o": {
+  "t": "Für ausführlichere Anfragen oder mit Anhängen. Ich antworte innerhalb von 24 Std.",
+  "s": "944758d7"
+ },
+ "contacto.instagram": {
+  "t": "Instagram",
+  "s": "5721bbef"
+ },
+ "contacto.siguenos-para-ver-rutas-paisajes": {
+  "t": "Folge uns für Touren, Landschaften und Neuigkeiten. Du kannst uns auch per DM schreiben.",
+  "s": "413bd580"
+ },
+ "contacto.web": {
+  "t": "Website",
+  "s": "a8323a2a"
+ },
+ "contacto.ipsach-canton-de-berna-suiza": {
+  "t": "Ipsach, Kanton Bern, Schweiz. Ausgangspunkt für alle Touren.",
+  "s": "e65caf87"
+ },
+ "contacto.tiempo-de-respuesta-habitual-menos": {
+  "t": "Übliche Antwortzeit: weniger als 24 Stunden an Werktagen, per WhatsApp wenige Stunden.",
+  "s": "7b1c0d6f"
+ },
+ "contacto.escribenos-directamente": {
+  "t": "Schreib uns direkt",
+  "s": "cd77fd30"
+ },
+ "contacto.rellena-el-formulario-y-te": {
+  "t": "Fülle das Formular aus, und wir melden uns über den Kanal deiner Wahl.",
+  "s": "90734b36"
+ },
+ "contacto.nombre": {
+  "t": "Name *",
+  "s": "209ebdec"
+ },
+ "contacto.selecciona-una-opcion": {
+  "t": "Option wählen",
+  "s": "2870056f"
+ },
+ "contacto.otro-pregunta-general": {
+  "t": "Anderes / allgemeine Frage",
+  "s": "14fc805f"
+ },
+ "contacto.solo-a-1-persona-consultar": {
+  "t": "Allein (1 Person – auf Anfrage)",
+  "s": "912a87ad"
+ },
+ "contacto.2-personas": {
+  "t": "2 Personen",
+  "s": "1475cb47"
+ },
+ "contacto.tu-mensaje": {
+  "t": "Deine Nachricht *",
+  "s": "70da22f3"
+ },
+ "contacto.cuentame-lo-que-necesitas-fechas": {
+  "t": "Erzähl mir, was du brauchst – ungefähre Daten, Erfahrungsniveau, konkrete Fragen ...",
+  "s": "2799bed5"
+ },
+ "contacto.pago-por-transferencia": {
+  "t": "Zahlung per Überweisung",
+  "s": "eef53a34"
+ },
+ "contacto.qr-postfinance-clas-tours": {
+  "t": "PostFinance-QR Clas Tours",
+  "s": "bf5d9df9"
+ },
+ "contacto.clas-tours-by-davila-quiroz": {
+  "t": "<strong>Clas Tours by Davila Quiroz</strong><br>IBAN: CH90 0900 0000 1651 3549 7<br>BIC: POFICHBEXXX<br><span style=\"font-size:0.75rem;color:var(--dust)\">Gib im Verwendungszweck deinen Namen und die Tour an</span>",
+  "s": "c175cfe6"
+ },
+ "contacto.autorizo-el-uso-de-mis": {
+  "t": "Ich erlaube die Verwendung meiner Fotos aus der Aktivität für Werbezwecke. <a href=\"clastours-legal.html\" style=\"color:var(--petrol);text-decoration:none\">Vollständige Richtlinie ansehen →</a>",
+  "s": "c8750847"
+ },
+ "contacto.enviar-por-whatsapp": {
+  "t": "Per WhatsApp senden →",
+  "s": "3747db0b"
+ },
+ "contacto.sin-compromiso-respuesta-en-menos": {
+  "t": "Unverbindlich · Antwort innerhalb von 24 Std. · Deine Daten werden nicht weitergegeben",
+  "s": "35bbbd67"
+ },
+ "contacto.lo-que-mas-me-preguntan": {
+  "t": "Was mich am meisten <em>gefragt wird</em>",
+  "s": "168f5dc9"
+ },
+ "contacto.si-tu-duda-no-esta": {
+  "t": "Wenn deine Frage hier nicht beantwortet wird, schreib mir direkt. Ich antworte lieber zu viel, als dich vor dem Aufbruch in die Berge mit einer offenen Frage zu lassen.",
+  "s": "c7655565"
+ },
+ "contacto.sobre-el-guia-y-el": {
+  "t": "Über den Wanderleiter und das Angebot",
+  "s": "1436e776"
+ },
+ "contacto.eres-guia-certificado": {
+  "t": "Bist du zertifizierter Wanderleiter?",
+  "s": "e283b856"
+ },
+ "contacto.estoy-en-formacion-oficial-como": {
+  "t": "Ich bin in der offiziellen Ausbildung zum <strong>Wanderleiter</strong> – zertifizierter Wanderführer nach Schweizer Standards. Ich darf bereits legal Touren bis T3 im Sommer und WT2 im Winter führen. Das sage ich ganz offen, denn Ehrlichkeit ist für mich die Grundlage von Vertrauen.",
+  "s": "75bcf093"
+ },
+ "contacto.que-pasa-si-hay-mal": {
+  "t": "Was passiert bei schlechtem Wetter am Tag der Wanderung?",
+  "s": "56f3f364"
+ },
+ "contacto.la-seguridad-manda-siempre-si": {
+  "t": "Sicherheit geht immer vor. Wenn die Wetterbedingungen ein echtes Risiko darstellen, sage ich die Aktivität ohne Zögern ab. In diesem Fall kannst du zwischen einer <strong>kostenlosen Verschiebung</strong> und der <strong>vollständigen Rückerstattung</strong> wählen. Wenn das Wetter grau, aber sicher ist, gehen wir los – die Berge sind auch mit Wolken schön.",
+  "s": "f0ce0c62"
+ },
+ "contacto.cuantas-personas-van-en-cada": {
+  "t": "Wie viele Personen sind bei jeder Tour dabei?",
+  "s": "82945be5"
+ },
+ "contacto.maximo-10-personas-por-salida": {
+  "t": "Maximal 10 Personen pro Tour. Ich bin keine Massentour – mir sind Gruppen lieber, in denen ich jede Person kennenlernen und das Tempo an die tatsächliche Gruppe anpassen kann, nicht an einen statistischen Durchschnitt.",
+  "s": "351ccee6"
+ },
+ "contacto.puedo-reservar-una-salida-privada": {
+  "t": "Kann ich eine Privattour nur für meine Gruppe buchen?",
+  "s": "4f80fb14"
+ },
+ "contacto.si-totalmente-si-sois-un": {
+  "t": "Ja, absolut. Wenn ihr eine Gruppe von Freunden, Familie oder Arbeitskollegen seid, könnt ihr die Tour exklusiv für euch buchen. Schreib mir, dann organisieren wir die Details.",
+  "s": "8ca0be71"
+ },
+ "contacto.seguridad-y-seguros": {
+  "t": "Sicherheit und Versicherung",
+  "s": "48ea1503"
+ },
+ "contacto.necesito-un-seguro-especial-para": {
+  "t": "Brauche ich eine spezielle Versicherung für die Teilnahme?",
+  "s": "dd03f4fc"
+ },
+ "contacto.recomiendo-encarecidamente-tener-un-seguro": {
+  "t": "Ich empfehle <strong>dringend</strong>, eine persönliche Unfallversicherung und, wenn möglich, eine Rega-Gönnerkarte (Schweizerische Rettungsflugwacht) zu haben. Eine Bergrettung kann zwischen CHF 1’000 und CHF 10’000 kosten. Es ist keine Pflicht für die Teilnahme, aber es wäre unverantwortlich von mir, dich nicht darauf hinzuweisen.",
+  "s": "0dee295a"
+ },
+ "contacto.que-pasa-si-alguien-del": {
+  "t": "Was passiert, wenn sich jemand aus der Gruppe unterwegs verletzt?",
+  "s": "8f5a67ba"
+ },
+ "contacto.tengo-formacion-en-primeros-auxilios": {
+  "t": "Ich habe eine Erste-Hilfe-Ausbildung für die Berge und habe immer eine vollständige Notfallapotheke dabei. Bei einer Verletzung leisten wir Erste Hilfe, beurteilen den Schweregrad und alarmieren bei Bedarf die Rettungsdienste. Niemand wird allein in den Bergen zurückgelassen.",
+  "s": "fe799fb9"
+ },
+ "contacto.sobre-las-rutas-y-el": {
+  "t": "Über die Touren und das Niveau",
+  "s": "423b4f97"
+ },
+ "contacto.no-tengo-experiencia-en-senderismo": {
+  "t": "Ich habe keine Wandererfahrung. Kann ich teilnehmen?",
+  "s": "4101c939"
+ },
+ "contacto.depende-de-la-ruta-el": {
+  "t": "Das hängt von der Tour ab. Der <strong>Creux du Van (T2)</strong> ist perfekt für Einsteigende mit guter Grundkondition. Die anderen beiden Touren (T3) erfordern etwas mehr Erfahrung und Fitness. Erzähl mir von deiner Situation, und ich sage dir ehrlich, welche Tour für dich passt.",
+  "s": "bd07217c"
+ },
+ "contacto.que-significa-t2-y-t3": {
+  "t": "Was bedeuten T2 und T3?",
+  "s": "a1759c66"
+ },
+ "contacto.son-los-niveles-de-dificultad": {
+  "t": "Das sind die Schwierigkeitsgrade des <strong>Schweizer Alpen-Clubs (SAC)</strong>. T1 ist ein Spaziergang auf flachem Weg. T2 ist Wandern mit Höhenunterschied und unebenem, aber gut markiertem Gelände. T3 bringt exponiertes Gelände und nicht immer sichtbare Pfade dazu. WT2 ist das Winteräquivalent mit Schnee.",
+  "s": "57d2e3f1"
+ },
+ "contacto.se-puede-hacer-el-creux": {
+  "t": "Kann man den Creux du Van im Winter machen?",
+  "s": "e96adeb3"
+ },
+ "contacto.si-con-las-condiciones-adecuadas": {
+  "t": "Ja, bei passenden Bedingungen. Im Winter sieht die Landschaft völlig anders aus – und ist spektakulär. Bei viel Schnee können Schneeschuhe oder Grödel nötig sein. Frag nach Verfügbarkeit und Bedingungen, bevor du buchst. Mehr Details im <a href=\"guia-creux-du-van.html#epoca\">Führer zum Creux du Van</a>.",
+  "s": "c563d444"
+ },
+ "contacto.pueden-participar-ninos": {
+  "t": "Können Kinder teilnehmen?",
+  "s": "4ee5136a"
+ },
+ "contacto.depende-de-la-edad-condicion": {
+  "t": "Das hängt vom Alter, der Kondition und der Tour ab. Minderjährige müssen immer von einer erwachsenen Person begleitet werden. Für T3-Touren empfehle ich keine Kinder unter 12–14 Jahren. Schildere mir den konkreten Fall, und wir beurteilen ihn gemeinsam.",
+  "s": "b1df8137"
+ },
+ "contacto.reservas-precios-y-logistica": {
+  "t": "Buchung, Preise und Logistik",
+  "s": "09fbecba"
+ },
+ "contacto.que-incluye-exactamente-el-precio": {
+  "t": "Was genau ist im Preis inbegriffen?",
+  "s": "bf872d5d"
+ },
+ "contacto.el-precio-incluye-la-guia": {
+  "t": "Der Preis beinhaltet den Wanderleiter auf Spanisch während der gesamten Aktivität. Bei Kandersteg 2 Tage sind zusätzlich Übernachtung in der Hütte, Abendessen und Frühstück inbegriffen. <strong>Nicht inbegriffen</strong>: Transport zum Startpunkt und persönliche Versicherung.",
+  "s": "c5504ac4"
+ },
+ "contacto.como-llego-al-punto-de": {
+  "t": "Wie komme ich zum Startpunkt?",
+  "s": "167b2a2c"
+ },
+ "contacto.todas-las-rutas-son-accesibles": {
+  "t": "Alle Touren sind mit dem Schweizer öffentlichen Verkehr (SBB/CFF) erreichbar. Nach der Buchungsbestätigung schicke ich dir die detaillierten Anweisungen – Zug, Postauto, Treffzeit und genauen Treffpunkt.",
+  "s": "ae2a25a3"
+ },
+ "contacto.puedo-cancelar-si-cambio-de": {
+  "t": "Kann ich stornieren, wenn sich meine Pläne ändern?",
+  "s": "7aff04eb"
+ },
+ "contacto.si-con-mas-de-14": {
+  "t": "Ja. Bei mehr als 14 Tagen Vorlauf volle Rückerstattung. Zwischen 7 und 14 Tagen 75 %. Zwischen 3 und 6 Tagen 50 %. Bei weniger als 48 Stunden keine Rückerstattung. Die <a href=\"clastours-legal.html\">vollständige Regelung</a> findest du in den AGB.",
+  "s": "77275680"
+ },
+ "contacto.donde-estamos": {
+  "t": "Wo wir sind",
+  "s": "319231ea"
+ },
+ "contacto.base-en-berna": {
+  "t": "Basis in <em>Bern</em>",
+  "s": "2e88e204"
+ },
+ "contacto.clas-tours-opera-desde-ipsach": {
+  "t": "Clas Tours ist in Ipsach im Kanton Bern zu Hause – im Herzen der Schweiz, wenige Minuten vom Bielersee und mit direktem Zugang zu den wichtigsten Touren im Berner Oberland und im Jura.",
+  "s": "2725ce77"
+ },
+ "contacto.las-salidas-se-organizan-desde": {
+  "t": "Die Touren starten an den jeweiligen Ausgangspunkten, die von überall in der Schweiz mit dem öffentlichen Verkehr erreichbar sind.",
+  "s": "2c743d9c"
+ },
+ "contacto.base-ipsach-canton-de-berna": {
+  "t": "<strong>Basis:</strong> Ipsach, Kanton Bern, Schweiz",
+  "s": "b88abe8f"
+ },
+ "contacto.zona-de-operacion-alpes-suizos": {
+  "t": "<strong>Einsatzgebiet:</strong> Schweizer Alpen, Berner Oberland, Jura",
+  "s": "a1d30869"
+ },
+ "contacto.temporada-activa-todo-el-ano": {
+  "t": "<strong>Aktive Saison:</strong> Ganzjährig – Sommer (T3) und Winter (WT2)",
+  "s": "358fcdc4"
+ },
+ "contacto.mapa-opcional": {
+  "t": "Optionale Karte",
+  "s": "660bd898"
+ },
+ "contacto.puedes-incrustar-aqui-un-google": {
+  "t": "Hier kannst du eine Google-Maps-Einbettung für Ipsach, Bern einfügen",
+  "s": "08e9affe"
+ },
+ "contacto.fotografias-santiago-davila-quiroz-todos": {
+  "t": "© Fotografien: Santiago Davila Quiroz – Alle Rechte vorbehalten. Die Vervielfältigung, Verbreitung oder Verwendung ohne schriftliche Genehmigung des Urhebers ist ausdrücklich untersagt.",
+  "s": "a17ae470"
+ },
+ "nosotros.hola-soy-santiago": {
+  "t": "Hallo, ich bin<br><em>Santiago</em>",
+  "s": "e31df15a"
+ },
+ "nosotros.colombiano-viviendo-en-los-alpes": {
+  "t": "Kolumbianer in den Schweizer Alpen. Wanderleiter in Ausbildung. Und die Person, die dich bei deinem nächsten Abenteuer in den Bergen begleiten wird – auf Spanisch, in deinem Tempo, mit Sicherheit an erster Stelle.",
+  "s": "0c1d4d63"
+ },
+ "nosotros.santiago-guia-de-clas-tours": {
+  "t": "Santiago, Wanderleiter von Clas Tours, lächelnd in gelber Jacke in den Bergen",
+  "s": "648159b1"
+ },
+ "nosotros.mi-historia": {
+  "t": "Meine Geschichte",
+  "s": "32123f8b"
+ },
+ "nosotros.de-colombia-a-los-alpes": {
+  "t": "Von Kolumbien<br>in die <em>Schweizer Alpen</em>",
+  "s": "e61a7c8a"
+ },
+ "nosotros.llegue-a-suiza-hace-anos": {
+  "t": "Ich kam vor Jahren mit einem Rucksack und viel Neugier in die Schweiz, um dieses Land zu verstehen. Bald entdeckte ich, dass die Alpen nicht nur eine schöne Landschaft sind, die man aus dem Zug sieht – man spürt sie, wenn man sie betritt, wenn man diese Luft atmet, wenn man einen Grat erreicht und sich die ganze Welt vor einem öffnet.",
+  "s": "7cb52aa9"
+ },
+ "nosotros.pero-tambien-descubri-algo-que": {
+  "t": "Aber ich entdeckte auch etwas, das mich störte: Für die spanischsprachige Gemeinschaft war dieses Erlebnis fast unerreichbar. Nicht aus mangelnder Lust, sondern wegen Barrieren – die Sprache, nicht zu wissen, wo man anfangen soll, niemand Vertrautes, der einem erklärt, wie die Berge hier funktionieren.",
+  "s": "232a3ee6"
+ },
+ "nosotros.clas-tours-nacio-para-cambiar": {
+  "t": "<strong>Clas Tours entstand, um das zu ändern.</strong> Damit jede spanischsprechende Person – ob in der Schweiz lebend oder zu Besuch – die Schweizer Berge mit vollem Vertrauen erleben kann und jede Anweisung, jedes Risiko, jedes Wunder am Weg versteht.",
+  "s": "e02a5e24"
+ },
+ "nosotros.actualmente-estoy-en-formacion-como": {
+  "t": "Derzeit bin ich in Ausbildung zum <strong>Wanderleiter</strong> – zertifizierter Wanderführer nach Schweizer Standards –, denn wenn man Menschen in den Bergen führt, muss man es richtig machen oder gar nicht.",
+  "s": "21bc5036"
+ },
+ "nosotros.foto-en-ruta": {
+  "t": "Foto – Unterwegs",
+  "s": "e3f9409d"
+ },
+ "nosotros.santiago-de-pie-en-un": {
+  "t": "Santiago steht mit Wanderstöcken auf einem Aussichtspunkt über einem türkisfarbenen See",
+  "s": "ba321a93"
+ },
+ "nosotros.como-trabajo": {
+  "t": "Wie ich arbeite",
+  "s": "bfc2c4c6"
+ },
+ "nosotros.lo-que-me-importa": {
+  "t": "Was mir <em>wichtig ist</em>",
+  "s": "c2b945bf"
+ },
+ "nosotros.seguridad-antes-que-nada": {
+  "t": "Sicherheit vor allem",
+  "s": "309af208"
+ },
+ "nosotros.en-la-montana-no-hay": {
+  "t": "In den Bergen gibt es keine zweite Chance. Ich kürze lieber eine Tour ab oder kehre um, bevor ich jemanden in Gefahr bringe. Die Sicherheit der Gruppe geht immer vor, ausnahmslos.",
+  "s": "17ff585f"
+ },
+ "nosotros.honestidad-directa": {
+  "t": "Direkte Ehrlichkeit",
+  "s": "ed40009d"
+ },
+ "nosotros.si-una-ruta-no-es": {
+  "t": "Wenn eine Tour nichts für dich ist, sage ich es dir. Wenn die Bedingungen nicht stimmen, sage ich ab. Ich verkaufe keine Erlebnisse, die ich nicht garantieren kann. Mir ist heute ein enttäuschter Kunde lieber als morgen ein verletzter.",
+  "s": "e5ab08ba"
+ },
+ "nosotros.grupos-pequenos-trato-real": {
+  "t": "Kleine Gruppen, echter Kontakt",
+  "s": "0eded961"
+ },
+ "nosotros.no-soy-un-guia-de": {
+  "t": "Ich bin kein Führer für Massentouren. Maximal 10 Personen. Ich kenne den Namen jeder teilnehmenden Person, passe das Tempo an, beantworte Fragen. Du bist keine Nummer auf einer Liste – du bist der Grund für die Tour.",
+  "s": "76707c4e"
+ },
+ "nosotros.pasion-genuina": {
+  "t": "Echte Leidenschaft",
+  "s": "f9c099a9"
+ },
+ "nosotros.no-hago-esto-por-cumplir": {
+  "t": "Ich mache das nicht, um etwas abzuhaken. Die Alpen begeistern mich noch immer, obwohl ich sie schon oft durchwandert habe. Diese Energie steckt an – und sie macht aus einer Wanderung eine Erinnerung fürs Leben.",
+  "s": "1a230600"
+ },
+ "nosotros.respeto-al-entorno": {
+  "t": "Respekt vor der Umwelt",
+  "s": "bbb97808"
+ },
+ "nosotros.la-montana-no-es-un": {
+  "t": "Die Berge sind kein Vergnügungspark. Wir hinterlassen keine Spuren, respektieren Flora und Fauna und halten uns an die Schweizer Wanderregeln. Wenn wir die Berge nicht schützen, gibt es keine Berge mehr zu führen.",
+  "s": "85fc289b"
+ },
+ "nosotros.en-tu-idioma-de-verdad": {
+  "t": "Wirklich in deiner Sprache",
+  "s": "2cfc4a0b"
+ },
+ "nosotros.no-es-solo-que-hablo": {
+  "t": "Es geht nicht nur darum, dass ich Spanisch spreche – ich denke auf Spanisch, verstehe Ängste auf Spanisch, feiere Gipfel auf Spanisch. Es ist ein riesiger Unterschied, ob ein Führer übersetzt oder ob er wirklich mit dir spricht.",
+  "s": "52e7d700"
+ },
+ "nosotros.formacion-y-certificaciones": {
+  "t": "Ausbildung und Zertifizierungen",
+  "s": "b8bd1a10"
+ },
+ "nosotros.preparado-para-guiarte": {
+  "t": "Bereit, <em>dich zu führen</em>",
+  "s": "1ec2e377"
+ },
+ "nosotros.la-montana-exige-preparacion-real": {
+  "t": "Die Berge verlangen echte Vorbereitung. Das ist kein Hobby, das ich zum Geschäft gemacht habe – es ist eine Berufung, die ich mit offizieller Ausbildung, echten Touren und viel Respekt vor den Bergen aufbaue.",
+  "s": "5e0bf26d"
+ },
+ "nosotros.w": {
+  "t": "W",
+  "s": "e2415cb7"
+ },
+ "nosotros.wanderleiter-guia-de-senderismo": {
+  "t": "Wanderleiter – Wanderführer",
+  "s": "a01cb7fd"
+ },
+ "nosotros.formacion-oficial-suiza-para-guias": {
+  "t": "Offizielle Schweizer Ausbildung für Wanderleitende. Sie umfasst Navigation, Meteorologie, Erste Hilfe in den Bergen, Gruppenführung und Risikomanagement.",
+  "s": "459f379c"
+ },
+ "nosotros.en-formacion-activo": {
+  "t": "In Ausbildung · Aktiv",
+  "s": "8b6d91fb"
+ },
+ "nosotros.habilitado-rutas-t3-verano": {
+  "t": "Berechtigt für T3-Touren – Sommer",
+  "s": "25feb063"
+ },
+ "nosotros.senderismo-de-montana-hasta-clasificacion": {
+  "t": "Bergwandern bis zur Klassifizierung T3 nach SAC-Skala (Schweizer Alpen-Club). Exponiertes Gelände, nicht immer markierte Pfade.",
+  "s": "13ca3f18"
+ },
+ "nosotros.wt": {
+  "t": "WT",
+  "s": "404e0bbd"
+ },
+ "nosotros.habilitado-rutas-wt2-invierno": {
+  "t": "Berechtigt für WT2-Touren – Winter",
+  "s": "7ef5330c"
+ },
+ "nosotros.senderismo-de-invierno-hasta-clasificacion": {
+  "t": "Winterwandern bis zur Klassifizierung WT2 nach SAC-Skala. Touren im Schnee auf Gelände mit geringer technischer Schwierigkeit.",
+  "s": "a71cc655"
+ },
+ "nosotros.primeros-auxilios-en-montana": {
+  "t": "Erste Hilfe in den Bergen",
+  "s": "af18c93f"
+ },
+ "nosotros.formacion-en-primeros-auxilios-aplicada": {
+  "t": "Erste-Hilfe-Ausbildung für das Bergumfeld: Notfallmanagement, Kommunikation mit Rettungsdiensten, Stabilisierung Verletzter unterwegs.",
+  "s": "9bb692ab"
+ },
+ "nosotros.certificado": {
+  "t": "Zertifiziert",
+  "s": "60caea06"
+ },
+ "nosotros.en-la-montana": {
+  "t": "In den Bergen",
+  "s": "4784f249"
+ },
+ "nosotros.mis-rutas": {
+  "t": "Meine <em>Touren</em>",
+  "s": "9de8c155"
+ },
+ "nosotros.aqui-van-fotos-reales-de": {
+  "t": "Hier sind echte Fotos von den Touren – die Landschaften, die Gruppen, die Momente, die alles lohnenswert machen.",
+  "s": "e7b172db"
+ },
+ "nosotros.santiago-descansando-en-un-refugio": {
+  "t": "Santiago ruht sich in einer Berghütte aus, in eine gestreifte Decke gehüllt",
+  "s": "c52af33b"
+ },
+ "nosotros.dos-senderistas-en-una-cresta": {
+  "t": "Zwei Wandernde auf einem felsigen Grat mit Blick auf ein Tal und einen See",
+  "s": "623a57ed"
+ },
+ "nosotros.santiago-senalando-un-letrero-amarillo": {
+  "t": "Santiago zeigt auf einen gelben Wanderwegweiser in den Bergen",
+  "s": "17a448a3"
+ },
+ "nosotros.santiago-junto-a-una-cruz": {
+  "t": "Santiago neben einem Gipfelkreuz, mit Wanderstöcken",
+  "s": "b079c110"
+ },
+ "nosotros.santiago-con-chaqueta-amarilla-y": {
+  "t": "Santiago in gelber Jacke und mit Brille in einer verschneiten Landschaft",
+  "s": "b9a498d3"
+ },
+ "nosotros.mi-filosofia": {
+  "t": "Meine Philosophie",
+  "s": "db71b48d"
+ },
+ "nosotros.la-montana-no-te-debe": {
+  "t": "Die Berge schulden dir nichts. Du schuldest es dir selbst, vorbereitet zu sein, mit Respekt und mit jemandem, der weiss, was er tut.",
+  "s": "c76e7fe3"
+ },
+ "nosotros.santiago-davila-quiroz": {
+  "t": "<span class=\"cita-dash\">—</span> Santiago Davila Quiroz",
+  "s": "3e282d49"
+ },
+ "nosotros.nos-acompanas": {
+  "t": "Kommst du mit?",
+  "s": "9b27488e"
+ },
+ "nosotros.mira-las-rutas-disponibles-y": {
+  "t": "Schau dir die verfügbaren Touren an und wähle die, die zu dir passt. Wenn du nicht weisst, welche, helfe ich dir bei der Entscheidung.",
+  "s": "1b71e32f"
+ },
+ "nosotros.ver-mis-caminatas": {
+  "t": "Meine Wanderungen ansehen →",
+  "s": "d86e5896"
+ },
+ "nosotros.escribeme-directamente-sin-formularios-sin": {
+  "t": "Schreib mir direkt. Ohne Formulare, ohne Bürokratie. Ich antworte innerhalb von 24 Stunden.",
+  "s": "0fcdb166"
+ },
+ "caminatas.rutas-guiadas-en-espanol": {
+  "t": "Geführte Touren auf Spanisch",
+  "s": "09e76591"
+ },
+ "caminatas.mis-caminatas": {
+  "t": "Meine <em>Wanderungen</em>",
+  "s": "18bd436d"
+ },
+ "caminatas.camina-los-alpes-suizos-todas": {
+  "t": "Wandere durch die Schweizer Alpen. Alle Touren geführt auf Spanisch, in kleinen Gruppen und mit Sicherheit an erster Stelle.",
+  "s": "63c4532c"
+ },
+ "caminatas.filtrar": {
+  "t": "Filtern:",
+  "s": "1198aabc"
+ },
+ "caminatas.todas": {
+  "t": "Alle",
+  "s": "8a3c3440"
+ },
+ "caminatas.principiante": {
+  "t": "Einsteiger",
+  "s": "0daca1d0"
+ },
+ "caminatas.cultural": {
+  "t": "Kultur",
+  "s": "4c551ace"
+ },
+ "caminatas.2-dias": {
+  "t": "2 <span class=\"st-u\">Tage</span>",
+  "s": "270c7405"
+ },
+ "caminatas.mayooct": {
+  "t": "Mai–Okt.",
+  "s": "86b20a9e"
+ },
+ "caminatas.stat-kand": {
+  "t": "{{p.kand}} <span class=\"st-u\">CHF/Pers.</span>",
+  "s": "4fd20368"
+ },
+ "caminatas.la-experiencia-mas-completa-que": {
+  "t": "Das umfassendste Erlebnis, das ich anbiete. Zwei Tage im Herzen des Berner Oberlands. Am ersten Tag steigst du durch das Griesalptal zur Blüemlisalphütte auf. Am zweiten ist der Abstieg am Oeschinensee entlang nach Kandersteg wie auf einer Postkarte – einer der schönsten Seen der Schweiz. <a href=\"guia-kandersteg-bluemlisalphutte.html\">Lies den vollständigen Führer zur Überschreitung →</a>",
+  "s": "4a859b45"
+ },
+ "caminatas.itinerario": {
+  "t": "Tagesablauf",
+  "s": "a263d27b"
+ },
+ "caminatas.d1": {
+  "t": "T1",
+  "s": "cc9a0d84"
+ },
+ "caminatas.griesalp-bluemisalphutte": {
+  "t": "Griesalp → Blüemlisalphütte",
+  "s": "7e16720d"
+ },
+ "caminatas.ascenso-por-el-valle-con": {
+  "t": "Aufstieg durch das Tal mit zunehmend eindrucksvoller Aussicht. Ankunft in der Hütte, Sicherheitsbriefing, Abendessen und Erholung.",
+  "s": "36c9dc61"
+ },
+ "caminatas.salida-09-00-llegada-al": {
+  "t": "Start: 09:00 · Ankunft in der Hütte: ~15:00 · ~5–6 Std.",
+  "s": "5b14be68"
+ },
+ "caminatas.d2": {
+  "t": "T2",
+  "s": "4a80baad"
+ },
+ "caminatas.bluemisalphutte-oeschinensee-kandersteg": {
+  "t": "Blüemlisalphütte → Oeschinensee → Kandersteg",
+  "s": "93fbf52e"
+ },
+ "caminatas.desayuno-temprano-en-el-refugio": {
+  "t": "Frühes Frühstück in der Hütte. Panorama-Abstieg zum Oeschinensee. Weiter nach Kandersteg.",
+  "s": "604b6224"
+ },
+ "caminatas.salida-08-00-llegada-13": {
+  "t": "Start: 08:00 · Ankunft: ~13:00 · ~4–5 Std.",
+  "s": "3eb99471"
+ },
+ "caminatas.guia-en-espanol-2-dias": {
+  "t": "Wanderleiter auf Spanisch (2 Tage)",
+  "s": "b1ee1399"
+ },
+ "caminatas.cena-y-desayuno-en-refugio": {
+  "t": "Abendessen und Frühstück in der Hütte",
+  "s": "d2d31d9d"
+ },
+ "caminatas.planificacion-y-orientacion": {
+  "t": "Planung und Einführung",
+  "s": "03155536"
+ },
+ "caminatas.seguro-personal-obligatorio": {
+  "t": "Persönliche Versicherung (obligatorisch)",
+  "s": "d057e9ce"
+ },
+ "caminatas.t3-senderismo-de-montana-escala": {
+  "t": "T3 – Bergwandern (SAC-Skala)",
+  "s": "51067b6a"
+ },
+ "caminatas.sendero-no-siempre-visible-terreno": {
+  "t": "Pfad nicht immer sichtbar, exponiertes Gelände. Erfordert gutes Bergschuhwerk, keine ausgeprägte Höhenangst und gute Kondition.",
+  "s": "067395fb"
+ },
+ "caminatas.botas-de-senderismo-con-suela": {
+  "t": "Wanderschuhe mit steifer Sohle (obligatorisch)",
+  "s": "f12746a6"
+ },
+ "caminatas.ropa-por-capas-chaqueta": {
+  "t": "Zwiebelprinzip-Kleidung + Jacke",
+  "s": "c04e14a0"
+ },
+ "caminatas.agua-min-2l-por-dia": {
+  "t": "Wasser (mind. 2 l pro Tag)",
+  "s": "f35789f0"
+ },
+ "caminatas.bastones-recomendado": {
+  "t": "Wanderstöcke (empfohlen)",
+  "s": "e5fd876d"
+ },
+ "caminatas.mochila-3040l-con-ropa-para": {
+  "t": "Rucksack 30–40 l mit Kleidung für die Nacht",
+  "s": "ac28452c"
+ },
+ "caminatas.protector-solar-y-gafas": {
+  "t": "Sonnencreme und Sonnenbrille",
+  "s": "4799954a"
+ },
+ "caminatas.por-persona-todo-incluido": {
+  "t": "pro Person · alles inklusive",
+  "s": "8b588dc4"
+ },
+ "caminatas.group-kand": {
+  "t": "Gruppen ab 7 Personen: <span>CHF {{g.kand}}/Person</span>",
+  "s": "3e9cd243"
+ },
+ "caminatas.griesalp-kandersteg-canton-de-berna": {
+  "t": "Griesalp, Kandersteg, Kanton Bern. Santiago schickt dir die Details nach der Bestätigung.",
+  "s": "77dab600"
+ },
+ "caminatas.tren-hasta-reichenbach-im-kandertal": {
+  "t": "Zug bis Reichenbach im Kandertal, dann Postauto 220 bis Griesalp. <a href=\"guia-kandersteg-bluemlisalphutte.html#como-llegar\">Anreise und Route Schritt für Schritt ansehen →</a>",
+  "s": "c6d51d6b"
+ },
+ "caminatas.se-recomienda-seguro-de-rescate": {
+  "t": "Eine Bergrettungsversicherung (Rega) wird empfohlen. Siehe AGB.",
+  "s": "c03773ce"
+ },
+ "caminatas.ideal-para-empezar": {
+  "t": "Ideal für den Einstieg",
+  "s": "bed1d03e"
+ },
+ "caminatas.circular-por-el-anfiteatro-rocoso": {
+  "t": "Rundwanderung durch das Felsamphitheater des Neuenburger Juras",
+  "s": "67938ebe"
+ },
+ "caminatas.46-horas": {
+  "t": "4–6 <span class=\"st-u\">Stunden</span>",
+  "s": "7187504e"
+ },
+ "caminatas.stat-creux": {
+  "t": "{{p.creux}} <span class=\"st-u\">CHF/Pers.</span>",
+  "s": "7503848c"
+ },
+ "caminatas.el-grand-canyon-suizo-un": {
+  "t": "Der „Grand Canyon der Schweiz“. Ein fast 160 Meter hohes Felsamphitheater im Herzen des Neuenburger Juras, Heimat einer Steinbockkolonie, die man oft auf den Felsbändern und am Weg sieht. In jeder Jahreszeit spektakulär. Perfekt für deine erste grosse Wanderung in der Schweiz. <a href=\"guia-creux-du-van.html\">Lies den vollständigen Führer zum Creux du Van →</a>",
+  "s": "1c08b2aa"
+ },
+ "caminatas.noiraigue-borde-del-circo-descenso": {
+  "t": "Noiraigue → Rand des Zirkus → Abstieg",
+  "s": "44a28cce"
+ },
+ "caminatas.ascenso-gradual-por-el-bosque": {
+  "t": "Gleichmässiger Aufstieg durch den Wald bis zum Rand des Amphitheaters. Spaziergang auf dem Grat mit Panoramablick. Rundweg zurück zum Startpunkt.",
+  "s": "b5870ac8"
+ },
+ "caminatas.4-a-6h-de-marcha": {
+  "t": "4 bis 6 Std. Gehzeit · Tempo an die Gruppe angepasst",
+  "s": "819eb240"
+ },
+ "caminatas.t2-senderismo-de-montana-escala": {
+  "t": "T2 – Bergwandern (SAC-Skala)",
+  "s": "be3a8e5e"
+ },
+ "caminatas.sendero-bien-marcado-sin-exposicion": {
+  "t": "Gut markierter Weg, keine technische Exposition. Geeignet bei guter Grundkondition.",
+  "s": "5280e38b"
+ },
+ "caminatas.calzado-de-senderismo-con-suela": {
+  "t": "Wanderschuhe mit griffiger Sohle (obligatorisch)",
+  "s": "95efdd34"
+ },
+ "caminatas.ropa-por-capas-agua-y": {
+  "t": "Zwiebelprinzip-Kleidung + Wasser und Snack",
+  "s": "e6f42548"
+ },
+ "caminatas.bastones-recomendado-en-invierno": {
+  "t": "Wanderstöcke (im Winter empfohlen)",
+  "s": "657b2a20"
+ },
+ "caminatas.crampones-de-senderismo-invierno-con": {
+  "t": "Grödel/Schneeketten für Wanderschuhe (Winter mit Schnee)",
+  "s": "e9cb9036"
+ },
+ "caminatas.group-creux": {
+  "t": "Gruppen ab 7 Personen: <span>CHF {{g.creux}}/Person</span>",
+  "s": "b9120c7e"
+ },
+ "caminatas.tren-hasta-noiraigue-ne-santiago": {
+  "t": "Zug bis Noiraigue (NE). Santiago schickt dir die Anweisungen nach der Bestätigung. <a href=\"guia-creux-du-van.html#como-llegar\">Anreise und Route Schritt für Schritt ansehen →</a>",
+  "s": "105d194c"
+ },
+ "caminatas.disponible-en-invierno": {
+  "t": "Im Winter verfügbar",
+  "s": "fd3bbb9c"
+ },
+ "caminatas.si-con-condiciones-consulta-disponibilidad": {
+  "t": "Ja, unter Bedingungen. Frag vor der Buchung nach der Verfügbarkeit.",
+  "s": "4e643d02"
+ },
+ "caminatas.junio-septiembre": {
+  "t": "Juni – September",
+  "s": "affd7d1a"
+ },
+ "caminatas.68-horas": {
+  "t": "6–8 <span class=\"st-u\">Stunden</span>",
+  "s": "85e20d95"
+ },
+ "caminatas.junsep": {
+  "t": "Juni–Sept.",
+  "s": "3a898e63"
+ },
+ "caminatas.stat-augst": {
+  "t": "{{p.augst}} <span class=\"st-u\">CHF/Pers.</span>",
+  "s": "25b9181f"
+ },
+ "caminatas.una-cresta-que-te-deja": {
+  "t": "Ein Grat, der dich sprachlos macht. Vom Augstmatthorn über den ganzen Grat bis zum Harderkulm, mit Thunersee, Brienzersee und Eiger, Mönch und Jungfrau im Hintergrund. Du endest in Interlaken. Anspruchsvoll und absolut episch.",
+  "s": "494e8af9"
+ },
+ "caminatas.ascenso-al-augstmatthorn-recorrido-por": {
+  "t": "Aufstieg zum Augstmatthorn, Gratwanderung mit ständiger Aussicht, Ankunft am Harderkulm und Abstieg nach Interlaken.",
+  "s": "0f1f1c98"
+ },
+ "caminatas.salida-08-00-llegada-16": {
+  "t": "Start: 08:00 · Ankunft: ~16:00–17:00 · ~6–8 Std.",
+  "s": "fcba2c53"
+ },
+ "caminatas.t3-senderismo-de-montana-exigente": {
+  "t": "T3 – Anspruchsvolles Bergwandern (SAC-Skala)",
+  "s": "1e4158c9"
+ },
+ "caminatas.terreno-expuesto-en-la-cresta": {
+  "t": "Exponiertes Gelände auf dem Grat. Erfordert Schwindelfreiheit, gutes Schuhwerk und ausgezeichnete Kondition.",
+  "s": "fd2ac850"
+ },
+ "caminatas.botas-con-tobillo-alto-obligatorio": {
+  "t": "Knöchelhohe Schuhe (obligatorisch)",
+  "s": "f37d97a3"
+ },
+ "caminatas.agua-min-2-5l-comida": {
+  "t": "Wasser (mind. 2,5 l) + ausreichend Verpflegung",
+  "s": "85c6bdb6"
+ },
+ "caminatas.chaqueta-imprescindible": {
+  "t": "Jacke unerlässlich",
+  "s": "066bf28b"
+ },
+ "caminatas.bastones-muy-recomendado": {
+  "t": "Wanderstöcke (sehr empfohlen)",
+  "s": "be49bd81"
+ },
+ "caminatas.protector-solar-alta-proteccion": {
+  "t": "Sonnencreme mit hohem Schutzfaktor",
+  "s": "197a79ce"
+ },
+ "caminatas.group-augst": {
+  "t": "Gruppen ab 7 Personen: <span>CHF {{g.augst}}/Person</span>",
+  "s": "6a95a722"
+ },
+ "caminatas.nos-encontramos-en-interlaken-west": {
+  "t": "Wir treffen uns um 10:00 Uhr am <strong>Bahnhof Interlaken West</strong> und steigen gemeinsam auf.<br><br>\n                ⚠️ Das letzte Stück mit dem Bus alpin B107 kostet extra und ist nicht inbegriffen: <strong>CHF 11/Person · nur Bargeld</strong>.<br><br>\n                Du endest in Interlaken – lineare Tour.",
+  "s": "a782c84e"
+ },
+ "caminatas.solo-disponible-junioseptiembre-segun-condiciones": {
+  "t": "Nur von Juni bis September verfügbar, je nach Schneeverhältnissen.",
+  "s": "663c2a6d"
+ },
+ "caminatas.cultura-e-industria": {
+  "t": "Kultur und Industrie",
+  "s": "98cfebb7"
+ },
+ "caminatas.lunes-viernes": {
+  "t": "Montag – Freitag",
+  "s": "dd38f1fc"
+ },
+ "caminatas.saint-imier-musee-longines-caminata": {
+  "t": "Saint-Imier (Musée Longines) → Wanderung durch das Suze-Tal → Courtelary (Fabrik Camille Bloch)",
+  "s": "068d52f8"
+ },
+ "caminatas.fotos-proximamente": {
+  "t": "Fotos folgen bald",
+  "s": "17a49b76"
+ },
+ "caminatas.3-horas": {
+  "t": "~3 <span class=\"st-u\">Stunden</span>",
+  "s": "0c2d7e0c"
+ },
+ "caminatas.lv-todo-el-ano": {
+  "t": "Mo–Fr ganzjährig",
+  "s": "78963c4b"
+ },
+ "caminatas.stat-relojes": {
+  "t": "{{p.relojes}} <span class=\"st-u\">CHF/Pers.</span>",
+  "s": "6c7ff382"
+ },
+ "caminatas.una-jornada-unica-que-combina": {
+  "t": "Ein einzigartiger Tag, der zwei Ikonen der Schweizer Industrie verbindet: die Kunst der Präzisionsuhrmacherei im Musée Longines und den Genuss handwerklicher Schokolade in der Fabrik Camille Bloch. Dazwischen eine ruhige Wanderung durch das grüne Tal der Suze im Berner Jura. Perfekt für alle – ohne technische Schwierigkeit, aber mit viel Charakter.",
+  "s": "67aef23d"
+ },
+ "caminatas.visita-musee-longines-saint-imier": {
+  "t": "Besuch Musée Longines · Saint-Imier",
+  "s": "c105e247"
+ },
+ "caminatas.comenzamos-en-el-musee-longines": {
+  "t": "Wir beginnen im Musée Longines mit über 150 Jahren Uhrmachergeschichte. Eintritt frei, vorherige Reservierung obligatorisch. Santiago führt dich auf Spanisch durch den Besuch.",
+  "s": "c5284961"
+ },
+ "caminatas.horario-lv-9h12h-y-13h3017h": {
+  "t": "Öffnungszeiten Mo–Fr · 9–12 Uhr und 13.30–17 Uhr · Gratis · Reservierung obligatorisch",
+  "s": "c383ff7b"
+ },
+ "caminatas.caminata-por-el-valle-del": {
+  "t": "Wanderung durch das Suze-Tal",
+  "s": "80018d9f"
+ },
+ "caminatas.sendero-llano-y-bien-senalizado": {
+  "t": "Flacher, gut beschilderter Weg durch den Talgrund bis Courtelary. Ruhige Landschaft des Berner Juras, ideal zum Plaudern und Geniessen ohne Eile.",
+  "s": "9417195b"
+ },
+ "caminatas.1h45-de-marcha-ritmo-tranquilo": {
+  "t": "~1 Std. 45 Min. Gehzeit · Ruhiges Tempo",
+  "s": "612bb7ac"
+ },
+ "caminatas.visita-fabrica-camille-bloch-courtelary": {
+  "t": "Besuch Fabrik Camille Bloch · Courtelary",
+  "s": "49854835"
+ },
+ "caminatas.final-de-etapa-en-la": {
+  "t": "Etappenziel an der Fabrik des berühmten Ragusa. Shop, Ausstellung und optional eine geführte Besichtigung der Produktion.",
+  "s": "83a2ad33"
+ },
+ "caminatas.mardom-9h3018h-entrada-chf-11": {
+  "t": "Di–So · 9.30–18 Uhr · Eintritt CHF 11 Erwachsene / CHF 7 Kinder · Zahlung direkt an der Kasse",
+  "s": "e750b8ed"
+ },
+ "caminatas.orientacion-visita-longines": {
+  "t": "Einführung zum Longines-Besuch",
+  "s": "1bfd4092"
+ },
+ "caminatas.coordinacion-visita-camille-bloch": {
+  "t": "Koordination des Besuchs bei Camille Bloch",
+  "s": "93514db9"
+ },
+ "caminatas.planificacion-y-logistica": {
+  "t": "Planung und Logistik",
+  "s": "327c0d7d"
+ },
+ "caminatas.entrada-camille-bloch-chf-11": {
+  "t": "Eintritt Camille Bloch (CHF 11/Erwachsene)",
+  "s": "a703dcf9"
+ },
+ "caminatas.t1-paseo-sin-dificultad-tecnica": {
+  "t": "T1 – Spaziergang · Keine technische Schwierigkeit (SAC-Skala)",
+  "s": "59725b3b"
+ },
+ "caminatas.sendero-llano-bien-marcado-y": {
+  "t": "Flacher, gut markierter Weg, für jedes Niveau zugänglich. Geeignet für Familien, ältere Personen und alle, die sonst nicht wandern.",
+  "s": "396ee988"
+ },
+ "caminatas.calzado-comodo-para-caminar-no": {
+  "t": "Bequeme Schuhe zum Gehen (keine technischen Wanderschuhe nötig)",
+  "s": "3f3e66f1"
+ },
+ "caminatas.ropa-comoda-segun-el-tiempo": {
+  "t": "Bequeme Kleidung je nach Wetter",
+  "s": "a0efa5ca"
+ },
+ "caminatas.agua-y-snack-para-la": {
+  "t": "Wasser und Snack für die Wanderung",
+  "s": "8d87dd13"
+ },
+ "caminatas.efectivo-o-tarjeta-para-la": {
+  "t": "Bargeld oder Karte für den Eintritt bei Camille Bloch",
+  "s": "419c5757"
+ },
+ "caminatas.group-relojes": {
+  "t": "Gruppen ab 7 Personen: <span>CHF {{g.relojes}}/Person</span>",
+  "s": "d9e129c4"
+ },
+ "caminatas.punto-de-partida": {
+  "t": "Startpunkt",
+  "s": "b4440c9c"
+ },
+ "caminatas.musee-longines-saint-imier-be": {
+  "t": "Musée Longines, Saint-Imier (BE). Zug ab Biel/Bienne oder La Chaux-de-Fonds. Santiago schickt dir die Details nach der Bestätigung.",
+  "s": "7f31f669"
+ },
+ "caminatas.musee-longines": {
+  "t": "Musée Longines",
+  "s": "2d3456ca"
+ },
+ "caminatas.41-32-942-54-25": {
+  "t": "+41 32 942 54 25 · Eintritt frei · Reservierung obligatorisch · Mo–Fr 9–12 Uhr und 13.30–17 Uhr",
+  "s": "34b9b387"
+ },
+ "caminatas.esta-ruta-solo-esta-disponible": {
+  "t": "Diese Tour ist nur von <strong>Montag bis Freitag</strong> verfügbar. Das Musée Longines ist samstags und sonntags geschlossen.",
+  "s": "a8e88d7b"
+ },
+ "caminatas.no-sabes-cual-es-la": {
+  "t": "Du weisst nicht, welche<br><em>die richtige für dich</em> ist?",
+  "s": "8ef7b84f"
+ },
+ "caminatas.cuentame-tu-nivel-tus-fechas": {
+  "t": "Erzähl mir dein Niveau, deine Daten und wie viele ihr seid. Ich empfehle dir ehrlich die passende Tour.",
+  "s": "8583b65d"
+ },
+ "caminatas.pideme-asesoria": {
+  "t": "Beratung anfragen →",
+  "s": "2872abad"
+ },
+ "caminatas.ver-calendario-de-salidas": {
+  "t": "Tourenkalender ansehen",
+  "s": "eff38dc8"
+ },
+ "calendario.opt-creux-2": {
+  "t": "2 Personen — CHF {{t.creux.2}}",
+  "s": "2c296ff8"
+ },
+ "calendario.opt-creux-3": {
+  "t": "3 Personen — CHF {{t.creux.3}}",
+  "s": "dd4881a4"
+ },
+ "calendario.opt-creux-4": {
+  "t": "4 Personen — CHF {{t.creux.4}}",
+  "s": "285ddce9"
+ },
+ "calendario.opt-creux-5": {
+  "t": "5 Personen — CHF {{t.creux.5}}",
+  "s": "492b1052"
+ },
+ "calendario.opt-creux-6": {
+  "t": "6 Personen — CHF {{t.creux.6}}",
+  "s": "6f591c81"
+ },
+ "calendario.opt-kand-2": {
+  "t": "2 Personen — CHF {{t.kand.2}}",
+  "s": "adcc3502"
+ },
+ "calendario.opt-kand-3": {
+  "t": "3 Personen — CHF {{t.kand.3}}",
+  "s": "a5d2ba2f"
+ },
+ "calendario.opt-kand-4": {
+  "t": "4 Personen — CHF {{t.kand.4}}",
+  "s": "06e6313f"
+ },
+ "calendario.opt-kand-5": {
+  "t": "5 Personen — CHF {{t.kand.5}}",
+  "s": "41a86e4e"
+ },
+ "calendario.opt-augst-2": {
+  "t": "2 Personen — CHF {{t.augst.2}}",
+  "s": "028b447c"
+ },
+ "calendario.opt-augst-3": {
+  "t": "3 Personen — CHF {{t.augst.3}}",
+  "s": "676cada5"
+ },
+ "calendario.opt-augst-4": {
+  "t": "4 Personen — CHF {{t.augst.4}}",
+  "s": "09b6fc11"
+ },
+ "calendario.opt-augst-5": {
+  "t": "5 Personen — CHF {{t.augst.5}}",
+  "s": "f7903ea3"
+ },
+ "calendario.opt-augst-6": {
+  "t": "6 Personen — CHF {{t.augst.6}}",
+  "s": "c69e7573"
+ },
+ "calendario.opt-relojes-2": {
+  "t": "2 Personen — CHF {{t.relojes.2}}",
+  "s": "8ef3cf58"
+ },
+ "calendario.opt-relojes-3": {
+  "t": "3 Personen — CHF {{t.relojes.3}}",
+  "s": "23d4cfe0"
+ },
+ "calendario.opt-relojes-4": {
+  "t": "4 Personen — CHF {{t.relojes.4}}",
+  "s": "6456b0a9"
+ },
+ "calendario.opt-relojes-5": {
+  "t": "5 Personen — CHF {{t.relojes.5}}",
+  "s": "0caef490"
+ },
+ "calendario.opt-relojes-6": {
+  "t": "6 Personen — CHF {{t.relojes.6}}",
+  "s": "0ccdbec9"
+ },
+ "calendario.salidas-a-demanda": {
+  "t": "Touren auf Anfrage",
+  "s": "1e6582a7"
+ },
+ "calendario.propon-tu-fecha-y-armamos": {
+  "t": "Schlag dein <em>Datum</em> vor<br>und wir organisieren die Tour",
+  "s": "b7c01d14"
+ },
+ "calendario.salimos-con-un-minimo-de": {
+  "t": "Wir starten ab mindestens 2 Personen, an dem Datum, das dir am besten passt. Kleine Gruppen, Wanderleiter auf Spanisch, Sicherheit zuerst.",
+  "s": "768dbef3"
+ },
+ "calendario.rutas-disponibles": {
+  "t": "Verfügbare Touren",
+  "s": "d50a344d"
+ },
+ "calendario.salidas-a-demanda-2": {
+  "t": "Touren <em>auf Anfrage</em>",
+  "s": "da297ffd"
+ },
+ "calendario.ruta-02": {
+  "t": "Tour 02",
+  "s": "72dcd52f"
+ },
+ "calendario.circular-por-el-anfiteatro-rocoso": {
+  "t": "Rundwanderung durch das Felsamphitheater des Neuenburger Juras · <a href=\"guia-creux-du-van.html\" style=\"color:inherit;text-decoration:underline\">Zum Führer</a>",
+  "s": "9fd19dac"
+ },
+ "calendario.t2-principiante": {
+  "t": "T2 · Einsteiger",
+  "s": "bbf6393c"
+ },
+ "calendario.primavera": {
+  "t": "Frühling",
+  "s": "a37994bf"
+ },
+ "calendario.el-grand-canyon-suizo-con": {
+  "t": "Der Grand Canyon der Schweiz mit seinen Wäldern und seiner Steinbockkolonie – mit etwas Glück siehst du sie auf den Felsbändern oder beim Überqueren des Weges. Ein 160 Meter hohes Felsamphitheater, umgeben von Natur. Perfekt für deine erste grosse Wanderung in der Schweiz.",
+  "s": "b6ff3fbe"
+ },
+ "calendario.estacion-de-tren-de-noiraigue": {
+  "t": "Bahnhof Noiraigue (NE) · Santiago schickt dir die genaue Zeit nach der Bestätigung",
+  "s": "70403c20"
+ },
+ "calendario.tren-sbb-hasta-noiraigue-desde": {
+  "t": "SBB-Zug bis Noiraigue. Ab Bern ~1 Std. 20 Min. · Ab Zürich ~2 Std.",
+  "s": "96454b82"
+ },
+ "calendario.sub-creux": {
+  "t": "Creux du Van · Datum auf Anfrage · CHF {{p.creux}}/Person",
+  "s": "fed1a1eb"
+ },
+ "calendario.nivel-de-experiencia-dudas-necesidades": {
+  "t": "Erfahrungsniveau, Fragen, besondere Bedürfnisse ...",
+  "s": "58eaef44"
+ },
+ "calendario.ruta-01-experiencia-completa": {
+  "t": "⭐ Tour 01 · Das volle Erlebnis",
+  "s": "0032ada8"
+ },
+ "calendario.griesalp-bluemisalphutte-oeschinensee-kandersteg-ver": {
+  "t": "Griesalp → Blüemlisalphütte → Oeschinensee → Kandersteg · <a href=\"guia-kandersteg-bluemlisalphutte.html\" style=\"color:inherit;text-decoration:underline\">Zum Führer</a>",
+  "s": "d2621cc3"
+ },
+ "calendario.t3-intermedio": {
+  "t": "T3 · Mittel",
+  "s": "52b04bae"
+ },
+ "calendario.la-experiencia-mas-completa-de": {
+  "t": "Das umfassendste Erlebnis von Clas Tours. Zwei Tage im Herzen des Berner Oberlands. Am Freitag Aufstieg durch das Griesalptal zur Blüemlisalphütte, Übernachtung in der Berghütte, und am Samstag Abstieg am Oeschinensee entlang nach Kandersteg.",
+  "s": "c525ce22"
+ },
+ "calendario.guia-en-espanol-2-dias": {
+  "t": "Wanderleiter auf Spanisch (2 volle Tage)",
+  "s": "d603a0ae"
+ },
+ "calendario.media-pension-incluida": {
+  "t": "Halbpension inbegriffen",
+  "s": "ebf3a0c1"
+ },
+ "calendario.te-de-senderismo-1-litro": {
+  "t": "Wandertee (1 Liter)",
+  "s": "6c02f889"
+ },
+ "calendario.bebidas-en-el-refugio-aparte": {
+  "t": "Getränke in der Hütte (separat)",
+  "s": "d19b2b90"
+ },
+ "calendario.media-pension-en-el-refugio": {
+  "t": "<strong>Die Halbpension in der Hütte umfasst:</strong> Abendessen um 18:30 Uhr (3-Gang-Menü, Getränke nicht inbegriffen), Frühstück und 1 Liter Wandertee. Zuschlag glutenfrei/laktosefrei: CHF 5.–",
+  "s": "46aa44db"
+ },
+ "calendario.tren-hasta-reichenbach-im-kandertal": {
+  "t": "Zug bis Reichenbach im Kandertal, dann Postauto 220 bis Griesalp. Santiago schickt dir detaillierte Anweisungen.",
+  "s": "1c4fa54b"
+ },
+ "calendario.sub-kand": {
+  "t": "Kandersteg · Datum auf Anfrage · CHF {{p.kand}}/Person",
+  "s": "4624a752"
+ },
+ "calendario.alguien-del-grupo-es-vegetariano": {
+  "t": "Ist jemand in der Gruppe Vegetarier/in?",
+  "s": "7495cb76"
+ },
+ "calendario.si-indicar-cuantos-en-mensaje": {
+  "t": "Ja (Anzahl in der Nachricht angeben)",
+  "s": "3c9adbb6"
+ },
+ "calendario.alguien-tiene-intolerancia-gluten-lactosa": {
+  "t": "Hat jemand eine Gluten-/Laktoseintoleranz?",
+  "s": "1b1b4eab"
+ },
+ "calendario.si-suplemento-chf-5-persona": {
+  "t": "Ja – Zuschlag CHF 5/Person (in der Nachricht angeben)",
+  "s": "f9a0056d"
+ },
+ "calendario.nivel-de-experiencia-necesidades-especiales": {
+  "t": "Erfahrungsniveau, besondere Bedürfnisse, Fragen ...",
+  "s": "e498cfe2"
+ },
+ "calendario.minimo-2-personas-te-contactamos": {
+  "t": "Mindestens 2 Personen · Wir melden uns innerhalb von 24 Std.",
+  "s": "7c3c5962"
+ },
+ "calendario.ruta-03": {
+  "t": "Tour 03",
+  "s": "793a6108"
+ },
+ "calendario.t3-exigente": {
+  "t": "T3 · Anspruchsvoll",
+  "s": "84d64294"
+ },
+ "calendario.la-ruta-mas-epica-del": {
+  "t": "Die epischste Tour im Programm. Grat mit 360°-Aussicht – der türkisfarbene Brienzersee zu deinen Füssen und Eiger, Mönch und Jungfrau im Hintergrund. Der Schweizer Sommer von seiner besten Seite: lange Tage, freie Sicht und Steinböcke an den Hängen.",
+  "s": "ea5639e1"
+ },
+ "calendario.nos-encontramos-en-interlaken-west": {
+  "t": "Wir treffen uns um 10:00 Uhr am <strong>Bahnhof Interlaken West</strong>.<br><br>\n                🚌 Von dort nehmen wir gemeinsam den Bus B106 → Habkern, Zäundli (10:04→10:23)<br>\n                🚌 Dann den Bus alpin B107 → Lombachalp (10:30→10:55)<br><br>\n                ⚠️ <strong>Das letzte Stück (Bus alpin B107) kostet extra und ist im Preis nicht inbegriffen:</strong><br>\n                CHF 11 Erwachsene · CHF 7 Kinder (6–16 Jahre) · CHF 5 Hunde · <strong>Nur Bargeld</strong><br><br>\n                Du endest in Interlaken – lineare Tour, du kehrst nicht zum Startpunkt zurück.",
+  "s": "39c35c99"
+ },
+ "calendario.importante": {
+  "t": "Wichtig",
+  "s": "91bda79e"
+ },
+ "calendario.ruta-exigente-se-requiere-buena": {
+  "t": "Anspruchsvolle Tour. Gute Kondition und keine ausgeprägte Höhenangst erforderlich. Frag Santiago, wenn du Zweifel am Niveau hast.",
+  "s": "541c4340"
+ },
+ "calendario.sub-augst": {
+  "t": "Augstmatthorn · Datum auf Anfrage · CHF {{p.augst}}/Person",
+  "s": "17fe99be"
+ },
+ "calendario.experiencia-previa-en-senderismo": {
+  "t": "Wandererfahrung *",
+  "s": "0b9e68cf"
+ },
+ "calendario.principiante-pocas-caminatas-previas": {
+  "t": "Einsteiger – wenige bisherige Wanderungen",
+  "s": "376bce7c"
+ },
+ "calendario.intermedio-rutas-t2-t3-ocasionales": {
+  "t": "Mittel – gelegentlich T2/T3-Touren",
+  "s": "6ec9c06f"
+ },
+ "calendario.avanzado-rutas-t3-con-regularidad": {
+  "t": "Fortgeschritten – regelmässig T3-Touren",
+  "s": "01198138"
+ },
+ "calendario.dudas-sobre-el-nivel-necesidades": {
+  "t": "Fragen zum Niveau, besondere Bedürfnisse ...",
+  "s": "a591d78a"
+ },
+ "calendario.ruta-04-cultural": {
+  "t": "Tour 04 · Kultur",
+  "s": "2f5ce083"
+ },
+ "calendario.musee-longines-saint-imier-valle": {
+  "t": "Musée Longines (Saint-Imier) → Suze-Tal → Camille Bloch (Courtelary) · <a href=\"clastours-caminatas-v4.html#r4\" style=\"color:inherit;text-decoration:underline\">Zur Tour</a>",
+  "s": "ff5a4103"
+ },
+ "calendario.t1-facil": {
+  "t": "T1 · Leicht",
+  "s": "d6210812"
+ },
+ "calendario.una-jornada-tranquila-que-combina": {
+  "t": "Ein ruhiger Tag, der zwei Schweizer Ikonen verbindet: das Musée Longines mit über 150 Jahren Uhrmachergeschichte und die Schokoladenfabrik Camille Bloch, die Heimat des Ragusa. Dazwischen eine flache Wanderung von etwa 3 Stunden durch das Suze-Tal.",
+  "s": "2a00ed1a"
+ },
+ "calendario.entrada-camille-bloch-aparte": {
+  "t": "Eintritt Camille Bloch (separat)",
+  "s": "2d1cc12a"
+ },
+ "calendario.punto-de-encuentro-musee-longines": {
+  "t": "Treffpunkt · Musée Longines",
+  "s": "4ad99661"
+ },
+ "calendario.musee-longines-saint-imier-be": {
+  "t": "Musée Longines, Saint-Imier (BE). Zug ab Biel/Bienne oder La Chaux-de-Fonds. Santiago schickt dir die genaue Zeit nach der Bestätigung.",
+  "s": "26775622"
+ },
+ "calendario.dias-y-horarios": {
+  "t": "Tage und Zeiten",
+  "s": "673f2f32"
+ },
+ "calendario.se-puede-hacer-de-martes": {
+  "t": "Möglich von Dienstag bis Freitag: Das Musée Longines ist von Montag bis Freitag geöffnet (9–12 Uhr und 13.30–17 Uhr, Eintritt frei mit vorheriger Reservierung, die Santiago koordiniert), und Camille Bloch ist von Dienstag bis Sonntag geöffnet (Eintritt CHF 11 Erwachsene / CHF 7 Kinder, Zahlung an der Kasse). Zeiten gemäss den Websites der jeweiligen Orte; Santiago bestätigt sie bei der Buchung.",
+  "s": "81052370"
+ },
+ "calendario.sub-relojes": {
+  "t": "Uhren &amp; Schokolade · Datum auf Anfrage · CHF {{p.relojes}}/Person",
+  "s": "f2579d16"
+ },
+ "calendario.dudas-necesidades-especiales-fecha-alternativa": {
+  "t": "Fragen, besondere Bedürfnisse, alternatives Datum ...",
+  "s": "ed6917e8"
+ },
+ "calendario.solicitud-enviada": {
+  "t": "Anfrage gesendet!",
+  "s": "cb8ac078"
+ },
+ "calendario.tu-solicitud-de-inscripcion-ha": {
+  "t": "Deine Anmeldeanfrage wurde gesendet. Santiago meldet sich innerhalb von 24 Stunden, um das Datum zu bestätigen und die Zahlung zu koordinieren.",
+  "s": "f8acc66a"
+ },
+ "calendario.entendido": {
+  "t": "Verstanden",
+  "s": "ee24e6fe"
+ },
+ "calendario.fotografias-santiago-davila-quiroz-todos": {
+  "t": "© Fotografien: Santiago Davila Quiroz – Alle Rechte vorbehalten. Die Vervielfältigung ohne schriftliche Genehmigung des Urhebers ist ausdrücklich untersagt.",
+  "s": "e64f8696"
+ },
+ "legal.volver-al-inicio": {
+  "t": "Zurück zur Startseite",
+  "s": "1afb1193"
+ },
+ "legal.documentacion-legal": {
+  "t": "Rechtliche Dokumente",
+  "s": "1bffee96"
+ },
+ "legal.terminos-y-condiciones": {
+  "t": "Allgemeine Geschäftsbedingungen",
+  "s": "3e94efeb"
+ },
+ "legal.clas-tours-by-davila-quiroz": {
+  "t": "Clas Tours by Davila Quiroz · clastours.ch",
+  "s": "c3963f20"
+ },
+ "legal.ultima-actualizacion-enero-2025-version": {
+  "t": "Letzte Aktualisierung: Januar 2025 · Version 1.0 · Alle Leistungen unterliegen diesen Bedingungen.",
+  "s": "820e6b98"
+ },
+ "legal.lea-este-documento-antes-de": {
+  "t": "<strong>Bitte lies dieses Dokument vor der Buchung.</strong> Mit der Bestätigung einer Buchung bei Clas Tours by Davila Quiroz erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen gelesen, verstanden und vollständig akzeptiert zu haben. Die Teilnahme an einer Aktivität bedeutet die Annahme aller hier festgelegten Bedingungen, unabhängig vom Wohnsitzland oder der Nationalität der Kundin bzw. des Kunden.",
+  "s": "706a3351"
+ },
+ "legal.contenido": {
+  "t": "Inhalt",
+  "s": "e57fdf1b"
+ },
+ "legal.1-identificacion-del-prestador": {
+  "t": "1. Angaben zum Anbieter",
+  "s": "c42c82bc"
+ },
+ "legal.2-servicios-ofrecidos": {
+  "t": "2. Angebotene Leistungen",
+  "s": "8728317a"
+ },
+ "legal.3-reservas-y-confirmacion": {
+  "t": "3. Buchung und Bestätigung",
+  "s": "2fbc14dd"
+ },
+ "legal.4-precios-y-forma-de": {
+  "t": "4. Preise und Zahlungsweise",
+  "s": "c6686118"
+ },
+ "legal.5-cancelacion-y-reembolsos": {
+  "t": "5. Stornierung und Rückerstattung",
+  "s": "834f31d2"
+ },
+ "legal.6-requisitos-de-participacion": {
+  "t": "6. Teilnahmevoraussetzungen",
+  "s": "5bd6830e"
+ },
+ "legal.7-riesgos-y-responsabilidad": {
+  "t": "7. Risiken und Haftung",
+  "s": "a8e6dbf2"
+ },
+ "legal.8-seguros": {
+  "t": "8. Versicherungen",
+  "s": "ce490d9b"
+ },
+ "legal.9-conducta-en-ruta": {
+  "t": "9. Verhalten unterwegs",
+  "s": "9e7d471d"
+ },
+ "legal.10-privacidad-y-datos": {
+  "t": "10. Datenschutz",
+  "s": "725586b7"
+ },
+ "legal.11-ley-aplicable-y-jurisdiccion": {
+  "t": "11. Anwendbares Recht und Gerichtsstand",
+  "s": "89d01ff6"
+ },
+ "legal.12-disposiciones-finales": {
+  "t": "12. Schlussbestimmungen",
+  "s": "d0e5bacc"
+ },
+ "legal.articulo-01": {
+  "t": "Artikel 01",
+  "s": "e9f72b38"
+ },
+ "legal.identificacion-del-prestador-de-servicios": {
+  "t": "Angaben zum Leistungserbringer",
+  "s": "a66842d7"
+ },
+ "legal.razon-social-clas-tours-by": {
+  "t": "<strong>Firma:</strong> Clas Tours by Davila Quiroz",
+  "s": "1804663f"
+ },
+ "legal.responsable-santiago-davila-quiroz": {
+  "t": "<strong>Verantwortlich:</strong> Santiago Davila Quiroz",
+  "s": "6dab79a1"
+ },
+ "legal.domicilio-ipsach-canton-de-berna": {
+  "t": "<strong>Sitz:</strong> Ipsach, Kanton Bern, Schweiz",
+  "s": "372778cb"
+ },
+ "legal.sitio-web-www-clastours-ch": {
+  "t": "<strong>Website:</strong> www.clastours.ch",
+  "s": "f7d1c41e"
+ },
+ "legal.correo-electronico": {
+  "t": "E-Mail:",
+  "s": "117fd8a9"
+ },
+ "legal.telefono-whatsapp-41-077-460": {
+  "t": "<strong>Telefon / WhatsApp:</strong> (+41) 077 460 36 41",
+  "s": "1520adc8"
+ },
+ "legal.clas-tours-by-davila-quiroz-2": {
+  "t": "Clas Tours by Davila Quiroz ist ein Wanderführer-Unternehmen mit Sitz in der Schweiz, betrieben von Santiago Davila Quiroz, der sich derzeit in Ausbildung zum Wanderleiter (Wanderführer) nach Schweizer Standards befindet.",
+  "s": "8ca147d2"
+ },
+ "legal.articulo-02": {
+  "t": "Artikel 02",
+  "s": "43a9c82f"
+ },
+ "legal.servicios-ofrecidos": {
+  "t": "Angebotene Leistungen",
+  "s": "0ffd6803"
+ },
+ "legal.clas-tours-by-davila-quiroz-3": {
+  "t": "Clas Tours by Davila Quiroz bietet geführte Wanderungen in den Schweizer Alpen und Umgebung für spanischsprachige Gruppen an. Die Leistungen umfassen:",
+  "s": "8dcbfa23"
+ },
+ "legal.guia-de-senderismo-en-espanol": {
+  "t": "Wanderleiter auf Spanisch während der gesamten Aktivität",
+  "s": "ac3cf4be"
+ },
+ "legal.planificacion-y-seleccion-de-ruta": {
+  "t": "Planung und Auswahl der Route entsprechend dem Niveau der Gruppe",
+  "s": "3e193ea7"
+ },
+ "legal.orientacion-previa-sobre-equipamiento-logistica": {
+  "t": "Vorab-Beratung zu Ausrüstung, Logistik und Transport",
+  "s": "54a0509e"
+ },
+ "legal.asistencia-y-comunicacion-durante-toda": {
+  "t": "Betreuung und Kommunikation während des ganzen Tages",
+  "s": "c44bfabe"
+ },
+ "legal.no-estan-incluidos-en-el": {
+  "t": "<strong>Nicht inbegriffen</strong> im Grundpreis der Eintageswanderungen sind: Transport zum Startpunkt, Verpflegung, Getränke, Eintritte oder Zugangsgebühren, Miete persönlicher Ausrüstung sowie die persönliche Unfallversicherung der Kundin bzw. des Kunden.",
+  "s": "51d6a0fc"
+ },
+ "legal.la-ruta-kandersteg-con-noche": {
+  "t": "Die Tour <strong>Kandersteg mit Übernachtung in der Hütte</strong> ist die Ausnahme: Ihr Preis beinhaltet die Unterkunft in der Blüemlisalphütte und die Halbpension (Abendessen und Frühstück). Nicht inbegriffen sind Getränke, Transport, Eintritte und persönliche Versicherung.",
+  "s": "012dbae8"
+ },
+ "legal.las-salidas-se-realizan-a": {
+  "t": "Die Touren finden <strong>auf Anfrage und mit mindestens 2 Teilnehmenden</strong> statt; das Datum wird mit der Gruppe vereinbart.",
+  "s": "dd785bf7"
+ },
+ "legal.las-rutas-ofrecidas-tienen-clasificacion": {
+  "t": "Die angebotenen Touren haben höchstens die Klassifizierung T3 (Bergwandern) in der Sommersaison und WT2 (Winterwandern) in der Wintersaison, gemäss der Schwierigkeitsskala des Schweizer Alpen-Clubs (SAC / CAS).",
+  "s": "f32f0661"
+ },
+ "legal.articulo-03": {
+  "t": "Artikel 03",
+  "s": "6bfae96b"
+ },
+ "legal.reservas-y-confirmacion": {
+  "t": "Buchung und Bestätigung",
+  "s": "305076aa"
+ },
+ "legal.la-reserva-se-realiza-mediante": {
+  "t": "Die Buchung erfolgt über das Kontaktformular der Website oder direkt per WhatsApp. Eine Buchung gilt erst dann als <strong>bestätigt</strong>, wenn die Kundin bzw. der Kunde eine schriftliche Bestätigung von Clas Tours by Davila Quiroz erhalten hat.",
+  "s": "91c23859"
+ },
+ "legal.clas-tours-se-reserva-el": {
+  "t": "Clas Tours behält sich das Recht vor, eine Buchung abzulehnen oder abzusagen, wenn:",
+  "s": "e7db349d"
+ },
+ "legal.el-cliente-no-cumple-los": {
+  "t": "die Kundin bzw. der Kunde die minimalen körperlichen oder technischen Anforderungen für die gewählte Tour nicht erfüllt",
+  "s": "6c1542c1"
+ },
+ "legal.las-condiciones-meteorologicas-representan-un": {
+  "t": "die Wetterbedingungen ein Risiko für die Sicherheit der Gruppe darstellen",
+  "s": "5ed9a8b7"
+ },
+ "legal.no-se-alcanza-el-numero": {
+  "t": "die Mindestteilnehmerzahl von 2 Personen nicht erreicht wird",
+  "s": "9a90184b"
+ },
+ "legal.circunstancias-de-fuerza-mayor-lo": {
+  "t": "höhere Gewalt die Durchführung verhindert",
+  "s": "400bdecb"
+ },
+ "legal.en-caso-de-cancelacion-por": {
+  "t": "Bei einer Absage durch Clas Tours erhält die Kundin bzw. der Kunde eine vollständige Rückerstattung oder die Möglichkeit, kostenlos zu verschieben.",
+  "s": "3d3261ae"
+ },
+ "legal.articulo-04": {
+  "t": "Artikel 04",
+  "s": "61e5f703"
+ },
+ "legal.precios-y-forma-de-pago": {
+  "t": "Preise und Zahlungsweise",
+  "s": "b303984c"
+ },
+ "legal.todos-los-precios-estan-expresados": {
+  "t": "Alle Preise sind in <strong>Schweizer Franken (CHF)</strong> angegeben und enthalten die anwendbare Schweizer Mehrwertsteuer. Die Zahlung erfolgt vor Beginn der Aktivität, sofern nicht vorab schriftlich etwas anderes vereinbart wurde.",
+  "s": "adab504e"
+ },
+ "legal.metodos-de-pago-aceptados": {
+  "t": "Akzeptierte Zahlungsmethoden:",
+  "s": "f7eb4cd6"
+ },
+ "legal.transferencia-bancaria-iban-ch90-0900": {
+  "t": "Banküberweisung (IBAN): <strong>CH90 0900 0000 1651 3549 7</strong> · BIC: POFICHBEXXX · Kontoinhaber: Clas Tours by Davila Quiroz",
+  "s": "883d8af2"
+ },
+ "legal.twint-vinculado-a-la-cuenta": {
+  "t": "Twint: verknüpft mit dem PostFinance-Geschäftskonto",
+  "s": "6ebe767e"
+ },
+ "legal.pago-mediante-codigo-qr-postfinance": {
+  "t": "Zahlung per PostFinance-QR-Code",
+  "s": "107e6bcb"
+ },
+ "legal.efectivo-el-dia-de-la": {
+  "t": "Bargeld am Tag der Aktivität, nach vorheriger schriftlicher Vereinbarung",
+  "s": "272b7e24"
+ },
+ "legal.en-la-transferencia-bancaria-el": {
+  "t": "Bei Banküberweisung muss die Kundin bzw. der Kunde im Verwendungszweck den vollständigen Namen und die gebuchte Tour angeben.",
+  "s": "ed68f6e8"
+ },
+ "legal.los-precios-pueden-estar-sujetos": {
+  "t": "Die Preise können für neue Buchungen ohne Vorankündigung geändert werden. Bereits bestätigte Buchungen sind von Preisänderungen nicht betroffen.",
+  "s": "7a72bfde"
+ },
+ "legal.articulo-05": {
+  "t": "Artikel 05",
+  "s": "76ed5b89"
+ },
+ "legal.politica-de-cancelacion-y-reembolsos": {
+  "t": "Stornierungs- und Rückerstattungsbedingungen",
+  "s": "9e41bfe0"
+ },
+ "legal.las-cancelaciones-deben-comunicarse-por": {
+  "t": "Stornierungen müssen schriftlich mitgeteilt werden (WhatsApp oder E-Mail). Es gilt folgende Rückerstattungsregelung:",
+  "s": "736ae269"
+ },
+ "legal.tiempo-de-antelacion": {
+  "t": "Vorlaufzeit",
+  "s": "3665ae32"
+ },
+ "legal.penalizacion": {
+  "t": "Stornogebühr",
+  "s": "ae45d150"
+ },
+ "legal.reembolso": {
+  "t": "Rückerstattung",
+  "s": "3e784d4f"
+ },
+ "legal.mas-de-14-dias-antes": {
+  "t": "Mehr als 14 Tage vorher",
+  "s": "b81868a1"
+ },
+ "legal.sin-penalizacion": {
+  "t": "Keine Stornogebühr",
+  "s": "a575a55b"
+ },
+ "legal.100-reembolso": {
+  "t": "100 % Rückerstattung",
+  "s": "844d5af6"
+ },
+ "legal.entre-7-y-14-dias": {
+  "t": "Zwischen 7 und 14 Tagen vorher",
+  "s": "82e97072"
+ },
+ "legal.25-del-importe": {
+  "t": "25 % des Betrags",
+  "s": "5f1bd053"
+ },
+ "legal.75-reembolso": {
+  "t": "75 % Rückerstattung",
+  "s": "bd4cc8e0"
+ },
+ "legal.entre-3-y-6-dias": {
+  "t": "Zwischen 3 und 6 Tagen vorher",
+  "s": "d81c6c17"
+ },
+ "legal.50-del-importe": {
+  "t": "50 % des Betrags",
+  "s": "92189dfb"
+ },
+ "legal.50-reembolso": {
+  "t": "50 % Rückerstattung",
+  "s": "b6cb7f81"
+ },
+ "legal.menos-de-48-horas-antes": {
+  "t": "Weniger als 48 Stunden vorher",
+  "s": "41fa108a"
+ },
+ "legal.no-presentacion-no-show": {
+  "t": "Nichterscheinen (No-Show)",
+  "s": "41844e47"
+ },
+ "legal.cancelacion-por-mal-tiempo-si": {
+  "t": "<strong>Absage wegen schlechten Wetters:</strong> Sagt Clas Tours die Aktivität wegen ungünstiger Wetterbedingungen ab, die ein Sicherheitsrisiko darstellen, kann die Kundin bzw. der Kunde zwischen einer kostenlosen Verschiebung und der vollständigen Rückerstattung wählen.",
+  "s": "a729efe0"
+ },
+ "legal.si-el-cliente-decide-no": {
+  "t": "Entscheidet sich die Kundin bzw. der Kunde am Tag der Aktivität aus eigenem Entschluss gegen die Teilnahme (einschliesslich bei Wetterbedingungen, die Clas Tours als sicher einstuft), besteht kein Anspruch auf Rückerstattung.",
+  "s": "97c92487"
+ },
+ "legal.articulo-06": {
+  "t": "Artikel 06",
+  "s": "4b334199"
+ },
+ "legal.requisitos-de-participacion-y-salud": {
+  "t": "Teilnahmevoraussetzungen und Gesundheit",
+  "s": "8d343505"
+ },
+ "legal.el-cliente-es-responsable-de": {
+  "t": "Die Kundin bzw. der Kunde ist dafür verantwortlich, vor der Buchung die eigene körperliche und technische Verfassung ehrlich einzuschätzen. Clas Tours kann Auskunft über das Erfahrungsniveau der teilnehmenden Person verlangen und behält sich das Recht vor, eine andere Tour zu empfehlen oder die Teilnahme zu verweigern, wenn die Sicherheit der Kundin bzw. des Kunden oder der Gruppe gefährdet sein könnte.",
+  "s": "d03c4f87"
+ },
+ "legal.requisitos-generales": {
+  "t": "Allgemeine Voraussetzungen:",
+  "s": "5c9c072c"
+ },
+ "legal.buena-condicion-fisica-general-adaptada": {
+  "t": "Gute allgemeine Kondition, angepasst an das Niveau der gewählten Tour",
+  "s": "d843b06d"
+ },
+ "legal.calzado-de-senderismo-adecuado-obligatorio": {
+  "t": "Geeignetes Wanderschuhwerk (obligatorisch für T2- und T3-Touren)",
+  "s": "2aad71ec"
+ },
+ "legal.ropa-y-equipamiento-apropiado-para": {
+  "t": "Für die Wetterbedingungen geeignete Kleidung und Ausrüstung",
+  "s": "db225378"
+ },
+ "legal.capacidad-de-caminar-durante-al": {
+  "t": "Fähigkeit, mindestens 4 Stunden ununterbrochen auf unebenem Gelände zu gehen",
+  "s": "6b0b4259"
+ },
+ "legal.menores-de-18-anos-deben": {
+  "t": "Personen unter 18 Jahren: müssen von einer verantwortlichen erwachsenen Person begleitet werden",
+  "s": "fbcf8a7d"
+ },
+ "legal.el-cliente-declara-no-padecer": {
+  "t": "Die Kundin bzw. der Kunde erklärt, keine gesundheitlichen Beschwerden zu haben, die sich durch das Bergwandern verschlimmern können (schwere Herzprobleme, ausgeprägte Höhenangst, schwere Atembeschwerden usw.), ohne den Wanderleiter vorher informiert zu haben. <strong>Im Zweifelsfall konsultiere vor der Teilnahme deine Ärztin bzw. deinen Arzt.</strong>",
+  "s": "969402d2"
+ },
+ "legal.clas-tours-se-reserva-el-2": {
+  "t": "Clas Tours behält sich das Recht vor, Teilnehmende, die alkoholisiert oder unter dem Einfluss anderer Substanzen am Treffpunkt erscheinen, ohne Anspruch auf Rückerstattung auszuschliessen.",
+  "s": "3dfcda5c"
+ },
+ "legal.articulo-07": {
+  "t": "Artikel 07",
+  "s": "a7b522cf"
+ },
+ "legal.riesgos-inherentes-y-limitacion-de": {
+  "t": "Inhärente Risiken und Haftungsbeschränkung",
+  "s": "e00f9b49"
+ },
+ "legal.el-senderismo-en-montana-es": {
+  "t": "<strong>Bergwandern ist eine Aktivität mit inhärenten Risiken</strong>, darunter unter anderem: unebenes und exponiertes Gelände, plötzliche Wetterumschwünge, Stürze, Verstauchungen, Unterkühlung, Hitzschlag, Lawinengefahr in der Wintersaison und Begegnungen mit Wildtieren.",
+  "s": "b29fe103"
+ },
+ "legal.el-cliente-asume-voluntariamente-estos": {
+  "t": "Die Kundin bzw. der Kunde nimmt diese Risiken mit der Teilnahme an den Aktivitäten von Clas Tours by Davila Quiroz freiwillig in Kauf. Die Teilnahme bedeutet die ausdrückliche Anerkennung, dass die Person:",
+  "s": "e048653a"
+ },
+ "legal.ha-sido-informado-sobre-el": {
+  "t": "über den Schwierigkeitsgrad und die Risiken der Tour informiert wurde",
+  "s": "6245e149"
+ },
+ "legal.participa-de-forma-voluntaria-y": {
+  "t": "freiwillig und auf eigene Verantwortung teilnimmt",
+  "s": "e6a6f8ee"
+ },
+ "legal.seguira-en-todo-momento-las": {
+  "t": "während der Aktivität jederzeit den Anweisungen des Wanderleiters folgen wird",
+  "s": "f57149cd"
+ },
+ "legal.ha-evaluado-su-condicion-fisica": {
+  "t": "die eigene körperliche Verfassung beurteilt hat und sie für die gewählte Aktivität als geeignet erachtet",
+  "s": "f8fc9d15"
+ },
+ "legal.clas-tours-by-davila-quiroz-4": {
+  "t": "Clas Tours by Davila Quiroz und Santiago Davila Quiroz <strong>haften nicht</strong> für Schäden, Verletzungen, Verluste oder Unfälle, die sich ergeben aus:",
+  "s": "60729128"
+ },
+ "legal.riesgos-inherentes-y-naturales-de": {
+  "t": "inhärenten und natürlichen Risiken des Bergwanderns",
+  "s": "5424ba38"
+ },
+ "legal.incumplimiento-por-parte-del-cliente": {
+  "t": "Nichtbeachtung der Anweisungen des Wanderleiters durch die Kundin bzw. den Kunden",
+  "s": "ddbf617e"
+ },
+ "legal.informacion-incorrecta-o-incompleta-proporcionada": {
+  "t": "falschen oder unvollständigen Angaben der Kundin bzw. des Kunden zu Gesundheitszustand oder Erfahrung",
+  "s": "47205b71"
+ },
+ "legal.condiciones-meteorologicas-o-de-terreno": {
+  "t": "unvorhersehbaren Wetter- oder Geländebedingungen",
+  "s": "4e4f4397"
+ },
+ "legal.actos-de-terceros-o-fuerza": {
+  "t": "Handlungen Dritter oder höherer Gewalt",
+  "s": "bfccb284"
+ },
+ "legal.equipo-personal-inadecuado-del-cliente": {
+  "t": "ungeeigneter persönlicher Ausrüstung der Kundin bzw. des Kunden",
+  "s": "5050235d"
+ },
+ "legal.la-responsabilidad-de-clas-tours": {
+  "t": "Die Haftung von Clas Tours ist in jedem Fall auf den von der Kundin bzw. dem Kunden für die gebuchte Leistung bezahlten Betrag beschränkt, ausser bei nachgewiesenem Vorsatz oder grober Fahrlässigkeit. Diese Haftungsbeschränkung gilt im grösstmöglichen Umfang, den das geltende Schweizer Recht zulässt.",
+  "s": "9d0be34e"
+ },
+ "legal.articulo-08": {
+  "t": "Artikel 08",
+  "s": "e50e9946"
+ },
+ "legal.seguros": {
+  "t": "Versicherungen",
+  "s": "7ea4b1a4"
+ },
+ "legal.el-precio-del-servicio-no": {
+  "t": "Der Preis der Leistung beinhaltet weder eine persönliche Unfallversicherung noch eine Bergrettungsversicherung für die Kundin bzw. den Kunden.",
+  "s": "cc28861f"
+ },
+ "legal.se-recomienda-encarecidamente-que-todos": {
+  "t": "Es wird <strong>dringend</strong> empfohlen, dass alle Teilnehmenden Folgendes haben:",
+  "s": "034dab77"
+ },
+ "legal.seguro-de-accidente-personal-con": {
+  "t": "<strong>Persönliche Unfallversicherung</strong> mit Deckung für Bergwanderungen",
+  "s": "36da51c1"
+ },
+ "legal.seguro-de-rescate-de-montana": {
+  "t": "<strong>Bergrettungsversicherung</strong> (in der Schweiz bietet die Rega – Schweizerische Rettungsflugwacht – jährliche Gönnerschaften an)",
+  "s": "59e12efb"
+ },
+ "legal.seguro-de-viaje-con-cobertura": {
+  "t": "<strong>Reiseversicherung</strong> mit Deckung für medizinische Evakuierung (besonders für Teilnehmende ohne Wohnsitz in der Schweiz)",
+  "s": "524bad54"
+ },
+ "legal.tarjeta-sanitaria-europea-para-ciudadanos": {
+  "t": "<strong>Europäische Krankenversicherungskarte</strong> (für EU-/EFTA-Bürgerinnen und -Bürger) oder internationale Krankenversicherung für alle anderen",
+  "s": "d2a73b0f"
+ },
+ "legal.clas-tours-by-davila-quiroz-5": {
+  "t": "Clas Tours by Davila Quiroz übernimmt unter keinen Umständen die Kosten für Rettung, medizinische Evakuierung, Spitalaufenthalt oder Repatriierung der Kundin bzw. des Kunden. Diese Kosten gehen vollständig zulasten der teilnehmenden Person oder ihrer Versicherung.",
+  "s": "0b2ae92d"
+ },
+ "legal.un-rescate-de-montana-en": {
+  "t": "Eine Bergrettung in der Schweiz kann zwischen CHF 1’000 und CHF 10’000 oder mehr kosten. Geh nicht ohne Versicherung los.",
+  "s": "b45abf25"
+ },
+ "legal.articulo-09": {
+  "t": "Artikel 09",
+  "s": "90e97597"
+ },
+ "legal.conducta-en-ruta-y-autoridad": {
+  "t": "Verhalten unterwegs und Weisungsbefugnis des Wanderleiters",
+  "s": "ca9e927d"
+ },
+ "legal.durante-toda-la-actividad-la": {
+  "t": "Während der gesamten Aktivität gilt in Sicherheitsfragen <strong>die uneingeschränkte Weisungsbefugnis des Wanderleiters.</strong> Der Wanderleiter ist befugt:",
+  "s": "f085bc8e"
+ },
+ "legal.modificar-o-acortar-el-itinerario": {
+  "t": "die Route aus Sicherheitsgründen jederzeit zu ändern oder zu verkürzen",
+  "s": "105ed505"
+ },
+ "legal.cancelar-la-actividad-si-las": {
+  "t": "die Aktivität abzusagen, wenn die Bedingungen es erfordern",
+  "s": "b5d4a1b8"
+ },
+ "legal.excluir-a-un-participante-cuyo": {
+  "t": "Teilnehmende auszuschliessen, deren Verhalten die Sicherheit der Gruppe gefährdet",
+  "s": "60ef61b6"
+ },
+ "legal.tomar-decisiones-de-emergencia-sin": {
+  "t": "Notfallentscheidungen ohne Zustimmung der Gruppe zu treffen",
+  "s": "4e125723"
+ },
+ "legal.los-participantes-se-comprometen-a": {
+  "t": "Die Teilnehmenden verpflichten sich:",
+  "s": "2884ac37"
+ },
+ "legal.seguir-en-todo-momento-las": {
+  "t": "jederzeit den Anweisungen des Wanderleiters zu folgen",
+  "s": "3b74390f"
+ },
+ "legal.respetar-el-entorno-natural-principio": {
+  "t": "die Natur zu respektieren (Leave-No-Trace-Prinzip)",
+  "s": "8cb10555"
+ },
+ "legal.no-separarse-del-grupo-sin": {
+  "t": "sich nicht ohne ausdrückliche Erlaubnis des Wanderleiters von der Gruppe zu entfernen",
+  "s": "8f69ec32"
+ },
+ "legal.comunicar-al-guia-cualquier-sintoma": {
+  "t": "dem Wanderleiter jedes körperliche Symptom oder Unwohlsein während der Aktivität mitzuteilen",
+  "s": "efe4184e"
+ },
+ "legal.tratar-con-respeto-al-guia": {
+  "t": "dem Wanderleiter und den anderen Teilnehmenden respektvoll zu begegnen",
+  "s": "ca4531c7"
+ },
+ "legal.el-incumplimiento-de-estas-normas": {
+  "t": "Die Nichtbeachtung dieser Regeln kann zum Ausschluss der teilnehmenden Person ohne Anspruch auf Rückerstattung führen.",
+  "s": "ed35812f"
+ },
+ "legal.articulo-10": {
+  "t": "Artikel 10",
+  "s": "3f254ee9"
+ },
+ "legal.proteccion-de-datos-y-privacidad": {
+  "t": "Datenschutz und Privatsphäre",
+  "s": "a2588d0b"
+ },
+ "legal.clas-tours-by-davila-quiroz-6": {
+  "t": "Clas Tours by Davila Quiroz bearbeitet die Personendaten seiner Kundinnen und Kunden gemäss dem <strong>Schweizerischen Bundesgesetz über den Datenschutz (DSG)</strong>, das seit dem 1. September 2023 in Kraft ist.",
+  "s": "c1841ab0"
+ },
+ "legal.los-datos-recopilados-nombre-datos": {
+  "t": "Die erhobenen Daten (Name, Kontaktdaten, relevante Gesundheitsinformationen) werden ausschliesslich verwendet, um:",
+  "s": "9237a255"
+ },
+ "legal.gestionar-y-confirmar-reservas": {
+  "t": "Buchungen zu verwalten und zu bestätigen",
+  "s": "8b18aaef"
+ },
+ "legal.comunicarse-con-el-cliente-antes": {
+  "t": "vor, während und nach der Aktivität mit der Kundin bzw. dem Kunden zu kommunizieren",
+  "s": "34c93f91"
+ },
+ "legal.garantizar-la-seguridad-del-participante": {
+  "t": "die Sicherheit der teilnehmenden Person während der Aktivität zu gewährleisten",
+  "s": "beb890e8"
+ },
+ "legal.cumplir-con-obligaciones-legales": {
+  "t": "gesetzlichen Pflichten nachzukommen",
+  "s": "cb314618"
+ },
+ "legal.los-datos-no-se-ceden": {
+  "t": "Die Daten werden nicht an Dritte weitergegeben, ausser wenn dies für die Erbringung der Leistung unbedingt erforderlich oder gesetzlich vorgeschrieben ist. Die Kundin bzw. der Kunde hat das Recht auf Auskunft, Berichtigung oder Löschung der Daten und kann sich dazu an <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> wenden.",
+  "s": "cf92d92c"
+ },
+ "legal.las-fotografias-tomadas-durante-las": {
+  "t": "Fotografien, die während der Aktivitäten aufgenommen werden, dürfen nur mit ausdrücklicher Einwilligung der Kundin bzw. des Kunden, erteilt über das Einverständnis-Kästchen im Buchungsformular, für Werbezwecke verwendet werden.",
+  "s": "a793fd50"
+ },
+ "legal.autorizacion-de-uso-de-imagen": {
+  "t": "Einwilligung zur Bildverwendung",
+  "s": "fc257c60"
+ },
+ "legal.el-cliente-que-marque-la": {
+  "t": "Die Kundin bzw. der Kunde, die bzw. der das Foto-Einverständnis-Kästchen im Buchungsformular ankreuzt, erteilt <strong>Clas Tours by Davila Quiroz</strong> eine nicht ausschliessliche, unentgeltliche und räumlich unbeschränkte Lizenz, um:",
+  "s": "9328c8cf"
+ },
+ "legal.fotografiar-y-o-grabar-en": {
+  "t": "· die Kundin bzw. den Kunden während der gebuchten Aktivität zu fotografieren und/oder zu filmen.",
+  "s": "2969381f"
+ },
+ "legal.utilizar-dichas-imagenes-y-grabaciones": {
+  "t": "· diese Bilder und Aufnahmen ausschliesslich für Werbe- und Marketingzwecke zu verwenden: Beiträge in sozialen Netzwerken (Instagram, YouTube, Facebook usw.), die Website clastours.ch, gedruckte und digitale Werbematerialien.",
+  "s": "5bab3c0b"
+ },
+ "legal.esta-autorizacion-se-otorga-de": {
+  "t": "· Diese Einwilligung wird freiwillig erteilt. Die Kundin bzw. der Kunde kann an der Aktivität auch ohne sie teilnehmen. Einmal erteilt, kann sie jederzeit durch schriftliche Mitteilung an <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> widerrufen werden, ohne Rückwirkung auf bereits veröffentlichtes Material.",
+  "s": "f801eb7b"
+ },
+ "legal.queda-expresamente-prohibido-el-uso": {
+  "t": "<strong>Ausdrücklich untersagt</strong> ist die Verwendung der Bilder für andere als die genannten Zwecke, ihre Weitergabe an Dritte oder ihre Verwendung für kommerzielle Zwecke ausserhalb von Clas Tours by Davila Quiroz ohne zusätzliche schriftliche Genehmigung.",
+  "s": "8de3a176"
+ },
+ "legal.todas-las-fotografias-publicadas-por": {
+  "t": "© Alle von Clas Tours by Davila Quiroz veröffentlichten Fotografien sind Eigentum von Santiago Davila Quiroz. Die Vervielfältigung, Verbreitung oder Verwendung ohne schriftliche Genehmigung des Urhebers ist ausdrücklich untersagt.",
+  "s": "985380aa"
+ },
+ "legal.articulo-11": {
+  "t": "Artikel 11",
+  "s": "d1ba9186"
+ },
+ "legal.ley-aplicable-y-jurisdiccion": {
+  "t": "Anwendbares Recht und Gerichtsstand",
+  "s": "785bd195"
+ },
+ "legal.jurisdiccion-exclusiva-derecho-suizo": {
+  "t": "Ausschliesslicher Gerichtsstand: Schweizer Recht",
+  "s": "257d9133"
+ },
+ "legal.todos-los-contratos-reservas-acuerdos": {
+  "t": "<strong>Alle Verträge, Buchungen, Vereinbarungen und Rechtsbeziehungen zwischen Clas Tours by Davila Quiroz und seinen Kundinnen und Kunden unterliegen ausschliesslich dem Schweizer Recht</strong>, unter Ausschluss jeglicher anderer nationaler oder internationaler Vorschriften, unabhängig von Wohnsitzland, Nationalität oder Domizil der Kundin bzw. des Kunden.",
+  "s": "94b783e0"
+ },
+ "legal.esto-incluye-pero-no-se": {
+  "t": "Dies umfasst unter anderem: Schadenersatzforderungen, Streitigkeiten über Stornierungen und Rückerstattungen, Unfälle während der Aktivitäten und alle weiteren Streitigkeiten aus der Erbringung der Leistungen.",
+  "s": "4fda3e01"
+ },
+ "legal.en-caso-de-disputa-el": {
+  "t": "Im Streitfall ist <strong>das Gericht am Sitz von Clas Tours by Davila Quiroz im Kanton Bern, Schweiz, zuständig.</strong>",
+  "s": "f5fb6a3d"
+ },
+ "legal.las-normas-aplicables-incluyen-entre": {
+  "t": "Zu den anwendbaren Vorschriften gehören unter anderem:",
+  "s": "3c6ace97"
+ },
+ "legal.codigo-de-las-obligaciones-suizo": {
+  "t": "<strong>Schweizerisches Obligationenrecht (OR)</strong> – für Dienstleistungsverträge und Haftpflicht",
+  "s": "7789d3b2"
+ },
+ "legal.codigo-civil-suizo-zgb-cc": {
+  "t": "<strong>Schweizerisches Zivilgesetzbuch (ZGB)</strong> – in Fragen der Rechts- und Handlungsfähigkeit und der Vertretung",
+  "s": "b19d5a47"
+ },
+ "legal.ley-federal-de-proteccion-de": {
+  "t": "<strong>Bundesgesetz über den Datenschutz (DSG)</strong> – für die Bearbeitung von Personendaten",
+  "s": "1ce38be7"
+ },
+ "legal.ley-federal-sobre-el-turismo": {
+  "t": "<strong>Bundesgesetz über den Tourismus</strong> und die anwendbaren Berner Kantonsvorschriften für Berg- und Wanderführer",
+  "s": "cb5ca5b2"
+ },
+ "legal.el-cliente-al-aceptar-estos": {
+  "t": "Mit der Annahme dieser Allgemeinen Geschäftsbedingungen verzichtet die Kundin bzw. der Kunde ausdrücklich darauf, sich in Streitigkeiten im Zusammenhang mit den Leistungen von Clas Tours by Davila Quiroz auf das Recht des Herkunftslandes zu berufen, und akzeptiert die ausschliessliche Zuständigkeit der Schweizer Gerichte.",
+  "s": "6939fc9b"
+ },
+ "legal.en-caso-de-discrepancia-entre": {
+  "t": "Bei Abweichungen zwischen der spanischen Fassung dieser Bedingungen und einer Übersetzung ist die spanische Fassung massgebend.",
+  "s": "91ddf200"
+ },
+ "legal.articulo-12": {
+  "t": "Artikel 12",
+  "s": "ed58ba04"
+ },
+ "legal.disposiciones-finales": {
+  "t": "Schlussbestimmungen",
+  "s": "4643918f"
+ },
+ "legal.si-alguna-clausula-de-los": {
+  "t": "Sollte eine Bestimmung dieser Allgemeinen Geschäftsbedingungen von einem zuständigen Gericht für nichtig oder nicht durchsetzbar erklärt werden, bleiben die übrigen Bestimmungen in vollem Umfang in Kraft und Wirkung.",
+  "s": "4805cfe0"
+ },
+ "legal.clas-tours-by-davila-quiroz-7": {
+  "t": "Clas Tours by Davila Quiroz behält sich das Recht vor, diese Allgemeinen Geschäftsbedingungen jederzeit zu ändern. Änderungen treten mit der Veröffentlichung auf www.clastours.ch in Kraft. Für bereits bestätigte Buchungen gelten die zum Zeitpunkt der Bestätigung gültigen Bedingungen.",
+  "s": "1e200781"
+ },
+ "legal.la-no-exigencia-por-parte": {
+  "t": "Die Nichtgeltendmachung eines Rechts oder einer Bestimmung durch Clas Tours stellt keinen Verzicht auf dieses Recht oder diese Bestimmung dar.",
+  "s": "e9a00686"
+ },
+ "legal.para-cualquier-consulta-sobre-estos": {
+  "t": "Bei Fragen zu diesen Allgemeinen Geschäftsbedingungen wende dich an: <strong><a href=\"mailto:info@clastours.ch\">info@clastours.ch</a></strong>",
+  "s": "0989dc49"
+ },
+ "legal.aceptacion-de-los-terminos": {
+  "t": "Annahme der Bedingungen",
+  "s": "82fa7f41"
+ },
+ "legal.al-realizar-una-reserva-con": {
+  "t": "Mit einer Buchung bei Clas Tours by Davila Quiroz – sei es über das Webformular, per WhatsApp, per E-Mail oder auf anderem Weg – erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen in allen Teilen gelesen, verstanden und vollständig akzeptiert zu haben.",
+  "s": "18dfc0df"
+ },
+ "legal.esta-aceptacion-tiene-plena-validez": {
+  "t": "Diese Annahme hat nach Schweizer Recht volle vertragliche Gültigkeit und ist einer handschriftlichen Unterschrift gleichgestellt.",
+  "s": "34e2a744"
+ },
+ "legal.clas-tours-by-davila-quiroz-8": {
+  "t": "© Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz",
+  "s": "46216287"
+ },
+ "legal.info-clastours-ch-volver-al": {
+  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"index.html\">Zurück zur Startseite</a>",
+  "s": "93b4bba8"
+ },
+ "legal.price-intro": {
+  "t": "Die geltenden Preise pro Person sind:",
+  "s": "d6bad44f"
+ },
+ "legal.price-kand": {
+  "t": "<strong>Kandersteg mit Übernachtung in der Hütte (2 Tage, Hütte und Halbpension inbegriffen):</strong> CHF {{p.kand}} pro Person; Gruppen ab 7 Personen: CHF {{g.kand}}",
+  "s": "fa5a3547"
+ },
+ "legal.price-creux": {
+  "t": "<strong>Creux du Van:</strong> CHF {{p.creux}} pro Person; Gruppen ab 7 Personen: CHF {{g.creux}}",
+  "s": "caddd1fd"
+ },
+ "legal.price-augst": {
+  "t": "<strong>Augstmatthorn → Harderkulm:</strong> CHF {{p.augst}} pro Person; Gruppen ab 7 Personen: CHF {{g.augst}}",
+  "s": "d1475b32"
+ },
+ "legal.price-relojes": {
+  "t": "<strong>Uhren &amp; Schokolade im Jura:</strong> CHF {{p.relojes}} pro Person; Gruppen ab 7 Personen: CHF {{g.relojes}}",
+  "s": "f6dd6849"
+ },
+ "guia.creux-du-van.inicio-mis-caminatas-guia-del": {
+  "t": "<a href=\"index.html\">Startseite</a> › <a href=\"clastours-caminatas-v4.html\">Meine Wanderungen</a> › Führer zum Creux du Van",
+  "s": "9f04a212"
+ },
+ "guia.creux-du-van.guia-de-ruta-jura-neuchatelois": {
+  "t": "Routenführer · Neuenburger Jura",
+  "s": "5d0c1081"
+ },
+ "guia.creux-du-van.creux-du-van-como-llegar": {
+  "t": "Creux du Van: <em>Anreise, Route und was man wissen sollte</em>",
+  "s": "e0016f07"
+ },
+ "guia.creux-du-van.un-anfiteatro-de-roca-de": {
+  "t": "Ein Felsamphitheater von über 150 Metern Höhe im Schweizer Jura. Hier findest du das Wichtigste, um es sicher zu begehen: Transport, Route, wo man Steinböcke sieht, beste Reisezeit und Regeln des Naturschutzgebiets.",
+  "s": "aa6ebf04"
+ },
+ "guia.creux-du-van.el-circo-rocoso-del-creux": {
+  "t": "Der Felszirkus des Creux du Van vom Rand aus gesehen, mit dem Jura im Hintergrund",
+  "s": "9bfdec44"
+ },
+ "guia.creux-du-van.que-es-el-creux-du": {
+  "t": "Was ist der Creux du Van?",
+  "s": "4571a2df"
+ },
+ "guia.creux-du-van.el-creux-du-van-es": {
+  "t": "Der Creux du Van ist ein natürliches Amphitheater im Kanton Neuenburg, oft der „Grand Canyon der Schweiz“ genannt. Er ist rund 1’400 Meter breit und hat über 150 Meter hohe Wände. Er ist ein Naturschutzgebiet, und auf seinen Felsbändern lebt eine Kolonie von Steinböcken (Alpensteinböcken), die in den Sechzigerjahren wieder angesiedelt wurde.",
+  "s": "01bb11ce"
+ },
+ "guia.creux-du-van.es-una-de-las-caminatas": {
+  "t": "Es ist eine der spektakulärsten Tageswanderungen im Jura und gut mit dem öffentlichen Verkehr erreichbar.",
+  "s": "a288ca5e"
+ },
+ "guia.creux-du-van.dos-ibices-frente-a-frente": {
+  "t": "Zwei Steinböcke stehen sich mit gekreuzten Hörnern gegenüber, auf einem Steinweg am Creux du Van",
+  "s": "100f4f1f"
+ },
+ "guia.creux-du-van.ibices-en-el-sendero-del": {
+  "t": "Steinböcke auf dem Weg am Creux du Van",
+  "s": "a69a5893"
+ },
+ "guia.creux-du-van.distancia": {
+  "t": "Distanz",
+  "s": "3975ce41"
+ },
+ "guia.creux-du-van.12-km": {
+  "t": "~12 km",
+  "s": "380af5cb"
+ },
+ "guia.creux-du-van.desnivel": {
+  "t": "Höhenunterschied",
+  "s": "cb9fa2dc"
+ },
+ "guia.creux-du-van.800-m": {
+  "t": "~800 m",
+  "s": "57e78cb1"
+ },
+ "guia.creux-du-van.46-h": {
+  "t": "4–6 Std.",
+  "s": "0590c236"
+ },
+ "guia.creux-du-van.1-460-m": {
+  "t": "~1’460 m",
+  "s": "ecf6ded4"
+ },
+ "guia.creux-du-van.datos-del-recorrido-circular-clasico": {
+  "t": "Daten der klassischen Rundwanderung ab dem Bahnhof Noiraigue. Sie variieren leicht je nach gewählter Variante.",
+  "s": "a809817d"
+ },
+ "guia.creux-du-van.como-llegar-al-creux-du": {
+  "t": "Anreise zum Creux du Van",
+  "s": "6b7ffee0"
+ },
+ "guia.creux-du-van.en-tren-la-opcion-mas": {
+  "t": "Mit dem Zug (die bequemste Option)",
+  "s": "2c422aef"
+ },
+ "guia.creux-du-van.la-caminata-clasica-sale-de": {
+  "t": "Die klassische Wanderung startet am <strong>Bahnhof Noiraigue</strong> auf etwa 725 m Höhe. Es fahren stündlich Züge ab Neuchâtel, die Fahrt dauert etwa 20 Minuten. Wenn du aus Biel/Bienne kommst, führt die Strecke über Neuchâtel. Prüfe immer die aktuellen Fahrpläne bei der <a href=\"https://www.sbb.ch/de\" target=\"_blank\" rel=\"noopener\">SBB</a> und kontrolliere vor dem Aufbruch den letzten Zug zurück.",
+  "s": "ca0c205d"
+ },
+ "guia.creux-du-van.hay-parqueaderos-oficiales-y-fuera": {
+  "t": "Es gibt offizielle Parkplätze; ausserhalb davon ist das Parkieren im Schutzgebiet verboten (Campieren ebenfalls):",
+  "s": "8726b8a4"
+ },
+ "guia.creux-du-van.de-mayo-a-octubre-por": {
+  "t": "<strong>Mai bis Oktober, von Norden:</strong> Couvet (Soliat), etwa 5 Gehminuten vom Rand entfernt, und Noiraigue (Ferme Robert), am Fuss des Zirkus.",
+  "s": "ed985f09"
+ },
+ "guia.creux-du-van.de-mayo-a-octubre-por-2": {
+  "t": "<strong>Mai bis Oktober, von Süden:</strong> Provence (Soliat), etwa 5 Minuten vom Rand, und Gorgier oder Bevaix (Grand'Vy), etwa 15 Minuten.",
+  "s": "403b1d9e"
+ },
+ "guia.creux-du-van.de-noviembre-a-abril-los": {
+  "t": "<strong>November bis April:</strong> Die Parkplätze von Couvet und Provence liegen etwa 40 Gehminuten vom Creux entfernt. Die Strasse zwischen Provence und Couvet wird nicht gesalzen und erfordert Winterreifen oder Schneeketten.",
+  "s": "5afea1a3"
+ },
+ "guia.creux-du-van.fuente-tourisme-neuchatelois-acceso-y": {
+  "t": "Quelle: <a href=\"https://www.j3l.ch/en/Z13372\" target=\"_blank\" rel=\"noopener\">Tourisme neuchâtelois, Zugang und Parkplätze</a>. Prüfe dort die Bedingungen vor der Abreise.",
+  "s": "e9c54d5c"
+ },
+ "guia.creux-du-van.la-ruta-circular-desde-noiraigue": {
+  "t": "Die Rundwanderung ab Noiraigue, Schritt für Schritt",
+  "s": "18bf2d78"
+ },
+ "guia.creux-du-van.es-el-recorrido-mas-completo": {
+  "t": "Es ist die vollständigste Route und die, die sich am besten mit dem öffentlichen Verkehr organisieren lässt. Sie ist gut beschildert.",
+  "s": "fe38eae4"
+ },
+ "guia.creux-du-van.estacion-de-noiraigue-sales-por": {
+  "t": "<b>Bahnhof Noiraigue.</b> Du gehst über die Rue des Tilleuls, überquerst das Bahngleis und den Fluss Areuse.",
+  "s": "ed02b8ef"
+ },
+ "guia.creux-du-van.hasta-les-illons-camino-de": {
+  "t": "<b>Bis Les Œillons.</b> Gleichmässig ansteigender Weg durch den Wald.<span class=\"tiempo\">≈ 50 Min.</span>",
+  "s": "37118d99"
+ },
+ "guia.creux-du-van.sentier-des-14-contours-catorce": {
+  "t": "<b>Sentier des 14 Contours.</b> Vierzehn Kehren bis Le Soliat, mit gelben Markierungen.<span class=\"tiempo\">≈ 1 Std. 30</span>",
+  "s": "906414da"
+ },
+ "guia.creux-du-van.el-borde-del-circo-caminas": {
+  "t": "<b>Der Rand des Zirkus.</b> Du gehst auf dem Grat mit Blick ins Leere und, an klaren Tagen, auf die Alpen. Achte auf die Felsbänder und den Wald: Hier zeigen sich die Steinböcke am häufigsten. Hier lohnt es sich, am meisten Zeit für Fotos und eine Pause einzuplanen.",
+  "s": "47c06b30"
+ },
+ "guia.creux-du-van.bajada-a-la-ferme-robert": {
+  "t": "<b>Abstieg zur Ferme Robert.</b> Abstieg über die Fontaine Froide zum Bauernhof auf etwa 970 m.<span class=\"tiempo\">≈ 1 Std. 30</span>",
+  "s": "3c90a6f0"
+ },
+ "guia.creux-du-van.de-regreso-a-noiraigue": {
+  "t": "Zurück nach Noiraigue.",
+  "s": "4542ce1c"
+ },
+ "guia.creux-du-van.35-min": {
+  "t": "≈ 35 Min.",
+  "s": "0f65ad25"
+ },
+ "guia.creux-du-van.tiempos-de-referencia-de-caminata": {
+  "t": "Richtwerte für reine Gehzeit. Mit Pausen, Mittagessen und Fotos rechne insgesamt mit 4 bis 6 Stunden.",
+  "s": "5ccc7d17"
+ },
+ "guia.creux-du-van.borde-del-anfiteatro-del-creux": {
+  "t": "Rand des Amphitheaters am Creux du Van mit Felswand und Wald",
+  "s": "850167b9"
+ },
+ "guia.creux-du-van.el-borde-del-anfiteatro": {
+  "t": "Der Rand des Amphitheaters",
+  "s": "a53116a5"
+ },
+ "guia.creux-du-van.vista-del-creux-du-van": {
+  "t": "Blick auf den Creux du Van vom Weg aus, mit Wolken über dem Jura",
+  "s": "7a44a941"
+ },
+ "guia.creux-du-van.vista-desde-el-sendero": {
+  "t": "Blick vom Weg",
+  "s": "193d129d"
+ },
+ "guia.creux-du-van.paredes-de-roca-del-creux": {
+  "t": "Felswände des Creux du Van von oben",
+  "s": "46c802f0"
+ },
+ "guia.creux-du-van.las-paredes-del-circo": {
+  "t": "Die Wände des Zirkus",
+  "s": "3b97b694"
+ },
+ "guia.creux-du-van.ibices-en-el-bosque-cerca": {
+  "t": "Steinböcke im Wald nahe dem Creux du Van",
+  "s": "995bdd82"
+ },
+ "guia.creux-du-van.ibices-en-el-camino": {
+  "t": "Steinböcke am Weg",
+  "s": "7a230f4a"
+ },
+ "guia.creux-du-van.seguridad-en-el-borde": {
+  "t": "Sicherheit am Rand",
+  "s": "7fdbc607"
+ },
+ "guia.creux-du-van.el-borde-no-tiene-barandas": {
+  "t": "<strong>Der Rand hat kein Geländer.</strong> Der äussere Weg, weiss-rot-weiss markiert, führt ohne jede Absicherung an der Wand entlang. Er ist nichts für Menschen mit Höhenangst und erfordert Vorsicht mit Kindern und Hunden.",
+  "s": "17889836"
+ },
+ "guia.creux-du-van.manten-distancia-del-borde-sobre": {
+  "t": "Halte Abstand zum Rand, vor allem bei Wind, Nebel oder nassem Boden. Ein Foto ist das Risiko nicht wert.",
+  "s": "17e47a37"
+ },
+ "guia.creux-du-van.hay-una-variante-mas-empinada": {
+  "t": "Es gibt eine steilere Variante, den Sentier du Single, der bei nassem Laub und feuchtem Fels rutschig wird.",
+  "s": "804ce51f"
+ },
+ "guia.creux-du-van.a-1-400-m-puede": {
+  "t": "Auf 1’400 m kann es sehr kalt werden, in der kalten Jahreszeit sogar nahe 0 °C. Nimm eine warme Schicht mit, auch wenn es unten schön ist.",
+  "s": "7a5e3c9a"
+ },
+ "guia.creux-du-van.a-finales-de-octubre-oscurece": {
+  "t": "Ende Oktober wird es gegen 18 Uhr dunkel. Plane einen frühen Start und prüfe den letzten Zug.",
+  "s": "7bd0fc89"
+ },
+ "guia.creux-du-van.consulta-el-pronostico-antes-de": {
+  "t": "Prüfe vor dem Aufbruch die Vorhersage bei <a href=\"https://www.meteoschweiz.admin.ch/lokalprognose/creux-du-van.html\" target=\"_blank\" rel=\"noopener\">MeteoSchweiz</a>.",
+  "s": "a9639f2f"
+ },
+ "guia.creux-du-van.reglas-de-la-reserva-natural": {
+  "t": "Regeln des Naturschutzgebiets",
+  "s": "b6f3b140"
+ },
+ "guia.creux-du-van.los-perros-deben-ir-con": {
+  "t": "Hunde müssen an der Leine geführt werden.",
+  "s": "d39b27bc"
+ },
+ "guia.creux-du-van.con-los-ibices-manten-la": {
+  "t": "Halte Abstand zu den Steinböcken: nicht füttern, nicht verfolgen und nicht stören, auch wenn sie sich dem Weg nähern.",
+  "s": "8732b946"
+ },
+ "guia.creux-du-van.no-se-pueden-hacer-fuegos": {
+  "t": "Feuer sind verboten (ausser an den dafür vorgesehenen Stellen), ebenso das Campieren.",
+  "s": "2196f20b"
+ },
+ "guia.creux-du-van.no-se-pueden-recoger-plantas": {
+  "t": "Pflanzen, Blumen und Pilze dürfen nicht gesammelt und Tiere nicht gestört werden.",
+  "s": "92715a02"
+ },
+ "guia.creux-du-van.basado-en-el-reglamento-de": {
+  "t": "Basierend auf dem Reglement der Neuenburger Naturschutzgebiete. Die Regeln können sich ändern, prüfe daher vor der Abreise die offiziellen Informationen.",
+  "s": "f45f1a5f"
+ },
+ "guia.creux-du-van.otono-la-mejor-epoca-para": {
+  "t": "<strong>Herbst:</strong> für viele die beste Zeit. Die Luft ist klarer, die Sicht reicht bis zu den Alpen, und es sind weniger Leute unterwegs. Steinböcke sieht man häufig auf den Felsbändern unter dem Rand.",
+  "s": "d854bbe9"
+ },
+ "guia.creux-du-van.verano-el-sendero-esta-en": {
+  "t": "<strong>Sommer:</strong> Der Weg ist in bestem Zustand, aber es sind am meisten Besucher unterwegs. Am besten unter der Woche oder früh am Morgen.",
+  "s": "2995c8be"
+ },
+ "guia.creux-du-van.invierno-se-puede-pero-con": {
+  "t": "<strong>Winter:</strong> Möglich, aber unter anderen Bedingungen. Bei Schnee braucht es Grödel, und die Wege können gefährlich sein.",
+  "s": "a8ab2ee6"
+ },
+ "guia.creux-du-van.calzado-de-senderismo-con-buena": {
+  "t": "Wanderschuhe mit guter Sohle (obligatorisch).",
+  "s": "2c7f2438"
+ },
+ "guia.creux-du-van.ropa-por-capas-y-una": {
+  "t": "Zwiebelprinzip-Kleidung und eine Jacke, dazu eine warme Schicht für den Rand.",
+  "s": "6a14bf3d"
+ },
+ "guia.creux-du-van.agua-y-algo-de-comer": {
+  "t": "Wasser und etwas zu essen. In Le Soliat gibt es ein Restaurant, rechne aber nicht damit, ohne dass du dich vergewissert hast, dass es geöffnet ist.",
+  "s": "0eec7ffd"
+ },
+ "guia.creux-du-van.bastones-recomendados-en-invierno-y": {
+  "t": "Wanderstöcke (im Winter empfohlen) und Grödel, wenn Schnee liegt.",
+  "s": "cb4b9ad3"
+ },
+ "guia.creux-du-van.gorra-protector-solar-y-linterna": {
+  "t": "Mütze, Sonnencreme und Stirnlampe, wenn du spät unterwegs bist.",
+  "s": "836c3d53"
+ },
+ "guia.creux-du-van.cuanto-se-tarda-en-caminar": {
+  "t": "Wie lange dauert die Wanderung zum Creux du Van?",
+  "s": "05898cf8"
+ },
+ "guia.creux-du-van.el-circuito-clasico-desde-noiraigue": {
+  "t": "Die klassische Runde ab Noiraigue ist etwa 12 km lang und dauert 4 bis 6 Stunden, je nach Tempo und Pausen.",
+  "s": "55535066"
+ },
+ "guia.creux-du-van.se-puede-llegar-en-transporte": {
+  "t": "Kann man mit dem öffentlichen Verkehr anreisen?",
+  "s": "0daebb10"
+ },
+ "guia.creux-du-van.si-hay-trenes-a-noiraigue": {
+  "t": "Ja. Es fahren Züge nach Noiraigue ab Neuchâtel, und von dort startet die Wanderung. Prüfe die Fahrpläne, besonders den letzten Zug zurück.",
+  "s": "67873165"
+ },
+ "guia.creux-du-van.se-puede-hacer-en-invierno": {
+  "t": "Kann man ihn im Winter machen?",
+  "s": "82bb0012"
+ },
+ "guia.creux-du-van.si-con-las-condiciones-adecuadas": {
+  "t": "Ja, bei passenden Bedingungen und mit Ausrüstung (Grödel bei Schnee). Die Wege können gefährlich sein, informiere dich daher vor der Abreise über die Bedingungen.",
+  "s": "c7dce435"
+ },
+ "guia.creux-du-van.se-ven-ibices-en-el": {
+  "t": "Sieht man am Creux du Van Steinböcke?",
+  "s": "9feb0b53"
+ },
+ "guia.creux-du-van.con-frecuencia-si-en-la": {
+  "t": "Häufig, ja. Im Schutzgebiet lebt eine Kolonie von Steinböcken (Alpensteinböcken), die in den Sechzigerjahren wieder angesiedelt wurde. Man sieht sie auf den Felsbändern unter dem Rand und manchmal auch direkt auf dem Weg. Im Herbst sind sie meist leichter zu sehen. Beobachte sie aus der Distanz und ohne sie zu stören.",
+  "s": "353bc6ec"
+ },
+ "guia.creux-du-van.se-puede-ir-con-perro": {
+  "t": "Kann man mit Hund hingehen?",
+  "s": "1fd45684"
+ },
+ "guia.creux-du-van.si-pero-siempre-con-correa": {
+  "t": "Ja, aber immer an der Leine und mit grosser Vorsicht: Der Rand des Zirkus hat kein Geländer.",
+  "s": "0d075a9a"
+ },
+ "guia.creux-du-van.es-apto-para-quien-tiene": {
+  "t": "Ist es geeignet bei Höhenangst oder mit Kindern?",
+  "s": "35960fa4"
+ },
+ "guia.creux-du-van.la-ruta-en-si-es": {
+  "t": "Die Route selbst hat mittlere Schwierigkeit, aber der Rand ist ungesichert. Wer Höhenangst hat, sollte den äusseren Weg meiden, und Kinder sollten in Randnähe an der Hand gehalten werden.",
+  "s": "53c5dc5d"
+ },
+ "guia.creux-du-van.necesito-experiencia-previa": {
+  "t": "Brauche ich Vorerfahrung?",
+  "s": "7e261d0c"
+ },
+ "guia.creux-du-van.no-necesitas-experiencia-tecnica-pero": {
+  "t": "Du brauchst keine technische Erfahrung, aber eine gewisse Grundkondition: Es sind etwa 800 Höhenmeter Aufstieg an einem Tag.",
+  "s": "8af6f4af"
+ },
+ "guia.creux-du-van.creux-du-van-con-clas": {
+  "t": "Creux du Van mit Clas Tours",
+  "s": "74c38a0c"
+ },
+ "guia.creux-du-van.cta-price": {
+  "t": "pro Person · inkl. Wanderleiter · mindestens 2 Personen<br>Gruppen ab 7 Personen: CHF {{g.creux}} pro Person · maximal 10 Personen",
+  "s": "b7e237c6"
+ },
+ "guia.kandersteg-bluemlisalphutte.inicio-mis-caminatas-guia-de": {
+  "t": "<a href=\"index.html\">Startseite</a> › <a href=\"clastours-caminatas-v4.html\">Meine Wanderungen</a> › Führer zu Kandersteg",
+  "s": "641eb266"
+ },
+ "guia.kandersteg-bluemlisalphutte.guia-de-ruta-alpes-bernenses": {
+  "t": "Routenführer · Berner Alpen",
+  "s": "d7e7a3fa"
+ },
+ "guia.kandersteg-bluemlisalphutte.kandersteg-en-2-dias-de": {
+  "t": "Kandersteg in 2 Tagen: <em>von Griesalp zur Blüemlisalphütte und zum Oeschinensee</em>",
+  "s": "57338484"
+ },
+ "guia.kandersteg-bluemlisalphutte.subes-por-el-valle-de": {
+  "t": "Du steigst durch das Griesalptal auf, übernachtest auf 2’840 m in einer Hütte des Schweizer Alpen-Clubs, erlebst den Sonnenaufgang über den Alpen und steigst zum blauen Oeschinensee ab, mit optionalem Bad. Das musst du wissen.",
+  "s": "e6375627"
+ },
+ "guia.kandersteg-bluemlisalphutte.grupo-de-senderistas-subiendo-por": {
+  "t": "Wandergruppe beim Aufstieg auf dem Felsweg zum Hohtürli, mit den Berner Tälern und einem See im Hintergrund",
+  "s": "ce56b93c"
+ },
+ "guia.kandersteg-bluemlisalphutte.que-es-esta-travesia": {
+  "t": "Was ist diese Überschreitung?",
+  "s": "d01fd573"
+ },
+ "guia.kandersteg-bluemlisalphutte.es-una-de-las-rutas": {
+  "t": "Sie ist eine der vollständigsten Bergtouren im Berner Oberland: Du quert vom Kiental nach Kandersteg über den <strong>Hohtürli</strong>-Pass (2’778 m) und übernachtest in der <strong>Blüemlisalphütte</strong> (2’840 m) am Fuss des Blüemlisalp-Massivs. Am nächsten Tag steigst du zum <strong>Oeschinensee</strong> ab, einem der meistfotografierten Seen der Schweiz, und von dort nach Kandersteg.",
+  "s": "782883cb"
+ },
+ "guia.kandersteg-bluemlisalphutte.hecha-en-dos-dias-es": {
+  "t": "In zwei Tagen gemacht ist es ein anderes Erlebnis, als sie am Stück zu gehen: Du erreichst die Hütte mit Zeit, isst mit Aussicht zu Abend und erlebst Sonnenuntergang und Sonnenaufgang im Hochgebirge.",
+  "s": "1ce6e2cf"
+ },
+ "guia.kandersteg-bluemlisalphutte.distancia-total": {
+  "t": "Gesamtdistanz",
+  "s": "e2320404"
+ },
+ "guia.kandersteg-bluemlisalphutte.16-km": {
+  "t": "~16 km",
+  "s": "ca0c8b7f"
+ },
+ "guia.kandersteg-bluemlisalphutte.subida-dia-1": {
+  "t": "Aufstieg (Tag 1)",
+  "s": "be493723"
+ },
+ "guia.kandersteg-bluemlisalphutte.1-450-m": {
+  "t": "+1’450 m",
+  "s": "25d85136"
+ },
+ "guia.kandersteg-bluemlisalphutte.bajada-dia-2": {
+  "t": "Abstieg (Tag 2)",
+  "s": "642636a9"
+ },
+ "guia.kandersteg-bluemlisalphutte.1-680-m": {
+  "t": "~1’680 m",
+  "s": "655182a6"
+ },
+ "guia.kandersteg-bluemlisalphutte.2-840-m": {
+  "t": "2’840 m",
+  "s": "3e231775"
+ },
+ "guia.kandersteg-bluemlisalphutte.datos-de-bergwelten-griesalp-hohturli": {
+  "t": "Daten von Bergwelten (Griesalp – Hohtürli – Kandersteg: 16,1 km, insgesamt 7 Std. 45 Min., T3). Der SAC stuft den Aufstieg von Griesalp zur Hütte als T2 ein (4 Std., 1’450 m); BLS und Bergwelten stufen ihn als T3 ein. Quellen am Ende der Seite.",
+  "s": "ecbbc053"
+ },
+ "guia.kandersteg-bluemlisalphutte.un-poco-de-historia": {
+  "t": "Ein wenig Geschichte",
+  "s": "e0edfea7"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-macizo-de-la-bluemlisalp": {
+  "t": "Das Blüemlisalp-Massiv",
+  "s": "e9bb7b03"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-nombre-significa-algo-asi": {
+  "t": "Der Name bedeutet in etwa „Alp der Blümchen“. Die Blüemlisalp ist ein vergletschertes Massiv mit Gipfeln über 3’600 m: Das <strong>Blüemlisalphorn</strong> (3’660 m) ist der höchste, neben der Wyssi Frau (3’648 m) und dem Morgenhorn (3’620 m). Die Volkssage erzählt, dort habe es einst eine überaus reiche Alp gegeben, deren Bewohner wegen ihres Hochmuts unter dem Eis begraben wurden. Es ist eine Legende, aber sie hilft zu verstehen, warum diese Eiswand über grünen Wiesen so beeindruckt.",
+  "s": "e5153a69"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-bluemlisalphorn-se-escalo-por": {
+  "t": "Das Blüemlisalphorn wurde am <strong>27. August 1860</strong> erstmals bestiegen: von Leslie Stephen, R. Liveing und J. K. Stone, mit den Führern Melchior Anderegg und Pierre Simond. Sie brachen um 2 Uhr morgens von den Oeschinen-Hütten auf und erreichten den Gipfel gegen 8 Uhr. Deshalb gilt das Massiv als eine der Wiegen des Alpinismus.",
+  "s": "752b7919"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-refugio": {
+  "t": "Die Hütte",
+  "s": "60640fe8"
+ },
+ "guia.kandersteg-bluemlisalphutte.la-bluemlisalphutte-pertenece-a-la": {
+  "t": "Die Blüemlisalphütte gehört der Sektion Blüemlisalp des Schweizer Alpen-Clubs (SAC), liegt auf 2’840 m und ganz nah beim Hohtürli. Sie ist Ausgangspunkt vieler Besteigungen der Region, und wenige Minuten entfernt gibt es ein Klettergebiet. Sie hat über hundert Schlafplätze und ist Teil der mehrtägigen Route namens <em>Bärentrek</em>.",
+  "s": "f7bba8f4"
+ },
+ "guia.kandersteg-bluemlisalphutte.la-placa-de-la-fachada": {
+  "t": "Die Tafel an der Fassade sagt es: Das Gebäude wurde <strong>1946–1947</strong> erbaut und <strong>1988/89</strong> erweitert. Im Sommer 2023 gab es Bauarbeiten, und die Hütte blieb für Gäste geöffnet.",
+  "s": "225691d5"
+ },
+ "guia.kandersteg-bluemlisalphutte.placa-en-la-fachada-de": {
+  "t": "Tafel an der Fassade der Blümlisalphütte: Höhe 2840 m, Eigentum der SAC-Sektion Blümlisalp, erbaut 1946–1947, Erweiterung 1988/89",
+  "s": "56de16c0"
+ },
+ "guia.kandersteg-bluemlisalphutte.la-placa-del-refugio-2": {
+  "t": "Die Tafel der Hütte: 2’840 m, erbaut 1946–1947",
+  "s": "99464448"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-lago": {
+  "t": "Der See",
+  "s": "d7783379"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-oeschinensee-esta-a-1": {
+  "t": "Der Oeschinensee liegt auf 1’578 m, hat etwas mehr als 1 km² Fläche und ist rund 56 m tief. Er entstand durch alte Felsstürze, die das Tal aufstauten. Im 17. und 18. Jahrhundert wurde auf der Oeschinenalp Schwefel abgebaut, und seit 2007 gehört der See zum UNESCO-Welterbe Schweizer Alpen Jungfrau-Aletsch.",
+  "s": "5f41be64"
+ },
+ "guia.kandersteg-bluemlisalphutte.como-llegar-a-griesalp": {
+  "t": "Anreise nach Griesalp",
+  "s": "46d521ac"
+ },
+ "guia.kandersteg-bluemlisalphutte.en-transporte-publico": {
+  "t": "Mit dem öffentlichen Verkehr",
+  "s": "34309ab4"
+ },
+ "guia.kandersteg-bluemlisalphutte.tren-hasta-reichenbach-im-kandertal": {
+  "t": "Zug bis <strong>Reichenbach im Kandertal</strong> (stündlich RegioExpress ab Bern oder Brig) und von dort das <strong>Postauto 220</strong> bis Griesalp. Die BLS beschreibt es als steilste Postautostrecke Europas: Es gibt sehr enge Kehren, daher fährt man am besten gelassen. 2026 verkehrte es vom 23. Mai bis 18. Oktober. Prüfe die Fahrpläne jede Saison bei der <a href=\"https://www.bls.ch\" target=\"_blank\" rel=\"noopener\">BLS</a> und der <a href=\"https://www.sbb.ch/de\" target=\"_blank\" rel=\"noopener\">SBB</a>.",
+  "s": "396e62a6"
+ },
+ "guia.kandersteg-bluemlisalphutte.hay-parqueaderos-de-pago-en": {
+  "t": "Es gibt kostenpflichtige Parkplätze am Tschingelsee und auf der Griesalp. Beachte, dass du in Kandersteg ankommst und nicht dort, wo du das Auto abgestellt hast, plane also die Rückfahrt: Am praktischsten ist die Anreise mit dem öffentlichen Verkehr.",
+  "s": "91d2ee00"
+ },
+ "guia.kandersteg-bluemlisalphutte.la-vuelta-desde-kandersteg": {
+  "t": "Die Rückfahrt ab Kandersteg",
+  "s": "723146f1"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-final-esta-en-kandersteg": {
+  "t": "Das Ziel ist Kandersteg, das einen Bahnhof hat. Von der Talstation der Gondel fährt ein Bus zum Bahnhof. Wenn du mit der Oeschinensee-Gondel absteigst: Sie fuhr 2026 von 8:30 bis 18:00 Uhr (bis 20. September) und bis 17:00 Uhr (21. September bis 8. November); das Ticket für die Talfahrt kostete CHF 26.20 für Erwachsene und CHF 14.10 mit Halbtax oder für Kinder. Prüfe Fahrzeiten und Preise vor der Abreise.",
+  "s": "b9535bee"
+ },
+ "guia.kandersteg-bluemlisalphutte.fuentes-bls-hohturli-passwanderung-y": {
+  "t": "Quellen: <a href=\"https://www.bls.ch/de/freizeit-und-ferien/ausfluege/hohtuerli-passwanderung\" target=\"_blank\" rel=\"noopener\">BLS, Hohtürli-Passwanderung</a> und <a href=\"https://www.oeschinensee.ch/en/\" target=\"_blank\" rel=\"noopener\">Oeschinensee, Gondel</a>.",
+  "s": "21b20454"
+ },
+ "guia.kandersteg-bluemlisalphutte.dia-1-de-griesalp-a": {
+  "t": "Tag 1: von Griesalp zur Blüemlisalphütte",
+  "s": "8dd5f0c0"
+ },
+ "guia.kandersteg-bluemlisalphutte.subida-de-unas-4-a": {
+  "t": "Aufstieg von etwa 4 bis 4 Std. 30 reiner Gehzeit, mit +1’450 m Höhenunterschied. Mit Pausen rechne mit 5 bis 6 Stunden.",
+  "s": "5c7e5aa9"
+ },
+ "guia.kandersteg-bluemlisalphutte.griesalp-1-408-m-sales": {
+  "t": "<b>Griesalp (1’408 m).</b> Du startest auf markiertem Weg durch Wald und Wiesen.",
+  "s": "9b0d011b"
+ },
+ "guia.kandersteg-bluemlisalphutte.underi-y-oberi-bundalp-1": {
+  "t": "<b>Underi und Oberi Bundalp (1’840 m).</b> Weidealpen, das letzte sanfte Stück vor dem steilen Aufstieg.",
+  "s": "af98fa8a"
+ },
+ "guia.kandersteg-bluemlisalphutte.la-cuesta-del-hohturli-un": {
+  "t": "<b>Der Aufstieg zum Hohtürli.</b> Ein steiler Felsweg mit kettengesicherten Stellen führt bis Uf der Wart (2’508 m).",
+  "s": "c428e9d2"
+ },
+ "guia.kandersteg-bluemlisalphutte.valle-rocoso-hasta-el-hohturli": {
+  "t": "<b>Felsiges Tal bis zum Hohtürli (2’778 m).</b> Steinlandschaft nahe dem Blüemlisalp-Gletscher. Hier erreichst du den Pass, der das Kiental mit Kandersteg verbindet.",
+  "s": "9ad1b6df"
+ },
+ "guia.kandersteg-bluemlisalphutte.la-bluemlisalphutte-2-840-m": {
+  "t": "<b>Die Blüemlisalphütte (2’840 m).</b> Wenige Minuten oberhalb des Passes. Du kommst an, richtest dich ein, und es bleibt Zeit zum Ausruhen, Abendessen und für den Sonnenuntergang.",
+  "s": "680c3116"
+ },
+ "guia.kandersteg-bluemlisalphutte.atardecer-en-la-bluemlisalphutte-con": {
+  "t": "Abendstimmung bei der Blüemlisalphütte, mit der Steinhütte und Leuten auf der Terrasse",
+  "s": "08339f03"
+ },
+ "guia.kandersteg-bluemlisalphutte.atardecer-en-el-refugio": {
+  "t": "Abendstimmung bei der Hütte",
+  "s": "bf2137d6"
+ },
+ "guia.kandersteg-bluemlisalphutte.amanecer-desde-el-refugio-con": {
+  "t": "Sonnenaufgang von der Hütte aus, mit einem Steinhäuschen und den Berner Tälern im Hintergrund",
+  "s": "57295ba2"
+ },
+ "guia.kandersteg-bluemlisalphutte.dormir-en-el-refugio": {
+  "t": "Übernachten in der Hütte",
+  "s": "2daf0133"
+ },
+ "guia.kandersteg-bluemlisalphutte.se-duerme-en-dormitorios-compartidos": {
+  "t": "Man schläft in Gemeinschaftsschlägen (Lager). Die Hütte stellt Decken bereit, aber du musst einen <strong>Hüttenschlafsack</strong> mitbringen.",
+  "s": "23d1bc1d"
+ },
+ "guia.kandersteg-bluemlisalphutte.incluye-cena-y-desayuno-media": {
+  "t": "Abendessen und Frühstück (Halbpension) sind inbegriffen. Die Küche ist hausgemacht, mit Weinen vor allem aus dem Wallis. Es gibt ein vegetarisches Menü, wenn man es vorab bestellt.",
+  "s": "e84068c6"
+ },
+ "guia.kandersteg-bluemlisalphutte.se-aceptan-tarjeta-y-efectivo": {
+  "t": "Für Getränke werden Karte und Bargeld akzeptiert.",
+  "s": "d39c76de"
+ },
+ "guia.kandersteg-bluemlisalphutte.la-temporada-con-servicio-va": {
+  "t": "Die bewartete Saison dauert von Mitte Juni bis Mitte oder Ende Oktober, mit Vollbetrieb von Juli bis September.",
+  "s": "ba0972aa"
+ },
+ "guia.kandersteg-bluemlisalphutte.dia-2-del-refugio-al": {
+  "t": "Tag 2: von der Hütte zum Oeschinensee und nach Kandersteg",
+  "s": "1fd1adc7"
+ },
+ "guia.kandersteg-bluemlisalphutte.bajada-de-unos-1-680": {
+  "t": "Abstieg von etwa 1’680 m. Rechne mit etwa 3 bis 4 Std. Gehzeit bis Kandersteg, ohne Pausen und ohne Bad (7 Std. 45 Min. Gesamtroute abzüglich des Aufstiegs am ersten Tag).",
+  "s": "81be3b6e"
+ },
+ "guia.kandersteg-bluemlisalphutte.desayuno-y-salida-sales-temprano": {
+  "t": "<b>Frühstück und Aufbruch.</b> Du startest früh, um mehr Zeit am See zu haben. Der Abstieg führt nach Westen.",
+  "s": "b5c2068a"
+ },
+ "guia.kandersteg-bluemlisalphutte.oberbargli-1-978-m-despues": {
+  "t": "<b>Oberbärgli (1’978 m).</b> Danach folgt ein steiler Abstieg bis zum Underbärgli, daher geh gelassen und mit Wanderstöcken.",
+  "s": "7c96310d"
+ },
+ "guia.kandersteg-bluemlisalphutte.underbargli-1-800-m-hay": {
+  "t": "<b>Underbärgli (1’800 m).</b> Es gibt Restaurants, ein guter Ort für eine Pause.",
+  "s": "b2fde04a"
+ },
+ "guia.kandersteg-bluemlisalphutte.oeschinensee-1-578-m-parada": {
+  "t": "<b>Oeschinensee (1’578 m).</b> Lange Rast: Fotos, Mittagessen und, wenn das Wetter es erlaubt, ein Bad.",
+  "s": "5ec627e0"
+ },
+ "guia.kandersteg-bluemlisalphutte.hasta-kandersteg-por-el-arroyo": {
+  "t": "<b>Bis Kandersteg.</b> Zu Fuss entlang des Oeschibachs oder mit der Gondel für die letzten ~400 m Höhenunterschied.",
+  "s": "5d65c558"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-lago-oeschinensee-de-color": {
+  "t": "Der türkisfarbene Oeschinensee mit den Wänden und Gletschern der Blüemlisalp im Hintergrund",
+  "s": "e7503834"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-oeschinensee-y-las-paredes": {
+  "t": "Der Oeschinensee und die Wände der Blüemlisalp",
+  "s": "22a1ceab"
+ },
+ "guia.kandersteg-bluemlisalphutte.vista-del-oeschinensee-desde-arriba": {
+  "t": "Blick auf den Oeschinensee von oben, mit Neuschnee auf den Gipfeln",
+  "s": "e99ff410"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-lago-con-nieve-en": {
+  "t": "Der See mit Schnee im Herbst",
+  "s": "b391d350"
+ },
+ "guia.kandersteg-bluemlisalphutte.valle-de-kandersteg-visto-durante": {
+  "t": "Das Kandersteger Tal, gesehen beim Abstieg vom Hohtürli",
+  "s": "936b3740"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-valle-durante-la-bajada": {
+  "t": "Das Tal beim Abstieg",
+  "s": "a3075a33"
+ },
+ "guia.kandersteg-bluemlisalphutte.tiempos-de-referencia-de-caminata": {
+  "t": "Richtwerte für reine Gehzeit. Routenquelle: <a href=\"https://www.bergwelten.com/t/w/11140\" target=\"_blank\" rel=\"noopener\">Bergwelten, Hohtürli und Blüemlisalphütte</a>.",
+  "s": "8c261f64"
+ },
+ "guia.kandersteg-bluemlisalphutte.banarse-en-el-oeschinensee-si": {
+  "t": "Baden im Oeschinensee: ja oder nein?",
+  "s": "627cf66f"
+ },
+ "guia.kandersteg-bluemlisalphutte.si-se-puede-el-bano": {
+  "t": "Ja, man kann: Baden ist erlaubt, auf eigene Gefahr. Es gibt keine Umkleiden, Duschen oder Rettungsschwimmer. Die flachen Süd- und Westufer werden am häufigsten zum Abkühlen genutzt.",
+  "s": "32d82839"
+ },
+ "guia.kandersteg-bluemlisalphutte.el-agua-es-fria-es": {
+  "t": "<strong>Das Wasser ist kalt.</strong> Es ist ein Bergsee auf 1’578 m. Ein Referenzwert lag bei etwa 11 °C; im Hochsommer kann er steigen, aber rechne mit Kälte.",
+  "s": "5db4b2e8"
+ },
+ "guia.kandersteg-bluemlisalphutte.entra-despacio-no-te-lances": {
+  "t": "Geh langsam hinein, spring nicht auf einmal, und bleib in Ufernähe.",
+  "s": "56bf183d"
+ },
+ "guia.kandersteg-bluemlisalphutte.despues-de-una-bajada-larga": {
+  "t": "Nach einem langen Abstieg und mit warmem Körper ist ein kurzes Bad das Vernünftigste. Trockne dich ab und zieh dich schnell warm an.",
+  "s": "e732697a"
+ },
+ "guia.kandersteg-bluemlisalphutte.lleva-traje-de-bano-y": {
+  "t": "Nimm Badekleidung und ein kleines Handtuch mit; sie brauchen wenig Platz.",
+  "s": "2909f8e0"
+ },
+ "guia.kandersteg-bluemlisalphutte.seguridad-y-condiciones": {
+  "t": "Sicherheit und Bedingungen",
+  "s": "ef9c2df5"
+ },
+ "guia.kandersteg-bluemlisalphutte.no-es-una-caminata-facil": {
+  "t": "<strong>Das ist keine leichte Wanderung.</strong> Sie hat einen langen, steilen Aufstieg, eine kettengesicherte Passage zum Hohtürli und einen steilen Abstieg. Sie verlangt gute Kondition, Bergschuhe und Schwindelfreiheit.",
+  "s": "6bb608e4"
+ },
+ "guia.kandersteg-bluemlisalphutte.nieve-a-inicios-de-temporada": {
+  "t": "<strong>Schnee zu Saisonbeginn.</strong> Im Juni und manchmal im Oktober kann es am Hohtürli Schneefelder geben. Erkundige dich vor dem Aufbruch bei der Hütte oder bei Kandersteg nach dem Zustand des Weges.",
+  "s": "2bf955c2"
+ },
+ "guia.kandersteg-bluemlisalphutte.caida-de-rocas-en-el": {
+  "t": "<strong>Steinschlag am Oeschinensee.</strong> Wegen der Gefahr von Felsabbrüchen (teilweise im Zusammenhang mit dem Auftauen des Permafrosts) wurden 2020, 2021 und im Juli 2025 Wege und Ufer gesperrt. Prüfe vor der Abreise die offiziellen Hinweise.",
+  "s": "3fcda998"
+ },
+ "guia.kandersteg-bluemlisalphutte.tormentas-de-verano-en-la": {
+  "t": "<strong>Sommergewitter.</strong> Am Nachmittag sind sie häufig. Deshalb startet man früh.",
+  "s": "82079d67"
+ },
+ "guia.kandersteg-bluemlisalphutte.frio-y-altura-a-2": {
+  "t": "<strong>Kälte und Höhe.</strong> Auf 2’840 m ist es auch im Sommer kalt, vor allem nachts und im Morgengrauen.",
+  "s": "6917d5b6"
+ },
+ "guia.kandersteg-bluemlisalphutte.tiempo-mira-el-pronostico-en": {
+  "t": "<strong>Wetter.</strong> Schau dir die Vorhersage bei <a href=\"https://www.meteoschweiz.admin.ch\" target=\"_blank\" rel=\"noopener\">MeteoSchweiz</a> und den Hüttenbericht an.",
+  "s": "6930e276"
+ },
+ "guia.kandersteg-bluemlisalphutte.julio-a-septiembre-el-refugio": {
+  "t": "<strong>Juli bis September:</strong> Die Hütte ist voll in Betrieb, und der Weg ist meist schneefrei. Es ist die sicherste und am stärksten besuchte Zeit.",
+  "s": "a40e4603"
+ },
+ "guia.kandersteg-bluemlisalphutte.junio-y-octubre-el-refugio": {
+  "t": "<strong>Juni und Oktober:</strong> Die Hütte ist nur zeitweise geöffnet, und es kann Schnee oder Eis geben. Besser vorher nachfragen.",
+  "s": "482fe130"
+ },
+ "guia.kandersteg-bluemlisalphutte.resto-del-ano-no-es": {
+  "t": "<strong>Übriges Jahr:</strong> Keine Wanderroute; der Winterraum der Hütte ist nur für Notfälle.",
+  "s": "4d5ea200"
+ },
+ "guia.kandersteg-bluemlisalphutte.botas-de-montana-con-buena": {
+  "t": "Bergschuhe mit guter Sohle, bereits eingelaufen (obligatorisch).",
+  "s": "2467aca5"
+ },
+ "guia.kandersteg-bluemlisalphutte.ropa-por-capas-chaqueta-impermeable": {
+  "t": "Zwiebelprinzip-Kleidung, wasserdichte Jacke, Mütze und Handschuhe für die Nacht und den Morgen.",
+  "s": "464a4687"
+ },
+ "guia.kandersteg-bluemlisalphutte.saco-sabana-linterna-frontal-tapones": {
+  "t": "Hüttenschlafsack, Stirnlampe, Ohrstöpsel (Gemeinschaftslager) und minimale Toilettenartikel.",
+  "s": "ad463c8a"
+ },
+ "guia.kandersteg-bluemlisalphutte.agua-para-la-subida-y": {
+  "t": "Wasser für den Aufstieg und etwas zu essen für unterwegs. Bei Clas Tours sind Abendessen, Frühstück und 1 Liter Wandertee inbegriffen.",
+  "s": "801fb741"
+ },
+ "guia.kandersteg-bluemlisalphutte.bastones-muy-recomendados-para-la": {
+  "t": "Wanderstöcke (für den Abstieg sehr empfohlen), Sonnencreme, Sonnenbrille.",
+  "s": "c86dfc4e"
+ },
+ "guia.kandersteg-bluemlisalphutte.traje-de-bano-y-toalla": {
+  "t": "Badekleidung und kleines Handtuch, wenn du baden möchtest.",
+  "s": "bbd6ccc7"
+ },
+ "guia.kandersteg-bluemlisalphutte.tarjeta-o-efectivo-para-bebidas": {
+  "t": "Karte oder Bargeld für Getränke und eine gültige persönliche Versicherung.",
+  "s": "376f4619"
+ },
+ "guia.kandersteg-bluemlisalphutte.cuanto-dura-la-travesia-griesalp": {
+  "t": "Wie lange dauert die Überschreitung Griesalp – Blüemlisalphütte – Kandersteg?",
+  "s": "461c5e48"
+ },
+ "guia.kandersteg-bluemlisalphutte.son-dos-dias-el-primero": {
+  "t": "Zwei Tage. Der erste führt von Griesalp zur Hütte (etwa 4 bis 4 Std. 30 Gehzeit, +1’450 m). Der zweite führt über den Oeschinensee nach Kandersteg hinunter (etwa 3 bis 4 Std. Gehzeit, ohne Pausen und Bad).",
+  "s": "4c2f1b67"
+ },
+ "guia.kandersteg-bluemlisalphutte.que-dificultad-tiene": {
+  "t": "Wie schwierig ist sie?",
+  "s": "4c3b173f"
+ },
+ "guia.kandersteg-bluemlisalphutte.es-una-ruta-de-montana": {
+  "t": "Es ist eine anspruchsvolle Bergroute, laut BLS und Bergwelten T3 auf der SAC-Skala. Sie hat ein steiles, kettengesichertes Stück zum Hohtürli und einen steilen Abstieg. Es braucht gute Kondition und Schwindelfreiheit.",
+  "s": "ef078775"
+ },
+ "guia.kandersteg-bluemlisalphutte.se-puede-hacer-en-un": {
+  "t": "Kann man sie an einem einzigen Tag machen?",
+  "s": "5ffec4fb"
+ },
+ "guia.kandersteg-bluemlisalphutte.si-hay-quien-la-hace": {
+  "t": "Ja, manche gehen sie am Stück: etwa 16 km und rund 7 Std. 45 Gehzeit laut Bergwelten, mit +1’450 m Aufstieg. Die Übernachtung in der Hütte erlaubt es, sie in Ruhe zu machen und Sonnenuntergang und Sonnenaufgang in den Bergen zu erleben.",
+  "s": "d2aea00e"
+ },
+ "guia.kandersteg-bluemlisalphutte.cuando-esta-abierto-el-refugio": {
+  "t": "Wann ist die Hütte geöffnet?",
+  "s": "b322b2c4"
+ },
+ "guia.kandersteg-bluemlisalphutte.la-bluemlisalphutte-atiende-con-servicio": {
+  "t": "Die Blüemlisalphütte ist von Mitte Juni bis Mitte oder Ende Oktober bewartet und von Juli bis September in Vollbetrieb. Ausserhalb dieser Zeiten ist nur der Winterraum für Notfälle offen. Reserviere immer im Voraus.",
+  "s": "0abcbf36"
+ },
+ "guia.kandersteg-bluemlisalphutte.se-puede-uno-banar-en": {
+  "t": "Kann man im Oeschinensee baden?",
+  "s": "5afb51d1"
+ },
+ "guia.kandersteg-bluemlisalphutte.si-el-bano-esta-permitido": {
+  "t": "Ja, Baden ist erlaubt, auf eigene Gefahr. Es gibt keine Umkleiden, Duschen oder Rettungsschwimmer. Das Wasser ist kalt, wie in einem Bergsee, daher geh langsam und nur kurz hinein.",
+  "s": "ff10920f"
+ },
+ "guia.kandersteg-bluemlisalphutte.como-vuelvo-a-kandersteg-desde": {
+  "t": "Wie komme ich vom See zurück nach Kandersteg?",
+  "s": "227dfd1f"
+ },
+ "guia.kandersteg-bluemlisalphutte.puedes-seguir-a-pie-junto": {
+  "t": "Du kannst zu Fuss am Oeschibach entlang bis Kandersteg weitergehen oder die Gondel vom See für die letzten 400 m Höhenunterschied nehmen. Die Gondel hat saisonale Fahrzeiten, prüfe sie daher.",
+  "s": "4b466dfb"
+ },
+ "guia.kandersteg-bluemlisalphutte.que-tengo-que-llevar-al": {
+  "t": "Was muss ich in die Hütte mitnehmen?",
+  "s": "6f480162"
+ },
+ "guia.kandersteg-bluemlisalphutte.un-saco-sabana-obligatorio-el": {
+  "t": "Einen Hüttenschlafsack (obligatorisch: Die Hütte stellt Decken, aber keine Leintücher), Karte oder Bargeld für Getränke, warme Kleidung, eine Stirnlampe und Bergschuhe. Abendessen und Frühstück sind inbegriffen, wenn du mit Clas Tours gehst.",
+  "s": "2ad587aa"
+ },
+ "guia.kandersteg-bluemlisalphutte.fuentes": {
+  "t": "Quellen",
+  "s": "0f5d33d1"
+ },
+ "guia.kandersteg-bluemlisalphutte.sac-bluemlisalphutte-altitud-capacidad-temporada": {
+  "t": "<a href=\"https://www.sac-cas.ch/en/huts-and-tours/sac-route-portal/2147000036/\" target=\"_blank\" rel=\"noopener\">SAC, Blüemlisalphütte</a>: Höhe, Kapazität, Saison und Zugänge.",
+  "s": "e9bbe361"
+ },
+ "guia.kandersteg-bluemlisalphutte.bergwelten-hohturli-und-bluemlisalphutte-recorrido": {
+  "t": "<a href=\"https://www.bergwelten.com/t/w/11140\" target=\"_blank\" rel=\"noopener\">Bergwelten, Hohtürli und Blüemlisalphütte</a>: Route, Distanzen und Zeiten.",
+  "s": "96c06236"
+ },
+ "guia.kandersteg-bluemlisalphutte.bls-hohturli-passwanderung-postauto-gondola": {
+  "t": "<a href=\"https://www.bls.ch/de/freizeit-und-ferien/ausfluege/hohtuerli-passwanderung\" target=\"_blank\" rel=\"noopener\">BLS, Hohtürli-Passwanderung</a>: Postauto, Gondel und Hüttendaten.",
+  "s": "77259543"
+ },
+ "guia.kandersteg-bluemlisalphutte.bergwelten-bluemlisalphutte-camas-comidas-y": {
+  "t": "<a href=\"https://www.bergwelten.com/h/bluemlisalphuette\" target=\"_blank\" rel=\"noopener\">Bergwelten, Blüemlisalphütte</a>: Betten, Verpflegung und Zugang.",
+  "s": "7293f457"
+ },
+ "guia.kandersteg-bluemlisalphutte.wikipedia-oeschinensee-y-bluemlisalp-datos": {
+  "t": "<a href=\"https://en.wikipedia.org/wiki/Oschinensee\" target=\"_blank\" rel=\"noopener\">Wikipedia, Oeschinensee</a> und <a href=\"https://en.wikipedia.org/wiki/Bl%C3%BCemlisalp\" target=\"_blank\" rel=\"noopener\">Blüemlisalp</a>: Daten zum See und zur Erstbesteigung.",
+  "s": "ff5638c6"
+ },
+ "guia.kandersteg-bluemlisalphutte.wassertemperatur-org-normas-de-bano": {
+  "t": "<a href=\"https://www.wassertemperatur.org/seen/schweiz/oeschinensee/\" target=\"_blank\" rel=\"noopener\">wassertemperatur.org</a>: Baderegeln.",
+  "s": "2b270204"
+ },
+ "guia.kandersteg-bluemlisalphutte.los-horarios-precios-y-estado": {
+  "t": "Fahrzeiten, Preise und Wegzustand ändern sich jede Saison; prüfe sie vor der Abreise.",
+  "s": "9b2ec0ee"
+ },
+ "guia.kandersteg-bluemlisalphutte.kandersteg-con-clas-tours": {
+  "t": "Kandersteg mit Clas Tours",
+  "s": "0b1098c4"
+ },
+ "guia.kandersteg-bluemlisalphutte.cta-price": {
+  "t": "pro Person · alles inklusive (Wanderleiter, Übernachtung in der Hütte, Abendessen und Frühstück) · mindestens 2 Personen<br>Gruppen ab 7 Personen: CHF {{g.kand}} pro Person · maximal 10 Personen",
+  "s": "94203522"
+ }
+}
