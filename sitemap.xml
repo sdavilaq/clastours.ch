@@ -1,43 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://clastours.ch/</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/de/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/en/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/"/>
   </url>
   <url>
     <loc>https://clastours.ch/clastours-caminatas-v4.html</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-caminatas-v4.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-caminatas-v4.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-caminatas-v4.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-caminatas-v4.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/de/clastours-caminatas-v4.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-caminatas-v4.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-caminatas-v4.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-caminatas-v4.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-caminatas-v4.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/en/clastours-caminatas-v4.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-caminatas-v4.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-caminatas-v4.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-caminatas-v4.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-caminatas-v4.html"/>
   </url>
   <url>
     <loc>https://clastours.ch/guia-creux-du-van.html</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/guia-creux-du-van.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/guia-creux-du-van.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/guia-creux-du-van.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/guia-creux-du-van.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/de/guia-creux-du-van.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/guia-creux-du-van.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/guia-creux-du-van.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/guia-creux-du-van.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/guia-creux-du-van.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/en/guia-creux-du-van.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/guia-creux-du-van.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/guia-creux-du-van.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/guia-creux-du-van.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/guia-creux-du-van.html"/>
   </url>
   <url>
     <loc>https://clastours.ch/guia-kandersteg-bluemlisalphutte.html</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/guia-kandersteg-bluemlisalphutte.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/guia-kandersteg-bluemlisalphutte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/guia-kandersteg-bluemlisalphutte.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/guia-kandersteg-bluemlisalphutte.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/de/guia-kandersteg-bluemlisalphutte.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/guia-kandersteg-bluemlisalphutte.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/guia-kandersteg-bluemlisalphutte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/guia-kandersteg-bluemlisalphutte.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/guia-kandersteg-bluemlisalphutte.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/en/guia-kandersteg-bluemlisalphutte.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/guia-kandersteg-bluemlisalphutte.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/guia-kandersteg-bluemlisalphutte.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/guia-kandersteg-bluemlisalphutte.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/guia-kandersteg-bluemlisalphutte.html"/>
   </url>
   <url>
     <loc>https://clastours.ch/clastours-calendario.html</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-calendario.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-calendario.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-calendario.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-calendario.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/de/clastours-calendario.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-calendario.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-calendario.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-calendario.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-calendario.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/en/clastours-calendario.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-calendario.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-calendario.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-calendario.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-calendario.html"/>
   </url>
   <url>
     <loc>https://clastours.ch/clastours-contacto.html</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-contacto.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/de/clastours-contacto.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-contacto.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/en/clastours-contacto.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-contacto.html"/>
   </url>
   <url>
     <loc>https://clastours.ch/clastours-nosotros.html</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-nosotros.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/de/clastours-nosotros.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-nosotros.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/en/clastours-nosotros.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-nosotros.html"/>
   </url>
   <url>
     <loc>https://clastours.ch/clastours-legal.html</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-legal.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/de/clastours-legal.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-legal.html"/>
+  </url>
+  <url>
+    <loc>https://clastours.ch/en/clastours-legal.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-legal.html"/>
   </url>
 </urlset>

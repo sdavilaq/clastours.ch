@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- ========== FAVICON ========== -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0F3D52">
+<!-- ============================= -->
+<title>About me – Clas Tours by Davila Quiroz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --petrol-dk:  #0F3D52;
+    --petrol:     #1B5F7A;
+    --petrol-md:  #2A7A9B;
+    --petrol-lt:  #4A9AB8;
+    --copper:     #9B6B4A;
+    --copper-lt:  #C48A62;
+    --snow:       #F8F7F5;
+    --mist:       #EEF2F4;
+    --stone:      #D8DFE3;
+    --ink:        #1A1F22;
+    --slate:      #3D4E56;
+    --dust:       #7A8D96;
+    --white:      #FFFFFF;
+  }
+
+  body { font-family: 'DM Sans', sans-serif; background: var(--snow); color: var(--ink); line-height: 1.6; overflow-x: hidden; }
+
+  /* NAV */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(15,61,82,0.95); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    transition: padding 0.3s;
+  }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); text-decoration: none; line-height: 1.2; }
+  .nav-logo span { display: block; font-size: 0.65rem; font-weight: 300; color: var(--copper-lt); letter-spacing: 0.15em; text-transform: uppercase; font-family: 'DM Sans', sans-serif; }
+  .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,0.65); font-size: 0.875rem; text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--copper-lt); }
+  .nav-links a.active { color: var(--copper-lt); }
+  .nav-cta { background: var(--copper); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 3px; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--copper-lt); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 24px; height: 1.5px; background: var(--white); }
+
+  /* HERO */
+  .hero {
+    background: var(--petrol-dk);
+    padding: 7rem 2rem 0;
+    position: relative; overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 80% 40%, rgba(27,95,122,0.5) 0%, transparent 70%);
+  }
+  .hero-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 3rem; align-items: end;
+    position: relative; z-index: 1;
+  }
+  .hero-text { padding-bottom: 3rem; }
+  .eyebrow {
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--copper-lt);
+    margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .eyebrow::before { content:''; display:block; width:20px; height:1px; background:var(--copper-lt); }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700; color: var(--white); line-height: 1.05;
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 em { font-style: italic; color: var(--copper-lt); }
+  .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.55); max-width: 480px; line-height: 1.75; }
+
+  /* FOTO HERO */
+  .hero-foto {
+    width: 260px; height: 340px; flex-shrink: 0;
+    background: rgba(27,95,122,0.2);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-left: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px 4px 0 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0.75rem; color: rgba(255,255,255,0.25);
+    position: relative; overflow: hidden;
+    align-self: flex-end;
+  }
+  .hero-foto svg { width: 32px; height: 32px; }
+  .hero-foto-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+  .hero-foto-hint { font-size: 0.75rem; opacity: 0.6; text-align: center; max-width: 180px; line-height: 1.5; }
+  .hero-foto-tag {
+    position: absolute; top: 0.75rem; left: 0.75rem;
+    font-size: 0.6rem; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--copper-lt);
+    background: rgba(155,107,74,0.15);
+    border: 1px dashed rgba(196,138,98,0.4);
+    padding: 0.2rem 0.5rem; border-radius: 2px;
+  }
+
+  /* SECCIONES */
+  .section { padding: 4.5rem 2rem; }
+  .inner { max-width: 1100px; margin: 0 auto; }
+  .bg-white { background: var(--white); }
+  .bg-mist  { background: var(--mist); }
+  .bg-dark  { background: var(--petrol-dk); }
+
+  .label {
+    font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--petrol-lt);
+    margin-bottom: 0.5rem;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .label::before { content:''; display:block; width:20px; height:1px; background:currentColor; }
+  .label-lt { color: var(--copper-lt); }
+  .label-lt::before { background: var(--copper-lt); }
+
+  .title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.875rem, 4vw, 2.75rem);
+    font-weight: 700; color: var(--petrol-dk); line-height: 1.1; margin-bottom: 1rem;
+  }
+  .title em { font-style: italic; color: var(--copper); }
+  .title-lt { color: var(--white); }
+  .title-lt em { color: var(--copper-lt); }
+
+  /* HISTORIA */
+  .historia-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
+  }
+  .historia-text p {
+    font-size: 0.9375rem; color: var(--slate); line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+  .historia-text p:last-child { margin-bottom: 0; }
+  .historia-text p strong { color: var(--ink); font-weight: 500; }
+
+  /* FOTO HISTORIA */
+  .foto-historia {
+    background: var(--mist); border: 1px dashed var(--stone);
+    border-radius: 6px; height: 420px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0.75rem; color: var(--dust);
+    position: relative;
+  }
+  .foto-historia svg { width: 32px; height: 32px; opacity: 0.4; }
+  .foto-historia-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.6; }
+  .foto-historia-hint { font-size: 0.8rem; opacity: 0.45; text-align: center; max-width: 220px; line-height: 1.5; }
+  .foto-tag {
+    position: absolute; top: 0.75rem; left: 0.75rem;
+    font-size: 0.6rem; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--petrol-lt);
+    background: rgba(27,95,122,0.07);
+    border: 1px dashed rgba(74,154,184,0.4);
+    padding: 0.2rem 0.5rem; border-radius: 2px;
+  }
+
+  /* VALORES */
+  .valores-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .valor-card {
+    background: var(--white); border: 1px solid var(--stone); border-radius: 6px;
+    padding: 1.75rem; transition: border-color 0.3s, transform 0.3s;
+  }
+  .valor-card:hover { border-color: var(--petrol-lt); transform: translateY(-2px); }
+  .valor-icon {
+    width: 40px; height: 40px; border-radius: 6px;
+    background: rgba(27,95,122,0.07);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .valor-icon svg { width: 20px; height: 20px; color: var(--petrol); }
+  .valor-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem; font-weight: 700;
+    color: var(--petrol-dk); margin-bottom: 0.4rem;
+  }
+  .valor-text { font-size: 0.875rem; color: var(--slate); line-height: 1.7; }
+
+  /* FORMACIÓN */
+  .formacion-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  }
+  .form-card {
+    background: var(--white); border: 1px solid var(--stone); border-radius: 6px;
+    padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start;
+    transition: border-color 0.3s;
+  }
+  .form-card:hover { border-color: var(--petrol-lt); }
+  .form-card.highlight { border-color: var(--copper); background: rgba(155,107,74,0.02); }
+  .form-icon {
+    width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem; font-weight: 600; font-family: 'DM Sans', sans-serif;
+  }
+  .form-icon.active { background: rgba(27,95,122,0.1); color: var(--petrol); }
+  .form-icon.progress { background: rgba(155,107,74,0.1); color: var(--copper); }
+  .form-content { flex: 1; }
+  .form-title { font-size: 0.9375rem; font-weight: 500; color: var(--ink); margin-bottom: 0.2rem; }
+  .form-sub { font-size: 0.8125rem; color: var(--dust); line-height: 1.5; margin-bottom: 0.4rem; }
+  .form-status {
+    display: inline-block; font-size: 0.65rem; font-weight: 500;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 0.2rem 0.6rem; border-radius: 2px;
+  }
+  .status-active { background: rgba(42,107,32,0.08); color: #2A6B20; }
+  .status-progress { background: rgba(155,107,74,0.1); color: var(--copper); }
+
+  /* FILOSOFÍA */
+  .filosofia-wrap { max-width: 720px; margin: 0 auto; text-align: center; }
+  .cita {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.375rem, 3vw, 2rem);
+    font-style: italic; font-weight: 400;
+    color: var(--white); line-height: 1.5;
+    margin-bottom: 1.5rem;
+    position: relative; padding: 0 2rem;
+  }
+  .cita::before, .cita::after {
+    content: '"';
+    font-size: 4rem; line-height: 0;
+    color: rgba(155,107,74,0.3);
+    position: absolute; font-style: normal;
+  }
+  .cita::before { top: 1rem; left: 0; }
+  .cita::after { content: '"'; bottom: -0.5rem; right: 0; }
+  .cita-author { font-size: 0.875rem; color: rgba(255,255,255,0.35); }
+  .cita-dash { color: var(--copper-lt); margin: 0 0.5rem; }
+
+  /* FOTOS GALERÍA */
+  .galeria-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .galeria-item {
+    background: var(--mist); border: 1px dashed var(--stone);
+    border-radius: 4px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0.5rem; color: var(--dust); position: relative;
+  }
+  .galeria-item:first-child { grid-row: span 2; min-height: 380px; }
+  .galeria-item:not(:first-child) { min-height: 180px; }
+  .galeria-item svg { width: 24px; height: 24px; opacity: 0.35; }
+  .galeria-item-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.45; }
+  .galeria-tag {
+    position: absolute; top: 0.6rem; left: 0.6rem;
+    font-size: 0.6rem; font-weight: 500; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--petrol-lt);
+    background: rgba(27,95,122,0.07);
+    border: 1px dashed rgba(74,154,184,0.35);
+    padding: 0.18rem 0.45rem; border-radius: 2px;
+  }
+
+  /* CTA */
+  .cta-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .cta-card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 6px; padding: 1.75rem; text-align: center;
+  }
+  .cta-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.375rem; font-weight: 700; color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  .cta-card p { font-size: 0.875rem; color: rgba(255,255,255,0.45); margin-bottom: 1.25rem; line-height: 1.6; }
+  .btn-main {
+    display: inline-block; background: var(--copper); color: var(--white);
+    padding: 0.75rem 1.75rem; border-radius: 3px; font-size: 0.875rem;
+    font-weight: 500; text-decoration: none; transition: background 0.2s;
+  }
+  .btn-main:hover { background: var(--copper-lt); }
+  .btn-outline {
+    display: inline-block; background: transparent; color: rgba(255,255,255,0.7);
+    padding: 0.75rem 1.75rem; border-radius: 3px; font-size: 0.875rem;
+    text-decoration: none; border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.2s;
+  }
+  .btn-outline:hover { border-color: var(--copper-lt); color: var(--copper-lt); }
+
+  /* WA FLOAT */
+  .wa-float { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 200; width: 54px; height: 54px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(37,211,102,0.35); text-decoration: none; transition: transform 0.2s; }
+  .wa-float:hover { transform: scale(1.1); }
+  .wa-float svg { width: 26px; height: 26px; color: white; }
+
+  /* FOOTER */
+  .footer { background: #0A2535; padding: 2rem; text-align: center; }
+  .footer p { font-size: 0.775rem; color: rgba(255,255,255,0.25); margin-bottom: 0.3rem; }
+  .footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
+  .footer a:hover { color: var(--copper-lt); }
+
+  /* MOBILE */
+  @media (max-width: 900px) {
+    .valores-grid { grid-template-columns: 1fr 1fr; }
+    .galeria-grid { grid-template-columns: 1fr 1fr; }
+    .galeria-item:first-child { grid-row: span 1; }
+  }
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-foto { display: none; }
+    .historia-grid { grid-template-columns: 1fr; }
+    .formacion-grid { grid-template-columns: 1fr; }
+    .cta-grid { grid-template-columns: 1fr; }
+    .section { padding: 3rem 1.25rem; }
+  }
+  @media (max-width: 480px) {
+    .valores-grid { grid-template-columns: 1fr; }
+    .galeria-grid { grid-template-columns: 1fr; }
+  }
+</style>
+<!-- SEO -->
+<meta name="description" content="Meet Santiago, a Spanish-speaking hiking guide in Switzerland, and find out why Clas Tours runs its tours in Spanish with safety first.">
+<link rel="canonical" href="https://clastours.ch/en/clastours-nosotros.html">
+<link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-nosotros.html">
+<link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-nosotros.html">
+<link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-nosotros.html">
+<link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-nosotros.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clas Tours">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="About me – Clas Tours by Davila Quiroz">
+<meta property="og:description" content="Meet Santiago, a Spanish-speaking hiking guide in Switzerland, and find out why Clas Tours runs its tours in Spanish with safety first.">
+<meta property="og:url" content="https://clastours.ch/en/clastours-nosotros.html">
+<meta property="og:image" content="https://clastours.ch/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .6rem 0 auto}}</style>
+<script>window.I18N={"js.alert.date": "Please enter your preferred date.", "js.alert.name_email": "Please enter your name and email.", "js.alert.people": "Please select the number of people.", "js.modal.sent": "Your request for {salida} has been sent. Santiago will get in touch within 24 hours to confirm the date and arrange payment.", "js.yes": "Yes", "js.no": "No", "js.wa.enroll_intro": "Hi Santiago, I'd like to sign up for:", "js.wa.name": "Name", "js.wa.email": "Email", "js.wa.whatsapp": "WhatsApp", "js.wa.date": "Preferred date", "js.wa.people": "People", "js.wa.level": "Level", "js.wa.veg": "Vegetarian", "js.wa.allergy": "Gluten/lactose intolerance", "js.wa.message": "Message", "js.wa.photos": "Photo consent", "js.wa.route": "Tour", "js.wa.hello": "Hi Santiago,", "js.wa.interest": "Hi Santiago! I'd like to book a hike.", "js.alert.name_contact": "Please enter your name and at least one way to contact you.", "js.today": "TODAY", "js.days": "SUN|MON|TUE|WED|THU|FRI|SAT", "js.wx.route_default": "Your tour", "js.wx.title": "7-day forecast", "js.wx.source": "ICON model · Open-Meteo", "js.wx.loading": "Loading weather data …", "js.wx.footer1": "Data: ICON model (DWD) via", "js.wx.footer2": ". For guidance only. Official:", "js.wx.footer3": "MeteoSwiss forecast", "js.wx.reliable": "Most reliable in the first 3 days", "js.wx.error": "Weather data could not be loaded. Please reload the page or try again later."};</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <a href="index.html" class="nav-logo">
+    Clas Tours by Davila Quiroz
+    <span>Hike the Swiss Alps</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="clastours-caminatas-v4.html">My hikes</a></li>
+    <li><a href="clastours-calendario.html">Calendar</a></li>
+    <li><a href="clastours-nosotros.html" class="active">About me</a></li>
+    <li><a href="clastours-contacto.html">Contact</a></li>
+    <li><a href="clastours-contacto.html#faq">FAQ</a></li>
+  </ul>
+  <div class="lang-switch" role="navigation" aria-label="Idioma / Sprache / Language"><a href="/clastours-nosotros.html" hreflang="es" lang="es">ES</a><a href="/de/clastours-nosotros.html" hreflang="de" lang="de">DE</a><a href="/en/clastours-nosotros.html" hreflang="en" lang="en" class="active" aria-current="true">EN</a></div>
+  <a href="index.html#reservar" class="nav-cta">Book →</a>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="eyebrow">Your guide</div>
+      <h1>Hi, I'm<br><em>Santiago</em></h1>
+      <p class="hero-sub">A Colombian living in the Swiss Alps. Hiking guide in training. And the person who will accompany you on your next mountain adventure — in Spanish, at your pace, with safety first.</p>
+    </div>
+    <div class="hero-foto" style="padding:0;overflow:hidden">
+      <img src="/Santiago.jpg" alt="Santiago, Clas Tours guide, smiling in a yellow jacket in the mountains" style="width:100%;height:100%;object-fit:cover;object-position:center center;display:block;">
+    </div>
+  </div>
+</div>
+
+<!-- MI HISTORIA -->
+<section class="section bg-white">
+  <div class="inner">
+    <div class="historia-grid">
+      <div class="historia-text">
+        <div class="label">My story</div>
+        <h2 class="title">From Colombia<br>to the <em>Swiss Alps</em></h2>
+        <p>I came to Switzerland years ago with a backpack and a strong desire to understand this country. I soon discovered that the Alps aren't just a pretty landscape you see from the train — they're something you feel when you walk on them, when you breathe that air, when you reach a ridge and the whole world opens up before you.</p>
+        <p>But I also discovered something that bothered me: for the Spanish-speaking community, that experience was almost out of reach. Not for lack of desire, but because of barriers — the language, not knowing where to start, not having someone you trust to explain how the mountains work here.</p>
+        <p><strong>Clas Tours was born to change that.</strong> So that any Spanish speaker — living in Switzerland or visiting — can experience the Swiss mountains with total confidence, understanding every instruction, every risk, every wonder along the way.</p>
+        <p>I am currently training as a <strong>Wanderleiter</strong> — a certified hiking guide according to Swiss standards — because if you're going to guide people in the mountains, you have to do it right or not at all.</p>
+      </div>
+      <div class="foto-historia">
+        <div class="foto-tag">Photo — On the trail</div>
+        <img src="/IMG_8796.jpg" alt="Santiago standing at a viewpoint above a turquoise lake, with hiking poles" style="width:100%;height:100%;object-fit:cover;object-position:center center;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MIS VALORES -->
+<section class="section bg-mist">
+  <div class="inner">
+    <div class="label">How I work</div>
+    <h2 class="title">What <em>matters</em> to me</h2>
+    <div class="valores-grid">
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="valor-title">Safety above all</div>
+        <div class="valor-text">In the mountains there are no second chances. I'd rather shorten a route or turn back than put anyone at risk. The group's safety always comes first, without exception.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="valor-title">Straight honesty</div>
+        <div class="valor-text">If a tour isn't for you, I'll tell you. If conditions aren't right, I cancel. I don't sell experiences I can't guarantee. I'd rather have a disappointed client today than an injured one tomorrow.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="valor-title">Small groups, real attention</div>
+        <div class="valor-text">I'm not a mass-tour guide. Maximum 10 people. I know every participant's name, adapt the pace, answer questions. You're not a number on a list — you're the reason for the departure.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <div class="valor-title">Genuine passion</div>
+        <div class="valor-text">I don't do this to tick a box. The Alps still thrill me after walking them many times. That energy is contagious — and it's what turns a hike into a lifelong memory.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="valor-title">Respect for the environment</div>
+        <div class="valor-text">The mountain isn't an amusement park. We leave no trace, respect fauna and flora, and follow the Swiss hiking code. If we don't look after the mountains, there will be no mountains to guide.</div>
+      </div>
+      <div class="valor-card">
+        <div class="valor-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+        </div>
+        <div class="valor-title">Truly in your language</div>
+        <div class="valor-text">It's not just that I speak Spanish — I think in Spanish, understand fears in Spanish, celebrate summits in Spanish. There's a huge difference between a guide who translates and one who really talks to you.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MI FORMACIÓN -->
+<section class="section bg-white">
+  <div class="inner">
+    <div class="label">Training and certifications</div>
+    <h2 class="title">Prepared to <em>guide you</em></h2>
+    <p style="font-size:0.9375rem;color:var(--slate);max-width:580px;line-height:1.75;margin-bottom:2rem">The mountains demand real preparation. This isn't a hobby I turned into a business — it's a vocation I'm building with official training, real tours and a lot of respect for the mountains.</p>
+
+    <div class="formacion-grid">
+      <div class="form-card highlight">
+        <div class="form-icon progress">W</div>
+        <div class="form-content">
+          <div class="form-title">Wanderleiter — Hiking guide</div>
+          <div class="form-sub">Official Swiss training for hiking guides. Covers navigation, meteorology, mountain first aid, group technique and risk management.</div>
+          <span class="form-status status-progress">In training · Active</span>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-icon active">T3</div>
+        <div class="form-content">
+          <div class="form-title">Qualified for T3 tours — Summer</div>
+          <div class="form-sub">Mountain hiking up to T3 on the SAC scale (Swiss Alpine Club). Exposed terrain, trails not always marked.</div>
+          <span class="form-status status-active">Operating</span>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-icon active">WT</div>
+        <div class="form-content">
+          <div class="form-title">Qualified for WT2 tours — Winter</div>
+          <div class="form-sub">Winter hiking up to WT2 on the SAC scale. Snow tours on terrain of low technical difficulty.</div>
+          <span class="form-status status-active">Operating</span>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-icon active">🏥</div>
+        <div class="form-content">
+          <div class="form-title">Mountain first aid</div>
+          <div class="form-sub">First-aid training applied to mountain environments: emergency management, communication with rescue services, stabilising injured people on the trail.</div>
+          <span class="form-status status-active">Certified</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA FOTOS -->
+<section class="section bg-mist">
+  <div class="inner">
+    <div class="label">In the mountains</div>
+    <h2 class="title">My <em>tours</em></h2>
+    <p style="font-size:0.9375rem;color:var(--slate);max-width:500px;line-height:1.75;margin-bottom:2rem">Here are real photos from the departures — the landscapes, the groups, the moments that make it all worthwhile.</p>
+    <div class="galeria-grid">
+      <div class="galeria-item">
+        <img src="/41.JPG" alt="Santiago resting in a mountain hut, wrapped in a striped blanket" style="width:100%;height:100%;object-fit:cover;border-radius:4px">
+      </div>
+      <div class="galeria-item">
+        <img src="/241.JPG" alt="Two hikers on a rocky ridge overlooking a valley and a lake" style="width:100%;height:100%;object-fit:cover;border-radius:4px">
+      </div>
+      <div class="galeria-item">
+        <img src="/IMG_0172.jpg" alt="Santiago pointing at a yellow trail sign in the mountains" style="width:100%;height:100%;object-fit:cover;border-radius:4px">
+      </div>
+      <div class="galeria-item">
+        <img src="/IMG_0377.jpg" alt="Santiago next to a summit cross, with hiking poles" style="width:100%;height:100%;object-fit:cover;border-radius:4px">
+      </div>
+      <div class="galeria-item">
+        <img src="/IMG_5251.jpg" alt="Santiago in a yellow jacket and glasses in a snowy landscape" style="width:100%;height:100%;object-fit:cover;border-radius:4px">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILOSOFÍA / CITA -->
+<section class="section bg-dark">
+  <div class="inner">
+    <div class="filosofia-wrap">
+      <div class="label label-lt" style="justify-content:center;margin-bottom:2rem">My philosophy</div>
+      <div class="cita">The mountain owes you nothing. You owe it to yourself to go prepared, with respect and with someone who knows what they're doing.</div>
+      <div class="cita-author"><span class="cita-dash">—</span> Santiago Davila Quiroz</div>
+    </div>
+
+    <div class="cta-grid">
+      <div class="cta-card">
+        <h3>Will you join us?</h3>
+        <p>Look at the available tours and pick the one that suits you. If you don't know which, I'll help you decide.</p>
+        <a href="clastours-caminatas-v4.html" class="btn-main">See my hikes →</a>
+      </div>
+      <div class="cta-card">
+        <h3>Any questions?</h3>
+        <p>Write to me directly. No forms, no bureaucracy. I reply within 24 hours.</p>
+        <a href="https://wa.me/41774603641?text=Hi%20Santiago%2C%20I%20saw%20your%20page%20and%20have%20a%20question" class="btn-outline" target="_blank">Write on WhatsApp →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2025 Clas Tours by Davila Quiroz · Ipsach, Bern, Switzerland</p>
+  <p><a href="mailto:info@clastours.ch">info@clastours.ch</a> · <a href="https://wa.me/41774603641" target="_blank">(+41) 077 460 36 41</a> · <a href="clastours-legal.html">Terms &amp; Conditions</a></p>
+</div>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/41774603641?text=Hi%20Santiago%2C%20I%27m%20interested%20in%20the%20Clas%20Tours%20hikes" class="wa-float" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// SCROLL NAVBAR
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  if (navbar) {
+    navbar.style.padding = window.scrollY > 50 ? '0.6rem 2rem' : '1rem 2rem';
+  }
+});
+
+// TOGGLE MENU CORREGIDO
+function toggleMenu() {
+  var navLinks = document.querySelector('.nav-links');
+  var navCta = document.querySelector('.nav-cta');
+  
+  if (!navLinks) return;
+  
+  var isOpen = navLinks.style.display === 'flex';
+  
+  if (isOpen) {
+    // CERRAR menú
+    navLinks.style.display = '';
+    navLinks.style.flexDirection = '';
+    navLinks.style.position = '';
+    navLinks.style.top = '';
+    navLinks.style.left = '';
+    navLinks.style.right = '';
+    navLinks.style.background = '';
+    navLinks.style.backdropFilter = '';
+    navLinks.style.padding = '';
+    navLinks.style.gap = '';
+    navLinks.style.zIndex = '';
+    if (navCta) navCta.style.display = '';
+  } else {
+    // ABRIR menú
+    navLinks.style.display = 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.position = 'absolute';
+    navLinks.style.top = '70px';
+    navLinks.style.left = '0';
+    navLinks.style.right = '0';
+    navLinks.style.background = 'rgba(15,61,82,0.97)';
+    navLinks.style.backdropFilter = 'blur(12px)';
+    navLinks.style.padding = '1.5rem 2rem';
+    navLinks.style.gap = '1.25rem';
+    navLinks.style.zIndex = '99';
+    
+    if (navCta) {
+      navCta.style.display = 'block';
+      navCta.style.textAlign = 'center';
+      navCta.style.marginTop = '0.5rem';
+    }
+  }
+}
+
+// Cerrar menú automáticamente al hacer clic en un enlace (solo en móvil)
+document.querySelectorAll('.nav-links a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    if (window.innerWidth <= 768) {
+      var navLinks = document.querySelector('.nav-links');
+      var navCta = document.querySelector('.nav-cta');
+      if (navLinks) navLinks.style.display = '';
+      if (navCta) navCta.style.display = '';
+    }
+  });
+});
+</script>
+</body>
+</html>

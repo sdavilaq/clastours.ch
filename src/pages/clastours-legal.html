@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- ========== FAVICON ========== -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0F3D52">
+<!-- ============================= -->
+<title>{{t:common.terminos-y-condiciones-clas-tours}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --petrol-dk: #0F3D52;
+    --petrol:    #1B5F7A;
+    --petrol-lt: #4A9AB8;
+    --copper:    #9B6B4A;
+    --copper-lt: #C48A62;
+    --snow:      #F8F7F5;
+    --stone:     #D8DFE3;
+    --ink:       #1A1F22;
+    --slate:     #3D4E56;
+    --dust:      #7A8D96;
+    --white:     #FFFFFF;
+    --mist:      #EEF2F4;
+    --warning-bg: #FFF8F0;
+    --warning-border: #E8C9B0;
+  }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--snow);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  .nav {
+    background: var(--petrol-dk);
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem; font-weight: 700;
+    color: var(--white); text-decoration: none; line-height: 1.2;
+  }
+  .nav-logo span { display: block; font-size: 0.65rem; font-weight: 300; color: var(--copper-lt); letter-spacing: 0.15em; text-transform: uppercase; font-family: 'DM Sans', sans-serif; }
+  .nav-back {
+    color: rgba(255,255,255,0.6); font-size: 0.875rem;
+    text-decoration: none; transition: color 0.2s;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .nav-back:hover { color: var(--copper-lt); }
+
+  /* HERO LEGAL */
+  .legal-hero {
+    background: var(--petrol-dk);
+    padding: 3rem 2rem 2.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .legal-hero-inner { max-width: 860px; margin: 0 auto; }
+  .legal-eyebrow {
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--copper-lt);
+    margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .legal-eyebrow::before { content:''; display:block; width:20px; height:1px; background:var(--copper-lt); }
+  .legal-hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.25rem; font-weight: 700;
+    color: var(--white); margin-bottom: 0.5rem;
+  }
+  .legal-hero p { font-size: 0.875rem; color: rgba(255,255,255,0.45); }
+  .legal-updated {
+    margin-top: 1rem; font-size: 0.75rem;
+    color: rgba(255,255,255,0.28);
+    padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.07);
+  }
+
+  /* AVISO IMPORTANTE */
+  .legal-warning {
+    max-width: 860px; margin: 2rem auto 0; padding: 0 2rem;
+  }
+  .warning-box {
+    background: var(--warning-bg);
+    border: 1px solid var(--warning-border);
+    border-left: 4px solid var(--copper);
+    border-radius: 0 4px 4px 0;
+    padding: 1rem 1.25rem;
+    display: flex; gap: 12px; align-items: flex-start;
+  }
+  .warning-box svg { width: 18px; height: 18px; color: var(--copper); flex-shrink: 0; margin-top: 2px; }
+  .warning-box p { font-size: 0.875rem; color: var(--slate); line-height: 1.6; }
+  .warning-box strong { color: var(--copper); }
+
+  /* ÍNDICE */
+  .legal-index {
+    max-width: 860px; margin: 2rem auto 0; padding: 0 2rem;
+  }
+  .index-box {
+    background: var(--mist);
+    border: 1px solid var(--stone);
+    border-radius: 4px; padding: 1.25rem 1.5rem;
+  }
+  .index-title { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dust); margin-bottom: 0.75rem; }
+  .index-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; }
+  .index-list li a {
+    font-size: 0.8125rem; color: var(--petrol);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .index-list li a:hover { color: var(--copper); }
+  .index-list li::before { content: '—  '; color: var(--stone); }
+
+  /* CONTENIDO LEGAL */
+  .legal-content {
+    max-width: 860px; margin: 3rem auto 4rem; padding: 0 2rem;
+  }
+  .legal-section {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--stone);
+  }
+  .legal-section:last-child { border-bottom: none; }
+
+  .section-num {
+    font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--petrol-lt);
+    margin-bottom: 0.4rem;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem; font-weight: 700;
+    color: var(--petrol-dk); margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--petrol-lt);
+    display: inline-block;
+  }
+  .legal-content p {
+    font-size: 0.9375rem; color: var(--slate);
+    line-height: 1.75; margin-bottom: 1rem;
+  }
+  .legal-content p:last-child { margin-bottom: 0; }
+  .legal-content ul {
+    margin: 0.75rem 0 1rem 0; padding-left: 0; list-style: none;
+  }
+  .legal-content ul li {
+    font-size: 0.9375rem; color: var(--slate);
+    line-height: 1.7; padding: 0.3rem 0;
+    padding-left: 1.25rem; position: relative;
+  }
+  .legal-content ul li::before {
+    content: '·'; position: absolute; left: 0;
+    color: var(--petrol-lt); font-weight: 700;
+  }
+  .legal-content strong { color: var(--ink); font-weight: 500; }
+
+  /* CAJA DESTACADA - Ley Suiza */
+  .swiss-law-box {
+    background: var(--petrol-dk);
+    border-radius: 6px; padding: 1.75rem;
+    margin: 1.5rem 0;
+  }
+  .swiss-law-box h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem; font-weight: 700;
+    color: var(--white); margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .swiss-law-box h4 svg { width: 20px; height: 20px; color: var(--copper-lt); flex-shrink: 0; }
+  .swiss-law-box p {
+    font-size: 0.9rem; color: rgba(255,255,255,0.65);
+    line-height: 1.7; margin-bottom: 0.5rem;
+  }
+  .swiss-law-box p:last-child { margin-bottom: 0; }
+  .swiss-law-box strong { color: var(--copper-lt) !important; }
+
+  /* TABLA DE CANCELACIÓN */
+  .cancel-table {
+    width: 100%; border-collapse: collapse;
+    margin: 1rem 0; font-size: 0.875rem;
+  }
+  .cancel-table th {
+    background: var(--petrol-dk); color: var(--white);
+    padding: 0.75rem 1rem; text-align: left;
+    font-weight: 500; font-size: 0.8rem;
+  }
+  .cancel-table td {
+    padding: 0.75rem 1rem; color: var(--slate);
+    border-bottom: 1px solid var(--stone);
+  }
+  .cancel-table tr:last-child td { border-bottom: none; }
+  .cancel-table tr:nth-child(even) td { background: var(--mist); }
+  .pct-full { color: #8B2020; font-weight: 500; }
+  .pct-part { color: var(--copper); font-weight: 500; }
+  .pct-free { color: #2A6B2A; font-weight: 500; }
+
+  /* FOOTER */
+  .legal-footer {
+    background: #0A2535; padding: 2rem;
+    text-align: center;
+  }
+  .legal-footer p { font-size: 0.75rem; color: rgba(255,255,255,0.25); margin-bottom: 0.4rem; }
+  .legal-footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+  .legal-footer a:hover { color: var(--copper-lt); }
+
+  @media (max-width: 600px) {
+    .index-list { grid-template-columns: 1fr; }
+    .legal-hero h1 { font-size: 1.75rem; }
+  }
+</style>
+<!-- SEO -->
+<meta name="description" content="{{t:common.terminos-y-condiciones-de-clas}}">
+<link rel="canonical" href="https://clastours.ch/clastours-legal.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{t:common.clas-tours}}">
+<meta property="og:locale" content="es_LA">
+<meta property="og:title" content="{{t:common.terminos-y-condiciones-clas-tours}}">
+<meta property="og:description" content="{{t:common.terminos-y-condiciones-de-clas}}">
+<meta property="og:url" content="https://clastours.ch/clastours-legal.html">
+<meta property="og:image" content="https://clastours.ch/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    {{t:common.clas-tours-by-davila-quiroz-3}}
+  </a>
+  <a href="index.html" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    {{t:legal.volver-al-inicio}}
+  </a>
+</nav>
+
+<!-- HERO -->
+<div class="legal-hero">
+  <div class="legal-hero-inner">
+    <div class="legal-eyebrow">{{t:legal.documentacion-legal}}</div>
+    <h1>{{t:legal.terminos-y-condiciones}}</h1>
+    <p>{{t:legal.clas-tours-by-davila-quiroz}}</p>
+    <div class="legal-updated">
+      {{t:legal.ultima-actualizacion-enero-2025-version}}
+    </div>
+  </div>
+</div>
+
+<!-- AVISO -->
+<div class="legal-warning">
+  <div class="warning-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    <p>{{t:legal.lea-este-documento-antes-de}}</p>
+  </div>
+</div>
+
+<!-- ÍNDICE -->
+<div class="legal-index">
+  <div class="index-box">
+    <div class="index-title">{{t:legal.contenido}}</div>
+    <ul class="index-list">
+      <li><a href="#s1">{{t:legal.1-identificacion-del-prestador}}</a></li>
+      <li><a href="#s2">{{t:legal.2-servicios-ofrecidos}}</a></li>
+      <li><a href="#s3">{{t:legal.3-reservas-y-confirmacion}}</a></li>
+      <li><a href="#s4">{{t:legal.4-precios-y-forma-de}}</a></li>
+      <li><a href="#s5">{{t:legal.5-cancelacion-y-reembolsos}}</a></li>
+      <li><a href="#s6">{{t:legal.6-requisitos-de-participacion}}</a></li>
+      <li><a href="#s7">{{t:legal.7-riesgos-y-responsabilidad}}</a></li>
+      <li><a href="#s8">{{t:legal.8-seguros}}</a></li>
+      <li><a href="#s9">{{t:legal.9-conducta-en-ruta}}</a></li>
+      <li><a href="#s10">{{t:legal.10-privacidad-y-datos}}</a></li>
+      <li><a href="#s11">{{t:legal.11-ley-aplicable-y-jurisdiccion}}</a></li>
+      <li><a href="#s12">{{t:legal.12-disposiciones-finales}}</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="legal-content">
+
+  <!-- 1 -->
+  <div class="legal-section" id="s1">
+    <div class="section-num">{{t:legal.articulo-01}}</div>
+    <div class="section-title">{{t:legal.identificacion-del-prestador-de-servicios}}</div>
+    <p>{{t:legal.razon-social-clas-tours-by}}</p>
+    <p>{{t:legal.responsable-santiago-davila-quiroz}}</p>
+    <p>{{t:legal.domicilio-ipsach-canton-de-berna}}</p>
+    <p>{{t:legal.sitio-web-www-clastours-ch}}</p>
+    <p><strong>{{t:legal.correo-electronico}}</strong> <a href="mailto:info@clastours.ch">{{t:common.info-clastours-ch}}</a></p>
+    <p>{{t:legal.telefono-whatsapp-41-077-460}}</p>
+    <p>{{t:legal.clas-tours-by-davila-quiroz-2}}</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="legal-section" id="s2">
+    <div class="section-num">{{t:legal.articulo-02}}</div>
+    <div class="section-title">{{t:legal.servicios-ofrecidos}}</div>
+    <p>{{t:legal.clas-tours-by-davila-quiroz-3}}</p>
+    <ul>
+      <li>{{t:legal.guia-de-senderismo-en-espanol}}</li>
+      <li>{{t:legal.planificacion-y-seleccion-de-ruta}}</li>
+      <li>{{t:legal.orientacion-previa-sobre-equipamiento-logistica}}</li>
+      <li>{{t:legal.asistencia-y-comunicacion-durante-toda}}</li>
+    </ul>
+    <p>{{t:legal.no-estan-incluidos-en-el}}</p>
+    <p>{{t:legal.la-ruta-kandersteg-con-noche}}</p>
+    <p>{{t:legal.las-salidas-se-realizan-a}}</p>
+    <p>{{t:legal.las-rutas-ofrecidas-tienen-clasificacion}}</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="legal-section" id="s3">
+    <div class="section-num">{{t:legal.articulo-03}}</div>
+    <div class="section-title">{{t:legal.reservas-y-confirmacion}}</div>
+    <p>{{t:legal.la-reserva-se-realiza-mediante}}</p>
+    <p>{{t:legal.clas-tours-se-reserva-el}}</p>
+    <ul>
+      <li>{{t:legal.el-cliente-no-cumple-los}}</li>
+      <li>{{t:legal.las-condiciones-meteorologicas-representan-un}}</li>
+      <li>{{t:legal.no-se-alcanza-el-numero}}</li>
+      <li>{{t:legal.circunstancias-de-fuerza-mayor-lo}}</li>
+    </ul>
+    <p>{{t:legal.en-caso-de-cancelacion-por}}</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="legal-section" id="s4">
+    <div class="section-num">{{t:legal.articulo-04}}</div>
+    <div class="section-title">{{t:legal.precios-y-forma-de-pago}}</div>
+    <p>{{t:legal.price-intro}}</p>
+    <ul>
+      <li>{{t:legal.price-kand}}</li>
+      <li>{{t:legal.price-creux}}</li>
+      <li>{{t:legal.price-augst}}</li>
+      <li>{{t:legal.price-relojes}}</li>
+    </ul>
+    <p>{{t:legal.todos-los-precios-estan-expresados}}</p>
+
+    <p><strong>{{t:legal.metodos-de-pago-aceptados}}</strong></p>
+    <ul>
+      <li>{{t:legal.transferencia-bancaria-iban-ch90-0900}}</li>
+      <li>{{t:legal.twint-vinculado-a-la-cuenta}}</li>
+      <li>{{t:legal.pago-mediante-codigo-qr-postfinance}}</li>
+      <li>{{t:legal.efectivo-el-dia-de-la}}</li>
+    </ul>
+    <p>{{t:legal.en-la-transferencia-bancaria-el}}</p>
+    <p>{{t:legal.los-precios-pueden-estar-sujetos}}</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="legal-section" id="s5">
+    <div class="section-num">{{t:legal.articulo-05}}</div>
+    <div class="section-title">{{t:legal.politica-de-cancelacion-y-reembolsos}}</div>
+    <p>{{t:legal.las-cancelaciones-deben-comunicarse-por}}</p>
+
+    <table class="cancel-table">
+      <thead>
+        <tr>
+          <th>{{t:legal.tiempo-de-antelacion}}</th>
+          <th>{{t:legal.penalizacion}}</th>
+          <th>{{t:legal.reembolso}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{t:legal.mas-de-14-dias-antes}}</td>
+          <td class="pct-free">{{t:legal.sin-penalizacion}}</td>
+          <td>{{t:legal.100-reembolso}}</td>
+        </tr>
+        <tr>
+          <td>{{t:legal.entre-7-y-14-dias}}</td>
+          <td class="pct-part">{{t:legal.25-del-importe}}</td>
+          <td>{{t:legal.75-reembolso}}</td>
+        </tr>
+        <tr>
+          <td>{{t:legal.entre-3-y-6-dias}}</td>
+          <td class="pct-part">{{t:legal.50-del-importe}}</td>
+          <td>{{t:legal.50-reembolso}}</td>
+        </tr>
+        <tr>
+          <td>{{t:legal.menos-de-48-horas-antes}}</td>
+          <td class="pct-full">{{t:common.100-del-importe}}</td>
+          <td>{{t:common.sin-reembolso}}</td>
+        </tr>
+        <tr>
+          <td>{{t:legal.no-presentacion-no-show}}</td>
+          <td class="pct-full">{{t:common.100-del-importe}}</td>
+          <td>{{t:common.sin-reembolso}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>{{t:legal.cancelacion-por-mal-tiempo-si}}</p>
+    <p>{{t:legal.si-el-cliente-decide-no}}</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="legal-section" id="s6">
+    <div class="section-num">{{t:legal.articulo-06}}</div>
+    <div class="section-title">{{t:legal.requisitos-de-participacion-y-salud}}</div>
+    <p>{{t:legal.el-cliente-es-responsable-de}}</p>
+    <p><strong>{{t:legal.requisitos-generales}}</strong></p>
+    <ul>
+      <li>{{t:legal.buena-condicion-fisica-general-adaptada}}</li>
+      <li>{{t:legal.calzado-de-senderismo-adecuado-obligatorio}}</li>
+      <li>{{t:legal.ropa-y-equipamiento-apropiado-para}}</li>
+      <li>{{t:legal.capacidad-de-caminar-durante-al}}</li>
+      <li>{{t:legal.menores-de-18-anos-deben}}</li>
+    </ul>
+    <p>{{t:legal.el-cliente-declara-no-padecer}}</p>
+    <p>{{t:legal.clas-tours-se-reserva-el-2}}</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="legal-section" id="s7">
+    <div class="section-num">{{t:legal.articulo-07}}</div>
+    <div class="section-title">{{t:legal.riesgos-inherentes-y-limitacion-de}}</div>
+    <p>{{t:legal.el-senderismo-en-montana-es}}</p>
+    <p>{{t:legal.el-cliente-asume-voluntariamente-estos}}</p>
+    <ul>
+      <li>{{t:legal.ha-sido-informado-sobre-el}}</li>
+      <li>{{t:legal.participa-de-forma-voluntaria-y}}</li>
+      <li>{{t:legal.seguira-en-todo-momento-las}}</li>
+      <li>{{t:legal.ha-evaluado-su-condicion-fisica}}</li>
+    </ul>
+    <p>{{t:legal.clas-tours-by-davila-quiroz-4}}</p>
+    <ul>
+      <li>{{t:legal.riesgos-inherentes-y-naturales-de}}</li>
+      <li>{{t:legal.incumplimiento-por-parte-del-cliente}}</li>
+      <li>{{t:legal.informacion-incorrecta-o-incompleta-proporcionada}}</li>
+      <li>{{t:legal.condiciones-meteorologicas-o-de-terreno}}</li>
+      <li>{{t:legal.actos-de-terceros-o-fuerza}}</li>
+      <li>{{t:legal.equipo-personal-inadecuado-del-cliente}}</li>
+    </ul>
+    <p>{{t:legal.la-responsabilidad-de-clas-tours}}</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="legal-section" id="s8">
+    <div class="section-num">{{t:legal.articulo-08}}</div>
+    <div class="section-title">{{t:legal.seguros}}</div>
+    <p><strong>{{t:legal.el-precio-del-servicio-no}}</strong></p>
+    <p>{{t:legal.se-recomienda-encarecidamente-que-todos}}</p>
+    <ul>
+      <li>{{t:legal.seguro-de-accidente-personal-con}}</li>
+      <li>{{t:legal.seguro-de-rescate-de-montana}}</li>
+      <li>{{t:legal.seguro-de-viaje-con-cobertura}}</li>
+      <li>{{t:legal.tarjeta-sanitaria-europea-para-ciudadanos}}</li>
+    </ul>
+    <p>{{t:legal.clas-tours-by-davila-quiroz-5}}</p>
+    <p>{{t:legal.un-rescate-de-montana-en}}</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="legal-section" id="s9">
+    <div class="section-num">{{t:legal.articulo-09}}</div>
+    <div class="section-title">{{t:legal.conducta-en-ruta-y-autoridad}}</div>
+    <p>{{t:legal.durante-toda-la-actividad-la}}</p>
+    <ul>
+      <li>{{t:legal.modificar-o-acortar-el-itinerario}}</li>
+      <li>{{t:legal.cancelar-la-actividad-si-las}}</li>
+      <li>{{t:legal.excluir-a-un-participante-cuyo}}</li>
+      <li>{{t:legal.tomar-decisiones-de-emergencia-sin}}</li>
+    </ul>
+    <p>{{t:legal.los-participantes-se-comprometen-a}}</p>
+    <ul>
+      <li>{{t:legal.seguir-en-todo-momento-las}}</li>
+      <li>{{t:legal.respetar-el-entorno-natural-principio}}</li>
+      <li>{{t:legal.no-separarse-del-grupo-sin}}</li>
+      <li>{{t:legal.comunicar-al-guia-cualquier-sintoma}}</li>
+      <li>{{t:legal.tratar-con-respeto-al-guia}}</li>
+    </ul>
+    <p>{{t:legal.el-incumplimiento-de-estas-normas}}</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="legal-section" id="s10">
+    <div class="section-num">{{t:legal.articulo-10}}</div>
+    <div class="section-title">{{t:legal.proteccion-de-datos-y-privacidad}}</div>
+    <p>{{t:legal.clas-tours-by-davila-quiroz-6}}</p>
+    <p>{{t:legal.los-datos-recopilados-nombre-datos}}</p>
+    <ul>
+      <li>{{t:legal.gestionar-y-confirmar-reservas}}</li>
+      <li>{{t:legal.comunicarse-con-el-cliente-antes}}</li>
+      <li>{{t:legal.garantizar-la-seguridad-del-participante}}</li>
+      <li>{{t:legal.cumplir-con-obligaciones-legales}}</li>
+    </ul>
+    <p>{{t:legal.los-datos-no-se-ceden}}</p>
+    <p>{{t:legal.las-fotografias-tomadas-durante-las}}</p>
+
+      <div class="swiss-law-box" style="margin-top:1.5rem">
+        <h4>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="9 11 12 14 22 4"/></svg>
+          {{t:legal.autorizacion-de-uso-de-imagen}}
+        </h4>
+        <p>{{t:legal.el-cliente-que-marque-la}}</p>
+        <p>{{t:legal.fotografiar-y-o-grabar-en}}</p>
+        <p>{{t:legal.utilizar-dichas-imagenes-y-grabaciones}}</p>
+        <p>{{t:legal.esta-autorizacion-se-otorga-de}}</p>
+        <p>{{t:legal.queda-expresamente-prohibido-el-uso}}</p>
+        <p>{{t:legal.todas-las-fotografias-publicadas-por}}</p>
+      </div>
+  </div>
+
+  <!-- 11 - LEY SUIZA - SECCIÓN DESTACADA -->
+  <div class="legal-section" id="s11">
+    <div class="section-num">{{t:legal.articulo-11}}</div>
+    <div class="section-title">{{t:legal.ley-aplicable-y-jurisdiccion}}</div>
+
+    <div class="swiss-law-box">
+      <h4>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        {{t:legal.jurisdiccion-exclusiva-derecho-suizo}}
+      </h4>
+      <p>{{t:legal.todos-los-contratos-reservas-acuerdos}}</p>
+      <p>{{t:legal.esto-incluye-pero-no-se}}</p>
+      <p>{{t:legal.en-caso-de-disputa-el}}</p>
+    </div>
+
+    <p>{{t:legal.las-normas-aplicables-incluyen-entre}}</p>
+    <ul>
+      <li>{{t:legal.codigo-de-las-obligaciones-suizo}}</li>
+      <li>{{t:legal.codigo-civil-suizo-zgb-cc}}</li>
+      <li>{{t:legal.ley-federal-de-proteccion-de}}</li>
+      <li>{{t:legal.ley-federal-sobre-el-turismo}}</li>
+    </ul>
+    <p>{{t:legal.el-cliente-al-aceptar-estos}}</p>
+    <p>{{t:legal.en-caso-de-discrepancia-entre}}</p>
+  </div>
+
+  <!-- 12 -->
+  <div class="legal-section" id="s12">
+    <div class="section-num">{{t:legal.articulo-12}}</div>
+    <div class="section-title">{{t:legal.disposiciones-finales}}</div>
+    <p>{{t:legal.si-alguna-clausula-de-los}}</p>
+    <p>{{t:legal.clas-tours-by-davila-quiroz-7}}</p>
+    <p>{{t:legal.la-no-exigencia-por-parte}}</p>
+    <p>{{t:legal.para-cualquier-consulta-sobre-estos}}</p>
+
+    <div class="swiss-law-box" style="margin-top:1.5rem">
+      <h4>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        {{t:legal.aceptacion-de-los-terminos}}
+      </h4>
+      <p>{{t:legal.al-realizar-una-reserva-con}}</p>
+      <p><strong>{{t:legal.esta-aceptacion-tiene-plena-validez}}</strong></p>
+    </div>
+  </div>
+
+</div>
+
+<div class="legal-footer">
+  <p>{{t:legal.clas-tours-by-davila-quiroz-8}}</p>
+  <p>{{t:legal.info-clastours-ch-volver-al}}</p>
+</div>
+
+</body>
+</html>
