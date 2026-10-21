@@ -493,7 +493,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 
       <!-- WIDGET CLIMA · KANDERSTEG -->
       <div class="blbl">Pronóstico del tiempo</div>
-      <div class="cw-widget" data-lat="46.49" data-lon="7.72" data-route="Kandersteg · Oeschinensee" data-meteoswiss-url="https://www.meteoschweiz.admin.ch/lokalprognose/bluemlisalphuette-sac.html#forecast-tab=detail-view"></div>
+      <div class="cw-widget" data-lat="46.51015" data-lon="7.77163" data-route="Blüemlisalphütte · 2.840 m" data-meteoswiss-url="https://www.meteoschweiz.admin.ch/lokalprognose/bluemlisalphuette-sac.html#forecast-tab=detail-view"></div>
     </div>
     <div class="rside">
       <div class="pcard">
@@ -785,6 +785,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
         <div class="eitem"><div class="edot"></div>Agua y snack para la caminata</div>
         <div class="eitem"><div class="edot"></div>Efectivo o tarjeta para la entrada Camille Bloch</div>
       </div>
+
+      <!-- WIDGET CLIMA · RELOJES & CHOCOLATE -->
+      <div class="blbl">Pronóstico del tiempo</div>
+      <div class="cw-widget" data-lat="47.153" data-lon="6.997" data-route="Saint-Imier · Courtelary" data-meteoswiss-url="https://www.meteoschweiz.admin.ch/"></div>
     </div>
     <div class="rside">
       <div class="pcard">
@@ -939,12 +943,12 @@ function filtrar(tag,btn){
         '</div>' +
         '<div class="cw-meta-right">' +
           '<div class="cw-update"></div>' +
-          '<div class="cw-source">ICON-CH1 · MeteoSwiss</div>' +
+          '<div class="cw-source">Modelo ICON · Open-Meteo</div>' +
         '</div>' +
       '</div>' +
       '<div class="cw-divider"></div>' +
       '<div class="cw-grid"><div class="cw-loading">Cargando datos meteorológicos…</div></div>' +
-      '<div class="cw-footer">Datos: <a href="' + meteoswissUrl + '" target="_blank" rel="noopener">Modelo ICON-CH1 (MeteoSwiss)</a> vía <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a></div>' +
+      '<div class="cw-footer">Datos: Modelo ICON (DWD) vía <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a>. Orientativo: antes de salir, mira el <a href="' + meteoswissUrl + '" target="_blank" rel="noopener">pronóstico oficial de MeteoSwiss</a></div>' +
     '</div>';
     var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lat +
               '&longitude=' + lon +
@@ -963,7 +967,8 @@ function filtrar(tag,btn){
           var code = data.daily.weather_code[i];
           var tmax = Math.round(data.daily.temperature_2m_max[i]);
           var tmin = Math.round(data.daily.temperature_2m_min[i]);
-          var pp = data.daily.precipitation_probability_max[i] || 0;
+          var ppRaw = data.daily.precipitation_probability_max[i];
+          var pp = (ppRaw === null || ppRaw === undefined) ? '–' : Math.round(ppRaw);
           var w = Math.round(data.daily.wind_speed_10m_max[i]);
           var isToday = i === 0;
           var dayCard = document.createElement('div');
@@ -975,12 +980,12 @@ function filtrar(tag,btn){
             '<div class="cw-day-temp">' + tmax + '°<span class="cw-day-temp-min"> / ' + tmin + '°</span></div>' +
             '<div class="cw-day-line"></div>' +
             '<div class="cw-day-detail">' +
-              '<div class="cw-day-detail-row">' + SMALL.drop + pp + '%</div>' +
+              '<div class="cw-day-detail-row">' + SMALL.drop + pp + (pp === '–' ? '' : '%') + '</div>' +
               '<div class="cw-day-detail-row">' + SMALL.wind + w + ' km/h</div>' +
             '</div>';
           grid.appendChild(dayCard);
         }
-        widget.querySelector('.cw-update').textContent = formatUpdate();
+        widget.querySelector('.cw-update').textContent = 'Más fiable en los primeros 3 días';
       })
       .catch(function(err) {
         var grid = widget.querySelector('.cw-grid');
