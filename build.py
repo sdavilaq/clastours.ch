@@ -54,6 +54,13 @@ class Strings:
 def json_escape(s):
     return json.dumps(s, ensure_ascii=False)[1:-1]
 
+# Banderas en SVG (los emojis de bandera no se ven en Windows)
+FLAGS = {
+ 'es': '<svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#003893"/><rect width="18" height="6" fill="#FCD116"/><rect y="9" width="18" height="3" fill="#CE1126"/></svg>',
+ 'de': '<svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#D52B1E"/><path d="M7.5 2.5h3v2.5h2.5v3h-2.5v2.5h-3V8H5V5h2.5z" fill="#fff"/></svg>',
+ 'en': '<svg class="fl" viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0l60 40M60 0L0 40" stroke="#C8102E" stroke-width="3"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="12"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="7"/></svg>',
+}
+
 def render(page, lang, S, data, plain=False):
     t = open(os.path.join(SRC, 'pages', page + '.html'), encoding='utf-8').read()
     # --- textos
@@ -85,8 +92,8 @@ def render(page, lang, S, data, plain=False):
     path = cur.group(1) if cur else ''
     def lurl(l): return '/' + ('' if l == 'es' else l + '/') + path
     sw = '<div class="lang-switch" role="navigation" aria-label="Idioma / Sprache / Language">' + ''.join(
-        '<a href="%s" hreflang="%s" lang="%s"%s>%s</a>' % (lurl(l), l, l, ' class="active" aria-current="true"' if l == lang else '', l.upper()) for l in LANGS) + '</div>'
-    css = '<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .6rem 0 auto}}</style>\n'
+        '<a href="%s" hreflang="%s" lang="%s"%s>%s%s</a>' % (lurl(l), l, l, ' class="active" aria-current="true"' if l == lang else '', FLAGS[l], l.upper()) for l in LANGS) + '</div>'
+    css = '<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}</style>\n'
     if re.search(r'<a [^>]*class="(?:ct-)?nav-cta"', t):
         t = re.sub(r'(<a [^>]*class="(?:ct-)?nav-cta")', sw + r'\n  \1', t, count=1)
     else:
