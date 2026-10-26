@@ -61,6 +61,28 @@ FLAGS = {
  'en': '<svg class="fl" viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0l60 40M60 0L0 40" stroke="#C8102E" stroke-width="3"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="12"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="7"/></svg>',
 }
 
+# Envío de solicitudes: va a un script de Google (hoja + emails). Sin endpoint configurado, cae al WhatsApp de siempre.
+CT_JS = (
+ "CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();"
+ "return fetch(CT.endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)});};"
+ "CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';"
+ "o.innerHTML='<div class=\"ct-notice-box\" role=\"dialog\" aria-modal=\"true\"><h3></h3><p></p><div class=\"ct-notice-btns\"></div></div>';"
+ "o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');"
+ "if(waUrl){var a=document.createElement('a');a.href=waUrl;a.target='_blank';a.rel='noopener';a.className='ct-notice-wa';a.textContent=L('js.sent.wa');bt.appendChild(a);}"
+ "var c=document.createElement('button');c.type='button';c.textContent=L('js.sent.close');c.onclick=function(){o.remove();};bt.appendChild(c);"
+ "o.onclick=function(e){if(e.target===o)o.remove();};document.body.appendChild(o);};"
+ "CT.submit=function(d,waUrl,opt){opt=opt||{};if(!CT.endpoint){window.open(waUrl,'_blank');if(opt.okCb)opt.okCb('wa');return;}"
+ "if(opt.btn)opt.btn.disabled=true;"
+ "CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);})"
+ ".catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);})"
+ ".then(function(){if(opt.btn)opt.btn.disabled=false;});};"
+)
+CT_CSS = ('.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}'
+ '.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}'
+ '.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}'
+ '.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}'
+ '.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}')
+
 def render(page, lang, S, data, plain=False):
     t = open(os.path.join(SRC, 'pages', page + '.html'), encoding='utf-8').read()
     # --- textos
@@ -77,6 +99,7 @@ def render(page, lang, S, data, plain=False):
     # --- cadenas de JS
     js = {k: S.get(lang, k) for k in S.es if k.startswith('js.')}
     inject = '<script>window.I18N=%s;</script>\n' % json.dumps(js, ensure_ascii=False).replace('</', '<\\/')
+    inject += '<script>window.CT=%s;%s</script>\n' % (json.dumps({'endpoint': data.get('booking', {}).get('endpoint', ''), 'lang': lang}), CT_JS)
     # --- idioma, SEO
     t = re.sub(r'<html lang="[^"]*"', '<html lang="%s"' % lang, t, count=1)
     t = re.sub(r'(<meta property="og:locale" content=")[^"]*"', r'\g<1>%s"' % LOCALE[lang], t)
@@ -93,7 +116,7 @@ def render(page, lang, S, data, plain=False):
     def lurl(l): return '/' + ('' if l == 'es' else l + '/') + path
     sw = '<div class="lang-switch" role="navigation" aria-label="Idioma / Sprache / Language">' + ''.join(
         '<a href="%s" hreflang="%s" lang="%s"%s>%s%s</a>' % (lurl(l), l, l, ' class="active" aria-current="true"' if l == lang else '', FLAGS[l], l.upper()) for l in LANGS) + '</div>'
-    css = '<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}</style>\n'
+    css = '<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}' + CT_CSS + '</style>\n'
     if re.search(r'<a [^>]*class="(?:ct-)?nav-cta"', t):
         t = re.sub(r'(<a [^>]*class="(?:ct-)?nav-cta")', sw + r'\n  \1', t, count=1)
     else:

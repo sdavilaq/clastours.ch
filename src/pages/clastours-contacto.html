@@ -376,7 +376,9 @@ function enviarForm() {
   if (ruta) msg += '%0A' + L('js.wa.route') + ': ' + enc(ruta);
   if (personas) msg += '%0A' + L('js.wa.people') + ': ' + enc(personas);
   if (mensaje) msg += '%0A' + L('js.wa.message') + ': ' + enc(mensaje);
-  window.open('https://wa.me/41774603641?text=' + msg, '_blank');
+  var waUrl = 'https://wa.me/41774603641?text=' + msg;
+  var foto = document.getElementById('foto-auth');
+  CT.submit({source:'contacto', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas, message:mensaje, photos:!!(foto && foto.checked)}, waUrl, {btn:document.querySelector('.btn-enviar')});
 }
 </script>
 </body>
