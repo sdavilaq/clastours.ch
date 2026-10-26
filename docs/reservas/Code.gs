@@ -6,6 +6,9 @@
  *  2. Te manda un email a OWNER_EMAIL con todos los datos (responder = responder al cliente)
  *  3. Le manda al cliente un email automático, en su idioma (ES/DE/EN), diciendo que recibimos la solicitud
  *
+ * Los emails salen desde info@clastours.ch si esa dirección está configurada como alias "Enviar como" en la
+ * cuenta de Gmail que ejecuta el script (ver GUIA.md, paso A). Si no, salen desde la cuenta de Gmail.
+ *
  * Instalación: ver GUIA.md
  */
 
@@ -37,6 +40,19 @@ function doPost(e) {
     try { MailApp.sendEmail(OWNER_EMAIL, 'Error en el formulario de clastours.ch', String(err) + '\n\n' + (e && e.postData ? e.postData.contents : '')); } catch (x) {}
   }
   return ok_();
+}
+
+// Envía desde info@clastours.ch si está como alias en Gmail; si no, desde la cuenta de Gmail
+function send_(o) {
+  var from = '';
+  try { if (GmailApp.getAliases().indexOf(OWNER_EMAIL) >= 0) from = OWNER_EMAIL; } catch (e) {}
+  if (from) {
+    var opt = { from: from, name: o.name, replyTo: o.replyTo };
+    if (o.htmlBody) opt.htmlBody = o.htmlBody;
+    GmailApp.sendEmail(o.to, o.subject, o.body, opt);
+  } else {
+    MailApp.sendEmail(o);
+  }
 }
 
 function ok_() { return ContentService.createTextOutput('ok'); }
@@ -83,7 +99,7 @@ function notifyOwner_(d) {
   if (d.whatsapp) lines.push('Responder por WhatsApp: https://wa.me/' + d.whatsapp.replace(/[^0-9]/g, ''));
   var opts = { to: OWNER_EMAIL, subject: 'Solicitud: ' + (d.route || 'Clas Tours') + ' · ' + d.name, body: lines.join('\n'), name: 'Formulario clastours.ch' };
   if (d.email) opts.replyTo = d.email;
-  MailApp.sendEmail(opts);
+  send_(opts);
 }
 
 var TEXTS = {
@@ -133,7 +149,7 @@ function autoReply_(d) {
     '<p>' + esc_(t.hi.replace('{name}', d.name)) + '</p><p>' + esc_(t.body) + '</p><p><b>' + esc_(t.sum) + '</b><br>' +
     rows.map(esc_).join('<br>') + '</p><p style="background:#f3efe9;padding:10px 12px;border-radius:4px">' + esc_(t.note) + '</p>' +
     '<p>' + esc_(t.wa) + ' <a href="' + WHATSAPP + '">WhatsApp</a></p><p>' + esc_(t.bye) + '<br>' + esc_(t.sign) + '</p></div>';
-  MailApp.sendEmail({ to: d.email, subject: t.subject, body: text, htmlBody: html, name: 'Clas Tours', replyTo: OWNER_EMAIL });
+  send_({ to: d.email, subject: t.subject, body: text, htmlBody: html, name: 'Clas Tours', replyTo: OWNER_EMAIL });
 }
 
 // Para probar sin usar el sitio: Ejecutar > prueba (te llegan los dos emails a ti)
