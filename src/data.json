@@ -1,23 +1,23 @@
 {
- "prices": {
-  "kand": {
-   "p": 320,
-   "g": 260
+  "prices": {
+    "kand": {
+      "p": 320,
+      "g": 260
+    },
+    "creux": {
+      "p": 140,
+      "g": 110
+    },
+    "augst": {
+      "p": 150,
+      "g": 120
+    },
+    "relojes": {
+      "p": 100,
+      "g": 80
+    }
   },
-  "creux": {
-   "p": 140,
-   "g": 110
-  },
-  "augst": {
-   "p": 150,
-   "g": 120
-  },
-  "relojes": {
-   "p": 100,
-   "g": 80
+  "booking": {
+    "endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec"
   }
- },
- "booking": {
-  "endpoint": ""
- }
 }
