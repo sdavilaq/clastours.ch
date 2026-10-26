@@ -137,6 +137,23 @@ var TEXTS = {
 
 function esc_(v) { return String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
+// Firma de los emails automáticos (misma que usas en tus correos). LOGO_URL: dirección pública de la imagen del logo; vacío = sin logo
+var LOGO_URL = '';
+var SIG = {
+  lines: ['Santiago Dávila Quiroz', 'CLAS Tours by Davila Quiroz', '\u201eCamina Los Alpes Suizos\u201c',
+          'Quellmattstrasse 11, 2563 Ipsach, Schweiz', '+41 77 460 36 41', 'info@clastours.ch', 'www.clastours.ch | @clastours']
+};
+
+function sigText_() { return SIG.lines.join('\n'); }
+function sigHtml_() {
+  return '<div style="margin-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#1a2a33">' +
+    '<b>' + SIG.lines[0] + '<br>' + SIG.lines[1] + '</b><br><i>' + SIG.lines[2] + '</i><br>' +
+    '\uD83D\uDCCD ' + SIG.lines[3] + '<br>\uD83D\uDCDE ' + SIG.lines[4] + '<br>' +
+    '\u2709\uFE0F <a href="mailto:info@clastours.ch">info@clastours.ch</a><br>' +
+    '\uD83C\uDF10 <a href="https://www.clastours.ch">www.clastours.ch</a> | \uD83D\uDCF8 <a href="https://www.instagram.com/clastours">@clastours</a>' +
+    (LOGO_URL ? '<br><img src="' + LOGO_URL + '" alt="Clas Tours" width="320" style="margin-top:8px;border:0">' : '') + '</div>';
+}
+
 function autoReply_(d) {
   var t = TEXTS[d.lang] || TEXTS.es;
   var rows = [];
@@ -144,11 +161,11 @@ function autoReply_(d) {
   if (d.date)    rows.push(t.date + ': ' + d.date);
   if (d.people)  rows.push(t.people + ': ' + d.people);
   if (d.message) rows.push(t.msg + ': ' + d.message);
-  var text = [t.hi.replace('{name}', d.name), '', t.body, '', t.sum, rows.join('\n'), '', t.note, '', t.wa + ' ' + WHATSAPP, '', t.bye, t.sign].join('\n');
+  var text = [t.hi.replace('{name}', d.name), '', t.body, '', t.sum, rows.join('\n'), '', t.note, '', t.wa + ' ' + WHATSAPP, '', t.bye, '', sigText_()].join('\n');
   var html = '<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#1a2a33;max-width:560px">' +
     '<p>' + esc_(t.hi.replace('{name}', d.name)) + '</p><p>' + esc_(t.body) + '</p><p><b>' + esc_(t.sum) + '</b><br>' +
     rows.map(esc_).join('<br>') + '</p><p style="background:#f3efe9;padding:10px 12px;border-radius:4px">' + esc_(t.note) + '</p>' +
-    '<p>' + esc_(t.wa) + ' <a href="' + WHATSAPP + '">WhatsApp</a></p><p>' + esc_(t.bye) + '<br>' + esc_(t.sign) + '</p></div>';
+    '<p>' + esc_(t.wa) + ' <a href="' + WHATSAPP + '">WhatsApp</a></p><p>' + esc_(t.bye) + '</p>' + sigHtml_() + '</div>';
   send_({ to: d.email, subject: t.subject, body: text, htmlBody: html, name: 'Clas Tours', replyTo: OWNER_EMAIL });
 }
 
