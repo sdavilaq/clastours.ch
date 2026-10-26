@@ -148,9 +148,9 @@ function sigText_() { return SIG.lines.join('\n'); }
 function sigHtml_() {
   return '<div style="margin-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#1a2a33">' +
     '<b>' + SIG.lines[0] + '<br>' + SIG.lines[1] + '</b><br><i>' + SIG.lines[2] + '</i><br>' +
-    '\uD83D\uDCCD ' + SIG.lines[3] + '<br>\uD83D\uDCDE ' + SIG.lines[4] + '<br>' +
-    '\u2709\uFE0F <a href="mailto:info@clastours.ch">info@clastours.ch</a><br>' +
-    '\uD83C\uDF10 <a href="https://www.clastours.ch">www.clastours.ch</a> | \uD83D\uDCF8 <a href="https://www.instagram.com/clastours">@clastours</a>' +
+    '&#128205; ' + SIG.lines[3] + '<br>&#128222; ' + SIG.lines[4] + '<br>' +
+    '&#9993; <a href="mailto:info@clastours.ch">info@clastours.ch</a><br>' +
+    '&#127760; <a href="https://www.clastours.ch">www.clastours.ch</a> | &#128248; <a href="https://www.instagram.com/clastours">@clastours</a>' +
     (LOGO_URL ? '<br><img src="' + LOGO_URL + '" alt="Clas Tours" width="320" style="margin-top:8px;border:0">' : '') + '</div>';
 }
 
