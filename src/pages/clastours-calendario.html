@@ -576,9 +576,13 @@ function inscribir(id, salida) {
   if (alerg && alerg !== 'no') waMsg += '%0A' + L('js.wa.allergy') + ': ' + yes;
   if (msg) waMsg += '%0A' + L('js.wa.message') + ': ' + enc(msg);
   waMsg += '%0A' + L('js.wa.photos') + ': ' + (foto ? yes : no);
-  window.open('https://wa.me/41774603641?text=' + waMsg, '_blank');
-  document.getElementById('modal-texto').textContent = L('js.modal.sent').replace('{salida}', salida);
-  document.getElementById('modal-confirm').classList.add('open');
+  var waUrl = 'https://wa.me/41774603641?text=' + waMsg;
+  var okText = L('js.modal.sent').replace('{salida}', salida);
+  var btn = document.querySelector('button[onclick^="inscribir(\''+id+'\'"]');
+  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto}, waUrl, {btn:btn, okCb:function(){
+    document.getElementById('modal-texto').textContent = okText;
+    document.getElementById('modal-confirm').classList.add('open');
+  }});
 }
 </script>
 </body>

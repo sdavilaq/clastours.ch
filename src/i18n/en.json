@@ -480,8 +480,8 @@
   "s": "9174f555"
  },
  "common.reservar-por-whatsapp": {
-  "t": "Book via WhatsApp →",
-  "s": "e4ab19ef"
+  "t": "Send request →",
+  "s": "732d959d"
  },
  "common.te-contactamos-en-menos-de": {
   "t": "We'll get back to you within 24h · No commitment until payment is confirmed",
@@ -1252,8 +1252,8 @@
   "s": "c8750847"
  },
  "contacto.enviar-por-whatsapp": {
-  "t": "Send via WhatsApp →",
-  "s": "3747db0b"
+  "t": "Send message →",
+  "s": "3f8c21b0"
  },
  "contacto.sin-compromiso-respuesta-en-menos": {
   "t": "No commitment · Reply within 24h · Your info is not shared",
@@ -2936,8 +2936,8 @@
   "s": "cb314618"
  },
  "legal.los-datos-no-se-ceden": {
-  "t": "Data is not shared with third parties except where strictly necessary to provide the service or required by law. The client has the right to access, rectify or delete their data by contacting <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a>.",
-  "s": "cf92d92c"
+  "t": "Data is not shared with third parties except where strictly necessary to provide the service or required by law. The client has the right to access, rectify or delete their data by contacting <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a>. Requests sent through the website forms are stored and managed with Google services (Google Workspace: spreadsheet and email), whose servers may be located outside Switzerland.",
+  "s": "0008bb37"
  },
  "legal.las-fotografias-tomadas-durante-las": {
   "t": "Photographs taken during the activities may be used for promotional purposes only with the client's express consent, given through the authorisation checkbox on the booking form.",
@@ -3846,5 +3846,29 @@
  "guia.kandersteg-bluemlisalphutte.cta-price": {
   "t": "per person · all inclusive (guide, night in the hut, dinner and breakfast) · minimum 2 people<br>Groups of 7 or more: CHF {{g.kand}} per person · maximum 10 people",
   "s": "94203522"
+ },
+ "js.sent.title": {
+  "t": "Request sent!",
+  "s": "cb8ac078"
+ },
+ "js.sent.text": {
+  "t": "We've received your message. Santiago will reply within 24 hours.",
+  "s": "a3473c0f"
+ },
+ "js.sent.close": {
+  "t": "Got it",
+  "s": "ee24e6fe"
+ },
+ "js.sent.wa": {
+  "t": "Also write on WhatsApp",
+  "s": "7f01098e"
+ },
+ "js.fail.title": {
+  "t": "We couldn't send your message",
+  "s": "7a733cbf"
+ },
+ "js.fail.text": {
+  "t": "There was a connection problem. Write to us directly on WhatsApp or at info@clastours.ch.",
+  "s": "1e9e9c84"
  }
 }

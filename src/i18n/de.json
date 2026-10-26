@@ -480,8 +480,8 @@
   "s": "9174f555"
  },
  "common.reservar-por-whatsapp": {
-  "t": "Per WhatsApp buchen →",
-  "s": "e4ab19ef"
+  "t": "Anfrage senden →",
+  "s": "732d959d"
  },
  "common.te-contactamos-en-menos-de": {
   "t": "Wir melden uns innerhalb von 24 Std. · Unverbindlich bis zur Zahlungsbestätigung",
@@ -1252,8 +1252,8 @@
   "s": "c8750847"
  },
  "contacto.enviar-por-whatsapp": {
-  "t": "Per WhatsApp senden →",
-  "s": "3747db0b"
+  "t": "Nachricht senden →",
+  "s": "3f8c21b0"
  },
  "contacto.sin-compromiso-respuesta-en-menos": {
   "t": "Unverbindlich · Antwort innerhalb von 24 Std. · Deine Daten werden nicht weitergegeben",
@@ -2936,8 +2936,8 @@
   "s": "cb314618"
  },
  "legal.los-datos-no-se-ceden": {
-  "t": "Die Daten werden nicht an Dritte weitergegeben, ausser wenn dies für die Erbringung der Leistung unbedingt erforderlich oder gesetzlich vorgeschrieben ist. Die Kundin bzw. der Kunde hat das Recht auf Auskunft, Berichtigung oder Löschung der Daten und kann sich dazu an <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> wenden.",
-  "s": "cf92d92c"
+  "t": "Die Daten werden nicht an Dritte weitergegeben, ausser wenn dies für die Erbringung der Leistung unbedingt erforderlich oder gesetzlich vorgeschrieben ist. Die Kundin bzw. der Kunde hat das Recht auf Auskunft, Berichtigung oder Löschung der Daten und kann sich dazu an <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> wenden. Über die Formulare der Website gesendete Anfragen werden mit Google-Diensten (Google Workspace: Tabellenkalkulation und E-Mail) gespeichert und verwaltet, deren Server sich ausserhalb der Schweiz befinden können.",
+  "s": "0008bb37"
  },
  "legal.las-fotografias-tomadas-durante-las": {
   "t": "Fotografien, die während der Aktivitäten aufgenommen werden, dürfen nur mit ausdrücklicher Einwilligung der Kundin bzw. des Kunden, erteilt über das Einverständnis-Kästchen im Buchungsformular, für Werbezwecke verwendet werden.",
@@ -3846,5 +3846,29 @@
  "guia.kandersteg-bluemlisalphutte.cta-price": {
   "t": "pro Person · alles inklusive (Wanderleiter, Übernachtung in der Hütte, Abendessen und Frühstück) · mindestens 2 Personen<br>Gruppen ab 7 Personen: CHF {{g.kand}} pro Person · maximal 10 Personen",
   "s": "94203522"
+ },
+ "js.sent.title": {
+  "t": "Anfrage gesendet!",
+  "s": "cb8ac078"
+ },
+ "js.sent.text": {
+  "t": "Wir haben deine Nachricht erhalten. Santiago antwortet dir innerhalb von 24 Stunden.",
+  "s": "a3473c0f"
+ },
+ "js.sent.close": {
+  "t": "Verstanden",
+  "s": "ee24e6fe"
+ },
+ "js.sent.wa": {
+  "t": "Zusätzlich per WhatsApp schreiben",
+  "s": "7f01098e"
+ },
+ "js.fail.title": {
+  "t": "Deine Nachricht konnte nicht gesendet werden",
+  "s": "7a733cbf"
+ },
+ "js.fail.text": {
+  "t": "Es gab ein Verbindungsproblem. Schreib uns direkt per WhatsApp oder an info@clastours.ch.",
+  "s": "1e9e9c84"
  }
 }

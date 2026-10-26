@@ -991,7 +991,8 @@ function enviarForm() {
   const enc = encodeURIComponent;
   const msg = L('js.wa.interest') + '%0A%0A*' + L('js.wa.name') + ':* ' + enc(nombre) + '%0A*' + L('js.wa.whatsapp') + ':* ' + enc(wa) + '%0A*' + L('js.wa.email') + ':* ' + enc(email) + '%0A*' + L('js.wa.route') + ':* ' + enc(ruta) + '%0A*' + L('js.wa.people') + ':* ' + enc(personas);
   
-  window.open(`https://wa.me/41774603641?text=${msg}`, '_blank');
+  const waUrl = `https://wa.me/41774603641?text=${msg}`;
+  CT.submit({source:'inicio', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas}, waUrl, {btn:document.querySelector('.ct-btn-submit')});
 }
 </script>
 </body>
