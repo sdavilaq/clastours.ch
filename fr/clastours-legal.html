@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- ========== FAVICON ========== -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0F3D52">
+<!-- ============================= -->
+<title>Conditions générales – Clas Tours by Davila Quiroz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --petrol-dk: #0F3D52;
+    --petrol:    #1B5F7A;
+    --petrol-lt: #4A9AB8;
+    --copper:    #9B6B4A;
+    --copper-lt: #C48A62;
+    --snow:      #F8F7F5;
+    --stone:     #D8DFE3;
+    --ink:       #1A1F22;
+    --slate:     #3D4E56;
+    --dust:      #7A8D96;
+    --white:     #FFFFFF;
+    --mist:      #EEF2F4;
+    --warning-bg: #FFF8F0;
+    --warning-border: #E8C9B0;
+  }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--snow);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  .nav {
+    background: var(--petrol-dk);
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem; font-weight: 700;
+    color: var(--white); text-decoration: none; line-height: 1.2;
+  }
+  .nav-logo span { display: block; font-size: 0.65rem; font-weight: 300; color: var(--copper-lt); letter-spacing: 0.15em; text-transform: uppercase; font-family: 'DM Sans', sans-serif; }
+  .nav-back {
+    color: rgba(255,255,255,0.6); font-size: 0.875rem;
+    text-decoration: none; transition: color 0.2s;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .nav-back:hover { color: var(--copper-lt); }
+
+  /* HERO LEGAL */
+  .legal-hero {
+    background: var(--petrol-dk);
+    padding: 3rem 2rem 2.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .legal-hero-inner { max-width: 860px; margin: 0 auto; }
+  .legal-eyebrow {
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--copper-lt);
+    margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .legal-eyebrow::before { content:''; display:block; width:20px; height:1px; background:var(--copper-lt); }
+  .legal-hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.25rem; font-weight: 700;
+    color: var(--white); margin-bottom: 0.5rem;
+  }
+  .legal-hero p { font-size: 0.875rem; color: rgba(255,255,255,0.45); }
+  .legal-updated {
+    margin-top: 1rem; font-size: 0.75rem;
+    color: rgba(255,255,255,0.28);
+    padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.07);
+  }
+
+  /* AVISO IMPORTANTE */
+  .legal-warning {
+    max-width: 860px; margin: 2rem auto 0; padding: 0 2rem;
+  }
+  .warning-box {
+    background: var(--warning-bg);
+    border: 1px solid var(--warning-border);
+    border-left: 4px solid var(--copper);
+    border-radius: 0 4px 4px 0;
+    padding: 1rem 1.25rem;
+    display: flex; gap: 12px; align-items: flex-start;
+  }
+  .warning-box svg { width: 18px; height: 18px; color: var(--copper); flex-shrink: 0; margin-top: 2px; }
+  .warning-box p { font-size: 0.875rem; color: var(--slate); line-height: 1.6; }
+  .warning-box strong { color: var(--copper); }
+
+  /* ÍNDICE */
+  .legal-index {
+    max-width: 860px; margin: 2rem auto 0; padding: 0 2rem;
+  }
+  .index-box {
+    background: var(--mist);
+    border: 1px solid var(--stone);
+    border-radius: 4px; padding: 1.25rem 1.5rem;
+  }
+  .index-title { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dust); margin-bottom: 0.75rem; }
+  .index-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; }
+  .index-list li a {
+    font-size: 0.8125rem; color: var(--petrol);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .index-list li a:hover { color: var(--copper); }
+  .index-list li::before { content: '—  '; color: var(--stone); }
+
+  /* CONTENIDO LEGAL */
+  .legal-content {
+    max-width: 860px; margin: 3rem auto 4rem; padding: 0 2rem;
+  }
+  .legal-section {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--stone);
+  }
+  .legal-section:last-child { border-bottom: none; }
+
+  .section-num {
+    font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--petrol-lt);
+    margin-bottom: 0.4rem;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem; font-weight: 700;
+    color: var(--petrol-dk); margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--petrol-lt);
+    display: inline-block;
+  }
+  .legal-content p {
+    font-size: 0.9375rem; color: var(--slate);
+    line-height: 1.75; margin-bottom: 1rem;
+  }
+  .legal-content p:last-child { margin-bottom: 0; }
+  .legal-content ul {
+    margin: 0.75rem 0 1rem 0; padding-left: 0; list-style: none;
+  }
+  .legal-content ul li {
+    font-size: 0.9375rem; color: var(--slate);
+    line-height: 1.7; padding: 0.3rem 0;
+    padding-left: 1.25rem; position: relative;
+  }
+  .legal-content ul li::before {
+    content: '·'; position: absolute; left: 0;
+    color: var(--petrol-lt); font-weight: 700;
+  }
+  .legal-content strong { color: var(--ink); font-weight: 500; }
+
+  /* CAJA DESTACADA - Ley Suiza */
+  .swiss-law-box {
+    background: var(--petrol-dk);
+    border-radius: 6px; padding: 1.75rem;
+    margin: 1.5rem 0;
+  }
+  .swiss-law-box h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem; font-weight: 700;
+    color: var(--white); margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .swiss-law-box h4 svg { width: 20px; height: 20px; color: var(--copper-lt); flex-shrink: 0; }
+  .swiss-law-box p {
+    font-size: 0.9rem; color: rgba(255,255,255,0.65);
+    line-height: 1.7; margin-bottom: 0.5rem;
+  }
+  .swiss-law-box p:last-child { margin-bottom: 0; }
+  .swiss-law-box strong { color: var(--copper-lt) !important; }
+
+  /* TABLA DE CANCELACIÓN */
+  .cancel-table {
+    width: 100%; border-collapse: collapse;
+    margin: 1rem 0; font-size: 0.875rem;
+  }
+  .cancel-table th {
+    background: var(--petrol-dk); color: var(--white);
+    padding: 0.75rem 1rem; text-align: left;
+    font-weight: 500; font-size: 0.8rem;
+  }
+  .cancel-table td {
+    padding: 0.75rem 1rem; color: var(--slate);
+    border-bottom: 1px solid var(--stone);
+  }
+  .cancel-table tr:last-child td { border-bottom: none; }
+  .cancel-table tr:nth-child(even) td { background: var(--mist); }
+  .pct-full { color: #8B2020; font-weight: 500; }
+  .pct-part { color: var(--copper); font-weight: 500; }
+  .pct-free { color: #2A6B2A; font-weight: 500; }
+
+  /* FOOTER */
+  .legal-footer {
+    background: #0A2535; padding: 2rem;
+    text-align: center;
+  }
+  .legal-footer p { font-size: 0.75rem; color: rgba(255,255,255,0.25); margin-bottom: 0.4rem; }
+  .legal-footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+  .legal-footer a:hover { color: var(--copper-lt); }
+
+  @media (max-width: 600px) {
+    .index-list { grid-template-columns: 1fr; }
+    .legal-hero h1 { font-size: 1.75rem; }
+  }
+</style>
+<!-- SEO -->
+<meta name="description" content="Conditions générales de Clas Tours by Davila Quiroz : réservations, paiements, annulations et conditions de participation aux randonnées.">
+<link rel="canonical" href="https://clastours.ch/fr/clastours-legal.html">
+<link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-legal.html">
+<link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-legal.html">
+<link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-legal.html">
+<link rel="alternate" hreflang="fr" href="https://clastours.ch/fr/clastours-legal.html">
+<link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-legal.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clas Tours">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:title" content="Conditions générales – Clas Tours by Davila Quiroz">
+<meta property="og:description" content="Conditions générales de Clas Tours by Davila Quiroz : réservations, paiements, annulations et conditions de participation aux randonnées.">
+<meta property="og:url" content="https://clastours.ch/fr/clastours-legal.html">
+<meta property="og:image" content="https://clastours.ch/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}</style>
+<script>window.I18N={"js.alert.date": "Veuillez indiquer votre date souhaitée.", "js.alert.name_email": "Veuillez saisir votre nom et votre e-mail.", "js.alert.people": "Veuillez sélectionner le nombre de personnes.", "js.modal.sent": "Votre demande pour {salida} a bien été envoyée. Santiago vous contactera dans les 24 heures pour confirmer la date et organiser le paiement.", "js.yes": "Oui", "js.no": "Non", "js.wa.enroll_intro": "Bonjour Santiago, je souhaite m'inscrire à :", "js.wa.name": "Nom", "js.wa.email": "E-mail", "js.wa.whatsapp": "WhatsApp", "js.wa.date": "Date souhaitée", "js.wa.people": "Personnes", "js.wa.level": "Niveau", "js.wa.veg": "Végétarien", "js.wa.allergy": "Intolérance gluten/lactose", "js.wa.message": "Message", "js.wa.photos": "Autorisation photos", "js.wa.route": "Itinéraire", "js.wa.hello": "Bonjour Santiago,", "js.wa.interest": "Bonjour Santiago ! Je souhaite réserver une randonnée.", "js.alert.name_contact": "Veuillez saisir votre nom et au moins un moyen de contact.", "js.today": "AUJ.", "js.days": "DIM|LUN|MAR|MER|JEU|VEN|SAM", "js.wx.route_default": "Votre itinéraire", "js.wx.title": "Prévisions à 7 jours", "js.wx.source": "Modèle ICON · Open-Meteo", "js.wx.loading": "Chargement des données météorologiques…", "js.wx.footer1": "Données : modèle ICON (DWD) via", "js.wx.footer2": ". À titre indicatif : avant de partir, consultez les", "js.wx.footer3": "prévisions officielles de MétéoSuisse", "js.wx.reliable": "Plus fiable les 3 premiers jours", "js.wx.error": "Impossible de charger les données météorologiques. Veuillez recharger la page ou réessayer plus tard.", "js.sent.title": "Demande envoyée !", "js.sent.text": "Nous avons bien reçu votre message. Santiago vous répond dans les 24 heures.", "js.sent.close": "Compris", "js.sent.wa": "Écrire aussi par WhatsApp", "js.fail.title": "Nous n'avons pas pu envoyer votre message", "js.fail.text": "Un problème de connexion est survenu. Écrivez-nous directement par WhatsApp ou à info@clastours.ch."};</script>
+<script>window.CT={"endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec", "lang": "fr"};CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();return fetch(CT.endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)});};CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';o.innerHTML='<div class="ct-notice-box" role="dialog" aria-modal="true"><h3></h3><p></p><div class="ct-notice-btns"></div></div>';o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');if(waUrl){var a=document.createElement('a');a.href=waUrl;a.target='_blank';a.rel='noopener';a.className='ct-notice-wa';a.textContent=L('js.sent.wa');bt.appendChild(a);}var c=document.createElement('button');c.type='button';c.textContent=L('js.sent.close');c.onclick=function(){o.remove();};bt.appendChild(c);o.onclick=function(e){if(e.target===o)o.remove();};document.body.appendChild(o);};CT.submit=function(d,waUrl,opt){opt=opt||{};if(!CT.endpoint){window.open(waUrl,'_blank');if(opt.okCb)opt.okCb('wa');return;}if(opt.btn)opt.btn.disabled=true;CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);}).catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);}).then(function(){if(opt.btn)opt.btn.disabled=false;});};</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    Clas Tours by Davila Quiroz
+    <span>Marchez dans les Alpes suisses</span>
+  </a>
+  <a href="index.html" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Retour à l'accueil
+  </a>
+<div class="lang-switch" role="navigation" aria-label="Idioma / Sprache / Language / Langue"><a href="/clastours-legal.html" hreflang="es" lang="es"><svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#003893"/><rect width="18" height="6" fill="#FCD116"/><rect y="9" width="18" height="3" fill="#CE1126"/></svg>ES</a><a href="/de/clastours-legal.html" hreflang="de" lang="de"><svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#D52B1E"/><path d="M7.5 2.5h3v2.5h2.5v3h-2.5v2.5h-3V8H5V5h2.5z" fill="#fff"/></svg>DE</a><a href="/en/clastours-legal.html" hreflang="en" lang="en"><svg class="fl" viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0l60 40M60 0L0 40" stroke="#C8102E" stroke-width="3"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="12"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="7"/></svg>EN</a><a href="/fr/clastours-legal.html" hreflang="fr" lang="fr" class="active" aria-current="true"><svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#ED2939"/><rect width="12" height="12" fill="#fff"/><rect width="6" height="12" fill="#002395"/></svg>FR</a></div>
+</nav>
+
+<!-- HERO -->
+<div class="legal-hero">
+  <div class="legal-hero-inner">
+    <div class="legal-eyebrow">Documentation juridique</div>
+    <h1>Conditions générales</h1>
+    <p>Clas Tours by Davila Quiroz · clastours.ch</p>
+    <div class="legal-updated">
+      Dernière mise à jour : janvier 2025 · Version 1.0 · Tous les services sont soumis aux présentes conditions.
+    </div>
+  </div>
+</div>
+
+<!-- AVISO -->
+<div class="legal-warning">
+  <div class="warning-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    <p><strong>Lisez ce document avant de réserver.</strong> En confirmant une réservation auprès de Clas Tours by Davila Quiroz, le client déclare avoir lu, compris et accepté intégralement les présentes Conditions générales. La participation à toute activité implique l'acceptation de toutes les conditions qui y sont établies, quel que soit le pays de résidence ou la nationalité du client.</p>
+  </div>
+</div>
+
+<!-- ÍNDICE -->
+<div class="legal-index">
+  <div class="index-box">
+    <div class="index-title">Sommaire</div>
+    <ul class="index-list">
+      <li><a href="#s1">1. Identification du prestataire</a></li>
+      <li><a href="#s2">2. Services proposés</a></li>
+      <li><a href="#s3">3. Réservations et confirmation</a></li>
+      <li><a href="#s4">4. Prix et modalités de paiement</a></li>
+      <li><a href="#s5">5. Annulation et remboursements</a></li>
+      <li><a href="#s6">6. Conditions de participation</a></li>
+      <li><a href="#s7">7. Risques et responsabilité</a></li>
+      <li><a href="#s8">8. Assurances</a></li>
+      <li><a href="#s9">9. Comportement en route</a></li>
+      <li><a href="#s10">10. Confidentialité et données</a></li>
+      <li><a href="#s11">11. Droit applicable et for</a></li>
+      <li><a href="#s12">12. Dispositions finales</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="legal-content">
+
+  <!-- 1 -->
+  <div class="legal-section" id="s1">
+    <div class="section-num">Article 01</div>
+    <div class="section-title">Identification du prestataire de services</div>
+    <p><strong>Raison sociale :</strong> Clas Tours by Davila Quiroz</p>
+    <p><strong>Responsable :</strong> Santiago Davila Quiroz</p>
+    <p><strong>Domicile :</strong> Ipsach, canton de Berne, Suisse</p>
+    <p><strong>Site web :</strong> www.clastours.ch</p>
+    <p><strong>E-mail :</strong> <a href="mailto:info@clastours.ch">info@clastours.ch</a></p>
+    <p><strong>Téléphone / WhatsApp :</strong> (+41) 077 460 36 41</p>
+    <p>Clas Tours by Davila Quiroz est une entreprise de guide de randonnée établie en Suisse, exploitée par Santiago Davila Quiroz, actuellement en formation comme Wanderleiter (guide de randonnée) certifié selon les standards suisses.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="legal-section" id="s2">
+    <div class="section-num">Article 02</div>
+    <div class="section-title">Services proposés</div>
+    <p>Clas Tours by Davila Quiroz propose des randonnées guidées dans les Alpes suisses et leurs environs pour des groupes hispanophones. Les services comprennent :</p>
+    <ul>
+      <li>Un guide de randonnée en espagnol pendant toute l'activité</li>
+      <li>La planification et le choix de l'itinéraire selon le niveau du groupe</li>
+      <li>Des conseils préalables sur l'équipement, la logistique et le transport</li>
+      <li>Une assistance et une communication pendant toute la journée</li>
+    </ul>
+    <p><strong>Ne sont pas compris</strong> dans le prix de base des randonnées d'une journée : le transport jusqu'au point de départ, les repas, les boissons, les entrées ou taxes d'accès, la location d'équipement personnel et l'assurance accidents personnelle du client.</p>
+    <p>L'itinéraire <strong>Kandersteg avec nuit en cabane</strong> fait exception : son prix comprend l'hébergement à la Bluemisalphütte et la demi-pension (souper et petit-déjeuner). Il ne comprend ni les boissons, ni le transport, ni les entrées, ni l'assurance personnelle.</p>
+    <p>Les sorties ont lieu <strong>à la demande et avec un minimum de 2 participants</strong> ; la date est convenue avec le groupe.</p>
+    <p>Les itinéraires proposés ont une classification maximale T3 (randonnée de montagne) en été et WT2 (randonnée hivernale) en hiver, selon l'échelle de difficulté du Club Alpin Suisse (CAS).</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="legal-section" id="s3">
+    <div class="section-num">Article 03</div>
+    <div class="section-title">Réservations et confirmation</div>
+    <p>La réservation se fait au moyen du formulaire de contact du site web ou directement par WhatsApp. Une réservation est considérée comme <strong>confirmée</strong> uniquement lorsque le client a reçu une confirmation écrite de Clas Tours by Davila Quiroz.</p>
+    <p>Clas Tours se réserve le droit de refuser ou d'annuler une réservation si :</p>
+    <ul>
+      <li>Le client ne remplit pas les conditions physiques ou techniques minimales pour l'itinéraire choisi</li>
+      <li>Les conditions météorologiques représentent un risque pour la sécurité du groupe</li>
+      <li>Le nombre minimum de 2 participants n'est pas atteint</li>
+      <li>Des circonstances de force majeure l'en empêchent</li>
+    </ul>
+    <p>En cas d'annulation par Clas Tours, le client reçoit un remboursement intégral ou la possibilité de reporter sans frais supplémentaires.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="legal-section" id="s4">
+    <div class="section-num">Article 04</div>
+    <div class="section-title">Prix et modalités de paiement</div>
+    <p>Les prix en vigueur par personne sont :</p>
+    <ul>
+      <li><strong>Kandersteg avec nuit en cabane (2 jours, cabane et demi-pension inclus) :</strong> CHF 320 par personne ; groupes de 7 ou plus : CHF 260</li>
+      <li><strong>Creux du Van :</strong> CHF 140 par personne ; groupes de 7 ou plus : CHF 110</li>
+      <li><strong>Augstmatthorn → Harderkulm :</strong> CHF 150 par personne ; groupes de 7 ou plus : CHF 120</li>
+      <li><strong>Horlogerie &amp; Chocolat dans le Jura :</strong> CHF 100 par personne ; groupes de 7 ou plus : CHF 80</li>
+    </ul>
+    <p>Tous les prix sont exprimés en <strong>francs suisses (CHF)</strong> et incluent la TVA suisse applicable. Le paiement s'effectue avant le début de l'activité, sauf accord écrit préalable.</p>
+
+    <p><strong>Moyens de paiement acceptés :</strong></p>
+    <ul>
+      <li>Virement bancaire (IBAN) : <strong>CH90 0900 0000 1651 3549 7</strong> · BIC : POFICHBEXXX · Titulaire : Clas Tours by Davila Quiroz</li>
+      <li>Twint : lié au compte professionnel PostFinance</li>
+      <li>Paiement par code QR PostFinance</li>
+      <li>Espèces le jour de l'activité, sur accord écrit préalable</li>
+    </ul>
+    <p>Pour un virement bancaire, le client doit indiquer son nom complet et l'itinéraire réservé dans le motif du paiement.</p>
+    <p>Les prix peuvent être modifiés sans préavis pour les nouvelles réservations. Les réservations déjà confirmées ne sont pas affectées par les changements de tarif.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="legal-section" id="s5">
+    <div class="section-num">Article 05</div>
+    <div class="section-title">Politique d'annulation et de remboursement</div>
+    <p>Les annulations doivent être communiquées par écrit (WhatsApp ou e-mail). La politique de remboursement est la suivante :</p>
+
+    <table class="cancel-table">
+      <thead>
+        <tr>
+          <th>Délai de préavis</th>
+          <th>Pénalité</th>
+          <th>Remboursement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Plus de 14 jours avant</td>
+          <td class="pct-free">Sans pénalité</td>
+          <td>100 % remboursé</td>
+        </tr>
+        <tr>
+          <td>Entre 7 et 14 jours avant</td>
+          <td class="pct-part">25 % du montant</td>
+          <td>75 % remboursé</td>
+        </tr>
+        <tr>
+          <td>Entre 3 et 6 jours avant</td>
+          <td class="pct-part">50 % du montant</td>
+          <td>50 % remboursé</td>
+        </tr>
+        <tr>
+          <td>Moins de 48 heures avant</td>
+          <td class="pct-full">100 % du montant</td>
+          <td>Aucun remboursement</td>
+        </tr>
+        <tr>
+          <td>Non-présentation (no-show)</td>
+          <td class="pct-full">100 % du montant</td>
+          <td>Aucun remboursement</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Annulation pour cause de mauvais temps :</strong> si Clas Tours annule l'activité en raison de conditions météorologiques défavorables présentant un risque pour la sécurité, le client peut choisir entre un report sans frais supplémentaires ou le remboursement intégral.</p>
+    <p>Si le client décide de ne pas participer le jour de l'activité de son propre chef (y compris en cas de conditions météorologiques que Clas Tours juge sûres), il n'a pas droit au remboursement.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="legal-section" id="s6">
+    <div class="section-num">Article 06</div>
+    <div class="section-title">Conditions de participation et santé</div>
+    <p>Le client est responsable d'évaluer honnêtement sa condition physique et technique avant de réserver. Clas Tours peut demander des informations sur le niveau d'expérience du participant et se réserve le droit de recommander un autre itinéraire ou de refuser la participation s'il estime que la sécurité du client ou du groupe pourrait être compromise.</p>
+    <p><strong>Conditions générales :</strong></p>
+    <ul>
+      <li>Bonne condition physique générale adaptée au niveau de l'itinéraire choisi</li>
+      <li>Chaussures de randonnée adaptées (obligatoires pour les itinéraires T2 et T3)</li>
+      <li>Vêtements et équipement adaptés aux conditions météorologiques</li>
+      <li>Capacité à marcher au moins 4 heures d'affilée sur terrain irrégulier</li>
+      <li>Mineurs de moins de 18 ans : ils doivent être accompagnés d'un adulte responsable</li>
+    </ul>
+    <p>Le client déclare ne souffrir d'aucune affection médicale pouvant s'aggraver lors de la pratique de la randonnée en montagne (problèmes cardiaques sévères, vertige prononcé, difficultés respiratoires graves, etc.) sans en avoir informé le guide au préalable. <strong>En cas de doute, consultez votre médecin avant de participer.</strong></p>
+    <p>Clas Tours se réserve le droit d'exclure tout participant se présentant au point de rendez-vous en état d'ébriété ou sous l'emprise d'autres substances, sans droit à remboursement.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="legal-section" id="s7">
+    <div class="section-num">Article 07</div>
+    <div class="section-title">Risques inhérents et limitation de responsabilité</div>
+    <p><strong>La randonnée en montagne est une activité comportant des risques inhérents</strong>, notamment : terrain irrégulier et exposé, changements brusques des conditions météorologiques, chutes, entorses, hypothermie, coups de chaleur, risque d'avalanche en hiver et rencontre avec la faune sauvage.</p>
+    <p>Le client assume volontairement ces risques en participant aux activités de Clas Tours by Davila Quiroz. La participation implique la reconnaissance expresse que :</p>
+    <ul>
+      <li>Il a été informé du niveau de difficulté et des risques de l'itinéraire</li>
+      <li>Il participe de manière volontaire et sous sa propre responsabilité</li>
+      <li>Il suivra à tout moment les instructions du guide pendant l'activité</li>
+      <li>Il a évalué sa condition physique et la juge adaptée à l'activité choisie</li>
+    </ul>
+    <p>Clas Tours by Davila Quiroz et Santiago Davila Quiroz <strong>déclinent toute responsabilité</strong> pour les dommages, blessures, pertes ou accidents survenant à la suite de :</p>
+    <ul>
+      <li>Risques inhérents et naturels de la randonnée en montagne</li>
+      <li>Non-respect par le client des instructions du guide</li>
+      <li>Informations inexactes ou incomplètes fournies par le client sur son état de santé ou son expérience</li>
+      <li>Conditions météorologiques ou de terrain imprévisibles</li>
+      <li>Actes de tiers ou force majeure</li>
+      <li>Équipement personnel inadapté du client</li>
+    </ul>
+    <p>La responsabilité de Clas Tours est limitée, en tout état de cause, au montant payé par le client pour le service contracté, sauf en cas de dol ou de négligence grave avérée. Cette limitation de responsabilité s'applique dans la mesure maximale permise par le droit suisse en vigueur.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="legal-section" id="s8">
+    <div class="section-num">Article 08</div>
+    <div class="section-title">Assurances</div>
+    <p><strong>Le prix du service ne comprend ni assurance accidents personnelle ni assurance de sauvetage en montagne pour le client.</strong></p>
+    <p>Il est <strong>vivement recommandé</strong> que tous les participants disposent des assurances suivantes :</p>
+    <ul>
+      <li><strong>Assurance accidents personnelle</strong> couvrant les activités de randonnée en montagne</li>
+      <li><strong>Assurance de sauvetage en montagne</strong> (en Suisse, la Rega — Garde aérienne suisse de sauvetage — propose des cartes de donateur annuelles)</li>
+      <li><strong>Assurance voyage</strong> avec couverture du rapatriement médical (en particulier pour les participants non résidents en Suisse)</li>
+      <li><strong>Carte européenne d'assurance maladie</strong> (pour les citoyens de l'UE/AELE) ou assurance maladie internationale pour les autres</li>
+    </ul>
+    <p>Clas Tours by Davila Quiroz n'assume en aucun cas les frais de sauvetage, d'évacuation médicale, d'hospitalisation ou de rapatriement du client. Ces frais sont entièrement à la charge du participant ou de son assureur.</p>
+    <p>Un sauvetage en montagne en Suisse peut coûter entre CHF 1’000 et CHF 10’000, voire davantage. Ne partez pas sans assurance.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="legal-section" id="s9">
+    <div class="section-num">Article 09</div>
+    <div class="section-title">Comportement en route et autorité du guide</div>
+    <p>Pendant toute l'activité, <strong>l'autorité du guide est absolue en matière de sécurité.</strong> Le guide a le pouvoir de :</p>
+    <ul>
+      <li>Modifier ou raccourcir l'itinéraire à tout moment pour des raisons de sécurité</li>
+      <li>Annuler l'activité si les conditions l'exigent</li>
+      <li>Exclure un participant dont le comportement met en danger la sécurité du groupe</li>
+      <li>Prendre des décisions d'urgence sans devoir obtenir le consensus du groupe</li>
+    </ul>
+    <p>Les participants s'engagent à :</p>
+    <ul>
+      <li>Suivre à tout moment les instructions du guide</li>
+      <li>Respecter l'environnement naturel (principe Leave No Trace)</li>
+      <li>Ne pas s'écarter du groupe sans l'autorisation expresse du guide</li>
+      <li>Signaler au guide tout symptôme physique ou malaise pendant l'activité</li>
+      <li>Traiter avec respect le guide et les autres participants</li>
+    </ul>
+    <p>Le non-respect de ces règles peut entraîner l'exclusion du participant sans droit à remboursement.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="legal-section" id="s10">
+    <div class="section-num">Article 10</div>
+    <div class="section-title">Protection des données et confidentialité</div>
+    <p>Clas Tours by Davila Quiroz traite les données personnelles de ses clients conformément à la <strong>loi fédérale suisse sur la protection des données (nLPD)</strong>, en vigueur depuis le 1er septembre 2023.</p>
+    <p>Les données collectées (nom, coordonnées, informations de santé pertinentes) sont utilisées exclusivement pour :</p>
+    <ul>
+      <li>Gérer et confirmer les réservations</li>
+      <li>Communiquer avec le client avant, pendant et après l'activité</li>
+      <li>Garantir la sécurité du participant pendant l'activité</li>
+      <li>Respecter les obligations légales</li>
+    </ul>
+    <p>Les données ne sont pas transmises à des tiers, sauf si cela est strictement nécessaire à la fourniture du service ou exigé par la loi. Le client a le droit d'accéder à ses données, de les rectifier ou de les supprimer en contactant <a href="mailto:info@clastours.ch">info@clastours.ch</a>. Les demandes envoyées au moyen des formulaires du site web sont enregistrées et gérées avec des services de Google (Google Workspace : feuille de calcul et messagerie), dont les serveurs peuvent se trouver hors de Suisse.</p>
+    <p>Les photographies prises pendant les activités ne peuvent être utilisées à des fins promotionnelles qu'avec le consentement exprès du client, donné au moyen de la case d'autorisation du formulaire de réservation.</p>
+
+      <div class="swiss-law-box" style="margin-top:1.5rem">
+        <h4>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="9 11 12 14 22 4"/></svg>
+          Autorisation d'utilisation de l'image
+        </h4>
+        <p>Le client qui coche la case d'autorisation photographique du formulaire de réservation accorde à <strong>Clas Tours by Davila Quiroz</strong> une licence non exclusive, gratuite et sans limitation territoriale pour :</p>
+        <p>· Photographier et/ou filmer le client pendant l'activité réservée.</p>
+        <p>· Utiliser ces images et enregistrements à des fins exclusivement promotionnelles et de marketing : publications sur les réseaux sociaux (Instagram, YouTube, Facebook, etc.), site web clastours.ch, supports promotionnels imprimés et numériques.</p>
+        <p>· Cette autorisation est donnée de manière volontaire. Le client peut participer à l'activité sans la donner. Une fois accordée, elle peut être révoquée à tout moment par écrit à <a href="mailto:info@clastours.ch">info@clastours.ch</a>, sans effet rétroactif sur le matériel déjà publié.</p>
+        <p><strong>Il est expressément interdit</strong> d'utiliser les images à d'autres fins que celles indiquées, de les céder à des tiers ou de les utiliser à des fins commerciales étrangères à Clas Tours by Davila Quiroz sans autorisation écrite supplémentaire.</p>
+        <p>© Toutes les photographies publiées par Clas Tours by Davila Quiroz sont la propriété de Santiago Davila Quiroz. Toute reproduction, distribution ou utilisation sans autorisation écrite de l'auteur est expressément interdite.</p>
+      </div>
+  </div>
+
+  <!-- 11 - LEY SUIZA - SECCIÓN DESTACADA -->
+  <div class="legal-section" id="s11">
+    <div class="section-num">Article 11</div>
+    <div class="section-title">Droit applicable et for</div>
+
+    <div class="swiss-law-box">
+      <h4>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        For exclusif : droit suisse
+      </h4>
+      <p><strong>Tous les contrats, réservations, accords et relations juridiques entre Clas Tours by Davila Quiroz et ses clients sont régis exclusivement par le droit suisse</strong>, à l'exclusion de toute autre réglementation nationale ou internationale, quels que soient le pays de résidence, la nationalité ou le domicile du client.</p>
+      <p>Cela comprend, sans s'y limiter : les demandes de dommages-intérêts, les litiges relatifs aux annulations et remboursements, les accidents survenus pendant les activités et tout autre litige découlant de la fourniture des services.</p>
+      <p>En cas de litige, <strong>le tribunal compétent est celui du domicile de Clas Tours by Davila Quiroz, dans le canton de Berne, Suisse.</strong></p>
+    </div>
+
+    <p>Les normes applicables comprennent notamment :</p>
+    <ul>
+      <li><strong>Code des obligations suisse (CO)</strong> — pour les contrats de services et la responsabilité civile</li>
+      <li><strong>Code civil suisse (CC)</strong> — en matière de capacité juridique et de représentation</li>
+      <li><strong>Loi fédérale sur la protection des données (nLPD)</strong> — pour le traitement des données personnelles</li>
+      <li><strong>Législation fédérale sur le tourisme</strong> et réglementation cantonale bernoise applicable aux guides de montagne</li>
+    </ul>
+    <p>En acceptant les présentes Conditions générales, le client renonce expressément à invoquer la législation de son pays d'origine dans tout litige lié aux services de Clas Tours by Davila Quiroz et accepte la compétence exclusive des tribunaux suisses.</p>
+    <p>En cas de divergence entre la version espagnole des présentes conditions et toute traduction, la version espagnole prévaut.</p>
+  </div>
+
+  <!-- 12 -->
+  <div class="legal-section" id="s12">
+    <div class="section-num">Article 12</div>
+    <div class="section-title">Dispositions finales</div>
+    <p>Si une clause des présentes Conditions générales était déclarée nulle ou inapplicable par un tribunal compétent, les autres dispositions resteraient pleinement en vigueur et produiraient tous leurs effets.</p>
+    <p>Clas Tours by Davila Quiroz se réserve le droit de modifier les présentes Conditions générales à tout moment. Les modifications entrent en vigueur dès leur publication sur www.clastours.ch. Les réservations déjà confirmées sont régies par les conditions en vigueur au moment de la confirmation.</p>
+    <p>Le fait que Clas Tours n'exige pas l'application d'un droit ou d'une disposition ne constitue pas une renonciation à ce droit ou à cette disposition.</p>
+    <p>Pour toute question concernant ces Conditions générales, contactez : <strong><a href="mailto:info@clastours.ch">info@clastours.ch</a></strong></p>
+
+    <div class="swiss-law-box" style="margin-top:1.5rem">
+      <h4>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Acceptation des conditions
+      </h4>
+      <p>En effectuant une réservation auprès de Clas Tours by Davila Quiroz — que ce soit par le formulaire web, par WhatsApp, par e-mail ou par tout autre moyen — le client déclare avoir lu, compris et accepté intégralement les présentes Conditions générales dans toutes leurs parties.</p>
+      <p><strong>Cette acceptation a pleine validité contractuelle selon le droit suisse, équivalente à une signature manuscrite.</strong></p>
+    </div>
+  </div>
+
+</div>
+
+<div class="legal-footer">
+  <p>© Clas Tours by Davila Quiroz · Ipsach, Berne, Suisse</p>
+  <p><a href="mailto:info@clastours.ch">info@clastours.ch</a> · <a href="index.html">Retour à l'accueil</a></p>
+</div>
+
+</body>
+</html>

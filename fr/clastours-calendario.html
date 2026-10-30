@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ========== FAVICON ========== -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0F3D52">
+<!-- ============================= -->
+<title>Sorties à la demande – Clas Tours by Davila Quiroz</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--dk:#0F3D52;--pt:#1B5F7A;--pl:#4A9AB8;--cu:#9B6B4A;--cl:#C48A62;--sn:#F8F7F5;--ms:#EEF2F4;--st:#D8DFE3;--ink:#1A1F22;--sl:#3D4E56;--du:#7A8D96;--wh:#FFFFFF}
+body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line-height:1.6;overflow-x:hidden}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(15,61,82,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.07);transition:padding 0.3s}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:#fff;text-decoration:none;line-height:1.2}
+.logo span{display:block;font-size:0.65rem;color:var(--cl);letter-spacing:0.15em;text-transform:uppercase;font-family:'DM Sans',sans-serif}
+.nav-links{display:flex;gap:1.75rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.65);font-size:0.875rem;text-decoration:none;transition:color 0.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--cl)}
+.nav-cta{background:var(--cu);color:#fff;padding:0.5rem 1.25rem;border-radius:3px;font-size:0.875rem;font-weight:500;text-decoration:none}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:24px;height:1.5px;background:#fff}
+
+.hero{background:var(--dk);padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 75% 50%,rgba(27,95,122,0.5) 0%,transparent 65%)}
+.hero-in{max-width:1100px;margin:0 auto;position:relative;z-index:1}
+.eyebrow{font-size:0.7rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--cl);margin-bottom:0.75rem;display:flex;align-items:center;gap:8px}
+.eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--cl)}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.25rem,5vw,3.75rem);font-weight:700;color:#fff;line-height:1.08;margin-bottom:1rem}
+.hero h1 em{font-style:italic;color:var(--cl)}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,0.52);max-width:520px;line-height:1.75}
+
+.sec{padding:4rem 2rem}
+.in{max-width:1100px;margin:0 auto}
+.lbl{font-size:0.65rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--pl);margin-bottom:0.5rem;display:flex;align-items:center;gap:8px}
+.lbl::before{content:'';display:block;width:20px;height:1px;background:currentColor}
+.ttl{font-family:'Cormorant Garamond',serif;font-size:clamp(1.875rem,4vw,3rem);font-weight:700;color:var(--dk);line-height:1.1;margin-bottom:0.75rem}
+.ttl em{font-style:italic;color:var(--cu)}
+
+/* SALIDA CARD */
+.salidas{display:flex;flex-direction:column;gap:2rem;margin-top:2rem}
+.salida{background:var(--wh);border:1px solid var(--st);border-radius:8px;overflow:hidden;transition:box-shadow 0.3s}
+.salida:hover{box-shadow:0 8px 40px rgba(15,61,82,0.08)}
+.salida.agotado{opacity:0.65}
+.salida-header{display:grid;grid-template-columns:180px 1fr auto;gap:2rem;align-items:center;padding:2rem 2.5rem;border-bottom:1px solid var(--st)}
+.salida-fecha{text-align:center}
+.salida-mes{font-size:0.7rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--du)}
+.salida-dia{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:700;color:var(--dk);line-height:1}
+.salida-anio{font-size:0.8rem;color:var(--du)}
+.salida-info{}
+.salida-tipo{font-size:0.65rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--pl);margin-bottom:0.4rem}
+.salida-nombre{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:700;color:var(--dk);margin-bottom:0.3rem;line-height:1.1}
+.salida-ruta{font-size:0.845rem;color:var(--du);font-style:italic;margin-bottom:0.75rem}
+.tags{display:flex;gap:0.5rem;flex-wrap:wrap}
+.tag{font-size:0.65rem;font-weight:500;padding:0.25rem 0.65rem;border-radius:2px;text-transform:uppercase;letter-spacing:0.05em}
+.tag-dias{background:rgba(27,95,122,0.08);color:var(--pt)}
+.tag-dif{background:rgba(155,107,74,0.1);color:var(--cu)}
+.tag-temp{background:rgba(74,154,184,0.1);color:var(--pl)}
+.salida-plazas{text-align:center;min-width:120px}
+.plazas-num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:700;color:var(--dk);line-height:1}
+.plazas-lbl{font-size:0.7rem;color:var(--du);text-transform:uppercase;letter-spacing:0.08em}
+.plazas-bar{width:100%;height:4px;background:var(--st);border-radius:2px;margin-top:0.5rem;overflow:hidden}
+.plazas-fill{height:100%;border-radius:2px;background:var(--pt);transition:width 0.5s}
+.plazas-fill.lleno{background:#C0392B}
+.badge-disponible{display:inline-block;font-size:0.65rem;font-weight:500;padding:0.2rem 0.6rem;border-radius:2px;margin-top:0.4rem;background:rgba(42,122,64,0.1);color:#2A7A40;text-transform:uppercase;letter-spacing:0.06em}
+.badge-agotado{background:rgba(192,57,43,0.1);color:#C0392B}
+
+.salida-body{padding:2rem 2.5rem}
+.salida-grid{display:grid;grid-template-columns:1fr 340px;gap:3rem}
+.salida-desc{font-size:0.9375rem;color:var(--sl);line-height:1.75;margin-bottom:1.5rem}
+
+.incl-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.25rem;margin-bottom:1.5rem}
+.incl-item{font-size:0.845rem;color:var(--sl);display:flex;align-items:flex-start;gap:7px;padding:0.25rem 0}
+.incl-item svg{width:13px;height:13px;flex-shrink:0;margin-top:3px}
+.incl-item.si svg{color:#2A7A40}
+.incl-item.no svg{color:#C0392B}
+.incl-item.no{color:var(--du)}
+
+.info-box{background:rgba(27,95,122,0.04);border:1px solid rgba(27,95,122,0.1);border-radius:4px;padding:1rem;margin-bottom:1rem;font-size:0.845rem;color:var(--sl)}
+.info-box-title{font-size:0.65rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--pl);margin-bottom:0.4rem}
+.info-box.copper{background:rgba(155,107,74,0.04);border-color:rgba(155,107,74,0.15)}
+.info-box.copper .info-box-title{color:var(--cu)}
+
+/* FORMULARIO INSCRIPCION */
+.form-inscripcion{background:var(--ms);border:1px solid var(--st);border-radius:6px;padding:1.75rem}
+.form-title{font-family:'Cormorant Garamond',serif;font-size:1.375rem;font-weight:700;color:var(--dk);margin-bottom:0.25rem}
+.form-sub{font-size:0.8rem;color:var(--du);margin-bottom:1.25rem}
+.field{margin-bottom:0.75rem}
+.field label{display:block;font-size:0.75rem;font-weight:500;color:var(--sl);margin-bottom:0.3rem}
+.field input,.field select,.field textarea{width:100%;padding:0.65rem 0.875rem;background:var(--wh);border:1px solid var(--st);border-radius:3px;color:var(--ink);font-size:0.875rem;font-family:'DM Sans',sans-serif;outline:none;transition:border-color 0.2s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--pl)}
+.field textarea{resize:vertical;min-height:80px}
+.foto-check{display:flex;align-items:flex-start;gap:8px;margin-bottom:0.75rem;padding:0.65rem;background:rgba(27,95,122,0.04);border-radius:3px;border:1px solid rgba(27,95,122,0.1);font-size:0.8rem;color:var(--sl)}
+.foto-check input{margin-top:2px;flex-shrink:0;cursor:pointer}
+.foto-check label{cursor:pointer;line-height:1.5}
+.foto-check a{color:var(--pt);text-decoration:none}
+.btn-inscribir{width:100%;background:var(--cu);color:#fff;padding:0.875rem;border-radius:3px;border:none;font-size:0.9375rem;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background 0.2s}
+.btn-inscribir:hover{background:var(--cl)}
+.btn-inscribir:disabled{background:var(--du);cursor:not-allowed}
+.form-nota{font-size:0.72rem;color:var(--du);text-align:center;margin-top:0.5rem}
+
+/* NOTA MEDIA PENSION */
+.nota-mp{background:rgba(155,107,74,0.06);border:1px solid rgba(155,107,74,0.2);border-left:3px solid var(--cu);border-radius:0 4px 4px 0;padding:0.75rem 1rem;font-size:0.8125rem;color:var(--sl);margin-top:0.75rem;line-height:1.6}
+.nota-mp strong{color:var(--cu)}
+
+/* MODAL CONFIRMACION */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(10,25,35,0.7);z-index:500;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.open{display:flex}
+.modal{background:#fff;border-radius:8px;padding:2.5rem;max-width:480px;width:100%;text-align:center}
+.modal-icon{width:56px;height:56px;border-radius:50%;background:rgba(42,122,64,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem}
+.modal-icon svg{width:28px;height:28px;color:#2A7A40}
+.modal h3{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:700;color:var(--dk);margin-bottom:0.5rem}
+.modal p{font-size:0.9rem;color:var(--sl);line-height:1.7;margin-bottom:1.5rem}
+.modal-close{background:var(--cu);color:#fff;padding:0.75rem 2rem;border-radius:3px;border:none;font-size:0.9rem;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif}
+
+.foot{background:#0A2535;padding:2rem;text-align:center}
+.foot p{font-size:0.775rem;color:rgba(255,255,255,0.25);margin-bottom:0.3rem}
+.foot a{color:rgba(255,255,255,0.35);text-decoration:none}
+.foot a:hover{color:var(--cl)}
+.wa{position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,0.35);text-decoration:none;transition:transform 0.2s}
+.wa:hover{transform:scale(1.1)}
+.wa svg{width:26px;height:26px;color:#fff}
+
+@media(max-width:900px){.salida-header{grid-template-columns:1fr 1fr;}.salida-plazas{grid-column:1/-1;text-align:left;display:flex;gap:1rem;align-items:center}.salida-grid{grid-template-columns:1fr}.incl-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links,.nav-cta{display:none}.burger{display:flex}.salida-header{grid-template-columns:1fr}.sec{padding:3rem 1.25rem}.salida-body{padding:1.5rem}}
+</style>
+<!-- SEO -->
+<meta name="description" content="Sorties à la demande de Clas Tours : choisissez votre itinéraire, proposez votre date (minimum 2 personnes) et nous organisons la randonnée guidée en espagnol dans les Alpes suisses.">
+<link rel="canonical" href="https://clastours.ch/fr/clastours-calendario.html">
+<link rel="alternate" hreflang="es" href="https://clastours.ch/clastours-calendario.html">
+<link rel="alternate" hreflang="de" href="https://clastours.ch/de/clastours-calendario.html">
+<link rel="alternate" hreflang="en" href="https://clastours.ch/en/clastours-calendario.html">
+<link rel="alternate" hreflang="fr" href="https://clastours.ch/fr/clastours-calendario.html">
+<link rel="alternate" hreflang="x-default" href="https://clastours.ch/clastours-calendario.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clas Tours">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:title" content="Sorties à la demande – Clas Tours by Davila Quiroz">
+<meta property="og:description" content="Sorties à la demande de Clas Tours : choisissez votre itinéraire, proposez votre date (minimum 2 personnes) et nous organisons la randonnée guidée en espagnol dans les Alpes suisses.">
+<meta property="og:url" content="https://clastours.ch/fr/clastours-calendario.html">
+<meta property="og:image" content="https://clastours.ch/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}</style>
+<script>window.I18N={"js.alert.date": "Veuillez indiquer votre date souhaitée.", "js.alert.name_email": "Veuillez saisir votre nom et votre e-mail.", "js.alert.people": "Veuillez sélectionner le nombre de personnes.", "js.modal.sent": "Votre demande pour {salida} a bien été envoyée. Santiago vous contactera dans les 24 heures pour confirmer la date et organiser le paiement.", "js.yes": "Oui", "js.no": "Non", "js.wa.enroll_intro": "Bonjour Santiago, je souhaite m'inscrire à :", "js.wa.name": "Nom", "js.wa.email": "E-mail", "js.wa.whatsapp": "WhatsApp", "js.wa.date": "Date souhaitée", "js.wa.people": "Personnes", "js.wa.level": "Niveau", "js.wa.veg": "Végétarien", "js.wa.allergy": "Intolérance gluten/lactose", "js.wa.message": "Message", "js.wa.photos": "Autorisation photos", "js.wa.route": "Itinéraire", "js.wa.hello": "Bonjour Santiago,", "js.wa.interest": "Bonjour Santiago ! Je souhaite réserver une randonnée.", "js.alert.name_contact": "Veuillez saisir votre nom et au moins un moyen de contact.", "js.today": "AUJ.", "js.days": "DIM|LUN|MAR|MER|JEU|VEN|SAM", "js.wx.route_default": "Votre itinéraire", "js.wx.title": "Prévisions à 7 jours", "js.wx.source": "Modèle ICON · Open-Meteo", "js.wx.loading": "Chargement des données météorologiques…", "js.wx.footer1": "Données : modèle ICON (DWD) via", "js.wx.footer2": ". À titre indicatif : avant de partir, consultez les", "js.wx.footer3": "prévisions officielles de MétéoSuisse", "js.wx.reliable": "Plus fiable les 3 premiers jours", "js.wx.error": "Impossible de charger les données météorologiques. Veuillez recharger la page ou réessayer plus tard.", "js.sent.title": "Demande envoyée !", "js.sent.text": "Nous avons bien reçu votre message. Santiago vous répond dans les 24 heures.", "js.sent.close": "Compris", "js.sent.wa": "Écrire aussi par WhatsApp", "js.fail.title": "Nous n'avons pas pu envoyer votre message", "js.fail.text": "Un problème de connexion est survenu. Écrivez-nous directement par WhatsApp ou à info@clastours.ch."};</script>
+<script>window.CT={"endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec", "lang": "fr"};CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();return fetch(CT.endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)});};CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';o.innerHTML='<div class="ct-notice-box" role="dialog" aria-modal="true"><h3></h3><p></p><div class="ct-notice-btns"></div></div>';o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');if(waUrl){var a=document.createElement('a');a.href=waUrl;a.target='_blank';a.rel='noopener';a.className='ct-notice-wa';a.textContent=L('js.sent.wa');bt.appendChild(a);}var c=document.createElement('button');c.type='button';c.textContent=L('js.sent.close');c.onclick=function(){o.remove();};bt.appendChild(c);o.onclick=function(e){if(e.target===o)o.remove();};document.body.appendChild(o);};CT.submit=function(d,waUrl,opt){opt=opt||{};if(!CT.endpoint){window.open(waUrl,'_blank');if(opt.okCb)opt.okCb('wa');return;}if(opt.btn)opt.btn.disabled=true;CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);}).catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);}).then(function(){if(opt.btn)opt.btn.disabled=false;});};</script>
+</head>
+<body>
+
+<nav class="nav" id="nb">
+  <a href="index.html" class="logo">Clas Tours by Davila Quiroz<span>Marchez dans les Alpes suisses</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="clastours-caminatas-v4.html">Mes randonnées</a></li>
+    <li><a href="clastours-calendario.html" class="active">Calendrier</a></li>
+    <li><a href="clastours-nosotros.html">Qui suis-je</a></li>
+    <li><a href="clastours-contacto.html">Contact</a></li>
+    <li><a href="clastours-contacto.html#faq">Questions fréquentes</a></li>
+  </ul>
+  <div class="lang-switch" role="navigation" aria-label="Idioma / Sprache / Language / Langue"><a href="/clastours-calendario.html" hreflang="es" lang="es"><svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#003893"/><rect width="18" height="6" fill="#FCD116"/><rect y="9" width="18" height="3" fill="#CE1126"/></svg>ES</a><a href="/de/clastours-calendario.html" hreflang="de" lang="de"><svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#D52B1E"/><path d="M7.5 2.5h3v2.5h2.5v3h-2.5v2.5h-3V8H5V5h2.5z" fill="#fff"/></svg>DE</a><a href="/en/clastours-calendario.html" hreflang="en" lang="en"><svg class="fl" viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0l60 40M60 0L0 40" stroke="#C8102E" stroke-width="3"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="12"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="7"/></svg>EN</a><a href="/fr/clastours-calendario.html" hreflang="fr" lang="fr" class="active" aria-current="true"><svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#ED2939"/><rect width="12" height="12" fill="#fff"/><rect width="6" height="12" fill="#002395"/></svg>FR</a></div>
+  <a href="#salidas" class="nav-cta">Réserver →</a>
+  <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-in">
+    <div class="eyebrow">Sorties à la demande</div>
+    <h1>Proposez votre <em>date</em><br>et nous organisons la sortie</h1>
+    <p class="hero-sub">Nous partons à partir de 2 personnes, à la date qui vous convient le mieux. Petits groupes, guide en espagnol, sécurité avant tout.</p>
+  </div>
+</div>
+
+<section class="sec" id="salidas" style="background:var(--sn)">
+  <div class="in">
+    <div class="lbl">Itinéraires disponibles</div>
+    <h2 class="ttl">Sorties <em>à la demande</em></h2>
+
+    <div class="salidas">
+
+      <!-- SALIDA 1: CREUX DU VAN 30 MAYO -->
+      <div class="salida" id="s1">
+        <div class="salida-header">
+          <div class="salida-fecha">
+            <div class="salida-mes">Date</div>
+            <div class="salida-dia" style="font-size:1.35rem;line-height:1.2;padding:.6rem 0">À la demande</div>
+            <div class="salida-anio">1 jour</div>
+          </div>
+          <div class="salida-info">
+            <div class="salida-tipo">Itinéraire 02</div>
+            <div class="salida-nombre">Creux du Van</div>
+            <div class="salida-ruta">Boucle autour de l'amphithéâtre rocheux du Jura neuchâtelois · <a href="guia-creux-du-van.html" style="color:inherit;text-decoration:underline">Voir le guide</a></div>
+            <div class="tags">
+              <span class="tag tag-dias">1 jour</span>
+              <span class="tag tag-dif">T2 · Débutant</span>
+              <span class="tag tag-temp">Printemps</span>
+            </div>
+          </div>
+          <div class="salida-plazas">
+            <div class="plazas-num">2+</div>
+            <div class="plazas-lbl">personnes min.</div>
+            <div class="badge-disponible" style="margin-top:.6rem">Sur demande</div>
+          </div>
+        </div>
+        <div class="salida-body">
+          <div class="salida-grid">
+            <div>
+              <p class="salida-desc">Le Grand Canyon suisse, avec ses forêts et sa colonie de bouquetins — avec un peu de chance, vous les verrez sur les corniches ou traversant le sentier. Un amphithéâtre rocheux de 160 mètres entouré de nature. Parfait pour votre première grande randonnée en Suisse.</p>
+              <div class="incl-grid">
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Guide en espagnol toute la journée</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Planification et conseils préalables</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Instructions d'arrivée</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Transport (en sus)</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Repas (en sus)</div>
+              </div>
+              <div class="info-box">
+                <div class="info-box-title">Point de rendez-vous</div>
+                Gare de Noiraigue (NE) · Santiago vous envoie l'heure exacte à la confirmation
+              </div>
+              <div class="info-box">
+                <div class="info-box-title">Comment s'y rendre</div>
+                Train CFF jusqu'à Noiraigue. Depuis Berne ~1 h 20 · Depuis Zurich ~2 h
+              </div>
+            </div>
+            <div>
+              <div class="form-inscripcion">
+                <div class="form-title">S'inscrire</div>
+                <div class="form-sub">Creux du Van · Date à la demande · CHF 140/personne</div>
+                <div class="field"><label>Date souhaitée *</label><input type="text" id="s1-fecha" placeholder="Ex. : un samedi de juin, le 13 juin..."></div>
+                <div class="field"><label>Nom complet *</label><input type="text" id="s1-nombre" placeholder="Votre nom"></div>
+                <div class="field"><label>E-mail *</label><input type="email" id="s1-email" placeholder="vous@exemple.com"></div>
+                <div class="field"><label>WhatsApp</label><input type="tel" id="s1-wa" placeholder="+41 / +57 / +34..."></div>
+                <div class="field">
+                  <label>Nombre de personnes *</label>
+                  <select id="s1-personas">
+                    <option value="">Sélectionnez</option>
+                    <option value="2">2 personnes — CHF 280</option>
+                    <option value="3">3 personnes — CHF 420</option>
+                    <option value="4">4 personnes — CHF 560</option>
+                    <option value="5">5 personnes — CHF 700</option>
+                    <option value="6">6 personnes — CHF 840</option>
+                    <option value="7+">7 ou plus — tarif spécial groupes</option>
+                  </select>
+                </div>
+                <div class="field"><label>Message (facultatif)</label><textarea id="s1-msg" placeholder="Niveau d'expérience, questions, besoins particuliers..."></textarea></div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s1-foto">
+                  <label for="s1-foto">J'autorise l'utilisation de mes photos prises pendant l'activité à des fins promotionnelles. <a href="clastours-legal.html">Voir la politique →</a></label>
+                </div>
+                <button class="btn-inscribir" onclick="inscribir('s1','Creux du Van · à la demande')">Envoyer la demande →</button>
+                <p class="form-nota">Nous vous contactons en moins de 24 h · Sans engagement jusqu'à la confirmation du paiement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SALIDA 3: KANDERSTEG 26-27 JUNIO -->
+      <div class="salida" id="s3" style="border-color:var(--cu)">
+        <div class="salida-header">
+          <div class="salida-fecha">
+            <div class="salida-mes">Date</div>
+            <div class="salida-dia" style="font-size:1.35rem;line-height:1.2;padding:.6rem 0">À la demande</div>
+            <div class="salida-anio">2 jours</div>
+          </div>
+          <div class="salida-info">
+            <div class="salida-tipo">⭐ Itinéraire 01 · Expérience complète</div>
+            <div class="salida-nombre">Kandersteg avec nuit en cabane</div>
+            <div class="salida-ruta">Griesalp → Bluemisalphütte → Oeschinensee → Kandersteg · <a href="guia-kandersteg-bluemlisalphutte.html" style="color:inherit;text-decoration:underline">Voir le guide</a></div>
+            <div class="tags">
+              <span class="tag tag-dias">2 jours</span>
+              <span class="tag tag-dif">T3 · Intermédiaire</span>
+              <span class="tag tag-temp">Été</span>
+            </div>
+          </div>
+          <div class="salida-plazas">
+            <div class="plazas-num">2+</div>
+            <div class="plazas-lbl">personnes min.</div>
+            <div class="badge-disponible" style="margin-top:.6rem">Sur demande</div>
+          </div>
+        </div>
+        <div class="salida-body">
+          <div class="salida-grid">
+            <div>
+              <p class="salida-desc">L'expérience la plus complète de Clas Tours. Deux jours au cœur de l'Oberland bernois. Montée le vendredi par la vallée de Griesalp jusqu'à la Bluemisalphütte, nuit en cabane de montagne, puis le samedi descente par le lac d'Oeschinen jusqu'à Kandersteg.</p>
+              <div class="incl-grid">
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Guide en espagnol (2 jours complets)</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Nuit à la Bluemisalphütte</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Demi-pension incluse</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Thé de randonnée (1 litre)</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Transport (en sus)</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Boissons à la cabane (en sus)</div>
+              </div>
+              <div class="nota-mp">
+                <strong>La demi-pension à la cabane comprend :</strong> souper à 18 h 30 (menu en 3 services, boissons non comprises), petit-déjeuner et 1 litre de thé de randonnée. Supplément sans gluten/lactose : CHF 5.–
+              </div>
+              <div class="info-box">
+                <div class="info-box-title">Comment s'y rendre</div>
+                Train jusqu'à Reichenbach im Kandertal, puis CarPostal 220 jusqu'à Griesalp. Santiago vous envoie des instructions détaillées.
+              </div>
+            </div>
+            <div>
+              <div class="form-inscripcion">
+                <div class="form-title">S'inscrire</div>
+                <div class="form-sub">Kandersteg · Date à la demande · CHF 320/personne</div>
+                <div class="field"><label>Date souhaitée *</label><input type="text" id="s3-fecha" placeholder="Ex. : un samedi de juin, le 13 juin..."></div>
+                <div class="field"><label>Nom complet *</label><input type="text" id="s3-nombre" placeholder="Votre nom"></div>
+                <div class="field"><label>E-mail *</label><input type="email" id="s3-email" placeholder="vous@exemple.com"></div>
+                <div class="field"><label>WhatsApp</label><input type="tel" id="s3-wa" placeholder="+41 / +57 / +34..."></div>
+                <div class="field">
+                  <label>Nombre de personnes *</label>
+                  <select id="s3-personas">
+                    <option value="">Sélectionnez</option>
+                    <option value="2">2 personnes — CHF 640</option>
+                    <option value="3">3 personnes — CHF 960</option>
+                    <option value="4">4 personnes — CHF 1’280</option>
+                    <option value="5">5 personnes — CHF 1’600</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label>Y a-t-il des végétariens dans le groupe ?</label>
+                  <select id="s3-veg">
+                    <option value="no">Non</option>
+                    <option value="si">Oui (indiquer combien dans le message)</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label>Y a-t-il une intolérance au gluten/lactose ?</label>
+                  <select id="s3-alerg">
+                    <option value="no">Non</option>
+                    <option value="si">Oui — supplément CHF 5/personne (à indiquer dans le message)</option>
+                  </select>
+                </div>
+                <div class="field"><label>Message (facultatif)</label><textarea id="s3-msg" placeholder="Niveau d'expérience, besoins particuliers, questions..."></textarea></div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s3-foto">
+                  <label for="s3-foto">J'autorise l'utilisation de mes photos prises pendant l'activité à des fins promotionnelles. <a href="clastours-legal.html">Voir la politique →</a></label>
+                </div>
+                <button class="btn-inscribir" onclick="inscribir('s3','Kandersteg 2 jours · à la demande')">Envoyer la demande →</button>
+                <p class="form-nota">Minimum 2 personnes · Nous vous contactons en moins de 24 h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SALIDA 4: AUGSTMATTHORN 8 AGOSTO -->
+      <div class="salida" id="s4">
+        <div class="salida-header">
+          <div class="salida-fecha">
+            <div class="salida-mes">Date</div>
+            <div class="salida-dia" style="font-size:1.35rem;line-height:1.2;padding:.6rem 0">À la demande</div>
+            <div class="salida-anio">1 jour</div>
+          </div>
+          <div class="salida-info">
+            <div class="salida-tipo">Itinéraire 03</div>
+            <div class="salida-nombre">Augstmatthorn → Harderkulm</div>
+            <div class="salida-ruta">Lombachalp → Augstmatthorn → crête → Harderkulm → Interlaken</div>
+            <div class="tags">
+              <span class="tag tag-dias">1 jour</span>
+              <span class="tag tag-dif">T3 · Exigeant</span>
+              <span class="tag tag-temp">Été</span>
+            </div>
+          </div>
+          <div class="salida-plazas">
+            <div class="plazas-num">2+</div>
+            <div class="plazas-lbl">personnes min.</div>
+            <div class="badge-disponible" style="margin-top:.6rem">Sur demande</div>
+          </div>
+        </div>
+        <div class="salida-body">
+          <div class="salida-grid">
+            <div>
+              <p class="salida-desc">L'itinéraire le plus épique du catalogue. Une crête avec vue à 360° — le lac de Brienz turquoise à vos pieds et l'Eiger, le Mönch et la Jungfrau à l'horizon. L'été suisse à son meilleur : longues journées, vues dégagées et bouquetins sur les pentes.</p>
+              <div class="incl-grid">
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Guide en espagnol toute la journée</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Planification et conseils préalables</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Instructions d'arrivée</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Transport (en sus)</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Repas (en sus)</div>
+              </div>
+              <div class="info-box">
+                <div class="info-box-title">Point de rendez-vous · Interlaken West</div>
+                Rendez-vous à <strong>Interlaken West, gare</strong> à 10 h 00.<br><br>
+                🚌 De là, nous prenons ensemble le bus B106 → Habkern, Zäundli (10 h 04→10 h 23)<br>
+                🚌 Puis le bus alpin B107 → Lombachalp (10 h 30→10 h 55)<br><br>
+                ⚠️ <strong>Le dernier tronçon (bus alpin B107) entraîne un coût supplémentaire non inclus dans le prix :</strong><br>
+                CHF 11 adultes · CHF 7 enfants (6–16 ans) · CHF 5 chiens · <strong>En espèces uniquement</strong><br><br>
+                Vous terminez à Interlaken — itinéraire linéaire, vous ne revenez pas au point de départ.
+              </div>
+              <div class="info-box">
+                <div class="info-box-title">Important</div>
+                Itinéraire exigeant. Une bonne condition physique est requise, ainsi que l'absence de vertige prononcé. Consultez Santiago si vous avez des doutes sur le niveau.
+              </div>
+            </div>
+            <div>
+              <div class="form-inscripcion">
+                <div class="form-title">S'inscrire</div>
+                <div class="form-sub">Augstmatthorn · Date à la demande · CHF 150/personne</div>
+                <div class="field"><label>Date souhaitée *</label><input type="text" id="s4-fecha" placeholder="Ex. : un samedi de juin, le 13 juin..."></div>
+                <div class="field"><label>Nom complet *</label><input type="text" id="s4-nombre" placeholder="Votre nom"></div>
+                <div class="field"><label>E-mail *</label><input type="email" id="s4-email" placeholder="vous@exemple.com"></div>
+                <div class="field"><label>WhatsApp</label><input type="tel" id="s4-wa" placeholder="+41 / +57 / +34..."></div>
+                <div class="field">
+                  <label>Nombre de personnes *</label>
+                  <select id="s4-personas">
+                    <option value="">Sélectionnez</option>
+                    <option value="2">2 personnes — CHF 300</option>
+                    <option value="3">3 personnes — CHF 450</option>
+                    <option value="4">4 personnes — CHF 600</option>
+                    <option value="5">5 personnes — CHF 750</option>
+                    <option value="6">6 personnes — CHF 900</option>
+                  </select>
+                </div>
+                <div class="field"><label>Expérience préalable en randonnée *</label>
+                  <select id="s4-nivel">
+                    <option value="">Sélectionnez</option>
+                    <option>Débutant — peu de randonnées à ce jour</option>
+                    <option>Intermédiaire — itinéraires T2/T3 occasionnels</option>
+                    <option>Avancé — itinéraires T3 réguliers</option>
+                  </select>
+                </div>
+                <div class="field"><label>Message (facultatif)</label><textarea id="s4-msg" placeholder="Questions sur le niveau, besoins particuliers..."></textarea></div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s4-foto">
+                  <label for="s4-foto">J'autorise l'utilisation de mes photos prises pendant l'activité à des fins promotionnelles. <a href="clastours-legal.html">Voir la politique →</a></label>
+                </div>
+                <button class="btn-inscribir" onclick="inscribir('s4','Augstmatthorn · à la demande')">Envoyer la demande →</button>
+                <p class="form-nota">Nous vous contactons en moins de 24 h · Sans engagement jusqu'à la confirmation du paiement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SALIDA 6: RELOJES & CHOCOLATE -->
+      <div class="salida" id="s6">
+        <div class="salida-header">
+          <div class="salida-fecha">
+            <div class="salida-mes">Date</div>
+            <div class="salida-dia" style="font-size:1.35rem;line-height:1.2;padding:.6rem 0">À la demande</div>
+            <div class="salida-anio">1 jour</div>
+          </div>
+          <div class="salida-info">
+            <div class="salida-tipo">Itinéraire 04 · Culturel</div>
+            <div class="salida-nombre">Horlogerie &amp; Chocolat dans le Jura</div>
+            <div class="salida-ruta">Musée Longines (Saint-Imier) → vallée de la Suze → Camille Bloch (Courtelary) · <a href="clastours-caminatas-v4.html#r4" style="color:inherit;text-decoration:underline">Voir l'itinéraire</a></div>
+            <div class="tags">
+              <span class="tag tag-dias">1 jour</span>
+              <span class="tag tag-dif">T1 · Facile</span>
+              <span class="tag tag-temp">Toute l'année</span>
+            </div>
+          </div>
+          <div class="salida-plazas">
+            <div class="plazas-num">2+</div>
+            <div class="plazas-lbl">personnes min.</div>
+            <div class="badge-disponible" style="margin-top:.6rem">Sur demande</div>
+          </div>
+        </div>
+        <div class="salida-body">
+          <div class="salida-grid">
+            <div>
+              <p class="salida-desc">Une journée tranquille qui réunit deux icônes suisses : le Musée Longines, avec plus de 150 ans d'horlogerie, et la fabrique de chocolat Camille Bloch, celle du Ragusa. Entre les deux, une balade plate d'environ 3 heures dans la vallée de la Suze.</p>
+              <div class="incl-grid">
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Guide en espagnol toute la journée</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Planification et conseils préalables</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Instructions d'arrivée</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Transport (en sus)</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Entrée Camille Bloch (en sus)</div>
+              </div>
+              <div class="info-box">
+                <div class="info-box-title">Point de rendez-vous · Musée Longines</div>
+                Musée Longines, Saint-Imier (BE). Train depuis Biel/Bienne ou La Chaux-de-Fonds. Santiago vous envoie l'heure exacte à la confirmation.
+              </div>
+              <div class="info-box">
+                <div class="info-box-title">Jours et horaires</div>
+                Réalisable du mardi au vendredi : le Musée Longines est ouvert du lundi au vendredi (9 h–12 h et 13 h 30–17 h, entrée gratuite sur réservation préalable, que Santiago coordonne) et Camille Bloch est ouvert du mardi au dimanche (entrée CHF 11 adultes / CHF 7 enfants, paiement à la caisse). Horaires selon les sites de chaque lieu ; Santiago les confirme lors de la réservation.
+              </div>
+            </div>
+            <div>
+              <div class="form-inscripcion">
+                <div class="form-title">S'inscrire</div>
+                <div class="form-sub">Horlogerie &amp; Chocolat · Date à la demande · CHF 100/personne</div>
+                <div class="field"><label>Date souhaitée *</label><input type="text" id="s6-fecha" placeholder="Ex. : un samedi de juin, le 13 juin..."></div>
+                <div class="field"><label>Nom complet *</label><input type="text" id="s6-nombre" placeholder="Votre nom"></div>
+                <div class="field"><label>E-mail *</label><input type="email" id="s6-email" placeholder="vous@exemple.com"></div>
+                <div class="field"><label>WhatsApp</label><input type="tel" id="s6-wa" placeholder="+41 / +57 / +34..."></div>
+                <div class="field">
+                  <label>Nombre de personnes *</label>
+                  <select id="s6-personas">
+                    <option value="">Sélectionnez</option>
+                    <option value="2">2 personnes — CHF 200</option>
+                    <option value="3">3 personnes — CHF 300</option>
+                    <option value="4">4 personnes — CHF 400</option>
+                    <option value="5">5 personnes — CHF 500</option>
+                    <option value="6">6 personnes — CHF 600</option>
+                    <option value="7+">7 ou plus — tarif spécial groupes</option>
+                  </select>
+                </div>
+                <div class="field"><label>Message (facultatif)</label><textarea id="s6-msg" placeholder="Questions, besoins particuliers, autre date possible..."></textarea></div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s6-foto">
+                  <label for="s6-foto">J'autorise l'utilisation de mes photos prises pendant l'activité à des fins promotionnelles. <a href="clastours-legal.html">Voir la politique →</a></label>
+                </div>
+                <button class="btn-inscribir" onclick="inscribir('s6','Horlogerie & Chocolat · à la demande')">Envoyer la demande →</button>
+                <p class="form-nota">Nous vous contactons en moins de 24 h · Sans engagement jusqu'à la confirmation du paiement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL CONFIRMACION -->
+<div class="modal-overlay" id="modal-confirm">
+  <div class="modal">
+    <div class="modal-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+    <h3>Demande envoyée !</h3>
+    <p id="modal-texto">Votre demande d'inscription a bien été envoyée. Santiago vous contactera dans les 24 heures pour confirmer la date et organiser le paiement.</p>
+    <button class="modal-close" onclick="document.getElementById('modal-confirm').classList.remove('open')">Compris</button>
+  </div>
+</div>
+
+<div class="foot">
+  <p>© 2025 Clas Tours by Davila Quiroz · Ipsach, Berne, Suisse</p>
+  <p><a href="mailto:info@clastours.ch">info@clastours.ch</a> · <a href="https://wa.me/41774603641" target="_blank">(+41) 077 460 36 41</a> · <a href="clastours-legal.html">Conditions générales</a></p>
+  <p style="margin-top:0.5rem">© Photographies : Santiago Davila Quiroz — Tous droits réservés. Toute reproduction sans autorisation écrite de l'auteur est expressément interdite.</p>
+</div>
+
+<a href="https://wa.me/41774603641" class="wa" target="_blank">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+window.addEventListener('scroll',function(){
+  document.getElementById('nb').style.padding=window.scrollY>50?'0.6rem 2rem':'1rem 2rem';
+});
+function toggleMenu(){
+  var l=document.querySelector('.nav-links');
+  var open=l.style.display==='flex';
+  l.style.cssText=open?'':'display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:rgba(15,61,82,0.97);padding:1.25rem 2rem;gap:1rem;';
+}
+
+function L(k){return (window.I18N&&window.I18N[k])||k;}
+function inscribir(id, salida) {
+  var nombre = document.getElementById(id+'-nombre').value.trim();
+  var email = document.getElementById(id+'-email').value.trim();
+  var wa = document.getElementById(id+'-wa') ? document.getElementById(id+'-wa').value.trim() : '';
+  var personas = document.getElementById(id+'-personas').value;
+  var msg = document.getElementById(id+'-msg') ? document.getElementById(id+'-msg').value.trim() : '';
+  var foto = document.getElementById(id+'-foto').checked;
+  var fecha = document.getElementById(id+'-fecha') ? document.getElementById(id+'-fecha').value.trim() : '';
+
+  if (!fecha) {
+    alert(L('js.alert.date'));
+    return;
+  }
+  if (!nombre || !email) {
+    alert(L('js.alert.name_email'));
+    return;
+  }
+  if (!personas) {
+    alert(L('js.alert.people'));
+    return;
+  }
+
+  var nivel = document.getElementById(id+'-nivel') ? document.getElementById(id+'-nivel').value : '';
+  var veg = document.getElementById(id+'-veg') ? document.getElementById(id+'-veg').value : '';
+  var alerg = document.getElementById(id+'-alerg') ? document.getElementById(id+'-alerg').value : '';
+
+  var enc = encodeURIComponent;
+  var yes = L('js.yes'), no = L('js.no');
+  var waMsg = L('js.wa.enroll_intro') + '%0A%0A' + enc(salida) + '%0A%0A' + L('js.wa.name') + ': ' + enc(nombre) + '%0A' + L('js.wa.email') + ': ' + enc(email);
+  if (wa) waMsg += '%0A' + L('js.wa.whatsapp') + ': ' + enc(wa);
+  if (fecha) waMsg += '%0A' + L('js.wa.date') + ': ' + enc(fecha);
+  waMsg += '%0A' + L('js.wa.people') + ': ' + enc(personas);
+  if (nivel) waMsg += '%0A' + L('js.wa.level') + ': ' + enc(nivel);
+  if (veg && veg !== 'no') waMsg += '%0A' + L('js.wa.veg') + ': ' + yes;
+  if (alerg && alerg !== 'no') waMsg += '%0A' + L('js.wa.allergy') + ': ' + yes;
+  if (msg) waMsg += '%0A' + L('js.wa.message') + ': ' + enc(msg);
+  waMsg += '%0A' + L('js.wa.photos') + ': ' + (foto ? yes : no);
+  var waUrl = 'https://wa.me/41774603641?text=' + waMsg;
+  var okText = L('js.modal.sent').replace('{salida}', salida);
+  var btn = document.querySelector('button[onclick^="inscribir(\''+id+'\'"]');
+  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto}, waUrl, {btn:btn, okCb:function(){
+    document.getElementById('modal-texto').textContent = okText;
+    document.getElementById('modal-confirm').classList.add('open');
+  }});
+}
+</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 # clastours.ch
-Sitio web Clas Tours, en español (raíz), alemán (`/de/`) e inglés (`/en/`).
+Sitio web Clas Tours, en español (raíz), alemán (`/de/`), inglés (`/en/`) y francés (`/fr/`).
 
 ## Cómo se edita el sitio
 
@@ -11,7 +11,7 @@ La fuente está en `src/`:
 | Un texto (en español) | `src/i18n/es.json` |
 | Diseño, estructura, scripts | `src/pages/*.html` |
 | Precios (CHF) | `src/data.json` (se propagan a todas las páginas e idiomas) |
-| Traducciones | `src/i18n/de.json`, `src/i18n/en.json` |
+| Traducciones | `src/i18n/de.json`, `src/i18n/en.json`, `src/i18n/fr.json` |
 
 Después de editar, desde la raíz del repo:
 
@@ -22,8 +22,8 @@ python3 build.py --status   # lista los textos sin traducir o desactualizados
 
 ### Flujo cuando cambias un texto
 1. Cambias el texto en `src/i18n/es.json` (o la plantilla en `src/pages/`).
-2. Corres `python3 build.py --status`: marca como **desactualizados** los textos de DE/EN cuyo original en español cambió.
-3. Se traducen solo esos textos y se importan con `python3 build.py --import de archivo.json` (y `en`).
+2. Corres `python3 build.py --status`: marca como **desactualizados** los textos de DE/EN/FR cuyo original en español cambió.
+3. Se traducen solo esos textos y se importan con `python3 build.py --import de archivo.json` (y `en`, `fr`).
 4. `python3 build.py` y commit de todo (fuente + archivos generados).
 
 Mientras una traducción falte o esté desactualizada, esa página muestra el texto en español como respaldo, nunca un hueco.
