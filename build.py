@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Generador del sitio multilingüe (es en la raíz, de/ y en/).
+"""Generador del sitio multilingüe (es en la raíz, de/, en/ y fr/).
 
 Fuente de verdad:
   src/pages/*.html        plantillas (diseño, estructura, JS) con marcadores {{t:clave}}
   src/i18n/es.json        textos en español (clave -> texto)
   src/i18n/de.json        traducciones al alemán  (clave -> {"t": texto, "s": hash del texto es)
   src/i18n/en.json        traducciones al inglés
+  src/i18n/fr.json        traducciones al francés
   src/data.json           datos compartidos (precios)
 
 Uso:
@@ -19,11 +20,11 @@ import json, os, re, sys, html, hashlib
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, 'src')
 SITE = 'https://clastours.ch'
-LANGS = ['es', 'de', 'en']
+LANGS = ['es', 'de', 'en', 'fr']
 PAGES = ['index', 'clastours-caminatas-v4', 'clastours-calendario', 'clastours-contacto',
          'clastours-nosotros', 'clastours-legal', 'guia-creux-du-van', 'guia-kandersteg-bluemlisalphutte']
-LOCALE = {'es': 'es_LA', 'de': 'de_CH', 'en': 'en_US'}
-THOUSANDS = {'es': '.', 'de': '’', 'en': ','}
+LOCALE = {'es': 'es_LA', 'de': 'de_CH', 'en': 'en_US', 'fr': 'fr_CH'}
+THOUSANDS = {'es': '.', 'de': '’', 'en': ',', 'fr': '’'}
 
 def load(p, default=None):
     p = os.path.join(SRC, p)
@@ -59,6 +60,7 @@ FLAGS = {
  'es': '<svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#003893"/><rect width="18" height="6" fill="#FCD116"/><rect y="9" width="18" height="3" fill="#CE1126"/></svg>',
  'de': '<svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#D52B1E"/><path d="M7.5 2.5h3v2.5h2.5v3h-2.5v2.5h-3V8H5V5h2.5z" fill="#fff"/></svg>',
  'en': '<svg class="fl" viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0l60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0l60 40M60 0L0 40" stroke="#C8102E" stroke-width="3"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="12"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="7"/></svg>',
+ 'fr': '<svg class="fl" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#ED2939"/><rect width="12" height="12" fill="#fff"/><rect width="6" height="12" fill="#002395"/></svg>',
 }
 
 # Envío de solicitudes: va a un script de Google (hoja + emails). Sin endpoint configurado, cae al WhatsApp de siempre.
@@ -114,7 +116,7 @@ def render(page, lang, S, data, plain=False):
     cur = re.search(r'<link rel="canonical" href="%s/([^"]*)">' % re.escape(SITE), t)
     path = cur.group(1) if cur else ''
     def lurl(l): return '/' + ('' if l == 'es' else l + '/') + path
-    sw = '<div class="lang-switch" role="navigation" aria-label="Idioma / Sprache / Language">' + ''.join(
+    sw = '<div class="lang-switch" role="navigation" aria-label="Idioma / Sprache / Language / Langue">' + ''.join(
         '<a href="%s" hreflang="%s" lang="%s"%s>%s%s</a>' % (lurl(l), l, l, ' class="active" aria-current="true"' if l == lang else '', FLAGS[l], l.upper()) for l in LANGS) + '</div>'
     css = '<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}' + CT_CSS + '</style>\n'
     if re.search(r'<a [^>]*class="(?:ct-)?nav-cta"', t):
@@ -123,7 +125,7 @@ def render(page, lang, S, data, plain=False):
         t = t.replace('</nav>', sw + '\n</nav>', 1)
     t = t.replace('</head>', css + inject + '</head>', 1)
     if lang != 'es':
-        # rutas de recursos (imágenes, etc.) relativas -> absolutas, porque las páginas viven en /de/ y /en/
+        # rutas de recursos (imágenes, etc.) relativas -> absolutas, porque las páginas viven en /de/, /en/ y /fr/
         def abs_asset(m):
             attr, q, val = m.group(1), m.group(2), m.group(3)
             if re.match(r'(?:[a-z]+:|//|/|#|\{)', val) or val.endswith('.html') or '.html#' in val or val == '': return m.group(0)
@@ -153,14 +155,14 @@ def report(S):
     return ok
 
 def build_sitemap():
-    """Regenera sitemap.xml: cada URL en español con sus alternativas /de/ y /en/ (hreflang)."""
+    """Regenera sitemap.xml: cada URL en español con sus alternativas /de/, /en/ y /fr/ (hreflang)."""
     p = os.path.join(ROOT, 'sitemap.xml')
     xml = open(p, encoding='utf-8').read()
     ents = re.findall(r'<url>\s*<loc>([^<]+)</loc>(.*?)</url>', xml, flags=re.S)
     seen, rows = set(), []
     for loc, rest in ents:
         path = loc[len(SITE) + 1:]
-        if path.startswith(('de/', 'en/')): continue
+        if path.startswith(('de/', 'en/', 'fr/')): continue
         if path in seen: continue
         seen.add(path)
         lm = re.search(r'<lastmod>[^<]+</lastmod>', rest); pr = re.search(r'<priority>[^<]+</priority>', rest)

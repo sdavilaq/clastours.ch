@@ -6,7 +6,7 @@
 2. El sitio manda los datos a un script de Google (gratis) que:
    - añade una fila a tu hoja de cálculo **Solicitudes**,
    - te envía un email a `info@clastours.ch` con todos los datos (si respondes ese email, le respondes al cliente),
-   - le envía al cliente un acuse de recibo automático en su idioma (ES, DE o EN). Dice claramente que **no** es una reserva confirmada.
+   - le envía al cliente un acuse de recibo automático en su idioma (ES, DE, EN o FR). Dice claramente que **no** es una reserva confirmada.
 3. Si falla el envío, a la persona se le muestra un aviso con un botón para escribirte por WhatsApp. Nadie se pierde.
 4. Mientras el script no esté activado, los formularios siguen funcionando como antes (abren WhatsApp).
 

@@ -4,7 +4,7 @@
  * Qué hace cada vez que alguien envía un formulario del sitio:
  *  1. Guarda una fila en la hoja "Solicitudes"
  *  2. Te manda un email a OWNER_EMAIL con todos los datos (responder = responder al cliente)
- *  3. Le manda al cliente un email automático, en su idioma (ES/DE/EN), diciendo que recibimos la solicitud
+ *  3. Le manda al cliente un email automático, en su idioma (ES/DE/EN/FR), diciendo que recibimos la solicitud
  *
  * Los emails salen desde info@clastours.ch si esa dirección está configurada como alias "Enviar como" en la
  * cuenta de Gmail que ejecuta el script (ver GUIA.md, paso A). Si no, salen desde la cuenta de Gmail.
@@ -76,7 +76,7 @@ function clean_(d) {
     name: s(d.name, 120), email: s(d.email, 160), whatsapp: s(d.whatsapp, 40), route: s(d.route, 160),
     date: s(d.date, 120), people: s(d.people, 40), level: s(d.level, 80), message: s(d.message, 2000),
     vegetarian: !!d.vegetarian, allergy: !!d.allergy, photos: !!d.photos,
-    lang: ['es', 'de', 'en'].indexOf(d.lang) >= 0 ? d.lang : 'es', source: s(d.source, 30)
+    lang: ['es', 'de', 'en', 'fr'].indexOf(d.lang) >= 0 ? d.lang : 'es', source: s(d.source, 30)
   };
   if (!out.name) return null;
   if (!out.email && !out.whatsapp) return null;
@@ -132,6 +132,16 @@ var TEXTS = {
     wa: 'If it is urgent, message me on WhatsApp:',
     bye: 'Best regards,', sign: 'Santiago · Clas Tours',
     route: 'Tour', date: 'Date', people: 'People', msg: 'Message'
+  },
+  fr: {
+    subject: 'Nous avons bien reçu votre demande · Clas Tours',
+    hi: 'Bonjour {name},',
+    body: 'Merci de votre message. Nous avons bien reçu votre demande et je vous réponds dans les 24 heures pour confirmer la date et les détails.',
+    sum: 'Voici ce que nous avons reçu :',
+    note: 'Important : ceci est uniquement un accusé de réception, et non une réservation confirmée. Les sorties ont lieu à partir de 2 personnes ; la réservation est confirmée lorsque je vous le confirme par écrit et que le paiement est convenu.',
+    wa: 'Si c\'est urgent, écrivez-moi par WhatsApp :',
+    bye: 'Cordiales salutations,', sign: 'Santiago · Clas Tours',
+    route: 'Itinéraire', date: 'Date', people: 'Personnes', msg: 'Message'
   }
 };
 
