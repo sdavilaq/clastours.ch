@@ -18,6 +18,50 @@ var WHATSAPP    = 'https://wa.me/41774603641';
 var HEADERS = ['Recibida', 'Estado', 'Fecha pedida', 'Ruta', 'Personas', 'Nombre', 'Email', 'WhatsApp',
                'Nivel', 'Vegetariano', 'Gluten/lactosa', 'Mensaje', 'Fotos OK', 'Idioma', 'Origen', 'Notas'];
 
+// Límites diarios: protegen la cuota de Gmail (~100 correos/día) y evitan que alguien use el formulario para spam.
+// Lo que pase de estos topes se ignora en silencio (no se guarda ni se envía).
+var LIMITS = { rowsPerDay: 60, autoRepliesPerDay: 30, autoRepliesPerEmail: 2 };
+var TZ = 'Europe/Zurich';
+
+// Cuenta usos por día en las propiedades del script; devuelve false si ya se llegó al tope
+function bump_(key, max) {
+  var props = PropertiesService.getScriptProperties();
+  var day = Utilities.formatDate(new Date(), TZ, 'yyyyMMdd');
+  var k = 'n_' + day + '_' + key;
+  var n = Number(props.getProperty(k) || 0);
+  if (n >= max) return false;
+  props.setProperty(k, String(n + 1));
+  return true;
+}
+
+// Borra los contadores de días anteriores
+function cleanup_() {
+  var props = PropertiesService.getScriptProperties();
+  var day = Utilities.formatDate(new Date(), TZ, 'yyyyMMdd');
+  var all = props.getProperties();
+  for (var k in all) { if (k.indexOf('n_') === 0 && k.indexOf('n_' + day + '_') !== 0) props.deleteProperty(k); }
+}
+
+function hash_(txt) {
+  return Utilities.computeDigest(Utilities.DigestAlgorithm.MD5, String(txt).toLowerCase()).map(function (b) {
+    return ('0' + (b & 0xFF).toString(16)).slice(-2);
+  }).join('');
+}
+
+// Escribe la fila como TEXTO: así nada que empiece por = + - @ se ejecuta como fórmula (y el "+" del teléfono se conserva)
+function appendSafe_(sh, vals) {
+  var lock = LockService.getScriptLock();
+  lock.waitLock(15000);
+  try {
+    var row = sh.getLastRow() + 1;
+    var r = sh.getRange(row, 1, 1, vals.length);
+    r.setNumberFormat('@');
+    r.setValues([vals.map(function (v) { return v instanceof Date ? Utilities.formatDate(v, TZ, 'yyyy-MM-dd HH:mm') : String(v); })]);
+  } finally {
+    lock.releaseLock();
+  }
+}
+
 function doGet() {
   return ContentService.createTextOutput('Clas Tours · formulario activo');
 }
@@ -28,14 +72,17 @@ function doPost(e) {
     d = clean_(d);
     if (!d) return ok_();                       // vacío o sospechoso: se ignora en silencio
 
-    var sheet = sheet_();
-    sheet.appendRow([
+    if (!bump_('rows', LIMITS.rowsPerDay)) return ok_();   // demasiadas solicitudes hoy: se ignora
+    if (Math.random() < 0.05) cleanup_();
+
+    appendSafe_(sheet_(), [
       new Date(), 'Nueva', d.date, d.route, d.people, d.name, d.email, d.whatsapp,
       d.level, d.vegetarian ? 'Sí' : '', d.allergy ? 'Sí' : '', d.message, d.photos ? 'Sí' : 'No', d.lang, d.source, ''
     ]);
 
     notifyOwner_(d);
-    if (d.email) autoReply_(d);
+    // acuse al cliente: máx. 2 por email al día y 30 en total (evita usar el formulario para mandar spam a terceros)
+    if (d.email && (d.email.toLowerCase() === OWNER_EMAIL || bump_('em_' + hash_(d.email), LIMITS.autoRepliesPerEmail)) && bump_('auto', LIMITS.autoRepliesPerDay)) autoReply_(d);
   } catch (err) {
     try { MailApp.sendEmail(OWNER_EMAIL, 'Error en el formulario de clastours.ch', String(err) + '\n\n' + (e && e.postData ? e.postData.contents : '')); } catch (x) {}
   }
@@ -72,11 +119,12 @@ function sheet_() {
 // Valida y recorta los datos (el endpoint es público: cualquiera puede llamarlo)
 function clean_(d) {
   function s(v, n) { return String(v == null ? '' : v).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '').trim().substring(0, n); }
+  function one(v, n) { return s(v, n).replace(/[\r\n\t]+/g, ' '); }
   var out = {
-    name: s(d.name, 120), email: s(d.email, 160), whatsapp: s(d.whatsapp, 40), route: s(d.route, 160),
-    date: s(d.date, 120), people: s(d.people, 40), level: s(d.level, 80), message: s(d.message, 2000),
+    name: one(d.name, 120), email: one(d.email, 160), whatsapp: one(d.whatsapp, 40), route: one(d.route, 160),
+    date: one(d.date, 120), people: one(d.people, 40), level: one(d.level, 80), message: s(d.message, 2000),
     vegetarian: !!d.vegetarian, allergy: !!d.allergy, photos: !!d.photos,
-    lang: ['es', 'de', 'en', 'fr'].indexOf(d.lang) >= 0 ? d.lang : 'es', source: s(d.source, 30)
+    lang: ['es', 'de', 'en', 'fr'].indexOf(d.lang) >= 0 ? d.lang : 'es', source: one(d.source, 30)
   };
   if (!out.name) return null;
   if (!out.email && !out.whatsapp) return null;
@@ -158,9 +206,9 @@ function sigText_() { return SIG.lines.join('\n'); }
 function sigHtml_() {
   return '<div style="margin-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#1a2a33">' +
     '<b>' + SIG.lines[0] + '<br>' + SIG.lines[1] + '</b><br><i>' + SIG.lines[2] + '</i><br>' +
-    '\uD83D\uDCCD ' + SIG.lines[3] + '<br>\uD83D\uDCDE ' + SIG.lines[4] + '<br>' +
-    '\u2709\uFE0F <a href="mailto:info@clastours.ch">info@clastours.ch</a><br>' +
-    '\uD83C\uDF10 <a href="https://www.clastours.ch">www.clastours.ch</a> | \uD83D\uDCF8 <a href="https://www.instagram.com/clastours">@clastours</a>' +
+    '&#128205; ' + SIG.lines[3] + '<br>&#128222; ' + SIG.lines[4] + '<br>' +
+    '&#9993; <a href="mailto:info@clastours.ch">info@clastours.ch</a><br>' +
+    '&#127760; <a href="https://www.clastours.ch">www.clastours.ch</a> | &#128248; <a href="https://www.instagram.com/clastours">@clastours</a>' +
     (LOGO_URL ? '<br><img src="' + LOGO_URL + '" alt="Clas Tours" width="320" style="margin-top:8px;border:0">' : '') + '</div>';
 }
 
