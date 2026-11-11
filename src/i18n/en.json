@@ -3930,5 +3930,61 @@
  "legal.art10-rgpd": {
   "t": "Clients in the EU/EEA: to the extent the General Data Protection Regulation (GDPR) applies, the legal bases are performance of the contract or of pre-contractual steps (Art. 6(1)(b) GDPR), consent for health data, email news and photographs (Art. 6(1)(a) and Art. 9(2)(a)) and legal obligations such as bookkeeping (Art. 6(1)(c)). In addition to the rights above, the client may request restriction of processing and data portability, object to processing, withdraw consent at any time and lodge a complaint with the data protection authority of their country; in Switzerland, the competent authority is the Federal Data Protection and Information Commissioner (FDPIC). Controller: Santiago Davila Quiroz (contact details in Art. 1).",
   "s": "533fff45"
+ },
+ "contacto.faq-ruta-q": {
+  "t": "Can you change the route if the weather is bad?",
+  "s": "07a7c28c"
+ },
+ "contacto.faq-ruta-a": {
+  "t": "Yes. If the planned route is not safe that day, I will suggest an equivalent alternative in the same area or a different date. If I end up cancelling for safety reasons, you choose between rescheduling at no cost or a full refund.",
+  "s": "227e685f"
+ },
+ "contacto.faq-guia-q": {
+  "t": "Will you always be my guide?",
+  "s": "7217d69a"
+ },
+ "contacto.faq-guia-a": {
+  "t": "Yes, I lead every outing personally. Only if I fall ill or have an accident would I suggest another qualified guide I trust, and I would let you know as soon as possible.",
+  "s": "f8508b94"
+ },
+ "contacto.faq-plan-q": {
+  "t": "Can we change the plan during the hike?",
+  "s": "e0868ac1"
+ },
+ "contacto.faq-plan-a": {
+  "t": "Of course, if it is safe: a longer break, the lake instead of the viewpoint, whatever the group prefers. The only thing that is not negotiable is safety: if a steep slope, snow or a storm advise against it, the decision is mine and I will explain why.",
+  "s": "1a8d43c1"
+ },
+ "contacto.faq-fotos-q": {
+  "t": "I love taking photos – will there be time?",
+  "s": "1dd9b1b2"
+ },
+ "contacto.faq-fotos-a": {
+  "t": "Yes, there are always photo stops at the best spots. If the pace puts catching the train or descending in good light at risk, I will tell you and we will adjust the plan together.",
+  "s": "9bac9a6b"
+ },
+ "contacto.faq-salud-q": {
+  "t": "Why do you ask about my health and fitness?",
+  "s": "94ffccea"
+ },
+ "contacto.faq-salud-a": {
+  "t": "So I can choose the right pace and route and guide you safely. Tell me honestly about injuries, allergies or relevant medication: if something important is left out and the hike has to be cut short because of it, the price is still due.",
+  "s": "aafd0549"
+ },
+ "contacto.faq-cumbre-q": {
+  "t": "What if we turn back before reaching the summit?",
+  "s": "9a6ea963"
+ },
+ "contacto.faq-cumbre-a": {
+  "t": "The price is the same. What I guarantee is careful guiding, not reaching the summit: if turning back is the safest choice, we turn back.",
+  "s": "d909c7ad"
+ },
+ "contacto.faq-abandono-q": {
+  "t": "What if I want to stop halfway through the hike?",
+  "s": "faf54d96"
+ },
+ "contacto.faq-abandono-a": {
+  "t": "I will walk you back, or take you to a safe point with public transport, but the full price is due: the day was already reserved for you.",
+  "s": "8a3333e5"
  }
 }
