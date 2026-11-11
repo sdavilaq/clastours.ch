@@ -66,7 +66,11 @@ FLAGS = {
 # Envío de solicitudes: va a un script de Google (hoja + emails). Sin endpoint configurado, cae al WhatsApp de siempre.
 CT_JS = (
  "CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();"
- "return fetch(CT.endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)});};"
+ # Se lee la respuesta del script (sin 'no-cors'): solo cuenta como enviado si responde {ok:true} (o el 'ok' del script antiguo).
+ # Content-Type text/plain = petición simple, sin preflight; Apps Script responde con CORS abierto tras la redirección.
+ "return fetch(CT.endpoint,{method:'POST',redirect:'follow',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)})"
+ ".then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.text();})"
+ ".then(function(t){t=(t||'').trim();if(t==='ok')return;var j=null;try{j=JSON.parse(t);}catch(e){}if(!j||j.ok!==true)throw new Error('rechazada');});};"
  "CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';"
  "o.innerHTML='<div class=\"ct-notice-box\" role=\"dialog\" aria-modal=\"true\"><h3></h3><p></p><div class=\"ct-notice-btns\"></div></div>';"
  "o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');"
@@ -212,9 +216,10 @@ def main():
         json.dump(cur, open(os.path.join(SRC, 'i18n/%s.json' % lang), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         print(lang, 'importadas', len(new)); return
     if a[:1] == ['--status']:
-        report(S); return
+        sys.exit(0 if report(S) else 1)
     plain = a[:1] == ['--plain']
     langs = ['es'] if plain else LANGS
+    terms_ok = True
     for lang in langs:
         for p in PAGES:
             out = render(p, lang, S, data, plain)
@@ -223,10 +228,14 @@ def main():
                 open(os.path.join(out_dir, p + '.html'), 'w', encoding='utf-8').write(out)
             else:
                 open(outpath(p, lang), 'w', encoding='utf-8').write(out)
-                if p == 'clastours-legal': terms_archive(out, lang, data)
+                if p == 'clastours-legal' and not terms_archive(out, lang, data): terms_ok = False
     if not plain:
         build_sitemap()
-        report(S)
+        ok = report(S)
+        if not (ok and terms_ok):
+            print('\nBUILD FALLIDO: no publiques así. ' + ('Hay traducciones que faltan o están desactualizadas (esas páginas mostrarían texto en español o una traducción vieja). ' if not ok else '')
+                  + ('Los T&C cambiaron sin subir la versión. ' if not terms_ok else '') + 'Corrige y vuelve a ejecutar python3 build.py.')
+            sys.exit(1)
 
 if __name__ == '__main__':
     main()

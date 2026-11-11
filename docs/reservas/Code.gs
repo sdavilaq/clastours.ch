@@ -5,6 +5,7 @@
  *  1. Guarda una fila en la hoja "Solicitudes"
  *  2. Te manda un email a OWNER_EMAIL con todos los datos (responder = responder al cliente)
  *  3. Le manda al cliente un email automático, en su idioma (ES/DE/EN/FR), diciendo que recibimos la solicitud
+ *  4. Le responde al sitio {ok:true} o {ok:false}: con false (o sin respuesta) el sitio ofrece WhatsApp al cliente
  *
  * Los emails salen desde info@clastours.ch si esa dirección está configurada como alias "Enviar como" en la
  * cuenta de Gmail que ejecuta el script (ver GUIA.md, paso A). Si no, salen desde la cuenta de Gmail.
@@ -14,13 +15,14 @@
 
 var OWNER_EMAIL = 'info@clastours.ch';
 var SHEET_NAME  = 'Solicitudes';
+var SHEET_ID    = '';   // ID de la hoja de cálculo (lo que va entre /d/ y /edit en su dirección). Vacío = la hoja a la que está ligado el script
 var WHATSAPP    = 'https://wa.me/41774603641';
 var HEADERS = ['Recibida', 'Estado', 'Fecha pedida', 'Ruta', 'Personas', 'Nombre', 'Email', 'WhatsApp',
                'Nivel', 'Vegetariano', 'Gluten/lactosa', 'Mensaje', 'Fotos OK', 'Idioma', 'Origen', 'Notas', 'T&C aceptados', 'Novedades OK'];
 
 // Límites diarios: protegen la cuota de Gmail (~100 correos/día) y evitan que alguien use el formulario para spam.
-// Lo que pase de estos topes se ignora en silencio (no se guarda ni se envía).
-var LIMITS = { rowsPerDay: 60, autoRepliesPerDay: 30, autoRepliesPerEmail: 2 };
+// Lo que pase de estos topes no se guarda ni se envía; el sitio recibe ok:false y le ofrece al cliente escribir por WhatsApp.
+var LIMITS = { rowsPerDay: 60, autoRepliesPerDay: 30, autoRepliesPerEmail: 2, errorMailsPerDay: 5 };
 var TZ = 'Europe/Zurich';
 
 // Cuenta usos por día en las propiedades del script; devuelve false si ya se llegó al tope
@@ -66,13 +68,13 @@ function doGet() {
   return ContentService.createTextOutput('Clas Tours · formulario activo');
 }
 
+// Respuesta al sitio: {ok:true} solo si la solicitud quedó guardada y se te avisó por correo.
+// Con cualquier otra respuesta (o sin respuesta) el sitio le muestra al cliente el aviso de error con el botón de WhatsApp.
 function doPost(e) {
   try {
-    var d = JSON.parse(e.postData.contents);
-    d = clean_(d);
-    if (!d) return ok_();                       // vacío o sospechoso: se ignora en silencio
-
-    if (!bump_('rows', LIMITS.rowsPerDay)) return ok_();   // demasiadas solicitudes hoy: se ignora
+    var d = clean_(JSON.parse(e.postData.contents));
+    if (!d) return out_(false, 'invalid');                               // vacío o sin datos de contacto válidos
+    if (!bump_('rows', LIMITS.rowsPerDay)) return out_(false, 'limit');  // demasiadas solicitudes hoy
     if (Math.random() < 0.05) cleanup_();
 
     appendSafe_(sheet_(), [
@@ -80,14 +82,28 @@ function doPost(e) {
       d.level, d.vegetarian ? 'Sí' : '', d.allergy ? 'Sí' : '', d.message, d.photos ? 'Sí' : 'No', d.lang, d.source, '',
       d.terms ? ('Sí · v' + (d.termsVersion || '?')) : 'No', d.newsletter ? 'Sí' : 'No'
     ]);
-
     notifyOwner_(d);
-    // acuse al cliente: máx. 2 por email al día y 30 en total (evita usar el formulario para mandar spam a terceros)
-    if (d.email && (d.email.toLowerCase() === OWNER_EMAIL || bump_('em_' + hash_(d.email), LIMITS.autoRepliesPerEmail)) && bump_('auto', LIMITS.autoRepliesPerDay)) autoReply_(d);
   } catch (err) {
-    try { MailApp.sendEmail(OWNER_EMAIL, 'Error en el formulario de clastours.ch', String(err) + '\n\n' + (e && e.postData ? e.postData.contents : '')); } catch (x) {}
+    reportError_(err, e);
+    return out_(false, 'error');
   }
-  return ok_();
+  // Acuse al cliente: máx. 2 por email al día y 30 en total (evita usar el formulario para mandar spam a terceros).
+  // Si falla, la solicitud ya está guardada y avisada: no se le muestra error al cliente.
+  try {
+    if (d.email && (d.email.toLowerCase() === OWNER_EMAIL || bump_('em_' + hash_(d.email), LIMITS.autoRepliesPerEmail)) && bump_('auto', LIMITS.autoRepliesPerDay)) autoReply_(d);
+  } catch (err2) {
+    reportError_(err2, e);
+  }
+  return out_(true);
+}
+
+// Aviso de error por correo, con tope diario: sin tope, alguien que mande basura en bucle agota la cuota de Gmail
+function reportError_(err, e) {
+  try {
+    if (!bump_('err', LIMITS.errorMailsPerDay)) return;
+    var raw = e && e.postData ? String(e.postData.contents).substring(0, 1500) : '';
+    MailApp.sendEmail(OWNER_EMAIL, 'Error en el formulario de clastours.ch', String(err) + '\n\n(Máx. ' + LIMITS.errorMailsPerDay + ' avisos de error al día.)\n\n' + raw);
+  } catch (x) {}
 }
 
 // Envía desde info@clastours.ch si está como alias en Gmail; si no, desde la cuenta de Gmail
@@ -103,10 +119,13 @@ function send_(o) {
   }
 }
 
-function ok_() { return ContentService.createTextOutput('ok'); }
+function out_(ok, reason) {
+  var o = { ok: !!ok }; if (reason) o.reason = reason;
+  return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON);
+}
 
 function sheet_() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var ss = SHEET_ID ? SpreadsheetApp.openById(SHEET_ID) : SpreadsheetApp.getActiveSpreadsheet();
   var sh = ss.getSheetByName(SHEET_NAME);
   if (!sh) {
     sh = ss.insertSheet(SHEET_NAME);
@@ -164,7 +183,7 @@ var TEXTS = {
     wa: 'Si es urgente, escríbeme por WhatsApp:',
     bye: 'Un abrazo,', sign: 'Santiago · Clas Tours',
     terms: 'Términos y Condiciones aceptados:', termsUrl: 'https://www.clastours.ch/clastours-legal.html', news: 'Si marcaste la casilla de novedades, te escribiré de vez en cuando sobre nuevas rutas y salidas; puedes darte de baja respondiendo a este correo.',
-    route: 'Ruta', date: 'Fecha', people: 'Personas', msg: 'Mensaje'
+    route: 'Ruta', date: 'Fecha', people: 'Personas'
   },
   de: {
     subject: 'Deine Anfrage ist eingegangen · Clas Tours',
@@ -175,7 +194,7 @@ var TEXTS = {
     wa: 'Wenn es dringend ist, schreib mir per WhatsApp:',
     bye: 'Herzliche Grüsse,', sign: 'Santiago · Clas Tours',
     terms: 'Akzeptierte AGB:', termsUrl: 'https://www.clastours.ch/de/clastours-legal.html', news: 'Falls du das Kästchen für Neuigkeiten angekreuzt hast, schreibe ich dir ab und zu zu neuen Routen und Terminen; du kannst dich jederzeit abmelden, indem du auf diese E-Mail antwortest.',
-    route: 'Tour', date: 'Datum', people: 'Personen', msg: 'Nachricht'
+    route: 'Tour', date: 'Datum', people: 'Personen'
   },
   en: {
     subject: 'We received your request · Clas Tours',
@@ -186,7 +205,7 @@ var TEXTS = {
     wa: 'If it is urgent, message me on WhatsApp:',
     bye: 'Best regards,', sign: 'Santiago · Clas Tours',
     terms: 'Terms and Conditions you accepted:', termsUrl: 'https://www.clastours.ch/en/clastours-legal.html', news: 'If you ticked the news box, I will write to you now and then about new routes and departures; you can unsubscribe at any time by replying to this email.',
-    route: 'Tour', date: 'Date', people: 'People', msg: 'Message'
+    route: 'Tour', date: 'Date', people: 'People'
   },
   fr: {
     subject: 'Nous avons bien reçu votre demande · Clas Tours',
@@ -197,7 +216,7 @@ var TEXTS = {
     wa: 'Si c\'est urgent, écrivez-moi par WhatsApp :',
     bye: 'Cordiales salutations,', sign: 'Santiago · Clas Tours',
     terms: 'Conditions générales acceptées :', termsUrl: 'https://www.clastours.ch/fr/clastours-legal.html', news: 'Si vous avez coché la case des nouvelles, je vous écrirai de temps en temps au sujet des nouveaux itinéraires et départs ; vous pouvez vous désinscrire à tout moment en répondant à cet e-mail.',
-    route: 'Itinéraire', date: 'Date', people: 'Personnes', msg: 'Message'
+    route: 'Itinéraire', date: 'Date', people: 'Personnes'
   }
 };
 
@@ -227,13 +246,13 @@ function sigHtml_() {
     (LOGO_URL ? '<br><img src="' + LOGO_URL + '" alt="Clas Tours" width="320" style="margin-top:8px;border:0">' : '') + '</div>';
 }
 
+// El resumen NO incluye el mensaje libre del cliente: así el formulario no sirve para mandar texto arbitrario a terceros
 function autoReply_(d) {
   var t = TEXTS[d.lang] || TEXTS.es;
   var rows = [];
   if (d.route)   rows.push(t.route + ': ' + d.route);
   if (d.date)    rows.push(t.date + ': ' + d.date);
   if (d.people)  rows.push(t.people + ': ' + d.people);
-  if (d.message) rows.push(t.msg + ': ' + d.message);
   var tu = termsUrl_(t, d);
   var legal = [d.terms ? t.terms + ' ' + tu : tu]; if (d.newsletter) legal.push(t.news);
   var text = [t.hi.replace('{name}', d.name), '', t.body, '', t.sum, rows.join('\n'), '', t.note, '', legal.join('\n'), '', t.wa + ' ' + WHATSAPP, '', t.bye, '', sigText_()].join('\n');

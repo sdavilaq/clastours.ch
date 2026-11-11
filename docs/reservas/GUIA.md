@@ -58,3 +58,16 @@ Datos del servidor según [Hostpoint](https://support.hostpoint.ch/en/technical/
 
 ## Siguiente paso posible (opcional)
 Si más adelante quieres cobrar con enlace de pago (Twint o tarjeta con Stripe), se añade un enlace por ruta en la plantilla de confirmación. No hace falta tocar el sitio.
+
+## Comprobar que el formulario funciona de verdad (hazlo después de cada despliegue nuevo)
+
+El sitio solo muestra «¡Solicitud enviada!» si el script responde `{"ok":true}` (fila guardada y correo de aviso enviado).
+Con cualquier otra respuesta, o si no puede leerla, muestra «No pudimos enviar tu mensaje» con el botón de WhatsApp.
+
+1. Envía una solicitud real desde clastours.ch con tu propio correo.
+2. Debe salir «¡Solicitud enviada!», aparecer la fila en la hoja y llegarte los dos correos.
+3. Si sale el aviso de error pero la fila sí aparece, el navegador no pudo leer la respuesta: revisa que el despliegue sea
+   «Ejecutar como: yo» y «Quién tiene acceso: cualquier usuario», y que `booking.endpoint` en `src/data.json` sea la URL `/exec` vigente.
+
+Topes diarios (`LIMITS` en Code.gs): 60 solicitudes, 30 acuses (2 por dirección) y 5 correos de error. El acuse no repite el
+mensaje libre del cliente. `SHEET_ID`: ID de la hoja si el script no está ligado a ella.
