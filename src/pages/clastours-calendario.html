@@ -291,9 +291,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
               <p class="salida-desc">{{t:calendario.la-experiencia-mas-completa-de}}</p>
               <div class="incl-grid">
                 <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:calendario.guia-en-espanol-2-dias}}</div>
-                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:common.noche-en-bluemisalphutte}}</div>
-                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:calendario.media-pension-incluida}}</div>
-                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:calendario.te-de-senderismo-1-litro}}</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:common.reserva-refugio-coordinada}}</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>{{t:common.refugio-pago-directo}}</div>
                 <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>{{t:common.transporte-aparte}}</div>
                 <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>{{t:calendario.bebidas-en-el-refugio-aparte}}</div>
               </div>
@@ -619,7 +618,7 @@ function inscribir(id, salida) {
   var waUrl = 'https://wa.me/41774603641?text=' + waMsg;
   var okText = L('js.modal.sent').replace('{salida}', salida);
   var btn = document.querySelector('button[onclick^="inscribir(\''+id+'\'"]');
-  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto, terms:true, termsVersion:'1.1', newsletter:news}, waUrl, {btn:btn, okCb:function(){
+  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto, terms:true, termsVersion:'{{tv}}', newsletter:news}, waUrl, {btn:btn, okCb:function(){
     document.getElementById('modal-texto').textContent = okText;
     document.getElementById('modal-confirm').classList.add('open');
   }});

@@ -160,7 +160,7 @@ var TEXTS = {
     hi: 'Hola {name},',
     body: 'Gracias por escribirnos. Recibimos tu solicitud y te respondo en menos de 24 horas para confirmar la fecha y los detalles.',
     sum: 'Esto es lo que recibimos:',
-    note: 'Importante: esto es solo el acuse de recibo, no una reserva confirmada. Las salidas se hacen con un mínimo de 2 personas; la reserva queda confirmada cuando te lo confirmo por escrito y se coordina el pago.',
+    note: 'Importante: esto es solo el acuse de recibo, no una reserva confirmada. Las salidas se hacen con un mínimo de 2 personas; la reserva queda en firme cuando te envío la confirmación por escrito y tú la aceptas (basta un «ok») o pagas el anticipo.',
     wa: 'Si es urgente, escríbeme por WhatsApp:',
     bye: 'Un abrazo,', sign: 'Santiago · Clas Tours',
     terms: 'Términos y Condiciones aceptados:', termsUrl: 'https://www.clastours.ch/clastours-legal.html', news: 'Si marcaste la casilla de novedades, te escribiré de vez en cuando sobre nuevas rutas y salidas; puedes darte de baja respondiendo a este correo.',
@@ -171,7 +171,7 @@ var TEXTS = {
     hi: 'Hallo {name},',
     body: 'Danke für deine Nachricht. Deine Anfrage ist eingegangen, und ich melde mich innerhalb von 24 Stunden, um das Datum und die Details zu bestätigen.',
     sum: 'Das haben wir erhalten:',
-    note: 'Wichtig: Dies ist nur die Eingangsbestätigung, noch keine bestätigte Buchung. Die Touren finden mit mindestens 2 Personen statt; die Buchung ist verbindlich, sobald ich sie schriftlich bestätige und die Zahlung vereinbart ist.',
+    note: 'Wichtig: Dies ist nur die Eingangsbestätigung, noch keine bestätigte Buchung. Die Touren finden mit mindestens 2 Personen statt; die Buchung wird verbindlich, sobald ich dir die schriftliche Bestätigung schicke und du sie annimmst (ein «OK» genügt) oder die Anzahlung leistest.',
     wa: 'Wenn es dringend ist, schreib mir per WhatsApp:',
     bye: 'Herzliche Grüsse,', sign: 'Santiago · Clas Tours',
     terms: 'Akzeptierte AGB:', termsUrl: 'https://www.clastours.ch/de/clastours-legal.html', news: 'Falls du das Kästchen für Neuigkeiten angekreuzt hast, schreibe ich dir ab und zu zu neuen Routen und Terminen; du kannst dich jederzeit abmelden, indem du auf diese E-Mail antwortest.',
@@ -182,7 +182,7 @@ var TEXTS = {
     hi: 'Hi {name},',
     body: 'Thanks for getting in touch. We received your request and I will reply within 24 hours to confirm the date and the details.',
     sum: 'Here is what we received:',
-    note: 'Please note: this is only an acknowledgement, not a confirmed booking. Tours run with a minimum of 2 people; the booking is confirmed once I confirm it in writing and payment is arranged.',
+    note: 'Please note: this is only an acknowledgement, not a confirmed booking. Tours run with a minimum of 2 people; the booking becomes binding once I send you the written confirmation and you accept it (a simple "ok" is enough) or pay the deposit.',
     wa: 'If it is urgent, message me on WhatsApp:',
     bye: 'Best regards,', sign: 'Santiago · Clas Tours',
     terms: 'Terms and Conditions you accepted:', termsUrl: 'https://www.clastours.ch/en/clastours-legal.html', news: 'If you ticked the news box, I will write to you now and then about new routes and departures; you can unsubscribe at any time by replying to this email.',
@@ -193,7 +193,7 @@ var TEXTS = {
     hi: 'Bonjour {name},',
     body: 'Merci de votre message. Nous avons bien reçu votre demande et je vous réponds dans les 24 heures pour confirmer la date et les détails.',
     sum: 'Voici ce que nous avons reçu :',
-    note: 'Important : ceci est uniquement un accusé de réception, et non une réservation confirmée. Les sorties ont lieu à partir de 2 personnes ; la réservation est confirmée lorsque je vous le confirme par écrit et que le paiement est convenu.',
+    note: 'Important : ceci est uniquement un accusé de réception, et non une réservation confirmée. Les sorties ont lieu à partir de 2 personnes ; la réservation devient ferme lorsque je vous envoie la confirmation écrite et que vous l\'acceptez (un simple « ok » suffit) ou versez l\'acompte.',
     wa: 'Si c\'est urgent, écrivez-moi par WhatsApp :',
     bye: 'Cordiales salutations,', sign: 'Santiago · Clas Tours',
     terms: 'Conditions générales acceptées :', termsUrl: 'https://www.clastours.ch/fr/clastours-legal.html', news: 'Si vous avez coché la case des nouvelles, je vous écrirai de temps en temps au sujet des nouveaux itinéraires et départs ; vous pouvez vous désinscrire à tout moment en répondant à cet e-mail.',
@@ -201,13 +201,20 @@ var TEXTS = {
   }
 };
 
+// Enlace a los T&C: si el cliente aceptó una versión concreta (p. ej. 1.1), a la copia fija de esa versión
+// (clastours-legal-v1-1.html, la genera build.py); si no, a la página vigente.
+function termsUrl_(t, d) {
+  if (d.terms && /^\d{1,2}\.\d{1,2}$/.test(d.termsVersion)) return t.termsUrl.replace('.html', '-v' + d.termsVersion.replace('.', '-') + '.html');
+  return t.termsUrl;
+}
+
 function esc_(v) { return String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
 // Firma de los emails automáticos (misma que usas en tus correos). LOGO_URL: dirección pública de la imagen del logo; vacío = sin logo
 var LOGO_URL = '';
 var SIG = {
   lines: ['Santiago Dávila Quiroz', 'CLAS Tours by Davila Quiroz', '\u201eCamina Los Alpes Suizos\u201c',
-          'Quellmattstrasse 11, 2563 Ipsach, Schweiz', '+41 77 460 36 41', 'info@clastours.ch', 'www.clastours.ch | @clastours']
+          'Quellmattstrasse 11, 2563 Ipsach, Schweiz', '+41 77 460 36 41', 'info@clastours.ch', 'www.clastours.ch | @clastours.ch']
 };
 
 function sigText_() { return SIG.lines.join('\n'); }
@@ -216,7 +223,7 @@ function sigHtml_() {
     '<b>' + SIG.lines[0] + '<br>' + SIG.lines[1] + '</b><br><i>' + SIG.lines[2] + '</i><br>' +
     '&#128205; ' + SIG.lines[3] + '<br>&#128222; ' + SIG.lines[4] + '<br>' +
     '&#9993; <a href="mailto:info@clastours.ch">info@clastours.ch</a><br>' +
-    '&#127760; <a href="https://www.clastours.ch">www.clastours.ch</a> | &#128248; <a href="https://www.instagram.com/clastours">@clastours</a>' +
+    '&#127760; <a href="https://www.clastours.ch">www.clastours.ch</a> | &#128248; <a href="https://www.instagram.com/clastours.ch">@clastours.ch</a>' +
     (LOGO_URL ? '<br><img src="' + LOGO_URL + '" alt="Clas Tours" width="320" style="margin-top:8px;border:0">' : '') + '</div>';
 }
 
@@ -227,12 +234,13 @@ function autoReply_(d) {
   if (d.date)    rows.push(t.date + ': ' + d.date);
   if (d.people)  rows.push(t.people + ': ' + d.people);
   if (d.message) rows.push(t.msg + ': ' + d.message);
-  var legal = [d.terms ? t.terms + ' ' + t.termsUrl : t.termsUrl]; if (d.newsletter) legal.push(t.news);
+  var tu = termsUrl_(t, d);
+  var legal = [d.terms ? t.terms + ' ' + tu : tu]; if (d.newsletter) legal.push(t.news);
   var text = [t.hi.replace('{name}', d.name), '', t.body, '', t.sum, rows.join('\n'), '', t.note, '', legal.join('\n'), '', t.wa + ' ' + WHATSAPP, '', t.bye, '', sigText_()].join('\n');
   var html = '<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#1a2a33;max-width:560px">' +
     '<p>' + esc_(t.hi.replace('{name}', d.name)) + '</p><p>' + esc_(t.body) + '</p><p><b>' + esc_(t.sum) + '</b><br>' +
     rows.map(esc_).join('<br>') + '</p><p style="background:#f3efe9;padding:10px 12px;border-radius:4px">' + esc_(t.note) + '</p>' +
-    '<p style="font-size:13px;color:#4a5a63">' + (d.terms ? esc_(t.terms) + ' ' : '') + '<a href="' + t.termsUrl + '">' + esc_(t.termsUrl.replace('https://', '')) + '</a>' + (d.newsletter ? '<br>' + esc_(t.news) : '') + '</p>' +
+    '<p style="font-size:13px;color:#4a5a63">' + (d.terms ? esc_(t.terms) + ' ' : '') + '<a href="' + tu + '">' + esc_(tu.replace('https://', '')) + '</a>' + (d.newsletter ? '<br>' + esc_(t.news) : '') + '</p>' +
     '<p>' + esc_(t.wa) + ' <a href="' + WHATSAPP + '">WhatsApp</a></p><p>' + esc_(t.bye) + '</p>' + sigHtml_() + '</div>';
   send_({ to: d.email, subject: t.subject, body: text, htmlBody: html, name: 'Clas Tours', replyTo: OWNER_EMAIL });
 }

@@ -442,6 +442,10 @@
     font-family: 'DM Sans', sans-serif; transition: background 0.2s;
   }
   .ct-btn-submit:hover { background: var(--copper-lt); }
+  .ct-check { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 0.75rem; font-size: 0.8rem; line-height: 1.5; color: rgba(255,255,255,0.72); }
+  .ct-check input { margin-top: 3px; flex-shrink: 0; cursor: pointer; }
+  .ct-check label { cursor: pointer; }
+  .ct-check a { color: #fff; }
   .ct-form-note {
     text-align: center; font-size: 0.72rem;
     color: rgba(255,255,255,0.25); margin-top: 0.75rem;
@@ -686,9 +690,9 @@
           </div>
           <div class="ct-ruta-footer">
             <div>
-              <div class="ct-price">CHF 320 </div>
+              <div class="ct-price">CHF 225 </div>
               <div class="ct-price-note">por persona · guía incluido</div>
-              <div class="ct-price-group">7+ personas: CHF 260/persona</div>
+              <div class="ct-price-group">7+ personas: CHF 165/persona</div>
             </div>
             <a href="clastours-caminatas-v4.html#r1" class="ct-ruta-btn">Descubrir más →</a>
           </div>
@@ -780,7 +784,7 @@
 
     <div class="ct-nota">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      El precio incluye el guía completo en español, el alojamiento en el refugio, comida y desayuno. Transporte y comidas snacks van aparte — te orientamos con todo antes de la salida.
+      El precio incluye la guía completa en español. En Kandersteg, la noche en el refugio con cena y desayuno (aprox. CHF 95 por adulto; CHF 80 socios SAC) se paga aparte, directamente a la Blüemlisalphütte; yo coordino la reserva a tu nombre. Transporte y snacks van aparte — te orientamos con todo antes de la salida.
     </div>
   </div>
 </section>
@@ -880,6 +884,8 @@
           <option>3–6 personas</option>
           <option>7 o más (precio especial para grupos)</option>
         </select>
+        <div class="ct-check"><input type="checkbox" id="ct-terms"><label for="ct-terms">He leído y acepto los <a href="clastours-legal.html" target="_blank" rel="noopener">Términos y Condiciones</a> (cancelación, riesgos y responsabilidad incluidos). Confirmo que mis datos sobre experiencia, condición física y salud son veraces, y consiento que se usen para preparar la actividad con seguridad.</label></div>
+        <div class="ct-check"><input type="checkbox" id="ct-news"><label for="ct-news">Quiero recibir novedades sobre nuevas rutas y salidas por correo electrónico (opcional; puedo darme de baja cuando quiera).</label></div>
         <button class="ct-btn-submit" onclick="enviarForm()">Quiero reservar mi caminata →</button>
         <p class="ct-form-note">Sin compromiso · Respuesta en menos de 24h</p>
       </div>
@@ -999,11 +1005,19 @@ function enviarForm() {
     return;
   }
   
+  const terms = document.getElementById('ct-terms');
+  if (!terms || !terms.checked) {
+    alert(L('js.alert.terms'));
+    return;
+  }
+  const news = !!document.getElementById('ct-news')?.checked;
+
   const enc = encodeURIComponent;
-  const msg = L('js.wa.interest') + '%0A%0A*' + L('js.wa.name') + ':* ' + enc(nombre) + '%0A*' + L('js.wa.whatsapp') + ':* ' + enc(wa) + '%0A*' + L('js.wa.email') + ':* ' + enc(email) + '%0A*' + L('js.wa.route') + ':* ' + enc(ruta) + '%0A*' + L('js.wa.people') + ':* ' + enc(personas);
-  
+  const msg = L('js.wa.interest') + '%0A%0A*' + L('js.wa.name') + ':* ' + enc(nombre) + '%0A*' + L('js.wa.whatsapp') + ':* ' + enc(wa) + '%0A*' + L('js.wa.email') + ':* ' + enc(email) + '%0A*' + L('js.wa.route') + ':* ' + enc(ruta) + '%0A*' + L('js.wa.people') + ':* ' + enc(personas)
+    + '%0A*' + L('js.wa.terms') + ':* ' + L('js.yes') + '%0A*' + L('js.wa.news') + ':* ' + (news ? L('js.yes') : L('js.no'));
+
   const waUrl = `https://wa.me/41774603641?text=${msg}`;
-  CT.submit({source:'inicio', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas}, waUrl, {btn:document.querySelector('.ct-btn-submit')});
+  CT.submit({source:'inicio', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas, terms:true, termsVersion:'1.1', newsletter:news}, waUrl, {btn:document.querySelector('.ct-btn-submit')});
 }
 </script>
 </body>

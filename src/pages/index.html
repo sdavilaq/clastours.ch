@@ -442,6 +442,10 @@
     font-family: 'DM Sans', sans-serif; transition: background 0.2s;
   }
   .ct-btn-submit:hover { background: var(--copper-lt); }
+  .ct-check { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 0.75rem; font-size: 0.8rem; line-height: 1.5; color: rgba(255,255,255,0.72); }
+  .ct-check input { margin-top: 3px; flex-shrink: 0; cursor: pointer; }
+  .ct-check label { cursor: pointer; }
+  .ct-check a { color: #fff; }
   .ct-form-note {
     text-align: center; font-size: 0.72rem;
     color: rgba(255,255,255,0.25); margin-top: 0.75rem;
@@ -870,6 +874,8 @@
           <option>{{t:common.36-personas}}</option>
           <option>{{t:common.7-o-mas-precio-especial}}</option>
         </select>
+        <div class="ct-check"><input type="checkbox" id="ct-terms"><label for="ct-terms">{{t:common.acepto-los-terminos}}</label></div>
+        <div class="ct-check"><input type="checkbox" id="ct-news"><label for="ct-news">{{t:common.quiero-recibir-novedades}}</label></div>
         <button class="ct-btn-submit" onclick="enviarForm()">{{t:index.quiero-reservar-mi-caminata}}</button>
         <p class="ct-form-note">{{t:index.sin-compromiso-respuesta-en-menos}}</p>
       </div>
@@ -988,11 +994,19 @@ function enviarForm() {
     return;
   }
   
+  const terms = document.getElementById('ct-terms');
+  if (!terms || !terms.checked) {
+    alert(L('js.alert.terms'));
+    return;
+  }
+  const news = !!document.getElementById('ct-news')?.checked;
+
   const enc = encodeURIComponent;
-  const msg = L('js.wa.interest') + '%0A%0A*' + L('js.wa.name') + ':* ' + enc(nombre) + '%0A*' + L('js.wa.whatsapp') + ':* ' + enc(wa) + '%0A*' + L('js.wa.email') + ':* ' + enc(email) + '%0A*' + L('js.wa.route') + ':* ' + enc(ruta) + '%0A*' + L('js.wa.people') + ':* ' + enc(personas);
-  
+  const msg = L('js.wa.interest') + '%0A%0A*' + L('js.wa.name') + ':* ' + enc(nombre) + '%0A*' + L('js.wa.whatsapp') + ':* ' + enc(wa) + '%0A*' + L('js.wa.email') + ':* ' + enc(email) + '%0A*' + L('js.wa.route') + ':* ' + enc(ruta) + '%0A*' + L('js.wa.people') + ':* ' + enc(personas)
+    + '%0A*' + L('js.wa.terms') + ':* ' + L('js.yes') + '%0A*' + L('js.wa.news') + ':* ' + (news ? L('js.yes') : L('js.no'));
+
   const waUrl = `https://wa.me/41774603641?text=${msg}`;
-  CT.submit({source:'inicio', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas}, waUrl, {btn:document.querySelector('.ct-btn-submit')});
+  CT.submit({source:'inicio', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas, terms:true, termsVersion:'{{tv}}', newsletter:news}, waUrl, {btn:document.querySelector('.ct-btn-submit')});
 }
 </script>
 </body>

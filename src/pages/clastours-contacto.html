@@ -102,17 +102,13 @@
   .faq-a strong{color:var(--ink);font-weight:500}
   .faq-a a{color:var(--petrol);text-decoration:none}
   .faq-a a:hover{color:var(--copper)}
-  .ubicacion-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .ubicacion-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;max-width:720px}
   .ubicacion-text p{font-size:0.9375rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:1rem}
   .ubicacion-data{display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem}
   .ubic-item{display:flex;align-items:flex-start;gap:10px}
   .ubic-item svg{width:16px;height:16px;color:var(--copper-lt);flex-shrink:0;margin-top:2px}
   .ubic-item span{font-size:0.875rem;color:rgba(255,255,255,0.55);line-height:1.5}
   .ubic-item strong{color:rgba(255,255,255,0.85);font-weight:500}
-  .mapa-placeholder{background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.12);border-radius:6px;height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;color:rgba(255,255,255,0.25)}
-  .mapa-placeholder svg{width:32px;height:32px;opacity:0.4}
-  .mapa-placeholder-label{font-size:0.72rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5}
-  .mapa-placeholder-hint{font-size:0.8rem;opacity:0.35;text-align:center;max-width:240px;line-height:1.5}
   .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,0.35);text-decoration:none;transition:transform 0.2s}
   .wa-float:hover{transform:scale(1.1)}
   .wa-float svg{width:26px;height:26px;color:white}
@@ -326,11 +322,6 @@
           <div class="ubic-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>{{t:contacto.temporada-activa-todo-el-ano}}</span></div>
         </div>
       </div>
-      <div class="mapa-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div class="mapa-placeholder-label">{{t:contacto.mapa-opcional}}</div>
-        <div class="mapa-placeholder-hint">{{t:contacto.puedes-incrustar-aqui-un-google}}</div>
-      </div>
     </div>
   </div>
 </section>
@@ -396,7 +387,7 @@ function enviarForm() {
   msg += '%0A' + L('js.wa.terms') + ': ' + L('js.yes');
   msg += '%0A' + L('js.wa.news') + ': ' + (news && news.checked ? L('js.yes') : L('js.no'));
   waUrl = 'https://wa.me/41774603641?text=' + msg;
-  CT.submit({source:'contacto', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas, message:mensaje, photos:!!(foto && foto.checked), terms:true, termsVersion:'1.1', newsletter:!!(news && news.checked)}, waUrl, {btn:document.querySelector('.btn-enviar')});
+  CT.submit({source:'contacto', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas, message:mensaje, photos:!!(foto && foto.checked), terms:true, termsVersion:'{{tv}}', newsletter:!!(news && news.checked)}, waUrl, {btn:document.querySelector('.btn-enviar')});
 }
 </script>
 </body>

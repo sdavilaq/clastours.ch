@@ -102,17 +102,13 @@
   .faq-a strong{color:var(--ink);font-weight:500}
   .faq-a a{color:var(--petrol);text-decoration:none}
   .faq-a a:hover{color:var(--copper)}
-  .ubicacion-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .ubicacion-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;max-width:720px}
   .ubicacion-text p{font-size:0.9375rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:1rem}
   .ubicacion-data{display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem}
   .ubic-item{display:flex;align-items:flex-start;gap:10px}
   .ubic-item svg{width:16px;height:16px;color:var(--copper-lt);flex-shrink:0;margin-top:2px}
   .ubic-item span{font-size:0.875rem;color:rgba(255,255,255,0.55);line-height:1.5}
   .ubic-item strong{color:rgba(255,255,255,0.85);font-weight:500}
-  .mapa-placeholder{background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.12);border-radius:6px;height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;color:rgba(255,255,255,0.25)}
-  .mapa-placeholder svg{width:32px;height:32px;opacity:0.4}
-  .mapa-placeholder-label{font-size:0.72rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5}
-  .mapa-placeholder-hint{font-size:0.8rem;opacity:0.35;text-align:center;max-width:240px;line-height:1.5}
   .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,0.35);text-decoration:none;transition:transform 0.2s}
   .wa-float:hover{transform:scale(1.1)}
   .wa-float svg{width:26px;height:26px;color:white}
@@ -310,9 +306,9 @@
         </div>
         <div class="faq-cat">
           <div class="faq-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Réservations, prix et logistique</div>
-          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Que comprend exactement le prix ?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Le prix comprend le guide complet en espagnol pendant toute l'activité. Pour Kandersteg 2 jours, il comprend en plus la nuit en cabane, le souper et le petit-déjeuner. <strong>Il ne comprend pas</strong> : le transport jusqu'au point de départ, ni l'assurance personnelle.</div></div>
+          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Que comprend exactement le prix ?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Le prix comprend l'accompagnement complet en espagnol pendant toute l'activité, la planification et les conseils préalables. <strong>Non compris</strong> : le transport jusqu'au point de départ, les repas, les entrées et l'assurance personnelle. Pour Kandersteg 2 jours, la nuit en cabane avec souper et petit-déjeuner (env. CHF 95 par adulte ; CHF 80 pour les membres du CAS) se paie directement à la Blüemlisalphütte : je coordonne la réservation à votre nom.</div></div>
           <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Comment me rendre au point de départ ?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Tous les itinéraires sont accessibles en transports publics suisses (CFF). À la confirmation de la réservation, je vous envoie les instructions détaillées — train, CarPostal, heure de rendez-vous et point exact.</div></div>
-          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Puis-je annuler si mes plans changent ?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Oui. Plus de 30 jours avant, remboursement complet. Entre 29 et 15 jours avant, 50% est remboursé. 14 jours ou moins avant, pas de remboursement. Si j'ai déjà réservé une cabane, ses frais non remboursables sont à votre charge. Je vous recommande une assurance annulation. Politique complète dans les CG.</div></div>
+          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Puis-je annuler si mes plans changent ?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Oui. À 30 jours ou plus : remboursement intégral. Entre 29 et 15 jours avant : remboursement de 50%. À 14 jours ou moins : pas de remboursement, mais je déduis les frais économisés et, si la place est de nouveau occupée, je vous rends ce que vous avez payé. Pour Kandersteg, la réservation de la cabane suit les conditions d'annulation de la cabane. Je vous recommande une assurance annulation. Consultez la politique complète dans les CG.</div></div>
         </div>
       </div>
     </div>
@@ -334,11 +330,6 @@
           <div class="ubic-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span><strong>Zone d'activité :</strong> Alpes suisses, Oberland bernois, Jura</span></div>
           <div class="ubic-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span><strong>Saison active :</strong> Toute l'année — été (T3) et hiver (WT2)</span></div>
         </div>
-      </div>
-      <div class="mapa-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div class="mapa-placeholder-label">Carte facultative</div>
-        <div class="mapa-placeholder-hint">Vous pouvez intégrer ici une carte Google Maps pointant sur Ipsach, Berne</div>
       </div>
     </div>
   </div>

@@ -39,7 +39,7 @@ Datos del servidor según [Hostpoint](https://support.hostpoint.ch/en/technical/
    - Ejecutar como: **Yo**
    - Quién tiene acceso: **Cualquier persona**
 7. Pulsa **Implementar** y copia la **URL de la aplicación web** (termina en `/exec`).
-8. Pásame esa URL. La pongo en `src/data.json` (`booking.endpoint`), regenero el sitio y queda activo en los 3 idiomas.
+8. Pásame esa URL. La pongo en `src/data.json` (`booking.endpoint`), regenero el sitio y queda activo en los 4 idiomas.
 
 ### Cosas que conviene saber
 - Con el paso A hecho, los emails salen desde `info@clastours.ch`. En la prueba del paso 4 Google pide un permiso más (enviar correo con Gmail): es normal.

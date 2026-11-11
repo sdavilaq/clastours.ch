@@ -102,17 +102,13 @@
   .faq-a strong{color:var(--ink);font-weight:500}
   .faq-a a{color:var(--petrol);text-decoration:none}
   .faq-a a:hover{color:var(--copper)}
-  .ubicacion-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .ubicacion-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;max-width:720px}
   .ubicacion-text p{font-size:0.9375rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:1rem}
   .ubicacion-data{display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem}
   .ubic-item{display:flex;align-items:flex-start;gap:10px}
   .ubic-item svg{width:16px;height:16px;color:var(--copper-lt);flex-shrink:0;margin-top:2px}
   .ubic-item span{font-size:0.875rem;color:rgba(255,255,255,0.55);line-height:1.5}
   .ubic-item strong{color:rgba(255,255,255,0.85);font-weight:500}
-  .mapa-placeholder{background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.12);border-radius:6px;height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;color:rgba(255,255,255,0.25)}
-  .mapa-placeholder svg{width:32px;height:32px;opacity:0.4}
-  .mapa-placeholder-label{font-size:0.72rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5}
-  .mapa-placeholder-hint{font-size:0.8rem;opacity:0.35;text-align:center;max-width:240px;line-height:1.5}
   .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,0.35);text-decoration:none;transition:transform 0.2s}
   .wa-float:hover{transform:scale(1.1)}
   .wa-float svg{width:26px;height:26px;color:white}
@@ -310,9 +306,9 @@
         </div>
         <div class="faq-cat">
           <div class="faq-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Bookings, prices and logistics</div>
-          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What exactly does the price include?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">The price includes the full guide in Spanish throughout the activity. Kandersteg 2 days also includes a night in the hut, dinner and breakfast. <strong>Not included</strong>: transport to the starting point and personal insurance.</div></div>
+          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What exactly does the price include?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">The price covers full guiding in Spanish throughout the activity, planning and advice beforehand. <strong>Not included</strong>: transport to the starting point, food, entrance fees or personal insurance. For Kandersteg 2 days, the hut night with dinner and breakfast (approx. CHF 95 per adult; CHF 80 for SAC members) is paid directly to the Blüemlisalphütte: I coordinate the booking in your name.</div></div>
           <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I get to the starting point?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">All tours are accessible by Swiss public transport (SBB/CFF). When I confirm the booking I send you detailed instructions — train, PostBus, meeting time and exact point.</div></div>
-          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I cancel if my plans change?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Yes. More than 30 days before, you get a full refund. 29 to 15 days before, 50% is refunded. 14 days or less before, there is no refund. If I have already booked a hut, its non-refundable costs are yours. I recommend cancellation insurance. See the full policy in the T&C.</div></div>
+          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I cancel if my plans change?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Yes. With 30 days or more to go, a full refund. Between 29 and 15 days before, 50% is refunded. With 14 days or less, no refund, but I deduct any costs I save and, if the place is filled again, I return what you paid. For Kandersteg, the hut booking follows the hut's own cancellation terms. I recommend cancellation insurance. See the full policy in the T&Cs.</div></div>
         </div>
       </div>
     </div>
@@ -334,11 +330,6 @@
           <div class="ubic-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span><strong>Operating area:</strong> Swiss Alps, Bernese Oberland, Jura</span></div>
           <div class="ubic-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span><strong>Active season:</strong> Year-round — summer (T3) and winter (WT2)</span></div>
         </div>
-      </div>
-      <div class="mapa-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div class="mapa-placeholder-label">Optional map</div>
-        <div class="mapa-placeholder-hint">You can embed a Google Maps embed here pointing to Ipsach, Bern</div>
       </div>
     </div>
   </div>

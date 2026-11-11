@@ -7,7 +7,7 @@ Fuente de verdad:
   src/i18n/de.json        traducciones al alemán  (clave -> {"t": texto, "s": hash del texto es)
   src/i18n/en.json        traducciones al inglés
   src/i18n/fr.json        traducciones al francés
-  src/data.json           datos compartidos (precios)
+  src/data.json           datos compartidos (precios, versión de los T&C, endpoint de solicitudes)
 
 Uso:
   python3 build.py                 genera todo y muestra qué falta traducir
@@ -92,6 +92,7 @@ def render(page, lang, S, data, plain=False):
     t = re.sub(r'\{\{w:([^}]+)\}\}', lambda m: __import__('urllib.parse', fromlist=['quote']).quote(S.get(lang, m.group(1)), safe=''), t)
     t = re.sub(r'\{\{j:([^}]+)\}\}', lambda m: json_escape(re.sub(r'<[^>]+>', '', html.unescape(S.get(lang, m.group(1))))), t)
     t = t.replace('{{lang}}', lang)
+    t = t.replace('{{tv}}', data.get('terms', {}).get('version', ''))
     # --- precios
     P = data['prices']
     t = re.sub(r'\{\{p\.(\w+)\}\}', lambda m: fmt_num(P[m.group(1)]['p'], lang), t)
@@ -141,6 +142,22 @@ def outpath(page, lang):
     d = ROOT if lang == 'es' else os.path.join(ROOT, lang)
     os.makedirs(d, exist_ok=True)
     return os.path.join(d, page + '.html')
+
+def terms_archive(out, lang, data):
+    """Copia fija de los T&C por versión (clastours-legal-v1-1.html): es la que se enlaza en el acuse al cliente.
+    Se escribe una sola vez. Si el texto de los T&C cambia después, hay que subir terms.version en src/data.json
+    (o borrar la copia si esa versión aún no se había publicado)."""
+    ver = data.get('terms', {}).get('version', '')
+    if not ver: return True
+    name = 'clastours-legal-v%s' % ver.replace('.', '-')
+    snap = out.replace('<meta name="viewport"', '<meta name="robots" content="noindex">\n<meta name="viewport"', 1)
+    p = outpath(name, lang)
+    if not os.path.exists(p):
+        open(p, 'w', encoding='utf-8').write(snap); return True
+    if open(p, encoding='utf-8').read() != snap:
+        print('[T&C %s] el texto cambió respecto a la copia archivada v%s: sube terms.version en src/data.json (o borra %s si esa versión aún no se publicó)' % (lang, ver, os.path.relpath(p, ROOT)))
+        return False
+    return True
 
 def report(S):
     ok = True
@@ -201,6 +218,7 @@ def main():
                 open(os.path.join(out_dir, p + '.html'), 'w', encoding='utf-8').write(out)
             else:
                 open(outpath(p, lang), 'w', encoding='utf-8').write(out)
+                if p == 'clastours-legal': terms_archive(out, lang, data)
     if not plain:
         build_sitemap()
         report(S)

@@ -275,10 +275,6 @@
   "t": "What's included",
   "s": "2ab4f7c9"
  },
- "common.noche-en-bluemisalphutte": {
-  "t": "Night at the Blüemlisalphütte",
-  "s": "472795e9"
- },
  "common.transporte-aparte": {
   "t": "Transport (separate)",
   "s": "068f6fc4"
@@ -1016,8 +1012,8 @@
   "s": "110a52ad"
  },
  "index.el-precio-incluye-el-guia": {
-  "t": "The price includes the full guide in Spanish, hut accommodation, dinner and breakfast. Transport and snacks are extra — we advise you on everything before departure.",
-  "s": "e146c8a0"
+  "t": "The price covers full guiding in Spanish. For Kandersteg, the hut night with dinner and breakfast (approx. CHF 95 per adult; CHF 80 for SAC members) is paid separately, directly to the Blüemlisalphütte; I coordinate the booking in your name. Transport and snacks are extra — we'll brief you on everything before the tour.",
+  "s": "498bcac3"
  },
  "index.instrucciones-seguridad-historias-del-camino": {
   "t": "Instructions, safety, stories from the trail. Nothing gets lost because of language.",
@@ -1368,8 +1364,8 @@
   "s": "bf872d5d"
  },
  "contacto.el-precio-incluye-la-guia": {
-  "t": "The price includes the full guide in Spanish throughout the activity. Kandersteg 2 days also includes a night in the hut, dinner and breakfast. <strong>Not included</strong>: transport to the starting point and personal insurance.",
-  "s": "c5504ac4"
+  "t": "The price covers full guiding in Spanish throughout the activity, planning and advice beforehand. <strong>Not included</strong>: transport to the starting point, food, entrance fees or personal insurance. For Kandersteg 2 days, the hut night with dinner and breakfast (approx. CHF 95 per adult; CHF 80 for SAC members) is paid directly to the Blüemlisalphütte: I coordinate the booking in your name.",
+  "s": "07196eae"
  },
  "contacto.como-llego-al-punto-de": {
   "t": "How do I get to the starting point?",
@@ -1384,8 +1380,8 @@
   "s": "7aff04eb"
  },
  "contacto.si-con-mas-de-14": {
-  "t": "Yes. More than 30 days before, you get a full refund. 29 to 15 days before, 50% is refunded. 14 days or less before, there is no refund. If I have already booked a hut, its non-refundable costs are yours. I recommend cancellation insurance. See the full policy in the T&C.",
-  "s": "f7cbf308"
+  "t": "Yes. With 30 days or more to go, a full refund. Between 29 and 15 days before, 50% is refunded. With 14 days or less, no refund, but I deduct any costs I save and, if the place is filled again, I return what you paid. For Kandersteg, the hut booking follows the hut's own cancellation terms. I recommend cancellation insurance. See the full policy in the T&Cs.",
+  "s": "26e644ac"
  },
  "contacto.donde-estamos": {
   "t": "Where we are",
@@ -1414,14 +1410,6 @@
  "contacto.temporada-activa-todo-el-ano": {
   "t": "<strong>Active season:</strong> Year-round — summer (T3) and winter (WT2)",
   "s": "358fcdc4"
- },
- "contacto.mapa-opcional": {
-  "t": "Optional map",
-  "s": "660bd898"
- },
- "contacto.puedes-incrustar-aqui-un-google": {
-  "t": "You can embed a Google Maps embed here pointing to Ipsach, Bern",
-  "s": "08e9affe"
  },
  "contacto.fotografias-santiago-davila-quiroz-todos": {
   "t": "© Photographs: Santiago Davila Quiroz — All rights reserved. Reproduction, distribution or use without the author's written permission is expressly prohibited.",
@@ -1731,17 +1719,13 @@
   "t": "Guide in Spanish (2 days)",
   "s": "b1ee1399"
  },
- "caminatas.cena-y-desayuno-en-refugio": {
-  "t": "Dinner and breakfast at the hut",
-  "s": "d2d31d9d"
- },
  "caminatas.planificacion-y-orientacion": {
   "t": "Planning and guidance",
   "s": "03155536"
  },
  "caminatas.seguro-personal-obligatorio": {
-  "t": "Personal insurance (mandatory)",
-  "s": "d057e9ce"
+  "t": "Personal insurance (recommended, not included)",
+  "s": "91765da8"
  },
  "caminatas.t3-senderismo-de-montana-escala": {
   "t": "T3 — Mountain hiking (SAC scale)",
@@ -1776,8 +1760,8 @@
   "s": "4799954a"
  },
  "caminatas.por-persona-todo-incluido": {
-  "t": "per person · all inclusive",
-  "s": "8b588dc4"
+  "t": "per person · 2-day guiding · hut extra",
+  "s": "91bfad48"
  },
  "caminatas.group-kand": {
   "t": "Groups of 7+: <span>CHF {{g.kand}}/person</span>",
@@ -2235,21 +2219,13 @@
   "t": "Guide in Spanish (2 full days)",
   "s": "d603a0ae"
  },
- "calendario.media-pension-incluida": {
-  "t": "Half board included",
-  "s": "ebf3a0c1"
- },
- "calendario.te-de-senderismo-1-litro": {
-  "t": "Hiking tea (1 litre)",
-  "s": "6c02f889"
- },
  "calendario.bebidas-en-el-refugio-aparte": {
   "t": "Drinks at the hut (separate)",
   "s": "d19b2b90"
  },
  "calendario.media-pension-en-el-refugio": {
-  "t": "<strong>Half board at the hut includes:</strong> dinner at 6:30pm (3-course menu, drinks not included), breakfast and 1 litre of hiking tea. Gluten/lactose-free supplement: CHF 5.–",
-  "s": "46aa44db"
+  "t": "<strong>Hut (paid directly to the Blüemlisalphütte):</strong> night + half board approx. CHF 95 per adult (CHF 80 for SAC members; 2026 rates, with reductions for youths and children). Includes dinner at 18:30 (3-course menu, drinks extra), breakfast and 1 litre of hiking tea. Santiago coordinates the booking in each participant's name; the hut's cancellation terms apply. The hut may charge a supplement (approx. CHF 5) for gluten-free or lactose-free menus.",
+  "s": "303a228d"
  },
  "calendario.tren-hasta-reichenbach-im-kandertal": {
   "t": "Train to Reichenbach im Kandertal, then PostBus 220 to Griesalp. Santiago sends you detailed instructions.",
@@ -2272,8 +2248,8 @@
   "s": "1b1b4eab"
  },
  "calendario.si-suplemento-chf-5-persona": {
-  "t": "Yes — supplement CHF 5/person (state in the message)",
-  "s": "f9a0056d"
+  "t": "Yes (please note it in the message; the hut may charge a supplement)",
+  "s": "7fd07bbd"
  },
  "calendario.nivel-de-experiencia-necesidades-especiales": {
   "t": "Experience level, special needs, questions...",
@@ -2408,8 +2384,8 @@
   "s": "c3963f20"
  },
  "legal.ultima-actualizacion-enero-2025-version": {
-  "t": "Last updated: November 2026 · Version 1.1 · All services are subject to these terms.",
-  "s": "ae228fa0"
+  "t": "Last updated: November 2026 · Version {{tv}} · All services are subject to these terms.",
+  "s": "f407dbb3"
  },
  "legal.lea-este-documento-antes-de": {
   "t": "Please read this document before booking. By ticking the acceptance box on the booking form, or by confirming a booking via WhatsApp or email, the client declares that they have read, understood and fully accepted these Terms and Conditions. Taking part in any activity implies acceptance of all the terms set out here.",
@@ -2484,8 +2460,8 @@
   "s": "6dab79a1"
  },
  "legal.domicilio-ipsach-canton-de-berna": {
-  "t": "<strong>Address:</strong> Ipsach, Canton of Bern, Switzerland",
-  "s": "372778cb"
+  "t": "<strong>Address:</strong> Quellmattstrasse 11, 2563 Ipsach, Canton of Bern, Switzerland",
+  "s": "2b8c2351"
  },
  "legal.sitio-web-www-clastours-ch": {
   "t": "<strong>Website:</strong> www.clastours.ch",
@@ -2496,8 +2472,8 @@
   "s": "117fd8a9"
  },
  "legal.telefono-whatsapp-41-077-460": {
-  "t": "<strong>Phone / WhatsApp:</strong> (+41) 077 460 36 41",
-  "s": "1520adc8"
+  "t": "<strong>Phone / WhatsApp:</strong> +41 77 460 36 41",
+  "s": "23513739"
  },
  "legal.clas-tours-by-davila-quiroz-2": {
   "t": "Clas Tours by Davila Quiroz is a hiking-guide business based in Switzerland, run by Santiago Davila Quiroz, currently training as a Wanderleiter (hiking guide) certified to Swiss standards.",
@@ -2532,12 +2508,12 @@
   "s": "c44bfabe"
  },
  "legal.no-estan-incluidos-en-el": {
-  "t": "<strong>Not included</strong> in the base price of the one-day hikes: transport to the starting point, meals, drinks, entrance tickets or access fees, rental of personal equipment, or the client's personal accident insurance.",
-  "s": "51d6a0fc"
+  "t": "<strong>Not included</strong> in the price: transport to the starting point, meals, drinks, accommodation, entrance or access fees, rental of personal equipment, and the client's personal accident insurance.",
+  "s": "b5bb38d9"
  },
  "legal.la-ruta-kandersteg-con-noche": {
-  "t": "The <strong>Kandersteg with a night in a mountain hut</strong> tour is the exception: its price includes accommodation at the Blüemlisalphütte and half board (dinner and breakfast). It does not include drinks, transport, entrance tickets or personal insurance.",
-  "s": "012dbae8"
+  "t": "<strong>Kandersteg with a hut night</strong>: the Clas Tours price covers only the guiding service on both days. Accommodation and half board at the Blüemlisalphütte (approx. CHF 95 per adult; CHF 80 for SAC members; the hut's 2026 rates, subject to change) are booked and paid by each client directly with the hut. Clas Tours only coordinates the booking, in the name and on behalf of each client: it neither resells nor charges for the accommodation, and the hut's own terms apply to that booking, including those on cancellation and no-show, as well as its supplements (for example for gluten-free or lactose-free menus). Clas Tours does not offer package travel.",
+  "s": "4cf0c7a7"
  },
  "legal.las-salidas-se-realizan-a": {
   "t": "Departures take place <strong>on demand and with a minimum of 2 participants</strong>; the date is agreed with the group.",
@@ -2556,8 +2532,8 @@
   "s": "305076aa"
  },
  "legal.la-reserva-se-realiza-mediante": {
-  "t": "Bookings are made through the website contact form or directly via WhatsApp. A booking is considered <strong>confirmed</strong> only when the client has received written confirmation from Clas Tours by Davila Quiroz.",
-  "s": "91c23859"
+  "t": "Bookings are requested through the website forms, by email or by WhatsApp.",
+  "s": "652bd799"
  },
  "legal.clas-tours-se-reserva-el": {
   "t": "Clas Tours reserves the right to refuse or cancel a booking if:",
@@ -2572,8 +2548,8 @@
   "s": "5ed9a8b7"
  },
  "legal.no-se-alcanza-el-numero": {
-  "t": "The minimum of 2 participants is not reached (you will be told as early as possible and, unless other participants cancel late, at least 7 days before the activity)",
-  "s": "5f9f54a8"
+  "t": "The minimum of 2 participants is not reached: Clas Tours will give notice no later than 7 days before the activity. If the group later falls below the minimum because another participant cancels, Clas Tours will try to run the tour anyway; if that is not possible, the following paragraph applies",
+  "s": "68a231de"
  },
  "legal.circunstancias-de-fuerza-mayor-lo": {
   "t": "Circumstances of force majeure prevent it",
@@ -2592,8 +2568,8 @@
   "s": "b303984c"
  },
  "legal.todos-los-precios-estan-expresados": {
-  "t": "All prices are expressed in <strong>Swiss Francs (CHF)</strong> and include applicable Swiss VAT. Payment is made before the start of the activity, unless otherwise agreed in writing.",
-  "s": "adab504e"
+  "t": "All prices are in <strong>Swiss francs (CHF)</strong>. Clas Tours is not subject to VAT, so no VAT is charged. Payment is made before the activity starts, unless otherwise agreed in writing beforehand.",
+  "s": "d54215c0"
  },
  "legal.metodos-de-pago-aceptados": {
   "t": "Accepted payment methods:",
@@ -2648,8 +2624,8 @@
   "s": "3e784d4f"
  },
  "legal.mas-de-14-dias-antes": {
-  "t": "More than 30 days before",
-  "s": "5df1c93c"
+  "t": "30 days or more before",
+  "s": "23e8d2ed"
  },
  "legal.sin-penalizacion": {
   "t": "No penalty",
@@ -2804,8 +2780,8 @@
   "s": "5050235d"
  },
  "legal.la-responsabilidad-de-clas-tours": {
-  "t": "Clas Tours is liable under Swiss law for damage it causes through fault in carrying out the activity. To the extent permitted by law, liability for property damage caused by slight negligence is limited to the price paid for the contracted service. Liability for intent or gross negligence, for bodily injury or death caused by fault, and any liability that mandatory law does not allow to be limited, is neither limited nor excluded.",
-  "s": "50d88fb5"
+  "t": "Clas Tours is liable under Swiss law for damage it causes through fault in carrying out the activity. To the extent permitted by law, liability for property damage caused by slight negligence is limited to twice the price paid for the contracted service. Liability for intent or gross negligence, for bodily injury or death caused by fault, and any liability that mandatory law does not allow to be limited, is neither limited nor excluded.",
+  "s": "223d5089"
  },
  "legal.articulo-08": {
   "t": "Article 08",
@@ -2840,8 +2816,8 @@
   "s": "d2a73b0f"
  },
  "legal.clas-tours-by-davila-quiroz-5": {
-  "t": "Clas Tours by Davila Quiroz will under no circumstances bear the costs of rescue, medical evacuation, hospitalisation or repatriation of the client. These costs are entirely the responsibility of the participant or their insurer.",
-  "s": "0b2ae92d"
+  "t": "The costs of rescue, medical evacuation, hospitalisation and repatriation are borne by the participant or their insurer, unless the damage is due to fault on the part of Clas Tours.",
+  "s": "49eae1cd"
  },
  "legal.un-rescate-de-montana-en": {
   "t": "A mountain rescue in Switzerland can cost between CHF 1,000 and CHF 10,000 or more. Don't set out without insurance.",
@@ -2936,8 +2912,8 @@
   "s": "cb314618"
  },
  "legal.los-datos-no-se-ceden": {
-  "t": "Data is not shared with third parties except where strictly necessary to provide the service or required by law. The client has the right to access, rectify or delete their data by contacting <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a>. Requests sent through the website forms are stored and managed with Google services (Google Workspace: spreadsheet and email), whose servers may be located outside Switzerland.",
-  "s": "0008bb37"
+  "t": "Data is neither sold nor passed on to third parties, except where necessary to provide the service (for example the participants' names for the hut booking) or where required by law. The client has the right to access, correct or request deletion of their data by writing to <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a>.",
+  "s": "92eab294"
  },
  "legal.las-fotografias-tomadas-durante-las": {
   "t": "Photographs taken during the activities may be used for promotional purposes only with the client's express consent, given through the authorisation checkbox on the booking form.",
@@ -2960,8 +2936,8 @@
   "s": "5bab3c0b"
  },
  "legal.esta-autorizacion-se-otorga-de": {
-  "t": "· This authorisation is granted voluntarily. The client may take part in the activity without granting it. Once granted, it can be revoked at any time by written notice to <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a>, with no retroactive effect on material already published.",
-  "s": "f801eb7b"
+  "t": "· This authorisation is given voluntarily. The client may take part in the activity without giving it. Once given, it may be withdrawn at any time by writing to <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a>: Clas Tours will then remove the client's images from its website and its social media profiles as soon as possible, within 14 days at the latest, and will not use them again. Printed material already distributed and copies shared by third parties cannot be recalled.",
+  "s": "25413ec5"
  },
  "legal.queda-expresamente-prohibido-el-uso": {
   "t": "<strong>Expressly prohibited</strong> is the use of the images for purposes other than those indicated, their transfer to third parties, or their use for commercial purposes unrelated to Clas Tours by Davila Quiroz without additional written authorisation.",
@@ -3012,8 +2988,8 @@
   "s": "1ce38be7"
  },
  "legal.ley-federal-sobre-el-turismo": {
-  "t": "<strong>Federal Tourism Act</strong> and Bernese cantonal regulations applicable to mountain guides",
-  "s": "cb5ca5b2"
+  "t": "<strong>Federal Act on Mountain Guides and Organisers of Other High-Risk Activities (RiskG)</strong> and its ordinance, to the extent they apply to the activity",
+  "s": "e94fa889"
  },
  "legal.el-cliente-al-aceptar-estos": {
   "t": "By accepting these Terms and Conditions, the client accepts the application of Swiss law and the jurisdiction of the Swiss courts, without prejudice to any mandatory consumer-protection rules that apply to them.",
@@ -3072,8 +3048,8 @@
   "s": "d6bad44f"
  },
  "legal.price-kand": {
-  "t": "<strong>Kandersteg with a night in a mountain hut (2 days, hut and half board included):</strong> CHF {{p.kand}} per person; groups of 7 or more: CHF {{g.kand}}",
-  "s": "fa5a3547"
+  "t": "<strong>Kandersteg with a hut night (2 days; guiding only, hut and half board separate):</strong> CHF {{p.kand}} per person; groups of 7 or more: CHF {{g.kand}}",
+  "s": "061922b1"
  },
  "legal.price-creux": {
   "t": "<strong>Creux du Van:</strong> CHF {{p.creux}} per person; groups of 7 or more: CHF {{g.creux}}",
@@ -3736,8 +3712,8 @@
   "s": "ad463c8a"
  },
  "guia.kandersteg-bluemlisalphutte.agua-para-la-subida-y": {
-  "t": "Water for the climb and something to eat along the way. With Clas Tours, dinner, breakfast and 1 litre of hiking tea are included.",
-  "s": "801fb741"
+  "t": "Water for the climb and something to eat along the way. The hut's half board includes dinner, breakfast and 1 litre of hiking tea.",
+  "s": "7f3eb594"
  },
  "guia.kandersteg-bluemlisalphutte.bastones-muy-recomendados-para-la": {
   "t": "Poles (highly recommended for the descent), sunscreen, sunglasses.",
@@ -3748,8 +3724,8 @@
   "s": "bbd6ccc7"
  },
  "guia.kandersteg-bluemlisalphutte.tarjeta-o-efectivo-para-bebidas": {
-  "t": "Card or cash for drinks, and valid personal insurance.",
-  "s": "376f4619"
+  "t": "Card or cash to pay the hut and drinks; personal insurance is strongly recommended.",
+  "s": "72057607"
  },
  "guia.kandersteg-bluemlisalphutte.cuanto-dura-la-travesia-griesalp": {
   "t": "How long does the Griesalp – Blüemlisalphütte – Kandersteg crossing take?",
@@ -3804,8 +3780,8 @@
   "s": "6f480162"
  },
  "guia.kandersteg-bluemlisalphutte.un-saco-sabana-obligatorio-el": {
-  "t": "A sleeping-bag liner (mandatory: the hut provides blankets but not sheets), card or cash for drinks, warm clothes, a headlamp and mountain footwear. Dinner and breakfast are included if you go with Clas Tours.",
-  "s": "2ad587aa"
+  "t": "A sleeping-bag liner (mandatory: the hut provides blankets but no sheets), card or cash to pay the hut and drinks, warm clothing, a headlamp and mountain footwear. Dinner and breakfast are included in the hut's half board.",
+  "s": "a902f084"
  },
  "guia.kandersteg-bluemlisalphutte.fuentes": {
   "t": "Sources",
@@ -3844,8 +3820,8 @@
   "s": "0b1098c4"
  },
  "guia.kandersteg-bluemlisalphutte.cta-price": {
-  "t": "per person · all inclusive (guide, night in the hut, dinner and breakfast) · minimum 2 people<br>Groups of 7 or more: CHF {{g.kand}} per person · maximum 10 people",
-  "s": "94203522"
+  "t": "per person · guiding in Spanish on both days · minimum 2 people<br>Groups of 7 or more: CHF {{g.kand}} per person · maximum 10 people<br>Hut + half board: approx. CHF 95 per adult, paid directly to the hut",
+  "s": "1256f93e"
  },
  "js.sent.title": {
   "t": "Request sent!",
@@ -3900,16 +3876,16 @@
   "s": "1cf48a55"
  },
  "legal.art3-solicitud": {
-  "t": "Sending the form or a message is only a request: it creates neither a contract nor a reserved place. The contract is concluded when Clas Tours confirms in writing (email or WhatsApp); the confirmation binds both parties unless the client objects in writing within 3 days. The confirmation includes a link to these Terms and Conditions, or they are sent with it, along with the meeting point and time and the end of the activity.",
-  "s": "a33e626e"
+  "t": "Submitting the form or sending a message is only a request: it creates neither a contract nor a reserved place. Clas Tours replies with a <strong>written confirmation</strong> (email or WhatsApp) stating the route, date, price, the meeting point and time and the end of the activity, and including a link to these Terms and Conditions. The contract is concluded when the client <strong>accepts that confirmation in writing</strong> (an “ok” by email or WhatsApp is enough) <strong>or pays the deposit</strong>. Silence does not count as acceptance: if the client neither accepts nor pays within 5 days of the confirmation, it lapses and Clas Tours may release the place.",
+  "s": "8788770e"
  },
  "legal.art4-anticipo": {
-  "t": "A deposit of 50% of the price is due when the booking is confirmed; the rest is due no later than 7 days before the activity, unless agreed otherwise in writing. If the deposit is not received within 5 days of the confirmation, Clas Tours may cancel the booking without compensation. Expenses that Clas Tours advances on the client's behalf (for example public-transport tickets or entry fees not included in the price) are reimbursed at actual cost, in addition to the price.",
-  "s": "44e4aba0"
+  "t": "On accepting the confirmation, a <strong>deposit of 50% of the price</strong> is payable within 5 days; the balance is due no later than 7 days before the activity, unless otherwise agreed in writing (for bookings made less than 7 days ahead, the full price is paid at once). If the client has accepted the confirmation and does not pay the deposit on time, Clas Tours sends a written reminder and allows 3 more days; if payment is still not made, Clas Tours may cancel the booking and release the place. In that case the client owes the charge that would apply to a cancellation by the client on the date the booking is cancelled (Art. 5); with 30 days or more to go, nothing is owed. Expenses that Clas Tours advances on the client's behalf (for example public transport tickets or entrance fees not included in the price) are reimbursed at actual cost, in addition to the price.",
+  "s": "6b087728"
  },
  "legal.art5-terceros": {
-  "t": "Third-party costs: if a hut or another third-party service has already been booked (for example the Bluemlisalphütte), the costs the provider does not refund under its own conditions are charged to the client in addition to the penalty above, up to the amount of the service, even if the cancellation is notified more than 30 days in advance.",
-  "s": "e8efd0e5"
+  "t": "Third-party services: services that the client books and pays for directly with a third party (for example the night and half board at the Blüemlisalphütte) are governed by that provider's terms, including for cancellation or no-show; the table above applies only to the Clas Tours price. If, at the client's request, Clas Tours has already advanced expenses on the client's behalf (Art. 4), the client reimburses them to the extent they cannot be recovered.",
+  "s": "d6210bd2"
  },
  "legal.art5-abandono": {
   "t": "Interruption or abandonment: if the client abandons an activity already under way, the full price remains due. If Clas Tours has to shorten or interrupt it for safety reasons (weather, terrain or snow conditions, the state of the group), the full price is due when the substantial part of the service has already been provided; if the activity becomes impossible from the start, only what has actually been provided is due and the rest is refunded.",
@@ -3923,10 +3899,6 @@
   "t": "The client answers the questions on the form and from the guide about experience, fitness and health completely and truthfully, and follows the safety instructions during the activity (duty to cooperate). False or withheld information may lead to exclusion without a refund.",
   "s": "9202fb93"
  },
- "legal.art7-combinado": {
-  "t": "Package travel: if an offer (for example the Kandersteg route with a night in a hut and half board for a single price) constitutes package travel under the federal act, its mandatory rules also apply (including the organiser's liability for performance of the contract and the client's cancellation rights) and prevail over these terms. Information in advance: organiser and address, Art. 1; start and end time and place, in the written confirmation; minimum number of participants, 2 (notice under Art. 3); price and payment terms, Art. 4; complaints must be reported immediately during the activity and in writing no later than 30 days after it ends; insurance, Art. 8.",
-  "s": "1c962437"
- },
  "legal.art8-anulacion": {
   "t": "Cancellation-cost insurance (especially advisable for the route with a night in a hut)",
   "s": "b004cdf7"
@@ -3938,5 +3910,25 @@
  "legal.art10-novedades": {
   "t": "News by email: if the client ticks the corresponding box, Clas Tours will send information about new routes and departures. Consent is voluntary, is not a condition for booking and can be withdrawn at any time (unsubscribe link or a message to info@clastours.ch). The date and version of the consent are recorded.",
   "s": "7f4a3588"
+ },
+ "common.refugio-pago-directo": {
+  "t": "Hut + half board: approx. CHF 95, paid directly to the hut",
+  "s": "7f1c68bf"
+ },
+ "common.reserva-refugio-coordinada": {
+  "t": "Hut booking coordinated by Santiago",
+  "s": "5d592c98"
+ },
+ "legal.art5-descuento": {
+  "t": "Any expenses Clas Tours saves because of the cancellation are deducted from the charge. If the place is filled again (by another participant or by a substitute proposed by the client who meets the route's requirements), Clas Tours refunds the amount paid for that place, deducting only the costs actually incurred.",
+  "s": "89b6d55f"
+ },
+ "legal.art10-servicios": {
+  "t": "Services used and place of processing: requests sent through the website forms are stored in a Google spreadsheet and handled by email with Gmail (free Google account; Google LLC, USA, and Google Ireland Ltd., with servers in the EU, the USA and other countries). The info@clastours.ch mailbox is hosted by Hostpoint (Switzerland). The website is hosted on GitHub Pages (GitHub Inc., USA), which logs visitors' IP addresses; fonts are loaded from Google Fonts (Google, USA) and the weather forecast from Open-Meteo, so the browser transmits the IP address to those services. WhatsApp conversations go through WhatsApp/Meta (Ireland and USA). The site uses no tracking cookies or analytics tools. Some of these providers process data in the USA and in other countries whose level of data protection is not equivalent to Switzerland's; the transfer relies on the safeguards offered by each provider (certification under the Swiss-U.S. Data Privacy Framework or standard contractual clauses).",
+  "s": "ff1a116e"
+ },
+ "legal.art10-rgpd": {
+  "t": "Clients in the EU/EEA: to the extent the General Data Protection Regulation (GDPR) applies, the legal bases are performance of the contract or of pre-contractual steps (Art. 6(1)(b) GDPR), consent for health data, email news and photographs (Art. 6(1)(a) and Art. 9(2)(a)) and legal obligations such as bookkeeping (Art. 6(1)(c)). In addition to the rights above, the client may request restriction of processing and data portability, object to processing, withdraw consent at any time and lodge a complaint with the data protection authority of their country; in Switzerland, the competent authority is the Federal Data Protection and Information Commissioner (FDPIC). Controller: Santiago Davila Quiroz (contact details in Art. 1).",
+  "s": "533fff45"
  }
 }

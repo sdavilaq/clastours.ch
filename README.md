@@ -11,6 +11,7 @@ La fuente está en `src/`:
 | Un texto (en español) | `src/i18n/es.json` |
 | Diseño, estructura, scripts | `src/pages/*.html` |
 | Precios (CHF) | `src/data.json` (se propagan a todas las páginas e idiomas) |
+| Versión de los T&C | `src/data.json` → `terms.version`. Si cambias el texto de los T&C, sube la versión: el build guarda una copia fija por versión (`clastours-legal-v1-1.html`), que es la que se enlaza en el acuse y en las confirmaciones |
 | Traducciones | `src/i18n/de.json`, `src/i18n/en.json`, `src/i18n/fr.json` |
 
 Después de editar, desde la raíz del repo:

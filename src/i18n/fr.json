@@ -372,8 +372,8 @@
   "s": "110a52ad"
  },
  "index.el-precio-incluye-el-guia": {
-  "t": "Le prix comprend le guide complet en espagnol, l'hébergement en cabane, le repas du soir et le petit-déjeuner. Le transport et les en-cas sont à votre charge ; nous vous conseillons sur tout avant le départ.",
-  "s": "e146c8a0"
+  "t": "Le prix comprend l'accompagnement complet en espagnol. Pour Kandersteg, la nuit en cabane avec souper et petit-déjeuner (env. CHF 95 par adulte ; CHF 80 pour les membres du CAS) se paie à part, directement à la Blüemlisalphütte ; je coordonne la réservation à votre nom. Le transport et les en-cas sont en sus — nous vous conseillons sur tout avant la sortie.",
+  "s": "498bcac3"
  },
  "index.instrucciones-seguridad-historias-del-camino": {
   "t": "Consignes, sécurité, histoires du chemin. Sans rien manquer à cause de la langue.",
@@ -715,14 +715,6 @@
   "t": "Guide en espagnol (2 jours)",
   "s": "b1ee1399"
  },
- "common.noche-en-bluemisalphutte": {
-  "t": "Nuit à la Bluemisalphütte",
-  "s": "472795e9"
- },
- "caminatas.cena-y-desayuno-en-refugio": {
-  "t": "Souper et petit-déjeuner à la cabane",
-  "s": "d2d31d9d"
- },
  "caminatas.planificacion-y-orientacion": {
   "t": "Planification et conseils",
   "s": "03155536"
@@ -732,8 +724,8 @@
   "s": "068f6fc4"
  },
  "caminatas.seguro-personal-obligatorio": {
-  "t": "Assurance personnelle (obligatoire)",
-  "s": "d057e9ce"
+  "t": "Assurance personnelle (recommandée, non comprise)",
+  "s": "91765da8"
  },
  "caminatas.t3-senderismo-de-montana-escala": {
   "t": "T3 — Randonnée de montagne (échelle CAS)",
@@ -776,8 +768,8 @@
   "s": "02916791"
  },
  "caminatas.por-persona-todo-incluido": {
-  "t": "par personne · tout compris",
-  "s": "8b588dc4"
+  "t": "par personne · guide 2 jours · cabane en sus",
+  "s": "91bfad48"
  },
  "caminatas.group-kand": {
   "t": "Groupes de 7 personnes et plus : <span>CHF {{g.kand}}/personne</span>",
@@ -1363,21 +1355,13 @@
   "t": "Guide en espagnol (2 jours complets)",
   "s": "d603a0ae"
  },
- "calendario.media-pension-incluida": {
-  "t": "Demi-pension incluse",
-  "s": "ebf3a0c1"
- },
- "calendario.te-de-senderismo-1-litro": {
-  "t": "Thé de randonnée (1 litre)",
-  "s": "6c02f889"
- },
  "calendario.bebidas-en-el-refugio-aparte": {
   "t": "Boissons à la cabane (en sus)",
   "s": "d19b2b90"
  },
  "calendario.media-pension-en-el-refugio": {
-  "t": "<strong>La demi-pension à la cabane comprend :</strong> souper à 18 h 30 (menu en 3 services, boissons non comprises), petit-déjeuner et 1 litre de thé de randonnée. Supplément sans gluten/lactose : CHF 5.–",
-  "s": "46aa44db"
+  "t": "<strong>Cabane (à payer directement à la Blüemlisalphütte) :</strong> nuit + demi-pension env. CHF 95 par adulte (CHF 80 pour les membres du CAS ; tarifs 2026, avec réductions pour les jeunes et les enfants). Comprend le souper à 18h30 (menu 3 plats, boissons en sus), le petit-déjeuner et 1 litre de thé de marche. Santiago coordonne la réservation au nom de chaque participant ; les conditions d'annulation de la cabane s'appliquent. La cabane peut facturer un supplément (env. CHF 5) pour les menus sans gluten ou sans lactose.",
+  "s": "303a228d"
  },
  "calendario.tren-hasta-reichenbach-im-kandertal": {
   "t": "Train jusqu'à Reichenbach im Kandertal, puis CarPostal 220 jusqu'à Griesalp. Santiago vous envoie des instructions détaillées.",
@@ -1420,8 +1404,8 @@
   "s": "1b1b4eab"
  },
  "calendario.si-suplemento-chf-5-persona": {
-  "t": "Oui — supplément CHF 5/personne (à indiquer dans le message)",
-  "s": "f9a0056d"
+  "t": "Oui (à indiquer dans le message ; supplément possible de la cabane)",
+  "s": "7fd07bbd"
  },
  "calendario.nivel-de-experiencia-necesidades-especiales": {
   "t": "Niveau d'expérience, besoins particuliers, questions...",
@@ -1812,8 +1796,8 @@
   "s": "bf872d5d"
  },
  "contacto.el-precio-incluye-la-guia": {
-  "t": "Le prix comprend le guide complet en espagnol pendant toute l'activité. Pour Kandersteg 2 jours, il comprend en plus la nuit en cabane, le souper et le petit-déjeuner. <strong>Il ne comprend pas</strong> : le transport jusqu'au point de départ, ni l'assurance personnelle.",
-  "s": "c5504ac4"
+  "t": "Le prix comprend l'accompagnement complet en espagnol pendant toute l'activité, la planification et les conseils préalables. <strong>Non compris</strong> : le transport jusqu'au point de départ, les repas, les entrées et l'assurance personnelle. Pour Kandersteg 2 jours, la nuit en cabane avec souper et petit-déjeuner (env. CHF 95 par adulte ; CHF 80 pour les membres du CAS) se paie directement à la Blüemlisalphütte : je coordonne la réservation à votre nom.",
+  "s": "07196eae"
  },
  "contacto.como-llego-al-punto-de": {
   "t": "Comment me rendre au point de départ ?",
@@ -1828,8 +1812,8 @@
   "s": "7aff04eb"
  },
  "contacto.si-con-mas-de-14": {
-  "t": "Oui. Plus de 30 jours avant, remboursement complet. Entre 29 et 15 jours avant, 50% est remboursé. 14 jours ou moins avant, pas de remboursement. Si j'ai déjà réservé une cabane, ses frais non remboursables sont à votre charge. Je vous recommande une assurance annulation. Politique complète dans les CG.",
-  "s": "f7cbf308"
+  "t": "Oui. À 30 jours ou plus : remboursement intégral. Entre 29 et 15 jours avant : remboursement de 50%. À 14 jours ou moins : pas de remboursement, mais je déduis les frais économisés et, si la place est de nouveau occupée, je vous rends ce que vous avez payé. Pour Kandersteg, la réservation de la cabane suit les conditions d'annulation de la cabane. Je vous recommande une assurance annulation. Consultez la politique complète dans les CG.",
+  "s": "26e644ac"
  },
  "contacto.donde-estamos": {
   "t": "Où nous sommes",
@@ -1858,14 +1842,6 @@
  "contacto.temporada-activa-todo-el-ano": {
   "t": "<strong>Saison active :</strong> Toute l'année — été (T3) et hiver (WT2)",
   "s": "358fcdc4"
- },
- "contacto.mapa-opcional": {
-  "t": "Carte facultative",
-  "s": "660bd898"
- },
- "contacto.puedes-incrustar-aqui-un-google": {
-  "t": "Vous pouvez intégrer ici une carte Google Maps pointant sur Ipsach, Berne",
-  "s": "08e9affe"
  },
  "contacto.fotografias-santiago-davila-quiroz-todos": {
   "t": "© Photographies : Santiago Davila Quiroz — Tous droits réservés. Toute reproduction, distribution ou utilisation sans autorisation écrite de l'auteur est expressément interdite.",
@@ -2128,8 +2104,8 @@
   "s": "3e94efeb"
  },
  "legal.ultima-actualizacion-enero-2025-version": {
-  "t": "Dernière mise à jour : novembre 2026 · Version 1.1 · Tous les services sont soumis aux présentes conditions.",
-  "s": "ae228fa0"
+  "t": "Dernière mise à jour : novembre 2026 · Version {{tv}} · Tous les services sont soumis aux présentes conditions.",
+  "s": "f407dbb3"
  },
  "legal.lea-este-documento-antes-de": {
   "t": "Veuillez lire ce document avant de réserver. En cochant la case d'acceptation du formulaire de réservation, ou en confirmant une réservation par WhatsApp ou par e-mail, le client déclare avoir lu, compris et accepté intégralement les présentes Conditions générales. La participation à toute activité implique l'acceptation de toutes les conditions énoncées ici.",
@@ -2204,8 +2180,8 @@
   "s": "6dab79a1"
  },
  "legal.domicilio-ipsach-canton-de-berna": {
-  "t": "<strong>Domicile :</strong> Ipsach, canton de Berne, Suisse",
-  "s": "372778cb"
+  "t": "<strong>Adresse :</strong> Quellmattstrasse 11, 2563 Ipsach, canton de Berne, Suisse",
+  "s": "2b8c2351"
  },
  "legal.sitio-web-www-clastours-ch": {
   "t": "<strong>Site web :</strong> www.clastours.ch",
@@ -2216,8 +2192,8 @@
   "s": "117fd8a9"
  },
  "legal.telefono-whatsapp-41-077-460": {
-  "t": "<strong>Téléphone / WhatsApp :</strong> (+41) 077 460 36 41",
-  "s": "1520adc8"
+  "t": "<strong>Téléphone / WhatsApp :</strong> +41 77 460 36 41",
+  "s": "23513739"
  },
  "legal.clas-tours-by-davila-quiroz-2": {
   "t": "Clas Tours by Davila Quiroz est une entreprise de guide de randonnée établie en Suisse, exploitée par Santiago Davila Quiroz, actuellement en formation comme Wanderleiter (guide de randonnée) certifié selon les standards suisses.",
@@ -2252,12 +2228,12 @@
   "s": "c44bfabe"
  },
  "legal.no-estan-incluidos-en-el": {
-  "t": "<strong>Ne sont pas compris</strong> dans le prix de base des randonnées d'une journée : le transport jusqu'au point de départ, les repas, les boissons, les entrées ou taxes d'accès, la location d'équipement personnel et l'assurance accidents personnelle du client.",
-  "s": "51d6a0fc"
+  "t": "<strong>Ne sont pas compris</strong> dans le prix : le transport jusqu'au point de départ, les repas, les boissons, l'hébergement, les entrées ou taxes d'accès, la location d'équipement personnel ni l'assurance-accidents personnelle du client.",
+  "s": "b5bb38d9"
  },
  "legal.la-ruta-kandersteg-con-noche": {
-  "t": "L'itinéraire <strong>Kandersteg avec nuit en cabane</strong> fait exception : son prix comprend l'hébergement à la Bluemisalphütte et la demi-pension (souper et petit-déjeuner). Il ne comprend ni les boissons, ni le transport, ni les entrées, ni l'assurance personnelle.",
-  "s": "012dbae8"
+  "t": "Itinéraire <strong>Kandersteg avec nuit en cabane</strong> : le prix de Clas Tours couvre uniquement la prestation de guide pendant les deux jours. L'hébergement et la demi-pension à la Blüemlisalphütte (env. CHF 95 par adulte ; CHF 80 pour les membres du CAS ; tarifs 2026 de la cabane, sous réserve de modification) sont réservés et payés par chaque client directement auprès de la cabane. Clas Tours se limite à coordonner la réservation, au nom et pour le compte de chaque client : l'hébergement n'est ni revendu ni facturé par Clas Tours, et cette réservation est soumise aux conditions de la cabane, y compris en matière d'annulation et de non-présentation, ainsi qu'à ses suppléments (par exemple pour les menus sans gluten ou sans lactose). Clas Tours ne propose pas de voyages à forfait.",
+  "s": "4cf0c7a7"
  },
  "legal.las-salidas-se-realizan-a": {
   "t": "Les sorties ont lieu <strong>à la demande et avec un minimum de 2 participants</strong> ; la date est convenue avec le groupe.",
@@ -2276,8 +2252,8 @@
   "s": "305076aa"
  },
  "legal.la-reserva-se-realiza-mediante": {
-  "t": "La réservation se fait au moyen du formulaire de contact du site web ou directement par WhatsApp. Une réservation est considérée comme <strong>confirmée</strong> uniquement lorsque le client a reçu une confirmation écrite de Clas Tours by Davila Quiroz.",
-  "s": "91c23859"
+  "t": "La réservation se demande au moyen des formulaires du site, par e-mail ou par WhatsApp.",
+  "s": "652bd799"
  },
  "legal.clas-tours-se-reserva-el": {
   "t": "Clas Tours se réserve le droit de refuser ou d'annuler une réservation si :",
@@ -2292,8 +2268,8 @@
   "s": "5ed9a8b7"
  },
  "legal.no-se-alcanza-el-numero": {
-  "t": "Le nombre minimum de 2 participants n'est pas atteint (vous serez prévenu le plus tôt possible et, sauf annulation tardive d'autres participants, au moins 7 jours avant l'activité)",
-  "s": "5f9f54a8"
+  "t": "Le nombre minimal de 2 participants n'est pas atteint : Clas Tours l'annonce au plus tard 7 jours avant l'activité. Si le groupe passe ensuite sous le minimum parce qu'un autre participant annule, Clas Tours s'efforce de maintenir la sortie ; si ce n'est pas possible, l'alinéa suivant s'applique",
+  "s": "68a231de"
  },
  "legal.circunstancias-de-fuerza-mayor-lo": {
   "t": "Des circonstances de force majeure l'en empêchent",
@@ -2312,8 +2288,8 @@
   "s": "b303984c"
  },
  "legal.todos-los-precios-estan-expresados": {
-  "t": "Tous les prix sont exprimés en <strong>francs suisses (CHF)</strong> et incluent la TVA suisse applicable. Le paiement s'effectue avant le début de l'activité, sauf accord écrit préalable.",
-  "s": "adab504e"
+  "t": "Tous les prix sont exprimés en <strong>francs suisses (CHF)</strong>. Clas Tours n'est pas assujettie à la TVA ; aucune TVA n'est facturée. Le paiement s'effectue avant le début de l'activité, sauf accord écrit préalable.",
+  "s": "d54215c0"
  },
  "legal.metodos-de-pago-aceptados": {
   "t": "Moyens de paiement acceptés :",
@@ -2368,8 +2344,8 @@
   "s": "3e784d4f"
  },
  "legal.mas-de-14-dias-antes": {
-  "t": "Plus de 30 jours avant",
-  "s": "5df1c93c"
+  "t": "30 jours ou plus avant",
+  "s": "23e8d2ed"
  },
  "legal.sin-penalizacion": {
   "t": "Sans pénalité",
@@ -2532,8 +2508,8 @@
   "s": "5050235d"
  },
  "legal.la-responsabilidad-de-clas-tours": {
-  "t": "Clas Tours répond selon le droit suisse des dommages qu'elle cause par sa faute dans l'exécution de l'activité. Dans la mesure permise par la loi, la responsabilité pour les dommages matériels causés par une négligence légère est limitée au prix payé pour le service contracté. La responsabilité en cas de dol ou de négligence grave, de lésions corporelles ou de décès causés par faute, ainsi que toute responsabilité que le droit impératif ne permet pas de limiter, n'est ni limitée ni exclue.",
-  "s": "50d88fb5"
+  "t": "Clas Tours répond selon le droit suisse des dommages qu'elle cause par sa faute dans l'exécution de l'activité. Dans la mesure permise par la loi, la responsabilité pour les dommages matériels causés par une négligence légère est limitée au double du prix payé pour le service contracté. La responsabilité en cas de dol ou de négligence grave, de lésions corporelles ou de décès causés par faute, ainsi que toute responsabilité que le droit impératif ne permet pas de limiter, n'est ni limitée ni exclue.",
+  "s": "223d5089"
  },
  "legal.articulo-08": {
   "t": "Article 08",
@@ -2568,8 +2544,8 @@
   "s": "d2a73b0f"
  },
  "legal.clas-tours-by-davila-quiroz-5": {
-  "t": "Clas Tours by Davila Quiroz n'assume en aucun cas les frais de sauvetage, d'évacuation médicale, d'hospitalisation ou de rapatriement du client. Ces frais sont entièrement à la charge du participant ou de son assureur.",
-  "s": "0b2ae92d"
+  "t": "Les frais de sauvetage, d'évacuation médicale, d'hospitalisation et de rapatriement sont à la charge du participant ou de son assurance, sauf si le dommage est dû à une faute de Clas Tours.",
+  "s": "49eae1cd"
  },
  "legal.un-rescate-de-montana-en": {
   "t": "Un sauvetage en montagne en Suisse peut coûter entre CHF 1’000 et CHF 10’000, voire davantage. Ne partez pas sans assurance.",
@@ -2664,8 +2640,8 @@
   "s": "cb314618"
  },
  "legal.los-datos-no-se-ceden": {
-  "t": "Les données ne sont pas transmises à des tiers, sauf si cela est strictement nécessaire à la fourniture du service ou exigé par la loi. Le client a le droit d'accéder à ses données, de les rectifier ou de les supprimer en contactant <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a>. Les demandes envoyées au moyen des formulaires du site web sont enregistrées et gérées avec des services de Google (Google Workspace : feuille de calcul et messagerie), dont les serveurs peuvent se trouver hors de Suisse.",
-  "s": "0008bb37"
+  "t": "Les données ne sont ni vendues ni communiquées à des tiers, sauf lorsque cela est nécessaire à la prestation (par exemple le nom des participants pour la réservation de la cabane) ou exigé par la loi. Le client a le droit d'accéder à ses données, de les faire rectifier ou d'en demander la suppression en écrivant à <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a>.",
+  "s": "92eab294"
  },
  "legal.las-fotografias-tomadas-durante-las": {
   "t": "Les photographies prises pendant les activités ne peuvent être utilisées à des fins promotionnelles qu'avec le consentement exprès du client, donné au moyen de la case d'autorisation du formulaire de réservation.",
@@ -2688,8 +2664,8 @@
   "s": "5bab3c0b"
  },
  "legal.esta-autorizacion-se-otorga-de": {
-  "t": "· Cette autorisation est donnée de manière volontaire. Le client peut participer à l'activité sans la donner. Une fois accordée, elle peut être révoquée à tout moment par écrit à <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a>, sans effet rétroactif sur le matériel déjà publié.",
-  "s": "f801eb7b"
+  "t": "· Cette autorisation est donnée à titre volontaire. Le client peut participer à l'activité sans la donner. Une fois donnée, elle peut être révoquée en tout temps par écrit à <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> : Clas Tours retire alors les images du client de son site web et de ses profils sur les réseaux sociaux dès que possible, au plus tard dans les 14 jours, et ne les utilise plus. Le matériel imprimé déjà distribué et les copies diffusées par des tiers ne peuvent pas être retirés.",
+  "s": "25413ec5"
  },
  "legal.queda-expresamente-prohibido-el-uso": {
   "t": "<strong>Il est expressément interdit</strong> d'utiliser les images à d'autres fins que celles indiquées, de les céder à des tiers ou de les utiliser à des fins commerciales étrangères à Clas Tours by Davila Quiroz sans autorisation écrite supplémentaire.",
@@ -2740,8 +2716,8 @@
   "s": "1ce38be7"
  },
  "legal.ley-federal-sobre-el-turismo": {
-  "t": "<strong>Législation fédérale sur le tourisme</strong> et réglementation cantonale bernoise applicable aux guides de montagne",
-  "s": "cb5ca5b2"
+  "t": "<strong>Loi fédérale sur les guides de montagne et les organisateurs d'autres activités à risque (LRisque)</strong> et son ordonnance, dans la mesure où elles s'appliquent à l'activité",
+  "s": "e94fa889"
  },
  "legal.el-cliente-al-aceptar-estos": {
   "t": "En acceptant les présentes Conditions générales, le client accepte l'application du droit suisse et la compétence des tribunaux suisses, sans préjudice des règles impératives de protection des consommateurs qui lui sont applicables.",
@@ -3512,8 +3488,8 @@
   "s": "ad463c8a"
  },
  "guia.kandersteg-bluemlisalphutte.agua-para-la-subida-y": {
-  "t": "De l'eau pour la montée et de quoi manger en chemin. Avec Clas Tours, le souper, le petit-déjeuner et 1 litre de thé de randonnée sont inclus.",
-  "s": "801fb741"
+  "t": "De l'eau pour la montée et de quoi manger en chemin. La demi-pension de la cabane comprend le souper, le petit-déjeuner et 1 litre de thé de marche.",
+  "s": "7f3eb594"
  },
  "guia.kandersteg-bluemlisalphutte.bastones-muy-recomendados-para-la": {
   "t": "Bâtons (fortement recommandés pour la descente), crème solaire, lunettes de soleil.",
@@ -3524,8 +3500,8 @@
   "s": "bbd6ccc7"
  },
  "guia.kandersteg-bluemlisalphutte.tarjeta-o-efectivo-para-bebidas": {
-  "t": "Carte ou espèces pour les boissons, et une assurance personnelle en cours de validité.",
-  "s": "376f4619"
+  "t": "Carte ou espèces pour payer la cabane et les boissons ; une assurance personnelle est vivement recommandée.",
+  "s": "72057607"
  },
  "guia.kandersteg-bluemlisalphutte.cuanto-dura-la-travesia-griesalp": {
   "t": "Combien de temps dure la traversée Griesalp – Blüemlisalphütte – Kandersteg ?",
@@ -3580,8 +3556,8 @@
   "s": "6f480162"
  },
  "guia.kandersteg-bluemlisalphutte.un-saco-sabana-obligatorio-el": {
-  "t": "Un sac de couchage en drap (obligatoire : la cabane fournit des couvertures mais pas de draps), une carte ou des espèces pour les boissons, des vêtements chauds, une lampe frontale et des chaussures de montagne. Le souper et le petit-déjeuner sont inclus si vous venez avec Clas Tours.",
-  "s": "2ad587aa"
+  "t": "Un sac à viande (obligatoire : la cabane fournit des couvertures mais pas de draps), une carte ou des espèces pour payer la cabane et les boissons, des vêtements chauds, une lampe frontale et des chaussures de montagne. Le souper et le petit-déjeuner sont compris dans la demi-pension de la cabane.",
+  "s": "a902f084"
  },
  "guia.kandersteg-bluemlisalphutte.fuentes": {
   "t": "Sources",
@@ -3620,8 +3596,8 @@
   "s": "0b1098c4"
  },
  "guia.kandersteg-bluemlisalphutte.cta-price": {
-  "t": "par personne · tout compris (guide, nuit en cabane, souper et petit-déjeuner) · minimum 2 personnes<br>Groupes de 7 ou plus : CHF {{g.kand}} par personne · maximum 10 personnes",
-  "s": "94203522"
+  "t": "par personne · guide en espagnol les 2 jours · minimum 2 personnes<br>Groupes de 7 ou plus : CHF {{g.kand}} par personne · maximum 10 personnes<br>Cabane + demi-pension : env. CHF 95 par adulte, à payer directement à la cabane",
+  "s": "1256f93e"
  },
  "wa.guia.kandersteg-bluemlisalphutte.hola-santiago-vi-la-guia": {
   "t": "Bonjour Santiago, j'ai vu le guide de Kandersteg et j'ai une question",
@@ -3832,8 +3808,8 @@
   "s": "d6bad44f"
  },
  "legal.price-kand": {
-  "t": "<strong>Kandersteg avec nuit en cabane (2 jours, cabane et demi-pension inclus) :</strong> CHF {{p.kand}} par personne ; groupes de 7 ou plus : CHF {{g.kand}}",
-  "s": "fa5a3547"
+  "t": "<strong>Kandersteg avec nuit en cabane (2 jours ; guide uniquement, cabane et demi-pension en sus) :</strong> CHF {{p.kand}} par personne ; groupes de 7 ou plus : CHF {{g.kand}}",
+  "s": "061922b1"
  },
  "legal.price-creux": {
   "t": "<strong>Creux du Van :</strong> CHF {{p.creux}} par personne ; groupes de 7 ou plus : CHF {{g.creux}}",
@@ -3900,16 +3876,16 @@
   "s": "1cf48a55"
  },
  "legal.art3-solicitud": {
-  "t": "L'envoi du formulaire ou d'un message n'est qu'une demande : il ne crée ni contrat ni place réservée. Le contrat est conclu lorsque Clas Tours confirme par écrit (e-mail ou WhatsApp) ; la confirmation lie les deux parties, sauf si le client s'y oppose par écrit dans les 3 jours. La confirmation contient un lien vers les présentes Conditions générales, ou celles-ci l'accompagnent, ainsi que le lieu et l'heure de rendez-vous et la fin de l'activité.",
-  "s": "a33e626e"
+  "t": "L'envoi du formulaire ou d'un message n'est qu'une demande : il ne crée ni contrat ni réservation de place. Clas Tours répond par une <strong>confirmation écrite</strong> (e-mail ou WhatsApp) indiquant l'itinéraire, la date, le prix, le lieu et l'heure de rendez-vous et de fin de l'activité, avec un lien vers les présentes conditions générales. Le contrat est conclu lorsque le client <strong>accepte cette confirmation par écrit</strong> (un « ok » par e-mail ou WhatsApp suffit) <strong>ou verse l'acompte</strong>. Le silence ne vaut pas acceptation : sans acceptation ni paiement dans les 5 jours suivant la confirmation, celle-ci devient caduque et Clas Tours peut disposer de la place.",
+  "s": "8788770e"
  },
  "legal.art4-anticipo": {
-  "t": "Un acompte de 50% du prix est dû à la confirmation de la réservation ; le solde est dû au plus tard 7 jours avant l'activité, sauf accord écrit contraire. Si l'acompte n'est pas reçu dans les 5 jours suivant la confirmation, Clas Tours peut annuler la réservation sans indemnité. Les frais que Clas Tours avance pour le compte du client (par exemple billets de transports publics ou entrées non compris dans le prix) sont remboursés au coût réel, en plus du prix.",
-  "s": "44e4aba0"
+  "t": "À l'acceptation de la confirmation, un <strong>acompte de 50% du prix</strong> est à verser dans les 5 jours ; le solde est dû au plus tard 7 jours avant l'activité, sauf accord écrit (pour une réservation faite moins de 7 jours à l'avance, le prix entier est payé en une fois). Si le client a accepté la confirmation et ne verse pas l'acompte à temps, Clas Tours lui adresse un rappel écrit et lui accorde 3 jours supplémentaires ; à défaut de paiement, Clas Tours peut annuler la réservation et libérer la place. Dans ce cas, le client doit l'indemnité qui s'appliquerait à une annulation de sa part à la date de cette annulation (art. 5) ; à 30 jours ou plus de l'activité, rien n'est dû. Les frais que Clas Tours avance pour le compte du client (par exemple des billets de transports publics ou des entrées non compris dans le prix) sont remboursés au coût réel, en plus du prix.",
+  "s": "6b087728"
  },
  "legal.art5-terceros": {
-  "t": "Coûts de tiers : si une cabane ou un autre service de tiers a déjà été réservé (par exemple la Bluemlisalphütte), les coûts que le prestataire ne rembourse pas selon ses propres conditions sont à la charge du client, en plus de la pénalité ci-dessus, jusqu'à concurrence du montant du service, même si l'annulation est communiquée plus de 30 jours à l'avance.",
-  "s": "e8efd0e5"
+  "t": "Prestations de tiers : les prestations que le client réserve et paie directement auprès d'un tiers (par exemple la nuit et la demi-pension à la Blüemlisalphütte) sont régies par les conditions de ce prestataire, y compris en cas d'annulation ou de non-présentation ; le tableau ci-dessus ne s'applique qu'au prix de Clas Tours. Si Clas Tours a déjà avancé des frais pour le compte du client, à sa demande (art. 4), le client les rembourse dans la mesure où ils ne sont pas récupérables.",
+  "s": "d6210bd2"
  },
  "legal.art5-abandono": {
   "t": "Interruption ou abandon : si le client abandonne une activité déjà commencée, le prix complet reste dû. Si Clas Tours doit la raccourcir ou l'interrompre pour des raisons de sécurité (météo, conditions de terrain ou de neige, état du groupe), le prix est dû en entier lorsque l'essentiel du service a déjà été fourni ; si l'activité devient impossible dès le début, seul ce qui a effectivement été fourni est dû et le reste est remboursé.",
@@ -3923,10 +3899,6 @@
   "t": "Le client répond de manière complète et exacte aux questions du formulaire et du guide sur son expérience, sa condition physique et sa santé, et suit les consignes de sécurité pendant l'activité (devoir de collaboration). Des informations fausses ou omises peuvent entraîner l'exclusion sans remboursement.",
   "s": "9202fb93"
  },
- "legal.art7-combinado": {
-  "t": "Voyages à forfait : si une offre (par exemple l'itinéraire de Kandersteg avec nuit en cabane et demi-pension pour un prix unique) constitue un voyage à forfait au sens de la loi fédérale, ses règles impératives s'appliquent en plus (y compris la responsabilité de l'organisateur pour l'exécution du contrat et les droits d'annulation du client) et priment sur les présentes conditions. Informations préalables : organisateur et adresse, art. 1 ; heure et lieu de début et de fin, dans la confirmation écrite ; nombre minimum de participants, 2 (avis selon l'art. 3) ; prix et modalités de paiement, art. 4 ; les réclamations doivent être signalées immédiatement pendant l'activité et par écrit au plus tard 30 jours après sa fin ; assurances, art. 8.",
-  "s": "1c962437"
- },
  "legal.art8-anulacion": {
   "t": "Assurance frais d'annulation (particulièrement conseillée pour l'itinéraire avec nuit en cabane)",
   "s": "b004cdf7"
@@ -3938,5 +3910,25 @@
  "legal.art10-novedades": {
   "t": "Nouvelles par e-mail : si le client coche la case correspondante, Clas Tours lui enverra des informations sur les nouveaux itinéraires et départs. Le consentement est volontaire, n'est pas une condition de la réservation et peut être retiré à tout moment (lien de désinscription ou message à info@clastours.ch). La date et la version du consentement sont enregistrées.",
   "s": "7f4a3588"
+ },
+ "common.refugio-pago-directo": {
+  "t": "Cabane + demi-pension : env. CHF 95, à payer directement à la cabane",
+  "s": "7f1c68bf"
+ },
+ "common.reserva-refugio-coordinada": {
+  "t": "Réservation de la cabane coordonnée par Santiago",
+  "s": "5d592c98"
+ },
+ "legal.art5-descuento": {
+  "t": "Les frais que Clas Tours économise du fait de l'annulation sont déduits de l'indemnité. Si la place est de nouveau occupée (par un autre participant ou par un remplaçant proposé par le client et remplissant les exigences de l'itinéraire), Clas Tours rembourse le montant payé pour cette place, en ne déduisant que les frais effectivement occasionnés.",
+  "s": "89b6d55f"
+ },
+ "legal.art10-servicios": {
+  "t": "Services utilisés et lieu du traitement : les demandes envoyées au moyen des formulaires du site sont enregistrées dans une feuille de calcul Google et traitées par e-mail avec Gmail (compte Google gratuit ; Google LLC, États-Unis, et Google Ireland Ltd., avec des serveurs dans l'UE, aux États-Unis et dans d'autres pays). La boîte info@clastours.ch est hébergée chez Hostpoint (Suisse). Le site est hébergé sur GitHub Pages (GitHub Inc., États-Unis), qui enregistre l'adresse IP des visiteurs ; les polices sont chargées depuis Google Fonts (Google, États-Unis) et les prévisions météo depuis Open-Meteo, de sorte que le navigateur transmet l'adresse IP à ces services. Les conversations WhatsApp passent par WhatsApp/Meta (Irlande et États-Unis). Le site n'utilise ni cookies de suivi ni outils d'analyse. Certains de ces prestataires traitent des données aux États-Unis et dans d'autres pays dont le niveau de protection des données n'équivaut pas à celui de la Suisse ; la transmission repose sur les garanties offertes par chaque prestataire (certification dans le cadre du Swiss-U.S. Data Privacy Framework ou clauses contractuelles types).",
+  "s": "ff1a116e"
+ },
+ "legal.art10-rgpd": {
+  "t": "Clients dans l'UE/EEE : dans la mesure où le Règlement général sur la protection des données (RGPD) s'applique, les bases juridiques sont l'exécution du contrat ou de mesures précontractuelles (art. 6, par. 1, let. b RGPD), le consentement pour les données de santé, les nouvelles par e-mail et les photographies (art. 6, par. 1, let. a et art. 9, par. 2, let. a) ainsi que les obligations légales, par exemple comptables (art. 6, par. 1, let. c). Outre les droits ci-dessus, le client peut demander la limitation du traitement et la portabilité de ses données, s'opposer au traitement, retirer son consentement en tout temps et déposer une réclamation auprès de l'autorité de protection des données de son pays ; en Suisse, l'autorité compétente est le Préposé fédéral à la protection des données et à la transparence (PFPDT). Responsable du traitement : Santiago Davila Quiroz (coordonnées à l'art. 1).",
+  "s": "533fff45"
  }
 }

@@ -102,17 +102,13 @@
   .faq-a strong{color:var(--ink);font-weight:500}
   .faq-a a{color:var(--petrol);text-decoration:none}
   .faq-a a:hover{color:var(--copper)}
-  .ubicacion-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .ubicacion-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;max-width:720px}
   .ubicacion-text p{font-size:0.9375rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:1rem}
   .ubicacion-data{display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem}
   .ubic-item{display:flex;align-items:flex-start;gap:10px}
   .ubic-item svg{width:16px;height:16px;color:var(--copper-lt);flex-shrink:0;margin-top:2px}
   .ubic-item span{font-size:0.875rem;color:rgba(255,255,255,0.55);line-height:1.5}
   .ubic-item strong{color:rgba(255,255,255,0.85);font-weight:500}
-  .mapa-placeholder{background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.12);border-radius:6px;height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;color:rgba(255,255,255,0.25)}
-  .mapa-placeholder svg{width:32px;height:32px;opacity:0.4}
-  .mapa-placeholder-label{font-size:0.72rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5}
-  .mapa-placeholder-hint{font-size:0.8rem;opacity:0.35;text-align:center;max-width:240px;line-height:1.5}
   .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,0.35);text-decoration:none;transition:transform 0.2s}
   .wa-float:hover{transform:scale(1.1)}
   .wa-float svg{width:26px;height:26px;color:white}
@@ -310,9 +306,9 @@
         </div>
         <div class="faq-cat">
           <div class="faq-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Reservas, precios y logística</div>
-          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Qué incluye exactamente el precio?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">El precio incluye la guía completa en español durante toda la actividad. En Kandersteg 2 días incluye además noche en refugio, cena y desayuno. <strong>No incluye</strong>: transporte al punto de partida, ni seguro personal.</div></div>
+          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Qué incluye exactamente el precio?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">El precio incluye la guía completa en español durante toda la actividad, la planificación y la orientación previa. <strong>No incluye</strong>: transporte al punto de partida, comidas, entradas ni seguro personal. En Kandersteg 2 días, la noche en el refugio con cena y desayuno (aprox. CHF 95 por adulto; CHF 80 socios SAC) se paga directamente a la Blüemlisalphütte: yo coordino la reserva a tu nombre.</div></div>
           <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Cómo llego al punto de partida?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Todas las rutas son accesibles en transporte público suizo (SBB/CFF). Al confirmar la reserva te envío las instrucciones detalladas — tren, bus postal, hora de encuentro y punto exacto.</div></div>
-          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Puedo cancelar si cambio de planes?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Sí. Con más de 30 días de antelación, reembolso completo. Entre 29 y 15 días antes, se reembolsa el 50%. Con 14 días o menos, sin reembolso. Si ya reservé un refugio, sus gastos no reembolsables corren por tu cuenta. Te recomiendo un seguro de cancelación. Consulta la política completa en los T&C.</div></div>
+          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Puedo cancelar si cambio de planes?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Sí. Con 30 días o más de antelación, reembolso completo. Entre 29 y 15 días antes, se reembolsa el 50%. Con 14 días o menos, sin reembolso, pero descuento los gastos que me ahorre y, si la plaza se vuelve a ocupar, te devuelvo lo pagado. En Kandersteg, la reserva del refugio sigue las condiciones de cancelación de la cabaña. Te recomiendo un seguro de cancelación. Consulta la política completa en los T&C.</div></div>
         </div>
       </div>
     </div>
@@ -334,11 +330,6 @@
           <div class="ubic-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span><strong>Zona de operación:</strong> Alpes suizos, Oberland bernés, Jura</span></div>
           <div class="ubic-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span><strong>Temporada activa:</strong> Todo el año — verano (T3) e invierno (WT2)</span></div>
         </div>
-      </div>
-      <div class="mapa-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div class="mapa-placeholder-label">Mapa opcional</div>
-        <div class="mapa-placeholder-hint">Puedes incrustar aquí un Google Maps embed apuntando a Ipsach, Berna</div>
       </div>
     </div>
   </div>
