@@ -143,20 +143,25 @@ def outpath(page, lang):
     os.makedirs(d, exist_ok=True)
     return os.path.join(d, page + '.html')
 
+def terms_text(page_html):
+    """Solo el texto de los T&C (sin menú, pie, estilos ni scripts), para saber si cambió el contenido."""
+    m = re.search(r'<div class="legal-hero">(.*)<div class="legal-footer">', page_html, flags=re.S)
+    body = re.sub(r'<(script|style)\b.*?</\1>', '', m.group(1) if m else page_html, flags=re.S)
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', body))).strip()
+
 def terms_archive(out, lang, data):
     """Copia fija de los T&C por versión (clastours-legal-v1-1.html): es la que se enlaza en el acuse al cliente.
-    Se escribe una sola vez. Si el texto de los T&C cambia después, hay que subir terms.version en src/data.json
-    (o borrar la copia si esa versión aún no se había publicado)."""
+    Si el TEXTO de los T&C cambia después de publicada una versión, hay que subir terms.version en src/data.json
+    (o borrar la copia si esa versión aún no se había publicado). Cambios de menú, pie o scripts no cuentan."""
     ver = data.get('terms', {}).get('version', '')
     if not ver: return True
     name = 'clastours-legal-v%s' % ver.replace('.', '-')
     snap = out.replace('<meta name="viewport"', '<meta name="robots" content="noindex">\n<meta name="viewport"', 1)
     p = outpath(name, lang)
-    if not os.path.exists(p):
-        open(p, 'w', encoding='utf-8').write(snap); return True
-    if open(p, encoding='utf-8').read() != snap:
+    if os.path.exists(p) and terms_text(open(p, encoding='utf-8').read()) != terms_text(snap):
         print('[T&C %s] el texto cambió respecto a la copia archivada v%s: sube terms.version en src/data.json (o borra %s si esa versión aún no se publicó)' % (lang, ver, os.path.relpath(p, ROOT)))
         return False
+    open(p, 'w', encoding='utf-8').write(snap)
     return True
 
 def report(S):
