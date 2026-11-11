@@ -3930,5 +3930,61 @@
  "legal.art10-rgpd": {
   "t": "Clients dans l'UE/EEE : dans la mesure où le Règlement général sur la protection des données (RGPD) s'applique, les bases juridiques sont l'exécution du contrat ou de mesures précontractuelles (art. 6, par. 1, let. b RGPD), le consentement pour les données de santé, les nouvelles par e-mail et les photographies (art. 6, par. 1, let. a et art. 9, par. 2, let. a) ainsi que les obligations légales, par exemple comptables (art. 6, par. 1, let. c). Outre les droits ci-dessus, le client peut demander la limitation du traitement et la portabilité de ses données, s'opposer au traitement, retirer son consentement en tout temps et déposer une réclamation auprès de l'autorité de protection des données de son pays ; en Suisse, l'autorité compétente est le Préposé fédéral à la protection des données et à la transparence (PFPDT). Responsable du traitement : Santiago Davila Quiroz (coordonnées à l'art. 1).",
   "s": "533fff45"
+ },
+ "contacto.faq-ruta-q": {
+  "t": "Pouvez-vous changer d'itinéraire en cas de mauvais temps ?",
+  "s": "07a7c28c"
+ },
+ "contacto.faq-ruta-a": {
+  "t": "Oui. Si l'itinéraire prévu n'est pas sûr ce jour-là, je vous propose une alternative équivalente dans la même région ou une autre date. Si j'annule finalement pour des raisons de sécurité, vous choisissez entre un report sans frais et un remboursement complet.",
+  "s": "227e685f"
+ },
+ "contacto.faq-guia-q": {
+  "t": "Est-ce toujours vous qui guidez ?",
+  "s": "7217d69a"
+ },
+ "contacto.faq-guia-a": {
+  "t": "Oui, je guide chaque sortie personnellement. Ce n'est qu'en cas de maladie ou d'accident que je vous proposerais un autre guide qualifié de confiance, en vous prévenant le plus tôt possible.",
+  "s": "f8508b94"
+ },
+ "contacto.faq-plan-q": {
+  "t": "Peut-on changer le programme pendant la randonnée ?",
+  "s": "e0868ac1"
+ },
+ "contacto.faq-plan-a": {
+  "t": "Bien sûr, si c'est sûr : une pause plus longue, le lac plutôt que le belvédère, ce que le groupe préfère. La seule chose qui ne se négocie pas, c'est la sécurité : si une pente raide, la neige ou un orage le déconseillent, c'est moi qui décide et je vous explique pourquoi.",
+  "s": "1a8d43c1"
+ },
+ "contacto.faq-fotos-q": {
+  "t": "J'adore prendre des photos, y aura-t-il le temps ?",
+  "s": "1dd9b1b2"
+ },
+ "contacto.faq-fotos-a": {
+  "t": "Oui, il y a toujours des arrêts photo aux plus beaux endroits. Si le rythme met en danger le train du retour ou une descente avec une bonne lumière, je vous préviens et nous adaptons le programme ensemble.",
+  "s": "9bac9a6b"
+ },
+ "contacto.faq-salud-q": {
+  "t": "Pourquoi me posez-vous des questions sur ma santé et ma condition physique ?",
+  "s": "94ffccea"
+ },
+ "contacto.faq-salud-a": {
+  "t": "Pour choisir le bon rythme et le bon itinéraire et vous guider en sécurité. Parlez-moi franchement de vos blessures, allergies ou médicaments importants : si une information importante est omise et que la randonnée doit être écourtée pour cette raison, le prix reste dû.",
+  "s": "aafd0549"
+ },
+ "contacto.faq-cumbre-q": {
+  "t": "Et si nous faisons demi-tour avant le sommet ?",
+  "s": "9a6ea963"
+ },
+ "contacto.faq-cumbre-a": {
+  "t": "Le prix reste le même. Ce que je vous garantis, c'est une conduite attentive, pas d'atteindre le sommet : si faire demi-tour est le plus sûr, nous faisons demi-tour.",
+  "s": "d909c7ad"
+ },
+ "contacto.faq-abandono-q": {
+  "t": "Que se passe-t-il si je veux abandonner en cours de randonnée ?",
+  "s": "faf54d96"
+ },
+ "contacto.faq-abandono-a": {
+  "t": "Je vous raccompagne ou vous conduis à un point sûr desservi par les transports publics, mais le prix complet reste dû : la journée vous était déjà réservée.",
+  "s": "8a3333e5"
  }
 }

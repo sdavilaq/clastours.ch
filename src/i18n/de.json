@@ -3930,5 +3930,61 @@
  "legal.art10-rgpd": {
   "t": "Kundinnen und Kunden in der EU/im EWR: Soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist, sind die Rechtsgrundlagen die Erfüllung des Vertrags bzw. vorvertraglicher Massnahmen (Art. 6 Abs. 1 lit. b DSGVO), die Einwilligung für Gesundheitsdaten, Neuigkeiten per E-Mail und Fotos (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a) sowie gesetzliche Pflichten, etwa zur Buchführung (Art. 6 Abs. 1 lit. c). Zusätzlich zu den oben genannten Rechten kann die Kundin bzw. der Kunde die Einschränkung der Bearbeitung und die Datenübertragbarkeit verlangen, der Bearbeitung widersprechen, eine Einwilligung jederzeit widerrufen und bei der Datenschutzbehörde des Wohnsitzlandes Beschwerde einreichen; in der Schweiz ist der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte (EDÖB) zuständig. Verantwortlicher: Santiago Davila Quiroz (Kontaktdaten in Art. 1).",
   "s": "533fff45"
+ },
+ "contacto.faq-ruta-q": {
+  "t": "Kannst du die Route bei schlechtem Wetter ändern?",
+  "s": "07a7c28c"
+ },
+ "contacto.faq-ruta-a": {
+  "t": "Ja. Ist die geplante Route an diesem Tag nicht sicher, schlage ich dir eine gleichwertige Alternative in derselben Gegend oder ein anderes Datum vor. Sage ich aus Sicherheitsgründen ganz ab, wählst du zwischen kostenloser Verschiebung und voller Rückerstattung.",
+  "s": "227e685f"
+ },
+ "contacto.faq-guia-q": {
+  "t": "Führst du mich immer selbst?",
+  "s": "7217d69a"
+ },
+ "contacto.faq-guia-a": {
+  "t": "Ja, jede Tour führe ich persönlich. Nur wenn ich krank werde oder einen Unfall habe, schlage ich dir eine andere qualifizierte Führungsperson meines Vertrauens vor und informiere dich so früh wie möglich.",
+  "s": "f8508b94"
+ },
+ "contacto.faq-plan-q": {
+  "t": "Können wir den Plan während der Wanderung ändern?",
+  "s": "e0868ac1"
+ },
+ "contacto.faq-plan-a": {
+  "t": "Klar, wenn es sicher ist: eine längere Pause, der See statt des Aussichtspunkts, was die Gruppe lieber möchte. Nur bei der Sicherheit gibt es keine Kompromisse: Sprechen ein steiler Hang, Schnee oder ein Gewitter dagegen, entscheide ich und erkläre dir warum.",
+  "s": "1a8d43c1"
+ },
+ "contacto.faq-fotos-q": {
+  "t": "Ich fotografiere gern – gibt es Zeit dafür?",
+  "s": "1dd9b1b2"
+ },
+ "contacto.faq-fotos-a": {
+  "t": "Ja, an den schönsten Stellen gibt es immer Fotostopps. Gefährdet das Tempo den Zug oder den Abstieg bei gutem Licht, sage ich es dir und wir passen den Plan gemeinsam an.",
+  "s": "9bac9a6b"
+ },
+ "contacto.faq-salud-q": {
+  "t": "Warum fragst du nach meiner Gesundheit und Kondition?",
+  "s": "94ffccea"
+ },
+ "contacto.faq-salud-a": {
+  "t": "Damit ich das passende Tempo und die richtige Route wähle und dich sicher führe. Erzähl mir ehrlich von Verletzungen, Allergien oder relevanten Medikamenten: Wird etwas Wichtiges verschwiegen und muss die Wanderung deshalb verkürzt werden, bleibt der Preis geschuldet.",
+  "s": "aafd0549"
+ },
+ "contacto.faq-cumbre-q": {
+  "t": "Und wenn wir vor dem Gipfel umkehren?",
+  "s": "9a6ea963"
+ },
+ "contacto.faq-cumbre-a": {
+  "t": "Der Preis bleibt gleich. Ich garantiere dir eine sorgfältige Führung, nicht das Erreichen des Gipfels: Ist Umkehren das Sicherste, kehren wir um.",
+  "s": "d909c7ad"
+ },
+ "contacto.faq-abandono-q": {
+  "t": "Was passiert, wenn ich die Wanderung mittendrin abbrechen möchte?",
+  "s": "faf54d96"
+ },
+ "contacto.faq-abandono-a": {
+  "t": "Ich begleite dich zurück oder bringe dich zu einem sicheren Punkt mit öffentlichem Verkehr, aber der volle Preis bleibt geschuldet: Der Tag war für dich reserviert.",
+  "s": "8a3333e5"
  }
 }
