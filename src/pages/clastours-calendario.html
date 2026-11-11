@@ -253,7 +253,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                   <input type="checkbox" id="s1-foto">
                   <label for="s1-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s1','{{t:cal.salida-creux}}')">{{t:common.reservar-por-whatsapp}}</button>
+                <button class="btn-inscribir" data-salida="{{t:cal.salida-creux}}" onclick="inscribir('s1',this.dataset.salida)">{{t:common.reservar-por-whatsapp}}</button>
                 <p class="form-nota">{{t:common.te-contactamos-en-menos-de}}</p>
               </div>
             </div>
@@ -349,7 +349,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                   <input type="checkbox" id="s3-foto">
                   <label for="s3-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s3','{{t:cal.salida-kandersteg}}')">{{t:common.reservar-por-whatsapp}}</button>
+                <button class="btn-inscribir" data-salida="{{t:cal.salida-kandersteg}}" onclick="inscribir('s3',this.dataset.salida)">{{t:common.reservar-por-whatsapp}}</button>
                 <p class="form-nota">{{t:calendario.minimo-2-personas-te-contactamos}}</p>
               </div>
             </div>
@@ -441,7 +441,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                   <input type="checkbox" id="s4-foto">
                   <label for="s4-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s4','{{t:cal.salida-augst}}')">{{t:common.reservar-por-whatsapp}}</button>
+                <button class="btn-inscribir" data-salida="{{t:cal.salida-augst}}" onclick="inscribir('s4',this.dataset.salida)">{{t:common.reservar-por-whatsapp}}</button>
                 <p class="form-nota">{{t:common.te-contactamos-en-menos-de}}</p>
               </div>
             </div>
@@ -527,7 +527,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                   <input type="checkbox" id="s6-foto">
                   <label for="s6-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s6','{{t:cal.salida-relojes}}')">{{t:common.reservar-por-whatsapp}}</button>
+                <button class="btn-inscribir" data-salida="{{t:cal.salida-relojes}}" onclick="inscribir('s6',this.dataset.salida)">{{t:common.reservar-por-whatsapp}}</button>
                 <p class="form-nota">{{t:common.te-contactamos-en-menos-de}}</p>
               </div>
             </div>

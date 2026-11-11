@@ -27,13 +27,19 @@ var TZ = 'Europe/Zurich';
 
 // Cuenta usos por día en las propiedades del script; devuelve false si ya se llegó al tope
 function bump_(key, max) {
-  var props = PropertiesService.getScriptProperties();
-  var day = Utilities.formatDate(new Date(), TZ, 'yyyyMMdd');
-  var k = 'n_' + day + '_' + key;
-  var n = Number(props.getProperty(k) || 0);
-  if (n >= max) return false;
-  props.setProperty(k, String(n + 1));
-  return true;
+  var lock = LockService.getScriptLock();
+  lock.waitLock(15000);   // sin bloqueo, dos envíos simultáneos podrían contar como uno
+  try {
+    var props = PropertiesService.getScriptProperties();
+    var day = Utilities.formatDate(new Date(), TZ, 'yyyyMMdd');
+    var k = 'n_' + day + '_' + key;
+    var n = Number(props.getProperty(k) || 0);
+    if (n >= max) return false;
+    props.setProperty(k, String(n + 1));
+    return true;
+  } finally {
+    lock.releaseLock();
+  }
 }
 
 // Borra los contadores de días anteriores
@@ -50,7 +56,8 @@ function hash_(txt) {
   }).join('');
 }
 
-// Escribe la fila como TEXTO: así nada que empiece por = + - @ se ejecuta como fórmula (y el "+" del teléfono se conserva)
+// Escribe la fila como TEXTO: así nada que empiece por = + - @ se ejecuta como fórmula (y el "+" del teléfono se conserva).
+// La primera columna (Recibida) sí es una fecha de verdad, para poder ordenar y filtrar junto con las filas antiguas.
 function appendSafe_(sh, vals) {
   var lock = LockService.getScriptLock();
   lock.waitLock(15000);
@@ -58,7 +65,8 @@ function appendSafe_(sh, vals) {
     var row = sh.getLastRow() + 1;
     var r = sh.getRange(row, 1, 1, vals.length);
     r.setNumberFormat('@');
-    r.setValues([vals.map(function (v) { return v instanceof Date ? Utilities.formatDate(v, TZ, 'yyyy-MM-dd HH:mm') : String(v); })]);
+    r.setValues([vals.map(function (v, i) { return i === 0 && v instanceof Date ? '' : String(v); })]);
+    if (vals[0] instanceof Date) sh.getRange(row, 1).setNumberFormat('yyyy-mm-dd hh:mm').setValue(vals[0]);
   } finally {
     lock.releaseLock();
   }

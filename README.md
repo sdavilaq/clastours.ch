@@ -33,5 +33,5 @@ Mientras una traducción falte o esté desactualizada, esa página muestra el te
 - Los textos de los scripts (alertas, widget del tiempo, mensaje de WhatsApp) están en `es.json` con prefijo `js.`.
 - Los precios nunca van escritos a mano en los textos: se usa `{{p.ruta}}` (precio) o `{{g.ruta}}` (grupo 7+).
 - `clas_tours_4xA4.html` (flyer) no se traduce ni se genera.
-- Tras publicar: purgar la caché de Cloudflare (Purge Everything).
+- Tras fusionar en `main`, GitHub Pages publica solo (1–2 minutos). No hay Cloudflare ni caché que purgar: dominio, DNS y correo están en Hostpoint.
 - Las traducciones de los Términos y Condiciones son informativas; en caso de discrepancia prevalece la versión en español.
