@@ -1384,8 +1384,8 @@
   "s": "7aff04eb"
  },
  "contacto.si-con-mas-de-14": {
-  "t": "Ja. Bei mehr als 14 Tagen Vorlauf volle Rückerstattung. Zwischen 7 und 14 Tagen 75 %. Zwischen 3 und 6 Tagen 50 %. Bei weniger als 48 Stunden keine Rückerstattung. Die <a href=\"clastours-legal.html\">vollständige Regelung</a> findest du in den AGB.",
-  "s": "77275680"
+  "t": "Ja. Bei mehr als 30 Tagen vorher erhältst du den vollen Betrag zurück. 29 bis 15 Tage vorher werden 50% erstattet. Bei 14 Tagen oder weniger gibt es keine Rückerstattung. Wenn ich bereits eine Hütte gebucht habe, gehen deren nicht erstattbare Kosten zu deinen Lasten. Ich empfehle eine Annullationskostenversicherung. Die vollständige Regelung findest du in den AGB.",
+  "s": "f7cbf308"
  },
  "contacto.donde-estamos": {
   "t": "Wo wir sind",
@@ -2648,8 +2648,8 @@
   "s": "3e784d4f"
  },
  "legal.mas-de-14-dias-antes": {
-  "t": "Mehr als 14 Tage vorher",
-  "s": "b81868a1"
+  "t": "Mehr als 30 Tage vorher",
+  "s": "5df1c93c"
  },
  "legal.sin-penalizacion": {
   "t": "Keine Stornogebühr",
@@ -2660,16 +2660,16 @@
   "s": "844d5af6"
  },
  "legal.entre-7-y-14-dias": {
-  "t": "Zwischen 7 und 14 Tagen vorher",
-  "s": "82e97072"
+  "t": "29 bis 15 Tage vorher",
+  "s": "0c357f77"
  },
  "legal.25-del-importe": {
-  "t": "25 % des Betrags",
-  "s": "5f1bd053"
+  "t": "50% des Betrags",
+  "s": "92189dfb"
  },
  "legal.75-reembolso": {
-  "t": "75 % Rückerstattung",
-  "s": "bd4cc8e0"
+  "t": "50% Rückerstattung",
+  "s": "b6cb7f81"
  },
  "legal.entre-3-y-6-dias": {
   "t": "Zwischen 3 und 6 Tagen vorher",
@@ -2684,8 +2684,8 @@
   "s": "b6cb7f81"
  },
  "legal.menos-de-48-horas-antes": {
-  "t": "Weniger als 3 Tage vorher",
-  "s": "113ad337"
+  "t": "14 Tage oder weniger vorher",
+  "s": "3ed2e2d1"
  },
  "legal.no-presentacion-no-show": {
   "t": "Nichterscheinen (No-Show)",
@@ -3900,16 +3900,16 @@
   "s": "1cf48a55"
  },
  "legal.art3-solicitud": {
-  "t": "Das Absenden des Formulars oder einer Nachricht ist nur eine Anfrage: Es begründet weder einen Vertrag noch eine Platzreservation. Der Vertrag kommt zustande, wenn Clas Tours schriftlich (E-Mail oder WhatsApp) bestätigt. Die Bestätigung enthält einen Link zu diesen Allgemeinen Geschäftsbedingungen oder wird mit ihnen versandt, sowie Treffpunkt und -zeit und Ende der Aktivität.",
-  "s": "daa3c15d"
+  "t": "Das Absenden des Formulars oder einer Nachricht ist nur eine Anfrage: Es begründet weder einen Vertrag noch eine Platzreservation. Der Vertrag kommt zustande, wenn Clas Tours schriftlich (E-Mail oder WhatsApp) bestätigt; die Bestätigung ist für beide Parteien verbindlich, sofern die Kundin bzw. der Kunde nicht innerhalb von 3 Tagen schriftlich widerspricht. Die Bestätigung enthält einen Link zu diesen Allgemeinen Geschäftsbedingungen oder wird mit ihnen versandt, sowie Treffpunkt und -zeit und Ende der Aktivität.",
+  "s": "a33e626e"
  },
  "legal.art4-anticipo": {
-  "t": "Zur Sicherung von Plätzen oder Hütte kann Clas Tours bei der Bestätigung eine Anzahlung verlangen; der Rest ist vor der Aktivität fällig. Auslagen, die Clas Tours für die Kundin bzw. den Kunden vorschiesst (z. B. nicht im Preis enthaltene Tickets des öffentlichen Verkehrs oder Eintritte), werden zusätzlich zum Preis zu den tatsächlichen Kosten erstattet.",
-  "s": "61f27416"
+  "t": "Bei der Bestätigung der Buchung ist eine Anzahlung von 50% des Preises zu leisten; der Rest ist spätestens 7 Tage vor der Aktivität fällig, sofern nichts anderes schriftlich vereinbart ist. Geht die Anzahlung nicht innerhalb von 5 Tagen nach der Bestätigung ein, kann Clas Tours die Buchung entschädigungslos annullieren. Auslagen, die Clas Tours für die Kundin bzw. den Kunden vorschiesst (z. B. nicht im Preis enthaltene Tickets des öffentlichen Verkehrs oder Eintritte), werden zusätzlich zum Preis zu den tatsächlichen Kosten erstattet.",
+  "s": "44e4aba0"
  },
  "legal.art5-terceros": {
-  "t": "Kosten Dritter: Wurde bereits eine Hütte oder eine andere Leistung Dritter gebucht (z. B. die Bluemlisalphütte), werden die Kosten, die der Anbieter nach seinen eigenen Bedingungen nicht zurückerstattet, zusätzlich zur obigen Entschädigung bis zur Höhe der Leistung in Rechnung gestellt, auch wenn die Annullierung mehr als 14 Tage vorher erfolgt.",
-  "s": "ab79223c"
+  "t": "Kosten Dritter: Wurde bereits eine Hütte oder eine andere Leistung Dritter gebucht (z. B. die Bluemlisalphütte), werden die Kosten, die der Anbieter nach seinen eigenen Bedingungen nicht zurückerstattet, zusätzlich zur obigen Entschädigung bis zur Höhe der Leistung in Rechnung gestellt, auch wenn die Annullierung mehr als 30 Tage vorher erfolgt.",
+  "s": "e8efd0e5"
  },
  "legal.art5-abandono": {
   "t": "Unterbruch oder Abbruch: Bricht die Kundin bzw. der Kunde die bereits begonnene Aktivität ab, bleibt der volle Preis geschuldet. Muss Clas Tours die Aktivität aus Sicherheitsgründen (Wetter, Gelände- oder Schneeverhältnisse, Zustand der Gruppe) verkürzen oder abbrechen, ist der volle Preis geschuldet, sofern der wesentliche Teil der Leistung bereits erbracht wurde; wird die Aktivität von Anfang an unmöglich, ist nur die tatsächlich erbrachte Leistung geschuldet und der Rest wird erstattet.",

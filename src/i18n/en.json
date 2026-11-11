@@ -1384,8 +1384,8 @@
   "s": "7aff04eb"
  },
  "contacto.si-con-mas-de-14": {
-  "t": "Yes. More than 14 days in advance, full refund. Between 7 and 14 days, 75%. Between 3 and 6 days, 50%. Less than 48 hours, no refund. See the <a href=\"clastours-legal.html\">full policy</a> in the T&amp;C.",
-  "s": "77275680"
+  "t": "Yes. More than 30 days before, you get a full refund. 29 to 15 days before, 50% is refunded. 14 days or less before, there is no refund. If I have already booked a hut, its non-refundable costs are yours. I recommend cancellation insurance. See the full policy in the T&C.",
+  "s": "f7cbf308"
  },
  "contacto.donde-estamos": {
   "t": "Where we are",
@@ -2648,8 +2648,8 @@
   "s": "3e784d4f"
  },
  "legal.mas-de-14-dias-antes": {
-  "t": "More than 14 days before",
-  "s": "b81868a1"
+  "t": "More than 30 days before",
+  "s": "5df1c93c"
  },
  "legal.sin-penalizacion": {
   "t": "No penalty",
@@ -2660,16 +2660,16 @@
   "s": "844d5af6"
  },
  "legal.entre-7-y-14-dias": {
-  "t": "Between 7 and 14 days before",
-  "s": "82e97072"
+  "t": "29 to 15 days before",
+  "s": "0c357f77"
  },
  "legal.25-del-importe": {
-  "t": "25% of the amount",
-  "s": "5f1bd053"
+  "t": "50% of the amount",
+  "s": "92189dfb"
  },
  "legal.75-reembolso": {
-  "t": "75% refund",
-  "s": "bd4cc8e0"
+  "t": "50% refund",
+  "s": "b6cb7f81"
  },
  "legal.entre-3-y-6-dias": {
   "t": "Between 3 and 6 days before",
@@ -2684,8 +2684,8 @@
   "s": "b6cb7f81"
  },
  "legal.menos-de-48-horas-antes": {
-  "t": "Less than 3 days before",
-  "s": "113ad337"
+  "t": "14 days or less before",
+  "s": "3ed2e2d1"
  },
  "legal.no-presentacion-no-show": {
   "t": "No-show",
@@ -3900,16 +3900,16 @@
   "s": "1cf48a55"
  },
  "legal.art3-solicitud": {
-  "t": "Sending the form or a message is only a request: it creates neither a contract nor a reserved place. The contract is concluded when Clas Tours confirms in writing (email or WhatsApp). The confirmation includes a link to these Terms and Conditions, or they are sent with it, along with the meeting point and time and the end of the activity.",
-  "s": "daa3c15d"
+  "t": "Sending the form or a message is only a request: it creates neither a contract nor a reserved place. The contract is concluded when Clas Tours confirms in writing (email or WhatsApp); the confirmation binds both parties unless the client objects in writing within 3 days. The confirmation includes a link to these Terms and Conditions, or they are sent with it, along with the meeting point and time and the end of the activity.",
+  "s": "a33e626e"
  },
  "legal.art4-anticipo": {
-  "t": "To secure places or a hut, Clas Tours may ask for a deposit when confirming the booking; the rest is due before the activity. Expenses that Clas Tours advances on the client's behalf (for example public-transport tickets or entry fees not included in the price) are reimbursed at actual cost, in addition to the price.",
-  "s": "61f27416"
+  "t": "A deposit of 50% of the price is due when the booking is confirmed; the rest is due no later than 7 days before the activity, unless agreed otherwise in writing. If the deposit is not received within 5 days of the confirmation, Clas Tours may cancel the booking without compensation. Expenses that Clas Tours advances on the client's behalf (for example public-transport tickets or entry fees not included in the price) are reimbursed at actual cost, in addition to the price.",
+  "s": "44e4aba0"
  },
  "legal.art5-terceros": {
-  "t": "Third-party costs: if a hut or another third-party service has already been booked (for example the Bluemlisalphütte), the costs the provider does not refund under its own conditions are charged to the client in addition to the penalty above, up to the amount of the service, even if the cancellation is notified more than 14 days in advance.",
-  "s": "ab79223c"
+  "t": "Third-party costs: if a hut or another third-party service has already been booked (for example the Bluemlisalphütte), the costs the provider does not refund under its own conditions are charged to the client in addition to the penalty above, up to the amount of the service, even if the cancellation is notified more than 30 days in advance.",
+  "s": "e8efd0e5"
  },
  "legal.art5-abandono": {
   "t": "Interruption or abandonment: if the client abandons an activity already under way, the full price remains due. If Clas Tours has to shorten or interrupt it for safety reasons (weather, terrain or snow conditions, the state of the group), the full price is due when the substantial part of the service has already been provided; if the activity becomes impossible from the start, only what has actually been provided is due and the rest is refunded.",
