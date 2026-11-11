@@ -242,6 +242,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                 </div>
                 <div class="field"><label>{{t:common.mensaje-opcional}}</label><textarea id="s1-msg" placeholder="{{t:calendario.nivel-de-experiencia-dudas-necesidades}}"></textarea></div>
                 <div class="foto-check">
+                  <input type="checkbox" id="s1-terms">
+                  <label for="s1-terms">{{t:common.acepto-los-terminos}}</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s1-news">
+                  <label for="s1-news">{{t:common.quiero-recibir-novedades}}</label>
+                </div>
+                <div class="foto-check">
                   <input type="checkbox" id="s1-foto">
                   <label for="s1-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
@@ -331,6 +339,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                 </div>
                 <div class="field"><label>{{t:common.mensaje-opcional}}</label><textarea id="s3-msg" placeholder="{{t:calendario.nivel-de-experiencia-necesidades-especiales}}"></textarea></div>
                 <div class="foto-check">
+                  <input type="checkbox" id="s3-terms">
+                  <label for="s3-terms">{{t:common.acepto-los-terminos}}</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s3-news">
+                  <label for="s3-news">{{t:common.quiero-recibir-novedades}}</label>
+                </div>
+                <div class="foto-check">
                   <input type="checkbox" id="s3-foto">
                   <label for="s3-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
@@ -415,6 +431,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                 </div>
                 <div class="field"><label>{{t:common.mensaje-opcional}}</label><textarea id="s4-msg" placeholder="{{t:calendario.dudas-sobre-el-nivel-necesidades}}"></textarea></div>
                 <div class="foto-check">
+                  <input type="checkbox" id="s4-terms">
+                  <label for="s4-terms">{{t:common.acepto-los-terminos}}</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s4-news">
+                  <label for="s4-news">{{t:common.quiero-recibir-novedades}}</label>
+                </div>
+                <div class="foto-check">
                   <input type="checkbox" id="s4-foto">
                   <label for="s4-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
@@ -493,6 +517,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                 </div>
                 <div class="field"><label>{{t:common.mensaje-opcional}}</label><textarea id="s6-msg" placeholder="{{t:calendario.dudas-necesidades-especiales-fecha-alternativa}}"></textarea></div>
                 <div class="foto-check">
+                  <input type="checkbox" id="s6-terms">
+                  <label for="s6-terms">{{t:common.acepto-los-terminos}}</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s6-news">
+                  <label for="s6-news">{{t:common.quiero-recibir-novedades}}</label>
+                </div>
+                <div class="foto-check">
                   <input type="checkbox" id="s6-foto">
                   <label for="s6-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
@@ -546,6 +578,8 @@ function inscribir(id, salida) {
   var personas = document.getElementById(id+'-personas').value;
   var msg = document.getElementById(id+'-msg') ? document.getElementById(id+'-msg').value.trim() : '';
   var foto = document.getElementById(id+'-foto').checked;
+  var terms = document.getElementById(id+'-terms').checked;
+  var news = document.getElementById(id+'-news').checked;
   var fecha = document.getElementById(id+'-fecha') ? document.getElementById(id+'-fecha').value.trim() : '';
 
   if (!fecha) {
@@ -558,6 +592,10 @@ function inscribir(id, salida) {
   }
   if (!personas) {
     alert(L('js.alert.people'));
+    return;
+  }
+  if (!terms) {
+    alert(L('js.alert.terms'));
     return;
   }
 
@@ -575,11 +613,13 @@ function inscribir(id, salida) {
   if (veg && veg !== 'no') waMsg += '%0A' + L('js.wa.veg') + ': ' + yes;
   if (alerg && alerg !== 'no') waMsg += '%0A' + L('js.wa.allergy') + ': ' + yes;
   if (msg) waMsg += '%0A' + L('js.wa.message') + ': ' + enc(msg);
+  waMsg += '%0A' + L('js.wa.terms') + ': ' + yes;
+  waMsg += '%0A' + L('js.wa.news') + ': ' + (news ? yes : no);
   waMsg += '%0A' + L('js.wa.photos') + ': ' + (foto ? yes : no);
   var waUrl = 'https://wa.me/41774603641?text=' + waMsg;
   var okText = L('js.modal.sent').replace('{salida}', salida);
   var btn = document.querySelector('button[onclick^="inscribir(\''+id+'\'"]');
-  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto}, waUrl, {btn:btn, okCb:function(){
+  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto, terms:true, termsVersion:'1.1', newsletter:news}, waUrl, {btn:btn, okCb:function(){
     document.getElementById('modal-texto').textContent = okText;
     document.getElementById('modal-confirm').classList.add('open');
   }});

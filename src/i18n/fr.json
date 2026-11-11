@@ -2128,12 +2128,12 @@
   "s": "3e94efeb"
  },
  "legal.ultima-actualizacion-enero-2025-version": {
-  "t": "Dernière mise à jour : janvier 2025 · Version 1.0 · Tous les services sont soumis aux présentes conditions.",
-  "s": "820e6b98"
+  "t": "Dernière mise à jour : novembre 2026 · Version 1.1 · Tous les services sont soumis aux présentes conditions.",
+  "s": "ae228fa0"
  },
  "legal.lea-este-documento-antes-de": {
-  "t": "<strong>Lisez ce document avant de réserver.</strong> En confirmant une réservation auprès de Clas Tours by Davila Quiroz, le client déclare avoir lu, compris et accepté intégralement les présentes Conditions générales. La participation à toute activité implique l'acceptation de toutes les conditions qui y sont établies, quel que soit le pays de résidence ou la nationalité du client.",
-  "s": "706a3351"
+  "t": "Veuillez lire ce document avant de réserver. En cochant la case d'acceptation du formulaire de réservation, ou en confirmant une réservation par WhatsApp ou par e-mail, le client déclare avoir lu, compris et accepté intégralement les présentes Conditions générales. La participation à toute activité implique l'acceptation de toutes les conditions énoncées ici.",
+  "s": "f49c52a5"
  },
  "legal.contenido": {
   "t": "Sommaire",
@@ -2292,8 +2292,8 @@
   "s": "5ed9a8b7"
  },
  "legal.no-se-alcanza-el-numero": {
-  "t": "Le nombre minimum de 2 participants n'est pas atteint",
-  "s": "9a90184b"
+  "t": "Le nombre minimum de 2 participants n'est pas atteint (vous serez prévenu le plus tôt possible et, sauf annulation tardive d'autres participants, au moins 7 jours avant l'activité)",
+  "s": "5f9f54a8"
  },
  "legal.circunstancias-de-fuerza-mayor-lo": {
   "t": "Des circonstances de force majeure l'en empêchent",
@@ -2404,8 +2404,8 @@
   "s": "b6cb7f81"
  },
  "legal.menos-de-48-horas-antes": {
-  "t": "Moins de 48 heures avant",
-  "s": "41fa108a"
+  "t": "Moins de 3 jours avant",
+  "s": "113ad337"
  },
  "common.100-del-importe": {
   "t": "100 % du montant",
@@ -2504,8 +2504,8 @@
   "s": "f8fc9d15"
  },
  "legal.clas-tours-by-davila-quiroz-4": {
-  "t": "Clas Tours by Davila Quiroz et Santiago Davila Quiroz <strong>déclinent toute responsabilité</strong> pour les dommages, blessures, pertes ou accidents survenant à la suite de :",
-  "s": "60729128"
+  "t": "Sauf faute de leur part, Clas Tours by Davila Quiroz et Santiago Davila Quiroz ne sont pas responsables des dommages, blessures, pertes ou accidents résultant de :",
+  "s": "e8d292bb"
  },
  "legal.riesgos-inherentes-y-naturales-de": {
   "t": "Risques inhérents et naturels de la randonnée en montagne",
@@ -2532,8 +2532,8 @@
   "s": "5050235d"
  },
  "legal.la-responsabilidad-de-clas-tours": {
-  "t": "La responsabilité de Clas Tours est limitée, en tout état de cause, au montant payé par le client pour le service contracté, sauf en cas de dol ou de négligence grave avérée. Cette limitation de responsabilité s'applique dans la mesure maximale permise par le droit suisse en vigueur.",
-  "s": "9d0be34e"
+  "t": "Clas Tours répond selon le droit suisse des dommages qu'elle cause par sa faute dans l'exécution de l'activité. Dans la mesure permise par la loi, la responsabilité pour les dommages matériels causés par une négligence légère est limitée au prix payé pour le service contracté. La responsabilité en cas de dol ou de négligence grave, de lésions corporelles ou de décès causés par faute, ainsi que toute responsabilité que le droit impératif ne permet pas de limiter, n'est ni limitée ni exclue.",
+  "s": "50d88fb5"
  },
  "legal.articulo-08": {
   "t": "Article 08",
@@ -2708,20 +2708,20 @@
   "s": "785bd195"
  },
  "legal.jurisdiccion-exclusiva-derecho-suizo": {
-  "t": "For exclusif : droit suisse",
-  "s": "257d9133"
+  "t": "Droit suisse et for",
+  "s": "23a273f3"
  },
  "legal.todos-los-contratos-reservas-acuerdos": {
-  "t": "<strong>Tous les contrats, réservations, accords et relations juridiques entre Clas Tours by Davila Quiroz et ses clients sont régis exclusivement par le droit suisse</strong>, à l'exclusion de toute autre réglementation nationale ou internationale, quels que soient le pays de résidence, la nationalité ou le domicile du client.",
-  "s": "94b783e0"
+  "t": "Les contrats, réservations et accords entre Clas Tours by Davila Quiroz et ses clients sont régis par le droit suisse, dans la mesure permise par la loi, quel que soit le pays de résidence ou la nationalité du client.",
+  "s": "82d3e00e"
  },
  "legal.esto-incluye-pero-no-se": {
   "t": "Cela comprend, sans s'y limiter : les demandes de dommages-intérêts, les litiges relatifs aux annulations et remboursements, les accidents survenus pendant les activités et tout autre litige découlant de la fourniture des services.",
   "s": "4fda3e01"
  },
  "legal.en-caso-de-disputa-el": {
-  "t": "En cas de litige, <strong>le tribunal compétent est celui du domicile de Clas Tours by Davila Quiroz, dans le canton de Berne, Suisse.</strong>",
-  "s": "f5fb6a3d"
+  "t": "En cas de litige, le tribunal compétent est celui du siège de Clas Tours by Davila Quiroz, dans le canton de Berne, en Suisse, dans la mesure permise par la loi. Les consommateurs conservent les fors que le droit impératif leur reconnaît.",
+  "s": "d9b2a218"
  },
  "legal.las-normas-aplicables-incluyen-entre": {
   "t": "Les normes applicables comprennent notamment :",
@@ -2744,8 +2744,8 @@
   "s": "cb5ca5b2"
  },
  "legal.el-cliente-al-aceptar-estos": {
-  "t": "En acceptant les présentes Conditions générales, le client renonce expressément à invoquer la législation de son pays d'origine dans tout litige lié aux services de Clas Tours by Davila Quiroz et accepte la compétence exclusive des tribunaux suisses.",
-  "s": "6939fc9b"
+  "t": "En acceptant les présentes Conditions générales, le client accepte l'application du droit suisse et la compétence des tribunaux suisses, sans préjudice des règles impératives de protection des consommateurs qui lui sont applicables.",
+  "s": "980af8f8"
  },
  "legal.en-caso-de-discrepancia-entre": {
   "t": "En cas de divergence entre la version espagnole des présentes conditions et toute traduction, la version espagnole prévaut.",
@@ -2780,12 +2780,12 @@
   "s": "82fa7f41"
  },
  "legal.al-realizar-una-reserva-con": {
-  "t": "En effectuant une réservation auprès de Clas Tours by Davila Quiroz — que ce soit par le formulaire web, par WhatsApp, par e-mail ou par tout autre moyen — le client déclare avoir lu, compris et accepté intégralement les présentes Conditions générales dans toutes leurs parties.",
-  "s": "18dfc0df"
+  "t": "En cochant la case d'acceptation du formulaire de réservation, ou en confirmant une réservation par WhatsApp, par e-mail ou par tout autre moyen, le client déclare avoir lu, compris et accepté les présentes Conditions générales. Cette acceptation se rapporte à la version en vigueur à ce moment-là.",
+  "s": "7886cac5"
  },
  "legal.esta-aceptacion-tiene-plena-validez": {
-  "t": "Cette acceptation a pleine validité contractuelle selon le droit suisse, équivalente à une signature manuscrite.",
-  "s": "34e2a744"
+  "t": "L'acceptation est enregistrée avec la date et la version des conditions, et sert de preuve qu'elles ont été communiquées au client et intégrées au contrat avant sa conclusion.",
+  "s": "bbd03108"
  },
  "legal.clas-tours-by-davila-quiroz-8": {
   "t": "© Clas Tours by Davila Quiroz · Ipsach, Berne, Suisse",
@@ -3870,5 +3870,73 @@
  "js.fail.text": {
   "t": "Un problème de connexion est survenu. Écrivez-nous directement par WhatsApp ou à info@clastours.ch.",
   "s": "1e9e9c84"
+ },
+ "common.acepto-los-terminos": {
+  "t": "J'ai lu et j'accepte les <a href=\"clastours-legal.html\" target=\"_blank\" rel=\"noopener\">Conditions générales</a> (annulation, risques et responsabilité compris). Je confirme que mes indications sur mon expérience, ma condition physique et ma santé sont exactes, et j'accepte qu'elles soient utilisées pour préparer l'activité en toute sécurité.",
+  "s": "101b3b4f"
+ },
+ "common.quiero-recibir-novedades": {
+  "t": "Je souhaite recevoir par e-mail des nouvelles sur les nouveaux itinéraires et départs (facultatif ; désinscription possible à tout moment).",
+  "s": "9b9deb49"
+ },
+ "js.alert.terms": {
+  "t": "Pour continuer, veuillez cocher la case d'acceptation des Conditions générales.",
+  "s": "1de7fde2"
+ },
+ "js.wa.terms": {
+  "t": "Conditions générales acceptées",
+  "s": "cf1e657c"
+ },
+ "js.wa.news": {
+  "t": "Nouvelles par e-mail",
+  "s": "53564990"
+ },
+ "legal.art2-cambios": {
+  "t": "Modifications du programme : si l'activité n'est pas réalisable comme prévu (météo, conditions de neige ou de terrain, état du groupe, accès fermés), Clas Tours peut modifier l'itinéraire, l'horaire ou la date, ou proposer une alternative équivalente dans la même région. Atteindre un sommet ou un objectif précis n'est pas garanti : ce qui est dû, c'est une conduite diligente, pas un résultat.",
+  "s": "a1e117cd"
+ },
+ "legal.art2-sustitucion": {
+  "t": "Remplacement : si, pour cause de maladie, d'accident ou pour un autre motif justifié, Clas Tours ne peut pas conduire l'activité en personne, elle peut la confier à un autre guide qualifié, en en informant le client dès que possible.",
+  "s": "1cf48a55"
+ },
+ "legal.art3-solicitud": {
+  "t": "L'envoi du formulaire ou d'un message n'est qu'une demande : il ne crée ni contrat ni place réservée. Le contrat est conclu lorsque Clas Tours confirme par écrit (e-mail ou WhatsApp). La confirmation contient un lien vers les présentes Conditions générales, ou celles-ci l'accompagnent, ainsi que le lieu et l'heure de rendez-vous et la fin de l'activité.",
+  "s": "daa3c15d"
+ },
+ "legal.art4-anticipo": {
+  "t": "Pour assurer des places ou une cabane, Clas Tours peut demander un acompte lors de la confirmation de la réservation ; le solde est dû avant l'activité. Les frais que Clas Tours avance pour le compte du client (par exemple billets de transports publics ou entrées non compris dans le prix) sont remboursés au coût réel, en plus du prix.",
+  "s": "61f27416"
+ },
+ "legal.art5-terceros": {
+  "t": "Coûts de tiers : si une cabane ou un autre service de tiers a déjà été réservé (par exemple la Bluemlisalphütte), les coûts que le prestataire ne rembourse pas selon ses propres conditions sont à la charge du client, en plus de la pénalité ci-dessus, jusqu'à concurrence du montant du service, même si l'annulation est communiquée plus de 14 jours à l'avance.",
+  "s": "ab79223c"
+ },
+ "legal.art5-abandono": {
+  "t": "Interruption ou abandon : si le client abandonne une activité déjà commencée, le prix complet reste dû. Si Clas Tours doit la raccourcir ou l'interrompre pour des raisons de sécurité (météo, conditions de terrain ou de neige, état du groupe), le prix est dû en entier lorsque l'essentiel du service a déjà été fourni ; si l'activité devient impossible dès le début, seul ce qui a effectivement été fourni est dû et le reste est remboursé.",
+  "s": "b6b33f16"
+ },
+ "legal.art5-seguro": {
+  "t": "Une assurance frais d'annulation (Annullationskostenversicherung) est recommandée ; elle couvre le risque de devoir payer la pénalité d'annulation en cas de maladie, d'accident ou d'autres causes. Clas Tours ne la propose pas et ne l'inclut pas.",
+  "s": "f2ebe94e"
+ },
+ "legal.art6-veraz": {
+  "t": "Le client répond de manière complète et exacte aux questions du formulaire et du guide sur son expérience, sa condition physique et sa santé, et suit les consignes de sécurité pendant l'activité (devoir de collaboration). Des informations fausses ou omises peuvent entraîner l'exclusion sans remboursement.",
+  "s": "9202fb93"
+ },
+ "legal.art7-combinado": {
+  "t": "Voyages à forfait : si une offre (par exemple l'itinéraire de Kandersteg avec nuit en cabane et demi-pension pour un prix unique) constitue un voyage à forfait au sens de la loi fédérale, ses règles impératives s'appliquent en plus (y compris la responsabilité de l'organisateur pour l'exécution du contrat et les droits d'annulation du client) et priment sur les présentes conditions. Informations préalables : organisateur et adresse, art. 1 ; heure et lieu de début et de fin, dans la confirmation écrite ; nombre minimum de participants, 2 (avis selon l'art. 3) ; prix et modalités de paiement, art. 4 ; les réclamations doivent être signalées immédiatement pendant l'activité et par écrit au plus tard 30 jours après sa fin ; assurances, art. 8.",
+  "s": "1c962437"
+ },
+ "legal.art8-anulacion": {
+  "t": "Assurance frais d'annulation (particulièrement conseillée pour l'itinéraire avec nuit en cabane)",
+  "s": "b004cdf7"
+ },
+ "legal.art10-salud": {
+  "t": "Les données de santé (allergies, intolérances, condition physique, médication pertinente) sont des données personnelles particulièrement sensibles : elles ne sont traitées qu'avec le consentement exprès du client (case du formulaire), uniquement pour préparer et réaliser l'activité en toute sécurité, et ne sont conservées que le temps nécessaire.",
+  "s": "f76cbdce"
+ },
+ "legal.art10-novedades": {
+  "t": "Nouvelles par e-mail : si le client coche la case correspondante, Clas Tours lui enverra des informations sur les nouveaux itinéraires et départs. Le consentement est volontaire, n'est pas une condition de la réservation et peut être retiré à tout moment (lien de désinscription ou message à info@clastours.ch). La date et la version du consentement sont enregistrées.",
+  "s": "7f4a3588"
  }
 }

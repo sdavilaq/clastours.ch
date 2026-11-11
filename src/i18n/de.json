@@ -2408,12 +2408,12 @@
   "s": "c3963f20"
  },
  "legal.ultima-actualizacion-enero-2025-version": {
-  "t": "Letzte Aktualisierung: Januar 2025 · Version 1.0 · Alle Leistungen unterliegen diesen Bedingungen.",
-  "s": "820e6b98"
+  "t": "Letzte Aktualisierung: November 2026 · Version 1.1 · Alle Leistungen unterliegen diesen Bedingungen.",
+  "s": "ae228fa0"
  },
  "legal.lea-este-documento-antes-de": {
-  "t": "<strong>Bitte lies dieses Dokument vor der Buchung.</strong> Mit der Bestätigung einer Buchung bei Clas Tours by Davila Quiroz erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen gelesen, verstanden und vollständig akzeptiert zu haben. Die Teilnahme an einer Aktivität bedeutet die Annahme aller hier festgelegten Bedingungen, unabhängig vom Wohnsitzland oder der Nationalität der Kundin bzw. des Kunden.",
-  "s": "706a3351"
+  "t": "Bitte lesen Sie dieses Dokument vor der Buchung. Mit dem Anklicken des Zustimmungsfelds im Buchungsformular oder mit der Bestätigung einer Buchung per WhatsApp oder E-Mail erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen gelesen, verstanden und vollständig akzeptiert zu haben. Die Teilnahme an jeder Aktivität setzt die Akzeptanz aller hier festgelegten Bedingungen voraus.",
+  "s": "f49c52a5"
  },
  "legal.contenido": {
   "t": "Inhalt",
@@ -2572,8 +2572,8 @@
   "s": "5ed9a8b7"
  },
  "legal.no-se-alcanza-el-numero": {
-  "t": "die Mindestteilnehmerzahl von 2 Personen nicht erreicht wird",
-  "s": "9a90184b"
+  "t": "Die Mindestteilnehmerzahl von 2 Personen wird nicht erreicht (Sie werden so früh wie möglich informiert, und, ausser bei späten Absagen anderer Teilnehmender, mindestens 7 Tage vor der Aktivität)",
+  "s": "5f9f54a8"
  },
  "legal.circunstancias-de-fuerza-mayor-lo": {
   "t": "höhere Gewalt die Durchführung verhindert",
@@ -2684,8 +2684,8 @@
   "s": "b6cb7f81"
  },
  "legal.menos-de-48-horas-antes": {
-  "t": "Weniger als 48 Stunden vorher",
-  "s": "41fa108a"
+  "t": "Weniger als 3 Tage vorher",
+  "s": "113ad337"
  },
  "legal.no-presentacion-no-show": {
   "t": "Nichterscheinen (No-Show)",
@@ -2776,8 +2776,8 @@
   "s": "f8fc9d15"
  },
  "legal.clas-tours-by-davila-quiroz-4": {
-  "t": "Clas Tours by Davila Quiroz und Santiago Davila Quiroz <strong>haften nicht</strong> für Schäden, Verletzungen, Verluste oder Unfälle, die sich ergeben aus:",
-  "s": "60729128"
+  "t": "Ausser bei eigenem Verschulden haften Clas Tours by Davila Quiroz und Santiago Davila Quiroz nicht für Schäden, Verletzungen, Verluste oder Unfälle, die eine Folge sind von:",
+  "s": "e8d292bb"
  },
  "legal.riesgos-inherentes-y-naturales-de": {
   "t": "inhärenten und natürlichen Risiken des Bergwanderns",
@@ -2804,8 +2804,8 @@
   "s": "5050235d"
  },
  "legal.la-responsabilidad-de-clas-tours": {
-  "t": "Die Haftung von Clas Tours ist in jedem Fall auf den von der Kundin bzw. dem Kunden für die gebuchte Leistung bezahlten Betrag beschränkt, ausser bei nachgewiesenem Vorsatz oder grober Fahrlässigkeit. Diese Haftungsbeschränkung gilt im grösstmöglichen Umfang, den das geltende Schweizer Recht zulässt.",
-  "s": "9d0be34e"
+  "t": "Clas Tours haftet nach Schweizer Recht für Schäden, die bei der Durchführung der Aktivität schuldhaft verursacht werden. Soweit gesetzlich zulässig, ist die Haftung für Sachschäden bei leichter Fahrlässigkeit auf den für die gebuchte Leistung bezahlten Preis beschränkt. Die Haftung für Vorsatz oder grobe Fahrlässigkeit, für schuldhaft verursachte Körperverletzung oder Tod sowie jede Haftung, die nach zwingendem Recht nicht beschränkt werden darf, wird weder beschränkt noch ausgeschlossen.",
+  "s": "50d88fb5"
  },
  "legal.articulo-08": {
   "t": "Artikel 08",
@@ -2980,20 +2980,20 @@
   "s": "785bd195"
  },
  "legal.jurisdiccion-exclusiva-derecho-suizo": {
-  "t": "Ausschliesslicher Gerichtsstand: Schweizer Recht",
-  "s": "257d9133"
+  "t": "Schweizer Recht und Gerichtsstand",
+  "s": "23a273f3"
  },
  "legal.todos-los-contratos-reservas-acuerdos": {
-  "t": "<strong>Alle Verträge, Buchungen, Vereinbarungen und Rechtsbeziehungen zwischen Clas Tours by Davila Quiroz und seinen Kundinnen und Kunden unterliegen ausschliesslich dem Schweizer Recht</strong>, unter Ausschluss jeglicher anderer nationaler oder internationaler Vorschriften, unabhängig von Wohnsitzland, Nationalität oder Domizil der Kundin bzw. des Kunden.",
-  "s": "94b783e0"
+  "t": "Verträge, Buchungen und Vereinbarungen zwischen Clas Tours by Davila Quiroz und ihren Kundinnen und Kunden unterstehen, soweit gesetzlich zulässig, dem Schweizer Recht, unabhängig von Wohnsitzland oder Staatsangehörigkeit der Kundin bzw. des Kunden.",
+  "s": "82d3e00e"
  },
  "legal.esto-incluye-pero-no-se": {
   "t": "Dies umfasst unter anderem: Schadenersatzforderungen, Streitigkeiten über Stornierungen und Rückerstattungen, Unfälle während der Aktivitäten und alle weiteren Streitigkeiten aus der Erbringung der Leistungen.",
   "s": "4fda3e01"
  },
  "legal.en-caso-de-disputa-el": {
-  "t": "Im Streitfall ist <strong>das Gericht am Sitz von Clas Tours by Davila Quiroz im Kanton Bern, Schweiz, zuständig.</strong>",
-  "s": "f5fb6a3d"
+  "t": "Bei Streitigkeiten ist, soweit gesetzlich zulässig, das Gericht am Sitz von Clas Tours by Davila Quiroz im Kanton Bern, Schweiz, zuständig. Konsumentinnen und Konsumenten behalten die Gerichtsstände, die ihnen das zwingende Recht gewährt.",
+  "s": "d9b2a218"
  },
  "legal.las-normas-aplicables-incluyen-entre": {
   "t": "Zu den anwendbaren Vorschriften gehören unter anderem:",
@@ -3016,8 +3016,8 @@
   "s": "cb5ca5b2"
  },
  "legal.el-cliente-al-aceptar-estos": {
-  "t": "Mit der Annahme dieser Allgemeinen Geschäftsbedingungen verzichtet die Kundin bzw. der Kunde ausdrücklich darauf, sich in Streitigkeiten im Zusammenhang mit den Leistungen von Clas Tours by Davila Quiroz auf das Recht des Herkunftslandes zu berufen, und akzeptiert die ausschliessliche Zuständigkeit der Schweizer Gerichte.",
-  "s": "6939fc9b"
+  "t": "Mit der Akzeptanz dieser Allgemeinen Geschäftsbedingungen akzeptiert die Kundin bzw. der Kunde die Anwendung des Schweizer Rechts und die Zuständigkeit der Schweizer Gerichte, unbeschadet der zwingenden Konsumentenschutzvorschriften, die für sie bzw. ihn gelten.",
+  "s": "980af8f8"
  },
  "legal.en-caso-de-discrepancia-entre": {
   "t": "Bei Abweichungen zwischen der spanischen Fassung dieser Bedingungen und einer Übersetzung ist die spanische Fassung massgebend.",
@@ -3052,12 +3052,12 @@
   "s": "82fa7f41"
  },
  "legal.al-realizar-una-reserva-con": {
-  "t": "Mit einer Buchung bei Clas Tours by Davila Quiroz – sei es über das Webformular, per WhatsApp, per E-Mail oder auf anderem Weg – erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen in allen Teilen gelesen, verstanden und vollständig akzeptiert zu haben.",
-  "s": "18dfc0df"
+  "t": "Mit dem Anklicken des Zustimmungsfelds im Buchungsformular oder mit der Bestätigung einer Buchung per WhatsApp, E-Mail oder auf anderem Weg erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen gelesen, verstanden und akzeptiert zu haben. Die Zustimmung bezieht sich auf die zu diesem Zeitpunkt gültige Fassung.",
+  "s": "7886cac5"
  },
  "legal.esta-aceptacion-tiene-plena-validez": {
-  "t": "Diese Annahme hat nach Schweizer Recht volle vertragliche Gültigkeit und ist einer handschriftlichen Unterschrift gleichgestellt.",
-  "s": "34e2a744"
+  "t": "Die Zustimmung wird mit Datum und Version der Bedingungen erfasst und dient als Nachweis, dass diese der Kundin bzw. dem Kunden vor Vertragsschluss mitgeteilt und in den Vertrag einbezogen wurden.",
+  "s": "bbd03108"
  },
  "legal.clas-tours-by-davila-quiroz-8": {
   "t": "© Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz",
@@ -3870,5 +3870,73 @@
  "js.fail.text": {
   "t": "Es gab ein Verbindungsproblem. Schreib uns direkt per WhatsApp oder an info@clastours.ch.",
   "s": "1e9e9c84"
+ },
+ "common.acepto-los-terminos": {
+  "t": "Ich habe die <a href=\"clastours-legal.html\" target=\"_blank\" rel=\"noopener\">Allgemeinen Geschäftsbedingungen</a> (inkl. Annullierung, Risiken und Haftung) gelesen und akzeptiere sie. Ich bestätige, dass meine Angaben zu Erfahrung, Kondition und Gesundheit wahrheitsgemäss sind, und willige ein, dass sie zur sicheren Vorbereitung der Aktivität verwendet werden.",
+  "s": "101b3b4f"
+ },
+ "common.quiero-recibir-novedades": {
+  "t": "Ich möchte per E-Mail Neuigkeiten zu neuen Routen und Terminen erhalten (optional; Abmeldung jederzeit möglich).",
+  "s": "9b9deb49"
+ },
+ "js.alert.terms": {
+  "t": "Um fortzufahren, bestätige bitte die Allgemeinen Geschäftsbedingungen im Kästchen.",
+  "s": "1de7fde2"
+ },
+ "js.wa.terms": {
+  "t": "AGB akzeptiert",
+  "s": "cf1e657c"
+ },
+ "js.wa.news": {
+  "t": "Neuigkeiten per E-Mail",
+  "s": "53564990"
+ },
+ "legal.art2-cambios": {
+  "t": "Programmänderungen: Ist die Aktivität wie geplant nicht durchführbar (Wetter, Schnee- oder Geländeverhältnisse, Zustand der Gruppe, gesperrte Zugänge), kann Clas Tours die Route, die Zeit oder das Datum ändern oder eine gleichwertige Alternative im selben Gebiet vorschlagen. Das Erreichen eines Gipfels oder eines bestimmten Ziels wird nicht garantiert: geschuldet ist eine sorgfältige Führung, kein Erfolg.",
+  "s": "a1e117cd"
+ },
+ "legal.art2-sustitucion": {
+  "t": "Stellvertretung: Kann Clas Tours die Aktivität wegen Krankheit, Unfall oder aus einem anderen berechtigten Grund nicht persönlich leiten, kann sie an eine andere qualifizierte Führungsperson übertragen werden; die Kundin bzw. der Kunde wird so rasch wie möglich informiert.",
+  "s": "1cf48a55"
+ },
+ "legal.art3-solicitud": {
+  "t": "Das Absenden des Formulars oder einer Nachricht ist nur eine Anfrage: Es begründet weder einen Vertrag noch eine Platzreservation. Der Vertrag kommt zustande, wenn Clas Tours schriftlich (E-Mail oder WhatsApp) bestätigt. Die Bestätigung enthält einen Link zu diesen Allgemeinen Geschäftsbedingungen oder wird mit ihnen versandt, sowie Treffpunkt und -zeit und Ende der Aktivität.",
+  "s": "daa3c15d"
+ },
+ "legal.art4-anticipo": {
+  "t": "Zur Sicherung von Plätzen oder Hütte kann Clas Tours bei der Bestätigung eine Anzahlung verlangen; der Rest ist vor der Aktivität fällig. Auslagen, die Clas Tours für die Kundin bzw. den Kunden vorschiesst (z. B. nicht im Preis enthaltene Tickets des öffentlichen Verkehrs oder Eintritte), werden zusätzlich zum Preis zu den tatsächlichen Kosten erstattet.",
+  "s": "61f27416"
+ },
+ "legal.art5-terceros": {
+  "t": "Kosten Dritter: Wurde bereits eine Hütte oder eine andere Leistung Dritter gebucht (z. B. die Bluemlisalphütte), werden die Kosten, die der Anbieter nach seinen eigenen Bedingungen nicht zurückerstattet, zusätzlich zur obigen Entschädigung bis zur Höhe der Leistung in Rechnung gestellt, auch wenn die Annullierung mehr als 14 Tage vorher erfolgt.",
+  "s": "ab79223c"
+ },
+ "legal.art5-abandono": {
+  "t": "Unterbruch oder Abbruch: Bricht die Kundin bzw. der Kunde die bereits begonnene Aktivität ab, bleibt der volle Preis geschuldet. Muss Clas Tours die Aktivität aus Sicherheitsgründen (Wetter, Gelände- oder Schneeverhältnisse, Zustand der Gruppe) verkürzen oder abbrechen, ist der volle Preis geschuldet, sofern der wesentliche Teil der Leistung bereits erbracht wurde; wird die Aktivität von Anfang an unmöglich, ist nur die tatsächlich erbrachte Leistung geschuldet und der Rest wird erstattet.",
+  "s": "b6b33f16"
+ },
+ "legal.art5-seguro": {
+  "t": "Empfohlen wird eine Annullationskostenversicherung, die das Risiko deckt, bei Krankheit, Unfall oder anderen Gründen die Annullierungsentschädigung bezahlen zu müssen. Clas Tours bietet sie weder an noch schliesst sie sie ein.",
+  "s": "f2ebe94e"
+ },
+ "legal.art6-veraz": {
+  "t": "Die Kundin bzw. der Kunde beantwortet die Fragen im Formular und der Führungsperson zu Erfahrung, Kondition und Gesundheit vollständig und wahrheitsgemäss und befolgt während der Aktivität die Sicherheitsanweisungen (Mitwirkungspflicht). Falsche oder verschwiegene Angaben können zum Ausschluss ohne Rückerstattung führen.",
+  "s": "9202fb93"
+ },
+ "legal.art7-combinado": {
+  "t": "Pauschalreisen: Stellt ein Angebot (z. B. die Route Kandersteg mit Hüttenübernachtung und Halbpension zu einem Gesamtpreis) eine Pauschalreise im Sinne des Bundesgesetzes dar, gelten zusätzlich dessen zwingende Bestimmungen (einschliesslich der Haftung des Veranstalters für die Vertragserfüllung und der Rücktrittsrechte der Kundin bzw. des Kunden), die diesen Bedingungen vorgehen. Vorabinformationen: Veranstalter und Adresse, Art. 1; Zeit und Ort von Beginn und Ende, in der schriftlichen Bestätigung; Mindestteilnehmerzahl 2 (Mitteilung nach Art. 3); Preis und Zahlungsmodalitäten, Art. 4; Beanstandungen sind sofort während der Aktivität und schriftlich spätestens 30 Tage nach deren Ende mitzuteilen; Versicherungen, Art. 8.",
+  "s": "1c962437"
+ },
+ "legal.art8-anulacion": {
+  "t": "Annullationskostenversicherung (besonders empfehlenswert für die Route mit Hüttenübernachtung)",
+  "s": "b004cdf7"
+ },
+ "legal.art10-salud": {
+  "t": "Gesundheitsdaten (Allergien, Unverträglichkeiten, Kondition, relevante Medikation) sind besonders schützenswerte Personendaten: Sie werden nur mit ausdrücklicher Einwilligung der Kundin bzw. des Kunden (Kästchen im Formular), ausschliesslich zur sicheren Vorbereitung und Durchführung der Aktivität bearbeitet und nur so lange wie nötig aufbewahrt.",
+  "s": "f76cbdce"
+ },
+ "legal.art10-novedades": {
+  "t": "Neuigkeiten per E-Mail: Wenn die Kundin bzw. der Kunde das entsprechende Kästchen anklickt, sendet Clas Tours Informationen zu neuen Routen und Terminen. Die Einwilligung ist freiwillig, keine Voraussetzung für eine Buchung und kann jederzeit widerrufen werden (Abmeldelink oder Nachricht an info@clastours.ch). Datum und Version der Einwilligung werden erfasst.",
+  "s": "7f4a3588"
  }
 }

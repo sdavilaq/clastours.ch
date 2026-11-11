@@ -16,7 +16,7 @@ var OWNER_EMAIL = 'info@clastours.ch';
 var SHEET_NAME  = 'Solicitudes';
 var WHATSAPP    = 'https://wa.me/41774603641';
 var HEADERS = ['Recibida', 'Estado', 'Fecha pedida', 'Ruta', 'Personas', 'Nombre', 'Email', 'WhatsApp',
-               'Nivel', 'Vegetariano', 'Gluten/lactosa', 'Mensaje', 'Fotos OK', 'Idioma', 'Origen', 'Notas'];
+               'Nivel', 'Vegetariano', 'Gluten/lactosa', 'Mensaje', 'Fotos OK', 'Idioma', 'Origen', 'Notas', 'T&C aceptados', 'Novedades OK'];
 
 // Límites diarios: protegen la cuota de Gmail (~100 correos/día) y evitan que alguien use el formulario para spam.
 // Lo que pase de estos topes se ignora en silencio (no se guarda ni se envía).
@@ -77,7 +77,8 @@ function doPost(e) {
 
     appendSafe_(sheet_(), [
       new Date(), 'Nueva', d.date, d.route, d.people, d.name, d.email, d.whatsapp,
-      d.level, d.vegetarian ? 'Sí' : '', d.allergy ? 'Sí' : '', d.message, d.photos ? 'Sí' : 'No', d.lang, d.source, ''
+      d.level, d.vegetarian ? 'Sí' : '', d.allergy ? 'Sí' : '', d.message, d.photos ? 'Sí' : 'No', d.lang, d.source, '',
+      d.terms ? ('Sí · v' + (d.termsVersion || '?')) : 'No', d.newsletter ? 'Sí' : 'No'
     ]);
 
     notifyOwner_(d);
@@ -124,6 +125,7 @@ function clean_(d) {
     name: one(d.name, 120), email: one(d.email, 160), whatsapp: one(d.whatsapp, 40), route: one(d.route, 160),
     date: one(d.date, 120), people: one(d.people, 40), level: one(d.level, 80), message: s(d.message, 2000),
     vegetarian: !!d.vegetarian, allergy: !!d.allergy, photos: !!d.photos,
+    terms: !!d.terms, termsVersion: s(d.termsVersion, 12), newsletter: !!d.newsletter,
     lang: ['es', 'de', 'en', 'fr'].indexOf(d.lang) >= 0 ? d.lang : 'es', source: one(d.source, 30)
   };
   if (!out.name) return null;
@@ -144,6 +146,8 @@ function notifyOwner_(d) {
   if (d.allergy) lines.push('Gluten/lactosa: sí');
   if (d.message) lines.push('', 'Mensaje:', d.message);
   lines.push('', 'Fotos con fines promocionales: ' + (d.photos ? 'autorizadas' : 'no autorizadas'));
+  lines.push('Términos y Condiciones: ' + (d.terms ? 'aceptados (v' + (d.termsVersion || '?') + ')' : 'NO marcados'));
+  lines.push('Novedades por correo: ' + (d.newsletter ? 'SÍ (consentimiento dado)' : 'no'));
   if (d.whatsapp) lines.push('Responder por WhatsApp: https://wa.me/' + d.whatsapp.replace(/[^0-9]/g, ''));
   var opts = { to: OWNER_EMAIL, subject: 'Solicitud: ' + (d.route || 'Clas Tours') + ' · ' + d.name, body: lines.join('\n'), name: 'Formulario clastours.ch' };
   if (d.email) opts.replyTo = d.email;
@@ -159,6 +163,7 @@ var TEXTS = {
     note: 'Importante: esto es solo el acuse de recibo, no una reserva confirmada. Las salidas se hacen con un mínimo de 2 personas; la reserva queda confirmada cuando te lo confirmo por escrito y se coordina el pago.',
     wa: 'Si es urgente, escríbeme por WhatsApp:',
     bye: 'Un abrazo,', sign: 'Santiago · Clas Tours',
+    terms: 'Términos y Condiciones aceptados:', termsUrl: 'https://www.clastours.ch/clastours-legal.html', news: 'Si marcaste la casilla de novedades, te escribiré de vez en cuando sobre nuevas rutas y salidas; puedes darte de baja respondiendo a este correo.',
     route: 'Ruta', date: 'Fecha', people: 'Personas', msg: 'Mensaje'
   },
   de: {
@@ -169,6 +174,7 @@ var TEXTS = {
     note: 'Wichtig: Dies ist nur die Eingangsbestätigung, noch keine bestätigte Buchung. Die Touren finden mit mindestens 2 Personen statt; die Buchung ist verbindlich, sobald ich sie schriftlich bestätige und die Zahlung vereinbart ist.',
     wa: 'Wenn es dringend ist, schreib mir per WhatsApp:',
     bye: 'Herzliche Grüsse,', sign: 'Santiago · Clas Tours',
+    terms: 'Akzeptierte AGB:', termsUrl: 'https://www.clastours.ch/de/clastours-legal.html', news: 'Falls du das Kästchen für Neuigkeiten angekreuzt hast, schreibe ich dir ab und zu zu neuen Routen und Terminen; du kannst dich jederzeit abmelden, indem du auf diese E-Mail antwortest.',
     route: 'Tour', date: 'Datum', people: 'Personen', msg: 'Nachricht'
   },
   en: {
@@ -179,6 +185,7 @@ var TEXTS = {
     note: 'Please note: this is only an acknowledgement, not a confirmed booking. Tours run with a minimum of 2 people; the booking is confirmed once I confirm it in writing and payment is arranged.',
     wa: 'If it is urgent, message me on WhatsApp:',
     bye: 'Best regards,', sign: 'Santiago · Clas Tours',
+    terms: 'Terms and Conditions you accepted:', termsUrl: 'https://www.clastours.ch/en/clastours-legal.html', news: 'If you ticked the news box, I will write to you now and then about new routes and departures; you can unsubscribe at any time by replying to this email.',
     route: 'Tour', date: 'Date', people: 'People', msg: 'Message'
   },
   fr: {
@@ -189,6 +196,7 @@ var TEXTS = {
     note: 'Important : ceci est uniquement un accusé de réception, et non une réservation confirmée. Les sorties ont lieu à partir de 2 personnes ; la réservation est confirmée lorsque je vous le confirme par écrit et que le paiement est convenu.',
     wa: 'Si c\'est urgent, écrivez-moi par WhatsApp :',
     bye: 'Cordiales salutations,', sign: 'Santiago · Clas Tours',
+    terms: 'Conditions générales acceptées :', termsUrl: 'https://www.clastours.ch/fr/clastours-legal.html', news: 'Si vous avez coché la case des nouvelles, je vous écrirai de temps en temps au sujet des nouveaux itinéraires et départs ; vous pouvez vous désinscrire à tout moment en répondant à cet e-mail.',
     route: 'Itinéraire', date: 'Date', people: 'Personnes', msg: 'Message'
   }
 };
@@ -219,10 +227,12 @@ function autoReply_(d) {
   if (d.date)    rows.push(t.date + ': ' + d.date);
   if (d.people)  rows.push(t.people + ': ' + d.people);
   if (d.message) rows.push(t.msg + ': ' + d.message);
-  var text = [t.hi.replace('{name}', d.name), '', t.body, '', t.sum, rows.join('\n'), '', t.note, '', t.wa + ' ' + WHATSAPP, '', t.bye, '', sigText_()].join('\n');
+  var legal = [d.terms ? t.terms + ' ' + t.termsUrl : t.termsUrl]; if (d.newsletter) legal.push(t.news);
+  var text = [t.hi.replace('{name}', d.name), '', t.body, '', t.sum, rows.join('\n'), '', t.note, '', legal.join('\n'), '', t.wa + ' ' + WHATSAPP, '', t.bye, '', sigText_()].join('\n');
   var html = '<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#1a2a33;max-width:560px">' +
     '<p>' + esc_(t.hi.replace('{name}', d.name)) + '</p><p>' + esc_(t.body) + '</p><p><b>' + esc_(t.sum) + '</b><br>' +
     rows.map(esc_).join('<br>') + '</p><p style="background:#f3efe9;padding:10px 12px;border-radius:4px">' + esc_(t.note) + '</p>' +
+    '<p style="font-size:13px;color:#4a5a63">' + (d.terms ? esc_(t.terms) + ' ' : '') + '<a href="' + t.termsUrl + '">' + esc_(t.termsUrl.replace('https://', '')) + '</a>' + (d.newsletter ? '<br>' + esc_(t.news) : '') + '</p>' +
     '<p>' + esc_(t.wa) + ' <a href="' + WHATSAPP + '">WhatsApp</a></p><p>' + esc_(t.bye) + '</p>' + sigHtml_() + '</div>';
   send_({ to: d.email, subject: t.subject, body: text, htmlBody: html, name: 'Clas Tours', replyTo: OWNER_EMAIL });
 }
@@ -231,5 +241,5 @@ function autoReply_(d) {
 function prueba() {
   doPost({ postData: { contents: JSON.stringify({
     source: 'prueba', lang: 'de', route: 'Creux du Van · auf Anfrage', date: 'Samstag im Juni', name: 'Prueba Clas Tours',
-    email: OWNER_EMAIL, whatsapp: '+41770000000', people: '2', message: 'Dies ist ein Test.', photos: true }) } });
+    email: OWNER_EMAIL, whatsapp: '+41770000000', people: '2', message: 'Dies ist ein Test.', photos: true, terms: true, termsVersion: '1.1', newsletter: true }) } });
 }
