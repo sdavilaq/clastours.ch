@@ -102,17 +102,13 @@
   .faq-a strong{color:var(--ink);font-weight:500}
   .faq-a a{color:var(--petrol);text-decoration:none}
   .faq-a a:hover{color:var(--copper)}
-  .ubicacion-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .ubicacion-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;max-width:720px}
   .ubicacion-text p{font-size:0.9375rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:1rem}
   .ubicacion-data{display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem}
   .ubic-item{display:flex;align-items:flex-start;gap:10px}
   .ubic-item svg{width:16px;height:16px;color:var(--copper-lt);flex-shrink:0;margin-top:2px}
   .ubic-item span{font-size:0.875rem;color:rgba(255,255,255,0.55);line-height:1.5}
   .ubic-item strong{color:rgba(255,255,255,0.85);font-weight:500}
-  .mapa-placeholder{background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.12);border-radius:6px;height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;color:rgba(255,255,255,0.25)}
-  .mapa-placeholder svg{width:32px;height:32px;opacity:0.4}
-  .mapa-placeholder-label{font-size:0.72rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5}
-  .mapa-placeholder-hint{font-size:0.8rem;opacity:0.35;text-align:center;max-width:240px;line-height:1.5}
   .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,0.35);text-decoration:none;transition:transform 0.2s}
   .wa-float:hover{transform:scale(1.1)}
   .wa-float svg{width:26px;height:26px;color:white}
@@ -121,6 +117,7 @@
   .footer a{color:rgba(255,255,255,0.35);text-decoration:none}
   .footer a:hover{color:var(--copper-lt)}
   @media(max-width:768px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}.contacto-grid{grid-template-columns:1fr}.faq-categorias{grid-template-columns:1fr}.ubicacion-grid{grid-template-columns:1fr}.field-row{grid-template-columns:1fr}.section{padding:3rem 1.25rem}}
+#terms-auth + label a{color:var(--petrol);text-decoration:none;font-weight:500}
 </style>
 <!-- SEO -->
 <meta name="description" content="Write to us on WhatsApp, email or Instagram and clear up your questions about guided hikes in Spanish in Switzerland. Includes frequently asked questions.">
@@ -140,9 +137,9 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}</style>
-<script>window.I18N={"js.alert.date": "Please enter your preferred date.", "js.alert.name_email": "Please enter your name and email.", "js.alert.people": "Please select the number of people.", "js.modal.sent": "Your request for {salida} has been sent. Santiago will get in touch within 24 hours to confirm the date and arrange payment.", "js.yes": "Yes", "js.no": "No", "js.wa.enroll_intro": "Hi Santiago, I'd like to sign up for:", "js.wa.name": "Name", "js.wa.email": "Email", "js.wa.whatsapp": "WhatsApp", "js.wa.date": "Preferred date", "js.wa.people": "People", "js.wa.level": "Level", "js.wa.veg": "Vegetarian", "js.wa.allergy": "Gluten/lactose intolerance", "js.wa.message": "Message", "js.wa.photos": "Photo consent", "js.wa.route": "Tour", "js.wa.hello": "Hi Santiago,", "js.wa.interest": "Hi Santiago! I'd like to book a hike.", "js.alert.name_contact": "Please enter your name and at least one way to contact you.", "js.today": "TODAY", "js.days": "SUN|MON|TUE|WED|THU|FRI|SAT", "js.wx.route_default": "Your tour", "js.wx.title": "7-day forecast", "js.wx.source": "ICON model · Open-Meteo", "js.wx.loading": "Loading weather data …", "js.wx.footer1": "Data: ICON model (DWD) via", "js.wx.footer2": ". For guidance only. Official:", "js.wx.footer3": "MeteoSwiss forecast", "js.wx.reliable": "Most reliable in the first 3 days", "js.wx.error": "Weather data could not be loaded. Please reload the page or try again later.", "js.sent.title": "Request sent!", "js.sent.text": "We've received your message. Santiago will reply within 24 hours.", "js.sent.close": "Got it", "js.sent.wa": "Also write on WhatsApp", "js.fail.title": "We couldn't send your message", "js.fail.text": "There was a connection problem. Write to us directly on WhatsApp or at info@clastours.ch."};</script>
-<script>window.CT={"endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec", "lang": "en"};CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();return fetch(CT.endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)});};CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';o.innerHTML='<div class="ct-notice-box" role="dialog" aria-modal="true"><h3></h3><p></p><div class="ct-notice-btns"></div></div>';o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');if(waUrl){var a=document.createElement('a');a.href=waUrl;a.target='_blank';a.rel='noopener';a.className='ct-notice-wa';a.textContent=L('js.sent.wa');bt.appendChild(a);}var c=document.createElement('button');c.type='button';c.textContent=L('js.sent.close');c.onclick=function(){o.remove();};bt.appendChild(c);o.onclick=function(e){if(e.target===o)o.remove();};document.body.appendChild(o);};CT.submit=function(d,waUrl,opt){opt=opt||{};if(!CT.endpoint){window.open(waUrl,'_blank');if(opt.okCb)opt.okCb('wa');return;}if(opt.btn)opt.btn.disabled=true;CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);}).catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);}).then(function(){if(opt.btn)opt.btn.disabled=false;});};</script>
+<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}input[type=checkbox]{width:18px;height:18px;flex-shrink:0}a:focus-visible,button:focus-visible,[role=button]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #A8704A!important;outline-offset:2px}</style>
+<script>window.I18N={"js.alert.date": "Please enter your preferred date.", "js.alert.name_email": "Please enter your name and email.", "js.alert.people": "Please select the number of people.", "js.modal.sent": "Your request for {salida} has been sent. Santiago will get in touch within 24 hours to confirm the date and arrange payment.", "js.yes": "Yes", "js.no": "No", "js.wa.enroll_intro": "Hi Santiago, I'd like to sign up for:", "js.wa.name": "Name", "js.wa.email": "Email", "js.wa.whatsapp": "WhatsApp", "js.wa.date": "Preferred date", "js.wa.people": "People", "js.wa.level": "Level", "js.wa.veg": "Vegetarian", "js.wa.allergy": "Gluten/lactose intolerance", "js.wa.message": "Message", "js.wa.photos": "Photo consent", "js.wa.route": "Tour", "js.wa.hello": "Hi Santiago,", "js.wa.interest": "Hi Santiago! I'd like to book a hike.", "js.alert.name_contact": "Please enter your name and at least one way to contact you.", "js.today": "TODAY", "js.days": "SUN|MON|TUE|WED|THU|FRI|SAT", "js.wx.route_default": "Your tour", "js.wx.title": "7-day forecast", "js.wx.source": "ICON model · Open-Meteo", "js.wx.loading": "Loading weather data …", "js.wx.footer1": "Data: ICON model (DWD) via", "js.wx.footer2": ". For guidance only. Official:", "js.wx.footer3": "MeteoSwiss forecast", "js.wx.reliable": "Most reliable in the first 3 days", "js.wx.error": "Weather data could not be loaded. Please reload the page or try again later.", "js.sent.title": "Request sent!", "js.sent.text": "We've received your message. Santiago will reply within 24 hours.", "js.sent.close": "Got it", "js.sent.wa": "Also write on WhatsApp", "js.fail.title": "We couldn't send your message", "js.fail.text": "There was a connection problem. Write to us directly on WhatsApp or at info@clastours.ch.", "js.alert.terms": "To continue, please tick the box accepting the Terms and Conditions.", "js.wa.terms": "Terms and Conditions accepted", "js.wa.news": "News by email"};</script>
+<script>window.CT={"endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec", "lang": "en"};CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();return fetch(CT.endpoint,{method:'POST',redirect:'follow',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.text();}).then(function(t){t=(t||'').trim();if(t==='ok')return;var j=null;try{j=JSON.parse(t);}catch(e){}if(!j||j.ok!==true)throw new Error('rechazada');});};CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';o.innerHTML='<div class="ct-notice-box" role="dialog" aria-modal="true"><h3></h3><p></p><div class="ct-notice-btns"></div></div>';o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');if(waUrl){var a=document.createElement('a');a.href=waUrl;a.target='_blank';a.rel='noopener';a.className='ct-notice-wa';a.textContent=L('js.sent.wa');bt.appendChild(a);}var c=document.createElement('button');c.type='button';c.textContent=L('js.sent.close');c.onclick=function(){o.remove();};bt.appendChild(c);o.onclick=function(e){if(e.target===o)o.remove();};document.body.appendChild(o);};CT.submit=function(d,waUrl,opt){opt=opt||{};if(!CT.endpoint){window.open(waUrl,'_blank');if(opt.okCb)opt.okCb('wa');return;}if(opt.btn)opt.btn.disabled=true;CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);}).catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);}).then(function(){if(opt.btn)opt.btn.disabled=false;});};document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.burger,.hamburger,.ct-hamburger').forEach(function(b){b.setAttribute('role','button');b.setAttribute('tabindex','0');b.setAttribute('aria-label','Menu');b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();b.click();}});});});</script>
 </head>
 <body>
 
@@ -224,13 +221,13 @@
           <div class="form-title">Write to us directly</div>
           <div class="form-sub">Fill in the form and we'll contact you through the channel you prefer.</div>
           <div class="field field-row">
-            <div><label>Name *</label><input type="text" placeholder="Your name" name="nombre"></div>
-            <div><label>WhatsApp</label><input type="tel" placeholder="+41 / +57 / +34..." name="wa"></div>
+            <div><label for="campo-1">Name *</label><input id="campo-1" type="text" placeholder="Your name" name="nombre"></div>
+            <div><label for="campo-2">WhatsApp</label><input id="campo-2" type="tel" placeholder="+41 / +57 / +34..." name="wa"></div>
           </div>
-          <div class="field"><label>Email *</label><input type="email" placeholder="you@email.com" name="email"></div>
+          <div class="field"><label for="campo-3">Email *</label><input id="campo-3" type="email" placeholder="you@email.com" name="email"></div>
           <div class="field">
-            <label>Which tour are you interested in?</label>
-            <select name="ruta">
+            <label for="campo-4">Which tour are you interested in?</label>
+            <select id="campo-4" name="ruta">
               <option value="">Select an option</option>
               <option>Kandersteg 2 days (Griesalp → Oeschinensee)</option>
               <option>Creux du Van — 1 day</option>
@@ -241,8 +238,8 @@
             </select>
           </div>
           <div class="field">
-            <label>How many people are coming?</label>
-            <select name="personas">
+            <label for="campo-5">How many people are coming?</label>
+            <select id="campo-5" name="personas">
               <option value="">Please select</option>
               <option>Solo (1 person — enquire)</option>
               <option>2 people</option>
@@ -250,7 +247,7 @@
               <option>7 or more (group price)</option>
             </select>
           </div>
-          <div class="field"><label>Your message *</label><textarea placeholder="Tell me what you need — approximate dates, experience level, specific questions..." name="mensaje"></textarea></div>
+          <div class="field"><label for="campo-6">Your message *</label><textarea id="campo-6" placeholder="Tell me what you need — approximate dates, experience level, specific questions..." name="mensaje"></textarea></div>
 
           <div style="margin-top:1rem;padding:1.25rem;background:rgba(27,95,122,0.05);border:1px solid rgba(27,95,122,0.12);border-radius:6px;text-align:center;margin-bottom:0.75rem">
             <div style="font-size:0.7rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--petrol);margin-bottom:0.75rem">Payment by bank transfer</div>
@@ -258,6 +255,14 @@
             <div style="font-size:0.8rem;color:var(--slate);line-height:1.6"><strong>Clas Tours by Davila Quiroz</strong><br>IBAN: CH90 0900 0000 1651 3549 7<br>BIC: POFICHBEXXX<br><span style="font-size:0.75rem;color:var(--dust)">Include your name and tour in the payment reference</span></div>
           </div>
 
+          <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:0.75rem;padding:0.75rem;background:rgba(27,95,122,0.05);border-radius:3px;border:1px solid rgba(27,95,122,0.1)">
+            <input type="checkbox" id="terms-auth" name="terms" style="margin-top:3px;cursor:pointer;flex-shrink:0">
+            <label for="terms-auth" style="font-size:0.8125rem;color:var(--slate);cursor:pointer;line-height:1.5">I have read and accept the <a href="clastours-legal.html" target="_blank" rel="noopener">Terms and Conditions</a> (including cancellation, risks and liability). I confirm that my details about experience, fitness and health are truthful, and I consent to their use to prepare the activity safely.</label>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:0.75rem;padding:0.75rem;background:rgba(27,95,122,0.05);border-radius:3px;border:1px solid rgba(27,95,122,0.1)">
+            <input type="checkbox" id="news-auth" name="news" style="margin-top:3px;cursor:pointer;flex-shrink:0">
+            <label for="news-auth" style="font-size:0.8125rem;color:var(--slate);cursor:pointer;line-height:1.5">I would like to receive news about new routes and departures by email (optional; I can unsubscribe at any time).</label>
+          </div>
           <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:0.75rem;padding:0.75rem;background:rgba(27,95,122,0.05);border-radius:3px;border:1px solid rgba(27,95,122,0.1)">
             <input type="checkbox" id="foto-auth" name="foto" style="margin-top:3px;cursor:pointer;flex-shrink:0">
             <label for="foto-auth" style="font-size:0.8125rem;color:var(--slate);cursor:pointer;line-height:1.5">I authorise the use of my photos from the activity for promotional purposes. <a href="clastours-legal.html" style="color:var(--petrol);text-decoration:none">View full policy →</a></label>
@@ -301,9 +306,9 @@
         </div>
         <div class="faq-cat">
           <div class="faq-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Bookings, prices and logistics</div>
-          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What exactly does the price include?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">The price includes the full guide in Spanish throughout the activity. Kandersteg 2 days also includes a night in the hut, dinner and breakfast. <strong>Not included</strong>: transport to the starting point and personal insurance.</div></div>
+          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What exactly does the price include?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">The price covers full guiding in Spanish throughout the activity, planning and advice beforehand. <strong>Not included</strong>: transport to the starting point, food, entrance fees or personal insurance. For Kandersteg 2 days, the hut night with dinner and breakfast (approx. CHF 95 per adult; CHF 80 for SAC members) is paid directly to the Blüemlisalphütte: I coordinate the booking in your name.</div></div>
           <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I get to the starting point?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">All tours are accessible by Swiss public transport (SBB/CFF). When I confirm the booking I send you detailed instructions — train, PostBus, meeting time and exact point.</div></div>
-          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I cancel if my plans change?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Yes. More than 14 days in advance, full refund. Between 7 and 14 days, 75%. Between 3 and 6 days, 50%. Less than 48 hours, no refund. See the <a href="clastours-legal.html">full policy</a> in the T&amp;C.</div></div>
+          <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I cancel if my plans change?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Yes. With 30 days or more to go, a full refund. Between 29 and 15 days before, 50% is refunded. With 14 days or less, no refund, but I deduct any costs I save and, if the place is filled again, I return what you paid. For Kandersteg, the hut booking follows the hut's own cancellation terms. I recommend cancellation insurance. See the full policy in the T&Cs.</div></div>
         </div>
       </div>
     </div>
@@ -326,18 +331,13 @@
           <div class="ubic-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span><strong>Active season:</strong> Year-round — summer (T3) and winter (WT2)</span></div>
         </div>
       </div>
-      <div class="mapa-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div class="mapa-placeholder-label">Optional map</div>
-        <div class="mapa-placeholder-hint">You can embed a Google Maps embed here pointing to Ipsach, Bern</div>
-      </div>
     </div>
   </div>
 </section>
 
 <div class="footer">
-  <p>© 2025 Clas Tours by Davila Quiroz · Ipsach, Bern, Switzerland</p>
-  <p><a href="mailto:info@clastours.ch">info@clastours.ch</a> · <a href="https://wa.me/41774603641" target="_blank">(+41) 077 460 36 41</a> · <a href="clastours-legal.html">Terms &amp; Conditions</a></p>
+  <p>© 2026 Clas Tours by Davila Quiroz · Ipsach, Bern, Switzerland</p>
+  <p><a href="mailto:info@clastours.ch">info@clastours.ch</a> · <a href="https://wa.me/41774603641" target="_blank">+41 77 460 36 41</a> · <a href="clastours-legal.html">Terms &amp; Conditions</a></p>
   <p style="margin-top:0.5rem">© Photographs: Santiago Davila Quiroz — All rights reserved. Reproduction, distribution or use without the author's written permission is expressly prohibited.</p>
 </div>
 
@@ -379,6 +379,12 @@ function enviarForm() {
     alert(L('js.alert.name_email'));
     return;
   }
+  var terms = document.getElementById('terms-auth');
+  if (!terms || !terms.checked) {
+    alert(L('js.alert.terms'));
+    return;
+  }
+  var news = document.getElementById('news-auth');
   var enc = encodeURIComponent;
   var msg = L('js.wa.hello') + '%0A%0A' + L('js.wa.name') + ': ' + enc(nombre) + '%0A' + L('js.wa.email') + ': ' + enc(email);
   if (wa) msg += '%0A' + L('js.wa.whatsapp') + ': ' + enc(wa);
@@ -387,7 +393,10 @@ function enviarForm() {
   if (mensaje) msg += '%0A' + L('js.wa.message') + ': ' + enc(mensaje);
   var waUrl = 'https://wa.me/41774603641?text=' + msg;
   var foto = document.getElementById('foto-auth');
-  CT.submit({source:'contacto', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas, message:mensaje, photos:!!(foto && foto.checked)}, waUrl, {btn:document.querySelector('.btn-enviar')});
+  msg += '%0A' + L('js.wa.terms') + ': ' + L('js.yes');
+  msg += '%0A' + L('js.wa.news') + ': ' + (news && news.checked ? L('js.yes') : L('js.no'));
+  waUrl = 'https://wa.me/41774603641?text=' + msg;
+  CT.submit({source:'contacto', route:ruta, name:nombre, email:email, whatsapp:wa, people:personas, message:mensaje, photos:!!(foto && foto.checked), terms:true, termsVersion:'1.1', newsletter:!!(news && news.checked)}, waUrl, {btn:document.querySelector('.btn-enviar')});
 }
 </script>
 </body>

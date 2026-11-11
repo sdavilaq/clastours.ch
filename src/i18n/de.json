@@ -60,8 +60,8 @@
   "s": "c2ee356d"
  },
  "common.griesalp-bluemisalphutte-oeschinensee-kandersteg": {
-  "t": "Griesalp → Bluemisalphütte → Oeschinensee → Kandersteg",
-  "s": "eb42b3c8"
+  "t": "Griesalp → Blüemlisalphütte → Oeschinensee → Kandersteg",
+  "s": "51e92e46"
  },
  "common.2-dias": {
   "t": "2 Tage",
@@ -221,7 +221,7 @@
  },
  "common.atardecer-en-la-bluemisalphutte": {
   "t": "Abendstimmung bei der Blüemlisalphütte",
-  "s": "5e5c9dee"
+  "s": "5f1f170e"
  },
  "common.amanecer-desde-el-refugio": {
   "t": "Sonnenaufgang von der Hütte aus",
@@ -274,10 +274,6 @@
  "common.que-incluye": {
   "t": "Was ist inbegriffen?",
   "s": "2ab4f7c9"
- },
- "common.noche-en-bluemisalphutte": {
-  "t": "Übernachtung in der Blüemlisalphütte",
-  "s": "472795e9"
  },
  "common.transporte-aparte": {
   "t": "Transport (separat)",
@@ -392,12 +388,12 @@
   "s": "27fd1ab0"
  },
  "common.2025-clas-tours-by-davila": {
-  "t": "© 2025 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz",
-  "s": "42931a12"
+  "t": "© 2026 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz",
+  "s": "35ad9f23"
  },
  "common.info-clastours-ch-41-077": {
-  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\">(+41) 077 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
-  "s": "cfc91345"
+  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\">+41 77 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
+  "s": "0a41fdad"
  },
  "common.salidas-a-demanda-clas-tours": {
   "t": "Touren auf Anfrage – Clas Tours by Davila Quiroz",
@@ -604,8 +600,8 @@
   "s": "dcd7a953"
  },
  "common.info-clastours-ch-41-077-2": {
-  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\" rel=\"noopener\">(+41) 077 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
-  "s": "f7520b7c"
+  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\" rel=\"noopener\">+41 77 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
+  "s": "c4b2711d"
  },
  "wa.guia.creux-du-van.hola-santiago-vi-la-guia-2": {
   "t": "Hallo Santiago, ich habe den Führer zum Creux du Van gesehen",
@@ -616,8 +612,8 @@
   "s": "be27d05d"
  },
  "common.kandersteg-griesalp-bluemlisalphutte-y-oeschinensee": {
-  "t": "Kandersteg: Griesalp, Blüemlisalphütte und Oeschinensee in 2 Tagen – Clas Tours",
-  "s": "70d5266b"
+  "t": "Kandersteg: Blüemlisalphütte und Oeschinensee in 2 Tagen – Clas Tours",
+  "s": "a13cf34b"
  },
  "common.guia-en-espanol-de-la": {
   "t": "Führer auf Spanisch zur 2-Tages-Tour Griesalp – Blüemlisalphütte – Oeschinensee – Kandersteg: Anreise, Route, Übernachtung in der Hütte, Baden im See, Sicherheit und Ausrüstung.",
@@ -813,7 +809,7 @@
  },
  "ld.caminatas.dos-dias-por-el-valle": {
   "t": "Zwei Tage durch das Griesalptal zur Blüemlisalphütte, mit Übernachtung in den Bergen und Abstieg am Oeschinensee entlang nach Kandersteg.",
-  "s": "be3e65de"
+  "s": "bc2da032"
  },
  "ld.caminatas.senderismo-guiado-en-espanol": {
   "t": "Geführtes Wandern auf Spanisch",
@@ -929,7 +925,7 @@
  },
  "index.dos-dias-que-no-vas": {
   "t": "Zwei Tage, die du nicht vergessen wirst. Aufstieg durch das Griesalptal zur Blüemlisalphütte, eine Nacht in den Bergen und ein spektakulärer Abstieg am Oeschinensee entlang nach Kandersteg. Eine der schönsten Touren des Berner Oberlands.",
-  "s": "87c96d50"
+  "s": "b1b6ebbf"
  },
  "index.noche-en-refugio": {
   "t": "Übernachtung in der Hütte",
@@ -1016,8 +1012,8 @@
   "s": "110a52ad"
  },
  "index.el-precio-incluye-el-guia": {
-  "t": "Der Preis beinhaltet den Wanderleiter auf Spanisch, die Übernachtung in der Hütte, Abendessen und Frühstück. Transport und Snacks gehen separat – wir beraten dich vor der Abreise zu allem.",
-  "s": "e146c8a0"
+  "t": "Im Preis inbegriffen ist die komplette Führung auf Spanisch. Bei Kandersteg zahlst du die Hüttenübernachtung mit Abendessen und Frühstück (ca. CHF 95 pro erwachsene Person; CHF 80 für SAC-Mitglieder) separat und direkt an die Blüemlisalphütte; ich koordiniere die Reservation auf deinen Namen. Anreise und Snacks kommen dazu – wir beraten dich vor der Tour zu allem.",
+  "s": "498bcac3"
  },
  "index.instrucciones-seguridad-historias-del-camino": {
   "t": "Anweisungen, Sicherheit, Geschichten vom Weg. Nichts geht wegen der Sprache verloren.",
@@ -1132,8 +1128,8 @@
   "s": "c0db7770"
  },
  "index.2025-clas-tours-by-davila": {
-  "t": "© 2025 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz · <a href=\"clastours-legal.html\" style=\"color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s\" onmouseover=\"this.style.color=\"#C48A62\"\" onmouseout=\"this.style.color=\"rgba(255,255,255,0.35)\"\">Allgemeine Geschäftsbedingungen</a>",
-  "s": "88cefd16"
+  "t": "© 2026 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz · <a href=\"clastours-legal.html\" style=\"color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s\" onmouseover=\"this.style.color=\"#C48A62\"\" onmouseout=\"this.style.color=\"rgba(255,255,255,0.35)\"\">Allgemeine Geschäftsbedingungen</a>",
+  "s": "9d315e66"
  },
  "index.hecho-con-pasion-por-los": {
   "t": "Mit Leidenschaft für die Alpen gemacht",
@@ -1368,8 +1364,8 @@
   "s": "bf872d5d"
  },
  "contacto.el-precio-incluye-la-guia": {
-  "t": "Der Preis beinhaltet den Wanderleiter auf Spanisch während der gesamten Aktivität. Bei Kandersteg 2 Tage sind zusätzlich Übernachtung in der Hütte, Abendessen und Frühstück inbegriffen. <strong>Nicht inbegriffen</strong>: Transport zum Startpunkt und persönliche Versicherung.",
-  "s": "c5504ac4"
+  "t": "Im Preis inbegriffen sind die komplette Führung auf Spanisch während der ganzen Aktivität, die Planung und die Beratung im Vorfeld. <strong>Nicht inbegriffen</strong>: Anreise zum Treffpunkt, Verpflegung, Eintritte und persönliche Versicherung. Bei Kandersteg 2 Tage zahlst du die Hüttenübernachtung mit Abendessen und Frühstück (ca. CHF 95 pro erwachsene Person; CHF 80 für SAC-Mitglieder) direkt an die Blüemlisalphütte: Ich koordiniere die Reservation auf deinen Namen.",
+  "s": "07196eae"
  },
  "contacto.como-llego-al-punto-de": {
   "t": "Wie komme ich zum Startpunkt?",
@@ -1384,8 +1380,8 @@
   "s": "7aff04eb"
  },
  "contacto.si-con-mas-de-14": {
-  "t": "Ja. Bei mehr als 14 Tagen Vorlauf volle Rückerstattung. Zwischen 7 und 14 Tagen 75 %. Zwischen 3 und 6 Tagen 50 %. Bei weniger als 48 Stunden keine Rückerstattung. Die <a href=\"clastours-legal.html\">vollständige Regelung</a> findest du in den AGB.",
-  "s": "77275680"
+  "t": "Ja. Bis 30 Tage vorher: volle Rückerstattung. 29 bis 15 Tage vorher: 50% Rückerstattung. 14 Tage oder weniger: keine Rückerstattung, aber ich ziehe eingesparte Kosten ab und erstatte dir den Betrag, wenn der Platz wieder besetzt wird. Bei Kandersteg gelten für die Hüttenreservation die Annullierungsbedingungen der Hütte. Ich empfehle dir eine Annullationskostenversicherung. Die vollständigen Bedingungen findest du in den AGB.",
+  "s": "26e644ac"
  },
  "contacto.donde-estamos": {
   "t": "Wo wir sind",
@@ -1414,14 +1410,6 @@
  "contacto.temporada-activa-todo-el-ano": {
   "t": "<strong>Aktive Saison:</strong> Ganzjährig – Sommer (T3) und Winter (WT2)",
   "s": "358fcdc4"
- },
- "contacto.mapa-opcional": {
-  "t": "Optionale Karte",
-  "s": "660bd898"
- },
- "contacto.puedes-incrustar-aqui-un-google": {
-  "t": "Hier kannst du eine Google-Maps-Einbettung für Ipsach, Bern einfügen",
-  "s": "08e9affe"
  },
  "contacto.fotografias-santiago-davila-quiroz-todos": {
   "t": "© Fotografien: Santiago Davila Quiroz – Alle Rechte vorbehalten. Die Vervielfältigung, Verbreitung oder Verwendung ohne schriftliche Genehmigung des Urhebers ist ausdrücklich untersagt.",
@@ -1689,7 +1677,7 @@
  },
  "caminatas.la-experiencia-mas-completa-que": {
   "t": "Das umfassendste Erlebnis, das ich anbiete. Zwei Tage im Herzen des Berner Oberlands. Am ersten Tag steigst du durch das Griesalptal zur Blüemlisalphütte auf. Am zweiten ist der Abstieg am Oeschinensee entlang nach Kandersteg wie auf einer Postkarte – einer der schönsten Seen der Schweiz. <a href=\"guia-kandersteg-bluemlisalphutte.html\">Lies den vollständigen Führer zur Überschreitung →</a>",
-  "s": "4a859b45"
+  "s": "7149aeac"
  },
  "caminatas.itinerario": {
   "t": "Tagesablauf",
@@ -1701,7 +1689,7 @@
  },
  "caminatas.griesalp-bluemisalphutte": {
   "t": "Griesalp → Blüemlisalphütte",
-  "s": "7e16720d"
+  "s": "421d7d37"
  },
  "caminatas.ascenso-por-el-valle-con": {
   "t": "Aufstieg durch das Tal mit zunehmend eindrucksvoller Aussicht. Ankunft in der Hütte, Sicherheitsbriefing, Abendessen und Erholung.",
@@ -1717,7 +1705,7 @@
  },
  "caminatas.bluemisalphutte-oeschinensee-kandersteg": {
   "t": "Blüemlisalphütte → Oeschinensee → Kandersteg",
-  "s": "93fbf52e"
+  "s": "b79ca47c"
  },
  "caminatas.desayuno-temprano-en-el-refugio": {
   "t": "Frühes Frühstück in der Hütte. Panorama-Abstieg zum Oeschinensee. Weiter nach Kandersteg.",
@@ -1731,17 +1719,13 @@
   "t": "Wanderleiter auf Spanisch (2 Tage)",
   "s": "b1ee1399"
  },
- "caminatas.cena-y-desayuno-en-refugio": {
-  "t": "Abendessen und Frühstück in der Hütte",
-  "s": "d2d31d9d"
- },
  "caminatas.planificacion-y-orientacion": {
   "t": "Planung und Einführung",
   "s": "03155536"
  },
  "caminatas.seguro-personal-obligatorio": {
-  "t": "Persönliche Versicherung (obligatorisch)",
-  "s": "d057e9ce"
+  "t": "Persönliche Versicherung (empfohlen, nicht inbegriffen)",
+  "s": "91765da8"
  },
  "caminatas.t3-senderismo-de-montana-escala": {
   "t": "T3 – Bergwandern (SAC-Skala)",
@@ -1776,8 +1760,8 @@
   "s": "4799954a"
  },
  "caminatas.por-persona-todo-incluido": {
-  "t": "pro Person · alles inklusive",
-  "s": "8b588dc4"
+  "t": "pro Person · Führung 2 Tage · Hütte separat",
+  "s": "91bfad48"
  },
  "caminatas.group-kand": {
   "t": "Gruppen ab 7 Personen: <span>CHF {{g.kand}}/Person</span>",
@@ -2221,7 +2205,7 @@
  },
  "calendario.griesalp-bluemisalphutte-oeschinensee-kandersteg-ver": {
   "t": "Griesalp → Blüemlisalphütte → Oeschinensee → Kandersteg · <a href=\"guia-kandersteg-bluemlisalphutte.html\" style=\"color:inherit;text-decoration:underline\">Zum Führer</a>",
-  "s": "d2621cc3"
+  "s": "be212967"
  },
  "calendario.t3-intermedio": {
   "t": "T3 · Mittel",
@@ -2229,27 +2213,19 @@
  },
  "calendario.la-experiencia-mas-completa-de": {
   "t": "Das umfassendste Erlebnis von Clas Tours. Zwei Tage im Herzen des Berner Oberlands. Am Freitag Aufstieg durch das Griesalptal zur Blüemlisalphütte, Übernachtung in der Berghütte, und am Samstag Abstieg am Oeschinensee entlang nach Kandersteg.",
-  "s": "c525ce22"
+  "s": "3841ee38"
  },
  "calendario.guia-en-espanol-2-dias": {
   "t": "Wanderleiter auf Spanisch (2 volle Tage)",
   "s": "d603a0ae"
- },
- "calendario.media-pension-incluida": {
-  "t": "Halbpension inbegriffen",
-  "s": "ebf3a0c1"
- },
- "calendario.te-de-senderismo-1-litro": {
-  "t": "Wandertee (1 Liter)",
-  "s": "6c02f889"
  },
  "calendario.bebidas-en-el-refugio-aparte": {
   "t": "Getränke in der Hütte (separat)",
   "s": "d19b2b90"
  },
  "calendario.media-pension-en-el-refugio": {
-  "t": "<strong>Die Halbpension in der Hütte umfasst:</strong> Abendessen um 18:30 Uhr (3-Gang-Menü, Getränke nicht inbegriffen), Frühstück und 1 Liter Wandertee. Zuschlag glutenfrei/laktosefrei: CHF 5.–",
-  "s": "46aa44db"
+  "t": "<strong>Hütte (direkt an die Blüemlisalphütte zu zahlen):</strong> Übernachtung + Halbpension ca. CHF 95 pro erwachsene Person (CHF 80 für SAC-Mitglieder; Tarife 2026, mit Ermässigung für Jugendliche und Kinder). Inbegriffen sind Abendessen um 18:30 Uhr (3-Gang-Menü, Getränke separat), Frühstück und 1 Liter Marschtee. Santiago koordiniert die Reservation auf den Namen jeder teilnehmenden Person; es gelten die Annullierungsbedingungen der Hütte. Für glutenfreie oder laktosefreie Menüs kann die Hütte einen Zuschlag verlangen (ca. CHF 5).",
+  "s": "303a228d"
  },
  "calendario.tren-hasta-reichenbach-im-kandertal": {
   "t": "Zug bis Reichenbach im Kandertal, dann Postauto 220 bis Griesalp. Santiago schickt dir detaillierte Anweisungen.",
@@ -2272,8 +2248,8 @@
   "s": "1b1b4eab"
  },
  "calendario.si-suplemento-chf-5-persona": {
-  "t": "Ja – Zuschlag CHF 5/Person (in der Nachricht angeben)",
-  "s": "f9a0056d"
+  "t": "Ja (bitte in der Nachricht angeben; evtl. Zuschlag der Hütte)",
+  "s": "7fd07bbd"
  },
  "calendario.nivel-de-experiencia-necesidades-especiales": {
   "t": "Erfahrungsniveau, besondere Bedürfnisse, Fragen ...",
@@ -2408,12 +2384,12 @@
   "s": "c3963f20"
  },
  "legal.ultima-actualizacion-enero-2025-version": {
-  "t": "Letzte Aktualisierung: Januar 2025 · Version 1.0 · Alle Leistungen unterliegen diesen Bedingungen.",
-  "s": "820e6b98"
+  "t": "Letzte Aktualisierung: November 2026 · Version {{tv}} · Alle Leistungen unterliegen diesen Bedingungen.",
+  "s": "f407dbb3"
  },
  "legal.lea-este-documento-antes-de": {
-  "t": "<strong>Bitte lies dieses Dokument vor der Buchung.</strong> Mit der Bestätigung einer Buchung bei Clas Tours by Davila Quiroz erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen gelesen, verstanden und vollständig akzeptiert zu haben. Die Teilnahme an einer Aktivität bedeutet die Annahme aller hier festgelegten Bedingungen, unabhängig vom Wohnsitzland oder der Nationalität der Kundin bzw. des Kunden.",
-  "s": "706a3351"
+  "t": "Bitte lesen Sie dieses Dokument vor der Buchung. Mit dem Anklicken des Zustimmungsfelds im Buchungsformular oder mit der Bestätigung einer Buchung per WhatsApp oder E-Mail erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen gelesen, verstanden und vollständig akzeptiert zu haben. Die Teilnahme an jeder Aktivität setzt die Akzeptanz aller hier festgelegten Bedingungen voraus.",
+  "s": "f49c52a5"
  },
  "legal.contenido": {
   "t": "Inhalt",
@@ -2484,8 +2460,8 @@
   "s": "6dab79a1"
  },
  "legal.domicilio-ipsach-canton-de-berna": {
-  "t": "<strong>Sitz:</strong> Ipsach, Kanton Bern, Schweiz",
-  "s": "372778cb"
+  "t": "<strong>Adresse:</strong> Quellmattstrasse 11, 2563 Ipsach, Kanton Bern, Schweiz",
+  "s": "2b8c2351"
  },
  "legal.sitio-web-www-clastours-ch": {
   "t": "<strong>Website:</strong> www.clastours.ch",
@@ -2496,8 +2472,8 @@
   "s": "117fd8a9"
  },
  "legal.telefono-whatsapp-41-077-460": {
-  "t": "<strong>Telefon / WhatsApp:</strong> (+41) 077 460 36 41",
-  "s": "1520adc8"
+  "t": "<strong>Telefon / WhatsApp:</strong> +41 77 460 36 41",
+  "s": "23513739"
  },
  "legal.clas-tours-by-davila-quiroz-2": {
   "t": "Clas Tours by Davila Quiroz ist ein Wanderführer-Unternehmen mit Sitz in der Schweiz, betrieben von Santiago Davila Quiroz, der sich derzeit in Ausbildung zum Wanderleiter (Wanderführer) nach Schweizer Standards befindet.",
@@ -2532,12 +2508,12 @@
   "s": "c44bfabe"
  },
  "legal.no-estan-incluidos-en-el": {
-  "t": "<strong>Nicht inbegriffen</strong> im Grundpreis der Eintageswanderungen sind: Transport zum Startpunkt, Verpflegung, Getränke, Eintritte oder Zugangsgebühren, Miete persönlicher Ausrüstung sowie die persönliche Unfallversicherung der Kundin bzw. des Kunden.",
-  "s": "51d6a0fc"
+  "t": "<strong>Nicht im Preis inbegriffen</strong> sind: Anreise zum Ausgangspunkt, Mahlzeiten, Getränke, Unterkunft, Eintritte oder Zutrittsgebühren, Miete persönlicher Ausrüstung sowie die persönliche Unfallversicherung der Kundin bzw. des Kunden.",
+  "s": "b5bb38d9"
  },
  "legal.la-ruta-kandersteg-con-noche": {
-  "t": "Die Tour <strong>Kandersteg mit Übernachtung in der Hütte</strong> ist die Ausnahme: Ihr Preis beinhaltet die Unterkunft in der Blüemlisalphütte und die Halbpension (Abendessen und Frühstück). Nicht inbegriffen sind Getränke, Transport, Eintritte und persönliche Versicherung.",
-  "s": "012dbae8"
+  "t": "Route <strong>Kandersteg mit Hüttenübernachtung</strong>: Der Preis von Clas Tours deckt ausschliesslich die Führung an beiden Tagen. Unterkunft und Halbpension in der Blüemlisalphütte (ca. CHF 95 pro erwachsene Person; CHF 80 für SAC-Mitglieder; Tarife 2026 der Hütte, Änderungen vorbehalten) bucht und bezahlt jede Kundin bzw. jeder Kunde direkt bei der Hütte. Clas Tours koordiniert lediglich die Reservation, im Namen und auf Rechnung der jeweiligen Kundin bzw. des jeweiligen Kunden: Die Unterkunft wird weder weiterverkauft noch in Rechnung gestellt, und für diese Reservation gelten die Bedingungen der Hütte, einschliesslich jener für Annullierung und Nichterscheinen, sowie deren Zuschläge (z. B. für glutenfreie oder laktosefreie Menüs). Clas Tours bietet keine Pauschalreisen an.",
+  "s": "4cf0c7a7"
  },
  "legal.las-salidas-se-realizan-a": {
   "t": "Die Touren finden <strong>auf Anfrage und mit mindestens 2 Teilnehmenden</strong> statt; das Datum wird mit der Gruppe vereinbart.",
@@ -2556,8 +2532,8 @@
   "s": "305076aa"
  },
  "legal.la-reserva-se-realiza-mediante": {
-  "t": "Die Buchung erfolgt über das Kontaktformular der Website oder direkt per WhatsApp. Eine Buchung gilt erst dann als <strong>bestätigt</strong>, wenn die Kundin bzw. der Kunde eine schriftliche Bestätigung von Clas Tours by Davila Quiroz erhalten hat.",
-  "s": "91c23859"
+  "t": "Die Buchung wird über die Formulare der Website, per E-Mail oder per WhatsApp angefragt.",
+  "s": "652bd799"
  },
  "legal.clas-tours-se-reserva-el": {
   "t": "Clas Tours behält sich das Recht vor, eine Buchung abzulehnen oder abzusagen, wenn:",
@@ -2572,8 +2548,8 @@
   "s": "5ed9a8b7"
  },
  "legal.no-se-alcanza-el-numero": {
-  "t": "die Mindestteilnehmerzahl von 2 Personen nicht erreicht wird",
-  "s": "9a90184b"
+  "t": "Die Mindestteilnehmerzahl von 2 Personen wird nicht erreicht: Clas Tours teilt dies spätestens 7 Tage vor der Aktivität mit. Sinkt die Gruppe später unter die Mindestzahl, weil eine andere teilnehmende Person absagt, versucht Clas Tours, die Tour dennoch durchzuführen; ist das nicht möglich, gilt der folgende Absatz",
+  "s": "68a231de"
  },
  "legal.circunstancias-de-fuerza-mayor-lo": {
   "t": "höhere Gewalt die Durchführung verhindert",
@@ -2592,8 +2568,8 @@
   "s": "b303984c"
  },
  "legal.todos-los-precios-estan-expresados": {
-  "t": "Alle Preise sind in <strong>Schweizer Franken (CHF)</strong> angegeben und enthalten die anwendbare Schweizer Mehrwertsteuer. Die Zahlung erfolgt vor Beginn der Aktivität, sofern nicht vorab schriftlich etwas anderes vereinbart wurde.",
-  "s": "adab504e"
+  "t": "Alle Preise verstehen sich in <strong>Schweizer Franken (CHF)</strong>. Clas Tours ist nicht mehrwertsteuerpflichtig; es wird keine Mehrwertsteuer verrechnet. Die Zahlung erfolgt vor Beginn der Aktivität, sofern nichts anderes schriftlich vereinbart wurde.",
+  "s": "d54215c0"
  },
  "legal.metodos-de-pago-aceptados": {
   "t": "Akzeptierte Zahlungsmethoden:",
@@ -2648,8 +2624,8 @@
   "s": "3e784d4f"
  },
  "legal.mas-de-14-dias-antes": {
-  "t": "Mehr als 14 Tage vorher",
-  "s": "b81868a1"
+  "t": "30 Tage oder mehr vorher",
+  "s": "23e8d2ed"
  },
  "legal.sin-penalizacion": {
   "t": "Keine Stornogebühr",
@@ -2660,16 +2636,16 @@
   "s": "844d5af6"
  },
  "legal.entre-7-y-14-dias": {
-  "t": "Zwischen 7 und 14 Tagen vorher",
-  "s": "82e97072"
+  "t": "29 bis 15 Tage vorher",
+  "s": "0c357f77"
  },
  "legal.25-del-importe": {
-  "t": "25 % des Betrags",
-  "s": "5f1bd053"
+  "t": "50% des Betrags",
+  "s": "92189dfb"
  },
  "legal.75-reembolso": {
-  "t": "75 % Rückerstattung",
-  "s": "bd4cc8e0"
+  "t": "50% Rückerstattung",
+  "s": "b6cb7f81"
  },
  "legal.entre-3-y-6-dias": {
   "t": "Zwischen 3 und 6 Tagen vorher",
@@ -2684,8 +2660,8 @@
   "s": "b6cb7f81"
  },
  "legal.menos-de-48-horas-antes": {
-  "t": "Weniger als 48 Stunden vorher",
-  "s": "41fa108a"
+  "t": "14 Tage oder weniger vorher",
+  "s": "3ed2e2d1"
  },
  "legal.no-presentacion-no-show": {
   "t": "Nichterscheinen (No-Show)",
@@ -2776,8 +2752,8 @@
   "s": "f8fc9d15"
  },
  "legal.clas-tours-by-davila-quiroz-4": {
-  "t": "Clas Tours by Davila Quiroz und Santiago Davila Quiroz <strong>haften nicht</strong> für Schäden, Verletzungen, Verluste oder Unfälle, die sich ergeben aus:",
-  "s": "60729128"
+  "t": "Ausser bei eigenem Verschulden haften Clas Tours by Davila Quiroz und Santiago Davila Quiroz nicht für Schäden, Verletzungen, Verluste oder Unfälle, die eine Folge sind von:",
+  "s": "e8d292bb"
  },
  "legal.riesgos-inherentes-y-naturales-de": {
   "t": "inhärenten und natürlichen Risiken des Bergwanderns",
@@ -2804,8 +2780,8 @@
   "s": "5050235d"
  },
  "legal.la-responsabilidad-de-clas-tours": {
-  "t": "Die Haftung von Clas Tours ist in jedem Fall auf den von der Kundin bzw. dem Kunden für die gebuchte Leistung bezahlten Betrag beschränkt, ausser bei nachgewiesenem Vorsatz oder grober Fahrlässigkeit. Diese Haftungsbeschränkung gilt im grösstmöglichen Umfang, den das geltende Schweizer Recht zulässt.",
-  "s": "9d0be34e"
+  "t": "Clas Tours haftet nach Schweizer Recht für Schäden, die bei der Durchführung der Aktivität schuldhaft verursacht werden. Soweit gesetzlich zulässig, ist die Haftung für Sachschäden bei leichter Fahrlässigkeit auf das Doppelte des für die gebuchte Leistung bezahlten Preises beschränkt. Die Haftung für Vorsatz oder grobe Fahrlässigkeit, für schuldhaft verursachte Körperverletzung oder Tod sowie jede Haftung, die nach zwingendem Recht nicht beschränkt werden darf, wird weder beschränkt noch ausgeschlossen.",
+  "s": "223d5089"
  },
  "legal.articulo-08": {
   "t": "Artikel 08",
@@ -2840,8 +2816,8 @@
   "s": "d2a73b0f"
  },
  "legal.clas-tours-by-davila-quiroz-5": {
-  "t": "Clas Tours by Davila Quiroz übernimmt unter keinen Umständen die Kosten für Rettung, medizinische Evakuierung, Spitalaufenthalt oder Repatriierung der Kundin bzw. des Kunden. Diese Kosten gehen vollständig zulasten der teilnehmenden Person oder ihrer Versicherung.",
-  "s": "0b2ae92d"
+  "t": "Die Kosten für Rettung, medizinische Evakuierung, Spitalaufenthalt und Rückführung gehen zulasten der teilnehmenden Person bzw. ihrer Versicherung, es sei denn, der Schaden ist auf ein Verschulden von Clas Tours zurückzuführen.",
+  "s": "49eae1cd"
  },
  "legal.un-rescate-de-montana-en": {
   "t": "Eine Bergrettung in der Schweiz kann zwischen CHF 1’000 und CHF 10’000 oder mehr kosten. Geh nicht ohne Versicherung los.",
@@ -2936,8 +2912,8 @@
   "s": "cb314618"
  },
  "legal.los-datos-no-se-ceden": {
-  "t": "Die Daten werden nicht an Dritte weitergegeben, ausser wenn dies für die Erbringung der Leistung unbedingt erforderlich oder gesetzlich vorgeschrieben ist. Die Kundin bzw. der Kunde hat das Recht auf Auskunft, Berichtigung oder Löschung der Daten und kann sich dazu an <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> wenden. Über die Formulare der Website gesendete Anfragen werden mit Google-Diensten (Google Workspace: Tabellenkalkulation und E-Mail) gespeichert und verwaltet, deren Server sich ausserhalb der Schweiz befinden können.",
-  "s": "0008bb37"
+  "t": "Die Daten werden weder verkauft noch an Dritte weitergegeben, ausser wenn dies für die Erbringung der Leistung erforderlich ist (z. B. die Namen der Teilnehmenden für die Hüttenreservation) oder gesetzlich vorgeschrieben ist. Die Kundin bzw. der Kunde hat das Recht auf Auskunft, Berichtigung oder Löschung der Daten und kann sich dazu an <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> wenden.",
+  "s": "92eab294"
  },
  "legal.las-fotografias-tomadas-durante-las": {
   "t": "Fotografien, die während der Aktivitäten aufgenommen werden, dürfen nur mit ausdrücklicher Einwilligung der Kundin bzw. des Kunden, erteilt über das Einverständnis-Kästchen im Buchungsformular, für Werbezwecke verwendet werden.",
@@ -2960,8 +2936,8 @@
   "s": "5bab3c0b"
  },
  "legal.esta-autorizacion-se-otorga-de": {
-  "t": "· Diese Einwilligung wird freiwillig erteilt. Die Kundin bzw. der Kunde kann an der Aktivität auch ohne sie teilnehmen. Einmal erteilt, kann sie jederzeit durch schriftliche Mitteilung an <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> widerrufen werden, ohne Rückwirkung auf bereits veröffentlichtes Material.",
-  "s": "f801eb7b"
+  "t": "· Diese Einwilligung wird freiwillig erteilt. Die Teilnahme an der Aktivität ist auch ohne sie möglich. Sie kann jederzeit durch schriftliche Mitteilung an <a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> widerrufen werden: Clas Tours entfernt dann die Bilder der Kundin bzw. des Kunden so rasch wie möglich, spätestens innert 14 Tagen, von der Website und aus den eigenen Social-Media-Profilen und verwendet sie nicht mehr. Bereits verteiltes Druckmaterial und von Dritten verbreitete Kopien können nicht zurückgeholt werden.",
+  "s": "25413ec5"
  },
  "legal.queda-expresamente-prohibido-el-uso": {
   "t": "<strong>Ausdrücklich untersagt</strong> ist die Verwendung der Bilder für andere als die genannten Zwecke, ihre Weitergabe an Dritte oder ihre Verwendung für kommerzielle Zwecke ausserhalb von Clas Tours by Davila Quiroz ohne zusätzliche schriftliche Genehmigung.",
@@ -2980,20 +2956,20 @@
   "s": "785bd195"
  },
  "legal.jurisdiccion-exclusiva-derecho-suizo": {
-  "t": "Ausschliesslicher Gerichtsstand: Schweizer Recht",
-  "s": "257d9133"
+  "t": "Schweizer Recht und Gerichtsstand",
+  "s": "23a273f3"
  },
  "legal.todos-los-contratos-reservas-acuerdos": {
-  "t": "<strong>Alle Verträge, Buchungen, Vereinbarungen und Rechtsbeziehungen zwischen Clas Tours by Davila Quiroz und seinen Kundinnen und Kunden unterliegen ausschliesslich dem Schweizer Recht</strong>, unter Ausschluss jeglicher anderer nationaler oder internationaler Vorschriften, unabhängig von Wohnsitzland, Nationalität oder Domizil der Kundin bzw. des Kunden.",
-  "s": "94b783e0"
+  "t": "Verträge, Buchungen und Vereinbarungen zwischen Clas Tours by Davila Quiroz und ihren Kundinnen und Kunden unterstehen, soweit gesetzlich zulässig, dem Schweizer Recht, unabhängig von Wohnsitzland oder Staatsangehörigkeit der Kundin bzw. des Kunden.",
+  "s": "82d3e00e"
  },
  "legal.esto-incluye-pero-no-se": {
   "t": "Dies umfasst unter anderem: Schadenersatzforderungen, Streitigkeiten über Stornierungen und Rückerstattungen, Unfälle während der Aktivitäten und alle weiteren Streitigkeiten aus der Erbringung der Leistungen.",
   "s": "4fda3e01"
  },
  "legal.en-caso-de-disputa-el": {
-  "t": "Im Streitfall ist <strong>das Gericht am Sitz von Clas Tours by Davila Quiroz im Kanton Bern, Schweiz, zuständig.</strong>",
-  "s": "f5fb6a3d"
+  "t": "Bei Streitigkeiten ist, soweit gesetzlich zulässig, das Gericht am Sitz von Clas Tours by Davila Quiroz im Kanton Bern, Schweiz, zuständig. Konsumentinnen und Konsumenten behalten die Gerichtsstände, die ihnen das zwingende Recht gewährt.",
+  "s": "d9b2a218"
  },
  "legal.las-normas-aplicables-incluyen-entre": {
   "t": "Zu den anwendbaren Vorschriften gehören unter anderem:",
@@ -3012,12 +2988,12 @@
   "s": "1ce38be7"
  },
  "legal.ley-federal-sobre-el-turismo": {
-  "t": "<strong>Bundesgesetz über den Tourismus</strong> und die anwendbaren Berner Kantonsvorschriften für Berg- und Wanderführer",
-  "s": "cb5ca5b2"
+  "t": "<strong>Bundesgesetz über das Bergführerwesen und Anbieten weiterer Risikoaktivitäten (RiskG)</strong> und die zugehörige Verordnung, soweit sie auf die Tätigkeit anwendbar sind",
+  "s": "e94fa889"
  },
  "legal.el-cliente-al-aceptar-estos": {
-  "t": "Mit der Annahme dieser Allgemeinen Geschäftsbedingungen verzichtet die Kundin bzw. der Kunde ausdrücklich darauf, sich in Streitigkeiten im Zusammenhang mit den Leistungen von Clas Tours by Davila Quiroz auf das Recht des Herkunftslandes zu berufen, und akzeptiert die ausschliessliche Zuständigkeit der Schweizer Gerichte.",
-  "s": "6939fc9b"
+  "t": "Mit der Akzeptanz dieser Allgemeinen Geschäftsbedingungen akzeptiert die Kundin bzw. der Kunde die Anwendung des Schweizer Rechts und die Zuständigkeit der Schweizer Gerichte, unbeschadet der zwingenden Konsumentenschutzvorschriften, die für sie bzw. ihn gelten.",
+  "s": "980af8f8"
  },
  "legal.en-caso-de-discrepancia-entre": {
   "t": "Bei Abweichungen zwischen der spanischen Fassung dieser Bedingungen und einer Übersetzung ist die spanische Fassung massgebend.",
@@ -3052,12 +3028,12 @@
   "s": "82fa7f41"
  },
  "legal.al-realizar-una-reserva-con": {
-  "t": "Mit einer Buchung bei Clas Tours by Davila Quiroz – sei es über das Webformular, per WhatsApp, per E-Mail oder auf anderem Weg – erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen in allen Teilen gelesen, verstanden und vollständig akzeptiert zu haben.",
-  "s": "18dfc0df"
+  "t": "Mit dem Anklicken des Zustimmungsfelds im Buchungsformular oder mit der Bestätigung einer Buchung per WhatsApp, E-Mail oder auf anderem Weg erklärt die Kundin bzw. der Kunde, diese Allgemeinen Geschäftsbedingungen gelesen, verstanden und akzeptiert zu haben. Die Zustimmung bezieht sich auf die zu diesem Zeitpunkt gültige Fassung.",
+  "s": "7886cac5"
  },
  "legal.esta-aceptacion-tiene-plena-validez": {
-  "t": "Diese Annahme hat nach Schweizer Recht volle vertragliche Gültigkeit und ist einer handschriftlichen Unterschrift gleichgestellt.",
-  "s": "34e2a744"
+  "t": "Die Zustimmung wird mit Datum und Version der Bedingungen erfasst und dient als Nachweis, dass diese der Kundin bzw. dem Kunden vor Vertragsschluss mitgeteilt und in den Vertrag einbezogen wurden.",
+  "s": "bbd03108"
  },
  "legal.clas-tours-by-davila-quiroz-8": {
   "t": "© Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz",
@@ -3072,8 +3048,8 @@
   "s": "d6bad44f"
  },
  "legal.price-kand": {
-  "t": "<strong>Kandersteg mit Übernachtung in der Hütte (2 Tage, Hütte und Halbpension inbegriffen):</strong> CHF {{p.kand}} pro Person; Gruppen ab 7 Personen: CHF {{g.kand}}",
-  "s": "fa5a3547"
+  "t": "<strong>Kandersteg mit Hüttenübernachtung (2 Tage; nur Führung, Hütte und Halbpension separat):</strong> CHF {{p.kand}} pro Person; Gruppen ab 7 Personen: CHF {{g.kand}}",
+  "s": "061922b1"
  },
  "legal.price-creux": {
   "t": "<strong>Creux du Van:</strong> CHF {{p.creux}} pro Person; Gruppen ab 7 Personen: CHF {{g.creux}}",
@@ -3165,7 +3141,7 @@
  },
  "guia.creux-du-van.la-caminata-clasica-sale-de": {
   "t": "Die klassische Wanderung startet am <strong>Bahnhof Noiraigue</strong> auf etwa 725 m Höhe. Es fahren stündlich Züge ab Neuchâtel, die Fahrt dauert etwa 20 Minuten. Wenn du aus Biel/Bienne kommst, führt die Strecke über Neuchâtel. Prüfe immer die aktuellen Fahrpläne bei der <a href=\"https://www.sbb.ch/de\" target=\"_blank\" rel=\"noopener\">SBB</a> und kontrolliere vor dem Aufbruch den letzten Zug zurück.",
-  "s": "ca0c205d"
+  "s": "648ff3eb"
  },
  "guia.creux-du-van.hay-parqueaderos-oficiales-y-fuera": {
   "t": "Es gibt offizielle Parkplätze; ausserhalb davon ist das Parkieren im Schutzgebiet verboten (Campieren ebenfalls):",
@@ -3525,7 +3501,7 @@
  },
  "guia.kandersteg-bluemlisalphutte.tren-hasta-reichenbach-im-kandertal": {
   "t": "Zug bis <strong>Reichenbach im Kandertal</strong> (stündlich RegioExpress ab Bern oder Brig) und von dort das <strong>Postauto 220</strong> bis Griesalp. Die BLS beschreibt es als steilste Postautostrecke Europas: Es gibt sehr enge Kehren, daher fährt man am besten gelassen. 2026 verkehrte es vom 23. Mai bis 18. Oktober. Prüfe die Fahrpläne jede Saison bei der <a href=\"https://www.bls.ch\" target=\"_blank\" rel=\"noopener\">BLS</a> und der <a href=\"https://www.sbb.ch/de\" target=\"_blank\" rel=\"noopener\">SBB</a>.",
-  "s": "396e62a6"
+  "s": "c1884832"
  },
  "guia.kandersteg-bluemlisalphutte.hay-parqueaderos-de-pago-en": {
   "t": "Es gibt kostenpflichtige Parkplätze am Tschingelsee und auf der Griesalp. Beachte, dass du in Kandersteg ankommst und nicht dort, wo du das Auto abgestellt hast, plane also die Rückfahrt: Am praktischsten ist die Anreise mit dem öffentlichen Verkehr.",
@@ -3736,8 +3712,8 @@
   "s": "ad463c8a"
  },
  "guia.kandersteg-bluemlisalphutte.agua-para-la-subida-y": {
-  "t": "Wasser für den Aufstieg und etwas zu essen für unterwegs. Bei Clas Tours sind Abendessen, Frühstück und 1 Liter Wandertee inbegriffen.",
-  "s": "801fb741"
+  "t": "Wasser für den Aufstieg und etwas Proviant für unterwegs. Die Halbpension der Hütte umfasst Abendessen, Frühstück und 1 Liter Marschtee.",
+  "s": "7f3eb594"
  },
  "guia.kandersteg-bluemlisalphutte.bastones-muy-recomendados-para-la": {
   "t": "Wanderstöcke (für den Abstieg sehr empfohlen), Sonnencreme, Sonnenbrille.",
@@ -3748,8 +3724,8 @@
   "s": "bbd6ccc7"
  },
  "guia.kandersteg-bluemlisalphutte.tarjeta-o-efectivo-para-bebidas": {
-  "t": "Karte oder Bargeld für Getränke und eine gültige persönliche Versicherung.",
-  "s": "376f4619"
+  "t": "Karte oder Bargeld für die Hütte und die Getränke; eine persönliche Versicherung ist sehr empfehlenswert.",
+  "s": "72057607"
  },
  "guia.kandersteg-bluemlisalphutte.cuanto-dura-la-travesia-griesalp": {
   "t": "Wie lange dauert die Überschreitung Griesalp – Blüemlisalphütte – Kandersteg?",
@@ -3804,8 +3780,8 @@
   "s": "6f480162"
  },
  "guia.kandersteg-bluemlisalphutte.un-saco-sabana-obligatorio-el": {
-  "t": "Einen Hüttenschlafsack (obligatorisch: Die Hütte stellt Decken, aber keine Leintücher), Karte oder Bargeld für Getränke, warme Kleidung, eine Stirnlampe und Bergschuhe. Abendessen und Frühstück sind inbegriffen, wenn du mit Clas Tours gehst.",
-  "s": "2ad587aa"
+  "t": "Einen Hüttenschlafsack (obligatorisch: die Hütte stellt Decken, aber keine Bettwäsche), Karte oder Bargeld für die Hütte und die Getränke, warme Kleidung, eine Stirnlampe und Bergschuhe. Abendessen und Frühstück sind in der Halbpension der Hütte inbegriffen.",
+  "s": "a902f084"
  },
  "guia.kandersteg-bluemlisalphutte.fuentes": {
   "t": "Quellen",
@@ -3844,8 +3820,8 @@
   "s": "0b1098c4"
  },
  "guia.kandersteg-bluemlisalphutte.cta-price": {
-  "t": "pro Person · alles inklusive (Wanderleiter, Übernachtung in der Hütte, Abendessen und Frühstück) · mindestens 2 Personen<br>Gruppen ab 7 Personen: CHF {{g.kand}} pro Person · maximal 10 Personen",
-  "s": "94203522"
+  "t": "pro Person · Führung auf Spanisch an beiden Tagen · mindestens 2 Personen<br>Gruppen ab 7 Personen: CHF {{g.kand}} pro Person · maximal 10 Personen<br>Hütte + Halbpension: ca. CHF 95 pro erwachsene Person, direkt an die Hütte zu zahlen",
+  "s": "1256f93e"
  },
  "js.sent.title": {
   "t": "Anfrage gesendet!",
@@ -3870,5 +3846,89 @@
  "js.fail.text": {
   "t": "Es gab ein Verbindungsproblem. Schreib uns direkt per WhatsApp oder an info@clastours.ch.",
   "s": "1e9e9c84"
+ },
+ "common.acepto-los-terminos": {
+  "t": "Ich habe die <a href=\"clastours-legal.html\" target=\"_blank\" rel=\"noopener\">Allgemeinen Geschäftsbedingungen</a> (inkl. Annullierung, Risiken und Haftung) gelesen und akzeptiere sie. Ich bestätige, dass meine Angaben zu Erfahrung, Kondition und Gesundheit wahrheitsgemäss sind, und willige ein, dass sie zur sicheren Vorbereitung der Aktivität verwendet werden.",
+  "s": "101b3b4f"
+ },
+ "common.quiero-recibir-novedades": {
+  "t": "Ich möchte per E-Mail Neuigkeiten zu neuen Routen und Terminen erhalten (optional; Abmeldung jederzeit möglich).",
+  "s": "9b9deb49"
+ },
+ "js.alert.terms": {
+  "t": "Um fortzufahren, bestätige bitte die Allgemeinen Geschäftsbedingungen im Kästchen.",
+  "s": "1de7fde2"
+ },
+ "js.wa.terms": {
+  "t": "AGB akzeptiert",
+  "s": "cf1e657c"
+ },
+ "js.wa.news": {
+  "t": "Neuigkeiten per E-Mail",
+  "s": "53564990"
+ },
+ "legal.art2-cambios": {
+  "t": "Programmänderungen: Ist die Aktivität wie geplant nicht durchführbar (Wetter, Schnee- oder Geländeverhältnisse, Zustand der Gruppe, gesperrte Zugänge), kann Clas Tours die Route, die Zeit oder das Datum ändern oder eine gleichwertige Alternative im selben Gebiet vorschlagen. Das Erreichen eines Gipfels oder eines bestimmten Ziels wird nicht garantiert: geschuldet ist eine sorgfältige Führung, kein Erfolg.",
+  "s": "a1e117cd"
+ },
+ "legal.art2-sustitucion": {
+  "t": "Stellvertretung: Kann Clas Tours die Aktivität wegen Krankheit, Unfall oder aus einem anderen berechtigten Grund nicht persönlich leiten, kann sie an eine andere qualifizierte Führungsperson übertragen werden; die Kundin bzw. der Kunde wird so rasch wie möglich informiert.",
+  "s": "1cf48a55"
+ },
+ "legal.art3-solicitud": {
+  "t": "Das Absenden des Formulars oder einer Nachricht ist nur eine Anfrage: Es begründet weder einen Vertrag noch eine Platzreservation. Clas Tours antwortet mit einer <strong>schriftlichen Bestätigung</strong> (E-Mail oder WhatsApp), die Route, Datum, Preis, Treffpunkt und -zeit sowie das Ende der Aktivität nennt und einen Link zu diesen Allgemeinen Geschäftsbedingungen enthält. Der Vertrag kommt zustande, wenn die Kundin bzw. der Kunde <strong>diese Bestätigung schriftlich annimmt</strong> (ein «OK» per E-Mail oder WhatsApp genügt) <strong>oder die Anzahlung leistet</strong>. Schweigen gilt nicht als Annahme: Erfolgt innerhalb von 5 Tagen nach der Bestätigung weder eine Annahme noch eine Zahlung, verfällt die Bestätigung und Clas Tours kann über den Platz verfügen.",
+  "s": "8788770e"
+ },
+ "legal.art4-anticipo": {
+  "t": "Mit der Annahme der Bestätigung ist innerhalb von 5 Tagen eine <strong>Anzahlung von 50% des Preises</strong> zu leisten; der Rest ist spätestens 7 Tage vor der Aktivität fällig, sofern nichts anderes schriftlich vereinbart ist (bei Buchungen weniger als 7 Tage im Voraus ist der ganze Preis auf einmal zu zahlen). Hat die Kundin bzw. der Kunde die Bestätigung angenommen und zahlt die Anzahlung nicht rechtzeitig, mahnt Clas Tours schriftlich und setzt eine Nachfrist von 3 Tagen; bleibt die Zahlung aus, kann Clas Tours die Buchung annullieren und den Platz freigeben. In diesem Fall schuldet die Kundin bzw. der Kunde die Entschädigung, die bei einer eigenen Annullierung am Tag der Aufhebung geschuldet wäre (Art. 5); bei 30 Tagen oder mehr im Voraus ist nichts geschuldet. Auslagen, die Clas Tours für die Kundin bzw. den Kunden vorschiesst (z. B. nicht im Preis enthaltene Tickets des öffentlichen Verkehrs oder Eintritte), werden zusätzlich zum Preis zu den tatsächlichen Kosten erstattet.",
+  "s": "6b087728"
+ },
+ "legal.art5-terceros": {
+  "t": "Leistungen Dritter: Leistungen, die die Kundin bzw. der Kunde direkt bei Dritten bucht und bezahlt (z. B. Übernachtung und Halbpension in der Blüemlisalphütte), richten sich nach den Bedingungen dieses Anbieters, auch bei Annullierung oder Nichterscheinen; die obige Tabelle gilt nur für den Preis von Clas Tours. Hat Clas Tours auf Wunsch der Kundin bzw. des Kunden bereits Auslagen vorgeschossen (Art. 4), sind diese zu erstatten, soweit sie nicht rückforderbar sind.",
+  "s": "d6210bd2"
+ },
+ "legal.art5-abandono": {
+  "t": "Unterbruch oder Abbruch: Bricht die Kundin bzw. der Kunde die bereits begonnene Aktivität ab, bleibt der volle Preis geschuldet. Muss Clas Tours die Aktivität aus Sicherheitsgründen (Wetter, Gelände- oder Schneeverhältnisse, Zustand der Gruppe) verkürzen oder abbrechen, ist der volle Preis geschuldet, sofern der wesentliche Teil der Leistung bereits erbracht wurde; wird die Aktivität von Anfang an unmöglich, ist nur die tatsächlich erbrachte Leistung geschuldet und der Rest wird erstattet.",
+  "s": "b6b33f16"
+ },
+ "legal.art5-seguro": {
+  "t": "Empfohlen wird eine Annullationskostenversicherung, die das Risiko deckt, bei Krankheit, Unfall oder anderen Gründen die Annullierungsentschädigung bezahlen zu müssen. Clas Tours bietet sie weder an noch schliesst sie sie ein.",
+  "s": "f2ebe94e"
+ },
+ "legal.art6-veraz": {
+  "t": "Die Kundin bzw. der Kunde beantwortet die Fragen im Formular und der Führungsperson zu Erfahrung, Kondition und Gesundheit vollständig und wahrheitsgemäss und befolgt während der Aktivität die Sicherheitsanweisungen (Mitwirkungspflicht). Falsche oder verschwiegene Angaben können zum Ausschluss ohne Rückerstattung führen.",
+  "s": "9202fb93"
+ },
+ "legal.art8-anulacion": {
+  "t": "Annullationskostenversicherung (besonders empfehlenswert für die Route mit Hüttenübernachtung)",
+  "s": "b004cdf7"
+ },
+ "legal.art10-salud": {
+  "t": "Gesundheitsdaten (Allergien, Unverträglichkeiten, Kondition, relevante Medikation) sind besonders schützenswerte Personendaten: Sie werden nur mit ausdrücklicher Einwilligung der Kundin bzw. des Kunden (Kästchen im Formular), ausschliesslich zur sicheren Vorbereitung und Durchführung der Aktivität bearbeitet und nur so lange wie nötig aufbewahrt.",
+  "s": "f76cbdce"
+ },
+ "legal.art10-novedades": {
+  "t": "Neuigkeiten per E-Mail: Wenn die Kundin bzw. der Kunde das entsprechende Kästchen anklickt, sendet Clas Tours Informationen zu neuen Routen und Terminen. Die Einwilligung ist freiwillig, keine Voraussetzung für eine Buchung und kann jederzeit widerrufen werden (Abmeldelink oder Nachricht an info@clastours.ch). Datum und Version der Einwilligung werden erfasst.",
+  "s": "7f4a3588"
+ },
+ "common.refugio-pago-directo": {
+  "t": "Hütte + Halbpension: ca. CHF 95, direkt an die Hütte zu zahlen",
+  "s": "7f1c68bf"
+ },
+ "common.reserva-refugio-coordinada": {
+  "t": "Hüttenreservation von Santiago koordiniert",
+  "s": "5d592c98"
+ },
+ "legal.art5-descuento": {
+  "t": "Von der Entschädigung werden die Kosten abgezogen, die Clas Tours durch die Annullierung einspart. Wird der Platz wieder besetzt (durch eine andere teilnehmende Person oder durch eine von der Kundin bzw. vom Kunden vorgeschlagene Ersatzperson, die die Anforderungen der Route erfüllt), erstattet Clas Tours den für diesen Platz bezahlten Betrag und zieht nur die tatsächlich entstandenen Kosten ab.",
+  "s": "89b6d55f"
+ },
+ "legal.art10-servicios": {
+  "t": "Eingesetzte Dienste und Ort der Bearbeitung: Über die Formulare der Website gesendete Anfragen werden in einer Google-Tabelle gespeichert und per E-Mail mit Gmail bearbeitet (kostenloses Google-Konto; Google LLC, USA, und Google Ireland Ltd., mit Servern in der EU, den USA und weiteren Ländern). Das Postfach info@clastours.ch liegt bei Hostpoint (Schweiz). Die Website wird bei GitHub Pages (GitHub Inc., USA) gehostet, das die IP-Adresse der Besuchenden protokolliert; die Schriften werden von Google Fonts (Google, USA) und die Wetterprognose von Open-Meteo geladen, wobei der Browser die IP-Adresse an diese Dienste übermittelt. Unterhaltungen über WhatsApp laufen über WhatsApp/Meta (Irland und USA). Die Website verwendet weder Tracking-Cookies noch Analyse-Tools. Einige dieser Anbieter bearbeiten Daten in den USA und in anderen Ländern, deren Datenschutzniveau nicht dem schweizerischen entspricht; die Übermittlung stützt sich auf die Garantien des jeweiligen Anbieters (Zertifizierung unter dem Swiss-U.S. Data Privacy Framework oder Standardvertragsklauseln).",
+  "s": "ff1a116e"
+ },
+ "legal.art10-rgpd": {
+  "t": "Kundinnen und Kunden in der EU/im EWR: Soweit die Datenschutz-Grundverordnung (DSGVO) anwendbar ist, sind die Rechtsgrundlagen die Erfüllung des Vertrags bzw. vorvertraglicher Massnahmen (Art. 6 Abs. 1 lit. b DSGVO), die Einwilligung für Gesundheitsdaten, Neuigkeiten per E-Mail und Fotos (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a) sowie gesetzliche Pflichten, etwa zur Buchführung (Art. 6 Abs. 1 lit. c). Zusätzlich zu den oben genannten Rechten kann die Kundin bzw. der Kunde die Einschränkung der Bearbeitung und die Datenübertragbarkeit verlangen, der Bearbeitung widersprechen, eine Einwilligung jederzeit widerrufen und bei der Datenschutzbehörde des Wohnsitzlandes Beschwerde einreichen; in der Schweiz ist der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte (EDÖB) zuständig. Verantwortlicher: Santiago Davila Quiroz (Kontaktdaten in Art. 1).",
+  "s": "533fff45"
  }
 }

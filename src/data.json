@@ -1,8 +1,8 @@
 {
   "prices": {
     "kand": {
-      "p": 320,
-      "g": 260
+      "p": 225,
+      "g": 165
     },
     "creux": {
       "p": 140,
@@ -19,5 +19,8 @@
   },
   "booking": {
     "endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec"
+  },
+  "terms": {
+    "version": "1.1"
   }
 }

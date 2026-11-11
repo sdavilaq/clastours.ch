@@ -5,6 +5,7 @@
  *  1. Guarda una fila en la hoja "Solicitudes"
  *  2. Te manda un email a OWNER_EMAIL con todos los datos (responder = responder al cliente)
  *  3. Le manda al cliente un email automático, en su idioma (ES/DE/EN/FR), diciendo que recibimos la solicitud
+ *  4. Le responde al sitio {ok:true} o {ok:false}: con false (o sin respuesta) el sitio ofrece WhatsApp al cliente
  *
  * Los emails salen desde info@clastours.ch si esa dirección está configurada como alias "Enviar como" en la
  * cuenta de Gmail que ejecuta el script (ver GUIA.md, paso A). Si no, salen desde la cuenta de Gmail.
@@ -14,32 +15,103 @@
 
 var OWNER_EMAIL = 'info@clastours.ch';
 var SHEET_NAME  = 'Solicitudes';
+var SHEET_ID    = '';   // ID de la hoja de cálculo (lo que va entre /d/ y /edit en su dirección). Vacío = la hoja a la que está ligado el script
 var WHATSAPP    = 'https://wa.me/41774603641';
 var HEADERS = ['Recibida', 'Estado', 'Fecha pedida', 'Ruta', 'Personas', 'Nombre', 'Email', 'WhatsApp',
-               'Nivel', 'Vegetariano', 'Gluten/lactosa', 'Mensaje', 'Fotos OK', 'Idioma', 'Origen', 'Notas'];
+               'Nivel', 'Vegetariano', 'Gluten/lactosa', 'Mensaje', 'Fotos OK', 'Idioma', 'Origen', 'Notas', 'T&C aceptados', 'Novedades OK'];
+
+// Límites diarios: protegen la cuota de Gmail (~100 correos/día) y evitan que alguien use el formulario para spam.
+// Lo que pase de estos topes no se guarda ni se envía; el sitio recibe ok:false y le ofrece al cliente escribir por WhatsApp.
+var LIMITS = { rowsPerDay: 60, autoRepliesPerDay: 30, autoRepliesPerEmail: 2, errorMailsPerDay: 5 };
+var TZ = 'Europe/Zurich';
+
+// Cuenta usos por día en las propiedades del script; devuelve false si ya se llegó al tope
+function bump_(key, max) {
+  var lock = LockService.getScriptLock();
+  lock.waitLock(15000);   // sin bloqueo, dos envíos simultáneos podrían contar como uno
+  try {
+    var props = PropertiesService.getScriptProperties();
+    var day = Utilities.formatDate(new Date(), TZ, 'yyyyMMdd');
+    var k = 'n_' + day + '_' + key;
+    var n = Number(props.getProperty(k) || 0);
+    if (n >= max) return false;
+    props.setProperty(k, String(n + 1));
+    return true;
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+// Borra los contadores de días anteriores
+function cleanup_() {
+  var props = PropertiesService.getScriptProperties();
+  var day = Utilities.formatDate(new Date(), TZ, 'yyyyMMdd');
+  var all = props.getProperties();
+  for (var k in all) { if (k.indexOf('n_') === 0 && k.indexOf('n_' + day + '_') !== 0) props.deleteProperty(k); }
+}
+
+function hash_(txt) {
+  return Utilities.computeDigest(Utilities.DigestAlgorithm.MD5, String(txt).toLowerCase()).map(function (b) {
+    return ('0' + (b & 0xFF).toString(16)).slice(-2);
+  }).join('');
+}
+
+// Escribe la fila como TEXTO: así nada que empiece por = + - @ se ejecuta como fórmula (y el "+" del teléfono se conserva).
+// La primera columna (Recibida) sí es una fecha de verdad, para poder ordenar y filtrar junto con las filas antiguas.
+function appendSafe_(sh, vals) {
+  var lock = LockService.getScriptLock();
+  lock.waitLock(15000);
+  try {
+    var row = sh.getLastRow() + 1;
+    var r = sh.getRange(row, 1, 1, vals.length);
+    r.setNumberFormat('@');
+    r.setValues([vals.map(function (v, i) { return i === 0 && v instanceof Date ? '' : String(v); })]);
+    if (vals[0] instanceof Date) sh.getRange(row, 1).setNumberFormat('yyyy-mm-dd hh:mm').setValue(vals[0]);
+  } finally {
+    lock.releaseLock();
+  }
+}
 
 function doGet() {
   return ContentService.createTextOutput('Clas Tours · formulario activo');
 }
 
+// Respuesta al sitio: {ok:true} solo si la solicitud quedó guardada y se te avisó por correo.
+// Con cualquier otra respuesta (o sin respuesta) el sitio le muestra al cliente el aviso de error con el botón de WhatsApp.
 function doPost(e) {
   try {
-    var d = JSON.parse(e.postData.contents);
-    d = clean_(d);
-    if (!d) return ok_();                       // vacío o sospechoso: se ignora en silencio
+    var d = clean_(JSON.parse(e.postData.contents));
+    if (!d) return out_(false, 'invalid');                               // vacío o sin datos de contacto válidos
+    if (!bump_('rows', LIMITS.rowsPerDay)) return out_(false, 'limit');  // demasiadas solicitudes hoy
+    if (Math.random() < 0.05) cleanup_();
 
-    var sheet = sheet_();
-    sheet.appendRow([
+    appendSafe_(sheet_(), [
       new Date(), 'Nueva', d.date, d.route, d.people, d.name, d.email, d.whatsapp,
-      d.level, d.vegetarian ? 'Sí' : '', d.allergy ? 'Sí' : '', d.message, d.photos ? 'Sí' : 'No', d.lang, d.source, ''
+      d.level, d.vegetarian ? 'Sí' : '', d.allergy ? 'Sí' : '', d.message, d.photos ? 'Sí' : 'No', d.lang, d.source, '',
+      d.terms ? ('Sí · v' + (d.termsVersion || '?')) : 'No', d.newsletter ? 'Sí' : 'No'
     ]);
-
     notifyOwner_(d);
-    if (d.email) autoReply_(d);
   } catch (err) {
-    try { MailApp.sendEmail(OWNER_EMAIL, 'Error en el formulario de clastours.ch', String(err) + '\n\n' + (e && e.postData ? e.postData.contents : '')); } catch (x) {}
+    reportError_(err, e);
+    return out_(false, 'error');
   }
-  return ok_();
+  // Acuse al cliente: máx. 2 por email al día y 30 en total (evita usar el formulario para mandar spam a terceros).
+  // Si falla, la solicitud ya está guardada y avisada: no se le muestra error al cliente.
+  try {
+    if (d.email && (d.email.toLowerCase() === OWNER_EMAIL || bump_('em_' + hash_(d.email), LIMITS.autoRepliesPerEmail)) && bump_('auto', LIMITS.autoRepliesPerDay)) autoReply_(d);
+  } catch (err2) {
+    reportError_(err2, e);
+  }
+  return out_(true);
+}
+
+// Aviso de error por correo, con tope diario: sin tope, alguien que mande basura en bucle agota la cuota de Gmail
+function reportError_(err, e) {
+  try {
+    if (!bump_('err', LIMITS.errorMailsPerDay)) return;
+    var raw = e && e.postData ? String(e.postData.contents).substring(0, 1500) : '';
+    MailApp.sendEmail(OWNER_EMAIL, 'Error en el formulario de clastours.ch', String(err) + '\n\n(Máx. ' + LIMITS.errorMailsPerDay + ' avisos de error al día.)\n\n' + raw);
+  } catch (x) {}
 }
 
 // Envía desde info@clastours.ch si está como alias en Gmail; si no, desde la cuenta de Gmail
@@ -55,10 +127,13 @@ function send_(o) {
   }
 }
 
-function ok_() { return ContentService.createTextOutput('ok'); }
+function out_(ok, reason) {
+  var o = { ok: !!ok }; if (reason) o.reason = reason;
+  return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON);
+}
 
 function sheet_() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var ss = SHEET_ID ? SpreadsheetApp.openById(SHEET_ID) : SpreadsheetApp.getActiveSpreadsheet();
   var sh = ss.getSheetByName(SHEET_NAME);
   if (!sh) {
     sh = ss.insertSheet(SHEET_NAME);
@@ -72,11 +147,13 @@ function sheet_() {
 // Valida y recorta los datos (el endpoint es público: cualquiera puede llamarlo)
 function clean_(d) {
   function s(v, n) { return String(v == null ? '' : v).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '').trim().substring(0, n); }
+  function one(v, n) { return s(v, n).replace(/[\r\n\t]+/g, ' '); }
   var out = {
-    name: s(d.name, 120), email: s(d.email, 160), whatsapp: s(d.whatsapp, 40), route: s(d.route, 160),
-    date: s(d.date, 120), people: s(d.people, 40), level: s(d.level, 80), message: s(d.message, 2000),
+    name: one(d.name, 120), email: one(d.email, 160), whatsapp: one(d.whatsapp, 40), route: one(d.route, 160),
+    date: one(d.date, 120), people: one(d.people, 40), level: one(d.level, 80), message: s(d.message, 2000),
     vegetarian: !!d.vegetarian, allergy: !!d.allergy, photos: !!d.photos,
-    lang: ['es', 'de', 'en', 'fr'].indexOf(d.lang) >= 0 ? d.lang : 'es', source: s(d.source, 30)
+    terms: !!d.terms, termsVersion: s(d.termsVersion, 12), newsletter: !!d.newsletter,
+    lang: ['es', 'de', 'en', 'fr'].indexOf(d.lang) >= 0 ? d.lang : 'es', source: one(d.source, 30)
   };
   if (!out.name) return null;
   if (!out.email && !out.whatsapp) return null;
@@ -96,6 +173,8 @@ function notifyOwner_(d) {
   if (d.allergy) lines.push('Gluten/lactosa: sí');
   if (d.message) lines.push('', 'Mensaje:', d.message);
   lines.push('', 'Fotos con fines promocionales: ' + (d.photos ? 'autorizadas' : 'no autorizadas'));
+  lines.push('Términos y Condiciones: ' + (d.terms ? 'aceptados (v' + (d.termsVersion || '?') + ')' : 'NO marcados'));
+  lines.push('Novedades por correo: ' + (d.newsletter ? 'SÍ (consentimiento dado)' : 'no'));
   if (d.whatsapp) lines.push('Responder por WhatsApp: https://wa.me/' + d.whatsapp.replace(/[^0-9]/g, ''));
   var opts = { to: OWNER_EMAIL, subject: 'Solicitud: ' + (d.route || 'Clas Tours') + ' · ' + d.name, body: lines.join('\n'), name: 'Formulario clastours.ch' };
   if (d.email) opts.replyTo = d.email;
@@ -108,42 +187,53 @@ var TEXTS = {
     hi: 'Hola {name},',
     body: 'Gracias por escribirnos. Recibimos tu solicitud y te respondo en menos de 24 horas para confirmar la fecha y los detalles.',
     sum: 'Esto es lo que recibimos:',
-    note: 'Importante: esto es solo el acuse de recibo, no una reserva confirmada. Las salidas se hacen con un mínimo de 2 personas; la reserva queda confirmada cuando te lo confirmo por escrito y se coordina el pago.',
+    note: 'Importante: esto es solo el acuse de recibo, no una reserva confirmada. Las salidas se hacen con un mínimo de 2 personas; la reserva queda en firme cuando te envío la confirmación por escrito y tú la aceptas (basta un «ok») o pagas el anticipo.',
     wa: 'Si es urgente, escríbeme por WhatsApp:',
     bye: 'Un abrazo,', sign: 'Santiago · Clas Tours',
-    route: 'Ruta', date: 'Fecha', people: 'Personas', msg: 'Mensaje'
+    terms: 'Términos y Condiciones aceptados:', termsUrl: 'https://www.clastours.ch/clastours-legal.html', news: 'Si marcaste la casilla de novedades, te escribiré de vez en cuando sobre nuevas rutas y salidas; puedes darte de baja respondiendo a este correo.',
+    route: 'Ruta', date: 'Fecha', people: 'Personas'
   },
   de: {
     subject: 'Deine Anfrage ist eingegangen · Clas Tours',
     hi: 'Hallo {name},',
     body: 'Danke für deine Nachricht. Deine Anfrage ist eingegangen, und ich melde mich innerhalb von 24 Stunden, um das Datum und die Details zu bestätigen.',
     sum: 'Das haben wir erhalten:',
-    note: 'Wichtig: Dies ist nur die Eingangsbestätigung, noch keine bestätigte Buchung. Die Touren finden mit mindestens 2 Personen statt; die Buchung ist verbindlich, sobald ich sie schriftlich bestätige und die Zahlung vereinbart ist.',
+    note: 'Wichtig: Dies ist nur die Eingangsbestätigung, noch keine bestätigte Buchung. Die Touren finden mit mindestens 2 Personen statt; die Buchung wird verbindlich, sobald ich dir die schriftliche Bestätigung schicke und du sie annimmst (ein «OK» genügt) oder die Anzahlung leistest.',
     wa: 'Wenn es dringend ist, schreib mir per WhatsApp:',
     bye: 'Herzliche Grüsse,', sign: 'Santiago · Clas Tours',
-    route: 'Tour', date: 'Datum', people: 'Personen', msg: 'Nachricht'
+    terms: 'Akzeptierte AGB:', termsUrl: 'https://www.clastours.ch/de/clastours-legal.html', news: 'Falls du das Kästchen für Neuigkeiten angekreuzt hast, schreibe ich dir ab und zu zu neuen Routen und Terminen; du kannst dich jederzeit abmelden, indem du auf diese E-Mail antwortest.',
+    route: 'Tour', date: 'Datum', people: 'Personen'
   },
   en: {
     subject: 'We received your request · Clas Tours',
     hi: 'Hi {name},',
     body: 'Thanks for getting in touch. We received your request and I will reply within 24 hours to confirm the date and the details.',
     sum: 'Here is what we received:',
-    note: 'Please note: this is only an acknowledgement, not a confirmed booking. Tours run with a minimum of 2 people; the booking is confirmed once I confirm it in writing and payment is arranged.',
+    note: 'Please note: this is only an acknowledgement, not a confirmed booking. Tours run with a minimum of 2 people; the booking becomes binding once I send you the written confirmation and you accept it (a simple "ok" is enough) or pay the deposit.',
     wa: 'If it is urgent, message me on WhatsApp:',
     bye: 'Best regards,', sign: 'Santiago · Clas Tours',
-    route: 'Tour', date: 'Date', people: 'People', msg: 'Message'
+    terms: 'Terms and Conditions you accepted:', termsUrl: 'https://www.clastours.ch/en/clastours-legal.html', news: 'If you ticked the news box, I will write to you now and then about new routes and departures; you can unsubscribe at any time by replying to this email.',
+    route: 'Tour', date: 'Date', people: 'People'
   },
   fr: {
     subject: 'Nous avons bien reçu votre demande · Clas Tours',
     hi: 'Bonjour {name},',
     body: 'Merci de votre message. Nous avons bien reçu votre demande et je vous réponds dans les 24 heures pour confirmer la date et les détails.',
     sum: 'Voici ce que nous avons reçu :',
-    note: 'Important : ceci est uniquement un accusé de réception, et non une réservation confirmée. Les sorties ont lieu à partir de 2 personnes ; la réservation est confirmée lorsque je vous le confirme par écrit et que le paiement est convenu.',
+    note: 'Important : ceci est uniquement un accusé de réception, et non une réservation confirmée. Les sorties ont lieu à partir de 2 personnes ; la réservation devient ferme lorsque je vous envoie la confirmation écrite et que vous l\'acceptez (un simple « ok » suffit) ou versez l\'acompte.',
     wa: 'Si c\'est urgent, écrivez-moi par WhatsApp :',
     bye: 'Cordiales salutations,', sign: 'Santiago · Clas Tours',
-    route: 'Itinéraire', date: 'Date', people: 'Personnes', msg: 'Message'
+    terms: 'Conditions générales acceptées :', termsUrl: 'https://www.clastours.ch/fr/clastours-legal.html', news: 'Si vous avez coché la case des nouvelles, je vous écrirai de temps en temps au sujet des nouveaux itinéraires et départs ; vous pouvez vous désinscrire à tout moment en répondant à cet e-mail.',
+    route: 'Itinéraire', date: 'Date', people: 'Personnes'
   }
 };
+
+// Enlace a los T&C: si el cliente aceptó una versión concreta (p. ej. 1.1), a la copia fija de esa versión
+// (clastours-legal-v1-1.html, la genera build.py); si no, a la página vigente.
+function termsUrl_(t, d) {
+  if (d.terms && /^\d{1,2}\.\d{1,2}$/.test(d.termsVersion)) return t.termsUrl.replace('.html', '-v' + d.termsVersion.replace('.', '-') + '.html');
+  return t.termsUrl;
+}
 
 function esc_(v) { return String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
@@ -151,30 +241,33 @@ function esc_(v) { return String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;')
 var LOGO_URL = '';
 var SIG = {
   lines: ['Santiago Dávila Quiroz', 'CLAS Tours by Davila Quiroz', '\u201eCamina Los Alpes Suizos\u201c',
-          'Quellmattstrasse 11, 2563 Ipsach, Schweiz', '+41 77 460 36 41', 'info@clastours.ch', 'www.clastours.ch | @clastours']
+          'Quellmattstrasse 11, 2563 Ipsach, Schweiz', '+41 77 460 36 41', 'info@clastours.ch', 'www.clastours.ch | @clastours.ch']
 };
 
 function sigText_() { return SIG.lines.join('\n'); }
 function sigHtml_() {
   return '<div style="margin-top:18px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#1a2a33">' +
     '<b>' + SIG.lines[0] + '<br>' + SIG.lines[1] + '</b><br><i>' + SIG.lines[2] + '</i><br>' +
-    '\uD83D\uDCCD ' + SIG.lines[3] + '<br>\uD83D\uDCDE ' + SIG.lines[4] + '<br>' +
-    '\u2709\uFE0F <a href="mailto:info@clastours.ch">info@clastours.ch</a><br>' +
-    '\uD83C\uDF10 <a href="https://www.clastours.ch">www.clastours.ch</a> | \uD83D\uDCF8 <a href="https://www.instagram.com/clastours">@clastours</a>' +
+    '&#128205; ' + SIG.lines[3] + '<br>&#128222; ' + SIG.lines[4] + '<br>' +
+    '&#9993; <a href="mailto:info@clastours.ch">info@clastours.ch</a><br>' +
+    '&#127760; <a href="https://www.clastours.ch">www.clastours.ch</a> | &#128248; <a href="https://www.instagram.com/clastours.ch">@clastours.ch</a>' +
     (LOGO_URL ? '<br><img src="' + LOGO_URL + '" alt="Clas Tours" width="320" style="margin-top:8px;border:0">' : '') + '</div>';
 }
 
+// El resumen NO incluye el mensaje libre del cliente: así el formulario no sirve para mandar texto arbitrario a terceros
 function autoReply_(d) {
   var t = TEXTS[d.lang] || TEXTS.es;
   var rows = [];
   if (d.route)   rows.push(t.route + ': ' + d.route);
   if (d.date)    rows.push(t.date + ': ' + d.date);
   if (d.people)  rows.push(t.people + ': ' + d.people);
-  if (d.message) rows.push(t.msg + ': ' + d.message);
-  var text = [t.hi.replace('{name}', d.name), '', t.body, '', t.sum, rows.join('\n'), '', t.note, '', t.wa + ' ' + WHATSAPP, '', t.bye, '', sigText_()].join('\n');
+  var tu = termsUrl_(t, d);
+  var legal = [d.terms ? t.terms + ' ' + tu : tu]; if (d.newsletter) legal.push(t.news);
+  var text = [t.hi.replace('{name}', d.name), '', t.body, '', t.sum, rows.join('\n'), '', t.note, '', legal.join('\n'), '', t.wa + ' ' + WHATSAPP, '', t.bye, '', sigText_()].join('\n');
   var html = '<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#1a2a33;max-width:560px">' +
     '<p>' + esc_(t.hi.replace('{name}', d.name)) + '</p><p>' + esc_(t.body) + '</p><p><b>' + esc_(t.sum) + '</b><br>' +
     rows.map(esc_).join('<br>') + '</p><p style="background:#f3efe9;padding:10px 12px;border-radius:4px">' + esc_(t.note) + '</p>' +
+    '<p style="font-size:13px;color:#4a5a63">' + (d.terms ? esc_(t.terms) + ' ' : '') + '<a href="' + tu + '">' + esc_(tu.replace('https://', '')) + '</a>' + (d.newsletter ? '<br>' + esc_(t.news) : '') + '</p>' +
     '<p>' + esc_(t.wa) + ' <a href="' + WHATSAPP + '">WhatsApp</a></p><p>' + esc_(t.bye) + '</p>' + sigHtml_() + '</div>';
   send_({ to: d.email, subject: t.subject, body: text, htmlBody: html, name: 'Clas Tours', replyTo: OWNER_EMAIL });
 }
@@ -183,5 +276,5 @@ function autoReply_(d) {
 function prueba() {
   doPost({ postData: { contents: JSON.stringify({
     source: 'prueba', lang: 'de', route: 'Creux du Van · auf Anfrage', date: 'Samstag im Juni', name: 'Prueba Clas Tours',
-    email: OWNER_EMAIL, whatsapp: '+41770000000', people: '2', message: 'Dies ist ein Test.', photos: true }) } });
+    email: OWNER_EMAIL, whatsapp: '+41770000000', people: '2', message: 'Dies ist ein Test.', photos: true, terms: true, termsVersion: '1.1', newsletter: true }) } });
 }

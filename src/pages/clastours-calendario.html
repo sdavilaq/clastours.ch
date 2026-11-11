@@ -242,10 +242,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                 </div>
                 <div class="field"><label>{{t:common.mensaje-opcional}}</label><textarea id="s1-msg" placeholder="{{t:calendario.nivel-de-experiencia-dudas-necesidades}}"></textarea></div>
                 <div class="foto-check">
+                  <input type="checkbox" id="s1-terms">
+                  <label for="s1-terms">{{t:common.acepto-los-terminos}}</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s1-news">
+                  <label for="s1-news">{{t:common.quiero-recibir-novedades}}</label>
+                </div>
+                <div class="foto-check">
                   <input type="checkbox" id="s1-foto">
                   <label for="s1-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s1','{{t:cal.salida-creux}}')">{{t:common.reservar-por-whatsapp}}</button>
+                <button class="btn-inscribir" data-salida="{{t:cal.salida-creux}}" onclick="inscribir('s1',this.dataset.salida)">{{t:common.reservar-por-whatsapp}}</button>
                 <p class="form-nota">{{t:common.te-contactamos-en-menos-de}}</p>
               </div>
             </div>
@@ -283,9 +291,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
               <p class="salida-desc">{{t:calendario.la-experiencia-mas-completa-de}}</p>
               <div class="incl-grid">
                 <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:calendario.guia-en-espanol-2-dias}}</div>
-                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:common.noche-en-bluemisalphutte}}</div>
-                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:calendario.media-pension-incluida}}</div>
-                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:calendario.te-de-senderismo-1-litro}}</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>{{t:common.reserva-refugio-coordinada}}</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>{{t:common.refugio-pago-directo}}</div>
                 <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>{{t:common.transporte-aparte}}</div>
                 <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>{{t:calendario.bebidas-en-el-refugio-aparte}}</div>
               </div>
@@ -331,10 +338,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                 </div>
                 <div class="field"><label>{{t:common.mensaje-opcional}}</label><textarea id="s3-msg" placeholder="{{t:calendario.nivel-de-experiencia-necesidades-especiales}}"></textarea></div>
                 <div class="foto-check">
+                  <input type="checkbox" id="s3-terms">
+                  <label for="s3-terms">{{t:common.acepto-los-terminos}}</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s3-news">
+                  <label for="s3-news">{{t:common.quiero-recibir-novedades}}</label>
+                </div>
+                <div class="foto-check">
                   <input type="checkbox" id="s3-foto">
                   <label for="s3-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s3','{{t:cal.salida-kandersteg}}')">{{t:common.reservar-por-whatsapp}}</button>
+                <button class="btn-inscribir" data-salida="{{t:cal.salida-kandersteg}}" onclick="inscribir('s3',this.dataset.salida)">{{t:common.reservar-por-whatsapp}}</button>
                 <p class="form-nota">{{t:calendario.minimo-2-personas-te-contactamos}}</p>
               </div>
             </div>
@@ -415,10 +430,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                 </div>
                 <div class="field"><label>{{t:common.mensaje-opcional}}</label><textarea id="s4-msg" placeholder="{{t:calendario.dudas-sobre-el-nivel-necesidades}}"></textarea></div>
                 <div class="foto-check">
+                  <input type="checkbox" id="s4-terms">
+                  <label for="s4-terms">{{t:common.acepto-los-terminos}}</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s4-news">
+                  <label for="s4-news">{{t:common.quiero-recibir-novedades}}</label>
+                </div>
+                <div class="foto-check">
                   <input type="checkbox" id="s4-foto">
                   <label for="s4-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s4','{{t:cal.salida-augst}}')">{{t:common.reservar-por-whatsapp}}</button>
+                <button class="btn-inscribir" data-salida="{{t:cal.salida-augst}}" onclick="inscribir('s4',this.dataset.salida)">{{t:common.reservar-por-whatsapp}}</button>
                 <p class="form-nota">{{t:common.te-contactamos-en-menos-de}}</p>
               </div>
             </div>
@@ -493,10 +516,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                 </div>
                 <div class="field"><label>{{t:common.mensaje-opcional}}</label><textarea id="s6-msg" placeholder="{{t:calendario.dudas-necesidades-especiales-fecha-alternativa}}"></textarea></div>
                 <div class="foto-check">
+                  <input type="checkbox" id="s6-terms">
+                  <label for="s6-terms">{{t:common.acepto-los-terminos}}</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s6-news">
+                  <label for="s6-news">{{t:common.quiero-recibir-novedades}}</label>
+                </div>
+                <div class="foto-check">
                   <input type="checkbox" id="s6-foto">
                   <label for="s6-foto">{{t:common.autorizo-el-uso-de-mis}}</label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s6','{{t:cal.salida-relojes}}')">{{t:common.reservar-por-whatsapp}}</button>
+                <button class="btn-inscribir" data-salida="{{t:cal.salida-relojes}}" onclick="inscribir('s6',this.dataset.salida)">{{t:common.reservar-por-whatsapp}}</button>
                 <p class="form-nota">{{t:common.te-contactamos-en-menos-de}}</p>
               </div>
             </div>
@@ -546,6 +577,8 @@ function inscribir(id, salida) {
   var personas = document.getElementById(id+'-personas').value;
   var msg = document.getElementById(id+'-msg') ? document.getElementById(id+'-msg').value.trim() : '';
   var foto = document.getElementById(id+'-foto').checked;
+  var terms = document.getElementById(id+'-terms').checked;
+  var news = document.getElementById(id+'-news').checked;
   var fecha = document.getElementById(id+'-fecha') ? document.getElementById(id+'-fecha').value.trim() : '';
 
   if (!fecha) {
@@ -558,6 +591,10 @@ function inscribir(id, salida) {
   }
   if (!personas) {
     alert(L('js.alert.people'));
+    return;
+  }
+  if (!terms) {
+    alert(L('js.alert.terms'));
     return;
   }
 
@@ -575,11 +612,13 @@ function inscribir(id, salida) {
   if (veg && veg !== 'no') waMsg += '%0A' + L('js.wa.veg') + ': ' + yes;
   if (alerg && alerg !== 'no') waMsg += '%0A' + L('js.wa.allergy') + ': ' + yes;
   if (msg) waMsg += '%0A' + L('js.wa.message') + ': ' + enc(msg);
+  waMsg += '%0A' + L('js.wa.terms') + ': ' + yes;
+  waMsg += '%0A' + L('js.wa.news') + ': ' + (news ? yes : no);
   waMsg += '%0A' + L('js.wa.photos') + ': ' + (foto ? yes : no);
   var waUrl = 'https://wa.me/41774603641?text=' + waMsg;
   var okText = L('js.modal.sent').replace('{salida}', salida);
   var btn = document.querySelector('button[onclick^="inscribir(\''+id+'\'"]');
-  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto}, waUrl, {btn:btn, okCb:function(){
+  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto, terms:true, termsVersion:'{{tv}}', newsletter:news}, waUrl, {btn:btn, okCb:function(){
     document.getElementById('modal-texto').textContent = okText;
     document.getElementById('modal-confirm').classList.add('open');
   }});

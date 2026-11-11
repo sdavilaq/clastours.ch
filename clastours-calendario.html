@@ -148,9 +148,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}</style>
-<script>window.I18N={"js.alert.date": "Por favor indica tu fecha preferida.", "js.alert.name_email": "Por favor ingresa tu nombre y email.", "js.alert.people": "Por favor selecciona el número de personas.", "js.modal.sent": "Tu solicitud para {salida} ha sido enviada. Santiago te contactará en menos de 24 horas para confirmar la fecha y coordinar el pago.", "js.yes": "Sí", "js.no": "No", "js.wa.enroll_intro": "Hola Santiago, quiero inscribirme en:", "js.wa.name": "Nombre", "js.wa.email": "Email", "js.wa.whatsapp": "WhatsApp", "js.wa.date": "Fecha preferida", "js.wa.people": "Personas", "js.wa.level": "Nivel", "js.wa.veg": "Vegetariano", "js.wa.allergy": "Intolerancia gluten/lactosa", "js.wa.message": "Mensaje", "js.wa.photos": "Autorización fotos", "js.wa.route": "Ruta", "js.wa.hello": "Hola Santiago,", "js.wa.interest": "Hola Santiago! Me interesa reservar una caminata.", "js.alert.name_contact": "Por favor ingresa tu nombre y al menos un método de contacto.", "js.today": "HOY", "js.days": "DOM|LUN|MAR|MIÉ|JUE|VIE|SÁB", "js.wx.route_default": "Tu ruta", "js.wx.title": "Pronóstico 7 días", "js.wx.source": "Modelo ICON · Open-Meteo", "js.wx.loading": "Cargando datos meteorológicos…", "js.wx.footer1": "Datos: Modelo ICON (DWD) vía", "js.wx.footer2": ". Orientativo: antes de salir, mira el", "js.wx.footer3": "pronóstico oficial de MeteoSwiss", "js.wx.reliable": "Más fiable en los primeros 3 días", "js.wx.error": "No se pudieron cargar los datos meteorológicos. Por favor, recarga la página o inténtalo más tarde.", "js.sent.title": "¡Solicitud enviada!", "js.sent.text": "Recibimos tu mensaje. Santiago te responde en menos de 24 horas.", "js.sent.close": "Entendido", "js.sent.wa": "Escribir también por WhatsApp", "js.fail.title": "No pudimos enviar tu mensaje", "js.fail.text": "Hubo un problema de conexión. Escríbenos directamente por WhatsApp o a info@clastours.ch."};</script>
-<script>window.CT={"endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec", "lang": "es"};CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();return fetch(CT.endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)});};CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';o.innerHTML='<div class="ct-notice-box" role="dialog" aria-modal="true"><h3></h3><p></p><div class="ct-notice-btns"></div></div>';o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');if(waUrl){var a=document.createElement('a');a.href=waUrl;a.target='_blank';a.rel='noopener';a.className='ct-notice-wa';a.textContent=L('js.sent.wa');bt.appendChild(a);}var c=document.createElement('button');c.type='button';c.textContent=L('js.sent.close');c.onclick=function(){o.remove();};bt.appendChild(c);o.onclick=function(e){if(e.target===o)o.remove();};document.body.appendChild(o);};CT.submit=function(d,waUrl,opt){opt=opt||{};if(!CT.endpoint){window.open(waUrl,'_blank');if(opt.okCb)opt.okCb('wa');return;}if(opt.btn)opt.btn.disabled=true;CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);}).catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);}).then(function(){if(opt.btn)opt.btn.disabled=false;});};</script>
+<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}input[type=checkbox]{width:18px;height:18px;flex-shrink:0}a:focus-visible,button:focus-visible,[role=button]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #A8704A!important;outline-offset:2px}</style>
+<script>window.I18N={"js.alert.date": "Por favor indica tu fecha preferida.", "js.alert.name_email": "Por favor ingresa tu nombre y email.", "js.alert.people": "Por favor selecciona el número de personas.", "js.modal.sent": "Tu solicitud para {salida} ha sido enviada. Santiago te contactará en menos de 24 horas para confirmar la fecha y coordinar el pago.", "js.yes": "Sí", "js.no": "No", "js.wa.enroll_intro": "Hola Santiago, quiero inscribirme en:", "js.wa.name": "Nombre", "js.wa.email": "Email", "js.wa.whatsapp": "WhatsApp", "js.wa.date": "Fecha preferida", "js.wa.people": "Personas", "js.wa.level": "Nivel", "js.wa.veg": "Vegetariano", "js.wa.allergy": "Intolerancia gluten/lactosa", "js.wa.message": "Mensaje", "js.wa.photos": "Autorización fotos", "js.wa.route": "Ruta", "js.wa.hello": "Hola Santiago,", "js.wa.interest": "Hola Santiago! Me interesa reservar una caminata.", "js.alert.name_contact": "Por favor ingresa tu nombre y al menos un método de contacto.", "js.today": "HOY", "js.days": "DOM|LUN|MAR|MIÉ|JUE|VIE|SÁB", "js.wx.route_default": "Tu ruta", "js.wx.title": "Pronóstico 7 días", "js.wx.source": "Modelo ICON · Open-Meteo", "js.wx.loading": "Cargando datos meteorológicos…", "js.wx.footer1": "Datos: Modelo ICON (DWD) vía", "js.wx.footer2": ". Orientativo: antes de salir, mira el", "js.wx.footer3": "pronóstico oficial de MeteoSwiss", "js.wx.reliable": "Más fiable en los primeros 3 días", "js.wx.error": "No se pudieron cargar los datos meteorológicos. Por favor, recarga la página o inténtalo más tarde.", "js.sent.title": "¡Solicitud enviada!", "js.sent.text": "Recibimos tu mensaje. Santiago te responde en menos de 24 horas.", "js.sent.close": "Entendido", "js.sent.wa": "Escribir también por WhatsApp", "js.fail.title": "No pudimos enviar tu mensaje", "js.fail.text": "Hubo un problema de conexión. Escríbenos directamente por WhatsApp o a info@clastours.ch.", "js.alert.terms": "Para continuar, marca la casilla de aceptación de los Términos y Condiciones.", "js.wa.terms": "Términos y Condiciones aceptados", "js.wa.news": "Novedades por correo"};</script>
+<script>window.CT={"endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec", "lang": "es"};CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();return fetch(CT.endpoint,{method:'POST',redirect:'follow',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.text();}).then(function(t){t=(t||'').trim();if(t==='ok')return;var j=null;try{j=JSON.parse(t);}catch(e){}if(!j||j.ok!==true)throw new Error('rechazada');});};CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';o.innerHTML='<div class="ct-notice-box" role="dialog" aria-modal="true"><h3></h3><p></p><div class="ct-notice-btns"></div></div>';o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');if(waUrl){var a=document.createElement('a');a.href=waUrl;a.target='_blank';a.rel='noopener';a.className='ct-notice-wa';a.textContent=L('js.sent.wa');bt.appendChild(a);}var c=document.createElement('button');c.type='button';c.textContent=L('js.sent.close');c.onclick=function(){o.remove();};bt.appendChild(c);o.onclick=function(e){if(e.target===o)o.remove();};document.body.appendChild(o);};CT.submit=function(d,waUrl,opt){opt=opt||{};if(!CT.endpoint){window.open(waUrl,'_blank');if(opt.okCb)opt.okCb('wa');return;}if(opt.btn)opt.btn.disabled=true;CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);}).catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);}).then(function(){if(opt.btn)opt.btn.disabled=false;});};document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.burger,.hamburger,.ct-hamburger').forEach(function(b){b.setAttribute('role','button');b.setAttribute('tabindex','0');b.setAttribute('aria-label','Menu');b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();b.click();}});});});</script>
 </head>
 <body>
 
@@ -233,12 +233,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
               <div class="form-inscripcion">
                 <div class="form-title">Inscribirse</div>
                 <div class="form-sub">Creux du Van · Fecha a demanda · CHF 140/persona</div>
-                <div class="field"><label>Fecha preferida *</label><input type="text" id="s1-fecha" placeholder="Ej.: un sábado de junio, 13 de junio..."></div>
-                <div class="field"><label>Nombre completo *</label><input type="text" id="s1-nombre" placeholder="Tu nombre"></div>
-                <div class="field"><label>Email *</label><input type="email" id="s1-email" placeholder="tu@correo.com"></div>
-                <div class="field"><label>WhatsApp</label><input type="tel" id="s1-wa" placeholder="+41 / +57 / +34..."></div>
+                <div class="field"><label for="s1-fecha">Fecha preferida *</label><input type="text" id="s1-fecha" placeholder="Ej.: un sábado de junio, 13 de junio..."></div>
+                <div class="field"><label for="s1-nombre">Nombre completo *</label><input type="text" id="s1-nombre" placeholder="Tu nombre"></div>
+                <div class="field"><label for="s1-email">Email *</label><input type="email" id="s1-email" placeholder="tu@correo.com"></div>
+                <div class="field"><label for="s1-wa">WhatsApp</label><input type="tel" id="s1-wa" placeholder="+41 / +57 / +34..."></div>
                 <div class="field">
-                  <label>Número de personas *</label>
+                  <label for="s1-personas">Número de personas *</label>
                   <select id="s1-personas">
                     <option value="">Selecciona</option>
                     <option value="2">2 personas — CHF 280</option>
@@ -249,12 +249,20 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                     <option value="7+">7 o más — precio especial para grupos</option>
                   </select>
                 </div>
-                <div class="field"><label>Mensaje (opcional)</label><textarea id="s1-msg" placeholder="Nivel de experiencia, dudas, necesidades especiales..."></textarea></div>
+                <div class="field"><label for="s1-msg">Mensaje (opcional)</label><textarea id="s1-msg" placeholder="Nivel de experiencia, dudas, necesidades especiales..."></textarea></div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s1-terms">
+                  <label for="s1-terms">He leído y acepto los <a href="clastours-legal.html" target="_blank" rel="noopener">Términos y Condiciones</a> (cancelación, riesgos y responsabilidad incluidos). Confirmo que mis datos sobre experiencia, condición física y salud son veraces, y consiento que se usen para preparar la actividad con seguridad.</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s1-news">
+                  <label for="s1-news">Quiero recibir novedades sobre nuevas rutas y salidas por correo electrónico (opcional; puedo darme de baja cuando quiera).</label>
+                </div>
                 <div class="foto-check">
                   <input type="checkbox" id="s1-foto">
                   <label for="s1-foto">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html">Ver política →</a></label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s1','Creux du Van · a demanda')">Enviar solicitud →</button>
+                <button class="btn-inscribir" data-salida="Creux du Van · a demanda" onclick="inscribir('s1',this.dataset.salida)">Enviar solicitud →</button>
                 <p class="form-nota">Te contactamos en menos de 24h · Sin compromiso hasta confirmar pago</p>
               </div>
             </div>
@@ -273,7 +281,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
           <div class="salida-info">
             <div class="salida-tipo">⭐ Ruta 01 · Experiencia completa</div>
             <div class="salida-nombre">Kandersteg con noche en refugio</div>
-            <div class="salida-ruta">Griesalp → Bluemisalphütte → Oeschinensee → Kandersteg · <a href="guia-kandersteg-bluemlisalphutte.html" style="color:inherit;text-decoration:underline">Ver la guía</a></div>
+            <div class="salida-ruta">Griesalp → Blüemlisalphütte → Oeschinensee → Kandersteg · <a href="guia-kandersteg-bluemlisalphutte.html" style="color:inherit;text-decoration:underline">Ver la guía</a></div>
             <div class="tags">
               <span class="tag tag-dias">2 días</span>
               <span class="tag tag-dif">T3 · Intermedio</span>
@@ -289,17 +297,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
         <div class="salida-body">
           <div class="salida-grid">
             <div>
-              <p class="salida-desc">La experiencia más completa de Clas Tours. Dos días en el corazón del Oberland bernés. Subida el viernes por el valle de Griesalp hasta la Bluemisalphütte, noche en refugio de montaña, y el sábado el descenso por el lago Oeschinensee hasta Kandersteg.</p>
+              <p class="salida-desc">La experiencia más completa de Clas Tours. Dos días en el corazón del Oberland bernés. Subida el viernes por el valle de Griesalp hasta la Blüemlisalphütte, noche en refugio de montaña, y el sábado el descenso por el lago Oeschinensee hasta Kandersteg.</p>
               <div class="incl-grid">
                 <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Guía en español (2 días completos)</div>
-                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Noche en Bluemisalphütte</div>
-                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Media pensión incluida</div>
-                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Té de senderismo (1 litro)</div>
+                <div class="incl-item si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Reserva del refugio coordinada por Santiago</div>
+                <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Refugio + media pensión: aprox. CHF 95, pago directo a la cabaña</div>
                 <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Transporte (aparte)</div>
                 <div class="incl-item no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Bebidas en el refugio (aparte)</div>
               </div>
               <div class="nota-mp">
-                <strong>Media pensión en el refugio incluye:</strong> cena a las 18:30h (menú de 3 platos, bebidas no incluidas), desayuno y 1 litro de té de senderismo. Suplemento gluten/lactosa: CHF 5.–
+                <strong>Refugio (pago directo a la Blüemlisalphütte):</strong> noche + media pensión aprox. CHF 95 por adulto (CHF 80 socios SAC; tarifas 2026, con descuentos para jóvenes y niños). Incluye cena a las 18:30h (menú de 3 platos, bebidas aparte), desayuno y 1 litro de té de senderismo. Santiago coordina la reserva a nombre de cada participante; se aplican las condiciones de cancelación de la cabaña. El menú sin gluten o sin lactosa puede llevar un suplemento de la cabaña (aprox. CHF 5).
               </div>
               <div class="info-box">
                 <div class="info-box-title">Cómo llegar</div>
@@ -309,41 +316,49 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
             <div>
               <div class="form-inscripcion">
                 <div class="form-title">Inscribirse</div>
-                <div class="form-sub">Kandersteg · Fecha a demanda · CHF 320/persona</div>
-                <div class="field"><label>Fecha preferida *</label><input type="text" id="s3-fecha" placeholder="Ej.: un sábado de junio, 13 de junio..."></div>
-                <div class="field"><label>Nombre completo *</label><input type="text" id="s3-nombre" placeholder="Tu nombre"></div>
-                <div class="field"><label>Email *</label><input type="email" id="s3-email" placeholder="tu@correo.com"></div>
-                <div class="field"><label>WhatsApp</label><input type="tel" id="s3-wa" placeholder="+41 / +57 / +34..."></div>
+                <div class="form-sub">Kandersteg · Fecha a demanda · CHF 225/persona</div>
+                <div class="field"><label for="s3-fecha">Fecha preferida *</label><input type="text" id="s3-fecha" placeholder="Ej.: un sábado de junio, 13 de junio..."></div>
+                <div class="field"><label for="s3-nombre">Nombre completo *</label><input type="text" id="s3-nombre" placeholder="Tu nombre"></div>
+                <div class="field"><label for="s3-email">Email *</label><input type="email" id="s3-email" placeholder="tu@correo.com"></div>
+                <div class="field"><label for="s3-wa">WhatsApp</label><input type="tel" id="s3-wa" placeholder="+41 / +57 / +34..."></div>
                 <div class="field">
-                  <label>Número de personas *</label>
+                  <label for="s3-personas">Número de personas *</label>
                   <select id="s3-personas">
                     <option value="">Selecciona</option>
-                    <option value="2">2 personas — CHF 640</option>
-                    <option value="3">3 personas — CHF 960</option>
-                    <option value="4">4 personas — CHF 1.280</option>
-                    <option value="5">5 personas — CHF 1.600</option>
+                    <option value="2">2 personas — CHF 450</option>
+                    <option value="3">3 personas — CHF 675</option>
+                    <option value="4">4 personas — CHF 900</option>
+                    <option value="5">5 personas — CHF 1.125</option>
                   </select>
                 </div>
                 <div class="field">
-                  <label>¿Alguien del grupo es vegetariano?</label>
+                  <label for="s3-veg">¿Alguien del grupo es vegetariano?</label>
                   <select id="s3-veg">
                     <option value="no">No</option>
                     <option value="si">Sí (indicar cuántos en mensaje)</option>
                   </select>
                 </div>
                 <div class="field">
-                  <label>¿Alguien tiene intolerancia gluten/lactosa?</label>
+                  <label for="s3-alerg">¿Alguien tiene intolerancia gluten/lactosa?</label>
                   <select id="s3-alerg">
                     <option value="no">No</option>
-                    <option value="si">Sí — suplemento CHF 5/persona (indicar en mensaje)</option>
+                    <option value="si">Sí (indicar en mensaje; posible suplemento de la cabaña)</option>
                   </select>
                 </div>
-                <div class="field"><label>Mensaje (opcional)</label><textarea id="s3-msg" placeholder="Nivel de experiencia, necesidades especiales, preguntas..."></textarea></div>
+                <div class="field"><label for="s3-msg">Mensaje (opcional)</label><textarea id="s3-msg" placeholder="Nivel de experiencia, necesidades especiales, preguntas..."></textarea></div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s3-terms">
+                  <label for="s3-terms">He leído y acepto los <a href="clastours-legal.html" target="_blank" rel="noopener">Términos y Condiciones</a> (cancelación, riesgos y responsabilidad incluidos). Confirmo que mis datos sobre experiencia, condición física y salud son veraces, y consiento que se usen para preparar la actividad con seguridad.</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s3-news">
+                  <label for="s3-news">Quiero recibir novedades sobre nuevas rutas y salidas por correo electrónico (opcional; puedo darme de baja cuando quiera).</label>
+                </div>
                 <div class="foto-check">
                   <input type="checkbox" id="s3-foto">
                   <label for="s3-foto">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html">Ver política →</a></label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s3','Kandersteg 2 días · a demanda')">Enviar solicitud →</button>
+                <button class="btn-inscribir" data-salida="Kandersteg 2 días · a demanda" onclick="inscribir('s3',this.dataset.salida)">Enviar solicitud →</button>
                 <p class="form-nota">Mínimo 2 personas · Te contactamos en menos de 24h</p>
               </div>
             </div>
@@ -404,12 +419,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
               <div class="form-inscripcion">
                 <div class="form-title">Inscribirse</div>
                 <div class="form-sub">Augstmatthorn · Fecha a demanda · CHF 150/persona</div>
-                <div class="field"><label>Fecha preferida *</label><input type="text" id="s4-fecha" placeholder="Ej.: un sábado de junio, 13 de junio..."></div>
-                <div class="field"><label>Nombre completo *</label><input type="text" id="s4-nombre" placeholder="Tu nombre"></div>
-                <div class="field"><label>Email *</label><input type="email" id="s4-email" placeholder="tu@correo.com"></div>
-                <div class="field"><label>WhatsApp</label><input type="tel" id="s4-wa" placeholder="+41 / +57 / +34..."></div>
+                <div class="field"><label for="s4-fecha">Fecha preferida *</label><input type="text" id="s4-fecha" placeholder="Ej.: un sábado de junio, 13 de junio..."></div>
+                <div class="field"><label for="s4-nombre">Nombre completo *</label><input type="text" id="s4-nombre" placeholder="Tu nombre"></div>
+                <div class="field"><label for="s4-email">Email *</label><input type="email" id="s4-email" placeholder="tu@correo.com"></div>
+                <div class="field"><label for="s4-wa">WhatsApp</label><input type="tel" id="s4-wa" placeholder="+41 / +57 / +34..."></div>
                 <div class="field">
-                  <label>Número de personas *</label>
+                  <label for="s4-personas">Número de personas *</label>
                   <select id="s4-personas">
                     <option value="">Selecciona</option>
                     <option value="2">2 personas — CHF 300</option>
@@ -419,7 +434,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                     <option value="6">6 personas — CHF 900</option>
                   </select>
                 </div>
-                <div class="field"><label>Experiencia previa en senderismo *</label>
+                <div class="field"><label for="s4-nivel">Experiencia previa en senderismo *</label>
                   <select id="s4-nivel">
                     <option value="">Selecciona</option>
                     <option>Principiante — pocas caminatas previas</option>
@@ -427,12 +442,20 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                     <option>Avanzado — rutas T3 con regularidad</option>
                   </select>
                 </div>
-                <div class="field"><label>Mensaje (opcional)</label><textarea id="s4-msg" placeholder="Dudas sobre el nivel, necesidades especiales..."></textarea></div>
+                <div class="field"><label for="s4-msg">Mensaje (opcional)</label><textarea id="s4-msg" placeholder="Dudas sobre el nivel, necesidades especiales..."></textarea></div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s4-terms">
+                  <label for="s4-terms">He leído y acepto los <a href="clastours-legal.html" target="_blank" rel="noopener">Términos y Condiciones</a> (cancelación, riesgos y responsabilidad incluidos). Confirmo que mis datos sobre experiencia, condición física y salud son veraces, y consiento que se usen para preparar la actividad con seguridad.</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s4-news">
+                  <label for="s4-news">Quiero recibir novedades sobre nuevas rutas y salidas por correo electrónico (opcional; puedo darme de baja cuando quiera).</label>
+                </div>
                 <div class="foto-check">
                   <input type="checkbox" id="s4-foto">
                   <label for="s4-foto">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html">Ver política →</a></label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s4','Augstmatthorn · a demanda')">Enviar solicitud →</button>
+                <button class="btn-inscribir" data-salida="Augstmatthorn · a demanda" onclick="inscribir('s4',this.dataset.salida)">Enviar solicitud →</button>
                 <p class="form-nota">Te contactamos en menos de 24h · Sin compromiso hasta confirmar pago</p>
               </div>
             </div>
@@ -489,12 +512,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
               <div class="form-inscripcion">
                 <div class="form-title">Inscribirse</div>
                 <div class="form-sub">Relojes &amp; Chocolate · Fecha a demanda · CHF 100/persona</div>
-                <div class="field"><label>Fecha preferida *</label><input type="text" id="s6-fecha" placeholder="Ej.: un sábado de junio, 13 de junio..."></div>
-                <div class="field"><label>Nombre completo *</label><input type="text" id="s6-nombre" placeholder="Tu nombre"></div>
-                <div class="field"><label>Email *</label><input type="email" id="s6-email" placeholder="tu@correo.com"></div>
-                <div class="field"><label>WhatsApp</label><input type="tel" id="s6-wa" placeholder="+41 / +57 / +34..."></div>
+                <div class="field"><label for="s6-fecha">Fecha preferida *</label><input type="text" id="s6-fecha" placeholder="Ej.: un sábado de junio, 13 de junio..."></div>
+                <div class="field"><label for="s6-nombre">Nombre completo *</label><input type="text" id="s6-nombre" placeholder="Tu nombre"></div>
+                <div class="field"><label for="s6-email">Email *</label><input type="email" id="s6-email" placeholder="tu@correo.com"></div>
+                <div class="field"><label for="s6-wa">WhatsApp</label><input type="tel" id="s6-wa" placeholder="+41 / +57 / +34..."></div>
                 <div class="field">
-                  <label>Número de personas *</label>
+                  <label for="s6-personas">Número de personas *</label>
                   <select id="s6-personas">
                     <option value="">Selecciona</option>
                     <option value="2">2 personas — CHF 200</option>
@@ -505,12 +528,20 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
                     <option value="7+">7 o más — precio especial para grupos</option>
                   </select>
                 </div>
-                <div class="field"><label>Mensaje (opcional)</label><textarea id="s6-msg" placeholder="Dudas, necesidades especiales, fecha alternativa..."></textarea></div>
+                <div class="field"><label for="s6-msg">Mensaje (opcional)</label><textarea id="s6-msg" placeholder="Dudas, necesidades especiales, fecha alternativa..."></textarea></div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s6-terms">
+                  <label for="s6-terms">He leído y acepto los <a href="clastours-legal.html" target="_blank" rel="noopener">Términos y Condiciones</a> (cancelación, riesgos y responsabilidad incluidos). Confirmo que mis datos sobre experiencia, condición física y salud son veraces, y consiento que se usen para preparar la actividad con seguridad.</label>
+                </div>
+                <div class="foto-check">
+                  <input type="checkbox" id="s6-news">
+                  <label for="s6-news">Quiero recibir novedades sobre nuevas rutas y salidas por correo electrónico (opcional; puedo darme de baja cuando quiera).</label>
+                </div>
                 <div class="foto-check">
                   <input type="checkbox" id="s6-foto">
                   <label for="s6-foto">Autorizo el uso de mis fotos durante la actividad con fines promocionales. <a href="clastours-legal.html">Ver política →</a></label>
                 </div>
-                <button class="btn-inscribir" onclick="inscribir('s6','Relojes & Chocolate · a demanda')">Enviar solicitud →</button>
+                <button class="btn-inscribir" data-salida="Relojes & Chocolate · a demanda" onclick="inscribir('s6',this.dataset.salida)">Enviar solicitud →</button>
                 <p class="form-nota">Te contactamos en menos de 24h · Sin compromiso hasta confirmar pago</p>
               </div>
             </div>
@@ -533,8 +564,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--sn);color:var(--ink);line
 </div>
 
 <div class="foot">
-  <p>© 2025 Clas Tours by Davila Quiroz · Ipsach, Berna, Suiza</p>
-  <p><a href="mailto:info@clastours.ch">info@clastours.ch</a> · <a href="https://wa.me/41774603641" target="_blank">(+41) 077 460 36 41</a> · <a href="clastours-legal.html">Términos y Condiciones</a></p>
+  <p>© 2026 Clas Tours by Davila Quiroz · Ipsach, Berna, Suiza</p>
+  <p><a href="mailto:info@clastours.ch">info@clastours.ch</a> · <a href="https://wa.me/41774603641" target="_blank">+41 77 460 36 41</a> · <a href="clastours-legal.html">Términos y Condiciones</a></p>
   <p style="margin-top:0.5rem">© Fotografías: Santiago Davila Quiroz — Todos los derechos reservados. Queda expresamente prohibida su reproducción sin autorización escrita del autor.</p>
 </div>
 
@@ -560,6 +591,8 @@ function inscribir(id, salida) {
   var personas = document.getElementById(id+'-personas').value;
   var msg = document.getElementById(id+'-msg') ? document.getElementById(id+'-msg').value.trim() : '';
   var foto = document.getElementById(id+'-foto').checked;
+  var terms = document.getElementById(id+'-terms').checked;
+  var news = document.getElementById(id+'-news').checked;
   var fecha = document.getElementById(id+'-fecha') ? document.getElementById(id+'-fecha').value.trim() : '';
 
   if (!fecha) {
@@ -572,6 +605,10 @@ function inscribir(id, salida) {
   }
   if (!personas) {
     alert(L('js.alert.people'));
+    return;
+  }
+  if (!terms) {
+    alert(L('js.alert.terms'));
     return;
   }
 
@@ -589,11 +626,13 @@ function inscribir(id, salida) {
   if (veg && veg !== 'no') waMsg += '%0A' + L('js.wa.veg') + ': ' + yes;
   if (alerg && alerg !== 'no') waMsg += '%0A' + L('js.wa.allergy') + ': ' + yes;
   if (msg) waMsg += '%0A' + L('js.wa.message') + ': ' + enc(msg);
+  waMsg += '%0A' + L('js.wa.terms') + ': ' + yes;
+  waMsg += '%0A' + L('js.wa.news') + ': ' + (news ? yes : no);
   waMsg += '%0A' + L('js.wa.photos') + ': ' + (foto ? yes : no);
   var waUrl = 'https://wa.me/41774603641?text=' + waMsg;
   var okText = L('js.modal.sent').replace('{salida}', salida);
   var btn = document.querySelector('button[onclick^="inscribir(\''+id+'\'"]');
-  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto}, waUrl, {btn:btn, okCb:function(){
+  CT.submit({source:'calendario', route:salida, date:fecha, name:nombre, email:email, whatsapp:wa, people:personas, level:nivel, vegetarian:(veg&&veg!=='no'), allergy:(alerg&&alerg!=='no'), message:msg, photos:foto, terms:true, termsVersion:'1.1', newsletter:news}, waUrl, {btn:btn, okCb:function(){
     document.getElementById('modal-texto').textContent = okText;
     document.getElementById('modal-confirm').classList.add('open');
   }});
