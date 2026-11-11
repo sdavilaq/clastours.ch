@@ -60,8 +60,8 @@
   "s": "c2ee356d"
  },
  "common.griesalp-bluemisalphutte-oeschinensee-kandersteg": {
-  "t": "Griesalp → Bluemisalphütte → Oeschinensee → Kandersteg",
-  "s": "eb42b3c8"
+  "t": "Griesalp → Blüemlisalphütte → Oeschinensee → Kandersteg",
+  "s": "51e92e46"
  },
  "common.2-dias": {
   "t": "2 Tage",
@@ -221,7 +221,7 @@
  },
  "common.atardecer-en-la-bluemisalphutte": {
   "t": "Abendstimmung bei der Blüemlisalphütte",
-  "s": "5e5c9dee"
+  "s": "5f1f170e"
  },
  "common.amanecer-desde-el-refugio": {
   "t": "Sonnenaufgang von der Hütte aus",
@@ -388,12 +388,12 @@
   "s": "27fd1ab0"
  },
  "common.2025-clas-tours-by-davila": {
-  "t": "© 2025 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz",
-  "s": "42931a12"
+  "t": "© 2026 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz",
+  "s": "35ad9f23"
  },
  "common.info-clastours-ch-41-077": {
-  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\">(+41) 077 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
-  "s": "cfc91345"
+  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\">+41 77 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
+  "s": "0a41fdad"
  },
  "common.salidas-a-demanda-clas-tours": {
   "t": "Touren auf Anfrage – Clas Tours by Davila Quiroz",
@@ -600,8 +600,8 @@
   "s": "dcd7a953"
  },
  "common.info-clastours-ch-41-077-2": {
-  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\" rel=\"noopener\">(+41) 077 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
-  "s": "f7520b7c"
+  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\" rel=\"noopener\">+41 77 460 36 41</a> · <a href=\"clastours-legal.html\">Allgemeine Geschäftsbedingungen</a>",
+  "s": "c4b2711d"
  },
  "wa.guia.creux-du-van.hola-santiago-vi-la-guia-2": {
   "t": "Hallo Santiago, ich habe den Führer zum Creux du Van gesehen",
@@ -612,8 +612,8 @@
   "s": "be27d05d"
  },
  "common.kandersteg-griesalp-bluemlisalphutte-y-oeschinensee": {
-  "t": "Kandersteg: Griesalp, Blüemlisalphütte und Oeschinensee in 2 Tagen – Clas Tours",
-  "s": "70d5266b"
+  "t": "Kandersteg: Blüemlisalphütte und Oeschinensee in 2 Tagen – Clas Tours",
+  "s": "a13cf34b"
  },
  "common.guia-en-espanol-de-la": {
   "t": "Führer auf Spanisch zur 2-Tages-Tour Griesalp – Blüemlisalphütte – Oeschinensee – Kandersteg: Anreise, Route, Übernachtung in der Hütte, Baden im See, Sicherheit und Ausrüstung.",
@@ -809,7 +809,7 @@
  },
  "ld.caminatas.dos-dias-por-el-valle": {
   "t": "Zwei Tage durch das Griesalptal zur Blüemlisalphütte, mit Übernachtung in den Bergen und Abstieg am Oeschinensee entlang nach Kandersteg.",
-  "s": "be3e65de"
+  "s": "bc2da032"
  },
  "ld.caminatas.senderismo-guiado-en-espanol": {
   "t": "Geführtes Wandern auf Spanisch",
@@ -925,7 +925,7 @@
  },
  "index.dos-dias-que-no-vas": {
   "t": "Zwei Tage, die du nicht vergessen wirst. Aufstieg durch das Griesalptal zur Blüemlisalphütte, eine Nacht in den Bergen und ein spektakulärer Abstieg am Oeschinensee entlang nach Kandersteg. Eine der schönsten Touren des Berner Oberlands.",
-  "s": "87c96d50"
+  "s": "b1b6ebbf"
  },
  "index.noche-en-refugio": {
   "t": "Übernachtung in der Hütte",
@@ -1128,8 +1128,8 @@
   "s": "c0db7770"
  },
  "index.2025-clas-tours-by-davila": {
-  "t": "© 2025 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz · <a href=\"clastours-legal.html\" style=\"color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s\" onmouseover=\"this.style.color=\"#C48A62\"\" onmouseout=\"this.style.color=\"rgba(255,255,255,0.35)\"\">Allgemeine Geschäftsbedingungen</a>",
-  "s": "88cefd16"
+  "t": "© 2026 Clas Tours by Davila Quiroz · Ipsach, Bern, Schweiz · <a href=\"clastours-legal.html\" style=\"color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s\" onmouseover=\"this.style.color=\"#C48A62\"\" onmouseout=\"this.style.color=\"rgba(255,255,255,0.35)\"\">Allgemeine Geschäftsbedingungen</a>",
+  "s": "9d315e66"
  },
  "index.hecho-con-pasion-por-los": {
   "t": "Mit Leidenschaft für die Alpen gemacht",
@@ -1677,7 +1677,7 @@
  },
  "caminatas.la-experiencia-mas-completa-que": {
   "t": "Das umfassendste Erlebnis, das ich anbiete. Zwei Tage im Herzen des Berner Oberlands. Am ersten Tag steigst du durch das Griesalptal zur Blüemlisalphütte auf. Am zweiten ist der Abstieg am Oeschinensee entlang nach Kandersteg wie auf einer Postkarte – einer der schönsten Seen der Schweiz. <a href=\"guia-kandersteg-bluemlisalphutte.html\">Lies den vollständigen Führer zur Überschreitung →</a>",
-  "s": "4a859b45"
+  "s": "7149aeac"
  },
  "caminatas.itinerario": {
   "t": "Tagesablauf",
@@ -1689,7 +1689,7 @@
  },
  "caminatas.griesalp-bluemisalphutte": {
   "t": "Griesalp → Blüemlisalphütte",
-  "s": "7e16720d"
+  "s": "421d7d37"
  },
  "caminatas.ascenso-por-el-valle-con": {
   "t": "Aufstieg durch das Tal mit zunehmend eindrucksvoller Aussicht. Ankunft in der Hütte, Sicherheitsbriefing, Abendessen und Erholung.",
@@ -1705,7 +1705,7 @@
  },
  "caminatas.bluemisalphutte-oeschinensee-kandersteg": {
   "t": "Blüemlisalphütte → Oeschinensee → Kandersteg",
-  "s": "93fbf52e"
+  "s": "b79ca47c"
  },
  "caminatas.desayuno-temprano-en-el-refugio": {
   "t": "Frühes Frühstück in der Hütte. Panorama-Abstieg zum Oeschinensee. Weiter nach Kandersteg.",
@@ -2205,7 +2205,7 @@
  },
  "calendario.griesalp-bluemisalphutte-oeschinensee-kandersteg-ver": {
   "t": "Griesalp → Blüemlisalphütte → Oeschinensee → Kandersteg · <a href=\"guia-kandersteg-bluemlisalphutte.html\" style=\"color:inherit;text-decoration:underline\">Zum Führer</a>",
-  "s": "d2621cc3"
+  "s": "be212967"
  },
  "calendario.t3-intermedio": {
   "t": "T3 · Mittel",
@@ -2213,7 +2213,7 @@
  },
  "calendario.la-experiencia-mas-completa-de": {
   "t": "Das umfassendste Erlebnis von Clas Tours. Zwei Tage im Herzen des Berner Oberlands. Am Freitag Aufstieg durch das Griesalptal zur Blüemlisalphütte, Übernachtung in der Berghütte, und am Samstag Abstieg am Oeschinensee entlang nach Kandersteg.",
-  "s": "c525ce22"
+  "s": "3841ee38"
  },
  "calendario.guia-en-espanol-2-dias": {
   "t": "Wanderleiter auf Spanisch (2 volle Tage)",
@@ -3141,7 +3141,7 @@
  },
  "guia.creux-du-van.la-caminata-clasica-sale-de": {
   "t": "Die klassische Wanderung startet am <strong>Bahnhof Noiraigue</strong> auf etwa 725 m Höhe. Es fahren stündlich Züge ab Neuchâtel, die Fahrt dauert etwa 20 Minuten. Wenn du aus Biel/Bienne kommst, führt die Strecke über Neuchâtel. Prüfe immer die aktuellen Fahrpläne bei der <a href=\"https://www.sbb.ch/de\" target=\"_blank\" rel=\"noopener\">SBB</a> und kontrolliere vor dem Aufbruch den letzten Zug zurück.",
-  "s": "ca0c205d"
+  "s": "648ff3eb"
  },
  "guia.creux-du-van.hay-parqueaderos-oficiales-y-fuera": {
   "t": "Es gibt offizielle Parkplätze; ausserhalb davon ist das Parkieren im Schutzgebiet verboten (Campieren ebenfalls):",
@@ -3501,7 +3501,7 @@
  },
  "guia.kandersteg-bluemlisalphutte.tren-hasta-reichenbach-im-kandertal": {
   "t": "Zug bis <strong>Reichenbach im Kandertal</strong> (stündlich RegioExpress ab Bern oder Brig) und von dort das <strong>Postauto 220</strong> bis Griesalp. Die BLS beschreibt es als steilste Postautostrecke Europas: Es gibt sehr enge Kehren, daher fährt man am besten gelassen. 2026 verkehrte es vom 23. Mai bis 18. Oktober. Prüfe die Fahrpläne jede Saison bei der <a href=\"https://www.bls.ch\" target=\"_blank\" rel=\"noopener\">BLS</a> und der <a href=\"https://www.sbb.ch/de\" target=\"_blank\" rel=\"noopener\">SBB</a>.",
-  "s": "396e62a6"
+  "s": "c1884832"
  },
  "guia.kandersteg-bluemlisalphutte.hay-parqueaderos-de-pago-en": {
   "t": "Es gibt kostenpflichtige Parkplätze am Tschingelsee und auf der Griesalp. Beachte, dass du in Kandersteg ankommst und nicht dort, wo du das Auto abgestellt hast, plane also die Rückfahrt: Am praktischsten ist die Anreise mit dem öffentlichen Verkehr.",

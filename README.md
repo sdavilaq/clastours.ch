@@ -27,11 +27,11 @@ python3 build.py --status   # lista los textos sin traducir o desactualizados
 3. Se traducen solo esos textos y se importan con `python3 build.py --import de archivo.json` (y `en`, `fr`).
 4. `python3 build.py` y commit de todo (fuente + archivos generados).
 
-Mientras una traducción falte o esté desactualizada, esa página muestra el texto en español como respaldo, nunca un hueco.
+Mientras una traducción falte o esté desactualizada, esa página muestra el texto en español como respaldo, nunca un hueco. Pero **el build termina con error** (`BUILD FALLIDO`, código de salida 1) para que no se publique así: tradúcela o actualízala y vuelve a ejecutar `python3 build.py`.
 
 ### Notas
 - Los textos de los scripts (alertas, widget del tiempo, mensaje de WhatsApp) están en `es.json` con prefijo `js.`.
 - Los precios nunca van escritos a mano en los textos: se usa `{{p.ruta}}` (precio) o `{{g.ruta}}` (grupo 7+).
 - `clas_tours_4xA4.html` (flyer) no se traduce ni se genera.
-- Tras publicar: purgar la caché de Cloudflare (Purge Everything).
+- Tras fusionar en `main`, GitHub Pages publica solo (1–2 minutos). No hay Cloudflare ni caché que purgar: dominio, DNS y correo están en Hostpoint.
 - Las traducciones de los Términos y Condiciones son informativas; en caso de discrepancia prevalece la versión en español.
