@@ -82,12 +82,19 @@ CT_JS = (
  "CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);})"
  ".catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);})"
  ".then(function(){if(opt.btn)opt.btn.disabled=false;});};"
+ # Accesibilidad: el botón del menú móvil se puede alcanzar y activar con el teclado
+ "document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.burger,.hamburger,.ct-hamburger').forEach(function(b){"
+ "b.setAttribute('role','button');b.setAttribute('tabindex','0');b.setAttribute('aria-label','Menu');"
+ "b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();b.click();}});});});"
 )
 CT_CSS = ('.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}'
  '.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}'
  '.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}'
  '.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}'
- '.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}')
+ '.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}'
+ # Accesibilidad: casillas más grandes y foco visible al navegar con teclado
+ 'input[type=checkbox]{width:18px;height:18px;flex-shrink:0}'
+ 'a:focus-visible,button:focus-visible,[role=button]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #A8704A!important;outline-offset:2px}')
 
 def render(page, lang, S, data, plain=False):
     t = open(os.path.join(SRC, 'pages', page + '.html'), encoding='utf-8').read()
@@ -103,6 +110,15 @@ def render(page, lang, S, data, plain=False):
     t = re.sub(r'\{\{g\.(\w+)\}\}', lambda m: fmt_num(P[m.group(1)]['g'], lang), t)
     t = re.sub(r'\{\{t\.(\w+)\.(\d+)\}\}', lambda m: fmt_num(P[m.group(1)]['p'] * int(m.group(2)), lang), t)
     if plain: return t
+    # --- accesibilidad: cada <label> seguido de su campo queda enlazado con for/id
+    cnt = [0]
+    def link_label(m):
+        attrs = m.group(4); i = re.search(r'\bid="([^"]+)"', attrs)
+        if i: fid = i.group(1)
+        else:
+            cnt[0] += 1; fid = 'campo-%d' % cnt[0]; attrs = ' id="%s"%s' % (fid, attrs)
+        return '<label for="%s">%s</label>%s<%s%s>' % (fid, m.group(1), m.group(2), m.group(3), attrs)
+    t = re.sub(r'<label>((?:(?!</label>).)*)</label>(\s*)<(input|select|textarea)\b([^>]*)>', link_label, t, flags=re.S)
     # --- cadenas de JS
     js = {k: S.get(lang, k) for k in S.es if k.startswith('js.')}
     inject = '<script>window.I18N=%s;</script>\n' % json.dumps(js, ensure_ascii=False).replace('</', '<\\/')
@@ -180,8 +196,10 @@ def report(S):
         if len(miss + stale) > 15: print('   ... y %d más' % (len(miss + stale) - 15))
     return ok
 
-def build_sitemap():
-    """Regenera sitemap.xml: cada URL en español con sus alternativas /de/, /en/ y /fr/ (hreflang)."""
+def build_sitemap(changed=()):
+    """Regenera sitemap.xml: cada URL en español con sus alternativas /de/, /en/ y /fr/ (hreflang).
+    <lastmod> pasa a la fecha de hoy solo en las páginas cuyo HTML cambió en este build (changed)."""
+    today = __import__('datetime').date.today().isoformat()
     p = os.path.join(ROOT, 'sitemap.xml')
     xml = open(p, encoding='utf-8').read()
     ents = re.findall(r'<url>\s*<loc>([^<]+)</loc>(.*?)</url>', xml, flags=re.S)
@@ -192,7 +210,9 @@ def build_sitemap():
         if path in seen: continue
         seen.add(path)
         lm = re.search(r'<lastmod>[^<]+</lastmod>', rest); pr = re.search(r'<priority>[^<]+</priority>', rest)
-        rows.append((path, lm.group(0) if lm else '', pr.group(0) if pr else ''))
+        if (path or 'index.html') in changed: lm_txt = '<lastmod>%s</lastmod>' % today
+        else: lm_txt = lm.group(0) if lm else ''
+        rows.append((path, lm_txt, pr.group(0) if pr else ''))
     out = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for path, lm, pr in rows:
         for l in LANGS:
@@ -219,7 +239,7 @@ def main():
         sys.exit(0 if report(S) else 1)
     plain = a[:1] == ['--plain']
     langs = ['es'] if plain else LANGS
-    terms_ok = True
+    terms_ok = True; changed = set()
     for lang in langs:
         for p in PAGES:
             out = render(p, lang, S, data, plain)
@@ -227,10 +247,12 @@ def main():
                 out_dir = a[1] if len(a) > 1 else os.path.join(ROOT, '_plain'); os.makedirs(out_dir, exist_ok=True)
                 open(os.path.join(out_dir, p + '.html'), 'w', encoding='utf-8').write(out)
             else:
-                open(outpath(p, lang), 'w', encoding='utf-8').write(out)
+                op = outpath(p, lang)
+                if not os.path.exists(op) or open(op, encoding='utf-8').read() != out: changed.add(p + '.html')
+                open(op, 'w', encoding='utf-8').write(out)
                 if p == 'clastours-legal' and not terms_archive(out, lang, data): terms_ok = False
     if not plain:
-        build_sitemap()
+        build_sitemap(changed)
         ok = report(S)
         if not (ok and terms_ok):
             print('\nBUILD FALLIDO: no publiques así. ' + ('Hay traducciones que faltan o están desactualizadas (esas páginas mostrarían texto en español o una traducción vieja). ' if not ok else '')

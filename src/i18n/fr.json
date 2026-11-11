@@ -8,8 +8,8 @@
   "s": "b336fc55"
  },
  "common.griesalp-bluemisalphutte-oeschinensee-kandersteg": {
-  "t": "Griesalp → Bluemisalphütte → Oeschinensee → Kandersteg",
-  "s": "eb42b3c8"
+  "t": "Griesalp → Blüemlisalphütte → Oeschinensee → Kandersteg",
+  "s": "51e92e46"
  },
  "price.chf-kand": {
   "t": "CHF {{p.kand}}",
@@ -260,8 +260,8 @@
   "s": "c2ee356d"
  },
  "index.dos-dias-que-no-vas": {
-  "t": "Deux jours que vous n'oublierez pas. Montée par la vallée de Griesalp jusqu'à la cabane Bluemisalphütte, nuit en montagne, puis descente spectaculaire par le lac d'Oeschinen jusqu'à Kandersteg. L'un des plus beaux itinéraires de l'Oberland bernois.",
-  "s": "87c96d50"
+  "t": "Deux jours que vous n'oublierez pas. Montée par la vallée de Griesalp jusqu'à la cabane Blüemlisalphütte, nuit en montagne, puis descente spectaculaire par le lac d'Oeschinen jusqu'à Kandersteg. L'un des plus beaux itinéraires de l'Oberland bernois.",
+  "s": "b1b6ebbf"
  },
  "common.2-dias": {
   "t": "2 jours",
@@ -532,8 +532,8 @@
   "s": "40db3728"
  },
  "index.2025-clas-tours-by-davila": {
-  "t": "© 2025 Clas Tours by Davila Quiroz · Ipsach, Berne, Suisse · <a href=\"clastours-legal.html\" style=\"color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s\" onmouseover=\"this.style.color=\"#C48A62\"\" onmouseout=\"this.style.color=\"rgba(255,255,255,0.35)\"\">Conditions générales</a>",
-  "s": "88cefd16"
+  "t": "© 2026 Clas Tours by Davila Quiroz · Ipsach, Berne, Suisse · <a href=\"clastours-legal.html\" style=\"color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s\" onmouseover=\"this.style.color=\"#C48A62\"\" onmouseout=\"this.style.color=\"rgba(255,255,255,0.35)\"\">Conditions générales</a>",
+  "s": "9d315e66"
  },
  "index.hecho-con-pasion-por-los": {
   "t": "Fait avec passion pour les Alpes",
@@ -604,8 +604,8 @@
   "s": "f784aa64"
  },
  "common.atardecer-en-la-bluemisalphutte": {
-  "t": "Coucher de soleil à la Bluemisalphütte",
-  "s": "5e5c9dee"
+  "t": "Coucher de soleil à la Blüemlisalphütte",
+  "s": "5f1f170e"
  },
  "common.amanecer-desde-el-refugio": {
   "t": "Lever de soleil depuis la cabane",
@@ -668,8 +668,8 @@
   "s": "dbc4be27"
  },
  "caminatas.la-experiencia-mas-completa-que": {
-  "t": "L'expérience la plus complète que je propose. Deux jours au cœur de l'Oberland bernois. Le premier jour, vous montez par la vallée de Griesalp jusqu'à la cabane Bluemisalphütte. Le second, la descente par le lac d'Oeschinen jusqu'à Kandersteg est une carte postale, l'un des plus beaux lacs de Suisse. <a href=\"guia-kandersteg-bluemlisalphutte.html\">Lisez le guide complet de la traversée →</a>",
-  "s": "4a859b45"
+  "t": "L'expérience la plus complète que je propose. Deux jours au cœur de l'Oberland bernois. Le premier jour, vous montez par la vallée de Griesalp jusqu'à la cabane Blüemlisalphütte. Le second, la descente par le lac d'Oeschinen jusqu'à Kandersteg est une carte postale, l'un des plus beaux lacs de Suisse. <a href=\"guia-kandersteg-bluemlisalphutte.html\">Lisez le guide complet de la traversée →</a>",
+  "s": "7149aeac"
  },
  "caminatas.itinerario": {
   "t": "Itinéraire",
@@ -680,8 +680,8 @@
   "s": "cc9a0d84"
  },
  "caminatas.griesalp-bluemisalphutte": {
-  "t": "Griesalp → Bluemisalphütte",
-  "s": "7e16720d"
+  "t": "Griesalp → Blüemlisalphütte",
+  "s": "421d7d37"
  },
  "caminatas.ascenso-por-el-valle-con": {
   "t": "Montée par la vallée avec des vues de plus en plus impressionnantes. Arrivée à la cabane, briefing de sécurité, souper et repos.",
@@ -696,8 +696,8 @@
   "s": "4a80baad"
  },
  "caminatas.bluemisalphutte-oeschinensee-kandersteg": {
-  "t": "Bluemisalphütte → Oeschinensee → Kandersteg",
-  "s": "93fbf52e"
+  "t": "Blüemlisalphütte → Oeschinensee → Kandersteg",
+  "s": "b79ca47c"
  },
  "caminatas.desayuno-temprano-en-el-refugio": {
   "t": "Petit-déjeuner matinal à la cabane. Descente panoramique jusqu'au lac d'Oeschinen. Poursuite jusqu'à Kandersteg.",
@@ -1164,12 +1164,12 @@
   "s": "eff38dc8"
  },
  "common.2025-clas-tours-by-davila": {
-  "t": "© 2025 Clas Tours by Davila Quiroz · Ipsach, Berne, Suisse",
-  "s": "42931a12"
+  "t": "© 2026 Clas Tours by Davila Quiroz · Ipsach, Berne, Suisse",
+  "s": "35ad9f23"
  },
  "common.info-clastours-ch-41-077": {
-  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\">(+41) 077 460 36 41</a> · <a href=\"clastours-legal.html\">Conditions générales</a>",
-  "s": "cfc91345"
+  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\">+41 77 460 36 41</a> · <a href=\"clastours-legal.html\">Conditions générales</a>",
+  "s": "0a41fdad"
  },
  "common.salidas-a-demanda-clas-tours": {
   "t": "Sorties à la demande – Clas Tours by Davila Quiroz",
@@ -1340,16 +1340,16 @@
   "s": "0032ada8"
  },
  "calendario.griesalp-bluemisalphutte-oeschinensee-kandersteg-ver": {
-  "t": "Griesalp → Bluemisalphütte → Oeschinensee → Kandersteg · <a href=\"guia-kandersteg-bluemlisalphutte.html\" style=\"color:inherit;text-decoration:underline\">Voir le guide</a>",
-  "s": "d2621cc3"
+  "t": "Griesalp → Blüemlisalphütte → Oeschinensee → Kandersteg · <a href=\"guia-kandersteg-bluemlisalphutte.html\" style=\"color:inherit;text-decoration:underline\">Voir le guide</a>",
+  "s": "be212967"
  },
  "calendario.t3-intermedio": {
   "t": "T3 · Intermédiaire",
   "s": "52b04bae"
  },
  "calendario.la-experiencia-mas-completa-de": {
-  "t": "L'expérience la plus complète de Clas Tours. Deux jours au cœur de l'Oberland bernois. Montée le vendredi par la vallée de Griesalp jusqu'à la Bluemisalphütte, nuit en cabane de montagne, puis le samedi descente par le lac d'Oeschinen jusqu'à Kandersteg.",
-  "s": "c525ce22"
+  "t": "L'expérience la plus complète de Clas Tours. Deux jours au cœur de l'Oberland bernois. Montée le vendredi par la vallée de Griesalp jusqu'à la Blüemlisalphütte, nuit en cabane de montagne, puis le samedi descente par le lac d'Oeschinen jusqu'à Kandersteg.",
+  "s": "3841ee38"
  },
  "calendario.guia-en-espanol-2-dias": {
   "t": "Guide en espagnol (2 jours complets)",
@@ -2861,7 +2861,7 @@
  },
  "guia.creux-du-van.la-caminata-clasica-sale-de": {
   "t": "La randonnée classique part de la <strong>gare de Noiraigue</strong>, à environ 725 m d'altitude. Il y a un train toutes les heures depuis Neuchâtel et le trajet dure environ 20 minutes. Si vous venez de Biel/Bienne, le trajet passe par Neuchâtel. Vérifiez toujours les horaires à jour sur les <a href=\"https://www.sbb.ch/fr\" target=\"_blank\" rel=\"noopener\">CFF</a> et confirmez le dernier train du retour avant de partir.",
-  "s": "ca0c205d"
+  "s": "648ff3eb"
  },
  "common.en-carro": {
   "t": "En voiture",
@@ -3144,8 +3144,8 @@
   "s": "dcd7a953"
  },
  "common.info-clastours-ch-41-077-2": {
-  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\" rel=\"noopener\">(+41) 077 460 36 41</a> · <a href=\"clastours-legal.html\">Conditions générales</a>",
-  "s": "f7520b7c"
+  "t": "<a href=\"mailto:info@clastours.ch\">info@clastours.ch</a> · <a href=\"https://wa.me/41774603641\" target=\"_blank\" rel=\"noopener\">+41 77 460 36 41</a> · <a href=\"clastours-legal.html\">Conditions générales</a>",
+  "s": "c4b2711d"
  },
  "wa.guia.creux-du-van.hola-santiago-vi-la-guia-2": {
   "t": "Bonjour Santiago, j'ai vu le guide du Creux du Van",
@@ -3156,8 +3156,8 @@
   "s": "be27d05d"
  },
  "common.kandersteg-griesalp-bluemlisalphutte-y-oeschinensee": {
-  "t": "Kandersteg : Griesalp, Blüemlisalphütte et Oeschinensee en 2 jours – Clas Tours",
-  "s": "70d5266b"
+  "t": "Kandersteg : Blüemlisalphütte et Oeschinensee en 2 jours – Clas Tours",
+  "s": "a13cf34b"
  },
  "common.guia-en-espanol-de-la": {
   "t": "Guide de la traversée de 2 jours Griesalp – Blüemlisalphütte – Oeschinensee – Kandersteg : accès, itinéraire, nuit en cabane, baignade dans le lac, sécurité et quoi emporter.",
@@ -3277,7 +3277,7 @@
  },
  "guia.kandersteg-bluemlisalphutte.tren-hasta-reichenbach-im-kandertal": {
   "t": "Train jusqu'à <strong>Reichenbach im Kandertal</strong> (il y a un RegioExpress toutes les heures depuis Berne ou Brigue), puis le <strong>CarPostal 220</strong> jusqu'à Griesalp. BLS le décrit comme la ligne de bus la plus raide d'Europe : les virages sont très serrés, mieux vaut prendre son temps. En 2026, il a circulé du 23 mai au 18 octobre. Confirmez les horaires chaque saison sur <a href=\"https://www.bls.ch\" target=\"_blank\" rel=\"noopener\">BLS</a> et les <a href=\"https://www.sbb.ch/fr\" target=\"_blank\" rel=\"noopener\">CFF</a>.",
-  "s": "396e62a6"
+  "s": "c1884832"
  },
  "guia.kandersteg-bluemlisalphutte.hay-parqueaderos-de-pago-en": {
   "t": "Il y a des parkings payants à Tschingelsee et à Griesalp. Notez que vous terminez à Kandersteg, et non là où vous avez laissé la voiture : planifiez donc le retour, le plus pratique étant de venir en transports publics.",
@@ -3768,8 +3768,8 @@
   "s": "e53eed4c"
  },
  "ld.caminatas.dos-dias-por-el-valle": {
-  "t": "Deux jours par la vallée de Griesalp jusqu'à la cabane Bluemisalphütte, avec nuit en montagne et descente par le lac d'Oeschinen jusqu'à Kandersteg.",
-  "s": "be3e65de"
+  "t": "Deux jours par la vallée de Griesalp jusqu'à la cabane Blüemlisalphütte, avec nuit en montagne et descente par le lac d'Oeschinen jusqu'à Kandersteg.",
+  "s": "bc2da032"
  },
  "ld.caminatas.senderismo-guiado-en-espanol": {
   "t": "Randonnée guidée en espagnol",
