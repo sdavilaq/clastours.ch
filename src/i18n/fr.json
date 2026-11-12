@@ -744,8 +744,8 @@
   "s": "f12746a6"
  },
  "caminatas.ropa-por-capas-chaqueta": {
-  "t": "Vêtements en couches + veste",
-  "s": "c04e14a0"
+  "t": "Vêtements en couches, veste imperméable, bonnet et gants",
+  "s": "c97e73cb"
  },
  "caminatas.agua-min-2l-por-dia": {
   "t": "Eau (min. 2 L par jour)",
@@ -976,8 +976,8 @@
   "s": "85c6bdb6"
  },
  "caminatas.chaqueta-imprescindible": {
-  "t": "veste indispensable",
-  "s": "066bf28b"
+  "t": "Vêtements en couches + veste imperméable (indispensable)",
+  "s": "92cbae04"
  },
  "caminatas.bastones-muy-recomendado": {
   "t": "Bâtons (fortement recommandé)",
@@ -3986,5 +3986,45 @@
  "contacto.faq-abandono-a": {
   "t": "Je vous raccompagne ou vous conduis à un point sûr desservi par les transports publics, mais le prix complet reste dû : la journée vous était déjà réservée.",
   "s": "8a3333e5"
+ },
+ "caminatas.eq-saco-sabana": {
+  "t": "Sac à viande (obligatoire en cabane)",
+  "s": "25c7e8c4"
+ },
+ "caminatas.eq-frontal-tapones": {
+  "t": "Lampe frontale et bouchons d'oreilles",
+  "s": "42d40467"
+ },
+ "caminatas.eq-pago-refugio": {
+  "t": "Carte ou espèces pour payer la cabane",
+  "s": "c1d5737b"
+ },
+ "caminatas.eq-gorro-invierno": {
+  "t": "Bonnet et gants (en hiver)",
+  "s": "b57c3d2a"
+ },
+ "caminatas.eq-todas-titulo": {
+  "t": "Pour tous les itinéraires, emportez aussi",
+  "s": "535a4415"
+ },
+ "caminatas.eq-todas-1": {
+  "t": "Pièce d'identité et carte d'assurance maladie",
+  "s": "e634d876"
+ },
+ "caminatas.eq-todas-2": {
+  "t": "Vos médicaments personnels (et signalez-moi toute allergie)",
+  "s": "72eb1fb7"
+ },
+ "caminatas.eq-todas-3": {
+  "t": "Téléphone avec la batterie chargée",
+  "s": "d79e698a"
+ },
+ "caminatas.eq-todas-4": {
+  "t": "Billet ou abonnement de transport (SwissPass, demi-tarif)",
+  "s": "0a14a0f2"
+ },
+ "caminatas.eq-todas-5": {
+  "t": "Un sac pour remporter vos déchets",
+  "s": "aef79038"
  }
 }
