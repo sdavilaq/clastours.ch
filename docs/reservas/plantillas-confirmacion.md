@@ -19,6 +19,8 @@ Encuentro: [LUGAR], [HORA]. Fin de la actividad: aprox. [HORA FIN] en [LUGAR FIN
 
 [BLOQUE DE LA RUTA]
 
+**Para todas las rutas, lleva también:** documento de identidad y tarjeta del seguro de salud, tu medicación personal (y avísame de cualquier alergia), celular cargado, billete o abono de transporte (SwissPass, medio pasaje) y una bolsa para llevarte tu basura.
+
 **Precio:** CHF [TOTAL] ([N] × CHF [PRECIO]).
 **Pago:** anticipo del 50 % (CHF [ANTICIPO]) en los próximos 5 días; el resto (CHF [RESTO]) a más tardar 7 días antes de la salida. [Si faltan menos de 7 días: el total de una vez.]
 - Transferencia: Clas Tours by Davila Quiroz · IBAN CH90 0900 0000 1651 3549 7 · BIC POFICHBEXXX. En el concepto: nombre completo y ruta.
@@ -38,7 +40,7 @@ Santiago · Clas Tours · +41 77 460 36 41
 ### Bloques de ruta (ES)
 
 **Creux du Van** (T2, 4–6 h)
-Punto de encuentro: estación de tren de Noiraigue (NE), a las [HORA]. Tren SBB hasta Noiraigue (desde Berna ~1 h 20, desde Zúrich ~2 h). Lleva: calzado de senderismo con suela de agarre, ropa por capas y chaqueta, agua y algo de comer; bastones recomendados (en invierno, crampones de senderismo si hay nieve). El borde del circo no tiene barandas.
+Punto de encuentro: estación de tren de Noiraigue (NE), a las [HORA]. Tren SBB hasta Noiraigue (desde Berna ~1 h 20, desde Zúrich ~2 h). Lleva: calzado de senderismo con suela de agarre, ropa por capas y chaqueta, agua y algo de comer; bastones recomendados (en invierno, crampones de senderismo si hay nieve, gorro y guantes); protector solar y gafas. El borde del circo no tiene barandas.
 
 **Kandersteg, 2 días** (T3)
 Día 1: nos encontramos en [LUGAR] a las [HORA] y vamos en tren hasta Reichenbach im Kandertal y PostAuto 220 hasta Griesalp. Salida a pie a las 09:00, llegada al refugio Blüemlisalphütte ~15:00. 
@@ -68,6 +70,8 @@ Treffpunkt: [ORT], [ZEIT]. Ende der Tour: ca. [ENDZEIT] in [ENDORT].
 
 [TOUR-BLOCK]
 
+**Für alle Touren ausserdem mitnehmen:** Ausweis und Krankenversicherungskarte, deine persönlichen Medikamente (und sag mir Bescheid bei Allergien), Handy mit geladenem Akku, Billett oder Abo für den ÖV (SwissPass, Halbtax) und einen Beutel, um deinen Abfall mitzunehmen.
+
 **Preis:** CHF [TOTAL] ([N] × CHF [PREIS]).
 **Zahlung:** Anzahlung von 50 % (CHF [ANZAHLUNG]) innert 5 Tagen; der Rest (CHF [REST]) spätestens 7 Tage vor der Tour. [Bei weniger als 7 Tagen bis zur Tour: der ganze Betrag auf einmal.]
 - Überweisung: Clas Tours by Davila Quiroz · IBAN CH90 0900 0000 1651 3549 7 · BIC POFICHBEXXX. Im Verwendungszweck bitte vollständiger Name und Tour angeben.
@@ -87,7 +91,7 @@ Santiago · Clas Tours · +41 77 460 36 41
 ### Tour-Blöcke (DE)
 
 **Creux du Van** (T2, 4–6 Std.)
-Treffpunkt: Bahnhof Noiraigue (NE), um [ZEIT]. SBB-Zug bis Noiraigue (ab Bern ~1 Std. 20, ab Zürich ~2 Std.). Mitbringen: Wanderschuhe mit griffiger Sohle, Zwiebelprinzip-Kleidung und Jacke, Wasser und Verpflegung; Wanderstöcke empfohlen (im Winter Grödel, wenn Schnee liegt). Der Rand des Zirkus hat kein Geländer.
+Treffpunkt: Bahnhof Noiraigue (NE), um [ZEIT]. SBB-Zug bis Noiraigue (ab Bern ~1 Std. 20, ab Zürich ~2 Std.). Mitbringen: Wanderschuhe mit griffiger Sohle, Zwiebelprinzip-Kleidung und Jacke, Wasser und Verpflegung; Wanderstöcke empfohlen (im Winter Grödel, wenn Schnee liegt, Mütze und Handschuhe); Sonnenschutz und Sonnenbrille. Der Rand des Zirkus hat kein Geländer.
 
 **Kandersteg, 2 Tage** (T3)
 Tag 1: Treffpunkt [ORT] um [ZEIT], Zug bis Reichenbach im Kandertal und Postauto 220 bis Griesalp. Start zu Fuss um 09:00, Ankunft in der Blüemlisalphütte ~15:00. 
@@ -117,6 +121,8 @@ Meeting point: [PLACE], [TIME]. End of the tour: approx. [END TIME] at [END PLAC
 
 [TOUR BLOCK]
 
+**For every route, also bring:** ID and health-insurance card, your personal medication (and tell me about any allergies), a charged phone, a public-transport ticket or pass (SwissPass, Half Fare) and a bag to take your rubbish home.
+
 **Price:** CHF [TOTAL] ([N] × CHF [PRICE]).
 **Payment:** 50% deposit (CHF [DEPOSIT]) within 5 days; the balance (CHF [BALANCE]) no later than 7 days before the tour. [If the tour is less than 7 days away: the full amount at once.]
 - Bank transfer: Clas Tours by Davila Quiroz · IBAN CH90 0900 0000 1651 3549 7 · BIC POFICHBEXXX. Please put your full name and the tour in the reference.
@@ -136,7 +142,7 @@ Santiago · Clas Tours · +41 77 460 36 41
 ### Tour blocks (EN)
 
 **Creux du Van** (T2, 4–6 h)
-Meeting point: Noiraigue train station (NE), at [TIME]. SBB train to Noiraigue (from Bern ~1 h 20, from Zurich ~2 h). Bring: hiking footwear with a grippy sole, layered clothing and a jacket, water and food; poles recommended (in winter, hiking crampons if there is snow). The edge of the cirque has no railings.
+Meeting point: Noiraigue train station (NE), at [TIME]. SBB train to Noiraigue (from Bern ~1 h 20, from Zurich ~2 h). Bring: hiking footwear with a grippy sole, layered clothing and a jacket, water and food; poles recommended (in winter, hiking crampons if there is snow, hat and gloves); sunscreen and sunglasses. The edge of the cirque has no railings.
 
 **Kandersteg, 2 days** (T3)
 Day 1: we meet at [PLACE] at [TIME], take the train to Reichenbach im Kandertal and PostBus 220 to Griesalp. Start walking at 09:00, arrive at the Blüemlisalphütte ~15:00. 
@@ -166,6 +172,8 @@ Rendez-vous : [LIEU], [HEURE]. Fin de la sortie : vers [HEURE DE FIN] à [LIEU D
 
 [BLOC DE LA SORTIE]
 
+**Pour tous les itinéraires, emportez aussi :** pièce d'identité et carte d'assurance maladie, vos médicaments personnels (et signalez-moi toute allergie), téléphone chargé, billet ou abonnement de transport (SwissPass, demi-tarif) et un sac pour remporter vos déchets.
+
 **Prix :** CHF [TOTAL] ([N] × CHF [PRIX]).
 **Paiement :** acompte de 50 % (CHF [ACOMPTE]) dans les 5 jours ; le solde (CHF [SOLDE]) au plus tard 7 jours avant la sortie. [Si la sortie a lieu dans moins de 7 jours : le montant total en une fois.]
 - Virement : Clas Tours by Davila Quiroz · IBAN CH90 0900 0000 1651 3549 7 · BIC POFICHBEXXX. Motif du paiement : nom complet et sortie.
@@ -185,7 +193,7 @@ Santiago · Clas Tours · +41 77 460 36 41
 ### Blocs par sortie (FR)
 
 **Creux du Van** (T2, 4–6 h)
-Rendez-vous : gare de Noiraigue (NE), à [HEURE]. Train CFF jusqu'à Noiraigue (depuis Berne ~1 h 20, depuis Zurich ~2 h). À emporter : chaussures de randonnée à semelle adhérente, vêtements en plusieurs couches et veste, eau et de quoi manger ; bâtons recommandés (en hiver, crampons de randonnée s'il y a de la neige). Le bord du cirque n'a pas de barrières.
+Rendez-vous : gare de Noiraigue (NE), à [HEURE]. Train CFF jusqu'à Noiraigue (depuis Berne ~1 h 20, depuis Zurich ~2 h). À emporter : chaussures de randonnée à semelle adhérente, vêtements en plusieurs couches et veste, eau et de quoi manger ; bâtons recommandés (en hiver, crampons de randonnée s'il y a de la neige, bonnet et gants) ; crème solaire et lunettes de soleil. Le bord du cirque n'a pas de barrières.
 
 **Kandersteg, 2 jours** (T3)
 Jour 1 : rendez-vous à [LIEU] à [HEURE], train jusqu'à Reichenbach im Kandertal puis car postal 220 jusqu'à Griesalp. Départ à pied à 09:00, arrivée à la Blüemlisalphütte vers 15:00.
