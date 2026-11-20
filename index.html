@@ -265,6 +265,19 @@
   .ct-ruta-t2 { background: linear-gradient(150deg, #0A2D3D 0%, #145570 60%, #0A2D3D 100%); }
   .ct-ruta-t3 { background: linear-gradient(150deg, #122535 0%, #1E4D6A 60%, #122535 100%); }
 
+  .ct-ruta-photo {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; display: block;
+    transition: transform 0.5s ease;
+  }
+  .ct-ruta-card:hover .ct-ruta-photo { transform: scale(1.04); }
+  .ct-ruta-thumb.has-photo::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(10,45,61,0.15) 0%, rgba(10,45,61,0) 40%, rgba(10,45,61,0.55) 100%);
+  }
+  .ct-ruta-thumb.has-photo .ct-ruta-days { color: rgba(255,255,255,0.85); z-index: 1; text-shadow: 0 1px 8px rgba(0,0,0,0.35); }
+  .ct-ruta-thumb.has-photo .ct-badge-ghost { background: rgba(10,45,61,0.55); border-color: rgba(255,255,255,0.35); color: #fff; }
+
   .ct-ruta-svg {
     position: absolute; bottom: 0; left: 0; right: 0;
     width: 100%; opacity: 0.18;
@@ -674,8 +687,8 @@
 
       <!-- Kandersteg 2D -->
       <div class="ct-ruta-card featured">
-        <div class="ct-ruta-thumb ct-ruta-t1">
-          <svg class="ct-ruta-svg" viewBox="0 0 400 100" preserveAspectRatio="none"><polygon points="0,100 80,25 160,65 220,8 300,50 360,20 400,40 400,100" fill="white"/></svg>
+        <div class="ct-ruta-thumb ct-ruta-t1 has-photo">
+          <img class="ct-ruta-photo" src="card-kandersteg.jpg" width="800" height="360" loading="lazy" decoding="async" alt="Atardecer en la Blüemlisalphütte">
           <div class="ct-ruta-days">2D</div>
           <span class="ct-ruta-badge ct-badge-copper">⭐ Experiencia completa</span>
         </div>
@@ -701,8 +714,8 @@
 
       <!-- Creux du Van -->
       <div class="ct-ruta-card">
-        <div class="ct-ruta-thumb ct-ruta-t2">
-          <svg class="ct-ruta-svg" viewBox="0 0 400 100" preserveAspectRatio="none"><polygon points="0,100 60,45 130,80 200,15 270,60 340,30 400,55 400,100" fill="white"/></svg>
+        <div class="ct-ruta-thumb ct-ruta-t2 has-photo">
+          <img class="ct-ruta-photo" src="card-creux-du-van.jpg" width="800" height="360" loading="lazy" decoding="async" alt="El circo rocoso del Creux du Van">
           <div class="ct-ruta-days">1D</div>
           <span class="ct-ruta-badge ct-badge-ghost">Día completo</span>
         </div>
@@ -728,8 +741,8 @@
 
       <!-- Augstmatthorn -->
       <div class="ct-ruta-card">
-        <div class="ct-ruta-thumb ct-ruta-t3">
-          <svg class="ct-ruta-svg" viewBox="0 0 400 100" preserveAspectRatio="none"><polygon points="0,100 40,65 90,90 170,12 250,58 310,28 370,50 400,40 400,100" fill="white"/></svg>
+        <div class="ct-ruta-thumb ct-ruta-t3 has-photo">
+          <img class="ct-ruta-photo" src="card-augstmatthorn.jpg" width="800" height="360" loading="lazy" decoding="async" alt="Vistas desde la cresta · lago de Brienz">
           <div class="ct-ruta-days">1D</div>
           <span class="ct-ruta-badge ct-badge-ghost">Cresta · Vistas 360°</span>
         </div>
