@@ -86,6 +86,11 @@ CT_JS = (
  "document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.burger,.hamburger,.ct-hamburger').forEach(function(b){"
  "b.setAttribute('role','button');b.setAttribute('tabindex','0');b.setAttribute('aria-label','Menu');"
  "b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();b.click();}});});});"
+ # Botón flotante de WhatsApp: se oculta mientras se ve otro botón de WhatsApp en pantalla (p. ej. el del inicio),
+ # para no mostrar dos a la vez ni tapar ese botón.
+ "document.addEventListener('DOMContentLoaded',function(){var f=document.querySelector('.wa-float,.ct-wa');if(!f||!('IntersectionObserver' in window))return;"
+ "var v=new Set(),o=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?v.add(e.target):v.delete(e.target);});f.classList.toggle('wa-hide',v.size>0);});"
+ "document.querySelectorAll('a[href*=\\'wa.me\\']').forEach(function(a){if(a!==f&&!f.contains(a))o.observe(a);});});"
 )
 CT_CSS = ('.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}'
  '.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}'
@@ -94,7 +99,10 @@ CT_CSS = ('.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);displ
  '.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}'
  # Accesibilidad: casillas más grandes y foco visible al navegar con teclado
  'input[type=checkbox]{width:18px;height:18px;flex-shrink:0}'
- 'a:focus-visible,button:focus-visible,[role=button]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #A8704A!important;outline-offset:2px}')
+ 'a:focus-visible,button:focus-visible,[role=button]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #A8704A!important;outline-offset:2px}'
+ # Botón flotante de WhatsApp: más pequeño en móvil (tapa menos contenido) y respeta la barra inferior del iPhone
+ '.wa-float,.ct-wa{transition:transform .2s,opacity .25s}.wa-float.wa-hide,.ct-wa.wa-hide{opacity:0;pointer-events:none;transform:scale(.6)}'
+ '@media(max-width:768px){.wa-float,.ct-wa{width:48px;height:48px;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px))}.wa-float svg,.ct-wa svg{width:23px;height:23px}}')
 
 def render(page, lang, S, data, plain=False):
     t = open(os.path.join(SRC, 'pages', page + '.html'), encoding='utf-8').read()
@@ -144,7 +152,7 @@ def render(page, lang, S, data, plain=False):
         t = re.sub(r'(<a [^>]*class="(?:ct-)?nav-cta")', sw + r'\n  \1', t, count=1)
     else:
         t = t.replace('</nav>', sw + '\n</nav>', 1)
-    t = t.replace('</head>', css + inject + '</head>', 1)
+    t = t.replace('</head>', css + inject + faq_ld(t) + '</head>', 1)
     if lang != 'es':
         # rutas de recursos (imágenes, etc.) relativas -> absolutas, porque las páginas viven en /de/, /en/ y /fr/
         def abs_asset(m):
@@ -157,6 +165,16 @@ def render(page, lang, S, data, plain=False):
         # los <link hreflang> conservan su propio idioma: no se reescriben
         t = '\n'.join(ln if 'hreflang=' in ln and 'rel="alternate"' in ln else _rw.sub(SITE + '/' + lang + '/' + r'\1', ln) for ln in t.split('\n'))
     return t
+
+def faq_ld(t):
+    """Datos estructurados FAQPage generados a partir de las preguntas (.faq-q / .faq-a) de la propia página,
+    para que Google y los buscadores con IA lean siempre la versión actual del FAQ en cada idioma."""
+    def txt(s): return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', s))).strip()
+    qa = re.findall(r'<button class="faq-q"[^>]*>(.*?)<svg.*?</button>\s*<div class="faq-a">(.*?)</div>\s*</div>', t, re.S)
+    if not qa: return ''
+    ld = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
+        {'@type': 'Question', 'name': txt(q), 'acceptedAnswer': {'@type': 'Answer', 'text': txt(a)}} for q, a in qa]}
+    return '<script type="application/ld+json">%s</script>\n' % json.dumps(ld, ensure_ascii=False).replace('</', '<\\/')
 
 def outpath(page, lang):
     d = ROOT if lang == 'es' else os.path.join(ROOT, lang)
