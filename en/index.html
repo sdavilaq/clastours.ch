@@ -265,6 +265,19 @@
   .ct-ruta-t2 { background: linear-gradient(150deg, #0A2D3D 0%, #145570 60%, #0A2D3D 100%); }
   .ct-ruta-t3 { background: linear-gradient(150deg, #122535 0%, #1E4D6A 60%, #122535 100%); }
 
+  .ct-ruta-photo {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; display: block;
+    transition: transform 0.5s ease;
+  }
+  .ct-ruta-card:hover .ct-ruta-photo { transform: scale(1.04); }
+  .ct-ruta-thumb.has-photo::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(10,45,61,0.15) 0%, rgba(10,45,61,0) 40%, rgba(10,45,61,0.55) 100%);
+  }
+  .ct-ruta-thumb.has-photo .ct-ruta-days { color: rgba(255,255,255,0.85); z-index: 1; text-shadow: 0 1px 8px rgba(0,0,0,0.35); }
+  .ct-ruta-thumb.has-photo .ct-badge-ghost { background: rgba(10,45,61,0.55); border-color: rgba(255,255,255,0.35); color: #fff; }
+
   .ct-ruta-svg {
     position: absolute; bottom: 0; left: 0; right: 0;
     width: 100%; opacity: 0.18;
@@ -575,9 +588,9 @@
   ]
 }
 </script>
-<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}input[type=checkbox]{width:18px;height:18px;flex-shrink:0}a:focus-visible,button:focus-visible,[role=button]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #A8704A!important;outline-offset:2px}</style>
+<style>.lang-switch{display:flex;align-items:center;gap:.1rem;margin:0 1rem 0 auto;font-family:inherit;font-size:.72rem;letter-spacing:.08em}.lang-switch a{color:rgba(255,255,255,.62);text-decoration:none;padding:.25rem .4rem;border-bottom:1px solid transparent}.lang-switch a{display:inline-flex;align-items:center;gap:.35rem}.lang-switch .fl{width:18px;height:12px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.25);opacity:.8}.lang-switch a.active .fl,.lang-switch a:hover .fl{opacity:1}.lang-switch a:hover{color:#fff}.lang-switch a.active{color:#fff;border-bottom-color:#C48A62}.nav>.logo,.nav>.nav-logo,.ct-nav>.ct-logo,.ct-nav>.ct-nav-logo{margin-right:2rem}@media(max-width:768px){.lang-switch{margin:0 .4rem 0 auto;gap:0}.lang-switch a{font-size:0;gap:0;padding:.25rem .3rem}}.ct-notice{position:fixed;inset:0;background:rgba(10,30,42,.72);display:flex;align-items:center;justify-content:center;z-index:99999;padding:1rem}.ct-notice-box{background:#fff;color:#1a2a33;max-width:420px;width:100%;border-radius:8px;padding:1.75rem;font-family:inherit;text-align:center}.ct-notice-box h3{margin:0 0 .6rem;font-size:1.25rem;color:#0F3D52}.ct-notice-box p{margin:0 0 1.2rem;line-height:1.55;font-size:.95rem}.ct-notice-btns{display:flex;flex-direction:column;gap:.6rem}.ct-notice-btns button,.ct-notice-btns a{display:block;padding:.7rem 1rem;border-radius:4px;border:0;font:inherit;font-size:.9rem;cursor:pointer;text-decoration:none}.ct-notice-btns button{background:#A8704A;color:#fff}.ct-notice-wa{background:#25D366;color:#fff}input[type=checkbox]{width:18px;height:18px;flex-shrink:0}a:focus-visible,button:focus-visible,[role=button]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #A8704A!important;outline-offset:2px}.wa-float,.ct-wa{transition:transform .2s,opacity .25s}.wa-float.wa-hide,.ct-wa.wa-hide{opacity:0;pointer-events:none;transform:scale(.6)}@media(max-width:768px){.wa-float,.ct-wa{width:48px;height:48px;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px))}.wa-float svg,.ct-wa svg{width:23px;height:23px}}</style>
 <script>window.I18N={"js.alert.date": "Please enter your preferred date.", "js.alert.name_email": "Please enter your name and email.", "js.alert.people": "Please select the number of people.", "js.modal.sent": "Your request for {salida} has been sent. Santiago will get in touch within 24 hours to confirm the date and arrange payment.", "js.yes": "Yes", "js.no": "No", "js.wa.enroll_intro": "Hi Santiago, I'd like to sign up for:", "js.wa.name": "Name", "js.wa.email": "Email", "js.wa.whatsapp": "WhatsApp", "js.wa.date": "Preferred date", "js.wa.people": "People", "js.wa.level": "Level", "js.wa.veg": "Vegetarian", "js.wa.allergy": "Gluten/lactose intolerance", "js.wa.message": "Message", "js.wa.photos": "Photo consent", "js.wa.route": "Tour", "js.wa.hello": "Hi Santiago,", "js.wa.interest": "Hi Santiago! I'd like to book a hike.", "js.alert.name_contact": "Please enter your name and at least one way to contact you.", "js.today": "TODAY", "js.days": "SUN|MON|TUE|WED|THU|FRI|SAT", "js.wx.route_default": "Your tour", "js.wx.title": "7-day forecast", "js.wx.source": "ICON model · Open-Meteo", "js.wx.loading": "Loading weather data …", "js.wx.footer1": "Data: ICON model (DWD) via", "js.wx.footer2": ". For guidance only. Official:", "js.wx.footer3": "MeteoSwiss forecast", "js.wx.reliable": "Most reliable in the first 3 days", "js.wx.error": "Weather data could not be loaded. Please reload the page or try again later.", "js.sent.title": "Request sent!", "js.sent.text": "We've received your message. Santiago will reply within 24 hours.", "js.sent.close": "Got it", "js.sent.wa": "Also write on WhatsApp", "js.fail.title": "We couldn't send your message", "js.fail.text": "There was a connection problem. Write to us directly on WhatsApp or at info@clastours.ch.", "js.alert.terms": "To continue, please tick the box accepting the Terms and Conditions.", "js.wa.terms": "Terms and Conditions accepted", "js.wa.news": "News by email"};</script>
-<script>window.CT={"endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec", "lang": "en"};CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();return fetch(CT.endpoint,{method:'POST',redirect:'follow',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.text();}).then(function(t){t=(t||'').trim();if(t==='ok')return;var j=null;try{j=JSON.parse(t);}catch(e){}if(!j||j.ok!==true)throw new Error('rechazada');});};CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';o.innerHTML='<div class="ct-notice-box" role="dialog" aria-modal="true"><h3></h3><p></p><div class="ct-notice-btns"></div></div>';o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');if(waUrl){var a=document.createElement('a');a.href=waUrl;a.target='_blank';a.rel='noopener';a.className='ct-notice-wa';a.textContent=L('js.sent.wa');bt.appendChild(a);}var c=document.createElement('button');c.type='button';c.textContent=L('js.sent.close');c.onclick=function(){o.remove();};bt.appendChild(c);o.onclick=function(e){if(e.target===o)o.remove();};document.body.appendChild(o);};CT.submit=function(d,waUrl,opt){opt=opt||{};if(!CT.endpoint){window.open(waUrl,'_blank');if(opt.okCb)opt.okCb('wa');return;}if(opt.btn)opt.btn.disabled=true;CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);}).catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);}).then(function(){if(opt.btn)opt.btn.disabled=false;});};document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.burger,.hamburger,.ct-hamburger').forEach(function(b){b.setAttribute('role','button');b.setAttribute('tabindex','0');b.setAttribute('aria-label','Menu');b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();b.click();}});});});</script>
+<script>window.CT={"endpoint": "https://script.google.com/macros/s/AKfycbzMfPK1QgiOK1NA1zG1v0uHJUOG2LRNLBwUjOPk4KDx0MQPLsJvPfPuEHiwnj7TxZVo/exec", "lang": "en"};CT.send=function(d){d.lang=CT.lang;d.page=location.pathname;d.sent=new Date().toISOString();return fetch(CT.endpoint,{method:'POST',redirect:'follow',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.text();}).then(function(t){t=(t||'').trim();if(t==='ok')return;var j=null;try{j=JSON.parse(t);}catch(e){}if(!j||j.ok!==true)throw new Error('rechazada');});};CT.notice=function(title,text,waUrl){var o=document.createElement('div');o.className='ct-notice';o.innerHTML='<div class="ct-notice-box" role="dialog" aria-modal="true"><h3></h3><p></p><div class="ct-notice-btns"></div></div>';o.querySelector('h3').textContent=title;o.querySelector('p').textContent=text;var bt=o.querySelector('.ct-notice-btns');if(waUrl){var a=document.createElement('a');a.href=waUrl;a.target='_blank';a.rel='noopener';a.className='ct-notice-wa';a.textContent=L('js.sent.wa');bt.appendChild(a);}var c=document.createElement('button');c.type='button';c.textContent=L('js.sent.close');c.onclick=function(){o.remove();};bt.appendChild(c);o.onclick=function(e){if(e.target===o)o.remove();};document.body.appendChild(o);};CT.submit=function(d,waUrl,opt){opt=opt||{};if(!CT.endpoint){window.open(waUrl,'_blank');if(opt.okCb)opt.okCb('wa');return;}if(opt.btn)opt.btn.disabled=true;CT.send(d).then(function(){if(opt.okCb)opt.okCb('ok');else CT.notice(L('js.sent.title'),L('js.sent.text'),waUrl);}).catch(function(){CT.notice(L('js.fail.title'),L('js.fail.text'),waUrl);}).then(function(){if(opt.btn)opt.btn.disabled=false;});};document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.burger,.hamburger,.ct-hamburger').forEach(function(b){b.setAttribute('role','button');b.setAttribute('tabindex','0');b.setAttribute('aria-label','Menu');b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();b.click();}});});});document.addEventListener('DOMContentLoaded',function(){var f=document.querySelector('.wa-float,.ct-wa');if(!f||!('IntersectionObserver' in window))return;var v=new Set(),o=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?v.add(e.target):v.delete(e.target);});f.classList.toggle('wa-hide',v.size>0);});document.querySelectorAll('a[href*=\'wa.me\']').forEach(function(a){if(a!==f&&!f.contains(a))o.observe(a);});});</script>
 </head>
 <body>
 
@@ -674,8 +687,8 @@
 
       <!-- Kandersteg 2D -->
       <div class="ct-ruta-card featured">
-        <div class="ct-ruta-thumb ct-ruta-t1">
-          <svg class="ct-ruta-svg" viewBox="0 0 400 100" preserveAspectRatio="none"><polygon points="0,100 80,25 160,65 220,8 300,50 360,20 400,40 400,100" fill="white"/></svg>
+        <div class="ct-ruta-thumb ct-ruta-t1 has-photo">
+          <img class="ct-ruta-photo" src="/card-kandersteg.jpg" width="800" height="360" loading="lazy" decoding="async" alt="Sunset at the Blüemlisalphütte">
           <div class="ct-ruta-days">2D</div>
           <span class="ct-ruta-badge ct-badge-copper">⭐ The full experience</span>
         </div>
@@ -701,8 +714,8 @@
 
       <!-- Creux du Van -->
       <div class="ct-ruta-card">
-        <div class="ct-ruta-thumb ct-ruta-t2">
-          <svg class="ct-ruta-svg" viewBox="0 0 400 100" preserveAspectRatio="none"><polygon points="0,100 60,45 130,80 200,15 270,60 340,30 400,55 400,100" fill="white"/></svg>
+        <div class="ct-ruta-thumb ct-ruta-t2 has-photo">
+          <img class="ct-ruta-photo" src="/card-creux-du-van.jpg" width="800" height="360" loading="lazy" decoding="async" alt="The rocky cirque of the Creux du Van">
           <div class="ct-ruta-days">1D</div>
           <span class="ct-ruta-badge ct-badge-ghost">Full day</span>
         </div>
@@ -728,8 +741,8 @@
 
       <!-- Augstmatthorn -->
       <div class="ct-ruta-card">
-        <div class="ct-ruta-thumb ct-ruta-t3">
-          <svg class="ct-ruta-svg" viewBox="0 0 400 100" preserveAspectRatio="none"><polygon points="0,100 40,65 90,90 170,12 250,58 310,28 370,50 400,40 400,100" fill="white"/></svg>
+        <div class="ct-ruta-thumb ct-ruta-t3 has-photo">
+          <img class="ct-ruta-photo" src="/card-augstmatthorn.jpg" width="800" height="360" loading="lazy" decoding="async" alt="Views from the ridge · Lake Brienz">
           <div class="ct-ruta-days">1D</div>
           <span class="ct-ruta-badge ct-badge-ghost">Ridge · 360° views</span>
         </div>
@@ -821,7 +834,7 @@
 <section class="ct-section ct-bg-white" id="santiago">
   <div class="ct-inner">
     <div class="ct-santi-grid">
-      <div class="ct-avatar" style="padding:0;overflow:hidden"><img src="/SantiagoAVA.jpg" alt="Santiago, Clas Tours guide, wearing sports glasses in front of snowy mountains at sunset" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;border-radius:50%;"></div>
+      <div class="ct-avatar" style="padding:0;overflow:hidden"><img src="/santiago-avatar.jpg" width="300" height="300" loading="lazy" decoding="async" alt="Santiago, Clas Tours guide, wearing sports glasses in front of snowy mountains at sunset" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;border-radius:50%;"></div>
       <div>
         <div class="ct-label">Your guide</div>
         <div class="ct-santi-name">Santiago Davila Quiroz</div>
@@ -927,7 +940,7 @@
 </footer>
 
 <!-- WA FLOAT -->
-<a href="https://wa.me/41774603641?text=Hi%20Santiago%2C%20I%27m%20interested%20in%20the%20Clas%20Tours%20hikes" class="ct-wa" target="_blank">
+<a href="https://wa.me/41774603641?text=Hi%20Santiago%2C%20I%27m%20interested%20in%20the%20Clas%20Tours%20hikes" class="ct-wa" target="_blank" rel="noopener" aria-label="Write on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
